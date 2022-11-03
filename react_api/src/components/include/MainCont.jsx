@@ -16,8 +16,8 @@ const MainCont = () => {
     <section className="cont__main">
       <div className="container">
         <div className="main__inner">
-          {mainInfo.map((text) => (
-            <MainText text={text.text} />
+          {mainInfo.map((text, idx) => (
+            <MainText key={idx} text={text.text} />
           ))}
         </div>
       </div>
