@@ -11,9 +11,11 @@ const Reference = () => {
   const [references, setReferences] = useState([]);
 
   useEffect(() => {
-    fetch("../../utils/cssRefer.json")
+    fetch(
+      "https://webstoryboy.github.io/webstoryboy/react_api/src/utils/cssRefer.json"
+    )
       .then((response) => response.json())
-      .then((result) => setReferences(result.data.htmlRefer))
+      .then((result) => setReferences(result.data.css))
       .catch((error) => console.log("error", error));
   }, []);
 

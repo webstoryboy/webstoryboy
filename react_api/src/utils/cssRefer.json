@@ -9,10 +9,10 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★★★★",
-        "Definition": [
+        "definition": [
           "animation-delay 속성은 애니메이션 지연 시간을 설정합니다."
         ],
-        "Syntax": "animation-delay : time | inherit;",
+        "syntax": "animation-delay : time | inherit;",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/byCWEE/btrPIheac3W/TuVfOlXSSyQQZEintPLkwk/img.jpg",
         "link": "https://webstoryboy.co.kr/1651"
       },
@@ -24,11 +24,11 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★★☆☆",
-        "Definition": [
+        "definition": [
           "animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.",
           "animation-direction 속성에는 움직임 속성을 두 개 이상 설정 할 수 있습니다."
         ],
-        "Syntax": "animation-direction : normal | reverse | alternate | alternate-reverse | inherit;",
+        "syntax": "animation-direction : normal | reverse | alternate | alternate-reverse | inherit;",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/VBkWT/btrPNWO1TZT/DFoQOaJE8b8mbTEYahOQ21/img.jpg",
         "link": "https://webstoryboy.co.kr/1653"
       },
@@ -40,11 +40,11 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★★★★",
-        "Definition": [
+        "definition": [
           "animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.",
           "animation-duration 속성에는 시간 속성을 두 개 이상 설정 할 수 있습니다."
         ],
-        "Syntax": "animation-duration : time | inherit;",
+        "syntax": "animation-duration : time | inherit;",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/uit75/btrPQenQxqj/0Ru7L0Mk1WajTRxFkc6PI0/img.jpg",
         "link": "https://webstoryboy.co.kr/1656"
       },
@@ -56,10 +56,10 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★☆☆☆",
-        "Definition": [
+        "definition": [
           "animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다."
         ],
-        "Syntax": "animation-fill-mode : none | forwards | backwards | both | inherit;",
+        "syntax": "animation-fill-mode : none | forwards | backwards | both | inherit;",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/n5X8m/btrPT121EKA/hMiSoj6Xn7jSUdMFXf0mak/img.jpg",
         "link": "https://webstoryboy.co.kr/1659"
       },
@@ -71,10 +71,10 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★★★☆",
-        "Definition": [
+        "definition": [
           "animation-iteration-count 속성은 애니메이션 반복 횟수 설정합니다."
         ],
-        "Syntax": "animation-iteration-count : number | infinite | inherit",
+        "syntax": "animation-iteration-count : number | infinite | inherit",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/bnC1wp/btrP46o3soe/wQY4fgBxCeBKex7h5GaA41/img.jpg",
         "link": "https://webstoryboy.co.kr/1663"
       },
@@ -86,10 +86,10 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★★★★",
-        "Definition": [
+        "definition": [
           "animation-name 속성은 애니메이션 keyframe 이름을 설정합니다."
         ],
-        "Syntax": "animation-name : keyframe name | none | inherit;",
+        "syntax": "animation-name : keyframe name | none | inherit;",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/swljk/btrP6hp6dGy/BOZkLriEYFLu0SLzVupbt0/img.jpg",
         "link": "https://webstoryboy.co.kr/1664"
       },
@@ -101,10 +101,10 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★★★★",
-        "Definition": [
+        "definition": [
           "animation-name 속성은 애니메이션 keyframe 이름을 설정합니다."
         ],
-        "Syntax": "animation-name : keyframe name | none | inherit;",
+        "syntax": "animation-name : keyframe name | none | inherit;",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/4TBSz/btrP6diWFQt/XH0d3xvynmUGjdckJS2wf0/img.jpg",
         "link": "https://webstoryboy.co.kr/1668"
       },
@@ -116,12 +116,12 @@
         "apply": "animation",
         "version": "css3",
         "star": "★★★★★",
-        "Definition": [
+        "definition": [
           "animation-timing-function 속성은 애니메이션 움직임의 속도를 설정합니다.",
           "animation-timing-function 속성은 애니메이션 움직임의 속도를 건너뛰기로 설정할 수 있습니다.",
           "animation-timing-function 속성은 애니메이션 움직임의 속도를 큐빅 베지어 곡선값으로 설정할 수 있습니다."
         ],
-        "Syntax": "animation-timing-function : linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int,start|end) | cubic-bezier(n,n,n,n) | inherit;",
+        "syntax": "animation-timing-function : linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps(int,start|end) | cubic-bezier(n,n,n,n) | inherit;",
         "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/cTncN5/btrQezS40M9/mROIhWbDSiBI6BASK7PwA1/img.jpg",
         "link": "https://webstoryboy.co.kr/1671"
       }

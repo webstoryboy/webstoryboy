@@ -1,0 +1,175 @@
+{
+  "data": {
+    "html": [
+      {
+        "title": "<a>",
+        "desc": "<a> 태그는 다른 페이지 이동을 설정합니다.",
+        "desc2": "<a> 태그는 다른 페이지 이동을 설정합니다. 페이지 주소 뿐만 아니라, 메일 주소, 전화 번호 등도 연결할 수 있으며, 아이디(#) 값으로 페이지 내에서도 이동이 가능합니다.",
+        "element": "인라인 구조(Inline Element)",
+        "tag": "적용",
+        "version": "HTML4",
+        "view": "밑줄과 파란색으로 표시",
+        "star": "★★★★★",
+        "definition": [
+          "<a> 태그는 클릭하면 다른 페이지로 이동합니다. 현재 페이지에서 다른 페이지 URL로 연결하는 것을 하이퍼링크라고 합니다.",
+          "<a> 태그는 페이지 주소 뿐만 아니라, 메일 주소, 전화 번호 등도 연결할 수 있습니다.",
+          "<a> 태그는 아이디(#id)로 이동 할 수 있습니다.",
+          "<a> 태그는 target 속성을 이용하면 새로운 브라우저 창에서 페이지 이동을 할 수 있습니다.",
+          "<a> 태그는 방문한 링크는 밑줄과 보라색으로 표시되고, 활성화된 링크는 밑줄과 빨간색으로 표시됩니다.",
+          "원칙적으로 <a> 태그는 블록구조를 포함 할 수 없지만, HTML5에서는 <a> 태그는 블록 요소를 포함할 수 있습니다.",
+          "href='#'의 페이지 지정을 막기 위해 javascript:void(0)를 사용하는 것보다 <button> 태그를 사용하는 것이 바람직합니다.",
+          "<a> 태그는 href 속성을 사용하지 않는다면, target, download, ping, rel, hreflang, type, referrerpolicy 속성을 사용할 수 없습니다."
+        ],
+        "accessibility": [
+          "링크를 통해 페이지 이동시 '페이지 이동' 및 '새로운 브라우저에서 열림' 등의 메시지를 명시하여야 합니다.",
+          "target='_blank' 속성을 사용할 경우 '새로운 브라우저에서 열림' 등의 메세지를 명시하여야 스크린리더기를 사용하는 사용자에게 도움을 줄 수 있습니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/b7wmTg/btrPrmAE6kj/DJCRvyRYt09WuQDMNXKJlk/img.jpg",
+        "link": "https://webstoryboy.co.kr/1650"
+      },
+      {
+        "title": "<abbr>",
+        "desc": "<abbr> 태그는 줄임말이나 머리글자를 표현하는데 사용합니다.",
+        "desc2": "<abbr> 태그는 줄임말이나 머리글자를 표현하는데 사용합니다. abbr은 abbreviation의 약자로, '약자 또는 생략어'라는 의미를 가집니다. title 속성을 사용하여 전체 단어를 지정 할 수 있으며, 용어에 대한 정의를 나타내는 <dfn> 태그와 같이 사용하여 설정할 수 있습니다.",
+        "element": "인라인 구조(Inline Element)",
+        "tag": "적용",
+        "version": "HTML4",
+        "view": "점선(브라우저마다 틀림) 및 툴팁",
+        "star": "★★☆☆☆",
+        "definition": [
+          "<abbr> 태그는 abbreviation의 약자로, '약자 또는 생략어'라는 의미를 가집니다.",
+          "<abbr> 태그를 사용할 경우 번역 시스템이나 검색 시스템에게 유용한 정보를 제공합니다.",
+          "<abbr> 태그는 title 속성을 사용하여 전체 단어를 지정 할 수 있습니다.",
+          "<abbr> 태그는 용어에 대한 정의를 나타내는 <dfn> 태그와 같이 사용하여 정의할 수 있습니다.",
+          "<abbr> 태그에 아이디를 설정하여, <a> 링크로 참조할 수 있습니다.",
+          "<abbr> 태그는 시각적으로는 점선이 표시되지만 브라우저마다 표시가 다를 수 있습니다.",
+          "<abbr> 태그는 title 속성을 설정할 경우 마우스 오버시 툴팁 형식으로 약어가 표시됩니다."
+        ],
+        "accessibility": [
+          "HTML4에서는 약어를 표현할 때 <acronym>를 사용하였지만, HTML5에서는 약어를 표현할 때 <abbr>를 사용합니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/bLmuHO/btrPPMcKVwc/KYgUrvhK0TWtTiDXxdiHy0/img.jpg",
+        "link": "https://webstoryboy.co.kr/1654"
+      },
+      {
+        "title": "<wbr>",
+        "desc": "<wbr> 태그는 줄바꿈 할 위치를 설정할 때 사용합니다.",
+        "desc2": "<wbr> 태그는 줄바꿈 할 위치를 설정할 때 사용합니다. <wbr> 태그의 사용은 제한적입니다. 일반적인 한글이나 영어에서는 해당이 되지 않습니다. 의미가 없는 단어나 해석 할 수 없는 단어의 줄바꿈을 할 때 사용합니다. 예를 들면 의미적 전달이 안되는 브라우저의 주소가 가장 적절한 예가 될 것입니다. 단어의 줄바꿈이나 글자의 줄바꿈을 컨트롤 하고 싶다면 word-break 속성을 사용합니다. 줄바꿈을 해주는 <br> 태그와 동일하지만, <wbr> 태그는 줄바꿈을 해야 될 상황에 오면 줄바꿈을 해줍니다.",
+        "element": "인라인 구조(Inline Element)",
+        "tag": "없음",
+        "version": "HTML5",
+        "view": "줄바꿈",
+        "star": "★★☆☆☆",
+        "definition": [
+          "<wbr> 태그는 일반적인 한글이나 영어에는 적용되지 않고 의미가 없는 문장에서 사용이 가능합니다.",
+          "<wbr> 태그는 의미가 없는 문장이나 의미적 전달이 안되는 주소에서 줄바꿈을 원할 경우 사용합니다.",
+          "<wbr> 태그는 줄바꿈 할 위치를 설정할 때 사용합니다.",
+          "<wbr> 태그는 단어가 너무 길거나 원하는 곳에서 줄바꿈을 하고 싶을 때 사용합니다.",
+          "단어의 줄바꿈이나 글자의 줄바꿈을 컨트롤 하고 싶다면 CSS의 word-break 속성을 사용합니다."
+        ],
+        "compare": [
+          "텍스트 줄바꿈을 원하다면 <br> 태그를 사용합니다.",
+          "의미가 없는 텍스트 줄바꿈을 원하다면 <wbr> 태그를 사용합니다.",
+          "텍스트의 줄바꿈을 원하다면 CSS 속성 word-break 속성을 사용합니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/b93aY0/btrPR6ptTae/ehwPXrUk2EWRvF5jVA2mI0/img.jpg",
+        "link": "https://webstoryboy.co.kr/1657"
+      },
+      {
+        "title": "<br>",
+        "desc": "<br> 태그는 텍스트 줄바꿈이 필요할 때 설정합니다.",
+        "desc2": "<br> 태그는 텍스트 줄바꿈이 필요할 때 설정합니다. 단순 줄바꿈을 위한 용도이기 때문에 스타일적인 요소가 필요하다면 CSS 속성을 사용합니다. 여백을 주기 위함이라면 CSS 속성 margin, padding 또는 line-height 사용을 권장합니다. 의미없는 글자에 줄바꿈을 원하다면 <wbr> 태그를 사용합니다. 문단간에 주제 분리를 위한 줄바꿈이 필요하다면 <hr> 태그를 사용합니다.",
+        "element": "인라인 구조(Inline Element)",
+        "tag": "없음",
+        "version": "HTML4",
+        "view": "줄바꿈",
+        "star": "★★★★☆",
+        "definition": [
+          "<br> 태그는 텍스트 줄바꿈이 필요할 때 사용합니다.",
+          "<br> 태그는 줄을 바꾸는 의미 밖에 없기 때문에 스타일을 적용하기 위한 용도는 적절하지 않습니다.",
+          "여백이 필요할 때 <br> 태그의 사용은 적절치 않으며, CSS 속성 중에 margin, padding 또는 line-height를 사용합니다.",
+          "HTML4에서는 <br /> 태그 작성시 슬러시('/')가 필요하지만, HTML5에서는 의무적인 사항은 아니기 때문에 생략도 가능합니다."
+        ],
+        "compare": [
+          "텍스트 줄바꿈을 원하다면 <br> 태그를 사용합니다.",
+          "의미가 없는 텍스트 줄바꿈을 원하다면 <wbr> 태그를 사용합니다.",
+          "텍스트의 줄바꿈을 원하다면 CSS 속성 word-break 속성을 사용합니다.",
+          "문단간에 주제별 구분이 필요하다면 <hr> 태그를 사용합니다."
+        ],
+        "Accessibility": [
+          "문단 구분을 위해 <br> 태그를 사용하는 것은 좋지 않습니다. 스크린리더가 태그의 인식을 알려주나 아무 내용도 없기 때문에 사용자는 혼란을 야기 할 수 있습니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/0KdB4/btrPYETwm2g/mddmnsOV2s4otp7RdW8idK/img.jpg",
+        "link": "https://webstoryboy.co.kr/1658"
+      },
+      {
+        "title": "<hr>",
+        "desc": "<hr> 태그는 단란 요소간의 주제별 구분을 설정합니다.",
+        "desc2": "<hr> 태그는 단란 요소간의 주제별 구분을 설정합니다. 단순 줄바꿈을 위함이라면 <br> 태그를 사용합니다. 주제를 구분하기 위한 요소이며, 시각적인 표현은 CSS를 통해 설정합니다.",
+        "element": "블록 요소(Block Element)",
+        "tag": "없음",
+        "version": "HTML4",
+        "view": "수평선",
+        "star": "★★★★☆",
+        "definition": [
+          "<hr> 태그는 horizontal rule의 약자이며, 단란 요소간의 주제별 구분을 위해 설정합니다.",
+          "<hr> 태그는 연극에서 주제를 구분하거나, 책에서 화제 변경을 구분하기 위해 사용합니다.",
+          "<hr> 태그는 시각적인 부분보다 의미론적으로 사용하므로, 시간적인 표현은 CSS를 통해 표현합니다."
+        ],
+        "crossBroswing": [
+          "HTML4에서 <hr> 태그는 수평선을 의미하지만, HTML5에서 <hr> 태그는 주제를 분리할 때 사용합니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/bwg5bu/btrP4uX1Yfk/ekdUkoovzHthm6ZM3UkUok/img.jpg",
+        "link": "https://webstoryboy.co.kr/1665"
+      },
+      {
+        "title": "<body>",
+        "desc": "<body> 태그는 문서 본문에 해당하는 내용을 설정합니다.",
+        "desc2": "<body> 태그는 문서 본문에 해당하는 내용을 설정합니다. 문서에서 한번만 사용 할 수 있으며, 문서 설정시 필수적으로 들어가는 요소입니다. <body> 태그는 문서 본문에 해당하는 내용을 설정하지만, <head> 태그는 문서 정보에 해당하는 내용을 설정하는 것에 차이가 있습니다.",
+        "element": "블록 요소(Block Element)",
+        "tag": "적용",
+        "version": "HTML4",
+        "view": "없음",
+        "star": "★★★★★",
+        "definition": [
+          "<body> 태그는 문서 본문에 해당하는 내용을 설정합니다.",
+          "<body> 태그는 문서에서 한 번만 사용됩니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/kCy9h/btrP9zRWJYC/lDckvBB9vd1ohKkI9Fn0U0/img.jpg",
+        "link": "https://webstoryboy.co.kr/1666"
+      },
+      {
+        "title": "<html>",
+        "desc": "<html> 태그는 문서의 최상단 요소를 나타냅니다.",
+        "desc2": "<html> 태그는 문서의 최상단 요소를 나타냅니다. <html> 요소에는 언어를 설정하면 음성 도구 및 번역 도구에 도움을 줍니다. 웹 문서에 작성에 가장 기본이 되는 루트 요소이며, <head>와 <body> 요소로 구성되어 있습니다.",
+        "element": "블록 요소(Block Element)",
+        "tag": "적용",
+        "version": "HTML4",
+        "view": "없음",
+        "star": "★★★★★",
+        "definition": [
+          "<html> 태그는 문서의 최상단 요소로 모든 요소들은 자식 요소가 됩니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/k4SZp/btrP6dwvx9p/b8h6qoJvt3I65qv5KnG8V1/img.jpg",
+        "link": "https://webstoryboy.co.kr/1669"
+      },
+      {
+        "title": "<head>",
+        "desc": "<head> 태그는 문서 정보에 해당하는 내용을 설정합니다.",
+        "desc2": "<head> 태그는 문서 정보에 해당하는 내용을 설정합니다. 웹 문서는 <head> 태그와 <body> 태그로 구성되어 있으며, head 요소에는 문서 정보에 해당되는 내용과 body 요소에는 문서 본문에 해당하는 내용을 작성합니다. head 요소에는 제목과 스크립트, 스타일 시트, 메타 정보 등이 포함되어 있습니다.",
+        "element": "블록 요소(Block Element)",
+        "tag": "적용",
+        "version": "HTML4",
+        "view": "없음",
+        "star": "★★★★★",
+        "definition": [
+          "<head> 태그는 문서 정보에 해당하는 내용을 설정합니다.",
+          "<head> 태그는 문서 정보에는 제목, 스크립트, 스타일, 메타 정보 등을 포함하고 있습니다.",
+          "<head> 태그에는 <title>, <base>, <link>, <style>, <meta>, <script>, <noscript>, <template> 요소만 올 수 있습니다."
+        ],
+        "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/IxgBn/btrQdzTDINv/5aL8kbpu5rNpydauhVHd20/img.jpg",
+        "link": "https://webstoryboy.co.kr/1673"
+      }
+    ]
+  }
+}

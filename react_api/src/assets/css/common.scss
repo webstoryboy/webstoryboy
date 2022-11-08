@@ -24,3 +24,36 @@ body {
 }
 
 // cont__contact
+.cont__contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--white);
+  text-transform: uppercase;
+
+  p {
+    font-size: 20px;
+    font-family: var(--font-sub2);
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 9vw;
+    font-family: var(--font-main);
+    line-height: 1;
+    text-align: center;
+
+    em {
+      display: block;
+    }
+  }
+  a {
+    font-size: 16px;
+    font-family: var(--font-sub2);
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    padding: 1vw 4vw;
+    color: var(--white);
+  }
+}

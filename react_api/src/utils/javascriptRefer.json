@@ -1,0 +1,43 @@
+{
+    "data": {
+      "javascript": [
+        {
+          "title": "indexOf()",
+          "desc": "indexOf() 메서드는 문자열에서 특정 문자의 위치를 찾습니다.",
+          "desc2": "indexOf() 메서드는 문자열에서 특정 문자의 위치를 찾습니다. 문자열 내에 문자들은 왼쪽부터 순번이 매겨지고, 결과 값으로 순번이 반환됩니다. 만약 찾는 문자가 없다면, -1 값을 반환합니다.",
+          "type": "String.prototype.indexOf()",
+          "version": "ES1",
+          "return": "숫자(number)",
+          "star": "★★★☆☆",
+          "syntax" : [
+            "'문자열'.indexOf(검색값)",
+            "'문자열'.indexOf(검색값, 위치값)"
+          ],
+          "syntaxSample" : [
+            "'javascript reference'.indexOf('javascript') //0",
+            "'javascript reference'.indexOf('javascripts') //-1",
+            "'javascript reference'.indexOf('j') //0",
+            "'javascript reference'.indexOf('a') //1",
+            "'javascript reference'.indexOf('jv') //-1",
+            "'javascript reference'.indexOf('reference') //11",
+            "'javascript reference'.indexOf('r') //6",
+            "'javascript reference'.indexOf('javascript', 0) //0",
+            "'javascript reference'.indexOf('javascript', 1) //-1",
+            "'javascript reference'.indexOf('reference', 0) //11",
+            "'javascript reference'.indexOf('reference', 11) //11",
+            "'javascript reference'.indexOf('reference', 12) //-1",
+            "'javascript reference'.indexOf('r', 7) //11",
+            "'javascript reference'.indexOf('r', 12) //15"
+          ],
+          "definition": [
+            "indexOf() 메서드는 문자열에서 원하는 값을 찾아 인덱스 값을 반환합니다.",
+            "indexOf() 메서드는 일치하는 값이 없으면 -1을 반환합니다.",
+            "indexOf() 메서드는 대소문자를 구분합니다."
+          ],
+          "imgSrc": "https://i1.daumcdn.net/thumb/T650x650/?fname=https://blog.kakaocdn.net/dn/cQaAzX/btrPFDu9GWs/bHPNr7C0j5gMFIh64jahrk/img.jpg",
+          "link": "https://webstoryboy.co.kr/1652"
+        }
+      ]
+    }
+  }
+  
