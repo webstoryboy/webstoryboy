@@ -1,0 +1,262 @@
+#main {
+  margin-top: 65px;
+  display: flex;
+
+  #search {
+    width: 96%;
+    margin: 50px auto;
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+
+      em {
+        color: #ff8282;
+      }
+    }
+  }
+
+  #aside {
+    width: 20%;
+    min-height: 100vh;
+    border-right: 1px solid var(--bg-dark-border);
+    padding: 30px;
+
+    button {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      width: 100%;
+      text-align: left;
+      padding: 10px 20px;
+      border-radius: 40px;
+
+      span:first-child {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: -1px;
+      }
+      &:hover {
+        background: rgb(164, 33, 33);
+      }
+    }
+    .red {
+      background: rgb(164, 33, 33);
+    }
+  }
+
+  #contents {
+    width: 80%;
+    padding: 30px;
+
+    h2 {
+      margin-bottom: 10px;
+
+      em {
+        color: #ff8282;
+      }
+    }
+  }
+}
+
+.videos__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  > div {
+    width: 24%;
+    margin-bottom: 1%;
+    background: #1a1a1a;
+
+    .boxInfo {
+      padding: 10px;
+    }
+    a {
+      display: block;
+    }
+    .videoTitle {
+      display: block;
+      height: 48px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .channelName {
+      display: block;
+      font-size: 14px;
+      color: #eee;
+    }
+  }
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+}
+.video__inner {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    width: 75%;
+    height: 700px;
+  }
+  .right {
+    width: 23%;
+    height: 1000px;
+  }
+
+  .play {
+    width: 100%;
+    background: #aaa;
+    position: relative;
+    padding-bottom: 27.65%;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .desc {
+    width: 100%;
+    height: 80px;
+    margin-top: 30px;
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 10px;
+      display: block;
+    }
+    .count {
+      text-align: right;
+
+      .like {
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.videos__inner.column {
+  flex-direction: column;
+
+  > div {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+
+.channel-header {
+  height: 400px;
+  background-image: linear-gradient(45deg, #a18cd1 0%, #fbc2eb 100%);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    backdrop-filter: blur(25px);
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+.channel-infor {
+  position: relative;
+  z-index: 100;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 290px;
+    height: 290px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: -150px;
+  }
+  h3 {
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+
+.channel-videos {
+  margin-top: 100px;
+  padding: 5%;
+}
+
+@media (max-width: 1200px) {
+  .videos__inner {
+    > div {
+      width: 32%;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .video__inner {
+    flex-direction: column;
+    margin-top: 120px;
+
+    .left {
+      width: 100%;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  .videos__inner {
+    > div {
+      width: 49%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #header {
+    flex-direction: column;
+
+    .logo {
+      width: 100%;
+      padding-top: 10px;
+    }
+    .search {
+      width: 100%;
+    }
+  }
+  #main {
+    flex-direction: column;
+    margin-top: 100px;
+
+    #aside {
+      width: 100%;
+      min-height: auto;
+
+      button {
+        display: inline-block;
+        width: auto;
+        padding: 3px;
+        border-radius: 5px;
+        margin: 5px;
+        font-size: 14px;
+      }
+    }
+
+    #contents {
+      width: 100%;
+    }
+  }
+}

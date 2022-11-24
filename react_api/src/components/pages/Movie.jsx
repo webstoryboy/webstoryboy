@@ -11,8 +11,8 @@ import Contact from "../layout/Contact";
 const Movie = () => {
   const [movies, setMovies] = useState([]);
 
-  const search = (query) => {
-    fetch(
+  const search = async (query) => {
+    await fetch(
       `https://api.themoviedb.org/3/search/movie?api_key=9278d13f704ad0fe53c2263b692efd89&query=${query}`
     )
       .then((response) => response.json())

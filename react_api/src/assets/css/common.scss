@@ -57,3 +57,56 @@ body {
     color: var(--white);
   }
 }
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 150px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.search {
+  .container {
+    position: relative;
+  }
+
+  h2 {
+    color: var(--white);
+    font-size: 40px;
+    text-indent: -9999px;
+    height: 0;
+  }
+  input {
+    background: #000;
+    border: 1px solid var(--white);
+    border-radius: 50px;
+    color: #fff;
+    width: 100%;
+    padding: 14px 30px;
+    font-family: var(--font-kor2);
+  }
+  button {
+    position: absolute;
+    right: 6px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    font-family: var(--font-kor2);
+    cursor: pointer;
+    z-index: 1000;
+  }
+}

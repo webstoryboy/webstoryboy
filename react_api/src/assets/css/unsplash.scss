@@ -1,0 +1,59 @@
+.cont__unsplash {
+  ul {
+    column-count: 4;
+    column-gap: 20px;
+    width: 100%;
+
+    li {
+      margin-bottom: 20px;
+
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.unsplash__btn {
+  text-align: center;
+  margin: 30px 0 50px;
+
+  button {
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
+
+.unsplash__tag {
+  text-align: center;
+  margin: 30px 0 50px;
+
+  button {
+    margin-right: 10px;
+    border-radius: 20px;
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
+
+.unsplash__slider .swiper-slide {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+
+  li {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
