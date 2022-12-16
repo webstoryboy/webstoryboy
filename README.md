@@ -43,11 +43,3 @@
 </div>
 
 
-### 💻 리액트/뷰 수업 예제
-<div>
-  <a href="https://reactclass9.netlify.app/">리액트 사이트1(https://reactclass9.netlify.app/)</a>   
-  <a href="https://vueclass9.web.app/">뷰 사이트1(https://vueclass9.web.app/)</a>   
-  <br>
-  <a href="https://vueclass9.netlify.app/">리액트 API 사이트(https://vueclass9.netlify.app/)</a>   
-  <a href="https://vueapi9.web.app/">뷰 API 사이트(https://vueapi9.web.app/)</a>   
-</div>
