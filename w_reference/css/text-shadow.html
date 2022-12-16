@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">text-shadow 속성은 텍스트 그림자를 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 11. 30.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>text-shadow</h2>
+                    <p>
+                        text-shadow 속성은 텍스트 그림자를 설정합니다.
+                        x축, y축 길이를 통해 그림자의 길이를 설정하고,
+                        blur를 통해 뿌연 정도를 컨트롤 할 수 있습니다. 
+                        다중 속성을 이용하여 실제 느낌의 그림자 연출도 가능합니다.
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>
+                                        text-shadow : none
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>text</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★☆☆☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>text-shadow 속성은 텍스트 그림자를 설정합니다.</li>
+                        <li>text-shadow 속성의 blur는 뿌연 정도를 나타내는 속성입니다.</li>
+                        <li>text-shadow 속성의 color를 설정하지 않으면 기본 컬러색으로 설정됩니다.</li>
+                    </ul>
+
+                    <h3>비교(Compare)</h3>
+                    <ul>
+                        <li>text-shadow 속성은 텍스트 그림자를 설정합니다.</li>
+                        <li>box-shadow 속성의 박스 요소에 그림자를 설정합니다.</li>
+                    </ul>
+    
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">text-shadow : none | offset-x | offset-y | blur | color</p>
+<pre class="bluePre"><code class="language-css">/* 기본 속성 */
+text-shadow : none; /* 기본값 */
+
+/* 속성 규칙 */
+text-shadow: 1px 1px;          /* x축 | y축 */
+text-shadow: 1px 1px red;      /* x축 | y축 | 색 */
+text-shadow: 1px 1px 2px red;  /* x축 | y축 | 블러 | 색 */
+
+/* 다중 속성 */
+text-shadow: 1px 1px red, 2px 2px blue;
+text-shadow: 1px 1px 2px red, 2px 2px 2px blue, 3px 3px 3px yellow;
+
+/* 전역 속성 */
+text-shadow: inherit;   /* 상속 */
+text-shadow: initial;   /* 초기화 */
+text-shadow: revert;    /* 원래대로 돌리기 */
+text-shadow: unset;     /* 설정 해제 */
+</code></pre>
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>none</th>
+                                    <td>text-shadow: none;</td>
+                                    <td>텍스트 그림자 효과를 설정하지 않습니다.(기본값)</td>
+                                </tr>
+                                <tr>
+                                    <th>offset-x</th>
+                                    <td>text-shadow: 1px 1px;</td>
+                                    <td>그림자의 크기를 x축을 기준으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>offset-y</th>
+                                    <td>text-shadow: 1px 1px;</td>
+                                    <td>그림자의 크기를 y축을 기준으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>blur</th>
+                                    <td>text-shadow: 1px 1px 1px;</td>
+                                    <td>그림자의 블러효과를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>color</th>
+                                    <td>text-shadow: 1px 1px 1px red;</td>
+                                    <td>그림자의 색을 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Sample1 -->
+                    <style>
+                        .text-box {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        .text-box .box {
+                            width: 32%;
+                            line-height: 1.5;
+                            text-align: justify;
+                            margin-bottom: 10px;
+                        }
+                        @media (max-width:800px){
+                            .text-box .box {
+                                width: 100%;
+                                margin-bottom: 2%;
+                            }
+                        }            
+                    </style>
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>텍스트 그림자 효과를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="text-box">
+                                <div class="box">
+                                    어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다. 서울에는 집이 없지만, 이곳에서는 나만의 집이 많다. 그 집은 비용도 들지 않고 언제든지 만들 수 있다. 나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거 같다. 그 한구석에 나만의 꿈을 설계하고 디자인을 하며 앞으로도 살고 싶다.
+                                </div>
+                                <div class="box">
+                                    운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다. 몰두 하다보면 길이 보이고 방향이 보이게 된다. 운이란 고된 노동과 노력을 통해 스스로 만들어 내는 것이다. 복권에 당첨되는 사람들은 금방 돈을 허비하게 된다. 단지 행운만 좋았기 때문이다. 운을 만든 사람은 돈을 날려먹거나 헛되게 쓰지 않는다. 열심히 할수록 운은 나에게 온다.
+                                </div>
+                                <div class="box">
+                                    정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다. 다름 사람에게도 정직해야 하지만 그 무엇보다 나 자신한테 정직해야 한다.
+                                </div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#">text-shadow: none</a>
+                            <a href="#">text-shadow: 1px 1px 2px red</a>
+                            <a href="#">text-shadow: 1px 1px red</a>
+                            <a href="#">text-shadow: 1px 1px</a>
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#">text-shadow: 1px 1px 2px red, 2px 2px 2px blue</a>
+                            <a href="#">text-shadow: 1px 1px red, 2px 2px blue</a>
+                            <a href="#">text-shadow: 1px 1px red, 2px 2px blue, 3px 3px black</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="text-box"&gt;
+    &lt;div class="box"&gt;
+        어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다. 서울에는 집이 없지만, 이곳에서는 나만의 집이 많다. 그 집은 비용도 들지 않고 언제든지 만들 수 있다. 나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거 같다. 그 한구석에 나만의 꿈을 설계하고 디자인을 하며 앞으로도 살고 싶다.
+    &lt;/div&gt;
+    &lt;div class="box"&gt;
+        운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다. 몰두 하다보면 길이 보이고 방향이 보이게 된다. 운이란 고된 노동과 노력을 통해 스스로 만들어 내는 것이다. 복권에 당첨되는 사람들은 금방 돈을 허비하게 된다. 단지 행운만 좋았기 때문이다. 운을 만든 사람은 돈을 날려먹거나 헛되게 쓰지 않는다. 열심히 할수록 운은 나에게 온다.
+    &lt;/div&gt;
+    &lt;div class="box"&gt;
+        정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다. 다름 사람에게도 정직해야 하지만 그 무엇보다 나 자신한테 정직해야 한다.
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.text-box .box {
+    width: 100%;
+    line-height: 1.4;
+    text-align: justify;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.text-box.overflow .box {
+    overflow: visible;
+}
+.text-box.white .box {
+    white-space: normal;
+}
+.sampleBtn1.red, .sampleBtn2.red {
+    border-color: #ff4b4b !important;
+    color: #ff4b4b !important;
+}
+@media (max-width:800px){
+    .text-box .box {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}       
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>const btn1 = document.querySelector("#sample1 .sampleBtn1");
+const btn2 = document.querySelector("#sample1 .sampleBtn2");
+const box1 = document.querySelector("#sample1 .text-box")
+
+btn1.addEventListener("click", (e)=> {
+    e.preventDefault();
+    box1.classList.toggle("overflow");
+    btn1.classList.toggle("red");
+    
+    if(box1.classList.contains("overflow")){
+        btn1.innerText = "white-space: normal";
+    } else {
+        btn1.innerText = "white-space: nowrap";
+    }
+})
+btn2.addEventListener("click", (e)=> {
+    e.preventDefault();
+    box1.classList.toggle("white");
+    btn2.classList.toggle("red");
+    
+    if(box1.classList.contains("white")){
+        btn2.innerText = "overflow: visible";
+    } else {
+        btn2.innerText = "overflow: hidden";
+    }
+})
+
+document.querySelectorAll("#sample1 .sampleBtn3 a").forEach(btn => {
+    btn.addEventListener("click", (e)=> {
+        e.preventDefault();
+        const text = btn.innerText;
+        document.querySelectorAll("#sample1 .text-box .box").forEach(box => {
+            box.setAttribute("style", text);
+        })
+    })
+});
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+     
+                    <script>
+                        document.querySelectorAll("#sample1 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.innerText;
+                                document.querySelectorAll("#sample1 .text-box .box").forEach(box => {
+                                    box.setAttribute("style", text);
+                                })
+                            })
+                        });
+                    </script>           
+                    <!-- //Sample1 -->
+
+
+                    <!-- Sample1 -->
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+                        #blog #sample2 .sampleView {
+                            padding: 0;
+                        }
+                        .shadow-box {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background: #ececec;
+                        }
+                        .shadow-box .text {
+                            font-family: 'Mr Dafoe' ;
+                            font-size: 14vw;
+                            padding: 3vw;
+                            color: #000;
+                            text-shadow: 
+                                0 -3px 0 #333,
+                                0 6px 8px rgba(0,0,0,.4),
+                                0 9px 10px rgba(0,0,0,.15),
+                                0 30px 10px rgba(0,0,0,.18),
+                                0 15px 10px rgba(0,0,0,.21);
+                        }        
+                    </style>
+                    <h3>예제2(Sample)</h3>
+                    <div id="sample2" class="sample">
+                        <h4>텍스트 그림자 효과를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="shadow-box">
+                                <span class="text">Shadow</span>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" data-pro="text-shadow:none">none</a>
+                            <a href="#" data-pro="text-shadow: 
+                            0 -3px 0 #333,
+                            0 6px 8px rgba(0,0,0,.4),
+                            0 9px 10px rgba(0,0,0,.15),
+                            0 30px 10px rgba(0,0,0,.18),
+                            0 15px 10px rgba(0,0,0,.21);">active</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="shadow-box"&gt;
+    &lt;span class="text"&gt;Shadow&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+.shadow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ececec;
+}
+.shadow-box .text {
+    font-family: 'Mr Dafoe';
+    font-size: 14vw;
+    padding: 3vw;
+    color: #000;
+    text-shadow: 
+        0 -3px 0 #333,
+        0 6px 8px rgba(0, 0, 0, .4),
+        0 9px 10px rgba(0, 0, 0, .15),
+        0 30px 10px rgba(0, 0, 0, .18),
+        0 15px 10px rgba(0, 0, 0, .21);
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>document.querySelectorAll("#sample2 a").forEach(btn => {
+    btn.addEventListener("click", (e)=> {
+        e.preventDefault();
+        const text = btn.getAttribute("data-pro");
+        document.querySelectorAll("#sample2 .shadow-box .text").forEach(box => {
+            box.setAttribute("style", text);
+        })
+    })
+});
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+     
+                    <script>
+                        document.querySelectorAll("#sample2 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.getAttribute("data-pro");
+                                document.querySelectorAll("#sample2 .shadow-box .text").forEach(box => {
+                                    box.setAttribute("style", text);
+                                })
+                            })
+                        });
+                    </script>           
+                    <!-- //Sample2 -->
+
+
+
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">text-shadow</td>
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>텍스트와 관련된 속성</h3>
+                    <ul>
+                        <li>text-align 속성은 텍스트 정렬 방식을 설정합니다.</li>
+                        <li>text-align-last 속성은 문단의 마지막 텍스트 정렬 방식을 설정합니다.</li>
+                        <li>text-decoration 속성은 텍스트 라인 속성을 설정합니다.</li>
+                        <li>text-indent 속성은 문단 들여쓰기 속성을 설정합니다.</li>
+                        <li>text-justify 속성은 양쪽 정렬을 했을 때 정렬 유형을 설정합니다.</li>
+                        <li>text-orientation 속성은 텍스트 문자의 방향을 설정합니다.</li>
+                        <li>text-rendering 속성은 최적화 렌더링을 설정합니다.</li>
+                        <li>text-overflow 속성은 텍스트가 영역을 벗어났을 때 속성을 설정합니다.</li>
+                        <li>text-shadow 속성은 텍스트 그림자를 설정합니다.</li>
+                        <li>text-transform 속성은 텍스트 대/소문자를 설정합니다.</li>
+                        <li>text-emphasis 속성은 텍스트에 강조 표시를 설정합니다.</li>
+                        <li>text-underline-offset 속성은 언더라인의 오프셋 값을 설정합니다.</li>
+                        <li>text-underline-position 속성은 언더라인의 위치를 설정합니다.</li>
+                        <li>text-combine-upright 속성은 문자 조합을 설정합니다.</li>
+                        <li>text-size-adjust 속성은 스마트폰에서 텍스트 비율을 설정합니다. </li>
+                        <li>text-fill-color 속성은 텍스트의 면 색상을 설정합니다. </li>
+                        <li>text-stroke 속성은 텍스트의 선 색상 및 굵기를 설정합니다.</li>
+                    </ul>
+
+                    <h3>폰트와 관련된 속성</h3>
+                    <ul>
+                        <li>font 속성은 폰트에 관한 설정을 일괄적으로 설정합니다.</li>
+                        <li>font-family 속성은 폰트 종류를 설정합니다.</li>
+                        <li>font-size 속성은 폰트 사이즈 속성을 설정합니다.</li>
+                        <li>font-size-adjust 속성은 소문자를 기준으로 폰트 크기를 설정합니다.</li>
+                        <li>font-style 속성은 폰트의 스타일을 설정합니다.</li>
+                        <li>font-weight 속성은 폰트의 두께를 설정합니다.</li>
+                        <li>font-stretch 속성은 폰트의 장평을 설정합니다.</li>
+                        <li>font-variant 속성은 영문 폰트의 소문자 표시 형태를 설정합니다.</li>
+                        <li>font-feature-settings 속성은 오픈 타입 글꼴의 세부사항을 설정합니다.</li>
+                        <li>font-kerning 속성은 커닝 기능을 사용할 것인지의 여부를 설정합니다.</li>
+                        <li>font-language-override 속성은 정의된 언어를 다른 언어로 설정합니다.</li>
+                        <li>font-optical-sizing 속성은 텍스트 렌더링을 통해 다양한 크기를 설정합니다.</li>
+                        <li>font-synthesis 속성은 누락된 텍스트의 합성 여부를 설정합니다.</li>
+                        <li>@font-face 속성은 웹폰트를 설정합니다.</li>
+                        <li>color 속성은 폰트의 색상을 설정합니다.</li>
+                    </ul>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-text-decor/#text-shadow-property" target="_blank">https://w3c.github.io/csswg-drafts/<wbr>css-text-decor/#text-shadow-property</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                       
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- text-align,text-align-last,text-decoration,text-indent,text-justify,text-overflow,text-shadow,text-transform,text-emphasis,text-underline-offset,text-underline-position,text-combine-upright,text-size-adjust,text-fill-color,text-stroke -->

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left"> 
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/Javascript</span>
+                <h1 class="title">clientLeft 속성은 요소의 X축 위치 값을 가져옵니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 12. 02.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>clientLeft</h2>
+                    <p>
+                        clientLeft 속성은 요소의 X축 위치 값(부모 기준)을 가져옵니다.
+                        위치 값만 가져올 수 있으며, 수정할 수 없는 읽기 전용 속성입니다.
+                        element.getBoundingClientRect()에서도 속성 값을 가져올 수 있습니다.
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>유형(type)</th>
+                                    <td>Element.clientLeft</td>
+                                </tr>
+                                <tr>
+                                    <th>버전(version)</th>
+                                    <td>ES1</td>
+                                </tr>
+                                <tr>
+                                    <th>결과값(return)</th>
+                                    <td>숫자(number)</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★★☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">
+                        element.clientLeft
+                    </p>
+<pre class="bluePre"><code class="language-javascript">document.querySelector(".box").clientLeft
+</code></pre>
+                    <ul>
+                        <li>요소(element) : 선택할 요소를 설정합니다.</li>
+                    </ul>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>clientLeft 속성은 요소의 X축 위치 값(부모 기준)을 가져옵니다.</li>
+                        <li>clientLeft 속성은 데이터 값만 가져올 수 있는 읽기 속성 전용입니다.</li>
+                        <li>clientLeft 속성은 숫자가 반올림 되어 반환합니다. 소수점을 원하면 element.getBoundingClientRect() 메서드를 사용합니다.</li>
+                        <li>clientLeft 속성은 인터넷 익스플로러(Internet Explorer)에서 소개된 속성입니다.</li>
+                        <li>clientLeft 속성은 display: inline 구조에서 0을 반환합니다. display: block 구조에서 위치값을 불러옵니다.</li>
+                    </ul>
+
+                    <h3>비교(Compare)</h3>
+                    <ul>
+                        <li>clientLeft 속성은 요소의 X축 위치 값(부모 기준)을 가져옵니다.</li>
+                        <li>offsetLeft 속성은 요소의 X축 위치 값(문서 기준)을 가져옵니다.</li>
+                    </ul>
+
+
+                    <!-- sample1 -->
+                    <style>
+                        .jsample {
+                            text-align: center;
+                        }
+                        .jsample .box {
+                            margin: 20px auto;
+                            width: 400px;
+                            height: 200px;
+                            background-color: #A2CBFA;
+                            border: 1px solid #4390E1;
+                            padding: 20px;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-sizing: border-box;
+                        }
+                        .jsample .desc em {
+                            color: #ff4b4b;
+                        }
+                        .jsample .box::before {
+                            content: '';
+                            width: 358px;
+                            height: 158px;
+                            border: 1px dashed #4390E1;
+                            position: absolute;
+                            left: 20px; top: 20px;
+                        }
+                        .jsample .box::after {
+                            content: '';
+                            width: 440px;
+                            height: 240px;
+                            border: 1px dashed #4390E1;
+                            position: absolute;
+                            left: -21px; top: -21px;
+                        }
+                        .jsample .box span {
+                            color: #fff;
+                        }
+                        .jsample .desc {
+                            padding-top: 10px;
+                        }
+                    </style>
+                    <!-- Sample1 -->
+                    <h3>예제1(Sample)</h3>
+                    <div class="sample">
+                        <h4>버튼을 클릭하면 박스의 가로/세로 값을 구하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="jsample">
+                                <div class="box">
+                                    <span>
+                                        width: 400px<br>
+                                        margin: 20px<br>
+                                        border: 1px<br>
+                                        padding: 20px<br>
+                                    </span>
+                                </div>
+                                <div class="desc">여기에 결과값이 표시됩니다.</div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#">박스의 가로값(<em>clientWidth</em>)을 구합니다.</a>
+                            <a href="#">박스의 세로값(<em>clientHeight</em>)을 구합니다.</a>
+                            <a href="#">박스의 Y축값(<em>clientTop</em>)을 구합니다.</a>
+                            <a href="#">박스의 X축값(<em>clientLeft</em>)을 구합니다.</a>
+                            <a href="#">박스의 가로값(<em>offsetWidth</em>)을 구합니다.</a>
+                            <a href="#">박스의 세로값(<em>offsetHeight</em>)을 구합니다.</a>
+                            <a href="#">박스의 Y축값(<em>offsetTop</em>)을 구합니다.</a>
+                            <a href="#">박스의 X축값(<em>offsetLeft</em>)을 구합니다.</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="jsample"&gt;
+    &lt;div class="box"&gt;
+        &lt;span&gt;
+            width: 400px&lt;br&gt;
+            margin: 20px&lt;br&gt;
+            border: 1px&lt;br&gt;
+            padding: 20px&lt;br&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="desc"&gt;여기에 결과값이 표시됩니다.&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.jsample {
+    text-align: center;
+}
+.jsample .box {
+    margin: 20px auto;
+    width: 400px;
+    height: 200px;
+    background-color: #A2CBFA;
+    border: 1px solid #4390E1;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.jsample .box::before {
+    content: '';
+    width: 358px;
+    height: 158px;
+    border: 1px dashed #4390E1;
+    position: absolute;
+    left: 20px; top: 20px;
+}
+.jsample .box::after {
+    content: '';
+    width: 440px;
+    height: 240px;
+    border: 1px dashed #4390E1;
+    position: absolute;
+    left: -21px; top: -21px;
+}
+.jsample .box span {
+    color: #fff;
+}
+.jsample .desc {
+    padding-top: 10px;
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>const btnAll = document.querySelectorAll(".sampleBtn a");
+const btnAlert = document.querySelector(".jsample .desc");
+const sampleBox = document.querySelector(".jsample .box");
+
+btnAll.forEach((btn, idx) => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const name = btn.querySelector("em").innerHTML
+
+        let client = [
+            sampleBox.clientWidth, 
+            sampleBox.clientHeight, 
+            sampleBox.clientTop, 
+            sampleBox.clientLeft,
+            sampleBox.offsetWidth,
+            sampleBox.offsetHeight,
+            sampleBox.offsetTop,
+            sampleBox.offsetLeft,
+        ]
+        
+        btnAlert.innerHTML = `이 박스의 <em>${name}</em> 값은 <em>${client[idx]}px</em> 입니다.`;
+    });
+});
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Sample1 -->
+                    <script>
+                        const btnAll = document.querySelectorAll(".sampleBtn a");
+                        const btnAlert = document.querySelector(".jsample .desc");
+                        const sampleBox = document.querySelector(".jsample .box");
+
+                        btnAll.forEach((btn, idx) => {
+                            btn.addEventListener("click", (e) => {
+                                e.preventDefault();
+                                const name = btn.querySelector("em").innerHTML
+
+                                let client = [
+                                    sampleBox.clientWidth, 
+                                    sampleBox.clientHeight, 
+                                    sampleBox.clientTop, 
+                                    sampleBox.clientLeft,
+                                    sampleBox.offsetWidth,
+                                    sampleBox.offsetHeight,
+                                    sampleBox.offsetTop,
+                                    sampleBox.offsetLeft,
+                                ]
+                                
+                                btnAlert.innerHTML = `이 박스의 <em>${name}</em> 값은 <em>${client[idx]}px</em> 입니다.`;
+                            });
+                        });
+                    </script>
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">clientLeft</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>크기 및 위치와 관련된 메서드</h3>
+                    <ul>
+                        <li>clientWidth 속성은 요소의 가로 값(마진/보더 불포함)을 가져옵니다.</li>
+                        <li>clientHeight 속성은 요소의 세로 값(마진/보더 불포함)을 가져옵니다.</li>
+                        <li>clientTop 속성은 요소의 Y축 위치 값(부모 기준)을 가져옵니다.</li>
+                        <li>clientLeft 속성은 요소의 X축 위치 값(부모 기준)을 가져옵니다.</li>
+                        <li>offsetWidth 속성은 요소의 가로 값(보더/패딩 포함)을 가져옵니다.</li>
+                        <li>offsetHeight 속성은 요소의 세로 값(보더/패딩 포함)을 가져옵니다.</li>
+                        <li>offsetTop 속성은 요소의 Y축 위치 값(문서 기준)을 가져옵니다.</li>
+                        <li>offsetLeft 속성은 요소의 X축 위치 값(문서 기준)을 가져옵니다.</li>
+                        <li>offsetParent 속성은 부모 요소를 기준으로 위치 정보를 가져옵니다.</li>
+                        <li>getBoundingClientRect() 메서드는 요소의 크기 및 위치 정보를 가져옵니다.</li>
+                        <li>getClientRect() 메서드는 요소의 크기 및 위치 정보를 가져옵니다.</li>
+                    </ul>
+
+                    <h3>크기와 관련된 메서드 - jQuery</h3>
+                    <ul>
+                        <li>width() 메서드는 선택한 요소의 가로 값(패딩/보더/마진 불포함)을 가져오거나 설정합니다.</li>
+                        <li>innerWidth() 메서드는 선택한 요소의 가로 값(패딩 포함)을 가져오거나 설정합니다.</li>
+                        <li>outerWidth() 메서드는 선택한 요소의 가로 값(패딩/보더 포함)을 가져오거나 설정합니다.</li>
+                        <li>outerWidth(true) 메서드는 선택한 요소의 가로 값(패딩/보더/마진 포함)을 가져오거나 설정합니다.</li>
+                        <li>height() 메서드는 선택한 요소의 세로 값(패딩/보더/마진 불포함)을 가져오거나 설정합니다.</li>
+                        <li>innerHeight() 메서드는 선택한 요소의 세로 값(패딩 포함)을 가져오거나 설정합니다.</li>
+                        <li>outerHeight() 메서드는 선택한 요소의 세로 값(패딩/보더 포함)을 가져오거나 설정합니다.</li>
+                        <li>outerHeight(true) 메서드는 선택한 요소의 세로 값(패딩/보더/마진 포함)을 가져오거나 설정합니다.</li>
+                    </ul>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/cssom-view/#dom-element-clientleft" target="_blank">https://w3c.github.io/csswg-drafts/cssom-view/<wbr>#dom-element-clientleft</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- clientWidth, clientHeight,clientTop,clientLeft,offsetWidth,offsetHeight,offsetTop,offsetLeft -->

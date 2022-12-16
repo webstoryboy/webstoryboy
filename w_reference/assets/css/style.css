@@ -1,0 +1,994 @@
+body {
+    background: #000;
+}
+body.intro {
+    background: #F9FAFB;
+}
+body.intro #header {
+    background: #fff;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgb(229,231,235)
+}
+body.intro #header h1 {
+    color: #000;
+}
+body.intro #footer {
+    background: #fff;
+    backdrop-filter: blur(10px);
+}
+
+/* container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* header */
+#header {
+    position: fixed;
+    left: 0; top: 0;
+    z-index: 10000;
+    width: 100%;
+    background: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'NexonLv1Gothic';
+}
+#header h1 {
+    color: #fff;
+    padding: 20px 20px 18px 60px;
+    font-size: 1rem;    
+} 
+#header h1 a {
+    color: #fff;
+    font-family: 'NexonLv1Gothic';
+}
+#header nav {
+    margin-right: 10px;
+}
+#header nav li a {
+    color: #fff;
+    padding: 10px 20px;
+    background: #5c43f5;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+/* footer */
+#footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 100px;
+}
+#footer a {
+    font-family: 'NexonLv1Gothic';
+    color: rgb(182, 182, 182);
+    font-size: 14px;
+}
+
+/* aside */
+#aside {
+    position: fixed;
+    left: 0; top: 0px; bottom: 0px;
+    z-index: 10000;
+    width: 500px; height: 100vh;
+    border-radius: 0 0 10px 0;
+    left: -500px;
+    background: #fff;
+    transition: left 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#aside.nav-open {
+    left: 0;
+}
+#aside button {
+    position: absolute;
+    right: -56px;
+    top: 2px;
+    width: 56px; height: 56px;
+    border-radius: 0 10px 10px 0;
+    transition: all 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#aside button span {
+    background: #000;
+    width: 22px; height: 2px;
+    display: block;
+    margin-left: 16px;
+}
+#aside button span::before {
+    content: '';
+    width: 22px; height: 2px;
+    background: #000;
+    position: absolute;
+    left: 16px; top: 19px;
+}
+#aside button span::after {
+    content: '';
+    width: 22px; height: 2px;
+    background: #000;
+    position: absolute;
+    left: 16px; bottom: 19px;
+}
+#aside button.open span {
+    opacity: 1;
+    background: rgb(255, 255, 255);;
+}
+#aside button.open span::before {
+    transform: rotate(45deg);
+    top: 27px;
+}
+#aside button.open span::after {
+    transform: rotate(-45deg);
+    bottom: 27px;
+}
+
+#aside .chapter {
+    font-family: 'NexonLv1Gothic';
+    overflow-y: scroll;
+    width: 500px; height: 100vh;
+    border-right: 1px solid #ccc;
+}
+#aside .chapter .chapter-title {
+    padding: 16px 30px 10px 30px;
+    color: #705df2;
+    border-bottom: 1px solid #ccc;
+}
+#aside .chapter .chapter-title .label {
+    font-size: 14px;
+    color: #000;
+}
+#aside .chapter .chapter-title .class {
+    font-size: 24px;
+}
+#aside .chapter .chapter-sub {
+    padding: 20px;
+}
+#aside .chapter .chapter-sub ul li {
+    margin-bottom: 5px;
+}
+#aside .chapter .chapter-sub ul li a {
+    color: #000;
+    padding: 14px 30px;
+    display: block;
+    font-size: 18px;
+    opacity: 1;
+    transition: all 0.4s;
+}
+#aside .chapter .chapter-sub ul li a:hover, 
+#aside .chapter .chapter-sub ul li.active a {
+    background: #1a1a1a;
+    border-radius: 50px;
+    opacity: 1;
+    color: #fff;
+}
+
+/* lesson */
+#lesson {
+    position: fixed;
+    right: 20px; 
+    bottom: -400px;
+    width: 500px;
+    height: 400px;
+    z-index: 10000;
+    background: #1a1a1a;
+    border-radius: 10px 0 0 0;
+    font-family: 'NexonLv1Gothic';
+    transition: all 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+#lesson.open {
+    bottom: 0;
+}
+#lesson button {
+    position: absolute;
+    top: -57px; 
+    right: 0;
+    background: #1a1a1a;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 16px 30px 14px 50px;
+    display: inline-block;
+    font-family: 'NexonLv1Gothic';
+    font-size: 18px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+    text-align: left;
+    cursor: pointer;
+}
+#lesson button::before {
+    content: '';
+    background-image: url(../img/icon.svg);
+    background-position: 0 -25px;
+    width: 20px; 
+    height: 20px;
+    position: absolute;
+    left: 19px; top: 18px;
+}
+#lesson .link {
+    color: #fff;
+    padding: 40px 30px;
+}
+#lesson .link li {
+    padding-bottom: 3px;
+}
+#lesson .link li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* youtube */
+#youtube {
+    margin-top: 100px;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+#youtube .video {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 56.15%;
+}
+#youtube .video .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#youtube .video .icon span {
+    margin-left: 5px;
+    background: red;
+    display: inline-block;
+}
+#youtube .video .icon span:hover {
+    background: blue;
+}
+#youtube .video.none {
+    position: relative;
+}
+#youtube .video.none::before {
+    content: '준비중';
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    background: #2e1ba9;
+    z-index: 10;
+}
+#youtube .video iframe {
+    z-index: 1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#youtube .video.absolute {
+    position: fixed;
+    left: 10px;
+    bottom: 33px;
+    z-index: 20000;
+    width: 605px;
+    height: 340px;
+    padding-top: 50px;
+    background: #5c43f5;
+    border-radius: 10px 10px 0 0;
+}
+#youtube .video.absolute.none {
+    position: absolute;
+    display: none;
+}
+#youtube .video.absolute iframe {
+    margin-top: 33px;
+}
+#youtube .desc {
+    display: flex;
+}
+#youtube .desc .left {
+    width: 50%;
+    background: #705df2;
+    padding: 40px;
+    border-radius: 0 0 0 10px;
+    font-family: 'NexonLv1Gothic';
+    color: #fff;
+}
+#youtube .desc .left .num {
+    font-size: 26px;
+}
+#youtube .desc .left .title {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+#youtube .desc .left .difficulty span {
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 2px 10px;
+    font-size: 0.8em;
+}
+#youtube .desc .right {
+    width: 50%;
+    background: #6151D2;
+    border-radius: 0 0 10px 0px;
+    padding: 40px;
+    color: #fff;
+    font-family: 'NexonLv1Gothic';
+}
+#youtube .desc .right h3 {
+    margin-bottom: 10px;
+}
+#youtube .desc .right a {
+    background: #fff;
+    padding: 10px 40px;
+    display: inline-block;
+    border-radius: 40px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+#youtube .desc .right a.black {
+    background: #433992;
+    color: #fff;
+}
+#youtube.none {
+    display: none;
+}
+
+/* explanation */
+#explanation {
+    font-family: 'NexonLv1Gothic';
+    color: #fff;
+    word-break: keep-all;
+}
+#explanation h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    margin-top: 120px;
+}
+#explanation p {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    font-weight: 300;
+    position: relative;
+}
+#explanation a:hover {
+    border-bottom: 1px dotted #000;
+    color: #000;
+}
+#explanation pre {
+    margin-top: 0;
+}
+#explanation p code {
+    font-family: 'NexonLv1Gothic';
+    font-size: 0.9em;
+    background: #433992;
+    color: #fff;
+    padding: 5px 4px 4px 4px;
+    vertical-align: 2px;
+    border-radius: 5px;
+}
+#explanation p[data-num]::before {
+    content: attr(data-num);
+    position: absolute;
+    left: -30px; 
+    top: -1px;
+    opacity: 0.3;
+}
+#explanation .detail {
+    font-family: 'NexonLv1Gothic';
+    color: #9a92dd;
+    text-decoration: underline;
+    font-weight: 500;
+}
+#explanation .code_link li {
+    display: inline-block;
+    margin-bottom: 65px;
+    position: relative;
+}
+#explanation .code_link li a {
+    color: #fff;
+    background: #222;
+    padding: 7px 20px 5px 20px;
+    display: inline-block;
+    border-radius: 30px;
+}
+#explanation .code_link li.active a {
+    background: #fff;
+    color: #000;
+}
+#explanation .code_link li .sub {
+    position: absolute;
+    left: 0; 
+    top: 40px;
+    width: 500px;
+}
+#explanation .code_link li .sub li {
+    display: inline;
+}
+#explanation .code_link li .sub li a {
+    width: 30px; height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0;
+    background: #222;
+    color: #fff;
+    letter-spacing: -1px;
+}
+#explanation .code_link li .sub li.last a {
+    width: auto;
+    padding: 1px 10px 0 10px;
+    margin-right: 5px;
+}
+#explanation .code_link li .sub li.last a:last-child {
+    visibility: hidden;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    line-height: 1.9;
+}
+#explanation .code_link li .sub li.last.active a:last-child {
+    visibility: visible;
+}
+#explanation .code_link li .sub li.active a {
+    background: #fff;
+    color: #000;
+}
+#explanation .refer li a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+#explanation .refer li a:hover {
+    border-bottom: 1px solid #fff;
+}
+#explanation .code_view > div:first-child {
+    display: block;
+}
+#explanation .code_view > div {
+    display: none;
+}
+#explanation .soFar {
+    width: 100%;
+}
+#explanation .soFar .click {
+    background: #705df2;
+    text-align: center;
+    border-radius: 20px;
+    margin: 0 0 20px;
+    cursor: pointer;
+}
+#explanation .none {
+    display: none;
+}
+
+#explanation hr {
+    display: block;
+    height: 0;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.12);
+    box-sizing: content-box;
+    overflow: visible;
+    margin: 50px 0;
+}
+#explanation h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+#explanation .blue {
+    background: #f4f8fa;
+    padding: 22px 20px 18px 20px;
+    margin-bottom: 10px;
+}
+#explanation h3 {
+    margin-top: 50px;
+}
+#explanation h4 {
+    font-size: 18px;
+    display: inline-block;
+    color: #fff;
+    background: #000;
+    padding: 4px 8px 3px 8px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+#explanation h4 a {
+    color: #fff;
+}
+#explanation ul {
+    padding-left: 15px;
+}
+#explanation ul li {
+    font-size: 16px;
+    line-height: 1.8;
+    list-style: disc;
+    font-weight: 300;
+}
+#explanation .sample h5 {
+    border-bottom: 1px solid #e6e6e6;
+    background: #f2f2f2;
+    border-radius: 5px 5px 0 0;
+    padding: 12px 10px 10px 20px !important;
+    font-size: 16px !important;
+}
+#explanation .sample .sampleView {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px;
+}
+#explanation .sample .sampleBtnNone {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 20px 20px 20px;
+}
+#explanation .sample {
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    color: #666;
+    margin-bottom: 10px;
+}
+#explanation .sample .none {
+    display: none;
+}
+#explanation .sample p {
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+#explanation .sample pre code {
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 0;
+}
+#explanation .sample .sampleBtn {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px 20px 10px 20px;
+}
+#explanation .sample .sampleDesc {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+} 
+#explanation .sample .sampleBtn a {
+    border: 1px solid #e6e6e6;
+    border-radius: 100px;
+    white-space: nowrap;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: all 0.2s;
+    color: #666;
+}
+#explanation .sample .sampleBtn a:hover {
+    border-color: #FF4B4B;
+    color: #FF4B4B;
+}
+#explanation .sample .sampleOption {
+    border-bottom: 1px solid #e6e6e6;
+    padding: 20px;
+}
+#explanation .sample .sampleOption .option {
+	display: inline-block;
+	border: 1px solid #e6e6e6;
+	border-radius: 100px;
+}
+#explanation .sample .sampleOption .option .one {
+	border-radius: 100px;
+	border-radius: 100px;
+	white-space: nowrap;
+	padding: 10px 20px;
+	display: inline-block;
+	color: #666;
+}
+#explanation .sample .sampleOption .option .left {
+	border-right: 1px solid #e6e6e6;
+	padding: 10px 14px 8px 20px;
+	display: inline-block;
+}
+#explanation .sample .sampleOption .option .right {
+	padding: 8px 20px 2px 10px;
+	display: inline-block;
+	vertical-align: -5px;
+}
+#explanation .sample .sampleOption .option .right a {
+    display: inline-block;
+    margin-right: 3px;
+}
+#explanation .sample .sampleOption .option .right i {
+	display: inline-block;
+	cursor: pointer;
+	width: 20px; 
+    height: 20px;
+    border-radius: 50%;
+    background: #222;
+}
+#explanation .sample .sampleOption .option .right .plus {
+    position: relative;
+}
+#explanation .sample .sampleOption .option .right .plus::before {
+    content: '';
+    position: absolute;
+    left: 5px; top: 9px;
+    width: 10px; height: 2px;
+    background: #fff;
+    border-radius: 2px;
+}
+#explanation .sample .sampleOption .option .right .plus::after {
+    content: '';
+    position: absolute;
+    left: 9px; top: 5px;
+    width: 2px; height: 10px;
+    background: #fff;
+    border-radius: 2px;
+}
+#explanation .sample .sampleOption .option .right .minus {
+    position: relative;
+}
+#explanation .sample .sampleOption .option .right .minus::before {
+    content: '';
+    position: absolute;
+    left: 5px; top: 9px;
+    width: 10px; height: 2px;
+    background: #fff;
+    border-radius: 2px;
+}
+#explanation .sample .sampleCode .scMenu > div {
+    display: inline-block;
+    border-right: 1px solid #e6e6e6;
+    padding: 13px 20px 10px 20px;
+    cursor: pointer;
+}
+#explanation .sample .sampleCode .scCont > div {
+    display: none;
+}
+#explanation .sample .sampleCode .scCont > div.active {
+    display: block;
+}
+#explanation table {
+    margin-bottom: 20px;
+}
+#explanation table a {
+    color: #5c43f5;
+    border-bottom: 1px dotted #5c43f5;
+}
+#explanation table {
+    border: 1px solid #ddd;
+    width: 100%;
+    max-width: 100%;
+    background-color: #fff;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+#explanation .table table thead th {
+    text-align: left;
+    font-weight: normal;
+    background-color: #f5f5f5;
+}
+#explanation .table table th,
+#explanation .table table td {
+    border: 1px solid #ddd;
+    padding: 14px 12px 12px 12px;
+    vertical-align: middle;
+    text-align: left;
+    font-weight: normal;
+    /* font-weight: 300; */
+    font-size: 16px;
+}
+#explanation .table table tr:nth-child(even) > th,
+#explanation .table table tr:nth-child(even) > td {
+    background-color: #f5f5f5;
+}
+#explanation table .icon {
+    width: 16px;
+    line-height: 1.8;
+    vertical-align: middle;
+}
+#explanation .table .ce {
+    text-align: center;
+}
+#explanation .compatibility thead > tr > th img {
+    width: 30px;
+    display: block;
+    margin: 0 auto
+}
+#explanation .compatibility > thead > tr > th {
+    position: relative;
+}
+#explanation .compatibility > thead > tr > th em {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    font-size: 10px;
+    background: rgb(196, 196, 196);
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* intro */
+.intro {
+    margin-top: 150px;
+    color: #000;
+}
+.intro.bg {
+    background: #f7f6ff;
+    padding-top: 100px;
+}
+.intro article > h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.intro article > p {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(229,231,235);
+    color: rgb(107,114,128);
+}
+.intro-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+.intro-wrap h3 {
+    width: 30%;
+    font-size: 20px;
+    margin-bottom: 100px;
+}
+.intro-wrap .list {
+    width: 70%;
+    margin-bottom: 100px;
+}
+.intro-wrap .list li {
+    border-bottom: 1px solid rgb(229,231,235);
+}
+.intro-wrap .list li a {
+    color: #000;
+    padding: 10px 0;
+    display: block;
+    transition: all 0.3s;
+}
+.intro-wrap .list li:hover a {
+    opacity: 0.4;
+}
+
+
+
+/* sampleBtn */
+#youtube .sampleBtn {
+    position: relative;
+    padding-left: 54px !important;
+}
+#youtube .sampleBtn::before {
+    content: '';
+    background-image: url(../img/icon.svg);
+    background-position: -20px -20px;
+    background-size: 400px 400px;
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 30px; top: 11px;
+}
+#youtube .sampleBtn2 {
+    position: relative;
+    padding-left: 54px !important;
+}
+#youtube .sampleBtn2::before {
+    content: '';
+    background-image: url(../img/icon.svg);
+    background-position: -40px 0px;
+    background-size: 400px 400px;
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    left: 30px; top: 11px;
+}
+#youtube .sampleBtn3 {
+    position: relative;
+    padding-left: 54px !important;
+}
+#youtube .sampleBtn3::after {
+    content: '';
+    background-image: url(../img/icon.svg);
+    background-position: -60px 0px;
+    background-size: 400px 400px;
+    width: 20px; 
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 10px; top: 9px;
+}
+
+/* resizable */
+.ui-resizable-e {
+    cursor: e-resize;
+    width: 7px;
+    right: -5px;
+    top: 0;
+    height: 100%;
+}
+.ui-resizable-s {
+    cursor: s-resize;
+    height: 7px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+.ui-resizable-handle {
+    position: absolute;
+    font-size: 0.1px;
+    display: block;
+    -ms-touch-action: none;
+    touch-action: none;
+}
+.ui-icon {
+    display: none;
+}
+.absolute .ui-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: #5c43f5;
+    position: absolute;
+    right: 0;
+    bottom: -33px;
+    background-image: url(../img/icon.svg);
+    background-position: -78px 2px;
+    background-size: 400px 400px;
+}
+
+
+@media (max-width: 1220px){
+    .container {
+        width: 98%;
+    }
+    #explanation {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 960px){
+    #youtube .desc {
+        flex-direction: column;
+    }
+    #youtube .desc .left {
+        width: 100%;
+        border-radius: 0;
+    }
+    #youtube .desc .right {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+/* highlight */
+.highlight {
+    background: #0f0d1f;
+    width: 100%;
+    padding: 1em;
+    border-radius: 10px;
+}
+.highlight * {
+    border: 1px dashed #fff;
+    padding: 0.5rem;
+    margin: 0.75rem;
+    cursor: help;
+    position: relative;
+    transition: all 0.3s ease-out;
+    border-radius: 0.1875em;
+}
+.highlight *:hover, .highlight *:focus {
+    border-style: solid;
+    border-color: #5551ff;
+    box-shadow: 0 0 0.25em #5551ff, inset 0 0 0.25em #5551ff;
+    outline: none;
+}
+.highlight *::after {
+    content: attr(class);
+    position: absolute;
+    left: 0.5em;
+    top: -0.875em;
+    font-size: 0.5625rem;
+    letter-spacing: 0.1em;
+    padding: 0.25em 0.5em;
+    font-weight: normal;
+    color: #fff;
+    white-space: nowrap;
+    background: #0f0d1f;
+    text-transform: none;
+    line-height: 1;
+    transition: all 0.3s ease-out;
+}
+.highlight *:hover::after {
+    color: #5551ff;
+}
+.highlight [fakeimage] {
+    height: 100px;
+    max-width: 200px;
+}
+
+.highlight .card {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* layout */
+.layout {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.culumn6 {
+    width: 49%;
+} 
+
+/* media */
+@media (max-width: 800px) {
+    .container {width: 92%;}
+    #aside {top: 4px;}
+    #header {width: 100%; overflow: hidden; text-align: center;}
+    #header nav {display: none;}
+    #header h1 {width: 100%; height: auto; padding: 10px;}
+    #explanation {padding: 0px;}
+    #explanation h2 {font-size: 26px; margin-top: 70px; margin-bottom: 20px;}
+    #explanation p {font-size: 14px; line-height: 1.7; font-weight: 500;}
+    #explanation ul li {font-size: 14px; line-height: 1.7; font-weight: 500;}
+    #explanation .blue {padding: 10px;}
+    #explanation hr {margin: 20px 0;}
+    #explanation h3 {display: none;}
+    #explanation h4 {margin-top: 30px; font-size: 18px; padding: 3px 10px 2px 10px;}
+    #explanation .sample h5 {padding: 5px 10px 4px 10px !important; font-size: 14px !important;}
+    #explanation .sample .sampleView {padding: 10px;}
+    #explanation .sample .sampleBtnNone {padding: 10px;}
+    #explanation .sample .sampleCode .scMenu > div {padding: 10px; font-size: 14px;}
+    #explanation .table table th, #explanation .table table td {padding: 7px 10px; font-size: 14px;}
+    #explanation .table {overflow-x: scroll;}
+    #explanation .table table {width: 600px;}
+    #explanation .table .compatibility {width: 800px;}
+    #explanation .sample pre code.hljs {padding: 10px;}
+    pre[class*=language-] {padding: 1em !important;}
+    code[class*=language-], pre[class*=language-] {font-size: 14px !important;}
+    #youtube .desc .left {padding: 20px;}
+    #youtube .desc .right {padding: 20px;}
+    #youtube .desc .left .title {font-size: 22px;}
+    #youtube .desc .right h3 {display: none;}
+}
+
+
+
+
+
+/* white */
+.white {
+    background: #fff;
+    color: #000;
+}
+.white #header {
+    background: #fff;
+    color: #000;
+    border-bottom: 1px solid rgba(0, 0, 0, .12)
+}
+.white #header h1 a {
+    color: #000;
+}
+.white #explanation {
+    color: #000;
+}
+.white #explanation p[data-num]::before {
+    opacity: 0.7;
+}
+.white .highlight {
+    background: #2A283F;
+}
+.white .highlight *::after {
+    background: #2A283F;
+}
+.white #explanation p code {
+    background: #8b82e2
+}
+

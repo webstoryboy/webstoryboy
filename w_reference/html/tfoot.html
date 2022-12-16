@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/HTML</span>
+                <h1 class="title">&lt;tfoot&gt; 태그는 표의 본문 영역 그룹을 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 12. 6.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>&lt;tfoot&gt;</h2>
+                    <p>
+                        &lt;tfoot&gt; 태그는 표의 푸터 영역 그룹을 설정합니다.
+                        푸터 영역이 필요없다면 생략 가능합니다.
+                    </p>
+
+                    <p>
+                        테이블은 테이터를 포함하는 셀의 행과 열로 구성된 정보표입니다. 
+                        예전에는 테이블을 이용해서 레이아웃을 표현한 적도 있지만, 
+                        웹표준을 준수해야 하는 현재는 테이블을 이용해서 레이아웃을 만드는 것은 적절하지 않습니다. 
+                        테이블을 쓰기 위해서는 즉 표를 만들기 위해서는 제목, 설명, 셀, 셀합치기, 표 구조, 셀 그룹 등 여러가지를 신경써야 합니다.
+                    </p>
+                    <p>
+                        테이블은 제목을 표시하기 위해 &lt;caption&gt;을 사용하고,
+                        셀 요소를 그룹화하기 위해 &lt;colgroup&gt;과 &lt;col&gt;을 사용합니다. 
+                        테이블 전체 구조를 분리하기 위해 &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;를 사용하며, 
+                        행과 열을 나타내는 &lt;tr&gt;, &lt;td&gt;, &lt;th&gt; 등을 사용합니다. 
+                        여기에 접근성을 위해 scope 속성을 사용하고 셀의 병합을 위해 colspan과 rowspan을 사용하게 됩니다.
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>요소</th>
+                                    <td>인라인 요소(Inline Element)</td>
+                                </tr>
+                                <tr>
+                                    <th>닫는 태그</th>
+                                    <td>닫는 태그 사용(&lt;tfoot&gt; ~ &lt;/tfoot&gt;)</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>HTML4</td>
+                                </tr>
+                                <tr>
+                                    <th>시각적 표현</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★★★☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>&lt;tfoot&gt; 태그는 표의 푸터 영역 그룹을 설정합니다.</li>
+                    </ul>
+
+                    <h3>표와 관련된 태그</h3>
+                    <ul>
+                        <li>&lt;table&gt; 태그는 표를 설정합니다.</li>
+                        <li>&lt;thead&gt; 태그는 표의 헤더 영역 그룹을 설정합니다.</li>
+                        <li>&lt;tbody&gt; 태그는 표의 본문 영역 그룹을 설정합니다.</li>
+                        <li>&lt;tfoot&gt; 태그는 표의 푸터 영역 그룹을 설정합니다.</li>
+                        <li>&lt;caption&gt; 태그는 표의 제목을 설정합니다.</li>
+                        <li>&lt;colgroup&gt; 태그는 표의 열을 묶는 그룹을 설정합니다.</li>
+                        <li>&lt;col&gt; 태그는 &lt;colgroup&gt; 요소에 속하는 각 열의 속성을 설정합니다.</li>
+                        <li>&lt;tr&gt; 태그는 표의 행을 설정합니다.</li>
+                        <li>&lt;td&gt; 태그는 표의 열(셀)을 설정합니다.</li>
+                        <li>&lt;th&gt; 태그는 행이나 열에 타이틀을 설정합니다.</li>
+                        <li>border-collapse 속성은 표의 테두리 분리 여부를 설정합니다.</li>
+                        <li>border-spacing 속성은 표의 테두리 간격을 설정합니다.</li>
+                    </ul>
+
+                    <!-- Sample1 -->
+                    <style>
+                        .table-box table {
+                            width: 100%;
+                        }
+                        .table-box table th {
+                            background: #eef6ff;
+                            font-weight: normal;
+                        }
+                        .table-box table th, 
+                        .table-box table td {
+                            border: 1px solid #ccc;
+                            padding: 10px;
+                            color: #666;
+                            text-align: center;
+                        }
+                        .table-box table tfoot td {
+                            background: #ffeded;
+                        }
+                    </style>
+    
+                    <h3>예제1(Sample)</h3>
+                    <div class="sample">
+                        <h4>테이블 기본 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="table-box">
+                                <table>
+                                    <caption>표 제목 설정</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>표 제목1</th>
+                                            <th>표 제목2</th>
+                                            <th>표 제목3</th>
+                                            <th>표 제목4</th>
+                                            <th>표 제목5</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>표 내용1</td>
+                                            <td>표 내용1</td>
+                                            <td>표 내용1</td>
+                                            <td>표 내용1</td>
+                                            <td>표 내용1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>표 내용2</td>
+                                            <td>표 내용2</td>
+                                            <td>표 내용2</td>
+                                            <td>표 내용2</td>
+                                            <td>표 내용2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>표 내용3</td>
+                                            <td>표 내용3</td>
+                                            <td>표 내용3</td>
+                                            <td>표 내용3</td>
+                                            <td>표 내용3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>표 내용4</td>
+                                            <td>표 내용4</td>
+                                            <td>표 내용4</td>
+                                            <td>표 내용4</td>
+                                            <td>표 내용4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>표 내용5</td>
+                                            <td>표 내용5</td>
+                                            <td>표 내용5</td>
+                                            <td>표 내용5</td>
+                                            <td>표 내용5</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>푸터1</td>
+                                            <td>푸터1</td>
+                                            <td>푸터1</td>
+                                            <td>푸터1</td>
+                                            <td>푸터1</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div class="">
+<pre><code class="language-html">&lt;div class="table-box"&gt;
+    &lt;table&gt;
+        &lt;caption&gt;표 제목 설정&lt;/caption&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;표 제목1&lt;/th&gt;
+                &lt;th&gt;표 제목2&lt;/th&gt;
+                &lt;th&gt;표 제목3&lt;/th&gt;
+                &lt;th&gt;표 제목4&lt;/th&gt;
+                &lt;th&gt;표 제목5&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;표 내용1&lt;/td&gt;
+                &lt;td&gt;표 내용1&lt;/td&gt;
+                &lt;td&gt;표 내용1&lt;/td&gt;
+                &lt;td&gt;표 내용1&lt;/td&gt;
+                &lt;td&gt;표 내용1&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;표 내용2&lt;/td&gt;
+                &lt;td&gt;표 내용2&lt;/td&gt;
+                &lt;td&gt;표 내용2&lt;/td&gt;
+                &lt;td&gt;표 내용2&lt;/td&gt;
+                &lt;td&gt;표 내용2&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;표 내용3&lt;/td&gt;
+                &lt;td&gt;표 내용3&lt;/td&gt;
+                &lt;td&gt;표 내용3&lt;/td&gt;
+                &lt;td&gt;표 내용3&lt;/td&gt;
+                &lt;td&gt;표 내용3&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;표 내용4&lt;/td&gt;
+                &lt;td&gt;표 내용4&lt;/td&gt;
+                &lt;td&gt;표 내용4&lt;/td&gt;
+                &lt;td&gt;표 내용4&lt;/td&gt;
+                &lt;td&gt;표 내용4&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;표 내용5&lt;/td&gt;
+                &lt;td&gt;표 내용5&lt;/td&gt;
+                &lt;td&gt;표 내용5&lt;/td&gt;
+                &lt;td&gt;표 내용5&lt;/td&gt;
+                &lt;td&gt;표 내용5&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+        &lt;tfoot&gt;
+            &lt;tr&gt;
+                &lt;td&gt;푸터1&lt;/td&gt;
+                &lt;td&gt;푸터1&lt;/td&gt;
+                &lt;td&gt;푸터1&lt;/td&gt;
+                &lt;td&gt;푸터1&lt;/td&gt;
+                &lt;td&gt;푸터1&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tfoot&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre><code class="language-css">.table-box table {
+    width: 100%;
+    text-align: center;
+}
+.table-box table th {
+    background: #deeeff;
+    font-weight: normal;
+}
+.table-box table th, 
+.table-box table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #666;
+}
+.table-box table tfoot td {
+    background: #ffeded;
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre><code class="language-javascript">//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Sample1 -->
+
+                 
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="ce">&lt;tfoot&gt;</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>문서와 관련된 태그(Document Related Tag)</h3>
+                    <ul>
+                        <li>&lt;html&gt; 태그는 문서의 최상단 요소를 나타냅니다.</li>
+                        <li>&lt;head&gt; 태그는 문서 정보에 해당하는 내용을 설정합니다.</li>
+                        <li>&lt;body&gt; 태그는 문서 본문에 해당하는 내용을 설정합니다.</li>
+                        <li>&lt;base&gt; 태그는 문서의 기본 URL을 설정합니다.</li>
+                        <li>&lt;link&gt; 태그는 문서의 외부 리소스를 설정합니다.</li>
+                        <li>&lt;meta&gt; 태그는 문서의 메타 정보를 설정합니다.</li>
+                        <li>&lt;style&gt; 태그는 문서의 스타일 정보를 설정합니다.</li>
+                        <li>&lt;title&gt; 태그는 문서의 제목을 설정합니다.</li>
+                    </ul>
+
+                    <h3>섹션과 관련된 태그(Section Related Tag)</h3>
+                    <ul>
+                        <li>&lt;main&gt; 태그는 문서의 주요 콘텐츠 섹션을 설정합니다.</li>
+                        <li>&lt;section&gt; 태그는 주제별 그룹의 콘텐츠 섹션을 설정합니다.</li>
+                        <li>&lt;article&gt; 태그는 문서의 독립적인 컨텐츠 섹션을 설정합니다.</li>
+                        <li>&lt;aside&gt; 태그는 주요 콘텐츠의 보조적 컨텐츠 섹션을 설정합니다.</li>
+                        <li>&lt;header&gt; 태그는 문서의 소개 및 메뉴 그룹 컨텐츠 섹션을 설정합니다.</li>
+                        <li>&lt;nav&gt; 태그는 문서에 대한 메뉴 링크를 제공하는 섹션을 설정합니다.</li>
+                        <li>&lt;footer&gt; 태그는 문서 관련 정보 및 관련 링크 콘텐츠 섹션을 설정합니다.</li>
+                        <li>&lt;address&gt; 태그는 문서 관련 연락처 콘텐츠 섹션을 설정합니다.</li>
+                        <li>&lt;h1&gt;~&lt;h6&gt; 태그는 각 섹션의 제목을 설정합니다.</li>
+                    </ul>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://html.spec.whatwg.org/multipage/tables.html#the-tfoot-element" target="_blank">https://html.spec.whatwg.org/<wbr>multipage/tables.html<wbr>#the-tfoot-element</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                        
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+
+<!-- table, thead, tbody, tfoot, caption, colgroup, col, colgroup, tr, td, th, border-collapse, border-spacing -->

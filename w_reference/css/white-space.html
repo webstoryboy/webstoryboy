@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">white-space 속성은 줄바꿈 및 공백을 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 11. 19.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>white-space</h2>
+                    <p>
+                        white-space 속성은 줄바꿈 및 공백을 설정합니다.
+                        white-space: pre 속성은 &lt;pre&gt; 태그와 기능이 동일합니다. 
+                        마크업의 공백은 화면으로 표현될 때 한칸의 공백으로 인식합니다. 
+                        white-space 속성 마크업상의 공백을 화면에 그대로 표현해 주며,
+                        줄바꿈이나 줄 속성도 설정 할 수 있습니다.
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>
+                                        white-space : normal
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>text</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★☆☆☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>white-space 속성은 줄바꿈, 공백을 설정합니다.</li>
+                        <li>white-space : pre 속성은 &lt;pre&gt; 태그와 기능이 동일합니다.</li>
+                        <li>white-space 속성 중 공백은 마크업상의 공백을 화면에 그대로 표현해 줍니다.</li>
+                    </ul>
+
+                    <h3>줄바꿈과 관련된 속성 및 태그</h3>
+                    <ul>
+                        <li>white-space 속성은 줄바꿈, 공백 여부를 설정합니다.</li>
+                        <li>word-break 속성은 줄바꿈을 할때 단어를 기준으로 설정하는 속성입니다.</li>
+                        <li>overflow-wrap 속성은 의미가 없는 텍스트 줄바꿈을 설정합니다.</li>
+                        <li>hyphens 속성은 텍스트 줄바꿈 할때 하이픈으로 연결하는 방법을 설정합니다.</li>
+
+                        <li>&lt;br&gt; 태그는 텍스트 줄바꿈을 설정합니다.</li>
+                        <li>&lt;wbr&gt; 태그는 의미가 없는 텍스트 줄바꿈을 설정합니다.</li>
+                        <li>&lt;pre&gt; 태그는 공백을 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">white-space : normal | pre | nowrap | pre-wrap | break-spaces | pre-line</p>
+<pre class="bluePre"><code class="language-css">/* 기본 속성 */
+white-space: normal;
+white-space: pre;
+white-space: nowrap;
+white-space: pre-wrap;
+white-space: break-spaces;
+white-space: pre-line;
+
+/* 전역 속성 */
+white-space: inherit;   /* 상속 */
+white-space: initial;   /* 초기화 */
+white-space: revert;    /* 원래대로 돌리기 */
+white-space: unset;     /* 설정 해제 */
+</code></pre>
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>normal</th>
+                                    <td>white-space: normal;</td>
+                                    <td>줄바꿈을 인식하고, 공백을 인식하지 못합니다. 기본값</td>
+                                </tr>
+                                <tr>
+                                    <th>nowrap</th>
+                                    <td>white-space: nowrap;</td>
+                                    <td>줄바꿈, 공백을 인식하지 못합니다. 한 줄로 정렬</td>
+                                </tr>
+                                <tr>
+                                    <th>pre</th>
+                                    <td>white-space: pre;</td>
+                                    <td>줄바꿈은 인식 못하고, 공백만 인식합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>pre-wrap</th>
+                                    <td>white-space: pre-wrap;</td>
+                                    <td>줄바꿈, 공백을 인식합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>pre-line</th>
+                                    <td>white-space: pre-line;</td>
+                                    <td>줄바꿈 인식하고, 공백은 앞쪽만 인식합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>break-spaces</th>
+                                    <td>white-space: break-spaces;</td>
+                                    <td>줄바꿈, 공백을 글자를 기준으로 인식합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>white-space 속성 비교</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col>
+                                <col>
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>줄바꿈</th>
+                                    <th>공백</th>
+                                    <th>끝 공백</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>normal</th>
+                                    <td>줄바꿈 인식 함.</td>
+                                    <td>공백 인식 못함.</td>
+                                    <td>끝 공백 제거.</td>
+                                </tr>
+                                <tr>
+                                    <th>nowrap</th>
+                                    <td>줄바꿈 인식 못함.</td>
+                                    <td>공백 인식 못함.</td>
+                                    <td>끝 공백 제거.</td>
+                                </tr>
+                                <tr>
+                                    <th>pre</th>
+                                    <td>줄바꿈 인식 못함.</td>
+                                    <td>공백 인식 함.</td>
+                                    <td>끝 공백 유지.</td>
+                                </tr>
+                                <tr>
+                                    <th>pre-wrap</th>
+                                    <td>줄바꿈 인식 함.</td>
+                                    <td>공백 인식 함.</td>
+                                    <td>끝 공백 넘침.</td>
+                                </tr>
+                                <tr>
+                                    <th>pre-line</th>
+                                    <td>줄바꿈 인식 함.</td>
+                                    <td>공백 앞쪽만 인식 함.</td>
+                                    <td>끝 공백 제거.</td>
+                                </tr>
+                                <tr>
+                                    <th>break-spaces</th>
+                                    <td>줄바꿈 인식 함.</td>
+                                    <td>공백 인식 함.</td>
+                                    <td>끝 공백 줄바꿈.</td>
+                                </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Sample1 -->
+                    <style>
+                        .text-box .box {
+                            width: 100%;
+                            line-height: 1.4;
+                            text-align: justify;
+                            border: 1px solid #333;
+                            margin-bottom: 10px;
+                            white-space: normal;
+                        }
+                        .text-box.overflow .box {
+                            overflow: visible;
+                        }
+                        .text-box.white .box {
+                            white-space: normal;
+                        }
+                        .sampleBtn1.red, .sampleBtn2.red {
+                            border-color: #ff4b4b !important;
+                            color: #ff4b4b !important;
+                        }
+                        @media (max-width:800px){
+                            .text-box .box {
+                                width: 100%;
+                                margin-bottom: 2%;
+                            }
+                        }            
+                    </style>
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>줄바꿈 및 공백 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="text-box">
+                                <div class="box">
+                                    어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다. 서울에는 집이 없지만, 이곳에서는 나만의 집이 많다. 그 집은 비용도 들지 않고 언제든지 만들 수 있다. 나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거 같다. 그 한구석에 나만의 꿈을 설계하고 디자인을 하며 앞으로도 살고 싶다.
+                                </div>
+                                <div class="box">
+                                    운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다. 몰두 하다보면 길이 보이고 방향이 보이게 된다. 운이란 고된 노동과 노력을 통해 스스로 만들어 내는 것이다. 복권에 당첨되는 사람들은 금방 돈을 허비하게 된다. 단지 행운만 좋았기 때문이다. 운을 만든 사람은 돈을 날려먹거나 헛되게 쓰지 않는다. 열심히 할수록 운은 나에게 온다.
+                                </div>
+                                <div class="box">
+                                    정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다. 다름 사람에게도 정직해야 하지만 그 무엇보다 나 자신한테 정직해야 한다.
+                                </div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#">white-space: normal;</a>
+                            <a href="#">white-space: nowrap;</a>
+                            <a href="#">white-space: pre;</a>
+                            <a href="#">white-space: pre-wrap;</a>
+                            <a href="#">white-space: pre-line;</a>
+                            <a href="#">white-space: break-spaces;</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div class="active">
+<pre class="language-html"><code>&lt;div class="text-box"&gt;
+    &lt;div class="box"&gt;
+        어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다. 서울에는 집이 없지만, 이곳에서는 나만의 집이 많다. 그 집은 비용도 들지 않고 언제든지 만들 수 있다. 나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거 같다. 그 한구석에 나만의 꿈을 설계하고 디자인을 하며 앞으로도 살고 싶다.
+    &lt;/div&gt;
+    &lt;div class="box"&gt;
+        운이 좋은 사람은 없다. 단지 운을 만들 뿐이다. 운을 만들기 위해서는 내가 좋아하는 일이나 내가 하고 싶은 일에 몰두하면 된다. 몰두 하다보면 길이 보이고 방향이 보이게 된다. 운이란 고된 노동과 노력을 통해 스스로 만들어 내는 것이다. 복권에 당첨되는 사람들은 금방 돈을 허비하게 된다. 단지 행운만 좋았기 때문이다. 운을 만든 사람은 돈을 날려먹거나 헛되게 쓰지 않는다. 열심히 할수록 운은 나에게 온다.
+    &lt;/div&gt;
+    &lt;div class="box"&gt;
+        정직은 다른 사람보다 나에게 큰 의미를 부여해야 한다. 자신이 정직하지 않으면 진정으로 원하는 일을 열정적으로 밀고 나갈 수 없다. 마음에서 우러나오는 일을 해야 정직해지며 삶을 더 즐길 줄 알게 된다. 다름 사람에게도 정직해야 하지만 그 무엇보다 나 자신한테 정직해야 한다.
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.text-box .box {
+    width: 100%;
+    line-height: 1.4;
+    text-align: justify;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.text-box.overflow .box {
+    overflow: visible;
+}
+.text-box.white .box {
+    white-space: normal;
+}
+.sampleBtn1.red, .sampleBtn2.red {
+    border-color: #ff4b4b !important;
+    color: #ff4b4b !important;
+}
+@media (max-width:800px){
+    .text-box .box {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}       
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>const btn1 = document.querySelector("#sample1 .sampleBtn1");
+const btn2 = document.querySelector("#sample1 .sampleBtn2");
+const box1 = document.querySelector("#sample1 .text-box")
+
+btn1.addEventListener("click", (e)=> {
+    e.preventDefault();
+    box1.classList.toggle("overflow");
+    btn1.classList.toggle("red");
+    
+    if(box1.classList.contains("overflow")){
+        btn1.innerText = "white-space: normal";
+    } else {
+        btn1.innerText = "white-space: nowrap";
+    }
+})
+btn2.addEventListener("click", (e)=> {
+    e.preventDefault();
+    box1.classList.toggle("white");
+    btn2.classList.toggle("red");
+    
+    if(box1.classList.contains("white")){
+        btn2.innerText = "overflow: visible";
+    } else {
+        btn2.innerText = "overflow: hidden";
+    }
+})
+
+document.querySelectorAll("#sample1 .sampleBtn3 a").forEach(btn => {
+    btn.addEventListener("click", (e)=> {
+        e.preventDefault();
+        const text = btn.innerText;
+        document.querySelectorAll("#sample1 .text-box .box").forEach(box => {
+            box.setAttribute("style", text);
+        })
+    })
+});
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+     
+                    <script>
+                        const btn1 = document.querySelector("#sample1 .sampleBtn1");
+                        const btn2 = document.querySelector("#sample1 .sampleBtn2");
+                        const box1 = document.querySelector("#sample1 .text-box")
+                     
+                        document.querySelectorAll("#sample1 .sampleBtn a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.innerText;
+                                document.querySelectorAll("#sample1 .text-box .box").forEach(box => {
+                                    box.setAttribute("style", text);
+                                })
+                            })
+                        });
+                    </script>           
+                    <!-- //Sample1 -->
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">white-space</td>
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-text/#white-space-property" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-text/<wbr>#white-space-property</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                       
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- white-space,word-break,overflow-wrap,hyphens,br,wbr,pre -->

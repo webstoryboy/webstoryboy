@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">text-decoration-line 속성은 글자 라인의 위치 속성을 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 11. 9.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>text-decoration-line</h2>
+                    <p>
+                        text-decoration-line 속성은 라인의 위치를 설정합니다. 
+                        언더라인을 아래, 위 또는 중간에 설정할 수 있으며, 여러가지 라인을 동시에도 설정할 수 있습니다.
+                        라인의 컬러, 종류, 굵기도 설정이 가능하며, 글씨와 라인의 겹칩 현상, 포지션 값 등을 디테일하게 수정할 수 있습니다.
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>
+                                        text-decoration-line : underline
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>text</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★★☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>text-decoration-line 속성은 글자 라인의 위치 속성을 설정합니다.</li>
+                    </ul>
+
+                    <h3>텍스트 라인과 관련된 속성</h3>
+                    <ul>
+                        <li>text-decoration 속성은 글자 라인 속성을 일괄적으로 설정합니다.</li>
+                        <li>text-decoration-color 속성은 글자 라인의 색상 속성을 설정합니다.</li>
+                        <li>text-decoration-line 속성은 글자 라인의 위치 속성을 설정합니다.</li>
+                        <li>text-decoration-style 속성은 글자 라인의 종류 속성을 설정합니다.</li>
+                        <li>text-decoration-thickness 속성은 글자 라인의 굵기 속성을 설정합니다.</li>
+                        <li>text-decoration-skip-ink 속성은 언더 라인의 글씨 겹침을 설정합니다.</li>
+                        <li>text-underline-offset 속성은 언더 라인의 오프셋 값을 설정합니다.</li>
+                        <li>text-underline-position 속성은 언더 라인의 위치를 설정합니다.</li>
+                    </ul>
+
+                    <h3>텍스트와 관련된 속성</h3>
+                    <ul>
+                        <li>text-align 속성은 텍스트 정렬 방식을 설정합니다.</li>
+                        <li>text-align-last 속성은 문단의 마지막 텍스트 정렬 방식을 설정합니다.</li>
+                        <li>text-decoration 속성은 텍스트 라인 속성을 설정합니다.</li>
+                        <li>text-indent 속성은 문단 들여쓰기 속성을 설정합니다.</li>
+                        <li>text-justify 속성은 텍스트의 정렬 유형을 설정합니다.</li>
+                        <li>text-orientation 속성은 텍스트 문자의 방향을 설정합니다.</li>
+                        <li>text-rendering 속성은 최적화 렌더링을 설정합니다.</li>
+                        <li>text-overflow 속성은 텍스트 영역 속성을 설정합니다.</li>
+                        <li>text-shadow 속성은 텍스트 그림자를 설정합니다.</li>
+                        <li>text-transform 속성은 텍스트 대/소문자를 설정합니다.</li>
+                        <li>text-emphasis 속성은 텍스트에 강조 표시를 설정합니다.</li>
+                        <li>text-underline-offset 속성은 언더라인의 오프셋 값을 설정합니다.</li>
+                        <li>text-underline-position 속성은 언더라인의 위치를 설정합니다.</li>
+                        <li>text-combine-upright 속성은 문자 조합을 설정합니다.</li>
+                        <li>text-size-adjust 속성은 스마트폰에서 텍스트 비율을 설정합니다. </li>
+                        <li>text-fill-color 속성은 텍스트의 면 색상을 설정합니다. </li>
+                        <li>text-stroke 속성은 텍스트의 선 색상 및 굵기를 설정합니다.</li>
+                    </ul>
+
+                    <h3>폰트와 관련된 속성</h3>
+                    <ul>
+                        <li>font 속성은 폰트에 관한 설정을 일괄적으로 설정합니다.</li>
+                        <li>font-family 속성은 폰트 종류를 설정합니다.</li>
+                        <li>font-size 속성은 폰트 사이즈 속성을 설정합니다.</li>
+                        <li>font-size-adjust 속성은 소문자를 기준으로 폰트 크기를 설정합니다.</li>
+                        <li>font-style 속성은 폰트의 스타일을 설정합니다.</li>
+                        <li>font-weight 속성은 폰트의 두께를 설정합니다.</li>
+                        <li>font-stretch 속성은 폰트의 장평을 설정합니다.</li>
+                        <li>font-variant 속성은 영문 폰트의 소문자 표시 형태를 설정합니다.</li>
+                        <li>font-feature-settings 속성은 오픈 타입 글꼴의 세부사항을 설정합니다.</li>
+                        <li>font-kerning 속성은 커닝 기능을 사용할 것인지의 여부를 설정합니다.</li>
+                        <li>font-language-override 속성은 정의된 언어를 다른 언어로 설정합니다.</li>
+                        <li>font-optical-sizing 속성은 텍스트 렌더링을 통해 다양한 크기를 설정합니다.</li>
+                        <li>font-synthesis 속성은 누락된 텍스트의 합성 여부를 설정합니다.</li>
+                        <li>@font-face 속성은 웹폰트를 설정합니다.</li>
+                        <li>color 속성은 폰트의 색상을 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">text-decoration-line : none | underline | overline | line-through | blink</p>
+<pre class="bluePre"><code class="language-css">/* 기본 속성 */
+text-decoration-line : none;
+text-decoration-line : underline;
+text-decoration-line : overline;
+text-decoration-line : line-through;
+text-decoration-line : blink;
+
+/* 다중 속성 */
+text-decoration-line : underline overline;
+text-decoration-line : underline overline line-through;
+
+/* 전역 속성 */
+text-decoration-line: inherit;   /* 상속 */
+text-decoration-line: initial;   /* 초기화 */
+text-decoration-line: revert;  /* 원래대로 돌리기 */
+text-decoration-line: unset;   /* 설정 해제 */
+</code></pre>
+
+                   
+
+                    <!-- Sample1 -->
+                    <style>
+                        .text-box {
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                        }
+                        .text-box .box {
+                            width: 32%;
+                            line-height: 1.4;
+                        }
+                        .text-box li {
+                            text-decoration: underline;
+                        }
+                        .text-box li i {
+                            font-style: normal;
+                        }
+                        @media (max-width:800px){
+                            .text-box .box {
+                                width: 100%;
+                                margin-bottom: 2%;
+                            }
+                        }            
+                    </style>
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>text-decoration-line를 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="text-box">
+                                <ul>
+                                    <li><i>text-align</i> 속성은 텍스트 정렬 방식을 설정합니다.</li>
+                                    <li><i>text-align-last</i> 속성은 문단의 마지막 텍스트 정렬 방식을 설정합니다.</li>
+                                    <li><i>text-decoration</i> 속성은 텍스트 라인 속성을 설정합니다.</li>
+                                    <li><i>text-indent</i> 속성은 문단 들여쓰기 속성을 설정합니다.</li>
+                                    <li><i>text-justify</i> 속성은 텍스트의 정렬 유형을 설정합니다.</li>
+                                    <li><i>text-overflow</i> 속성은 텍스트 영역 속성을 설정합니다.</li>
+                                </ul>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#">text-decoration-line : none;</a>
+                            <a href="#">text-decoration-line : underline;</a>
+                            <a href="#">text-decoration-line : overline;</a>
+                            <a href="#">text-decoration-line : line-through;</a>
+                            <a href="#">text-decoration-line : blink;</a>
+                            <a href="#">text-decoration-line : underline overline;</a>
+                            <a href="#">text-decoration-line : overline underline line-through;</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div class="active">
+<pre class="language-html"><code>&lt;div class="text-box"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;i&gt;text-align&lt;/i&gt; 속성은 텍스트 정렬 방식을 설정합니다.&lt;/li&gt;
+        &lt;li&gt;&lt;i&gt;text-align-last&lt;/i&gt; 속성은 문단의 마지막 텍스트 정렬 방식을 설정합니다.&lt;/li&gt;
+        &lt;li&gt;&lt;i&gt;text-decoration&lt;/i&gt; 속성은 텍스트 라인 속성을 설정합니다.&lt;/li&gt;
+        &lt;li&gt;&lt;i&gt;text-indent&lt;/i&gt; 속성은 문단 들여쓰기 속성을 설정합니다.&lt;/li&gt;
+        &lt;li&gt;&lt;i&gt;text-justify&lt;/i&gt; 속성은 텍스트의 정렬 유형을 설정합니다.&lt;/li&gt;
+        &lt;li&gt;&lt;i&gt;text-overflow&lt;/i&gt; 속성은 텍스트 영역 속성을 설정합니다.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.text-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.text-box .box {
+    width: 32%;
+    line-height: 1.4;
+}
+.text-box li i {
+    font-style: normal;
+    text-decoration: underline;
+}
+@media (max-width:800px){
+    .text-box .box {
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}      
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>document.querySelectorAll("#sample1 .sampleBtn a").forEach(btn => {
+    btn.addEventListener("click", (e)=> {
+        e.preventDefault();
+        const text = btn.innerText;
+
+        document.querySelectorAll("#sample1 .text-box ul li i").forEach(li => {
+            li.setAttribute("style", text);
+        })
+    })
+});
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        document.querySelectorAll("#sample1 .sampleBtn a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.innerText;
+
+                                document.querySelectorAll("#sample1 .text-box ul li").forEach(li => {
+                                    li.setAttribute("style", text);
+                                })
+                            })
+                        });
+                    </script>           
+                    <!-- //Sample1 -->
+
+
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">text-decoration-line</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">none</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">underline</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">overline</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">line-through</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">blink</td>
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-text-decor/#propdef-text-decoration-line" target="_blank">https://w3c.github.io/csswg-drafts/<wbr>css-text-decor/#propdef-text-<wbr>decoration-line</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                       
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+
+<!-- text-decoration,text-decoration-color,text-decoration-line,text-decoration-style,text-decoration-thickness,text-decoration-skip-ink,text-underline-offset,text-underline-position -->

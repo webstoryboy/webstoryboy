@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="login.html">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>웹지엘</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog" class="tutor">
+            <div class="blog__title img2">
+                <span class="cate">Reference/Three.js</span>
+                <h1 class="title">Three.js 기본 셋팅을 설정하겠습니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 7. 4.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+
+                    <div class="blog__contents__intro">
+                        <div class="video nonex resizable draggable sampleBtn3">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="desc">
+                            <div class="left">
+                                <span class="num">01.</span>
+                                <div class="title">Three.js 설치하기</div>
+                                <span class="difficulty">난이도 <span>쉬움</span></span>
+                            </div>
+                            <div class="right">
+                                <div class="btn">소스 다운로드</div>
+                                <a href="#" target="_blank" class="sampleBtn">완성 화면 보기</a>
+                                <a href="#" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                                <a href="#" target="_blank" class="sampleBtn">영상 보기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //blog__contents__intro -->
+
+                    <h3>소개</h3>
+                    <p>
+                        안녕하세요!. 웹스토리보이입니다.
+                        오늘부터 Three.js를 공부해보겠습니다. 
+                        Three.js를 작업하기 전에 먼저 설치부터 작업하겠습니다. 
+                        Three.js를 작동하는 방법은 여러가지를 제공합니다.
+                        간단한 작업들은 다운을 받거나 CDN을 이용하는 것이 좋으며,
+                        프로젝트 규모가 커지거나 소스가 많아진다면 <code>webpack</code>이나 <code>npm</code>을 이용하는 것이 좋습니다. 
+                        여러분들 상황에 맞게 적절한 방법을 선택하여 적용하시면 됩니다.<br>
+                        1. 파일을 다운 받아서 작업하는 방법<br>
+                        2. CDN을 통해서 작업하는 방법<br>
+                        3. NPM을 이용해서 작업하는 방법<br>
+                        4. webPack을 이용해서 작업하는 방법<br>
+                        5. vite를 이용해서 작업하는 방법<br>
+                    </p>
+
+                    <h3>1. 파일을 다운 받아서 작업하는 방법</h3>
+                    <p>
+                        파일은 <a href="https://threejs.org/" target="_blank" class="line">three.js</a> 사이트에서 다운 받으면 된다. 
+                        build 폴더에 three.js 관련 파일들이 있고, 연동하고 확인해보면 Three.js 객체를 불러오는 것을 확인 할 수 있습니다.
+                        examples/jsm 폴더에는 여러가지 설정 파일들도 들어있어, 필요한 것은 연동하여 사용하면 됩니다.
+                    </p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+    &lt;html lang="ko"&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF-8"&gt;
+        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        &lt;title&gt;Three.js&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script src="build/three.min.js"&gt;&lt;/script&gt;
+        &lt;script&gt;
+            console.log(THREE)
+        &lt;/script&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>   
+
+                    <h3>2. CDN을 통해서 작업하는 방법</h3>
+                    <p>
+                        다운 받기 귀찮다면 CDN을 통해서 작업할 수 있습니다. 
+                        CDN은 검색을 통해서 적용할 수 있으며, 개인 서버에 올려서 작업이 가능합니다.
+                    </p>
+<pre><code class="language-html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.min.js"></script>
+</code></pre>   
+
+                    <h3>3. NPM을 이용해서 작업하는 방법</h3>      
+                    <p>
+                        node.js를 설치하고 NPM을 이용하여 설정하는 방법입니다.
+                        터미널을 이용해서 작업하기 때문에 설치가 쉽습니다. 
+                        터미널을 열고 다음과 같이 작성하면 파일들이 자동으로 생성됩니다.
+                        node_modules 폴더가 생기고 build, examples, src 폴더가 생성이 되며,
+                        파일을 만들고 작업하면 됩니다.
+                    </p>  
+<pre><code class="language-javascript">npm install --save three
+</code></pre>    
+                    
+                    <h3>4. webPack을 이용해서 작업하는 방법</h3>
+                    <p>
+                        webpack은 HTML, CSS, javascript 등의 파일을 하나로 압축하여 만들어주는 컴파일러입니다.
+                        처음에 사용하기 위해서는 설정해야 할 부분들이 많고, 복자하기 때문에
+                        보통 누군가가 잘 만들어 놓은 webpack을 사용하면 쓰기가 수월합니다.
+                        https://github.com/aakatev/three-js-webpack
+                    </p>
+<pre><code class="language-javascript">npm init</code></pre> 
+                    <p>npm을 초기화하기 위한 명령어입니다. 초기 셋팅에 필요한 정보를 설정하는 부분입니다.</p>
+
+<pre><code class="language-javascript">npm install -D webpack webpack-cli</code></pre>  
+                    <p>webpack을 인스톨하기 위해 webpack과 cli를 설치합니다. 
+                        node_modules 폴더가 생기고 다음과 같이 파일이 생성됩니다.
+                    </p>
+<pre><code class="language-javascript">"devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+}</code></pre>  
+                    <p>
+                        webpack.config.js 파일을 만들고 다음과 같이 셋팅을 합니다. 
+                    </p>
+<pre><code class="language-javascript">const path = require("path");
+
+module.exports = {
+    mode: "development",    // 개발 모드를 설정하고
+    entry: {                // 엔트리 파일을 설정하고
+        main: "./src/app.js",
+    },
+    output: {                               // 아웃풋 파일을 만듭니다.
+        path: path.resolve("./dist"),
+        filename: "[name].js",
+    },
+};
+</code></pre>  
+                    <p>
+                        app.js 파일을 만들고 다음과 같이 셋팅을 합니다. 
+                    </p>
+<pre><code class="language-javascript">import { view } from "./main.js";
+
+window.addEventListener("DOMContentLoaded", () => {
+    view();
+});
+</code></pre>  
+
+                    <p>
+                        main.js 파일을 만들고 다음과 같이 셋팅을 합니다. 
+                    </p>
+<pre><code class="language-javascript">export function view() {
+    console.log("hello world");
+}
+</code></pre>  
+                    <p>
+                        이렇게 하고 npm run build를 하면 dist 폴더가 생성되고 파일이 하나로 합쳐진 것을 볼 수 있습니다.
+                    </p>
+<pre><code class="language-javascript">{
+    "name": "three_webpack",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "build": "webpack"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0"
+    }
+}</code></pre>  
+                    <p>
+                        npm run build를 하기 전에 다음과 같이 셋팅을 해줘야 작동을 한다.
+                    </p>
+
+                    <h4>4.1 CSS 셋팅하기</h4>
+                    
+<pre><code class="language-javascript">npm i -D css-loader</code></pre>  
+                    <p>CSS를 사용하기 위해서는 css-loader를 설치해야 합니다.</p>
+
+<pre><code class="language-javascript">module: {
+    rules: [
+        {
+            test: /\.css$/,
+            use: ["css-loader"],
+        },
+    ],
+},
+</code></pre>  
+                    <p>webpack.config.js 파일에 다음을 추가합니다. 그럼 작동이 됩니다.</p>
+                    
+<pre><code class="language-javascript">npm i -D style-loader</code></pre> 
+                    <p>하지만 브라우저에는 아직 나오지 않습니다. 그래서 style-loader를 설치하여 화면에 표시할 것입니다.</p>
+
+<pre><code class="language-javascript">module: {
+    rules: [
+        {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"],
+        },
+    ],
+},
+</code></pre>    
+                    <p>style-loader를 추가하면 브라우저에 적용되는 것을 확인할 수 있습니다.</p>
+
+<pre><code class="language-javascript">npm i -D file-loader</code></pre> 
+
+                    <p>파일을 추가하기 위해서 file-loader를 설치합니다.</p>
+
+
+<pre><code class="language-javascript">module: {
+    rules: [
+        {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"],
+        },
+        {
+            test: /\.svg$/,
+            use: ["file-loader"],
+        },
+    ],
+},
+</code></pre>   
+                    <p>동일하게 모듈에 추가하면 이미지도 추가됨을 확인 할 수 있습니다.</p>
+
+<pre><code class="language-javascript">import Img from "./webpack.svg";
+
+export function view() {
+    document.querySelector("#app").innerHTML = `
+        &lt;h1&gt;hello world&lt;/h1&gt;
+        &lt;img src = "${Img}" alt="img" /&gt;
+    `;
+}
+</code></pre> 
+                    <p>main.js에도 이미지 파일을 추가하면 화면에 나오는 것을 확인 할 수 있습니다.</p>
+
+<pre><code class="language-javascript"> module: {
+    rules: [
+        {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"],
+        },
+        {
+            test: /\.svg$/,
+            use: [
+                {
+                    loader: "file-loader",
+                    options: {
+                        publicPath: "../dist",
+                    },
+                },
+            ],
+        },
+    ],
+},
+</code></pre> 
+                    <p>이미지가 안나올 경우 이미지 경로를 옵셥으로 설정하면 잘 나옵니다.</p>
+
+
+                    <h4>4.2 HTML 셋팅하기</h4>
+<pre><code class="language-javascript">npm i html-webpack-plugin -D</code></pre>
+
+
+
+
+                    
+
+
+
+
+
+
+                    <h3>5. vite를 이용해서 작업하는 방법</h3>
+
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+
+        const nav = document.querySelector(".blog__aside");
+        const navBtn = document.querySelector("#header .header__inner .left .star");
+
+        navBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            nav.classList.toggle("open");
+            // navBtn.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

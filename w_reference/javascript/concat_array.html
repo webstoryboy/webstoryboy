@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left"> 
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/Javascript</span>
+                <h1 class="title">concat 메서드는 매개변수로 전달된 배열을 받어, 결합된 새로운 배열을 반환합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 11. 7.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>concat()</h2>
+                    <p>
+                        concat() 메서드는 매개변수로 전달된 배열을 받어, 결합된 새로운 배열을 반환합니다.
+
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>유형(type)</th>
+                                    <td>String.prototype.concat() / Array.prototype.concat()</td>
+                                </tr>
+                                <tr>
+                                    <th>버전(version)</th>
+                                    <td>ES1</td>
+                                </tr>
+                                <tr>
+                                    <th>결과값(return)</th>
+                                    <td>문자열(String) or 배열(Array)</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★☆☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">
+                        "문자열".concat(문자열, 문자열,....)<br>
+                        "배열".concat(문자열, 문자열,....)
+                    </p>
+<pre class="bluePre"><code class="language-javascript">const str = "javascript";
+
+str.concat("reference");                //javascriptreference
+str.concat(" ","reference");            //javascript reference
+str.concat(", ","reference");           //javascript, reference
+str.concat(" + ","reference");          //javascript + reference
+str.concat(" ","refe"," ","rence");     //javascript refe rence
+str.concat(" ", ["refer","ence"]);      //javascript refer,ence
+
+const arr = ["java", "script"];
+
+arr.concat("reference")                 // ['java', 'script', 'reference']
+arr.concat(" ", "reference")            // ['java', 'script', ' ', 'reference']
+arr.concat("refer", "ence")             // ['java', 'script', 'refer', 'ence']
+arr.concat(["refer", "ence"])           // ['java', 'script', 'refer', 'ence']
+arr.concat("+", ["refer", "ence"])      // ['java', 'script', '+', 'refer', 'ence']
+</code></pre>
+                    <ul>
+                        <li>문자열(string) : 문자열을 설정합니다.</li>
+                        <li>배열(array) : 배열을 설정합니다.</li>
+                    </ul>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>concat() 메서드는 매개변수로 전달된 배열을 받어, 결합된 새로운 배열을 반환합니다.</li>
+                        <li>concat() 메서드는 기존의 배열을 변경하지 않습니다.</li>
+                        <li>concat() 메서드 보다 (+, +=) 연산자를 사용하는 것이 속도 및 성능이 더 좋습니다.</li>
+                        <li>at(), concat(), includes(), indexOf(), lastIndexOf(), slice(), toString() 메서드는 배열(array) 또는 문자열(string)에서 둘다 사용 가능합니다.</li>
+                    </ul>
+
+                    <style>
+                        #sample1 .indexof-box {
+                            text-align: center;
+                        }
+                        #sample1 .indexof-box .alert {
+                            padding-top: 10px;
+                        }
+                        #sample1 .indexof-box span {
+                            border: 1px solid #e6e6e6;
+                            padding: 10px 20px;
+                            display: inline-block;
+                            margin-bottom: 10px;
+                            background-color: #A2CBFA;
+                            border: 1px solid #4390E1;
+                            color: #fff;
+                            border-radius: 40px;
+                        }
+                        #sample1 .indexof-box em {
+                            background-color: #A2CBFA;
+                            border: 1px solid #4390E1;
+                            color: #fff;
+                            padding: 2px 5px;
+                        }
+                        #sample1 .indexof-box strong {
+                            border-bottom: 1px solid #000;
+                        }
+                    </style>
+                    <!-- Sample1 -->
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>버튼을 클릭하면, 배열을 결합하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="indexof-box">
+                                <span class="text">[1, 2, 3, 4, 5]</span>
+                                <p class="alert">클릭하면 여기에 정보가 나옵니다.</p>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn center">
+                            <a href="#">6</a>
+                            <a href="#">6,7</a>
+                            <a href="#">6,7,8</a>
+                            <a href="#">😃</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="charAt-box"&gt;
+    &lt;span&gt;javascript&lt;/span&gt;
+    &lt;p class="alert"&gt;클릭하면 여기에 정보가 나옵니다.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                            <div>
+<pre class="language-css"><code>#sample1 .indexof-box {
+    text-align: center;
+}
+#sample1 .indexof-box .alert {
+    padding-top: 10px;
+}
+#sample1 .indexof-box span {
+    border: 1px solid #e6e6e6;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+    background-color: #A2CBFA;
+    border: 1px solid #4390E1;
+    color: #fff;
+    border-radius: 40px;
+}
+#sample1 .indexof-box em {
+    background-color: #A2CBFA;
+    border: 1px solid #4390E1;
+    color: #fff;
+    padding: 2px 5px;
+}
+#sample1 .indexof-box strong {
+    border-bottom: 1px solid #000;
+}
+</code></pre>
+                            </div>
+                            <div class="active">
+<pre class="language-javascript"><code>const btnAll = document.querySelectorAll(".sampleBtn a");
+const btnAlert = document.querySelector(".indexof-box .alert");
+
+const arr = [1, 2, 3, 4, 5];
+
+btnAll.forEach(btn => {
+    btn.addEventListener("click", (e) => {
+        e.preventDefault();
+        const char = btn.innerText;     //클릭한 버튼의 글씨
+        const result = arr.concat(char);
+
+        btnAlert.innerHTML = `${char} 배열을 추가하면 &lt;em&gt;${result}&lt;/em&gt; 입니다.`;
+    });
+});
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                        const btnAll = document.querySelectorAll(".sampleBtn a");
+                        const btnAlert = document.querySelector(".indexof-box .alert");
+
+                        const arr = [1, 2, 3, 4, 5];
+
+                        btnAll.forEach(btn => {
+                            btn.addEventListener("click", (e) => {
+                                e.preventDefault();
+                                const char = btn.innerText;     //클릭한 버튼의 글씨
+                                const result = arr.concat(char);
+
+                                btnAlert.innerHTML = `${char} 배열을 추가하면 <em>${result}</em> 입니다.`;
+                            });
+                        });
+                    </script>
+
+
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">concat()</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/concat" target="_blank">https://developer.mozilla.org/<wbr>ko/docs/Web/JavaScript/Reference/<wbr>Global_Objects/Array/concat</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+<!-- at,concat,copyWithin,entries,keys,fill,find,findIndex,findLast,findLastIndex,flat,flatMap,forEach -->
+

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left"> 
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Tutorial/Portfolio</span>
+                <h1 class="title">포트폴리오 메인 페이지 만들기 - GSAP, THREE.JS</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 12. 15.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents tutorial">
+                    <h2>소개</h2>
+                    <p>
+                        안녕하세요! 오늘은 포트폴리오 메인페이지를 만들어 보겠습니다. 
+                        배경에 THREE.JS<sup>1</sup> 효과와 메인 로딩애니메이션은 GSAP<sup>2</sup>를 사용할 것입니다.
+                        사이트는 studyhall<sup>3</sup> 사이트를 참고하였으며, 폰트는 pangrampangram<sup>4</sup>에서 무료 버전과 구글폰트를 사용하였습니다.
+                        그럼 시작해보겠습니다.
+                    </p>
+
+                    <hr>
+
+                    <h3>01. 기본 코딩</h3>
+                    <p data-num="01">기본 골격부터 작업하겠습니다. 헤더, 메인, 푸터 영역을 설정하겠습니다.</p>
+<pre><code class="language-html">&lt;header id="header"&gt;&lt;/header&gt;&lt;!-- //header --&gt;
+&lt;main id="main"&gt;&lt;/main&gt;&lt;!-- //main --&gt;
+&lt;footer id="footer"&gt;&lt;/footer&gt;&lt;!-- //footer --&gt;
+</code></pre>
+                    
+                    <p data-num="02">기본 css를 설정하겠습니다.</p>
+<pre><code class="language-css">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #0B130D;
+}
+</code></pre>
+                    <h3>02. 헤더/푸터 코딩</h3>
+                    <p data-num="03">header 태그를 만들고 로고와 네비게이션을 추가하겠습니다.</p>
+<pre><code class="language-html">&lt;header id="header"&gt;
+    &lt;h1&gt;web's PORTFOLIO&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;work&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;about&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;!-- //header --&gt;
+</code></pre>
+
+                    <p data-num="04">
+                        위치를 상단으로 고정하고, 레이아웃은 <code>flex</code>를 사용하여, 양쪽 정렬 <code>space-between</code>을 사용했습니다. 
+                        폰트는 구글 웹폰트를 사용하였습니다. 
+                    </p>
+<pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"&gt;
+</code></pre>
+<pre><code class="language-css">/* header */
+#header {
+    position: fixed;
+    left: 0; 
+    top: 0;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-family: 'Abel';
+    z-index: 10000;
+}
+#header h1 {
+    font-weight: normal;
+    color: #D2E3C0;
+    font-size: 28px;
+}
+#header nav li {
+    list-style: none; 
+    display: inline-block;
+}
+#header nav li a {
+    color: #D2E3C0;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 18px;
+}
+</code></pre>
+
+                    <p data-num="05">footer 태그도 별거 없으니 바로 만들어 보겠습니다. 살짝 메일만 보낼 수 있도록 하겠습니다.</p>
+<pre><code class="language-html">&lt;footer id="footer"&gt;
+    &lt;a href="https://webstoryboy.co.kr" target="_blank"&gt;webstoryboy.co.kr&lt;/a&gt;
+&lt;/footer&gt;
+&lt;!-- //footer --&gt;
+</code></pre>
+
+                    <p data-num="06">
+                        css도 별건 없습니다. 
+                        가운데로 위치해주기 위해서 <code>translateX</code>와 <code>absolute</code>를 사용하였습니다.
+                        간격은 반응형까지 고려해서 <code>1vw</code>를 사용했습니다. 
+                        폰트는 구글 폰트의 Abel 폰트를 사용했습니다.
+                        여기까지 잘 따라오셨죠 😃
+                    </p>
+<pre><code class="language-css">/* footer */
+#footer {
+    position: absolute;
+    left: 50%;
+    bottom: 1vw;
+    z-index: 1000;
+    transform: translateX(-50%);
+}
+#footer a {
+    color: #fff;
+    font-family: 'Abel';
+    text-decoration: none;
+}
+</code></pre>
+
+                    <h3>03. 메인 텍스트 코딩</h3>
+                    <p data-num="07">
+                        메인 텍스트 코딩을 시작하겠습니다.
+                        <code>text__inner</code> 클래스를 만들어서 3개의 박스를 만들고 글씨를 넣어줬습니다.
+                        강조하고 싶은 부분은 <code>em</code> 태그를 사용하였고, 
+                        차후 애니메이션을 주기 위해서 각자 클래스 이름을 주었습니다. 
+                        또한 한글자씩 나오게 효과를 주기 위해서 한줄에 하나의 박스로 구성하였습니다.
+                    </p>
+<pre><code class="language-html">&lt;main id="main"&gt;
+    &lt;div class="text__inner"&gt;
+        &lt;div class="ti1"&gt;let’s &lt;em&gt;introduce&lt;/em&gt;&lt;/div&gt;
+        &lt;div class="ti2"&gt;frontend developer’s&lt;/div&gt;
+        &lt;div class="ti3"&gt;&lt;em&gt;all&lt;/em&gt; works &lt;em&gt;of&lt;/em&gt; portfolio&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+</code></pre>
+
+                    <p data-num="08">
+                        디자인을 작업을 들어가기 전에 웹 폰트를 먼저 설정해야 합니다. 
+                        폰트는 <a href="https://pangrampangram.com/products/eiko" target="_blank">eiko</a> 폰트와, 
+                        <a href="https://pangrampangram.com/products/neue-world" target="_blank">neue-world</a> 폰트를 다운 받았습니다.
+                        상업적으로 쓰면 유로지만 개인적인 포폴이나 작업물은 무료이기 때문에 사용했습니다. 자세한건 라이센스 꼭 확인해보세요! 🤭
+                        유튜브에서 교육용으로 쓰는건 무료인지 모르겠네요! 그래도 여러분을 위해서 사용해보겠습니다.
+                    </p>
+                    <p>
+                        폰트 무료 버전을 클릭하시면 이메일로 다운로드 경로가 옵니다. 
+                        무료 버전 폰트는 모든 폰트를 다 주는 것이 아니고, 일부만 샘플로 사용할 수 있도록 한것 같습니다.
+                        otf 또는 ttf 파일을 제공하는데, 이 폰트 파일을 woff2 파일로 변경해야 웹 폰트로 사용이 가능합니다. 
+                        웹 폰트 변경 사이트<sup>5</sup>에서 폰트를 변경하고 폰트 폴더에 해당 폴더를 넣습니다.
+                    </p>
+<pre><code class="language-css">@font-face {
+    font-family: 'PPEiko-BlackItalic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PPEiko-BlackItalic.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPEiko-LightItalic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PPEiko-LightItalic.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPNeueWorld-CondensedRegular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PPNeueWorld-CondensedRegular.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPNeueWorld-SemiExtendedBlack';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PPNeueWorld-SemiExtendedBlack.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPNeueWorld-SemiCondensedUltrabold.woff2';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PPNeueWorld-SemiCondensedUltrabold.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPNeueWorld-Thin';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PPNeueWorld-Thin.woff2') format('woff2');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPNeueWorld-Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/PPNeueWorld-Regular.woff2') format('woff2');
+    font-display: swap;
+}
+</code></pre>
+
+                    <p data-num="09">
+                        웹 폰트는 제일 위에 선언해야 작동이 되니, 이 점 주의 바랍니다. 
+                        웹 폰트를 설정했으면, 사용을 해보겠습니다.
+                        가운데 정렬을 위해서 <code>flew</code>를 사용하였으며, 
+                        중앙 정렬을 위하여 <code>height: 100vh</code>를 설정했습니다. 
+                        <code>font-family</code>를 설정하면, 사용자 컴퓨터에 해당 폰트가 없어도, 사용 할 수 있습니다.
+                    </p>
+<pre><code class="language-css">/* main */
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.text__inner {
+    text-align: center;
+}
+.text__inner > div {
+    font-size: 8vw;
+    line-height: 1;
+    color: #D2E3C0
+}
+.text__inner > div.ti1 {
+    font-family: 'PPNeueWorld-Thin';
+}
+.text__inner > div.ti1 em {
+    font-family: 'PPNeueWorld-Regular';
+    font-style: normal;
+}
+.text__inner > div.ti2 { 
+    color: #fff;
+    font-family: 'PPNeueWorld-SemiCondensedUltrabold.woff2';
+}
+.text__inner > div.ti3 {
+    font-family: 'PPNeueWorld-Regular';
+}
+.text__inner > div.ti3 em {
+    font-family: 'PPNeueWorld-Thin';
+    font-style: normal;
+}
+</code></pre>
+
+                    <h3>04. 메인 이미지 코딩</h3>
+                    <p data-num="10">
+                        이미지도 추가해주겠습니다. 이미지는 studyhall.design<sup>3</sup> 사이트에서 다운 받았습니다. 
+                        같은거 쓰셔도 되구요! 다른거 쓰셔도 됩니다. 
+                        이미지 셋팅도 다음과 같이 해주겠습니다.
+                    </p>
+<pre><code class="language-html">&lt;div class="img__inner"&gt;
+    &lt;img class="ii1" src="img/figure01.png" alt="figure01"&gt;
+    &lt;img class="ii2" src="img/figure02.png" alt="figure02"&gt;
+    &lt;img class="ii3" src="img/figure03.png" alt="figure03"&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">/* img__inner */
+.img__inner > img {
+    position: absolute;
+    width: 10vw;
+}
+.img__inner .ii1 {
+    left: 45%;
+    top: 50%;
+    transform: translateY(-210%);
+}
+.img__inner .ii2 {
+    left: 10%;
+    top: 50%;
+    transform: translateY(-100%);
+}
+.img__inner .ii3 {
+    left: 80%;
+    top: 50%;
+}
+</code></pre>
+                    <p data-num="11">
+                        텍스트가 이미지 위에 올라오게 하기 위해서 z-index를 추가하였습니다.
+                    </p>
+<pre><code class="language-css">.text__inner {
+    text-align: center;
+    position: relative;
+    z-index: 100;
+}
+</code></pre>
+
+                    <p>
+                        여기까지 기본 코딩이 완료되었습니다. 
+                        반응형을 고려하여 작성하였기 때문에 모바일용도 크게 틀어지는 부분이 없습니다.
+                        이제 여기에 메인 애니메이션 효과와 Three.js 효과를 줄 것입니다. 
+                        이 부분부터는 조금 어려울 수 있으니 천천히 잘 따라오세요! 🤗
+                    </p>
+
+                    <hr>
+
+                    <h3>05. 메인 GSAP 애니메이션</h3>
+                    <p>
+                        우선 GSAP를 설정하기 위해서는 다음과 같은 파일이 연동되어 있어야 합니다. CDN 파일을 추가하고 애니메이션을 만들어보겠습니다.
+                    </p>
+<pre><code class="language-html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+                    <p data-num="12">
+                        가운데 글씨는 하나씩 쪼개주기 위해서 span태그로 만들어줘야 합니다. 
+                        자바스크립트를 통해 설정하겠습니다.
+                        접근성을 위해서 <code>aria</code> 효과도 추가해주었습니다.
+                    </p>
+<pre><code class="language-javascript">document.querySelectorAll(".split").forEach(desc => {
+    let splitText = desc.innerText;
+    let splitWrap = splitText.split('').join("&lt;/span&gt;&lt;span aria-hidden='true'&gt;");
+        splitWrap = "&lt;span aria-hidden='true'&gt;" + splitWrap + "&lt;/span&gt;";
+        desc.innerHTML = splitWrap;
+        desc.setAttribute("aria-label", splitText);
+})
+</code></pre>
+                    <p data-num="13">
+                        애니메이션을 주기 위한 기본 CSS 세팅은 <code>gsap.set</code>을 통해 설정했습니다. 
+                        CSS에서 설정을 할 수 있지만, CSS가 복잡해지고 수정이 어려워, GSAP를 통해 설정했습니다. 
+                        움직이기 전 요소들은 set을 통해 설정하고,
+                        <code>setTimeout</code> 메서드를 통해 2초 후에 작동하도록 설정했습니다. 
+                        변수에 타임라인을 설정하여, 모든 애니메이션은 순서대로 나오도록 했습니다. 
+                        동시에 나와야 하는 부분은 <code>"text"</code>처럼 같은 이름을 설정해주면 됩니다. 
+                    </p>
+<pre><code class="language-javascript">// 메인 GSAP 애니메이션
+gsap.set(".text__inner .ti2 span", {opacity: 0, display: "inline-block", x: 500, minWidth: "1.4vw"});
+gsap.set(".text__inner .ti1", {opacity: 0, y: 100});
+gsap.set(".text__inner .ti3", {opacity: 0, y: -100});
+gsap.set(".img__inner .ii1", {opacity: 0, scale: 1.4, y: "-210%", rotation: 0});
+gsap.set(".img__inner .ii2", {opacity: 0, scale: 1.4, y: "-100%", rotation: 0});
+gsap.set(".img__inner .ii3", {opacity: 0, scale: 1.4, rotation: 0});
+gsap.set("#header", {y: -100});
+gsap.set("#footer", {y: 100});
+
+setTimeout(() => {
+    let tl = gsap.timeline();
+
+    tl.to(".text__inner .ti2 span", {duration: 0.6, x: 0, stagger: 0.09, scale: 1, opacity: 1, ease: Power3.easeInOut})
+    tl.to(".text__inner .ti1", {duration: 0.5, y:0, opacity: 1, ease: Circ.easeOut}, "text")
+    tl.to(".text__inner .ti3", {duration: 0.5, y:0, opacity: 1, ease: Circ.easeOut}, "text")
+    tl.to(".img__inner .ii1", {duration: 0.5, scale:1, rotation: 360, opacity: 1, ease: Power3.easeOut})
+    tl.to(".img__inner .ii2", {duration: 0.5, scale:1, rotation: 360, opacity: 1, ease: Power3.easeOut})
+    tl.to(".img__inner .ii3", {duration: 0.5, scale:1, rotation: 360, opacity: 1, ease: Power3.easeOut})
+    tl.to("#header", {duration: 0.5, y:0, ease: Power3.easeOut}, "side")
+    tl.to("#footer", {duration: 0.5, y:0, ease: Power3.easeOut}, "side")
+}, 2000)
+</code></pre>
+
+                    <h3>06. THREE.JS 연동하기</h3>
+                    <p>
+                        이번에는 배경이 조금 심심하기 때문에 Three.js를 구현해보겠습니다. 
+                        Three.js를 직접 작성하기에는 시간이 오래 걸리고, 
+                        어렵기 때문에 차후에 만드는 법을 따로 올릴 예정이구요. 
+                        오늘은 간단하게 가져와서 사용하는 법만 해보겠습니다. 
+                    </p>
+                    <p data-num="14">
+                        <code>main</code> 섹션에 다음 코드를 추가하고 CSS로 영역을 잡겠습니다. 
+                    </p>
+<pre><code class="language-html">&lt;div id="webgl"&gt;
+    &lt;iframe src="three.html" frameborder="0"&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</code></pre>
+<pre><code class="language-css">/* webgl */
+#webgl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+#webgl iframe {
+    width: 100%;
+    height: 100%;
+}
+</code></pre>
+                    <p data-num="15">
+                        iframe.html 파일을 하나 만들고, webgl 사이트 <a href="https://wiss.tistory.com/502" target="_blank">https://wiss.tistory.com/502</a> 에서 파일을 가져와서 iframe에 추가하겠습니다. 
+                    </p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            margin: 0px;
+            background-color: #0B130D;
+            overflow: hidden;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Using Threejs & Jerome Etienne's Threex --&gt;
+    &lt;script src='https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/build/three-min.js'&gt;&lt;/script&gt;
+    &lt;script src='https://jeromeetienne.github.io/threex.terrain/examples/vendor/three.js/examples/js/SimplexNoise.js'&gt;&lt;/script&gt;
+    &lt;script src='https://jeromeetienne.github.io/threex.terrain/threex.terrain.js'&gt;&lt;/script&gt;
+    &lt;script&gt;
+        var renderer = new THREE.WebGLRenderer({
+            antialias: true,
+            alpha: true
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+        
+        var onRenderFcts = [];
+        var scene = new THREE.Scene();
+        var camera = new THREE.PerspectiveCamera(25, window.innerWidth / window.innerHeight, 0.01, 1000);
+        camera.position.z = 15;
+        camera.position.y = 2;
+        scene.fog = new THREE.Fog(0x000, 0, 45);;
+
+        // 조명 설정
+        var light = new THREE.AmbientLight(0x202020)
+        scene.add(light)
+        var light = new THREE.DirectionalLight('white', 5)
+        light.position.set(0.5, 0.0, 2)
+        scene.add(light)
+        var light = new THREE.DirectionalLight('white', 0.75 * 2)
+        light.position.set(-0.5, -0.5, -2)
+        scene.add(light)
+        
+        var heightMap = THREEx.Terrain.allocateHeightMap(256, 256)
+        THREEx.Terrain.simplexHeightMap(heightMap)
+        var geometry = THREEx.Terrain.heightMapToPlaneGeometry(heightMap)
+        THREEx.Terrain.heightMapToVertexColor(heightMap, geometry)
+        var material = new THREE.MeshBasicMaterial({
+            wireframe: false,
+            color: "#D2E3C0"
+        });
+        var mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+        mesh.lookAt(new THREE.Vector3(0, 1, 0));
+
+        mesh.scale.y = 3.5;
+        mesh.scale.x = 3;
+        mesh.scale.z = 0.20;
+        mesh.scale.multiplyScalar(10);
+
+        onRenderFcts.push(function (delta, now) {
+            mesh.rotation.z += 0.02 * delta;
+        })
+        onRenderFcts.push(function () {
+            renderer.render(scene, camera);
+        })
+        var lastTimeMsec = null
+        
+        requestAnimationFrame(function animate(nowMsec) {
+            requestAnimationFrame(animate);
+            lastTimeMsec = lastTimeMsec || nowMsec - 1000 / 60
+            var deltaMsec = Math.min(200, nowMsec - lastTimeMsec)
+            lastTimeMsec = nowMsec
+            onRenderFcts.forEach(function (onRenderFct) {
+                onRenderFct(deltaMsec / 1000, nowMsec / 1000)
+            })
+        })
+    &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+                    <p>
+                        마지막으로 애니메이션과 위치 등을 설정하면, 메인 페이지가 완성됩니다. 
+                        포트폴리오 메인 페이지를 GSAP와 Three.js를 이용하여 간단하게 꾸며보았습니다. 
+                        간단하게 맛만 본 구성이라고 생각하시면 되구, 
+                        앞으로 GSAP 애니메이션과 Three.js를 좀 더 구체적으로 공부해보겠습니다. 
+                        여기까지 성공하시 분은 댓글은 주소와 작품을 올려주시고, 서로 피드백을 받으면서 
+                        더 멋있는 포트폴리오를 만들었으면 좋겠습니다. 
+                    </p>
+                    <p>
+                        마지막으로 막히는 부분이나 에러나는 부분들은 댓글로 달아주시고, 
+                        전체 소스나 완성 소스를 보시고 안되는 부분들을 확인해주세요.
+                    </p>
+
+                    <hr>
+
+                    <h3>참고(Reference)</h3>
+                    <ul class="refer">
+                        <li><a href="https://threejs.org/" target="_blank">Three.js<sup>1</sup> : https://threejs.org/</a></li>
+                        <li><a href="https://greensock.com/" target="_blank">GSAP<sup>2</sup> : https://greensock.com/</a></li>
+                        <li><a href="https://studyhall.design/" target="_blank">studyhall.design<sup>3</sup> : https://studyhall.design/</a></li>
+                        <li><a href="https://pangrampangram.com/" target="_blank">pangrampangram<sup>4</sup> : https://pangrampangram.com/</a></li>
+                        <li><a href="https://transfonter.org/" target="_blank">웹 폰트 변경 사이트<sup>5</sup> : https://transfonter.org/</a></li>
+                    </ul>
+                </div>
+                <!-- //blog__contents -->
+
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+

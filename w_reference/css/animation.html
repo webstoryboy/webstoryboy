@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>회원가입</span></a></li>
+                    <li><a href="#"><span>로그인</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 11. 4.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>animation</h2>
+                    <p>
+                        animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.
+                        애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.     
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>
+                                        animation-name: none;<br>
+                                        animation-duration: 0s;<br>
+                                        animation-timing-function: ease;<br>
+                                        animation-delay: 0s;<br>
+                                        animation-iteration-count: 1;<br>
+                                        animation-direction: normal;<br>
+                                        animation-fill-mode: none;<br>
+                                        animation-play-state: running;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>animation</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★★★★</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.</li>
+                    </ul>
+
+                    <h3>애니메이션과 관련된 속성(Animation Related Properties)</h3>
+                    <ul>
+                        <li>animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.</li>
+                        <li>animation-delay 속성은 애니메이션 지연 시간을 설정합니다.</li>
+                        <li>animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.</li>
+                        <li>animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.</li>
+                        <li>animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.</li>
+                        <li>animation-iteration-count 속성은 애니메이션 반복 횟수를 설정합니다.</li>
+                        <li>animation-name 속성은 애니메이션 keyframe 이름을 설정합니다.</li>
+                        <li>animation-play-state 속성은 애니메이션 진행상태를 설정합니다.</li>
+                        <li>animation-timing-function 속성은 애니메이션 움직임의 속도를 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">animation: @keyframes name | duration | timing-function | delay | iteration-count | direction | fill-mode | play-state;</p>
+<pre class="bluePre"><code class="language-css">/* @keyframes name | duration */
+animation: move 3s;
+
+/* @keyframes name | duration | delay */
+animation: move 3s 1s;
+
+/* @keyframes name | duration | delay | iteration-count */
+animation: move 3s 1s 5;
+
+/* @keyframes name | duration | delay | iteration-count | direction*/
+animation: move 3s 1s 5 reverse;
+</code></pre>
+                    
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="30%">
+                                <col width="80%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>name</th>
+                                    <td>애니메이션 keyframe 이름을 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>duration</th>
+                                    <td>애니메이션 움직임 시간을 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>timing-function</th>
+                                    <td>애니메이션 움직임 속도를 정의합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>delay</th>
+                                    <td>애니메이션이 로드된 후 애니메이션이 시작될 때 까지의 시간을 나타냅니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>iteration-count</th>
+                                    <td>애니메이션 반복 횟수 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>direction</th>
+                                    <td>애니메이션 움직임 방향을 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>fill-mode</th>
+                                    <td>애니메이션이 끝난 후의 상태를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>play-state</th>
+                                    <td>애니메이션 진행상태를 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                
+
+                    <style>
+                        .animation-box {
+                            counter-reset: items;
+                        }
+                        .animation-box .box {
+                            width: 60px;
+                            height: 60px;
+                            line-height: 60px;
+                            text-align: center;
+                            border-radius: 50%;
+                            color: #fff;
+                            position: relative;
+                            font-size: 12px;
+                            overflow: hidden;
+                            margin: 10px;
+                            background-color: #A2CBFA;
+                            border: 1px solid #4390E1;
+                            box-shadow: 0 2px 2px rgba(0,90,250,0.05), 0 4px 4px rgba(0,90,250,0.05), 0 8px 8px rgba(0,90,250,0.05), 0 16px 16px rgba(0,90,250,0.05);
+                        }
+                        .animation-box .box::before {
+                            counter-increment: items;
+                            content: counter(items);
+                        }
+                        .sampleBtn.show a {pointer-events: none; user-select: none;}
+                    
+                        /* start */
+                        .animation-box.show1 .box:nth-child(1) {animation: move 2s;}
+                        .animation-box.show1 .box:nth-child(2) {animation: move 2s;}
+                        .animation-box.show1 .box:nth-child(3) {animation: move 2s;}
+                    
+                        .animation-box.show2 .box:nth-child(1) {animation: move 2s 0.1s;}
+                        .animation-box.show2 .box:nth-child(2) {animation: move 2s 0.2s;}
+                        .animation-box.show2 .box:nth-child(3) {animation: move 2s 0.3s;}
+                    
+                        .animation-box.show3 .box:nth-child(1) {animation: move 2s 0.1s 3;}
+                        .animation-box.show3 .box:nth-child(2) {animation: move 2s 0.2s 3;}
+                        .animation-box.show3 .box:nth-child(3) {animation: move 2s 0.3s 3;}
+                    
+                        @keyframes move {
+                            0%   {left: 0%;}
+                            50%  {left: calc(100% - 80px);}
+                            100% {left: 0%;}
+                        }
+                    </style>
+                    
+                    <!-- Sample1 -->
+                    <h3>예제1(Sample)</h3>
+                    <div class="sample">
+                        <h4>애니메이션을 속성을 일괄적으로 설정하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" data-value="show1" data-time="2400">animation: move 2s;</a>
+                            <a href="#" data-value="show2" data-time="2400">animation: move 2s 1s;</a>
+                            <a href="#" data-value="show3" data-time="6500">animation: move 2s 1s 3;</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                            <div>
+<pre class="language-css"><code>.animation-box.show1 .box:nth-child(1) {animation: move 2s;}
+.animation-box.show1 .box:nth-child(2) {animation: move 2s;}
+.animation-box.show1 .box:nth-child(3) {animation: move 2s;}
+
+.animation-box.show2 .box:nth-child(1) {animation: move 2s 0.1s;}
+.animation-box.show2 .box:nth-child(2) {animation: move 2s 0.2s;}
+.animation-box.show2 .box:nth-child(3) {animation: move 2s 0.3s;}
+
+.animation-box.show3 .box:nth-child(1) {animation: move 2s 0.2s;}
+.animation-box.show3 .box:nth-child(2) {animation: move 2s 0.4s;}
+.animation-box.show3 .box:nth-child(3) {animation: move 2s 0.6s;}
+
+@keyframes move {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                            </div>
+                            <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(".sampleBtn a").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().addClass("show");
+                            var attr = $(this).attr("data-value");
+                            var time = $(this).attr("data-time");
+                            $(this).parent().prev().children().addClass(attr);
+                            
+                            if( $(".animation-box").hasClass(attr) ) {
+                                setTimeout(function(){
+                                    $(".sampleView > div").removeClass(attr);
+                                    $(".sampleBtn").removeClass("show");
+                                }, time)
+                            }
+                        });
+                    </script>
+                    <!-- //Sample1 -->
+
+
+                    <style>
+                        /* start */
+                        #sample2 .animation-box.show1 .box:nth-child(1) {animation: move 2s;}
+                        #sample2 .animation-box.show1 .box:nth-child(2) {animation: move 2s;}
+                        #sample2 .animation-box.show1 .box:nth-child(3) {animation: move 2s;}
+                    
+                        #sample2 .animation-box.show2 .box:nth-child(1) {animation: move 2s 0.1s;}
+                        #sample2 .animation-box.show2 .box:nth-child(2) {animation: move 2s 0.2s;}
+                        #sample2 .animation-box.show2 .box:nth-child(3) {animation: move 2s 0.3s;}
+                    
+                        #sample2 .animation-box.show3 .box:nth-child(1) {animation: move 2s 0.2s;}
+                        #sample2 .animation-box.show3 .box:nth-child(2) {animation: move 2s 0.4s;}
+                        #sample2 .animation-box.show3 .box:nth-child(3) {animation: move 2s 0.6s;}
+                    </style>
+                    <!-- Sample2 -->
+                    <h3>예제2(Sample)</h3>
+                    <div id="sample2" class="sample">
+                        <h4>애니메이션 지연 시간을 설정하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" data-value="show1">animation-delay: 0s</a>
+                            <a href="#" data-value="show2">animation-delay: 0.1s</a>
+                            <a href="#" data-value="show3">animation-delay: 0.2s</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                            <div>
+<pre class="language-css"><code>.animation-box.show1 .box:nth-child(1) {animation: move 2s;}
+.animation-box.show1 .box:nth-child(2) {animation: move 2s;}
+.animation-box.show1 .box:nth-child(3) {animation: move 2s;}
+
+.animation-box.show2 .box:nth-child(1) {animation: move 2s 0.1s;}
+.animation-box.show2 .box:nth-child(2) {animation: move 2s 0.2s;}
+.animation-box.show2 .box:nth-child(3) {animation: move 2s 0.3s;}
+
+.animation-box.show3 .box:nth-child(1) {animation: move 2s 0.2s;}
+.animation-box.show3 .box:nth-child(2) {animation: move 2s 0.4s;}
+.animation-box.show3 .box:nth-child(3) {animation: move 2s 0.6s;}
+
+@keyframes move {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                            </div>
+                            <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $("#sample2 .sampleBtn a").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().addClass("show");
+                            var attr = $(this).attr("data-value");
+                            $(this).parent().prev().children().addClass(attr);
+                            
+                            if( $("#sample2 .animation-box").hasClass(attr) ) {
+                                setTimeout(function(){
+                                    $("#sample2 .sampleView > div").removeClass(attr);
+                                    $("#sample2 .sampleBtn").removeClass("show");
+                                }, 2400)
+                            }
+                        });
+                    </script>
+                    <!-- //Sample2 -->
+
+                    <!-- Sample3 -->
+                    <style>
+                        #sample3 .animation-box {height: 200px;}
+                        #sample3 .animation-box.show1 .box {animation: move3 2s 2;}
+                        #sample3 .animation-box.show2 .box {animation: move3 2s 2 reverse;}
+                        #sample3 .animation-box.show3 .box {animation: move3 2s 2 alternate;}
+                        #sample3 .animation-box.show4 .box {animation: move3 2s 2 alternate-reverse;}
+                    
+                        @keyframes move3 {
+                            0%   {left: 0; top: 0;}
+                            25%  {left: calc(100% - 80px); top: 0;}
+                            50%  {left: calc(100% - 80px); top: calc(100% - 80px);}
+                            75%  {left: 0; top: calc(100% - 80px);}
+                            100% {left: 0; top: 0;}
+                        }
+                    </style>
+                    <h3>예제3(Sample)</h3>
+                    <div id="sample3" class="sample">
+                        <h4>애니메이션 움직임 방향을 설정하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" data-value="show1">animation-direction : normal</a>
+                            <a href="#" data-value="show2">animation-direction : reverse</a>
+                            <a href="#" data-value="show3">animation-direction : alternate</a>
+                            <a href="#" data-value="show4">animation-direction : alternate-reverse</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.show1 .box {animation: move 2s 2;}
+.animation-box.show2 .box {animation: move 2s 2 reverse;}
+.animation-box.show3 .box {animation: move 2s 2 alternate;}
+.animation-box.show4 .box {animation: move 2s 2 alternate-reverse;}
+
+@keyframes move {
+    0%   {left: 0; top: 0;}
+    25%  {left: calc(100% - 80px); top: 0;}
+    50%  {left: calc(100% - 80px); top: calc(100% - 80px);}
+    75%  {left: 0; top: calc(100% - 80px);}
+    100% {left: 0; top: 0;}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        $("#sample3 .sampleBtn a").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().addClass("show");
+                            var attr = $(this).attr("data-value");
+                            $(this).parent().prev().children().addClass(attr);
+                            
+                            if( $("#sample3 .animation-box").hasClass(attr) ) {
+                                setTimeout(function(){
+                                    $("#sample3 .sampleView > div").removeClass(attr);
+                                    $("#sample3 .sampleBtn").removeClass("show");
+                                }, 4100)
+                            }
+                        });
+                    </script>
+                    <!-- //Sample3  -->
+
+
+                    <!-- Sample4  -->
+                    <style>
+                        /* start */
+                        #sample4 .animation-box.show .box:nth-child(1) {animation: move4 2s 1 none;}
+                        #sample4 .animation-box.show .box:nth-child(2) {animation: move4 2s 1 forwards;}
+                        #sample4 .animation-box.show .box:nth-child(3) {animation: move4 2s 1 backwards;}
+                        #sample4 .animation-box.show .box:nth-child(4) {animation: move4 2s 1 both;}
+                    
+                        @keyframes move4 {
+                            0%   {left: 0%;}
+                            100%  {left: calc(100% - 80px);}
+                        }
+                    </style>
+                    <h3>예제4(Sample)</h3>
+                    <div id="sample4" class="sample">
+                        <h4>애니메이션이 끝난 후의 상태를 설정하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" class="reset">초기화</a>
+                            <a href="#" class="start">시작</a>
+                        </div>
+                        <div class="sampleDesc">
+                            1번 적용 효과 : animation-fill-mode : none;<br>
+                            2번 적용 효과 : animation-fill-mode : forwards;<br>
+                            3번 적용 효과 : animation-fill-mode : backwards;<br>
+                            4번 적용 효과 : animation-fill-mode : both;
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.show .box:nth-child(1) {animation: move 2s 1 none;}
+.animation-box.show .box:nth-child(2) {animation: move 2s 1 forwards;}
+.animation-box.show .box:nth-child(3) {animation: move 2s 1 backwards;}
+.animation-box.show .box:nth-child(4) {animation: move 2s 1 both;}
+
+@keyframes move {
+    0%   {left: 0%;}
+    100%  {left: calc(100% - 80px);}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $("#sample4 .start").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().prev().children().addClass("show");
+                        });
+                        $("#sample4 .reset").click(function(e){
+                            e.preventDefault();
+                            $("#sample4 .sampleView > div").removeClass("show");
+                        });
+                    </script>
+                    <!-- //Sample4 -->
+
+                    <!-- Sample5 -->
+                    <style>
+                        #sample5 .animation-box.show1 .box {animation: move5 2s 1;}
+                        #sample5 .animation-box.show2 .box {animation: move5 2s 2;}
+                        #sample5 .animation-box.show3 .box {animation: move5 2s 3;}
+                        #sample5 .animation-box.show4 .box {animation: move5 2s 4;}
+                        #sample5 .animation-box.show5 .box {animation: move5 2s infinite;}
+                    
+                        @keyframes move5 {
+                            0%   {left: 0%;}
+                            50%  {left: calc(100% - 80px);}
+                            100% {left: 0%;}
+                        }
+                    </style>
+                    <h3>예제5(Sample)</h3>
+                    <div id="sample5" class="sample">
+                        <h4>애니메이션 반복 횟수를 설정하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" data-value="show1" data-dur="2000">animation-iteration-count : 1;</a>
+                            <a href="#" data-value="show2" data-dur="4000">animation-iteration-count : 2;</a>
+                            <a href="#" data-value="show3" data-dur="6000">animation-iteration-count : 3;</a>
+                            <a href="#" data-value="show4" data-dur="8000">animation-iteration-count : 4;</a>
+                            <a href="#" data-value="show5" data-dur="80000">animation-iteration-count : infinite;</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.show1 .box {animation: move 2s 1;}
+.animation-box.show2 .box {animation: move 2s 2;}
+.animation-box.show3 .box {animation: move 2s 3;}
+.animation-box.show4 .box {animation: move 2s 4;}
+.animation-box.show5 .box {animation: move 2s infinite;}
+
+@keyframes move {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    $("#sample5 .sampleBtn a").click(function (e) {
+                        e.preventDefault();
+                        $(this).parent().addClass("show");
+                        var attr = $(this).attr("data-value");
+                        var duration = $(this).attr("data-dur");
+                        $(this).parent().prev().children().addClass(attr);
+                        
+                        if( $("#sample5 .animation-box").hasClass(attr) ) {
+                            setTimeout(function(){
+                                $("#sample5 .sampleView > div").removeClass(attr);
+                                $("#sample5 .sampleBtn").removeClass("show");
+                            }, duration)
+                        }
+                    });
+                    </script>                
+                    <!-- //Sample5 -->
+
+                    <style>
+                        #sample6 .animation-box.show1 .box {animation: move61 2s 1;}
+                        #sample6 .animation-box.show2 .box {animation: move62 2s 1;}
+                        #sample6 .animation-box.show3 .box {animation: move63 2s 1;}
+                    
+                        @keyframes move61 {
+                            0%   {left: 0%;}
+                            50%  {left: 10%;}
+                            100% {left: 0%;}
+                        }
+                        @keyframes move62 {
+                            0%   {left: 0%;}
+                            50%  {left: 20%;}
+                            100% {left: 0%;}
+                        }
+                        @keyframes move63 {
+                            0%   {left: 0%;}
+                            50%  {left: calc(100% - 80px);}
+                            100% {left: 0%;}
+                        }
+                    </style>
+                    <h3>예제6(Sample)</h3>
+                    <div id="sample6" class="sample">
+                        <h4>애니메이션 이름을 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" data-value="show1" data-dur="2000">animation-name : move1;</a>
+                            <a href="#" data-value="show2" data-dur="2000">animation-name : move2;</a>
+                            <a href="#" data-value="show3" data-dur="2000">animation-name : move3;</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.show1 .box {animation: move1 2s 1;}
+.animation-box.show2 .box {animation: move2 2s 1;}
+.animation-box.show3 .box {animation: move3 2s 1;}
+
+@keyframes move1 {
+    0%   {left: 0%;}
+    50%  {left: 10%;}
+    100% {left: 0%;}
+}
+@keyframes move2 {
+    0%   {left: 0%;}
+    50%  {left: 20%;}
+    100% {left: 0%;}
+}
+@keyframes move3 {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>
+                    $("#sample6 .sampleBtn a").click(function (e) {
+                        e.preventDefault();
+                        $(this).parent().addClass("show");
+                        var attr = $(this).attr("data-value");
+                        var duration = $(this).attr("data-dur");
+                        $(this).parent().prev().children().addClass(attr);
+                        
+                        if( $("#sample6 .animation-box").hasClass(attr) ) {
+                            setTimeout(function(){
+                                $("#sample6 .sampleView > div").removeClass(attr);
+                                $("#sample6 .sampleBtn").removeClass("show");
+                            }, duration)
+                        }
+                    });
+                    </script>              
+                    <!-- //Sample6 -->
+
+
+
+                    <!-- //Sample7 -->
+                    <style>
+                        #sample7 .animation-box.show .box {animation: move7 2s infinite running;}
+                        #sample7 .animation-box .box {animation: move7 2s infinite paused;}
+                    
+                        @keyframes move7 {
+                            0%   {left: 0%;}
+                            50%  {left: calc(100% - 80px);}
+                            100% {left: 0%;}
+                        }
+                    </style>
+                    <h3>예제7(Sample)</h3>
+                    <div id="sample7" class="sample">
+                        <h4>애니메이션 진행상태를 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" class="running">animation-play-state: running</a>
+                            <a href="#" class="paused">animation-play-state: paused</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.show .box {animation: move 2s infinite running;}
+.animation-box .box {animation: move 2s infinite paused;}
+
+@keyframes move {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <script>
+                    $("#sample7 .running").click(function (e) {
+                        e.preventDefault();
+                        $(this).parent().prev().children().addClass("show");
+                    });
+                    $("#sample7 .paused").click(function(e){
+                        e.preventDefault();
+                        $("#sample7 .sampleView > div").removeClass("show");
+                    });
+                    </script>           
+                    <!-- //Sample7 -->
+
+
+
+
+                    <!-- Sample8 -->
+                    <style>
+                        #sample8 .animation-box.a1.show .box:nth-child(1) {animation: move 2s 1 linear;}
+                        #sample8 .animation-box.a1.show .box:nth-child(2) {animation: move 2s 1 ease;}
+                        #sample8 .animation-box.a1.show .box:nth-child(3) {animation: move 2s 1 ease-in;}
+                        #sample8 .animation-box.a1.show .box:nth-child(4) {animation: move 2s 1 ease-out;}
+                        #sample8 .animation-box.a1.show .box:nth-child(5) {animation: move 2s 1 ease-in-out;}
+                    </style>
+                    <h3>예제8(Sample)</h3>
+                    <div id="sample8" class="sample">
+                        <h4>애니메이션 움직임의 속도를 키워드로 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box a1">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" class="start">시작</a>
+                        </div>
+                        <div class="sampleDesc">
+                            1번 적용 효과 : animation-timing-function : linear<br>
+                            2번 적용 효과 : animation-timing-function : ease<br>
+                            3번 적용 효과 : animation-timing-function : ease-in<br>
+                            4번 적용 효과 : animation-timing-function : ease-out<br>
+                            5번 적용 효과 : animation-timing-function : ease-in-out
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.a1.show .box:nth-child(1) {animation: move 2s 1 linear;}
+.animation-box.a1.show .box:nth-child(2) {animation: move 2s 1 ease;}
+.animation-box.a1.show .box:nth-child(3) {animation: move 2s 1 ease-in;}
+.animation-box.a1.show .box:nth-child(4) {animation: move 2s 1 ease-out;}
+.animation-box.a1.show .box:nth-child(5) {animation: move 2s 1 ease-in-out;}
+
+@keyframes move {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $("#sample8 .start").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().prev().children().addClass("show");
+                            setTimeout(function(){
+                                $("#sample8 .sampleView > div").removeClass("show");
+                            }, 2100)
+                        });
+                    </script>
+                    <!-- //Sample8 -->
+
+
+                    <!-- Sample9 -->
+                    <style>
+                        #sample9 .animation-box.a2.show .box:nth-child(1) {animation: move 2s 1 step-start;}
+                        #sample9 .animation-box.a2.show .box:nth-child(2) {animation: move 2s 1 step-end;}
+                        #sample9 .animation-box.a2.show .box:nth-child(3) {animation: move 2s 1 steps(4, start);}
+                        #sample9 .animation-box.a2.show .box:nth-child(4) {animation: move 2s 1 steps(4, end);}
+                        #sample9 .animation-box.a2.show .box:nth-child(5) {animation: move 2s 1 steps(10, start);}
+                        #sample9 .animation-box.a2.show .box:nth-child(6) {animation: move 2s 1 steps(10, end);}
+                    </style>
+                    <h3>예제9(Sample)</h3>
+                    <div id="sample9" class="sample">
+                        <h4>애니메이션 움직임의 속도를 건너뛰기로 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box a2">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" class="start2">시작</a>
+                        </div>
+                        <div class="sampleDesc">
+                            1번 적용 효과 : animation-timing-function : step-start;<br>
+                            2번 적용 효과 : animation-timing-function : step-end;<br>
+                            3번 적용 효과 : animation-timing-function : steps(4, start);<br>
+                            4번 적용 효과 : animation-timing-function : steps(4, end);<br>
+                            5번 적용 효과 : animation-timing-function : steps(10, start);<br>
+                            6번 적용 효과 : animation-timing-function : steps(10, end);
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.a2.show .box:nth-child(1) {animation: move 2s 1 step-start;}
+.animation-box.a2.show .box:nth-child(2) {animation: move 2s 1 step-end;}
+.animation-box.a2.show .box:nth-child(3) {animation: move 2s 1 steps(4, start);}
+.animation-box.a2.show .box:nth-child(4) {animation: move 2s 1 steps(4, end);}
+.animation-box.a2.show .box:nth-child(5) {animation: move 2s 1 steps(10, start);}
+.animation-box.a2.show .box:nth-child(6) {animation: move 2s 1 steps(10, end);}
+
+@keyframes move {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $("#sample9 .start2").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().prev().children().addClass("show");
+                            setTimeout(function(){
+                                $("#sample9 .sampleView > div").removeClass("show");
+                            }, 2100)
+                        });
+                    </script>
+                    <!-- //sample9 -->
+
+                    <style>
+                        #sample10 .animation-box.a3.show .box:nth-child(1) {animation: move 2s 1 cubic-bezier(0,0,0,0);}
+                        #sample10 .animation-box.a3.show .box:nth-child(2) {animation: move 2s 1 cubic-bezier(1,0,0,1);}
+                        #sample10 .animation-box.a3.show .box:nth-child(3) {animation: move 2s 1 cubic-bezier(1, 0.01, 0.07, 0.99);}
+                        #sample10 .animation-box.a3.show .box:nth-child(4) {animation: move 2s 1 cubic-bezier(0, 0.92, 1,-0.08);}
+                        #sample10 .animation-box.a3.show .box:nth-child(5) {animation: move 2s 1 cubic-bezier(0.76, 0.85, 1, 0.25);}
+                    </style>
+                    <h3>예제10(Sample)</h3>
+                    <div id="sample10" class="sample">
+                        <h4>애니메이션 움직임의 속도를 큐빅 베지어 곡선값으로 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box a3">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" class="start3">시작</a>
+                        </div>
+                        <div class="sampleDesc">
+                            1번 적용 효과 : animation-timing-function : cubic-bezier(0,0,0,0);<br>
+                            2번 적용 효과 : animation-timing-function : cubic-bezier(1,0,0,1);<br>
+                            3번 적용 효과 : animation-timing-function : cubic-bezier(1, 0.01, 0.07, 0.99);<br>
+                            4번 적용 효과 : animation-timing-function : cubic-bezier(0, 0.92, 1,-0.08);<br>
+                            5번 적용 효과 : animation-timing-function : cubic-bezier(0.76, 0.85, 1, 0.25);<br>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>.animation-box.a3.show .box:nth-child(1) {animation: move 2s 1 cubic-bezier(0,0,0,0);}
+.animation-box.a3.show .box:nth-child(2) {animation: move 2s 1 cubic-bezier(1,0,0,1);}
+.animation-box.a3.show .box:nth-child(3) {animation: move 2s 1 cubic-bezier(1, 0.01, 0.07, 0.99);}
+.animation-box.a3.show .box:nth-child(4) {animation: move 2s 1 cubic-bezier(0, 0.92, 1,-0.08);}
+.animation-box.a3.show .box:nth-child(5) {animation: move 2s 1 cubic-bezier(0.76, 0.85, 1, 0.25);}
+
+@keyframes move {
+    0%   {left: 0%;}
+    50%  {left: calc(100% - 80px);}
+    100% {left: 0%;}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $("#sample10 .start3").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().prev().children().addClass("show");
+                            setTimeout(function(){
+                                $("#sample10 .sampleView > div").removeClass("show");
+                            }, 2100)
+                        });
+                    </script>
+
+
+
+
+
+
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">animation</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">name</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">duration</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">timing-function	</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">delay</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">iteration-count</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">direction</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">fill-mode</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                                <tr>
+                                    <td class="ce" scope="row">play-state</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-animations/#animation" target="_blank">https://w3c.github.io/csswg-drafts/css-animations/#animation</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                        <h3>HTML</h3>
+                        <ul>
+                            <li class="active"><a href="#">&lt;a&gt;</a></li>
+                            <li><a href="#">&lt;abbr&gt;</a></li>
+                            <li><a href="#">&lt;acronym&gt;</a></li>
+                            <li><a href="#">&lt;address&gt;</a></li>
+                            <li><a href="#">&lt;applet&gt;</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>

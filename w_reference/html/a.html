@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/HTML</span>
+                <h1 class="title">&lt;a&gt; 태그는 다른 페이지 이동을 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 7. 4.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>&lt;a&gt;</h2>
+                    <p>
+                        &lt;a&gt; 태그는 다른 페이지 이동을 설정합니다. 페이지 주소 뿐만 아니라, 메일 주소, 전화 번호 등도 연결할 수 있으며, 아이디(#) 값으로 페이지 내에서도 이동이 가능합니다.
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>요소</th>
+                                    <td>인라인 구조(Inline Element)</td>
+                                </tr>
+                                <tr>
+                                    <th>닫는 태그</th>
+                                    <td>적용</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>HTML4</td>
+                                </tr>
+                                <tr>
+                                    <th>시각적 표현</th>
+                                    <td>밑줄과 파란색으로 표시</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★★★★</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>&lt;a&gt; 태그는 클릭하면 다른 페이지로 이동합니다. 현재 페이지에서 다른 페이지 URL로 연결하는 것을 하이퍼링크라고 합니다.</li>
+                        <li>&lt;a&gt; 태그는 페이지 주소 뿐만 아니라, 메일 주소, 전화 번호 등도 연결할 수 있습니다.</li>
+                        <li>&lt;a&gt; 태그는 아이디(#id)로 이동 할 수 있습니다.</li>
+                        <li>&lt;a&gt; 태그는 target 속성을 이용하면 새로운 브라우저 창에서 페이지 이동을 할 수 있습니다.</li>
+                        <li>&lt;a&gt; 태그는 방문한 링크는 밑줄과 보라색으로 표시되고, 활성화된 링크는 밑줄과 빨간색으로 표시됩니다.</li>
+                        <li>원칙적으로 &lt;a&gt; 태그는 블록구조를 포함 할 수 없지만, HTML5에서는 &lt;a&gt; 태그는 블록 요소를 포함할 수 있습니다.</li>
+                        <li>href="#"의 페이지 지정을 막기 위해 javascript:void(0)를 사용하는 것보다 &lt;button&gt; 태그를 사용하는 것이 바람직합니다.</li>
+                        <li>&lt;a&gt; 태그는 href 속성을 사용하지 않는다면, target, download, ping, rel, hreflang, type, referrerpolicy 속성을 사용할 수 없습니다.</li>
+                    </ul>
+
+                    <h3>접근성(Accessibility)</h3>
+                    <ul>
+                        <li>링크를 통해 페이지 이동시 "페이지 이동" 및 "새로운 브라우저에서 열림" 등의 메시지를 명시하여야 합니다.</li>
+                        <li>target="_blank" 속성을 사용할 경우 "새로운 브라우저에서 열림" 등의 메세지를 명시하여야 스크린리더기를 사용하는 사용자에게 도움을 줄 수 있습니다.</li>
+                    </ul>
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col style="width:15%">
+                                <col style="width:25%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>download</td>
+                                    <td>download="filename"</td>
+                                    <td>영역 링크를 클릭하면 대상이 다운로드 되도록 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>href</td>
+                                    <td>href="URL"</td>
+                                    <td>영역에 대한 링크를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>hreflang</td>
+                                    <td>hreflang="ko"</td>
+                                    <td>영역 타겟에 대한 언어를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>ping</td>
+                                    <td>ping="URL"</td>
+                                    <td>추적 용도로 사용하는 속성입니다. URL을 POST 방식으로 전송합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>rel</td>
+                                    <td>
+                                        rel="alternate<br /> 
+                                        rel="author"<br /> 
+                                        rel="bookmark"<br /> 
+                                        rel="help"<br /> 
+                                        rel="license"<br /> 
+                                        rel="next"<br /> 
+                                        rel="nofollow"<br /> 
+                                        rel="noreferrer"<br /> 
+                                        rel="prefetch"<br /> 
+                                        rel="prev"<br /> 
+                                        rel="search"<br /> 
+                                        rel="tag"
+                                    </td>
+                                    <td>
+                                        문서에 대한 대체 링크를 설정합니다.<br /> 
+                                        문서에 대한 저자 정보를 설정합니다.<br /> 
+                                        문서에 대한 북마크 URL을 설정합니다.<br /> 
+                                        문서에 대한 도움과 관련된 정보를 설정합니다.<br /> 
+                                        문서에 대한 저작권과 관련된 정보를 설정합니다.<br /> 
+                                        문서에 대한 다음 문서 정보를 제공합니다.<br /> 
+                                        문서에 대한 링크를 사용하지 않을 때 설정합니다.<br /> 
+                                        문서에 대한 HTTP 레퍼럴을 사용하지 않을 때 설정합니다. <br /> 
+                                        문서에 대한 캐시를 설정합니다.<br /> 
+                                        문서에 대한 이전 문서를 설정합니다.<br /> 
+                                        문서에 대한 검색 도구를 설정합니다.<br /> 
+                                        문서에 대한 키워드를 설정합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>target</td>
+                                    <td>
+                                        target="_blank"<br /> 
+                                        target="_parent"<br /> 
+                                        target="_self"<br /> 
+                                        target="_top"
+                                    </td>
+                                    <td>
+                                        링크 클릭시 새로운 브라우저 창으로 설정합니다.<br />
+                                        현재 브라우저의 부모 브라우저 창으로 설정합니다.<br /> 
+                                        현재와 동일한 브라우저 창으로 설정합니다.<br /> 
+                                        최상위 브라우저 창에서 설정합니다. 부모가 없는 경우 _self와 동일합니다.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>type="text/html"</td>
+                                    <td>영역에 대한 문서 유형을 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>referrerpolicy</td>
+                                    <td>referrerpolicy="origin"</td>
+                                    <td>URL을 가져올 때 리퍼럴 정보를 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Sample1 -->
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="blog__sample">
+                        <h4>다른 페이지 이동(URL), 메일, 전화를 설정합니다.</h4>
+                        <div class="blog__sample__view">
+                            <!-- ex -->
+                            <div>
+                                <p>스터디 인원은 이번 주까지 모집합니다.</p>
+                                <p>참가 신청은 <a href="https://cafe.naver.com/crossbrowsing/10982">카페</a>에서 해주시면 됩니다.</p>
+                                <p>참가 신청은 <a href="mailto:webstoryboy@naver.com">메일</a>로도 가능합니다.</p>
+                                <p>당연히 <a href="tel:01093128004">전화</a>로도 가능합니다.</p>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="blog__sample__code">
+                            <div class="btn none">
+                                <ul>
+                                    <li class="active"><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">SCRIPT</a></li>
+                                </ul>
+                            </div>
+                            <div class="code">
+                                <div class="active">
+<pre><code class="language-html">&lt;p&gt;스터디 인원은 이번 주까지 모집합니다.&lt;/p&gt;
+&lt;p&gt;참가 신청은 &lt;a href="https://cafe.naver.com/crossbrowsing/10982"&gt;카페&lt;/a&gt;에서 해주시면 됩니다.&lt;/p&gt;
+&lt;p&gt;참가 신청은 &lt;a href="mailto:webstoryboy@naver.com"&gt;메일&lt;/a&gt;로도 가능합니다.&lt;/p&gt;
+&lt;p&gt;당연히 &lt;a href="tel:01093128004"&gt;전화&lt;/a&gt;로도 가능합니다.&lt;/p&gt;
+</code></pre>
+                            </div>
+                            <div>
+<pre ><code class="language-css">
+</code></pre>
+                            </div>
+                            <div>
+<pre><code class="language-javascript">
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Sample1 -->
+
+                    <!-- Sample2 -->
+                    <h3>예제2(Sample)</h3>
+                    <div id="sample2" class="blog__sample">
+                        <h4>아이디(#)를 설정하면 아이디 위치 값으로 이동합니다.</h4>
+                        <div class="blog__sample__view">
+                            <!-- ex -->
+                            <div>
+                                <p>아이디 값을 넣으면 건너뛰기 기능을 제공합니다.</s></p>
+                                <p><a href="#entry229Comment">댓글을</a> 쓰고 싶다면 클릭해주세요!</p>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="blog__sample__code">
+                            <div class="btn none">
+                                <ul>
+                                    <li class="active"><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">SCRIPT</a></li>
+                                </ul>
+                            </div>
+                            <div class="code">
+                                <div class="active">
+<pre><code class="language-html">&lt;div&gt;
+    &lt;p&gt;아이디 값을 넣으면 건너뛰기 기능을 제공합니다.&lt;/s&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;a href="#entry229Comment"&gt;댓글을&lt;/a&gt; 쓰고 싶다면 클릭해주세요!&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                            <div>
+<pre ><code class="language-css">
+</code></pre>
+                            </div>
+                            <div>
+<pre><code class="language-javascript">
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Sample2 -->
+
+                    <!-- Sample3 -->
+                    <h3>예제3(Sample)</h3>
+                    <div id="sample3" class="blog__sample">
+                        <h4>타겟을 설정하여 현재 브라우저 및 새로운 브라우저에서 보일 수 있도록 설정합니다.</h4>
+                        <div class="blog__sample__view">
+                            <!-- ex -->
+                            <div>
+                                <p>타겟을 설정하면 새로운 브라우저 및 현재 브라우저에서 이동이 가능합니다.</p>
+                                <p><a href="https://wsss.tistory.com/" target="_blank">애니메이션</a> 사이트를 새로운 창에서 보고 싶다면 클릭해주세요!</p>
+                                <p><a href="https://wsss.tistory.com/" target="_self">애니메이션</a> 사이트를 현재 창에서 보고 싶다면 클릭해주세요!</p>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="blog__sample__code">
+                            <div class="btn none">
+                                <ul>
+                                    <li class="active"><a href="#">HTML</a></li>
+                                    <li><a href="#">CSS</a></li>
+                                    <li><a href="#">SCRIPT</a></li>
+                                </ul>
+                            </div>
+                            <div class="code">
+                                <div class="active">
+<pre><code class="language-html">&lt;div&gt;
+    &lt;p&gt;타겟을 설정하면 새로운 브라우저 및 현재 브라우저에서 이동이 가능합니다.&lt;/p&gt;
+    &lt;p&gt;&lt;a href="https://wsss.tistory.com/" target="_blank"&gt;애니메이션&lt;/a&gt; 사이트를 새로운 창에서 보고 싶다면 클릭해주세요!&lt;/p&gt;
+    &lt;p&gt;&lt;a href="https://wsss.tistory.com/" target="_self"&gt;애니메이션&lt;/a&gt; 사이트를 현재 창에서 보고 싶다면 클릭해주세요!&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+                            </div>
+                            <div>
+<pre ><code class="language-css">
+</code></pre>
+                            </div>
+                            <div>
+<pre><code class="language-javascript">
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Sample3 -->
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row" class="ce">&lt;a&gt;</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element" target="_blank">https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-a-element</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+
+        const nav = document.querySelector(".blog__aside");
+        const navBtn = document.querySelector("#header .header__inner .left .star");
+
+        navBtn.addEventListener("click", function(e) {
+            e.preventDefault();
+            nav.classList.toggle("open");
+            // navBtn.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

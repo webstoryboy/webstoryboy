@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 7. 4.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>animation-fill-mode</h2>
+                    <p>
+                        animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.
+                        애니메이션은 움직임 시간, 움직임 지연 시간, 움직임 방향, 움직임 속도, 움직임 진행상태, 움직임 반복 횟수, 움직임 진행상태, 움직임 속도, 키프레임 이름 등을 설정하여 원하는 애니메이션을 구현 할 수 있습니다.     
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>animation-fill-mode : none</td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>animation</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★☆☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.</li>
+                    </ul>
+
+                    <h3>애니메이션과 관련된 속성(Animation Related Properties)</h3>
+                    <ul>
+                        <li>animation 속성은 애니메이션과 관련된 속성을 일괄적으로 설정합니다.
+                        <li>animation-delay 속성은 애니메이션 지연 시간을 설정합니다.</li>
+                        <li>animation-direction 속성은 애니메이션 움직임 방향을 설정합니다.</li>
+                        <li>animation-duration 속성은 애니메이션 움직임 시간을 설정합니다.</li>
+                        <li>animation-fill-mode 속성은 애니메이션이 끝난 후의 상태를 설정합니다.</li>
+                        <li>animation-iteration-count 속성은 애니메이션 반복 횟수를 설정합니다.</li>
+                        <li>animation-name 속성은 애니메이션 keyframe 이름을 설정합니다.</li>
+                        <li>animation-play-state 속성은 애니메이션 진행상태를 설정합니다.</li>
+                        <li>animation-timing-function 속성은 애니메이션 움직임의 속도를 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">animation-fill-mode : none | forwards | backwards | both | inherit;</p>
+<pre class="bluePre"><code class="language-css">/* 애니메이션 끝난 후 설정 */
+animation-fill-mode : none;
+animation-fill-mode : forwards;
+animation-fill-mode : backwards;
+animation-fill-mode : both;
+
+/* 애니메이션 속기형 작성법 */
+animation: ani 1s 3 backwards;  /* keyframe이름, 지속시간, 반복횟수, 끝난 후 상태설정 */
+</code></pre>
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>none</th>
+                                    <td>animation-fill-mode : none</td>
+                                    <td>애니메이션이 끝난 후 상태를 설정하지 않습니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>forwards</th>
+                                    <td>animation-fill-mode : forwards</td>
+                                    <td>애니메이션이 끝난 후 그 지점에 그대로 있습니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>backwards</th>
+                                    <td>animation-fill-mode : backwards</td>
+                                    <td>애니메이션이 끝난 후 시작점으로 돌아옵니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>both</th>
+                                    <td>animation-fill-mode : both</td>
+                                    <td>애니메이션이의 앞 뒤 결과를 조합하여 설정합니다. </td>
+                                </tr>
+                                <tr>
+                                    <th>inherit </th>
+                                    <td>animation-fill-mode : inherit</td>
+                                    <td>애니메이션의 상태를 상위 요소한테 상속받습니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+
+                    <!-- Sample1 -->
+                    <style>
+                        .animation-box {
+                            counter-reset: items;
+                        }
+                        .animation-box .box {
+                            width: 60px;
+                            height: 60px;
+                            line-height: 60px;
+                            text-align: center;
+                            border-radius: 50%;
+                            color: #fff;
+                            position: relative;
+                            font-size: 12px;
+                            overflow: hidden;
+                            margin: 10px;
+                            background-color: #A2CBFA;
+                            border: 1px solid #4390E1;
+                            box-shadow: 0 2px 2px rgba(0,90,250,0.05), 0 4px 4px rgba(0,90,250,0.05), 0 8px 8px rgba(0,90,250,0.05), 0 16px 16px rgba(0,90,250,0.05);
+                        }
+                        .animation-box .box::before {
+                            counter-increment: items;
+                            content: counter(items);
+                        }
+                        .sampleBtn.show a {pointer-events: none; user-select: none;}
+                    
+                        /* start */
+                        .animation-box.show .box:nth-child(1) {animation: move 2s 1 none;}
+                        .animation-box.show .box:nth-child(2) {animation: move 2s 1 forwards;}
+                        .animation-box.show .box:nth-child(3) {animation: move 2s 1 backwards;}
+                        .animation-box.show .box:nth-child(4) {animation: move 2s 1 both;}
+                    
+                        @keyframes move {
+                            0%   {left: 0%;}
+                            100%  {left: calc(100% - 80px);}
+                        }
+                    </style>
+                    
+                    <h3>예제1(Sample)</h3>
+                    <div class="sample">
+                        <h4>애니메이션이 끝난 후의 상태를 설정하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="animation-box">
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                                <div class="box"></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <a href="#" class="reset">초기화</a>
+                            <a href="#" class="start">시작</a>
+                        </div>
+                        <div class="sampleDesc">
+                            1번 적용 효과 : animation-fill-mode : none;<br>
+                            2번 적용 효과 : animation-fill-mode : forwards;<br>
+                            3번 적용 효과 : animation-fill-mode : backwards;<br>
+                            4번 적용 효과 : animation-fill-mode : both;
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="animation-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div class="active">
+<pre class="language-css"><code>.animation-box.show .box:nth-child(1) {animation: move 2s 1 none;}
+.animation-box.show .box:nth-child(2) {animation: move 2s 1 forwards;}
+.animation-box.show .box:nth-child(3) {animation: move 2s 1 backwards;}
+.animation-box.show .box:nth-child(4) {animation: move 2s 1 both;}
+
+@keyframes move {
+    0%   {left: 0%;}
+    100%  {left: calc(100% - 80px);}
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(".start").click(function (e) {
+                            e.preventDefault();
+                            $(this).parent().prev().children().addClass("show");
+                        });
+                        $(".reset").click(function(e){
+                            e.preventDefault();
+                            $(".sampleView > div").removeClass("show");
+                        });
+                    </script>
+                    <!-- //Sample1 -->
+
+
+
+                    
+
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">animation-fill-mode</td>
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-animations/#animation-fill-mode" target="_blank">https://w3c.github.io/csswg-drafts/css-animations/#animation-fill-mode</a></li>
+                    </ul>
+
+                    <hr class="m100">
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                        <h3>HTML</h3>
+                        <ul>
+                            <li class="active"><a href="#">&lt;a&gt;</a></li>
+                            <li><a href="#">&lt;abbr&gt;</a></li>
+                            <li><a href="#">&lt;acronym&gt;</a></li>
+                            <li><a href="#">&lt;address&gt;</a></li>
+                            <li><a href="#">&lt;applet&gt;</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- animation, animation-delay, animation-direction, animation-duration, animation-fill-mode, animation-iteration-count, animation-name, animation-play-state, animation-timing-function -->
