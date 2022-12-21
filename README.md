@@ -1,6 +1,8 @@
-### Hi there 👋
+## Hi there 👋 어떤 일이라도 노력하고 즐기면  그 결과는 빛을 바란다고 생각합니다.
 
-## 어떤 일이라도 노력하고 즐기면  그 결과는 빛을 바란다고 생각합니다.
+
+##
+https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex01/index.html
 
 
 ### 👨‍💻 프로그래밍 & 마크업 언어
