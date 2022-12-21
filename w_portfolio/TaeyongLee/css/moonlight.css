@@ -1,0 +1,527 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #002142;
+    overflow: hidden;
+}
+
+
+.frame {
+    overflow: hidden;
+}
+
+
+.frame .wolf {
+    background-image: url(https://raw.githubusercontent.com/interaminense/repository-codepen/master/wolf/imgs/wolf.png);
+    width: 500px;
+    height: 209px;
+    position: absolute;
+    bottom: 0;
+    background-position: -49px;
+}
+
+.frame .moon {
+    border-radius: 50%;
+    background-color: crimson;
+    box-shadow: 0 0 0 25px rgba(220, 20, 60, 0.1), 0 0 0 50px rgba(220, 20, 60, 0.05), 0 0 0 75px rgba(220, 20, 60, 0.01), 0 0 200px rgba(220, 20, 60, 0.5);
+}
+
+.frame .moon:after {
+    background-image: url(https://raw.githubusercontent.com/interaminense/repository-codepen/master/wolf/imgs/bgMoon.png);
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-size: 100%;
+    opacity: 0.3;
+    box-shadow: 0 0 60px inset;
+}
+
+.frame .constellation {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.frame .constellation .star {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.frame .constellation.stars-a {
+    animation: rotate360 200s linear infinite;
+}
+
+.frame .constellation.stars-b {
+    animation: rotate360 100s linear infinite;
+}
+
+.frame {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+}
+
+.moon {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.stars-a .star:nth-child(1) {
+    top: 24px;
+    left: 202px;
+    width: 3px;
+    height: 3px;
+    animation: blink 0.1s infinite;
+}
+
+.stars-a .star:nth-child(2) {
+    top: 458px;
+    left: 498px;
+    width: 2px;
+    height: 2px;
+    animation: blink 0.2s infinite;
+}
+
+.stars-a .star:nth-child(3) {
+    top: 375px;
+    left: 52px;
+    width: 1px;
+    height: 1px;
+    animation: blink 0.3s infinite;
+}
+
+.stars-a .star:nth-child(4) {
+    top: 306px;
+    left: 314px;
+    width: 1px;
+    height: 1px;
+    animation: blink 0.4s infinite;
+}
+
+.stars-a .star:nth-child(5) {
+    top: 257px;
+    left: 18px;
+    width: 2px;
+    height: 2px;
+    animation: blink 0.5s infinite;
+}
+
+.stars-a .star:nth-child(6) {
+    top: 48px;
+    left: 246px;
+    width: 2px;
+    height: 2px;
+    animation: blink 0.6s infinite;
+}
+
+.stars-a .star:nth-child(7) {
+    top: 3px;
+    left: 143px;
+    width: 2px;
+    height: 2px;
+    animation: blink 0.7s infinite;
+}
+
+.stars-a .star:nth-child(8) {
+    top: 16px;
+    left: 367px;
+    width: 3px;
+    height: 3px;
+    animation: blink 0.8s infinite;
+}
+
+.stars-a .star:nth-child(9) {
+    top: 314px;
+    left: 131px;
+    width: 1px;
+    height: 1px;
+    animation: blink 0.9s infinite;
+}
+
+.stars-a .star:nth-child(10) {
+    top: 63px;
+    left: 323px;
+    width: 3px;
+    height: 3px;
+    animation: blink 1s infinite;
+}
+
+.stars-a .star:nth-child(11) {
+    top: 51px;
+    left: 328px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.1s infinite;
+}
+
+.stars-a .star:nth-child(12) {
+    top: 101px;
+    left: 419px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.2s infinite;
+}
+
+.stars-a .star:nth-child(13) {
+    top: 169px;
+    left: 269px;
+    width: 2px;
+    height: 2px;
+    animation: blink 1.3s infinite;
+}
+
+.stars-a .star:nth-child(14) {
+    top: 282px;
+    left: 57px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.4s infinite;
+}
+
+.stars-a .star:nth-child(15) {
+    top: 133px;
+    left: 195px;
+    width: 2px;
+    height: 2px;
+    animation: blink 1.5s infinite;
+}
+
+.stars-a .star:nth-child(16) {
+    top: 247px;
+    left: 321px;
+    width: 2px;
+    height: 2px;
+    animation: blink 1.6s infinite;
+}
+
+.stars-a .star:nth-child(17) {
+    top: 85px;
+    left: 480px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.7s infinite;
+}
+
+.stars-a .star:nth-child(18) {
+    top: 23px;
+    left: 130px;
+    width: 3px;
+    height: 3px;
+    animation: blink 1.8s infinite;
+}
+
+.stars-a .star:nth-child(19) {
+    top: 382px;
+    left: 72px;
+    width: 2px;
+    height: 2px;
+    animation: blink 1.9s infinite;
+}
+
+.stars-a .star:nth-child(20) {
+    top: 32px;
+    left: 4px;
+    width: 1px;
+    height: 1px;
+    animation: blink 2s infinite;
+}
+
+.stars-a .star:nth-child(21) {
+    top: 151px;
+    left: 405px;
+    width: 1px;
+    height: 1px;
+    animation: blink 2.1s infinite;
+}
+
+.stars-a .star:nth-child(22) {
+    top: 476px;
+    left: 238px;
+    width: 1px;
+    height: 1px;
+    animation: blink 2.2s infinite;
+}
+
+.stars-a .star:nth-child(23) {
+    top: 376px;
+    left: 205px;
+    width: 1px;
+    height: 1px;
+    animation: blink 2.3s infinite;
+}
+
+.stars-a .star:nth-child(24) {
+    top: 317px;
+    left: 306px;
+    width: 2px;
+    height: 2px;
+    animation: blink 2.4s infinite;
+}
+
+.stars-a .star:nth-child(25) {
+    top: 324px;
+    left: 339px;
+    width: 2px;
+    height: 2px;
+    animation: blink 2.5s infinite;
+}
+
+.stars-a .star:nth-child(26) {
+    top: 344px;
+    left: 450px;
+    width: 2px;
+    height: 2px;
+    animation: blink 2.6s infinite;
+}
+
+.stars-b .star:nth-child(1) {
+    top: 223px;
+    left: 187px;
+    width: 1px;
+    height: 1px;
+    animation: blink 0.1s infinite;
+}
+
+.stars-b .star:nth-child(2) {
+    top: 112px;
+    left: 116px;
+    width: 1px;
+    height: 1px;
+    animation: blink 0.2s infinite;
+}
+
+.stars-b .star:nth-child(3) {
+    top: 451px;
+    left: 105px;
+    width: 3px;
+    height: 3px;
+    animation: blink 0.3s infinite;
+}
+
+.stars-b .star:nth-child(4) {
+    top: 279px;
+    left: 135px;
+    width: 3px;
+    height: 3px;
+    animation: blink 0.4s infinite;
+}
+
+.stars-b .star:nth-child(5) {
+    top: 153px;
+    left: 97px;
+    width: 1px;
+    height: 1px;
+    animation: blink 0.5s infinite;
+}
+
+.stars-b .star:nth-child(6) {
+    top: 124px;
+    left: 434px;
+    width: 2px;
+    height: 2px;
+    animation: blink 0.6s infinite;
+}
+
+.stars-b .star:nth-child(7) {
+    top: 97px;
+    left: 251px;
+    width: 3px;
+    height: 3px;
+    animation: blink 0.7s infinite;
+}
+
+.stars-b .star:nth-child(8) {
+    top: 118px;
+    left: 404px;
+    width: 1px;
+    height: 1px;
+    animation: blink 0.8s infinite;
+}
+
+.stars-b .star:nth-child(9) {
+    top: 166px;
+    left: 453px;
+    width: 2px;
+    height: 2px;
+    animation: blink 0.9s infinite;
+}
+
+.stars-b .star:nth-child(10) {
+    top: 403px;
+    left: 362px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1s infinite;
+}
+
+.stars-b .star:nth-child(11) {
+    top: 197px;
+    left: 212px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.1s infinite;
+}
+
+.stars-b .star:nth-child(12) {
+    top: 423px;
+    left: 315px;
+    width: 3px;
+    height: 3px;
+    animation: blink 1.2s infinite;
+}
+
+.stars-b .star:nth-child(13) {
+    top: 97px;
+    left: 348px;
+    width: 2px;
+    height: 2px;
+    animation: blink 1.3s infinite;
+}
+
+.stars-b .star:nth-child(14) {
+    top: 160px;
+    left: 454px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.4s infinite;
+}
+
+.stars-b .star:nth-child(15) {
+    top: 25px;
+    left: 467px;
+    width: 3px;
+    height: 3px;
+    animation: blink 1.5s infinite;
+}
+
+.stars-b .star:nth-child(16) {
+    top: 89px;
+    left: 77px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.6s infinite;
+}
+
+.stars-b .star:nth-child(17) {
+    top: 147px;
+    left: 51px;
+    width: 2px;
+    height: 2px;
+    animation: blink 1.7s infinite;
+}
+
+.stars-b .star:nth-child(18) {
+    top: 457px;
+    left: 105px;
+    width: 1px;
+    height: 1px;
+    animation: blink 1.8s infinite;
+}
+
+.stars-b .star:nth-child(19) {
+    top: 209px;
+    left: 239px;
+    width: 3px;
+    height: 3px;
+    animation: blink 1.9s infinite;
+}
+
+.stars-b .star:nth-child(20) {
+    top: 304px;
+    left: 70px;
+    width: 3px;
+    height: 3px;
+    animation: blink 2s infinite;
+}
+
+.stars-b .star:nth-child(21) {
+    top: 278px;
+    left: 322px;
+    width: 3px;
+    height: 3px;
+    animation: blink 2.1s infinite;
+}
+
+.stars-b .star:nth-child(22) {
+    top: 384px;
+    left: 410px;
+    width: 1px;
+    height: 1px;
+    animation: blink 2.2s infinite;
+}
+
+.stars-b .star:nth-child(23) {
+    top: 393px;
+    left: 108px;
+    width: 2px;
+    height: 2px;
+    animation: blink 2.3s infinite;
+}
+
+.stars-b .star:nth-child(24) {
+    top: 218px;
+    left: 211px;
+    width: 2px;
+    height: 2px;
+    animation: blink 2.4s infinite;
+}
+
+.stars-b .star:nth-child(25) {
+    top: 171px;
+    left: 33px;
+    width: 2px;
+    height: 2px;
+    animation: blink 2.5s infinite;
+}
+
+.stars-b .star:nth-child(26) {
+    top: 36px;
+    left: 182px;
+    width: 3px;
+    height: 3px;
+    animation: blink 2.6s infinite;
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0;
+    }
+
+    50% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+
+    100% {
+        box-shadow: 0;
+    }
+}

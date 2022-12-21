@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Page intro animation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <svg version="1.1" viewBox="0 0 100 100" class="filler-loader">
+        <circle class="fill-path" cx="50" cy="50" r="40" />
+        
+    </svg>
+    <!-- partial:index.partial.html -->
+
+    <!-- partial -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js'></script>
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src="./script.js"></script>
+    <script>
+        $('.landing').imagesLoaded()
+
+            .always(function(instance) {
+
+                console.log('all images loaded');
+
+            })
+
+            .done(function(instance) {
+
+                console.log('all images successfully loaded');
+
+            })
+
+            .fail(function() {
+
+                console.log('all images loaded, at least one is broken');
+
+            })
+
+            .progress(function(instance, image) {
+
+                var result = image.isLoaded ? 'loaded' : 'broken';
+
+                console.log('image is ' + result + ' for ' + image.img.src);
+
+            });
+    </script>
+
+    <script>
+        // Requires the GreenSock DrawSVG plugin and TimelineMax
+        var loader = new TimelineMax({
+                repeat: -1
+            }),
+            fill_path = $('.fill-path'),
+            fill_duration = 1.2,
+            fill_position = '+=.25'; // place tween .25secs after end of init tween
+
+        loader.fromTo(fill_path, fill_duration, {
+                drawSVG: '0'
+            }, {
+                drawSVG: '100%'
+            }, fill_position)
+            .to(fill_path, fill_duration, {
+                drawSVG: '100% 100%'
+            }, fill_position);
+    </script>
+</body></html>

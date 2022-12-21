@@ -1,0 +1,62 @@
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+    z-index: 5;
+}
+
+.landing {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+}
+
+.landing .title {
+  color: #fff;
+  max-width: 45%;
+  text-align: center;
+  mix-blend-mode: difference;
+  z-index: 2;
+  transform: translateY(40px);
+}
+.landing .bg {
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  width: 50%;
+  height: 100%;
+  transform: scaleX(0);
+}
+.landing .bg-l {
+  left: 0;
+  transform-origin: left center;
+}
+.landing .bg-r {
+  left: 50%;
+  transform-origin: right center;
+}
+
+.hero img {
+    width: 40vw;
+    height: 50vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+
+.filler-loader {
+  height: 32px;
+  width: 32px;
+  transform: rotate(-90deg);
+}
+.filler-loader .fill-path {
+  fill: none;
+  stroke: white;
+  stroke-linecap: butt;
+  stroke-width: 8px;
+}
