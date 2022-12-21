@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+/* border-box 초기화 */
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 가로모드 글씨 확대 초기화 */
+html {
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* 여백 초기화 */
+body, div, ul, li, dl, dd, dt, ol, h1, h2, h3, h4, h5, h6, input, fieldset, legend, p, select, table, th, td, tr, textarea, button, form, figure, figcaption{margin: 0; padding: 0;}
+
+/* 폰트 초기화 */
+html, body, input, textarea, select, button, table {
+    font-size: 10px; 
+    line-height: 1.4;
+    color: #000; 
+    font-family:'Noto Sans KR', 'Lexend', -apple-system, BlinkMacSystemFont, AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움', helvetica, "Apple SD Gothic Neo",sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* a 링크 초기화 */
+a, a:hover, a:focus {color: inherit; text-decoration: none;}
+
+/* 디자인 초기화 */
+input, textarea, button,select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    border-radius: 0;
+    font-size: 10px;
+}
+
+/* 폰트 스타일 초기화 */
+em, address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+ul, li, ol {list-style: none;}
+
+/* 제목 태그 초기화 */
+h1, h2, h3, h4, h5, h6, strong {font-weight: normal;}
+
+/* 테두리 초기화 */
+img, fieldset {border: 0 none;}
+
+/* table */
+table {border: 0; border-collapse: collaspe; border-spacing: 0;width: 100%;}
+
+/* 반응형 */
+video, img {vertical-align: top; width: 100%;}
+
+/* 버튼 초기화 */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {border: 0; -webkit-appearance: button; cursor: pointer;}
+
+/* 스킵메뉴 */
+#skip a {
+    position: absolute;
+    left: 10px;
+    top: -92px;
+    z-index: 100000;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px;
+    background: #000;
+    font-family: "Chosunilbo_myungjo";
+    transition: none;
+}
+#skip a:focus, #skip a:active {top: 20px; transition: all 0.6s ease;}
+
+/* 글씨 감추기 */
+.blind {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;}
+
+/* clearfix */
+.clearfix {*zoom: 1;}
+.clearfix:before, .clearfix:after {display: block; content: ''; line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* IR 효과 */
+.ir_pm {display: block; overflow: hidden; font-size: 0; line-height: 0; text-indent: -9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display: block; overflow: hidden; position: relative; z-index: -1; width: 100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {overflow: hidden; position: absolute; width: 0; height: 0; line-height: 0; text-indent: -9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* margin, padding 간격 세팅 */
+.mt0   {margin-top: 0 !important;}
+.mt10  {margin-top: 10px !important;;}
+.mt20  {margin-top: 20px !important;;}
+.mt30  {margin-top: 30px !important;;}
+.mt40  {margin-top: 40px !important;;}
+.mt50  {margin-top: 50px !important;;}
+.mt60  {margin-top: 60px !important;;}
+.mt70  {margin-top: 70px !important;;}
+.mt80  {margin-top: 80px !important;;}
+.mt90  {margin-top: 90px !important;;}
+.mt100 {margin-top: 100px !important;;}
+
+.pt0   {padding-top: 0;}
+.pt10  {padding-top: 10px;}
+.pt20  {padding-top: 20px;}
+.pt30  {padding-top: 30px;}
+.pt40  {padding-top: 40px;}
+.pt50  {padding-top: 50px;}
+.pt60  {padding-top: 60px;}
+.pt70  {padding-top: 70px;}
+.pt80  {padding-top: 80px;}
+.pt90  {padding-top: 90px;}
+.pt100 {padding-top: 100px;}
+.pt200 {padding-top: 200px;}

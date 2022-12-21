@@ -1,0 +1,366 @@
+@charset "utf-8";
+@import "common.css";
+
+#main {
+  display: flex;
+  align-items: center;
+}
+
+/* container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* section */
+.section > h2 {
+  text-align: center;
+  padding: 100px 0 0;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+.section > p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+.section > p em {
+  color: red;
+  font-weight: 500;
+}
+
+/* blind */
+.blind {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+/* ir */
+.ir {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* input style */
+.input_style1 {
+  border: 0;
+  background-color: #f5f5f5;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+.input_style2 {
+  border: 0;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 9px 30px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* btn style */
+.btn_style1 {
+  display: block;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 20px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn_style2 {
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.btn_style3 {
+  border: 0;
+  background: #fff;
+  border-radius: 5px;
+  color: #666;
+  padding: 9px 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn_style4 {
+  border: 0;
+  background: #000;
+  border-radius: 5px;
+  color: #fff;
+  padding: 12px 30px;
+  font-size: 16px;
+}
+
+/* select style */
+.select_style1 {
+  border: 0;
+  padding: 11px 30px;
+  font-size: 16px;
+  border-radius: 5px;
+  color: #666;
+}
+
+/* margin style */
+.mt0 {
+  margin-top: 0 !important;
+}
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}
+
+.mr0 {
+  margin-right: 0 !important;
+}
+.mr10 {
+  margin-right: 10px !important;
+}
+.mr20 {
+  margin-right: 20px !important;
+}
+.mr30 {
+  margin-right: 30px !important;
+}
+.mr40 {
+  margin-right: 40px !important;
+}
+.mr50 {
+  margin-right: 50px !important;
+}
+
+.join__inner {
+  padding: 0 200px 100px;
+}
+
+.join__privacy h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.join__privacy .privacy {
+  background: #dcdcdc;
+  padding: 20px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.join__privacy .privacy li {
+  font-size: 1.8rem;
+}
+.join__privacy .check label {
+  font-size: 1.8rem;
+}
+
+.join__privacy .check {
+  margin-bottom: 40px;
+}
+
+.join__form label {
+  display: block;
+  margin: 20px 0 5px;
+  font-size: 18px;
+}
+
+.join__form .comment {
+  width: 100%;
+  color: #666;
+  padding-top: 5px;
+  font-weight: 300;
+}
+
+.join__form .overlap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.join__form .overlap label {
+  width: 100%;
+}
+
+.join__form .overlap input {
+  width: 70%;
+}
+
+.join__form .overlap a {
+  width: 27%;
+  box-sizing: border-box;
+}
+
+/* 로그인 */
+.login__inner {
+  width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+.login__contents {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  padding: 60px 0;
+  position: relative;
+}
+.login__contents::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+.login__contents::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  width: 100%;
+  height: 1px;
+  background: #000;
+}
+.login__contents input {
+  margin-bottom: 10px;
+}
+.login__footer .btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+.login__footer .btn a {
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.login__footer .btn a:hover {
+  background: #000;
+  color: #fff;
+}
+.login__footer .desc {
+  margin: 30px 0 150px;
+}
+.login__footer .desc ul {
+  padding-left: 16px;
+}
+.login__footer .desc li {
+  list-style-type: circle;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+.login__footer .desc .link {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+#banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.banner__inner .img {
+  width: 30%;
+  border-radius: 50%;
+  overflow: hidden;
+  filter: saturate(0%);
+}
+
+.banner__inner .desc {
+  width: 65%;
+  font-size: 1.7rem;
+  font-weight: 300;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.banner__inner .desc em {
+  color: #927352;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.banner__inner .desc em::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  background: #f0dac2;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 0.6s;
+}
+
+.banner__inner:hover .img {
+  filter: saturate(100%);
+}
+
+.banner__inner:hover .desc em {
+  color: #000;
+}
+
+.banner__inner:hover .desc em::before {
+  width: 100%;
+}
+
+/* .banner__inner style2 */
+.banner__inner.style2 {
+  position: relative;
+  text-align: center;
+}
+
+.banner__inner.style2 .img {
+  width: 40%;
+  margin: 5rem auto;
+  border-radius: 0;
+}
+
+.banner__inner.style2 .desc {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+.banner__inner.style2 .btn {
+  width: 35%;
+  margin: 0 auto;
+}
+.banner__inner.style2 .btn:hover {
+  color: white;
+}

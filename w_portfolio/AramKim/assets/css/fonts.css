@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+@font-face {
+    font-family: 'Amalfi Coast';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/Amalfi_Coast.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chosunilbo_myungjo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ghanachoco';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ghanachoco.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KCC-eunyoung';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/KCC-eunyoung_Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'stay home';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/STAY_HOME.otf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DalseoDarling';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DalseoDarling.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DalseoHealingBold';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DalseoHealingBold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DalseoHealingMedium';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../fonts/DalseoHealingMedium.ttf');
+    font-display: swap;
+}

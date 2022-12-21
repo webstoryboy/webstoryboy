@@ -1,0 +1,143 @@
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-point: #fbe462;
+}
+
+/* body */
+body {
+    width: 100%; height: 100vh;
+    /* background: var(--color-white); */
+    /* background: yellow; */
+}
+
+/* container */
+/* .container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+} */
+
+/* section */
+section > h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'S-CoreDream-3Light';
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+section > p {
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+}
+
+.section > p em {
+    color: red;
+    font-weight: 500;
+}
+
+/* blind */
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+/* ir */
+.ir {
+    display: block;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+}
+
+/* input style */
+.input_style1 {
+    border: 0;
+    background-color: #f5f5f5;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: 300;
+    box-sizing: border-box;
+    border: 2px solid var(--color-black);
+}
+.input_style2 {
+    border: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 7px 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 2px solid var(--color-black);
+}
+
+/* btn style */
+.btn_style1 {
+    display: block;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn_style2 {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+.btn_style3 {
+    border: 0;
+    background: #fff;
+    border-radius: 5px;
+    color: #666;
+    padding: 7px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid var(--color-black);
+}
+.btn_style4 {
+    border: 0;
+    background: #000;
+    border-radius: 5px;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 16px;
+}
+
+/* select style */
+.select_style1 {
+    border: 0;
+    padding: 7px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #666;
+    border: 2px solid var(--color-black);
+}
+
+
+/* margin style */
+.mt0 {margin-top: 0 !important;}
+.mt10 {margin-top: 10px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt50 {margin-top: 50px !important;}
+
+.mr0 {margin-right: 0 !important;}
+.mr10 {margin-right: 10px !important;}
+.mr20 {margin-right: 20px !important;}
+.mr30 {margin-right: 30px !important;}
+.mr40 {margin-right: 40px !important;}
+.mr50 {margin-right: 50px !important;}
