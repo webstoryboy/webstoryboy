@@ -1,0 +1,1283 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow: hidden;
+    height: 100%;
+}
+body * {touch-action: none;}
+
+#wrap {
+    background: var(--black);
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--black);
+    z-index: 999;
+}
+
+.landing .title {
+    position: absolute;
+    opacity: 0;
+    color: var(--white);
+    font-size: 7vw;
+    text-align: center;
+    mix-blend-mode: difference;
+    z-index: 1;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Saint';
+    line-height: 7vw;
+}
+
+.landing .bg {
+    position: absolute;
+    top: 0;
+    background-color: var(--white);
+    width: 50.1%;
+    height: 100%;
+    transform: scaleX(0);
+}
+.landing .bg-l {
+    right: 0;
+    transform-origin: left center;
+}
+.landing .bg-r {
+    right: 50%;
+    transform-origin: right center;
+}
+.landing .bg-b {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--white);
+    transform-origin: top center;
+}
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    position: fixed;
+    z-index: 99;
+    overflow: hidden;
+    opacity: 0;
+}
+.header_back {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: var(--black);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+.header__inner {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    display: flex;
+}
+
+/* header logo */
+.header__left {
+  width: 15%;
+  height: 100%;
+  position: relative;
+}
+.header__logo__box {
+    width: 40px;
+    height: 40px;
+    border: 2.5px solid var(--white);
+    margin-top: 20px;
+    text-align: center;
+    position: absolute;
+}
+.header__logo__box:hover {
+  transform: rotateX( 180deg )
+}
+.header__logo {
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+    font-size: 1vw;
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/* scroll */
+.scroll {
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    width: 40px;
+    height: 40px;
+    color: var(--white);
+    text-align: center;
+    font-size: 0.8vw;
+    z-index: 99;
+}
+
+/* header menu */
+.header__menu {
+    width: 100%;
+    color: var(--white);
+    letter-spacing: 10px;
+    text-align: center;
+    font-family: "Quest";
+}
+.header__menu ul {
+    display: block;
+}
+.header__menu li {
+    display: inline-block;
+}
+.header__menu li a {
+    padding: 10px 25px;
+    margin: 0 5px;
+    font-size: 0.85vw;
+    line-height: 80px;
+}
+  
+/* header right */
+.header__right {
+    width: 15%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+  position: absolute;
+  width: 80%;
+  right: 0;
+  color: var(--white);
+  font-family: "Quest";
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.9vw;
+}
+
+.login p{
+  color: var(--blue);
+}
+
+.mobile__btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+    height: 15px;
+    margin-top: 27.5px;
+    cursor: pointer;
+    opacity: 0;
+}
+.mobile__btn span{
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background-color: var(--blue);
+}
+
+/* section1 */
+#section1 .main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#section1 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 10;
+  }
+
+#section1 .main__logo {
+    width: 34vw;
+    position: absolute;
+}
+#section1 .main__logo img{
+  opacity: 0;
+}
+
+/* sec01 오프닝 */
+.sec01__title {
+    width: 120%;
+    font-family: "Saint";
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: -10%;
+    white-space: nowrap;
+    opacity: 0;
+    color: var(--white);
+}
+
+.st01 {
+    color: var(--white);
+    font-size: 8vw;
+    white-space: nowrap;
+}
+.st02 {
+    top: 51%;
+    font-size: 7.5vw;
+}
+.st03 {
+    top: 63%;
+    font-size: 7vw;
+}
+.st04 {
+    top: 75%;
+    font-size: 6.5vw;
+}
+.st05 {
+    top: 87%;
+    font-size: 6vw;
+} 
+.op {
+    opacity: 1;
+}
+
+          
+/* section2 */
+#section2 {
+    width: 100%;
+    height: 100rem;
+    background: var(--black);
+    position: relative;
+    z-index: 9;
+}
+#section2 .sec02 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#section2 .sec02 p {
+    font-size: 1.9vw;
+    text-align: center;
+    color: var(--white);
+    position: absolute;
+    font-family: "Gmarket";
+}
+#section2 span {
+    color: var(--blue);
+}
+
+#section2 .stone_01 {
+    position: absolute;
+    width: 28vw;
+    left: -10%;
+    z-index: 2;
+}
+#section2 .stone_02 {
+    position: absolute;
+    width: 28vw;
+    right: -15%;
+}
+#section2 .fragments {
+    position: absolute;
+    width: 28vw;
+    right: 15%;
+}   
+        
+/* section3 */
+#section3 {
+    width: 100%;
+    height: 250rem;
+    background: var(--black);
+    position: relative;
+    z-index: 8;
+  }
+  #section3 .sec03 {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 30rem;
+  }
+  #section3 h3 {
+    font-family: "Saint";
+    line-height: 125%;
+    position: relative;
+    left: -10%;
+    top: -50%;
+    color: var(--white);
+  }
+  #section3 h3 em {
+    color: var(--blue);
+  }
+  #section3 .sec03 .txt_main {
+    font-size: 15vw;
+  }
+  #section3 .sec03 .txt_sub1 {
+    font-size: 12vw;
+  }
+  #section3 .sec03 .txt_sub2{
+    font-size: 10vw;
+  }
+  #section3 .sec03 .txt_sub3{
+    font-size: 8vw;
+  }
+  #section3 .sec03 .txt_sub4{
+    font-size: 6vw;
+  }
+  
+/* section04 */
+.sec04::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+#section4 {
+    width: 100%;
+    height: 450rem;
+    background: var(--black);
+    position: relative;
+  }
+  
+  #section4 .sec04 {
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+  }
+
+  /* sec04_txt */
+  #section4 .sec04_con {
+    color: var(--white);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #section4 .sec04_txt {
+    font-family: "Saint";
+    display: flex;
+    position: absolute;
+    z-index: 10;
+  }
+  #section4 span {
+    font-size: 12vw;
+  }
+
+/* sec04_img */  
+  #section4 .sec04_img {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #section4 .sec04_img img {
+    width: 12vw;
+    height: 18vw;
+    position: absolute;
+  }
+  #section4 .sec04_img .card01, .card02, .card03, .card04 {
+    z-index: 20;
+  }
+
+/* section5 */
+#section5 {
+  width: 100%;
+  height: 1050rem;
+  margin-top: 20rem;
+}
+
+/* lush/puma */
+#section5 .sec05_01 {
+  width: 100%;
+  height: 350rem;
+}
+
+/* movie/php */
+#section5 .sec05_02 {
+  width: 100%;
+  height: 350rem;
+}
+
+/* react/vue */
+#section5 .sec05_03 {
+  width: 100%;
+  height: 350rem;
+}
+
+/* sec05_con */
+#section5 .sec05_con {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+#section5 .project {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#section5 .left {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#section5 .right {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* pro_img*/
+#section5 .pro_img {
+  display: flex;
+}
+#section5 .lt {
+  flex-direction: row;
+}
+#section5 .rg {
+  flex-direction: row-reverse;
+}
+#section5 .pro {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#section5 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  transition-duration: 0.5s;
+}
+#section5 img:hover {
+  filter: none;
+  transition-duration: 1s;
+  width: 110%;
+}
+
+/* pro_txt */
+#section5 .pro_txt{
+  position: absolute;
+  height: 100%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+  font-family: "Saint";
+  z-index: 99;
+  left: 50%;
+  transform: translate(-50%);
+  color: var(--white);
+}
+#section5 .pro_title {
+  line-height: 5vw;
+  text-align: center;
+  cursor: default;
+}
+#section5 .pro_mask {
+  overflow: hidden;
+  height: 5vw;
+}
+#section5 .pro_nf {
+  font-size: 5vw;
+}
+#section5 .left .pro_nf{
+  color: var(--white);
+}
+#section5 .right .pro_nf{
+  color: var(--blue);
+}
+
+/* pro_btn*/
+#section5 .pro_btn {
+  margin-top: 15%;
+  margin-bottom: 10%;
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+#section5 .pro_btn_site {
+  width: 8vw;
+  border-radius: 5vw;
+  padding: 2.5% 5%;
+  font-size: 1.1vw;
+  font-family: "Quest";
+}
+#section5 .left .pro_btn_site {
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+#section5 .left .pro_btn_site:hover {
+  background-color: var(--white);
+  color: var(--black);
+  transition: 0.5s;
+}
+
+#section5 .right .pro_btn_site {
+  border: 2px solid var(--blue);
+  color: var(--blue);
+}
+#section5 .right .pro_btn_site:hover {
+    background-color: var(--blue);
+    color: var(--black);
+    transition: 0.5s;
+}
+
+
+/* section6 */
+#section6 {
+  width: 100%;
+  height: 1800rem;
+}
+#section6 .sec06 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+#section6 .sec06 .sec06_con {
+  width: 500vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  color: var(--white);
+}
+
+/* script01 */
+#section6 .script01 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* main01 */
+#section6 .script01 .main01 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* main_img*/
+#section6 .script01 .main_img {
+  position: absolute;
+  width: 30vw;
+  height: 30vw;
+  border-radius: 15vw;
+  background-image: url(../img/section6/script_main.jpg);
+  background-size: cover;
+  animation-name: script;
+  animation: script 2s linear infinite;
+  animation-direction: alternate;
+}
+@keyframes script {
+  0% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(1.75);
+  }
+}
+
+/* main_txt*/
+#section6 .main_txt {
+  font-family: "Saint";
+  font-size: 6.5vw;
+  line-height: 6.5vw;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+}
+/* sc*/
+#section6 .sc04 {
+  width: 100%;
+  font-size: 1.2vw;
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+#section6 .sc04 em{
+  font-family: "Quest";
+}
+
+/* main01 bottom */
+#section6 .main01 .main_bottom {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85vw;
+  font-family: "Quest";
+  padding-right: 5%;
+}
+#section6 .main_bottom .btm_left{
+  width: 25%;
+}
+#section6 .main_bottom .btm_right{
+  width: 25%;
+}
+#section6 .main_bottom .script_conbox{
+  display: flex;
+  justify-content: space-between;
+}
+#section6 .main_bottom .btm_right .script_conbox{
+  justify-content: space-evenly;
+}
+#section6 .main_bottom .con_arrow{
+  width: 3.4vw;
+  height: 1.6vw;
+  border-radius: 1vw;
+  border: 1px solid var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section6 .main_bottom .con_arrow img{
+  width: 1.4vw;
+}
+
+/* canvas */
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#webgl {
+    width: 100%;
+    height: 100%;
+}
+
+/* main02 */
+#section6 .main02 {
+  position: absolute;
+  right: 0;
+  width: 4%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* main_txt_roll */
+#section6 .main02 .main_roll {
+  width: 100%;
+  height: 100vh;
+  border-left: 1px solid var(--white);
+  border-right: 1px solid var(--white);
+  box-sizing: border-box;
+  overflow: hidden;
+  writing-mode: vertical-rl;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#section6 .main02 .main_roll em {
+  color: var(--blue);
+}
+#section6 .main02 .main_roll .roll {
+  width: 50%;
+  height: 200vh;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* script_line */
+#section6 .script_line {
+    position: absolute;
+    width: 1vw;
+    height: 100vh;
+    background-color: var(--blue2);
+    right: 0;
+    bottom: 0;
+}
+#section6 .script01 .script_line {
+    opacity: 0;
+}
+
+/* #section6 script02 */
+#section6 .script02 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section6 .script_header {
+    width: 100%;
+    height: 81px;
+    background-color: var(--black);
+    position: absolute;
+    border-bottom: 1px solid var(--white);
+    top: 0;
+}
+#section6 .script_con {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+/* #section6 script_left */
+#section6 .script_left {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-left: 5%;
+}
+/* #section6 .script_middle {
+    width: 10%;
+    height: 100%;
+    background-color:#fff;
+} */
+#section6 .script_left .script_title{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#section6 .script_left .script_title .title{
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 40%;
+}
+#section6 .script_left .script_title span{
+    width: 100%;
+    font-size: 6.5vw;
+    font-family: "Saint";
+    color: var(--white);
+    padding-bottom: 5px;
+    word-spacing: -10px;
+}
+#section6 .script_left .script_desc{
+    width: 100%;
+    height: 30%;
+}
+#section6 .script_left .script_desc{
+    width: 80%;
+    font-family: "Gmarket";
+    padding-top: 50px;
+    font-size: 1.3vw;
+    line-height: 1.5;
+}
+#section6 .script_left .script_desc .em{
+    font-size: 1.6vw;
+    color: var(--blue);
+    font-family: "Heiro";
+    padding-bottom: 10px;
+}
+#section6 .script_left .script_desc span{
+    margin-top: 10px;
+}
+#section6 .script_left .script_btn{
+    width: 100%;
+    height: 30%;
+    padding-top: 50px;
+}
+#section6 .script_left .script_btn .btn{
+    width: 32%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#section6 .script_left .script_btn .btn a{
+    width: 8vw;
+    height: 2.5vw;
+    border-radius: 20vw;
+    text-align: center;
+    line-height: 2.5vw;
+    font-family: "Quest";
+    font-size: 1.2vw;
+    background-color: var(--white);
+    color: var(--black);
+}
+#section6 .script_left .script_btn .btn a:hover{
+    background-color: var(--blue);
+    color: var(--black);
+    transition: 0.5s;
+}
+#section6 .script_left .script_move{
+    width: 100%;
+    height: 15%;
+}
+#section6 .script_left .script_move .move{
+    width: 85%;
+    height: 5vh;
+    border-radius: 50vw;
+    border: 1px solid var(--white);
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 1vw;
+    line-height: 5vh;
+}
+#section6 .script_left .script_move .move_txt{
+    width: 120%;
+    animation-name: text;
+    animation: text linear infinite;
+    animation-duration: 20000ms;
+    color: var(--white);
+}
+#section6 .script_left .script_move .move_txt em{
+    font-size: 1vw;
+    color: var(--blue2);
+}
+@keyframes text {
+    0%{transform: translateX(0%);}
+    100% {transform: translateX(-100%);}
+}
+
+/* #section6 script_right */
+#section6 .script_right {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* #section6 script_right */
+#section6 .script02 .script_right {
+    width: 40%;
+    height: 100vh;
+    background-image: url(../img/section6/card.jpg);
+    background-size: cover;
+    background-position-y: 80%;
+}
+#section6 .script03 .script_right {
+    width: 40%;
+    height: 100vh;
+    background-image: url(../img/section6/typing.jpg);
+    background-size: cover;
+    background-position-y: 80%;
+}
+#section6 .script04 .script_right {
+    width: 40%;
+    height: 100vh;
+    background-image: url(../img/section6/music.jpg);
+    background-size: cover;
+    background-position-y: 80%;
+}
+#section6 .script05 .script_right {
+    width: 40%;
+    height: 100vh;
+    background-image: url(../img/section6/drawing.jpg);
+    background-size: cover;
+    background-position-y: 80%;
+}
+
+/* script03 */
+#section6 .script03 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+/* script04 */
+#section6 .script04 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/* script05 */
+#section6 .script05 {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+/* section7 */
+#section7 {
+    width: 100%;
+    height: 700rem;
+}
+/* sec07 */
+#section7 .sec07_01 {
+    width: 100%;
+    height: 350rem;
+}
+#section7 .sec07_02 {
+    width: 100%;
+    height: 350rem;
+}
+/* sec07_con */
+#section7 .sec07_con {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+#section7 .react {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#section7 .react_img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#section7 .rct{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#section7 img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+    transition-duration: 0.5s;
+}
+#section7 img:hover {
+    filter: brightness(0.8);
+    transition-duration: 1s;
+    width: 110%;
+}
+
+/* pro_txt */
+#section7 .pro_txt{
+    position: absolute;
+    height: 100%;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    font-family: "Saint";
+    z-index: 99;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--white);
+}
+#section7 .pro_title {
+    line-height: 6vw;
+    text-align: center;
+    cursor: default;
+}
+#section7 .pro_mask {
+    overflow: hidden;
+    height: 6vw;
+}
+#section7 .pro_nf {
+    font-size: 6vw;
+}
+#section7 .left .pro_nf{
+    color: var(--white);
+}
+#section7 .right .pro_nf{
+    color: var(--blue);
+}
+
+/* pro_btn*/
+#section7 .pro_btn {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: space-evenly;
+    display: flex;
+    z-index: 99;
+}
+#section7 .pro_btn_site {
+    width: 10vw;
+    border-radius: 5vw;
+    padding: 2.5% 5%;
+    font-size: 1.1vw;
+    font-family: "Quest";
+}
+#section7 .pro_btn_site {
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+#section7 .pro_btn_site:hover {
+    background-color: var(--white);
+    color: var(--black);
+    transition: 0.5s;
+}
+/* sec07_2 */
+#section7 .sec07_02 .pro_txt{
+    color: var(--blue);
+}
+#section7 .sec07_02 .pro_btn_site {
+    border: 2px solid var(--blue);
+    color: var(--blue);
+}
+#section7 .sec07_02 .pro_btn_site:hover {
+    background-color: var(--blue);
+    color: var(--black);
+    transition: 0.5s;
+}
+/* section8 */
+#section8 {
+    width: 100%;
+    height: 600rem;
+    background-color: var(--black);
+    display: flex;
+}
+#section8 .sec08 {
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+    display: flex;
+    top: 0;
+    background-image: url(../img/section6/noise.gif);
+    overflow: hidden;
+    text-align: left;
+    padding-left: 5vw;
+}
+#section8 .contact_intro {
+    width: 200%;
+    height: 100vh;
+    white-space: nowrap;
+    font-family: 'Quest';
+    color: var(--white);
+    font-size: 25vw;
+    font-weight: 700;
+}
+#section8 .intro_txt {
+    position: absolute;
+    line-height: 100vh;    background-clip: text;
+    color: white;
+    -webkit-background-clip: text;
+    opacity: 0.7;
+}
+
+/* section9 */
+#section9 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    margin-top: 30rem;
+}
+#section9 .sec09 {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+#section9 .sec09 .contact_box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 100px 10% 40px 10%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#section9 .sec09 .contact_left{
+    width: 50rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section9 .profile_img{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32rem;
+}
+#section9 .profile_img img{
+    width: 100%;
+}
+#section9 .profile_info{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+}
+#section9 .info01 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#section9 .info02 {
+    display: flex;
+    height: 3rem;
+}
+#section9 .info02 .icon_box {
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid var(--white);
+}
+#section9 .info02 .icon_box:first-child {
+    padding-left: 0;
+    border-left: 0;
+}
+#section9 .info02 .icon_box:last-child{
+    padding-right: 0;
+}
+#section9 .info02 .icon_box .icon{
+    width: 2rem;
+    height: 2rem;
+}
+#section9 .info02 .icon_box span {
+    padding-left: 1rem;
+    font-size: 1.6rem;
+}
+#section9 .contact_right {
+    width: 60rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#section9 .contact {
+    text-align: center;
+    width: 100%;
+    padding: 0 5rem 0 5rem;
+    margin-bottom: 3.5rem;
+    border-left: 1px solid rgb(156, 156, 156);
+}
+#section9  .contact .POST_title {
+    font-size: 3vw;
+    color: var(--white);
+    margin-bottom: 1rem;
+    text-align: left;
+    font-family: 'Gmarket';
+}
+
+#section9  .contact form input {
+	border: none;
+	outline: none;
+	display: block;
+  width: 100%;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	padding: 1rem 1.5rem;
+	height: 4.5rem;
+	box-sizing: border-box;
+	font-size: 1.6rem;
+	background: var(--white);
+	color: rgba(0, 0, 0, 0.8);
+}
+#section9 .contact form input::placeholder, 
+#section9 .contact form textarea::placeholder{transition: 0.5s ease-in-out;}
+#section9 .contact form input:focus::placeholder {visibility: hidden;}
+#section9 .contact form .message textarea {
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    padding: 1rem 1.5rem;
+    height: 15rem;
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    background: var(--white);
+	color: rgba(0, 0, 0, 0.8);
+}
+#section9 .contact form .f_btn {
+	display: inline-block;
+    width: 100%;
+    padding: 0.5rem 4rem;
+    outline: none;
+    background: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+#section9 .contact form .f_btn:hover {
+  transition: 0.5s;
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--white);
+}
+#section9 .contact form label {display: none;}
+
+#section9 .contact_txt{
+  text-align: center;
+  font-size: 1.5vw;
+  font-family: "Gmarket";
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+#section9 .contact_txt em{
+  color: var(--blue);
+}

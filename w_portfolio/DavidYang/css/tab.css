@@ -1,0 +1,283 @@
+/* 1800px */
+@media all and (max-width:1800px) {
+  /* section3 */
+  #section3 h3{
+  top: -60%;
+  }
+  #section3 .sec03 .txt_main {
+  font-size: 16vw;
+  }
+  #section3 .sec03 .txt_sub1 {
+  font-size: 13vw;
+  }
+  #section3 .sec03 .txt_sub2{
+  font-size: 11vw;
+  }
+  #section3 .sec03 .txt_sub3{
+  font-size: 9vw;
+  }
+  #section3 .sec03 .txt_sub4{
+  font-size: 7vw;
+  }
+}
+
+/* 1500px */
+@media all and (max-width:1500px) {
+  /* section3 */
+  #section3 h3{
+  top: -50%;
+  }
+  #section3 .sec03 .txt_main {
+  font-size: 18vw;
+  }
+  #section3 .sec03 .txt_sub1 {
+  font-size: 15vw;
+  }
+  #section3 .sec03 .txt_sub2{
+  font-size: 13vw;
+  }
+  #section3 .sec03 .txt_sub3{
+  font-size: 11vw;
+  }
+  #section3 .sec03 .txt_sub4{
+  font-size: 9vw;
+  }
+  /* section4 */
+  #section4 .sec04 {
+    overflow-x: hidden;
+  }  
+   #section4 span {
+    font-size: 15vw;
+  }
+  #section4 .sec04_img img {
+    width: 14vw;
+    height: 21vw;
+  }
+  /* section5*/
+  #section5 .pro_txt{ 
+    width: 50%;
+  }
+  #section5 .pro_title {
+    line-height: 6.5vw;
+  }
+  #section5 .pro_mask {
+    overflow: hidden;
+    height: 6.5vw;
+  }
+  #section5 .pro_nf {
+    font-size: 6.5vw;
+  }
+  
+  /* section5 btn*/
+  #section5 .pro_btn_txt{
+    font-size: 1.5vw;
+  } 
+}
+
+/* 1200px */
+@media all and (max-width:1200px) {
+
+/* header*/    
+header{
+height: 60px;
+}
+.header_back{
+height: 60px;
+}
+.header__inner {
+padding: 0 15px;
+height: 60px;
+}  
+.header__menu ul {
+display: none;
+} 
+.header__logo__box {
+  margin-top: 15px;
+  width: 30px;
+  height: 30px;
+}
+.header__logo {
+  font-size: 2vw;
+  width: 15px;
+  height: 15px;
+  margin-top: 23px;
+  margin-left: 8px;
+}
+
+.header__right {
+    width: 35%;
+    display: flex;
+}
+
+.header__right .login {
+    position: relative;
+    font-size: 1.5vw;
+}
+
+.mobile__btn {
+    width: 20%;
+    margin-top: 0px;
+    opacity: 1;
+}
+
+/* section1*/
+#section1 .main__logo{
+width: 45vw;
+}
+.st01{
+font-size: 12vw;
+}
+.st02{
+font-size: 10vw;
+}
+.st03{
+font-size: 9vw;
+}
+.st04{
+font-size: 8vw;
+} 
+.st05{
+font-size: 7vw;
+}
+
+/* section2*/
+#section2 .sec02 p {
+font-size: 2.2vw;
+} 
+#section2 .stone_01 {
+width: 32vw;
+bottom: 20%;
+}
+#section2 .stone_02 {
+right: -15%;
+width: 32vw;
+}  
+#section2 .fragments {
+top: 30%;
+right: 15%;
+width: 32vw;
+}
+
+/*section4 */
+#section4 .sec04 {
+overflow-x: hidden;
+}  
+#section4 span {
+font-size: 18vw;
+}
+#section4 .sec04_img img {
+width: 18vw;
+height: 27vw;
+}
+
+/* section5*/
+/* section5 txt*/
+#section5 .pro_txt{ 
+width: 70%;
+}
+#section5 .pro_title {
+line-height: 9vw;
+}
+#section5 .pro_mask {
+overflow: hidden;
+height: 9vw;
+}
+#section5 .pro_nf {
+font-size: 9vw;
+}
+
+/* section5 btn*/
+#section5 .pro_btn_txt{
+font-size: 1.8vw;
+}
+
+/* section6 */
+#section6 .main_txt {
+    font-size: 8vw;
+    line-height: 8vw;
+}
+#section6 .main02 {
+    width: 5%;
+}
+#section6 .main02 .main_roll {
+    font-size: 1.6vw;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+/* main_txt*/
+#section6 .script01 {
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    position: relative;
+}
+#section6 .script01 .main01 {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* section3 */
+@media all and (max-width:1200px) {
+#section3 h3{
+  top: -40%;
+  }
+  #section3 .sec03 .txt_main {
+  font-size: 20vw;
+  }
+  #section3 .sec03 .txt_sub1 {
+  font-size: 17vw;
+  }
+  #section3 .sec03 .txt_sub2{
+  font-size: 15vw;
+  }
+  #section3 .sec03 .txt_sub3{
+  font-size: 12vw;
+  }
+  #section3 .sec03 .txt_sub4{
+  font-size: 10vw;
+  }
+}
+@media all and (max-width:1000px) {
+  #section3 h3{
+  top: -40%;
+  }
+  #section3 .sec03 .txt_main {
+  font-size: 23vw;
+  }
+  #section3 .sec03 .txt_sub1 {
+  font-size: 20vw;
+  }
+  #section3 .sec03 .txt_sub2{
+  font-size: 18vw;
+  }
+  #section3 .sec03 .txt_sub3{
+  font-size: 16vw;
+  }
+  #section3 .sec03 .txt_sub4{
+  font-size: 14vw;
+  }
+}  
+
+}
+@media all and (max-width:900px) {
+  /* section5*/
+  #section5 .pro_txt{ 
+    width: 75%;
+  }
+  #section5 .pro_title {
+    line-height: 10vw;
+  }
+  #section5 .pro_mask {
+    overflow: hidden;
+    height: 10vw;
+  }
+  #section5 .pro_nf {
+    font-size: 10vw;
+  }
+  
+  /* section5 btn*/
+  #section5 .pro_btn_txt{
+    font-size: 2vw;
+  }  
+}
