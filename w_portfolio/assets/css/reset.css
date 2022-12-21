@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+:root {
+  --theme: #eeeae4;
+  --black: #222;
+  --gray: #a9a9a9;
+  --green: #1b6856;
+  --brown: #b6a79a;
+  --difg: #d7939c;
+  --difb: #afafaf;
+}
+
+/* border-box 초기화 */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 가로모드 글씨 확대 초기화 */
+html {
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* 여백 초기화 */
+body,
+div,
+ul,
+li,
+dl,
+dt,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+fieldset,
+legend,
+p,
+select,
+table,
+th,
+td,
+tr,
+textarea,
+button,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* 스크롤바 숨기기 */
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+/* a 링크 초기화 */
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 배경색 초기화 */
+body {
+  background-color: var(--theme);
+}
+
+/* 스크롤 비활성화 */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* 폰트 초기화 */
+html {
+  font-size: 62.5%;
+}
+@media (max-width: 1680px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 660px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+/* 스크롤 */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+body,
+input,
+textarea,
+select,
+button,
+table {
+  font-family: "SCoreDream", serif;
+  font-size: 1.4rem;
+}
+
+/* 폰트 스타일 초기화 */
+em,
+address {
+  font-style: normal;
+}
+
+/* 블릿기호 초기화 */
+dl,
+ul,
+li,
+ol,
+menu {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+}
+
+/* 제목 테그 초기화 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.4rem;
+  color: var(--black);
+  font-weight: normal;
+}
+
+/* 테두리 초기화 */
+img,
+fieldset {
+  border: 0 none;
+}
+
+/* img 초기화 */
+img {
+  display: block;
+  content: "";
+}
+
+/* 버튼 초기화 */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+  border: 0;
+}
+
+/* 피규어 초기화 */
+figure {
+  margin: 0;
+}
+
+/* p 줄바꿈 초기화 */
+p {
+  word-break: keep-all;
+  line-height: 1.5;
+}
+
+/* 반응형 이미지 */
+img,
+video {
+  width: 100%;
+}
+
+/* IR 효과 */
+.ir_pm {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.ir_wa {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.ir_su {
+  overflow: hidden;
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* margin, padding */
+.mt10 {
+  margin-top: 10px !important;
+}
+.mt15 {
+  margin-top: 15px !important;
+}
+.mt20 {
+  margin-top: 20px !important;
+}
+.mt25 {
+  margin-top: 25px !important;
+}
+.mt30 {
+  margin-top: 30px !important;
+}
+.mt35 {
+  margin-top: 35px !important;
+}
+.mt40 {
+  margin-top: 40px !important;
+}
+.mt45 {
+  margin-top: 45px !important;
+}
+.mt50 {
+  margin-top: 50px !important;
+}

@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+#left {
+  animation: left 5s cubic-bezier(0.62, -0.01, 0.03, 0.87) infinite
+    alternate-reverse;
+}
+#right {
+  animation: right 2s ease-in-out infinite alternate-reverse;
+}
+#head {
+  animation: head 4s ease-in-out infinite alternate-reverse;
+}
+#blackBook {
+  animation: blackBook 2.5s ease-in-out infinite alternate-reverse;
+}
+#whiteBook {
+  animation: whiteBook 1.5s ease-in-out infinite alternate-reverse;
+}
+#pencil01 {
+  animation: pencil 3s ease-in-out infinite alternate-reverse;
+}
+#pencil02 {
+  animation: pencil2 3s ease-in-out infinite alternate-reverse;
+}
+#orb {
+  animation: globe 1.5s ease-in-out infinite alternate;
+  transform-origin: 10% 10%;
+}
+
+@keyframes left {
+  0% {
+    transform: rotate(0deg) translateX(0%);
+  }
+  25% {
+    transform: rotate(7deg) translateX(20%);
+  }
+  50% {
+    transform: rotate(2deg) translateX(10%);
+  }
+  75% {
+    transform: rotate(0deg) translateX(0%);
+  }
+  100% {
+    transform: rotate(7deg) translateX(20%);
+  }
+}
+@keyframes right {
+  to {
+    transform: rotate(2deg) translateX(-4%);
+  }
+}
+@keyframes head {
+  0% {
+    transform: rotate(-1deg) translateX(-2%);
+  }
+  50% {
+    transform: rotate(1deg) translateX(2%);
+  }
+  100% {
+    transform: rotate(-1deg) translateX(2%);
+  }
+}
+@keyframes blackBook {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(2deg);
+  }
+}
+@keyframes whiteBook {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: rotate(1deg);
+  }
+}
+@keyframes pencil {
+  0% {
+    transform: rotate(1deg) translateX(-1%) translateY(0%);
+  }
+  100% {
+    transform: rotate(0deg) translateX(0.5%) translateY(1%);
+  }
+}
+@keyframes pencil2 {
+  0% {
+    transform: rotate(1deg) translateX(-1%) translateY(1%);
+  }
+  100% {
+    transform: rotate(-1deg) translateX(-2%) translateY(0%);
+  }
+}
+@keyframes globe {
+  100% {
+    transform: rotate(-5deg);
+  }
+}

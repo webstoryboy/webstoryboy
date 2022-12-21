@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Reference/HTML</span>
-                <h1 class="title">&lt;nav&gt; 태그는 문서에 대한 메뉴 링크를 제공하는 섹션을 설정합니다.</h1>
+                <h1 class="title">nav 태그는 문서에 대한 메뉴 링크를 제공하는 섹션을 설정합니다.</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2022. 11. 15.</span>
@@ -316,80 +316,75 @@
                     </div>
 
 
+                    <!-- Sample1 -->
                     <style>
-                        .hr-box {
-                            background-color: white;
-                            overflow: hidden;
-                            width: 100%;
-                            padding: 1%;
+                        .layout-wrap {
+                            display: block;
+                            width: 500px;
+                            margin: 0 auto;
                         }
-                        .hr-box hr {
-                            margin: 20px 0;
+                        #ly-header {
+                            width: 100%;
+                            height: 80px;
+                            background-color: #ccc;
+                        }
+                        #ly-main {
+                            display: flex;
+                        }
+                        #ly-section {
+                            width: 30%;
+                            background-color: #ddd;
+                            height: 400px;
+                        }
+                        #ly-aside {
+                            width: 70%;
+                            background-color: #eee;
+                        }
+                        #ly-footer {
+                            width: 100%;
+                            height: 80px;
+                            background-color: #ccc;
                         }
                     </style>
-    
-                    <!-- Sample1 -->
-                    <h3>예제1(Sample)</h3>
+                    
+                    <h3>예제1(Sample)</h4>
                     <div class="sample">
                         <h4>기본 레이아웃 예제입니다.</h4>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="ko"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Reference&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;헤더 영역&lt;/header&gt;
-    &lt;main&gt;
-        &lt;section&gt;컨텐츠 영역&lt;/section&gt;
-        &lt;aside&gt;사이드 컨텐츠&lt;/aside&gt;
-    &lt;/main&gt;
-    &lt;footer&gt;푸터 영역&lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="layout-wrap">
+                                <header id="ly-header">헤더 영역</header>
+                                <main id="ly-main">
+                                    <section id="ly-section">컨텐츠 영역</section>
+                                    <aside id="ly-aside">사이드 컨텐츠</aside>
+                                </main>
+                                <footer id="ly-footer">푸터 영역</footer>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div class="active">
+<pre><code class="language-html">
 </code></pre>
+                                </div>
+                                <div>
+<pre><code class="language-css">/* css none */
+</code></pre>
+                                </div>
+                                <div>
+<pre class="line-numbers"><code class="language-javascript">//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- //Sample1 -->
-
-
-                    <!-- Sample2 -->
-                    <h3>예제2(Sample)</h3>
-                    <div class="sample">
-                        <h4>섹션 레이아웃 예제입니다.</h4>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;섹션 레이아웃&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;header&gt;
-        &lt;h1&gt;헤더 영역&lt;/h1&gt;
-    &lt;/header&gt;
-    &lt;main&gt;
-        &lt;section&gt;
-            &lt;h2&gt;주제별 영역&lt;/h2&gt;
-            &lt;p&gt;내용&lt;/p&gt;
-            &lt;article&gt;
-                &lt;h3&gt;독립된 주제 영역&lt;/h3&gt;
-                &lt;p&gt;내용&lt;/p&gt;
-            &lt;/article&gt;
-        &lt;/section&gt;
-        &lt;aside&gt;
-            &lt;h3&gt;사이드 영역&lt;/h3&gt;
-            &lt;p&gt;내용&lt;/p&gt;
-        &lt;/aside&gt;
-    &lt;/main&gt;
-    &lt;footer&gt;푸터 영역&lt;/footer&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-                    </div>
-                    <!-- //Sample2 -->
     
 
                     <h3>호환성(Compatibility)</h3>

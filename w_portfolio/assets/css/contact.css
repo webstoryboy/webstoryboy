@@ -1,0 +1,107 @@
+@charset "utf-8";
+@import url(../css/common.css);
+
+.contact__box {
+  height: 50vh;
+  margin-top: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 3rem;
+}
+.contact__box .contact__info {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+.contact__box .contact__info div {
+  display: flex;
+}
+.contact__box .contact__info li {
+  margin-bottom: 5rem;
+  display: flex;
+  width: 50%;
+}
+.contact__box .contact__info li span {
+  font-size: 1.6rem;
+}
+.contact__box .contact__info li span:first-child {
+  color: var(--gray);
+  width: 15rem;
+}
+.contact__box .contact__info li .social {
+  display: flex;
+  flex-direction: column;
+}
+.contact__box .contact__info li .social a {
+  margin-bottom: 0.5rem;
+}
+.contact__box .contact__info li .social a:last-child {
+  margin: 0;
+}
+.contact__box .contact__img svg {
+  width: 45vh;
+  margin-right: 3vw;
+}
+
+/* 0px ~ 1024px */
+@media (max-width: 1024px) {
+  #contact__inner {
+    height: 100vh;
+  }
+  .contact__box {
+    position: absolute;
+    width: 100%;
+    bottom: 3%;
+    align-items: flex-end;
+  }
+  .contact__box .contact__info {
+    flex-direction: column;
+  }
+  .contact__box .contact__img svg {
+    width: 40vw;
+    margin: 0;
+  }
+  .contact__box .contact__info div {
+    flex-direction: column;
+  }
+  .contact__box .contact__info li {
+    width: auto;
+  }
+  .contact__box .contact__info li .social {
+    flex-direction: row;
+  }
+  .contact__box .contact__info li .social a {
+    margin-right: 1rem;
+  }
+  .contact__box .contact__info li span {
+    font-size: 1.8rem;
+  }
+}
+
+/* 0px ~ 768px */
+@media (max-width: 768px) {
+  #title {
+    line-height: 1;
+  }
+  #contact__inner {
+    height: auto;
+  }
+  .contact__box {
+    flex-direction: column;
+    align-items: center;
+    height: 60vh;
+    bottom: 12%;
+  }
+  .contact__box .contact__info {
+    margin-bottom: 5rem;
+  }
+  .contact__box .contact__info div {
+    align-items: center;
+  }
+  .contact__box .contact__img svg {
+    width: 40vh;
+    margin-top: -5rem;
+  }
+}

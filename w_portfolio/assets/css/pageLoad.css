@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.pageLoad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+.pageLoad .lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: -1;
+}
+.pageLoad .lines .line {
+  height: 20%;
+  width: 100%;
+  background: #fff;
+}
+.pageLoad .text__box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pageLoad .text__box .text {
+  font-size: 8rem;
+  font-family: "Now";
+  color: var(--green);
+  overflow: hidden;
+}
+.pageLoad .text__box .text span {
+  opacity: 0;
+  display: inline-block;
+}
+.pageLoad .text__box .underline {
+  width: 0;
+  height: 0.1rem;
+  background: var(--green);
+}
+
+/* 0px ~ 768px */
+@media (max-width: 768px) {
+  .pageLoad .text__box .text {
+    font-size: 8vw;
+  }
+}

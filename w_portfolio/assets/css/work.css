@@ -1,0 +1,241 @@
+@charset "utf-8";
+@import url(../css/common.css);
+
+#container {
+  min-height: 100vh;
+  max-width: 100vw;
+}
+.top-space {
+  height: 1vh;
+}
+#work__box #menu {
+  top: 98.5%;
+}
+
+#work__box {
+  position: relative;
+  margin-top: 75rem;
+}
+#work__box #work__bg {
+  position: relative;
+  height: 205vw;
+  width: 100vw;
+}
+#work__box #work__bg img {
+  position: absolute;
+}
+#work__box #work__bg .rocket__box {
+  position: absolute;
+  left: 50%;
+  z-index: 2;
+}
+#work__box #work__bg .rocket {
+  transform: translate(-48.5%, 0%);
+  width: 17vw;
+}
+#work__box #work__bg .rocketLine {
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 30vw;
+  z-index: 1;
+}
+#work__box #work__bg .cloudMotion {
+  margin-top: 18vw;
+}
+#work__box #work__bg .cloud {
+  margin-top: 33vw;
+}
+#work__box #work__bg .lines {
+  position: sticky;
+  top: 10%;
+  z-index: -1;
+}
+#work__box #work__bg .shapes {
+  top: 0;
+  margin-top: 1.5vw;
+}
+
+/* work cards */
+#work__box #work__cards {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+#work__box #work__cards .card__box {
+  display: flex;
+}
+#work__box #work__cards .card__box.right__card {
+  flex-direction: row-reverse;
+}
+#work__box #work__cards .card {
+  position: relative;
+  margin-bottom: 3vw;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1200px;
+  transform-style: preserve-3d;
+}
+#work__box #work__cards .card .front {
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  transition: all 0.9s ease-in-out;
+}
+#work__box #work__cards .card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform-style: preserve-3d;
+  transform: rotateY(-180deg);
+  transition: all 0.9s ease-in-out;
+}
+#work__box #work__cards .card:hover .front {
+  transform: rotateY(180deg);
+}
+#work__box #work__cards .card:hover .back {
+  transform: rotateY(0deg);
+  z-index: 1;
+}
+#work__box #work__cards .left__card .card {
+  transform: translateX(-20%) rotate(-10deg);
+}
+#work__box #work__cards .left__card .card__info {
+  transform: translateX(10%);
+}
+#work__box #work__cards .right__card .card {
+  transform: translateX(20%) rotate(10deg);
+}
+#work__box #work__cards .right__card .card__info {
+  transform: translateX(-10%);
+}
+#work__box #work__cards .card li {
+  width: 35vw;
+  height: 20vw;
+  background: url(../img/work/card.png);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 0.5rem solid var(--theme);
+  backface-visibility: hidden;
+}
+#work__box #work__cards .card li:last-child {
+  margin-bottom: 0;
+}
+#work__box #work__cards .card li img {
+  width: 95%;
+  height: 92%;
+  border-radius: 1rem;
+  border: 0.2rem solid var(--theme);
+}
+#work__box #work__cards .card li h1 {
+  color: var(--theme);
+  font-family: "Caorgen";
+  text-transform: capitalize;
+  font-size: 4vw;
+  border: 0.2rem solid var(--theme);
+  border-radius: 1rem;
+  width: 97%;
+  height: 95%;
+  line-height: 18vw;
+  text-align: center;
+}
+#work__box #work__cards .card__info {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+#work__box #work__cards .card__info h2 {
+  font-size: 4vw;
+  font-family: "Bodoni Moda";
+  color: var(--green);
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--green);
+}
+#work__box #work__cards .card__info ul {
+  display: flex;
+  flex-direction: column;
+}
+#work__box #work__cards .card__info ul li {
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  font-size: 1.6rem;
+}
+#work__box #work__cards .card__info ul li .gray {
+  color: var(--gray);
+  width: 40%;
+  margin-bottom: 1rem;
+}
+#work__box #work__cards .card__info ul li .desc {
+  width: 60%;
+}
+
+/* 0px ~ 1024px */
+@media (max-width: 1024px) {
+  #work__box {
+    margin-top: 10vh;
+  }
+}
+/* 0px ~ 768px */
+@media (max-width: 768px) {
+  #work__box #work__bg {
+    height: 380vw;
+  }
+  #work__box #work__bg .rocket {
+    width: 26vw;
+  }
+  #work__box #work__bg .rocketLine {
+    width: 45vw;
+  }
+  #work__box #work__bg .cloudMotion {
+    width: 150vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 25vw;
+  }
+  #work__box #work__bg .cloud {
+    width: 200vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50vw;
+  }
+  #work__box #work__bg .lines {
+    width: 125vw;
+    position: static;
+  }
+  #work__box #work__bg .shapes {
+    display: none;
+  }
+
+  #work__box #work__cards {
+    transform: translate(-50%, 25%);
+  }
+  #work__box #work__cards .card li {
+    width: 70vw;
+    height: 40vw;
+  }
+  #work__box #work__cards .card li:last-child {
+    margin-bottom: 10rem;
+  }
+  #work__box #work__cards .card li h1 {
+    font-size: 8vw;
+    line-height: 35vw;
+  }
+  #work__box #work__cards .left__card .card {
+    transform: translateX(0%) rotate(-5deg);
+  }
+  #work__box #work__cards .right__card .card {
+    transform: translateX(0%) rotate(5deg);
+  }
+  #work__box #work__cards .card__info {
+    display: none;
+  }
+}

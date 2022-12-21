@@ -1,0 +1,25 @@
+<svg width="1920" height="693" viewBox="0 0 1920 693" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="cloudMotion">
+<ellipse id="c" cx="77" cy="350.999" rx="196" ry="174" fill="white"/>
+<ellipse id="d" cx="321.88" cy="481.512" rx="141.5" ry="158.5" transform="rotate(36.3096 321.88 481.512)" fill="white"/>
+<ellipse id="c_2" cx="566.271" cy="536.175" rx="141.5" ry="129.767" transform="rotate(-7.52284 566.271 536.175)" fill="white"/>
+<ellipse id="d_2" cx="716.315" cy="508.96" rx="103.194" ry="129.767" transform="rotate(-12.2156 716.315 508.96)" fill="white"/>
+<ellipse id="c_3" cx="869.267" cy="426.581" rx="89.7056" ry="129.767" transform="rotate(-41.6456 869.267 426.581)" fill="white"/>
+<ellipse id="d_3" cx="901.318" cy="318.431" rx="65.4577" ry="66.8207" transform="rotate(-41.6456 901.318 318.431)" fill="white"/>
+<ellipse id="c_4" cx="1007.32" cy="305.431" rx="65.4577" ry="66.8207" transform="rotate(-41.6456 1007.32 305.431)" fill="white"/>
+<ellipse id="d_4" cx="1079.23" cy="390.584" rx="65.4577" ry="69.702" transform="rotate(-41.6456 1079.23 390.584)" fill="white"/>
+<ellipse id="c_5" cx="1158.29" cy="464.033" rx="72.0368" ry="88.0366" transform="rotate(-55.8539 1158.29 464.033)" fill="white"/>
+<ellipse id="d_5" cx="1297.82" cy="496.467" rx="72.0368" ry="115.315" transform="rotate(-88.784 1297.82 496.467)" fill="white"/>
+<ellipse id="c_6" cx="1443.74" cy="489.575" rx="45.0324" ry="55.221" transform="rotate(-122.309 1443.74 489.575)" fill="white"/>
+<ellipse id="d_6" cx="1537.77" cy="439.353" rx="64.3368" ry="78.5372" transform="rotate(-122.309 1537.77 439.353)" fill="white"/>
+<ellipse id="c_7" cx="1667.76" cy="364.205" rx="72.1677" ry="96.8354" transform="rotate(-125.844 1667.76 364.205)" fill="white"/>
+<ellipse id="d_7" cx="1773.77" cy="273.633" rx="103.046" ry="98.3126" transform="rotate(-127.623 1773.77 273.633)" fill="white"/>
+<ellipse id="c_8" cx="1888.67" cy="225.033" rx="103.046" ry="112.073" transform="rotate(-127.623 1888.67 225.033)" fill="white"/>
+<g id="Vector">
+<path d="M933.776 0C936.675 81.0463 931.95 249.934 907.252 282.441C882.555 314.948 971.46 305.312 1019 296.43C1004.22 262.679 980.736 157.208 991.607 5.99521C968.3 1.73195 944.936 1.11022 933.776 0Z" fill="white"/>
+<path d="M0 490H1920V666H0V490Z" fill="white"/>
+<path d="M885 343H1101V558H885V343Z" fill="white"/>
+<path d="M1567 497L1942 500.5L1929 298.5L1601 403.5L1567 497Z" fill="white"/>
+</g>
+</g>
+</svg>
