@@ -113,13 +113,32 @@
                     <hr>
 
                     <h3>01. 기본 코딩</h3>
-                    <p data-num="01">기본 골격부터 작업하겠습니다. 헤더, 메인, 푸터 영역을 설정하겠습니다.</p>
-<pre><code class="language-html">&lt;header id="header"&gt;&lt;/header&gt;&lt;!-- //header --&gt;
-&lt;main id="main"&gt;&lt;/main&gt;&lt;!-- //main --&gt;
-&lt;footer id="footer"&gt;&lt;/footer&gt;&lt;!-- //footer --&gt;
+                    <p data-num="01">
+                        <code>main</code>과 <code>section</code> 태그를 만들고, 텍스트를 만들어 주겠습니다. 
+                        텍스트는 나중에 애니메이션 효과를 주기 위해서 <code>div</code> 태그로 감싸줬습니다. 
+                    </p>
+<pre><code class="language-html">&lt;main id="main"&gt;
+    &lt;section class="section"&gt;
+        &lt;div class="text__wrap"&gt;
+            &lt;div&gt;코딩과 함께 한 모든&lt;/div&gt;
+            &lt;div&gt;순간이 눈부셨다.&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
 </code></pre>
-                    
-                    <p data-num="02">기본 css를 설정하겠습니다.</p>
+                    <p data-num="02">
+                        우선 웹 폰트를 설정하겠습니다. 웹 폰트는 수박화체 폰트<sup>2</sup>를 사용하겠습니다. 
+                        woff2 파일만 설정하고, 나머지는 제거하였습니다.
+                    </p>
+<pre><code class="language-css">@font-face {
+    font-family: '116watermelon';
+    font-weight: normal;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/116watermelon/116watermelon.woff2') format('woff2');
+    font-display: swap;
+}
+</code></pre>
+                    <p data-num="03">기본 셋팅해주고, 화면은 스크롤이 없이 한 화면에서만 구현하도록 설정햇습니다.</p>
 <pre><code class="language-css">* {
     margin: 0;
     padding: 0;
@@ -128,15 +147,283 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: #0B130D;
+    background: #4710a5;
+    overflow: hidden;
+}
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 </code></pre>
-                    
+                    <p data-num="04">
+                        글씨를 가운데 정렬하고 세부적인 사항을 설정하였습니다.
+                    </p>
+<pre><code class="language-css">.text__wrap {
+    text-align: center;
+    color: #fff;
+    font-family: '116watermelon';
+    font-size: 8vw;
+    white-space: nowrap;
+    line-height: 1;
+}
+</code></pre>       
+
+
+                    <h3>02. 눈 내리는 영역 만들기</h3>
+                    <p data-num="05">
+                        눈 내리는 효과 영역을 만들기 위해서 기존 소스에 <code>snow__wrap</code> 태그를 추가하겠습니다. 
+                    </p>
+<pre><code class="language-html">&lt;main id="main"&gt;
+    &lt;section class="section"&gt;
+        &lt;div class="text__wrap"&gt;
+            &lt;div&gt;코딩과 함께 한 모든&lt;/div&gt;
+            &lt;div&gt;순간이 눈부셨다.&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="snow__wrap"&gt;&lt;/div&gt;
+    &lt;/section&gt;
+&lt;/main&gt;
+</code></pre>
+                    <p data-num="06">
+                        CSS도 설정하였습니다.
+                    </p>
+<pre><code class="language-css">.snow__wrap {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+</code></pre>
+                    <h3>03. 눈 내리는 효과 GSAP</h3>
+                    <p data-num="07">
+                        우선 gsap<sup>1</sup> CDN을 연동하거나, 해당 사이트에서 소스를 다운받아 연동하겠습니다. 
+                    </p>
+<pre><code class="language-html">&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"&gt;&lt;/script&gt;
+</code></pre>
+
+                    <p data-num="08">
+                        먼저 변수를 선언하겠습니다. 
+                        화면 사이즈를 알기 위해 width, height 값을 구하고, 선택자를 설정했습니다. 
+                        눈의 모양과 형태를 여러가지로 설정할 수 있도록 배열로 설정하고,
+                        눈은 50개로 설정했습니다. 
+                    </p>
+<pre><code class="language-javascript">const width = window.innerWidth,
+        height = window.innerHeight,
+        snowCont = document.querySelector(".snow__wrap"),
+        snowSizes = ["Small", "Medium", "Large"],
+        snowTypes = ["round", "star", "sharp"],
+        snowPiece = 50;
+</code></pre>
+
+                    <p data-num="09">
+                        우선 눈을 만들기 위해서 반복문을 사용하여 50번 반복하였습니다. 
+                        span 태그를 만들고, 랜덤으로 뿌려주기 위해서 설정하였습니다. 
+                        배열에 들어있는 갯수만큼 랜덤으로 나올 수 있도록 설정하였습니다.
+                        그렇게 만들어진 클래스 이름은 roundSmall, roundMedium, roundLarge, starSmall, starMedium, starLarge, sharpSmall, sharpMedium, sharpLarge가 됩니다. 
+                        만약 배열의 값을 늘린다면 경우에 수는 더 늘어날 것입니다.
+                    </p>
+                    <p data-num="10">
+                        <code>gsap.set</code>을 설정하여 속성값에 9가지 클래스 이름을 추가합니다. 
+                        x, y는 translate를 의미하며, 눈의 위치를 transform을 통해 설정합니다. 
+                        <code>range</code> 함수에 위치 값을 넘기고, appendChild를 통해 화면에 뿌려줍니다. 
+                        <code>snowing</code> 함수에 <code>snowPieceSpan</code> 요소를 전달하여, 애니메이션을 추가할 것입니다. 
+                    </p>
+<pre><code class="language-javascript">function snowStart(){
+    for(let i=0; i&lt;snowPiece; i++){
+        let snowPieceSpan = document.createElement("span");
+        let snowSizeIndex = Math.ceil(Math.random() * snowSizes.length) -1;       //0,1,2 랜덤으로 출력하기
+        let snowSize = snowSizes[snowSizeIndex];
+        let snowTypeIndex = Math.ceil(Math.random() * snowTypes.length) -1;
+        let snowType = snowTypes[snowTypeIndex];
+
+        gsap.set(snowPieceSpan, {attr: {class: snowType + snowSize}, x: range(0, width), y: range(-200, -150) })
+        
+        snowCont.appendChild(snowPieceSpan);
+        snowing(snowPieceSpan);
+    }
+}
+snowStart();
+</code></pre>
+                    <p data-num="11">
+                        눈의 모양은 여러가지 형태로 설정하여 만들 수 있으며, 이미지를 이용하여 설정할 수 있습니다. 
+                        이미지는 검색을 해서 다운을 받거나, 소스를 다운 받어서 활용하시면 됩니다. 
+                        귀찮은 분은 CDN 이용하세요!🥵
+                    </p>
+<pre><code class="language-css">background-image: url(https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/snow1.png);
+background-image: url(https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/snow1.png);
+</code></pre>             
+<pre><code class="language-css">.roundSmall {
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 3px;
+    height: 3px;
+}
+.roundMedium {
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 4px;
+    height: 4px;
+}
+.roundLarge {
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+}
+.starSmall {
+    background-image: url(snow1.png);
+    background-size: cover;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+.starMedium {
+    background-image: url(snow1.png);
+    background-size: cover;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+.starLarge {
+    background-image: url(snow1.png);
+    background-size: cover;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+.sharpSmall {
+    background-image: url(snow2.png);
+    background-size: cover;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+.sharpMedium {
+    background-image: url(snow2.png);
+    background-size: cover;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+}
+.sharpLarge {
+    background-image: url(snow2.png);
+    background-size: cover;
+    position: absolute;
+    width: 45px;
+    height: 45px;
+}
+</code></pre>
+
+                    <p data-num="12">
+                        이번에는 눈이 나오는 범위를 설정하겠습니다. 
+                        두가지 인수 값을 설정하면 랜덤으로 위치 값을 반환합니다. 
+                        만약 0~100까지 랜덤을 원한다면 0, 100을 넣어주면 됩니다. 
+                        만약 10~90까지 랜덤을 원한다면 10, 100을 넣어주면 됩니다. 
+                        하나씩 대입을 해보고, 생각해보면 이해할 수 있을겁니다. 
+                    </p>
+<pre><code class="language-javascript">function range(min, max) {
+    return min + Math.random() * (max - min)
+};
+</code></pre>
+
+
+                    <p data-num="13">
+                        이번에는 span으로 처리되어 있는 요소가 하나씩 들어오면 애니메이션이 작동합니다. 
+                        여기에 <code>range</code>함수를 통해 눈의 작동시간을 컨트를 했습니다. 
+                        어떤 눈은 빨리 내려오고, 어떤 눈은 천천히 내려오게 위함입니다. 
+                        y는 translateY 값을 의미하며, +100을 해준 이유는 화면보다 100만큼 내려가서 안보이게 위함입니다. 
+                        repeat: -1을 설정하면 반복하게 되고 delay:-10을 준 이유는 미리 애니메이션을 작동하게 위하여, 어색한 부분을 없애기 위함입니다. 
+                        yoyo: true를 설정하면 무한 반복하게 되고 좀 더 리얼한 효과를 위해 ease 효과를 추가하였습니다. 
+                        rotation: range(0, 360)에 범위를 랜덤으로 주기 위해 설정하였습니다. 
+                    </p>
+                    <p>
+                        이렇게 다양한 움직임을 세세하게 하나씩 컨트롤 하면 진짜 눈 처럼 보이는 효과를 만들 수 있습니다. 
+                        여러분들도 제것만 꼭 따라하지 말고, 조금씩 변경하면서 눈 같은 효과를 만들어 보면 좋을 겁니다.
+                    </p>
+<pre><code class="language-javascript">function snowing(elem){
+    gsap.to(elem, {duration: range(5, 14), y: height + 100, ease: "none", repeat:-1, delay: -10});
+    gsap.to(elem, {duration: range(4, 8), x: '+=100', repeat: -1, yoyo: true, ease: Sine.easeInOut});
+    gsap.to(elem, {duration: range(2, 8), rotation: range(0, 360), repeat: -1, yoyo: true, ease:Sine.easeInOut, delay: -5});
+}
+</code></pre>
                     <hr>
+
+                    <h3>04. 애니메이션 효과주기</h3>
+                    <p data-num="14">
+                        우선 글시를 쪼개주겠습니다.
+                        하나식 <code>span</code> 태그로 감싸줘야 하지만, 글씨가 많은 관계로 자바스크립트로 설정하겠습니다. 
+                        텍스트를 가져와서 사이에 span 태그를 넣어주고, 다시 깜싸주는 작업을 하고,
+                        웹 접근성을 위해 aria 속성도 추가하였습니다. 
+                    </p>
+<pre><code class="language-javascript">document.querySelectorAll(".split").forEach(desc => {
+    let splitText = desc.innerText;
+    let splitWrap = splitText.split('').join("&lt;/span&gt;&lt;span aria-hidden='true'&gt;");
+        splitWrap = "&lt;span aria-hidden='true'&gt;" + splitWrap + "&lt;/span&gt;";
+        desc.innerHTML = splitWrap;
+        desc.setAttribute("aria-label", splitText);
+})
+</code></pre>
+
+                    <p data-num="15">
+                        그렇게 글씨가 쪼개지면, CSS를 설정하여 움직일수 있도록 설정하겠습니다. 
+                        기존의 소스를 다시 수정하였습니다. span 태그를 움직이게 하려면 display: inline-block;을 설정하겠습니다.
+                    </p>
+<pre><code class="language-css">.text__wrap {
+    text-align: center;
+}
+.text__wrap > div {
+    /* background: #ccc; */
+    margin-bottom: 5px;
+    /* overflow: hidden; */
+}
+.text__wrap > div span {
+    color: #fff;
+    font-family: '116watermelon';
+    font-size: 8vw;
+    white-space: nowrap;
+    padding-bottom: 0.9vw;
+    display: inline-block;
+    min-width: 1.6vw;
+    line-height: 0.71;
+}
+</code></pre>
+
+                    <p data-num="16">
+                        로딩소스가 있다고 가정하고, setTimeout을 설정하였습니다. 
+                        1초 후에 글씨가 하나씩 나오도록 stagger 설정을 하였습니다. 
+                        timeline을 설정하면, 애니메이션이 순차적으로 나옵니다. 
+                        "a"를 설정한 이유는 애니메이션이 동시에 나오도록 설정한 것입니다. 
+                        그럴거면 타임라인을 걸 필요도 없었네요! 😵‍💫
+                    </p>
+<pre><code class="language-javascript">// 텍스트 애니메이션
+gsap.set(".text__wrap .tw1 span", {y: -200, x: -100, rotation: -100, opacity: 0});
+gsap.set(".text__wrap .tw2 span", {y: 200, x: 100, rotation: 100, opacity: 0});
+
+setTimeout(() => {
+    let tl = gsap.timeline();
+
+    tl.to(".text__wrap .tw1 span", {duration: 0.6, x: 0, y: 0, rotation: 0, opacity:1, stagger: 0.02, delay: 1.5}, "a");
+    tl.to(".text__wrap .tw2 span", {duration: 0.6, x: 0, y: 0, rotation: 0, opacity:1, stagger: 0.02, delay: 1.5}, "a");
+    snowStart();
+}, 1000)
+</code></pre>
+                    <p>
+                        이렇게 하여 눈오는 메인 효과를 완성하였습니다. 
+                        잘 따라하셨는지 궁금하네요! 안되는 부분들은 댓글 남겨주시고요.
+                        전체 소스는 완성 코드를 확인해 보세요!
+                        수고하셨습니다.😆😘😛
+                    </p>
+
 
                     <h3>참고(Reference)</h3>
                     <ul class="refer">
                         <li><a href="https://greensock.com/" target="_blank">GSAP<sup>1</sup> : https://greensock.com/</a></li>
+                        <li><a href="https://wess.tistory.com/539" target="_blank">수박화체 웹 폰트<sup>2</sup> : https://wess.tistory.com/539</a></li>
                     </ul>
 
                     <hr>

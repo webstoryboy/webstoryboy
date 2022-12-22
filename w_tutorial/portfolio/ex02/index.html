@@ -1,161 +1,198 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>눈 내리는 효과 만들기</title>
-    
-    <style>
-        @font-face {
-            font-family: '116watermelon';
-            font-weight: normal;
-            font-style: normal;
-            src: url('https://cdn.jsdelivr.net/gh/webfontworld/116watermelon/116watermelon.woff2') format('woff2');
-            font-display: swap;
-        }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            width: 100%;
-            height: 100vh;
-            background: #4710a5;
-            overflow: hidden;
-        }
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>눈 내리는 메인 효과 만들기</title>
 
-        #main {
-            width: 100%;
-            height: 100vh;
+   <style>
+       @font-face {
+           font-family: '116watermelon';
+           font-weight: normal;
+           font-style: normal;
+           src: url('https://cdn.jsdelivr.net/gh/webfontworld/116watermelon/116watermelon.woff2') format('woff2');
+           font-display: swap;
+       }
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       body {
+           width: 100%;
+           height: 100vh;
+           background: #4710a5;
+           overflow: hidden;
+       }
+       .section {
+           height: 100vh;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
 
-        }
+       /* text__wrap */
+       .text__wrap {
+           text-align: center;
+       }
+       .text__wrap > div {
+           /* background: #ccc; */
+           margin-bottom: 5px;
+           /* overflow: hidden; */
+       }
+       .text__wrap > div span {
+           color: #fff;
+           font-family: '116watermelon';
+           font-size: 8vw;
+           white-space: nowrap;
+           padding-bottom: 0.9vw;
+           display: inline-block;
+           min-width: 1.6vw;
+           line-height: 0.71;
+       }
 
-        .text__wrap {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #fff;
-            font-family: '116watermelon';
-            font-size: 8vw;
-        }
-        .text__wrap > div {
-            white-space: nowrap;
-            /* text-emphasis-style : double-circle; */
-        }
-
-        .roundSmall {
-            background: #fff;
-            border-radius: 50%;
-            position: absolute;
-            width: 3px;
-            height: 3px;
-        }
-        .roundMedium {
-            background: #fff;
-            border-radius: 50%;
-            position: absolute;
-            width: 4px;
-            height: 4px;
-        }
-        .roundLarge {
-            background: #fff;
-		    border-radius: 50%;
-            position: absolute;
-            width: 5px;
-            height: 5px;
-        }
-
-        .starSmall {
-            background-image: url(snow1.png);
-            background-size: cover;
-            position: absolute;
-            width: 15px;
-            height: 15px;
-        }
-        .starMedium {
-            background-image: url(snow1.png);
-            background-size: cover;
-            position: absolute;
-            width: 20px;
-            height: 20px;
-        }
-        .starLarge {
-            background-image: url(snow1.png);
-            background-size: cover;
-            position: absolute;
-            width: 45px;
-            height: 45px;
-        }
-
-        .sharpSmall {
-            background-image: url(snow2.png);
-            background-size: cover;
-            position: absolute;
-            width: 15px;
-            height: 15px;
-        }
-        .sharpMedium {
-            background-image: url(snow2.png);
-            background-size: cover;
-            position: absolute;
-            width: 25px;
-            height: 25px;
-        }
-        .sharpLarge {
-            background-image: url(snow2.png);
-            background-size: cover;
-            position: absolute;
-            width: 45px;
-            height: 45px;
-        }
-    </style>
+       /* snow__wrap */
+       .snow__wrap {
+           width: 100%;
+           height: 100vh;
+           position: absolute;
+           left: 0;
+           top: 0;
+       }
+       .roundSmall {
+           background: #fff;
+           border-radius: 50%;
+           position: absolute;
+           width: 3px;
+           height: 3px;
+       }
+       .roundMedium {
+           background: #fff;
+           border-radius: 50%;
+           position: absolute;
+           width: 4px;
+           height: 4px;
+       }
+       .roundLarge {
+           background: #fff;
+           border-radius: 50%;
+           position: absolute;
+           width: 5px;
+           height: 5px;
+       }
+       .starSmall {
+           background-image: url(snow1.png);
+           background-size: cover;
+           position: absolute;
+           width: 15px;
+           height: 15px;
+       }
+       .starMedium {
+           background-image: url(snow1.png);
+           background-size: cover;
+           position: absolute;
+           width: 20px;
+           height: 20px;
+       }
+       .starLarge {
+           background-image: url(snow1.png);
+           background-size: cover;
+           position: absolute;
+           width: 45px;
+           height: 45px;
+       }
+       .sharpSmall {
+           background-image: url(snow2.png);
+           background-size: cover;
+           position: absolute;
+           width: 15px;
+           height: 15px;
+       }
+       .sharpMedium {
+           background-image: url(snow2.png);
+           background-size: cover;
+           position: absolute;
+           width: 25px;
+           height: 25px;
+       }
+       .sharpLarge {
+           background-image: url(snow2.png);
+           background-size: cover;
+           position: absolute;
+           width: 45px;
+           height: 45px;
+       }
+   </style>
 </head>
 <body>
-    <main id="main">
-        <section class="section">
-            <div class="text__wrap">
-                <div>코딩과 함께 한 모든</div>
-                <div>순간이 눈부셨다</div>
-            </div>
-            <div class="snow__wrap"></div>
-        </section>
-    </main>
+   <main id="main">
+       <section class="section">
+           <div class="text__wrap">
+               <div class="split tw1">코딩과 함께 한 모든</div>
+               <div class="split tw2">순간이 눈부셨다.</div>
+           </div>
+           <div class="snow__wrap"></div>
+       </section>
+   </main>
 
-    <script src="gsap.min.js"></script>
-    <script>
-        const width = window.innerWidth,
-              height = window.innerHeight,
-              snowCont = document.querySelector(".snow__wrap"),
-              snowSizes = ["Small", "Medium", "Large"],
-              snowTypes = ["round", "star", "sharp"],
-              snowPiece = 50;
+   <script src="gsap.min.js"></script>
+   <script>
+       // 글시 쪼개기 
+       document.querySelectorAll(".split").forEach(desc => {
+           let splitText = desc.innerText;
+           let splitWrap = splitText.split('').join("</span><span aria-hidden='true'>");
+               splitWrap = "<span aria-hidden='true'>" + splitWrap + "</span>";
+               desc.innerHTML = splitWrap;
+               desc.setAttribute("aria-label", splitText);
+       })
 
-        for(let i=0; i<snowPiece; i++){
-            let snowPieceDiv = document.createElement("span");
-            let snowSizeIndex = Math.ceil(Math.random() * snowSizes.length) -1;       //0,1,2 랜덤으로 출력하기
-            let snowSize = snowSizes[snowSizeIndex];
-            let snowTypeIndex = Math.ceil(Math.random() * snowTypes.length) -1;
-            let snowType = snowTypes[snowTypeIndex];
+       // 텍스트 애니메이션
+       gsap.set(".text__wrap .tw1 span", {y: -200, x: -100, rotation: -100, opacity: 0});
+       gsap.set(".text__wrap .tw2 span", {y: 200, x: 100, rotation: 100, opacity: 0});
 
-            gsap.set(snowPieceDiv, {attr: {class: snowType + snowSize}, x: range(0, width), y: range(-200, -150) })
-            
-            snowCont.appendChild(snowPieceDiv);
-            snowing(snowPieceDiv);
-        }
+       setTimeout(() => {
+           let tl = gsap.timeline();
 
-        function snowing(elem){
-            gsap.to(elem, {duration: range(5, 14), y: height + 100, ease: "none", repeat:-1, delay: -10});
-            gsap.to(elem, {duration: range(4, 8), x: '+=100', repeat: -1, yoyo: true, ease: Sine.easeInOut});
-            gsap.to(elem, {duration: range(2, 8), rotation: range(0, 360), repeat: -1, yoyo: true, ease:Sine.easeInOut, delay: -5});
-        }
+           tl.to(".text__wrap .tw1 span", {duration: 0.6, x: 0, y: 0, rotation: 0, opacity:1, stagger: 0.02, delay: 1.5}, "a");
+           tl.to(".text__wrap .tw2 span", {duration: 0.6, x: 0, y: 0, rotation: 0, opacity:1, stagger: 0.02, delay: 1.5}, "a");
+           snowStart();
+       }, 1000)
+       
+       const width = window.innerWidth,
+             height = window.innerHeight,
+             snowCont = document.querySelector(".snow__wrap"),
+             snowSizes = ["Small", "Medium", "Large"],
+             snowTypes = ["round", "star", "sharp"],
+             snowPiece = 50;
 
-        function range(min, max) {
-            return min + Math.random() * (max - min)
-        };
-    </script>
+       function snowStart(){
+           for(let i=0; i<snowPiece; i++){
+               let snowPieceSpan = document.createElement("span");
+               let snowSizeIndex = Math.ceil(Math.random() * snowSizes.length) -1;       //0,1,2 랜덤으로 출력하기
+               let snowSize = snowSizes[snowSizeIndex];
+               let snowTypeIndex = Math.ceil(Math.random() * snowTypes.length) -1;
+               let snowType = snowTypes[snowTypeIndex];
+
+               gsap.set(snowPieceSpan, {attr: {class: snowType + snowSize}, x: range(0, width), y: range(-200, -150) })
+               
+               snowCont.appendChild(snowPieceSpan);
+               snowing(snowPieceSpan);
+           }
+       }
+
+       // 눈의 범위 설정하기 
+       function range(min, max) {
+           return min + Math.random() * (max - min)
+       };
+
+       // 눈 애니메이션 설정하기
+       function snowing(elem){
+           gsap.to(elem, {duration: range(5, 14), y: height + 100, ease: "none", repeat:-1, delay: -10});
+           gsap.to(elem, {duration: range(4, 8), x: '+=100', repeat: -1, yoyo: true, ease: Sine.easeInOut});
+           gsap.to(elem, {duration: range(2, 8), rotation: range(0, 360), repeat: -1, yoyo: true, ease:Sine.easeInOut, delay: -5});
+       }
+   </script>
+
 </body>
 </html>
