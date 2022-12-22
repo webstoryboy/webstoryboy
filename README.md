@@ -2,7 +2,8 @@
 
 
 ##
-https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex01/index.html
+https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex01/index.html  
+https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/index.html     
 
 
 ### 👨‍💻 프로그래밍 & 마크업 언어
