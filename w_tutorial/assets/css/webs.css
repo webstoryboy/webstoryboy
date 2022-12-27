@@ -1021,4 +1021,37 @@
   #blog .sample .sampleCode .scCont .active {
     display: block;
   }
+
+.refer2 {
+  padding-left: 0 !important;
+}
+.refer2 li {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.refer2 li a {
+  margin: 0;
+  padding: 0 17px;
+  border: 1px solid #eee;
+  border-radius: 32px;
+  font-size: 14px;
+  line-height: 30px;
+  vertical-align: middle;
+  color: #555;
+  text-transform: lowercase;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.refer2 li a:hover {
+  text-decoration: none;
+  border-color: #fff;
+  background-color: #000;
+  color: #fff;
+}
+
+
+#footer {
+  text-align: center;
+  padding: 10vh;
+}
   

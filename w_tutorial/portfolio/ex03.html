@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left"> 
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Tutorial/Portfolio</span>
+                <h1 class="title">가로 모드 스므스 효과 만들기</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2022. 12. 26.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div id="youtube" class="blog__contents__intro">
+                    <div class="video nonex resizable draggable sampleBtn3">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="desc">
+                        <div class="left">
+                            <span class="num">Tutorial</span>
+                            <div class="title">가로 모드 스므스 효과 만들기</div>
+                            <span class="difficulty">난이도 <span>중간</span></span>
+                        </div>
+                        <div class="right">
+                            <div class="btn">소스 다운로드</div>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex03/index.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/tree/main/w_tutorial/portfolio/ex03" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog__contents__intro -->
+
+                <div class="blog__contents tutorial">
+                    <h2>소개</h2>
+                    <p>
+                        안녕하세요🤭
+                        이번에는 가로모드를 만들어 보겠습니다. 
+                        GSAP<sup>1</sup>를 이용하여 가로모드를 구성하고, Lenis<sup>2</sup>를 이용하여 스므스 효과를 줄 것입니다. 
+                        생각보다 어렵지 않으니, 잘 따라해주시면, 퀄리티 있는 포트폴리오를 만들 수 있습니다. 
+                        그럼 시작해보겠습니다.🥲
+                    </p>
+
+                    <hr>
+
+                    <h3>01. 기본 코딩</h3>
+                    <p data-num="01">
+                        우선 구조는 header, main, footer로 설정하겠습니다. 
+                    </p>
+<pre><code class="language-html">&lt;header id="header"&gt;&lt;/header&gt;
+&lt;!-- //header --&gt;
+
+&lt;main id="main"&gt;&lt;/main&gt;
+&lt;!-- //main --&gt;
+
+&lt;footer id="footer"&gt;&lt;/footer&gt;
+&lt;!-- //footer --&gt;
+</code></pre>   
+<pre><code class="language-css">* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+</code></pre>   
+                    <p data-num="02">
+                        <code>header</code> 영역을 설정하겠습니다. 
+                        헤더는 상단에 고정시키고, 배경은 블러 효과를 주겠습니다. 
+                        메뉴는 3단으로 정렬하기 위해서, display: flex를 설정하였습니다.
+                    </p>
+<pre><code class="language-html">&lt;header id="header"&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;
+                &lt;a href="#"&gt;Site&lt;/a&gt;
+                &lt;a href="#"&gt;Work&lt;/a&gt;
+                &lt;a href="#"&gt;Script&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;!-- //header --&gt;
+</code></pre>  
+                    <p data-num="03">
+                        구글 폰트도 사용하여, 폰트를 설정하겠습니다.
+                    </p>
+<pre><code class="language-html">&lt;link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet"&gt;
+</code></pre>
+
+<pre><code class="language-css">/* header */
+#header {
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    z-index: 10000;
+    border-bottom: 1px solid #2e382848;
+    backdrop-filter : blur(10px)
+}
+#header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header li a {
+    font-family: 'Abel';
+    padding: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #202020;
+}
+</code></pre>  
+
+                    <p data-num="04">
+                        <code>footer</code> 영역을 설정하겠습니다. 
+                        푸터 영역은 별거 없으니, 참고만 하시고 넘어가셔도 될 것 같네요! 🥰
+                    </p>
+
+<pre><code class="language-html">&lt;footer id="footer"&gt;
+    &lt;a href="mailto:webstoryboy@naver.com"&gt;webstoryboy@naver.com&lt;/a&gt;
+&lt;/footer&gt;
+&lt;!-- //footer --&gt;
+</code></pre>  
+<pre><code class="language-css">/* footer */
+#footer {
+    text-align: center;
+    font-family: 'Abel';
+    padding: 10px;
+}
+#footer a {
+    color: #000;
+}
+</code></pre>  
+
+                    <p data-num="05">
+                        이제 메인 영역을 설정하겠습니다. 
+                        메인은 3개의 섹션으로 나누고, 두번째 섹션은 가운데 정렬할 것입니다. 
+                        그래서 첫번째 섹션과 세번째 섹션은 똑같습니다. 
+                    </p>
+<pre><code class="language-html">&lt;main id="main"&gt;
+    &lt;section id="section1"&gt;
+        &lt;div class="text__effect1"&gt;
+            &lt;div&gt;frontend&lt;/div&gt;
+            &lt;div&gt;devel&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="text__effect2"&gt;
+            &lt;div class="left"&gt;&lt;span&gt;box1&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="right"&gt;&lt;span&gt;box2&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="text__effect3"&gt;
+            &lt;div class="left"&gt;&lt;span&gt;box3&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="right"&gt;&lt;span&gt;box4&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt; 
+    &lt;!-- //section1 --&gt;
+    &lt;section id="section2" class="horizontal"&gt;
+        &lt;h2&gt;&lt;span&gt;creative website&lt;/span&gt;&lt;/h2&gt;
+        &lt;div class="hor__wrap"&gt;
+            &lt;div class="hor"&gt;&lt;span&gt;site1&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="hor"&gt;&lt;span&gt;site2&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="hor"&gt;&lt;span&gt;site3&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="hor"&gt;&lt;span&gt;site4&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="hor"&gt;&lt;span&gt;site5&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- //section2 --&gt;
+    &lt;section id="section3"&gt;
+        &lt;div class="text__effect1"&gt;
+            &lt;div&gt;frontend&lt;/div&gt;
+            &lt;div&gt;devel&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="text__effect2"&gt;
+            &lt;div class="left"&gt;&lt;span&gt;box1&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="right"&gt;&lt;span&gt;box2&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="text__effect3"&gt;
+            &lt;div class="left"&gt;&lt;span&gt;box3&lt;/span&gt;&lt;/div&gt;
+            &lt;div class="right"&gt;&lt;span&gt;box4&lt;/span&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt; 
+    &lt;!-- //section3 --&gt;
+&lt;/main&gt;
+&lt;!-- //main --&gt;
+</code></pre> 
+
+                    <p data-num="06">
+                        폰트는 Saint Monica Regular를 다운받아 사용했습니다. 
+                        개인적으로 사용하면 무료이니, 이 폰트는 각자 해결하시면 될 것 같습니다. 
+                        이 폰트가 없어도, 다른 폰트를 사용하여도 무방합니다. 
+                        저는 폰트를 다운받어 woff2 파일로 변환하여, 웹 폰트로 사용하였습니다. 
+                    </p>
+<pre><code class="language-css">@font-face {
+    font-family: 'Saint Monica Italic';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/SaintMonicaItalic.woff2') format('woff2');
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'Saint Monica Regular';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/SaintMonicaRegular.woff2') format('woff2');
+    font-display: swap;
+} 
+</code></pre>              
+<pre><code class="language-css">/* section1 */
+#section1 {
+    background: #EDF0ED;
+    padding-top: 80px;
+}
+.text__effect1 {
+    text-align: left;
+    color: #2E3828;
+    font-size: 19vw;
+    line-height: 0.81;
+    font-family: 'Saint Monica Regular';
+    padding: 0 0 1vw 1vw;
+    margin-top: 1vw;
+    text-transform: uppercase;
+    border-bottom: 1px solid #2e382848;
+}
+.text__effect2 {
+    height: 50vh;
+    border-bottom: 1px solid #2e382848;
+    display: flex;
+}
+.text__effect2 .left {
+    width: 30%;
+    border-right: 1px solid #2e382848;
+}
+.text__effect2 .right {
+    width: 70%;
+}
+.text__effect2 span {
+    color: #2E3828;
+    padding: 10px;
+    font-family: 'Abel';
+    display: inline-block;
+}
+.text__effect3 {
+    height: 50vh;
+    border-bottom: 1px solid #2e382848;
+    display: flex;
+}
+.text__effect3 .left {
+    width: 70%;
+    border-right: 1px solid #2e382848;
+}
+.text__effect3 .right {
+    width: 30%;
+}
+.text__effect3 span {
+    color: #2E3828;
+    padding: 10px;
+    font-family: 'Abel';
+    display: inline-block;
+}
+
+/* section2 */
+#section2 {
+    background: #2E3828;
+}
+#section2 h2 {
+    color: #fff;
+    font-size: 11vmax;
+    line-height: 1;
+    font-family: 'Saint Monica Regular';
+    font-weight: normal;
+    text-transform: capitalize;
+    height: 30vh;
+    padding: 5vh;
+}
+.hor__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 420vw;
+    height: 90vh;
+}
+.hor__wrap > div {
+    width: 80vw;
+    height: 90%;
+    border: 1px solid #fff;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+.hor__wrap > div span {
+    padding: 10px;
+    font-family: 'Abel';
+    color: #fff;
+    display: inline-block;
+}
+</code></pre>
+
+                    <h3>02. 스므스 효과 주기</h3>
+                    <p>
+                        스크롤시 부르러운 효과를 주기한 위한 작업을 할 것입니다. 
+                        보통은 스크롤시 부드럽다는 느낌을 받기 힘듭니다. 휠 마우스가 부드럽지 않으면, 더더욱 그렇구요! 
+                        그래서 사용자마다 다를 수는 있지만, 이 효과를 주고 안주고는 사이트 퀄리티에 큰 차이를 줄 수 있습니다. 
+                        또한 스므스 효과는 전체 소스를 절대값으로 잡고, transition 효과를 주는게 기본 원리이기 때문에, 
+                        사이트가 무거우면 오히려 역 효과를 낼 수 있습니다. 
+                        그래서 상황마다 적절하게 잘 쓰는게 중요합니다.  
+                    </p>
+                    <p>
+                        또한 스므스 효과를 줄 때 가장 중요한 점은 움직임을 어떻게 주느냐에 따라 부드러움을 표현 할 수 있습니다. 
+                        어떤 움직임을 주는 것은 정해져 있지 않습니다. 사용자마다 다를 수 있고 정답이 없습니다. 
+                        그래서 누군가 잘 만들어 놓은 것을 갔다 쓰는게 제일 좋은 방법 일 수 있습니다. 
+                        이번에는 lenis<sup>2</sup> 효과와 GSAP 효과를 같이 연동하여 사용할 것입니다. 
+                        GSAP에도 스므스 효과는 있지만 유료이기에 무료인 lenis와 같이 사용해 보겠습니다. 
+                        이 효과를 잘 이용하면 여러분 사이트도 고급스럽게 만들 수 있습니다. 그럼 시작해보겠습니다. 🤪
+                    </p>
+                    <p>
+                        <a href="https://github.com/studio-freight/lenis" target="_blank">lenis 깃헙 사이트</a>에 가시면 소스를 다운 받아 볼 수 있으면, 기본 사용법도 참고 할 수 있습니다. 
+                    </p>
+
+<pre><code class="language-html">&lt;script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"&gt;&lt;/script&gt;
+</code></pre>
+                    <p data-num="07">
+                        CDN을 연동하고 기본 소스를 넣으면 다음과 같지만, 필요 없는건 지워주겠습니다.
+                    </p>
+<pre><code class="language-javascript">import Lenis from '@studio-freight/lenis'
+
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    direction: 'vertical', // vertical, horizontal
+    gestureDirection: 'vertical', // vertical, horizontal, both
+    smooth: true,
+    mouseMultiplier: 1,
+    smoothTouch: false,
+    touchMultiplier: 2,
+    infinite: false,
+})
+
+//get scroll value
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+    console.log({ scroll, limit, velocity, direction, progress })
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+</code></pre>
+                    <p data-num="08">
+                        GSAP 스크롤 트리거를 쓸것이기 때문에 연동이 필요하고, 나머지는 동일합니다. 
+                        어떤가요? 조금 부드러워 졌나요? 😇
+                        아직 느끼지 못하면 무엇인가 잘못된 부분이 있으니, 잘 살펴보세요!
+                    </p>
+<pre><code class="language-javascript">gsap.registerPlugin(ScrollTrigger);
+
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+})
+
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
+</code></pre>
+
+                    <h3>03. 가로 모드 만들기</h3>
+                    <p data-num="09">
+                        이제 GSAP를 통해 가로 모드로 만들어 보겠습니다. 
+                        gsap.utils를 통해 가로 모드 자식들을 변수에 설정하였습니다. 
+                        해당 트리거가 hor__wrap을 인식하면 왼쪽으로 움직이도록 설정하였습니다. 
+                        pin을 설정하여 해당 부분에 도착하면 고정시켰습니다. 
+                        scrub 설정을 통해 스크롤에 반응하도록 하였으며, 
+                        시작값과 엔드값은 가로 모드 크키에 맞추어 설정하였습니다. 
+                    </p>
+<pre><code class="language-javascript">const horSection = gsap.utils.toArray('.hor__wrap .hor');
+
+const horiz = gsap.to(horSection, {
+    xPercent: -100 * (horSection.length - 1),
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '.hor__wrap',
+        start: 'top 10%',
+        end: '+=6000',
+        pin: true,
+        scrub: 1,
+        markers: false,
+    },
+});
+</code></pre>
+
+                    <p>
+                        이렇게 하면 스므스 효과를 적용한 가로모드가 완성되었습니다. 
+                        여기에 반응형까지 신경을 쓰고, 내용물을 채우면 더 많은 버그가 발생하고, 신경써야 할 부분들이 생길 것입니다. 
+                        하지만 생각보다 가로모드가 간단하다는 걸 깨달았으면 좋겠네요!. 
+                        오늘 미션은 여기까지 입니다. 잘 따라하시분은 완성하여 링크 달아주세요! 
+                        잘 했는지 못했느지 평가해드릴께요! 🥹 수고하셨습니다.
+                    </p>
+
+
+
+
+                    <hr>
+
+                    <h3>HTML 레퍼런스</h3>
+                    <ul class="refer2">
+                        <li><a href="/">main</a></li>
+                        <li><a href="/">section</a></li>
+                        <li><a href="/">header</a></li>
+                        <li><a href="/">main</a></li>
+                        <li><a href="/">footer</a></li>
+                        <li><a href="/">span</a></li>
+                        <li><a href="/">h1~h6</a></li>
+                        <li><a href="/">div</a></li>
+                        <li><a href="/">a</a></li>
+                    </ul>
+
+                    <h3>CSS 레퍼런스</h3>
+                    <ul class="refer2">
+                        <li><a href="/">font-family</a></li>
+                        <li><a href="/">font-weight</a></li>
+                        <li><a href="/">font-style</a></li>
+                        <li><a href="/">font-display</a></li>
+                        <li><a href="/">margin</a></li>
+                        <li><a href="/">padding</a></li>
+                        <li><a href="/">list-style</a></li>
+                        <li><a href="/">text-decoration</a></li>
+                        <li><a href="/">position</a></li>
+                        <li><a href="/">left</a></li>
+                        <li><a href="/">bottom</a></li>
+                        <li><a href="/">width</a></li>
+                        <li><a href="/">height</a></li>
+                        <li><a href="/">backdrop-filter</a></li>
+                        <li><a href="/">display</a></li>
+                        <li><a href="/">justify-content</a></li>
+                        <li><a href="/">align-items</a></li>
+                        <li><a href="/">text-transform</a></li>
+                        <li><a href="/">color</a></li>
+                        <li><a href="/">background</a></li>
+                        <li><a href="/">flex-wrap</a></li>
+                        <li><a href="/">flex-wrap</a></li>
+                    </ul>
+
+                    <h3>자바스크립트 레퍼런스</h3>
+                    <ul class="refer2">
+                        <li><a href="/">requestAnimationFrame()</a></li>
+                        <li><a href="/">gsap.to</a></li>
+                        <li><a href="/">gsap.utils</a></li>
+                    </ul>
+
+                    <h3>사이트 레퍼런스</h3>
+                    <ul class="refer">
+                        <li><a href="https://greensock.com/" target="_blank">GSAP<sup>1</sup> : https://greensock.com/</a></li>
+                        <li><a href="https://lenis.studiofreight.com/" target="_blank">Lenis<sup>2</sup> : https://lenis.studiofreight.com/</a></li>
+                    </ul>
+
+                    <hr>
+                </div>
+                <!-- //blog__contents -->
+
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:webstoryboy@naver.com">webstoryboy@naver.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @font-face {
+            font-family: 'Saint Monica Italic';
+            font-weight: normal;
+            font-style: normal;
+            src: url('fonts/SaintMonicaItalic.woff2') format('woff2');
+            font-display: swap;
+        } 
+        @font-face {
+            font-family: 'Saint Monica Regular';
+            font-weight: normal;
+            font-style: normal;
+            src: url('fonts/SaintMonicaRegular.woff2') format('woff2');
+            font-display: swap;
+        } 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        /* header */
+        #header {
+            position: fixed;
+            left: 0; top: 0;
+            width: 100%;
+            z-index: 10000;
+            border-bottom: 1px solid #2e382848;
+            backdrop-filter : blur(10px)
+        }
+        #header ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #header li a {
+            font-family: 'Abel';
+            padding: 20px;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #202020;
+        }
+        /* footer */
+        #footer {
+            text-align: center;
+            font-family: 'Abel';
+            padding: 10px;
+        }
+        #footer a {
+            color: #000;
+        }
+
+        /* section1 */
+        #section1 {
+            background: #EDF0ED;
+            padding-top: 80px;
+        }
+        .text__effect1 {
+            text-align: left;
+            color: #2E3828;
+            font-size: 19vw;
+            line-height: 0.81;
+            font-family: 'Saint Monica Regular';
+            padding: 0 0 1vw 1vw;
+            margin-top: 1vw;
+            text-transform: uppercase;
+            border-bottom: 1px solid #2e382848;
+        }
+        .text__effect2 {
+            height: 50vh;
+            border-bottom: 1px solid #2e382848;
+            display: flex;
+        }
+        .text__effect2 .left {
+            width: 30%;
+            border-right: 1px solid #2e382848;
+        }
+        .text__effect2 .right {
+            width: 70%;
+        }
+        .text__effect2 span {
+            color: #2E3828;
+            padding: 10px;
+            font-family: 'Abel';
+            display: inline-block;
+        }
+        .text__effect3 {
+            height: 50vh;
+            border-bottom: 1px solid #2e382848;
+            display: flex;
+        }
+        .text__effect3 .left {
+            width: 70%;
+            border-right: 1px solid #2e382848;
+        }
+        .text__effect3 .right {
+            width: 30%;
+        }
+        .text__effect3 span {
+            color: #2E3828;
+            padding: 10px;
+            font-family: 'Abel';
+            display: inline-block;
+        }
+
+        /* section2 */
+        #section2 {
+            background: #2E3828;
+        }
+        #section2 h2 {
+            color: #fff;
+            font-size: 11vmax;
+            line-height: 1;
+            font-family: 'Saint Monica Regular';
+            font-weight: normal;
+            text-transform: capitalize;
+            height: 30vh;
+            padding: 5vh;
+        }
+        .hor__wrap {
+            display: flex;
+            flex-wrap: wrap;
+            width: 420vw;
+            height: 90vh;
+        }
+        .hor__wrap > div {
+            width: 80vw;
+            height: 90%;
+            border: 1px solid #fff;
+            margin-right: 1vw;
+            margin-left: 1vw;
+        }
+        .hor__wrap > div span {
+            padding: 10px;
+            font-family: 'Abel';
+            color: #fff;
+            display: inline-block;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li>
+                    <a href="#">Site</a>
+                    <a href="#">Work</a>
+                    <a href="#">Script</a>
+                </li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="section1">
+            <div class="text__effect1">
+                <div>frontend</div>
+                <div>devel</div>
+            </div>
+            <div class="text__effect2">
+                <div class="left"><span>box1</span></div>
+                <div class="right"><span>box2</span></div>
+            </div>
+            <div class="text__effect3">
+                <div class="left"><span>box3</span></div>
+                <div class="right"><span>box4</span></div>
+            </div>
+        </section> 
+        <!-- //section1 -->
+
+        <section id="section2" class="horizontal">
+            <h2><span>creative website</span></h2>
+            <div class="hor__wrap">
+                <div class="hor"><span>site1</span></div>
+                <div class="hor"><span>site2</span></div>
+                <div class="hor"><span>site3</span></div>
+                <div class="hor"><span>site4</span></div>
+                <div class="hor"><span>site5</span></div>
+            </div>
+        </section>
+        <!-- //section2 -->
+
+        <section id="section3">
+            <div class="text__effect1">
+                <div>frontend</div>
+                <div>devel</div>
+            </div>
+            <div class="text__effect2">
+                <div class="left"><span>box1</span></div>
+                <div class="right"><span>box2</span></div>
+            </div>
+            <div class="text__effect3">
+                <div class="left"><span>box3</span></div>
+                <div class="right"><span>box4</span></div>
+            </div>
+        </section> 
+        <!-- //section3 -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:webstoryboy@naver.com">webstoryboy@naver.com</a>
+    </footer>
+    <!-- //footer -->
+
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+
+        const horSection = gsap.utils.toArray('.hor__wrap .hor');
+
+        const horiz = gsap.to(horSection, {
+            xPercent: -100 * (horSection.length - 1),
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.hor__wrap',
+                start: 'top 10%',
+                end: '+=6000',
+                pin: true,
+                scrub: 1,
+                markers: false,
+            },
+        });
+    </script>
+</body>
+</html>
