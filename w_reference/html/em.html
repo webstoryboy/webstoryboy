@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Reference/HTML</span>
-                <h1 class="title">strong 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</h1>
+                <h1 class="title">em 태그는 텍스트를 강조할 때 설정합니다.</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2022. 12. 28.</span>
@@ -81,14 +81,13 @@
             </div>
             <div class="blog__inner container">
                 <div class="blog__contents">
-                    <h2>&lt;strong&gt;</h2>
+                    <h2>&lt;em&gt;</h2>
                     <p>
-                        &lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.
+                        &lt;em&gt; 태그는 텍스트를 강조할 때 설정합니다.
                     </p>
                     <p>
-                        &lt;strong&gt; 요소는 텍스트의 경고 또는 알림을 표시하는데 사용하며, 긴급성을 요하는 부분에 사용합니다. 
-                        &lt;strong&gt; 요소는 텍스트를 강조를 하지만, 문장의 의미를 변경하지 않습니다. 
-                        &lt;strong&gt; 요소는 글씨가 굵게 표현됩니다. 만약 글씨를 굵게 표현하기 위함이라면, CSS font-weight를 설정합니다.
+                        텍스트에서 강조하고 싶은 부분에 따라 의미가 달라질 수 있으며, 중요성을 전달 할 때에는 strong 요소를 사용합니다.
+                        em 요소는 이탤릭체로 표현이 되며, 이탤릭체로 사용하기 위함은 적절하지 않으며, font-style: italic 사용을 권장합니다. 
                     </p>
 
                     <hr>
@@ -112,7 +111,7 @@
                                 </tr>
                                 <tr>
                                     <th>닫는 태그</th>
-                                    <td>적용(&lt;strong&gt;~&lt;/strong&gt;)</td>
+                                    <td>적용(&lt;em&gt;~&lt;/em&gt;)</td>
                                 </tr>
                                 <tr>
                                     <th>버전</th>
@@ -120,11 +119,11 @@
                                 </tr>
                                 <tr>
                                     <th>시각적 표현</th>
-                                    <td>볼드체로 표시</td>
+                                    <td>기울임꼴로 표시</td>
                                 </tr>
                                 <tr>
                                     <th>사용성</th>
-                                    <td>★★★★★</td>
+                                    <td>★★★★☆</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,22 +131,11 @@
 
                     <h3>정의(Definition)</h3>
                     <ul>
-                        <li>&lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 경고 또는 알림을 표시하는데 사용합니다.</li>
-                        <li>&lt;strong&gt; 태그는 다른 요소보다 사용자가 빨리 봐야 하는 부분에 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 텍스트의 중요도를 변경해도, 문장의 의미를 변경하지 않습니다.</li>
-                    </ul>
-
-                    <h3>b 요소와 strong 요소의 차이점</h3>
-                    <ul>
-                        <li>&lt;strong&gt; 요소와 &lt;b&gt; 요소는 글씨가 굵게 표현됩니다.</li>
-                        <li>&lt;strong&gt; 요소는 중요성을 전달하기 위함이고, &lt;b&gt; 요소는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용합니다.</li>
-                    </ul>
-
-                    <h3>em 요소와 strong 요소의 차이점</h3>
-                    <ul>
-                        <li>&lt;em&gt; 요소는 텍스트를 강조하면서 문장의 의미가 변경될 수 있지만, &lt;strong&gt; 요소는 중요성만 강조하고, 의미를 변경하지 않습니다.</li>
-                        <li>&lt;em&gt; 요소는 이택릴체로 표현이 되고, &lt;strong&gt; 요소는 볼드체로 표현이 됩니다.</li>
+                        <li>&lt;em&gt; 태그는 텍스트를 강조할 때 설정합니다.</li>
+                        <li>&lt;em&gt; 태그는 텍스트에서 강조하고 싶은 부분에 따라 의미가 달라질 수 있습니다.</li>
+                        <li>&lt;em&gt; 태그는 기울임꼴로 표기됩니다. 기울임꼴을 사용하기 위해 사용하는 하는 것은 적절하지 않으며, font-style: italic을 권장합니다.</li>
+                        <li>&lt;em&gt; 태그는 중요성을 전달하기 위한 태그는 아닙니다. 중요성을 전달하기 위한 요소는 &lt;strong&gt; 태그가 적절합니다.</li>
+                        <li>&lt;em&gt; 요소와 &lt;i&gt; 요소는 이탤릭체로 표현되지만, &lt;i&gt; 요소는 외국어, 등장인물의 생각 등을 표현할 때 사용됩니다.</li>
                     </ul>
 
                     <h3>텍스트와 관련된 태그</h3>
@@ -250,7 +238,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" class="ce">&lt;strong&gt;</td>
+                                    <td scope="row" class="ce">&lt;em&gt;</td>
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
@@ -272,7 +260,7 @@
 
                     <h3>참고(Reference)</h3>
                     <ul>
-                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element" target="_blank">https://html.spec.whatwg.org/multipage/<wbr>text-level-semantics.html<wbr>#the-b-element</a></li>
+                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-em-element" target="_blank">https://html.spec.whatwg.org/multipage/<wbr>text-level-semantics.html<wbr>#the-em-element</a></li>
                     </ul>
 
                     <hr>
@@ -297,5 +285,3 @@
 
 
 <!-- b, em, strong, mark, i -->
-
-

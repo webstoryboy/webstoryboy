@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Reference/HTML</span>
-                <h1 class="title">strong 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</h1>
+                <h1 class="title">mark 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2022. 12. 28.</span>
@@ -81,15 +81,20 @@
             </div>
             <div class="blog__inner container">
                 <div class="blog__contents">
-                    <h2>&lt;strong&gt;</h2>
+                    <h2>&lt;mark&gt;</h2>
                     <p>
-                        &lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.
+                        &lt;mark&gt; 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.
                     </p>
                     <p>
-                        &lt;strong&gt; 요소는 텍스트의 경고 또는 알림을 표시하는데 사용하며, 긴급성을 요하는 부분에 사용합니다. 
-                        &lt;strong&gt; 요소는 텍스트를 강조를 하지만, 문장의 의미를 변경하지 않습니다. 
-                        &lt;strong&gt; 요소는 글씨가 굵게 표현됩니다. 만약 글씨를 굵게 표현하기 위함이라면, CSS font-weight를 설정합니다.
+                        &lt;mark&gt; 태그는 사용자가 중요하다고 생각하지 않을 수 있는 부분에 주의를 끌기 위해 표시를 사용할 수 있으며,
+                        현재 맥락과 관련이 있거나 하이라이트 부분을 표시할 때 사용할 수 있습니다.
+                        단순하게 노란색 배경을 위해 사용하지 않고, CSS의 background 사용을 권장합니다.
                     </p>
+                    <p>
+                        텍스트의 중요성을 강조하기 위해서는 strong 요소를 사용하고, 
+                        중요성을 전달하지 않고 주의를 끌기 위함이라면 b 요소를 사용합니다.
+                    </p>
+
 
                     <hr>
 
@@ -112,7 +117,7 @@
                                 </tr>
                                 <tr>
                                     <th>닫는 태그</th>
-                                    <td>적용(&lt;strong&gt;~&lt;/strong&gt;)</td>
+                                    <td>적용(&lt;mark&gt;~&lt;/mark&gt;)</td>
                                 </tr>
                                 <tr>
                                     <th>버전</th>
@@ -120,11 +125,11 @@
                                 </tr>
                                 <tr>
                                     <th>시각적 표현</th>
-                                    <td>볼드체로 표시</td>
+                                    <td>노란색 배경</td>
                                 </tr>
                                 <tr>
                                     <th>사용성</th>
-                                    <td>★★★★★</td>
+                                    <td>★★☆☆☆</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,22 +137,12 @@
 
                     <h3>정의(Definition)</h3>
                     <ul>
-                        <li>&lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 경고 또는 알림을 표시하는데 사용합니다.</li>
-                        <li>&lt;strong&gt; 태그는 다른 요소보다 사용자가 빨리 봐야 하는 부분에 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 텍스트의 중요도를 변경해도, 문장의 의미를 변경하지 않습니다.</li>
-                    </ul>
-
-                    <h3>b 요소와 strong 요소의 차이점</h3>
-                    <ul>
-                        <li>&lt;strong&gt; 요소와 &lt;b&gt; 요소는 글씨가 굵게 표현됩니다.</li>
-                        <li>&lt;strong&gt; 요소는 중요성을 전달하기 위함이고, &lt;b&gt; 요소는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용합니다.</li>
-                    </ul>
-
-                    <h3>em 요소와 strong 요소의 차이점</h3>
-                    <ul>
-                        <li>&lt;em&gt; 요소는 텍스트를 강조하면서 문장의 의미가 변경될 수 있지만, &lt;strong&gt; 요소는 중요성만 강조하고, 의미를 변경하지 않습니다.</li>
-                        <li>&lt;em&gt; 요소는 이택릴체로 표현이 되고, &lt;strong&gt; 요소는 볼드체로 표현이 됩니다.</li>
+                        <li>&lt;mark&gt; 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.</li>
+                        <li>&lt;mark&gt; 태그는 사용자가 중요하다고 생각하지 않을 수 있는 부분에 주의를 끌기 위해 표시를 사용할 수 있습니다.</li>
+                        <li>&lt;mark&gt; 태그는 현재 맥락과 관련이 있거나 하이라이트 부분을 표시할 때 사용할 수 있습니다.</li>
+                        <li>&lt;mark&gt; 태그는 인용문에서 사용자가 관심을 가질만한 텍스트에 표시할 때 사용할 수 있습니다.</li>
+                        <li>&lt;mark&gt; 태그는 검색 결과를 강조할 때 사용할 수 있습니다.</li>
+                        <li>&lt;mark&gt; 태그는 노란색 배경 효과를 위해 사용하지 않습니다. CSS background를 사용합니다.</li>
                     </ul>
 
                     <h3>텍스트와 관련된 태그</h3>
@@ -250,7 +245,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" class="ce">&lt;strong&gt;</td>
+                                    <td scope="row" class="ce">&lt;mark&gt;</td>
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
@@ -272,7 +267,7 @@
 
                     <h3>참고(Reference)</h3>
                     <ul>
-                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element" target="_blank">https://html.spec.whatwg.org/multipage/<wbr>text-level-semantics.html<wbr>#the-b-element</a></li>
+                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-mark-element" target="_blank">https://html.spec.whatwg.org/<wbr>multipage/text-level-semantics.html<wbr>#the-mark-element</a></li>
                     </ul>
 
                     <hr>
@@ -297,5 +292,3 @@
 
 
 <!-- b, em, strong, mark, i -->
-
-

@@ -84,7 +84,13 @@
                     <h2>&lt;b&gt;</h2>
                     <p>
                         &lt;b&gt; 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.
-                       
+                    </p>
+                    <p>
+                        &lt;b&gt; 태그는 &lt;em&gt;, &lt;strong&gt;, &lt;mark&gt;에 해당 되지 않고, 특별한 정보 전달의 의미가 없을 때 고려해서 사용합니다.
+                        중요성을 강조한다면 &lt;em&gt; 태그나 &lt;strong&gt; 태그를 사용합니다. 
+                        중요성을 강조하지 않고, 단순 참고형을 표현한다면 &lt;mark&gt; 태그를 사용합니다. 
+                        &lt;b&gt; 태그는 텍스트를 굵게 표시합니다. 
+                        만약 텍스트를 굵게 표현하고 싶다면, font-weight의 bold를 사용합니다. 
                     </p>
 
                     <hr>
@@ -129,242 +135,83 @@
                     <h3>정의(Definition)</h3>
                     <ul>
                         <li>&lt;b&gt; 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.</li>
-                        <li>&lt;b&gt; 태그는 일반적으로 키워드, 제품의 리뷰, 기사 리드문 등에 사용합니다.</li>
                         <li>&lt;b&gt; 태그는 제목 요소로 사용하지 않습니다. 제목 요소는 &lt;h1&gt;~&lt;h6&gt; 태그를 사용합니다.</li>
                         <li>&lt;b&gt; 태그는 &lt;em&gt;, &lt;strong&gt;, &lt;mark&gt;에 해당 되지 않고, 특별한 정보 전달의 의미가 없을 때 고려해서 사용합니다.</li>
                         <li>&lt;b&gt; 태그는 단순하게 글씨를 두껍게 하기 위함이라면 CSS 속성 font-weight의 bold를 권장합니다.</li>
-                        <li>&lt;b&gt; 태그는 HTML4에서는 텍스트를 굵게 표시하기 위해서 사용하였으며, HTML5에서는 의미가 변하여 다른 텍스트와 구별 할 때 사용합니다.</li>
+                        <li>HTML4에서는 텍스트를 굵게 표시하기 위해서 &lt;b&gt; 태그 사용하였으나, HTML5에서는 의미가 변하여 다른 텍스트와 구별 할 때 사용합니다.</li>
                     </ul>
 
                     <h3>텍스트와 관련된 태그</h3>
                     <ul>
                         <li>&lt;b&gt; 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.</li>
                         <li>&lt;em&gt; 태그는 텍스트를 강조할 때 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 텍스트를 강조하거나 의미의 중요성을 강조할 때 설정합니다.</li>
+                        <li>&lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</li>
                         <li>&lt;mark&gt; 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.</li>
-                        <li>&lt;i&gt; 태그는 특별한 이유로 평범한 글자와 구분할 때 설정합니다.</li>
-
-                        <li>&lt;abbr&gt; 태그는 줄임말이나 머리글자를 표현할 때 사용합니다.</li>
-                        <li>&lt;dfn&gt; 태그는 용어를 정의할 때 설정합니다.</li>
-                        <li>&lt;small&gt; 태그는 덧붙이는 글이나 작은 글씨를 표현할 때 설정합니다.</li>
-                        <li>&lt;u&gt; 태그는 맞춤법이 틀린 단어를 표현할 때 설정합니다.</li>
-                        <li>&lt;cite&gt; 태그는 저작물의 출처 표시를 할 때 설정합니다.</li>
-                        <li>&lt;q&gt; 태그는 태그는 짧은 글을 인용할 때 설정합니다.</li>
-                        <li>&lt;blockquote&gt; 태그는 태그는 긴 글을 인용할 때 설정합니다.</li>
-
-                        <li>&lt;ins&gt; 태그는 추가된 텍스트의 범위를 표현할 때 설정합니다.</li>
-                        <li>&lt;del&gt; 태그는 삭제된 텍스트의 범위를 표현할 때 설정합니다.</li>
-                        <li>&lt;sub&gt; 태그는 아래첨자를 표현할 때 설정합니다.</li>
-                        <li>&lt;sup&gt; 태그는 위첨자를 표현할 때 설정합니다.</li>
-
-                        <li>&lt;code&gt; 태그는 소스 코드를 표현할 때 설정합니다.</li> 
-                        <li>&lt;var&gt; 태그는 수학적인 변수나 프로그램의 변수를 표현할 때 설정합니다.</li>
-                        <li>&lt;samp&gt; 태그는 프로그램 출력 결과물을 표현할 때 설정합니다.</li>
-                        <li>&lt;kbd&gt; 태그는 키보드 입력요소를 표현할 때 설정합니다.</li>
+                        <li>&lt;i&gt; 태그는 주의 텍스트와 다른 의미의 텍스트로 구분할 때 설정합니다.</li>
                     </ul>
 
-                    <h3>속성(Property)</h3>
-                    <div class="table">
-                        <table>
-                            <colgroup>
-                                <col style="width:15%">
-                                <col style="width:25%">
-                                <col>
-                                <col style="width:7%">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th>속성</th>
-                                    <th>값(예)</th>
-                                    <th>설명</th>
-                                    <th class="ce">버전</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>accesskey</td>
-                                    <td>accesskey = "a"</td>
-                                    <td>키보드 단축키 힌트를 제공합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>autocapitalize</td>
-                                    <td>autocapitalize = "off"</td>
-                                    <td>텍스트를 자동으로 대문자로 변환할지 여부를 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>contenteditable</td>
-                                    <td>contenteditable = "true"</td>
-                                    <td>사용자가 콘텐츠를 편집할 수 있는지 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>data-*</td>
-                                    <td>data-name = "name"</td>
-                                    <td>사용자가 지정하여 속성을 설정할 수 있습니다. 이 속성은 스크립트를 통해 사용할 수 있습니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>class</td>
-                                    <td>class = "className"</td>
-                                    <td>클래스 이름을 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>dir</td>
-                                    <td>dir = "rtl"</td>
-                                    <td>요소 글씨의 방향을 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>draggable</td>
-                                    <td>draggable = "true"</td>
-                                    <td>드래그 사용할 수 있는지 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>hidden</td>
-                                    <td>hidden</td>
-                                    <td>요소를 숨김 처리할 수 있습니다. hidden 요소는 렌더링하지 않습니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>id</td>
-                                    <td>id = "name"</td>
-                                    <td>고유 식별자 아이디를 설정합니다. CSS나 Script에서 사용합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>inputmode</td>
-                                    <td>inputmode = "email"</td>
-                                    <td>브라우저가 제공해야 하는 가상 키보드 설정을 알려줍니다</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>itemid</td>
-                                    <td>itemid = "name"</td>
-                                    <td>아이템 요소의 고유 식별자 아이디를 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>itemprop</td>
-                                    <td>itemprop = "name"</td>
-                                    <td>아이템 요소의 고유 식별자 속성을 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>itemref</td>
-                                    <td>itemref = "name"</td>
-                                    <td>아이템 요소의 고유 식별자를 연결합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>itemscope</td>
-                                    <td>itemscope</td>
-                                    <td>아이템 요소의 범위를 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>lang</td>
-                                    <td>lang = "ko"</td>
-                                    <td>요소의 언어를 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>part</td>
-                                    <td>part</td>
-                                    <td>요소의 영역을 파트로 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>spellcheck</td>
-                                    <td>spellcheck = "true"</td>
-                                    <td>요소의 맞춤법 검사 여부를 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>style</td>
-                                    <td>style = "margin: 0"</td>
-                                    <td>요소의 적용할 CSS 속성을 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>tabindex</td>
-                                    <td>tabindex = "0"</td>
-                                    <td>요소의 탭 인덱스를 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>title</td>
-                                    <td>title = "titleName"</td>
-                                    <td>요소의 타이틀을 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>href</td>
-                                    <td>href="URL"</td>
-                                    <td>사이트 기본 주소를 설정합니다.</td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                <tr>
-                                    <td>target</td>
-                                    <td>
-                                        target="_blank"<br /> 
-                                        target="_parent"<br /> 
-                                        target="_self"<br /> 
-                                        target="_top"
-                                    </td>
-                                    <td>
-                                        링크 클릭시 새로운 브라우저 창으로 설정합니다.<br />
-                                        현재 브라우저의 부모 브라우저 창으로 설정합니다.<br /> 
-                                        현재와 동일한 브라우저 창으로 설정합니다.<br /> 
-                                        최상위 브라우저 창에서 설정합니다. 부모가 없는 경우 _self와 동일합니다.
-                                    </td>
-                                    <td class="ce">-</td>
-                                </tr>
-                                    
-                                
-                                
-                            </tbody>
-                        </table>
-                    </div>
-
-
                     <style>
-                        .hr-box {
-                            background-color: white;
-                            overflow: hidden;
-                            width: 100%;
-                            padding: 1%;
+                        .sampleView ul {
+                            margin-bottom: 0;
                         }
-                        .hr-box hr {
-                            margin: 20px 0;
+                        .sampleView em {
+                            font-style: italic;
+                        }
+                        .sampleView strong {
+                            font-weight: bold;
                         }
                     </style>
-    
-                    <!-- Sample1 -->
-                    <h3>예제1(Sample)</h3>
+                    
+                    <h3>예제1(Sample)</h4>
                     <div class="sample">
-                        <h4>기본 문서 샘플 예제입니다.</h4>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;base href="https://webstoryboy.co.kr/"&gt; &lt;!-- 기본 주소 설정 --&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;!-- 본문 내용을 작성하는 곳 --&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+                        <h4>텍스트와 관련된 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <ul>    
+                                <li><b>&lt;b&gt;</b> 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.</li>
+                                <li><em>&lt;em&gt;</em> 태그는 텍스트를 강조할 때 설정합니다.</li>
+                                <li><strong>&lt;strong&gt;</strong> 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</li>
+                                <li><mark>&lt;mark&gt;</mark> 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.</li>
+                                <li><i>&lt;i&gt;</i> 태그는 주의 텍스트와 다른 의미의 텍스트로 구분할 때 설정합니다.</li>
+                            </ul>
+                            <!-- //ex -->
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div class="active">
+<pre><code class="language-html">&lt;ul&gt;    
+    &lt;li&gt;&lt;b&gt;b&lt;/b&gt; 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.&lt;/li&gt;
+    &lt;li&gt;&lt;em&gt;em&lt;/em&gt; 태그는 텍스트를 강조할 때 설정합니다.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;strong&lt;/strong&gt; 태그는 텍스트를 강조하거나 의미의 중요성을 강조할 때 설정합니다.&lt;/li&gt;
+    &lt;li&gt;&lt;mark&gt;mark&lt;/mark&gt; 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.&lt;/li&gt;
+    &lt;li&gt;&lt;i&gt;i&lt;/i&gt; 태그는 특별한 이유로 평범한 글자와 구분할 때 설정합니다.&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
+                                </div>
+                                <div>
+<pre><code class="language-css">.sampleView a,
+.sampleView code,
+.sampleView var,
+.sampleView samp,
+.sampleView kbd {
+    color: #FF4B4C;
+    border-bottom: 1px solid #FF4B4C;
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="line-numbers"><code class="language-javascript">//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- //Sample1 -->
-    
-                    
 
 
                     <h3>호환성(Compatibility)</h3>
@@ -419,7 +266,7 @@
                         <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element" target="_blank">https://html.spec.whatwg.org/multipage/<wbr>text-level-semantics.html<wbr>#the-b-element</a></li>
                     </ul>
 
-                    <hr class="m100">
+                    <hr>
 
                 </div>
                 <aside class="blog__aside">
@@ -446,4 +293,4 @@
 </html>
 
 
-<!-- html, head, body, base, link, meta, style, title -->
+<!-- b, em, strong, mark, i -->

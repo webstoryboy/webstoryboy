@@ -73,24 +73,20 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Reference/HTML</span>
-                <h1 class="title">strong 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</h1>
+                <h1 class="title">s 태그는 취소선을 표현할 때 설정합니다.</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
-                    <span class="date">2022. 12. 28.</span>
+                    <span class="date">2022. 12. 29.</span>
                 </div>
             </div>
             <div class="blog__inner container">
                 <div class="blog__contents">
-                    <h2>&lt;strong&gt;</h2>
+                    <h2>&lt;s&gt;</h2>
                     <p>
-                        &lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.
+                        &lt;s&gt; 태그는 취소선을 표현할 때 설정합니다. 
+                        더 이상 텍스트와 관련이 없거나 적절하지 않은 것을 나타낼 때 사용합니다. 
+                        문서 편집을 위한 텍스트 수정은 &lt;del&gt; 또는 &lt;ins&gt; 태그를 사용합니다.
                     </p>
-                    <p>
-                        &lt;strong&gt; 요소는 텍스트의 경고 또는 알림을 표시하는데 사용하며, 긴급성을 요하는 부분에 사용합니다. 
-                        &lt;strong&gt; 요소는 텍스트를 강조를 하지만, 문장의 의미를 변경하지 않습니다. 
-                        &lt;strong&gt; 요소는 글씨가 굵게 표현됩니다. 만약 글씨를 굵게 표현하기 위함이라면, CSS font-weight를 설정합니다.
-                    </p>
-
                     <hr>
 
                     <div class="table">
@@ -112,7 +108,7 @@
                                 </tr>
                                 <tr>
                                     <th>닫는 태그</th>
-                                    <td>적용(&lt;strong&gt;~&lt;/strong&gt;)</td>
+                                    <td>적용(&lt;s&gt;~&lt;/s&gt;)</td>
                                 </tr>
                                 <tr>
                                     <th>버전</th>
@@ -120,11 +116,11 @@
                                 </tr>
                                 <tr>
                                     <th>시각적 표현</th>
-                                    <td>볼드체로 표시</td>
+                                    <td>가운데 줄 표시</td>
                                 </tr>
                                 <tr>
                                     <th>사용성</th>
-                                    <td>★★★★★</td>
+                                    <td>★☆☆☆☆</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,31 +128,22 @@
 
                     <h3>정의(Definition)</h3>
                     <ul>
-                        <li>&lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 경고 또는 알림을 표시하는데 사용합니다.</li>
-                        <li>&lt;strong&gt; 태그는 다른 요소보다 사용자가 빨리 봐야 하는 부분에 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 텍스트의 중요도를 변경해도, 문장의 의미를 변경하지 않습니다.</li>
+                        <li>&lt;s&gt; 태그는 취소선을 표현할 때 설정합니다.</li>
+                        <li>&lt;s&gt; 태그는 텍스트가 정확하지 않고, 관련성이 없는 내용을 표시하는데 사용합니다.</li>
+                        <li>&lt;s&gt; 태그는 주로 할인된 가격에 표시합니다.</li>
+                        <li>&lt;s&gt; 태그는 시각적으로 가운데 줄이 표시됩니다. 단순하게 취소선을 설정하고 싶다면 text-decoration: line-through;을 통하여 설정할 수 있습니다.</li>
                     </ul>
 
-                    <h3>b 요소와 strong 요소의 차이점</h3>
+                    <h3>접근성(Accessibility)</h3>
                     <ul>
-                        <li>&lt;strong&gt; 요소와 &lt;b&gt; 요소는 글씨가 굵게 표현됩니다.</li>
-                        <li>&lt;strong&gt; 요소는 중요성을 전달하기 위함이고, &lt;b&gt; 요소는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용합니다.</li>
+                        <li>&lt;s&gt; 태그는 화면 판독기를 통해 판별할 수 없기 때문에 가상요소(::before, ::after)를 이용하여 시작과 끝을 알려주어야 합니다. 일부 화면 판독기 사용자는 이 기능을 불편해 하기 때문에 이 내용을 알지 못하면 불편한 경우에만 사용하는 것을 추천합니다.</li>
                     </ul>
 
-                    <h3>em 요소와 strong 요소의 차이점</h3>
+                    <h3>관련된 태그(Related Tags)</h3>
                     <ul>
-                        <li>&lt;em&gt; 요소는 텍스트를 강조하면서 문장의 의미가 변경될 수 있지만, &lt;strong&gt; 요소는 중요성만 강조하고, 의미를 변경하지 않습니다.</li>
-                        <li>&lt;em&gt; 요소는 이택릴체로 표현이 되고, &lt;strong&gt; 요소는 볼드체로 표현이 됩니다.</li>
-                    </ul>
-
-                    <h3>텍스트와 관련된 태그</h3>
-                    <ul>
-                        <li>&lt;b&gt; 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.</li>
-                        <li>&lt;em&gt; 태그는 텍스트를 강조할 때 설정합니다.</li>
-                        <li>&lt;strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</li>
-                        <li>&lt;mark&gt; 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.</li>
-                        <li>&lt;i&gt; 태그는 주의 텍스트와 다른 의미의 텍스트로 구분할 때 설정합니다.</li>
+                        <li>&lt;ins&gt; 태그는 추가된 텍스트의 범위를 표현할 때 설정합니다.</li>
+                        <li>&lt;del&gt; 태그는 삭제된 텍스트의 범위를 표현할 때 설정합니다.</li>
+                        <li>&lt;s&gt; 태그는 취소선을 표현할 때 설정합니다.</li>
                     </ul>
 
                     <style>
@@ -177,11 +164,9 @@
                         <div class="sampleView">
                             <!-- ex -->
                             <ul>    
-                                <li><b>&lt;b&gt;</b> 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.</li>
-                                <li><em>&lt;em&gt;</em> 태그는 텍스트를 강조할 때 설정합니다.</li>
-                                <li><strong>&lt;strong&gt;</strong> 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.</li>
-                                <li><mark>&lt;mark&gt;</mark> 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.</li>
-                                <li><i>&lt;i&gt;</i> 태그는 주의 텍스트와 다른 의미의 텍스트로 구분할 때 설정합니다.</li>
+                                <li><ins>&lt;ins&gt; 태그는 추가된 텍스트의 범위를 표현할 때 설정합니다.</ins></li>
+                                <li><del>&lt;del&gt; 태그는 삭제된 텍스트의 범위를 표현할 때 설정합니다.</del></li>
+                                <li><s>&lt;s&gt; 태그는 취소선을 표현할 때 설정합니다.</s></li>
                             </ul>
                             <!-- //ex -->
                         </div>
@@ -194,11 +179,9 @@
                             <div class="scCont">
                                 <div class="active">
 <pre><code class="language-html">&lt;ul&gt;    
-    &lt;li&gt;&lt;b&gt;b&lt;/b&gt; 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.&lt;/li&gt;
-    &lt;li&gt;&lt;em&gt;em&lt;/em&gt; 태그는 텍스트를 강조할 때 설정합니다.&lt;/li&gt;
-    &lt;li&gt;&lt;strong&gt;strong&lt;/strong&gt; 태그는 내용에 대한 중요성, 심각성, 긴급성을 표현할 때 설정합니다.&lt;/li&gt;
-    &lt;li&gt;&lt;mark&gt;mark&lt;/mark&gt; 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.&lt;/li&gt;
-    &lt;li&gt;&lt;i&gt;i&lt;/i&gt; 태그는 주의 텍스트와 다른 의미의 텍스트로 구분할 때 설정합니다.&lt;/li&gt;
+    &lt;li&gt;&lt;ins&gt;ins 태그는 추가된 텍스트의 범위를 표현할 때 설정합니다.&lt;/ins&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;del&gt;del 태그는 삭제된 텍스트의 범위를 표현할 때 설정합니다.&lt;/del&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;s&gt;s 태그는 취소선을 표현할 때 설정합니다.&lt;/s&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </code></pre>
                                 </div>
@@ -250,7 +233,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" class="ce">&lt;strong&gt;</td>
+                                    <td scope="row" class="ce">&lt;s&gt;</td>
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 크롬 -->
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 파이어폭스 -->
                                     <td class="ce"><span title="사용가능합니다.">○</span></td><!-- 사파리 -->
@@ -270,9 +253,37 @@
                         </table>
                     </div>
 
+                    <h3>텍스트와 관련된 태그</h3>
+                    <ul>
+                        <li>&lt;b&gt; 태그는 중요성을 전달하지 않고, 주의를 끌기 위한 용도로 사용할 때 설정합니다.</li>
+                        <li>&lt;em&gt; 태그는 텍스트를 강조할 때 설정합니다.</li>
+                        <li>&lt;strong&gt; 태그는 텍스트를 강조하거나 의미의 중요성을 강조할 때 설정합니다.</li>
+                        <li>&lt;mark&gt; 태그는 중요성과 강조를 고려하지 않는 단순 참고용 표시를 할 때 설정합니다.</li>
+                        <li>&lt;i&gt; 태그는 특별한 이유로 평범한 글자와 구분할 때 설정합니다.</li>
+
+                        <li>&lt;abbr&gt; 태그는 줄임말이나 머리글자를 표현할 때 사용합니다.</li>
+                        <li>&lt;dfn&gt; 태그는 용어를 정의할 때 설정합니다.</li>
+                        <li>&lt;small&gt; 태그는 덧붙이는 글이나 작은 글씨를 표현할 때 설정합니다.</li>
+                        <li>&lt;u&gt; 태그는 맞춤법이 틀린 단어를 표현할 때 설정합니다.</li>
+                        <li>&lt;cite&gt; 태그는 저작물의 출처 표시를 할 때 설정합니다.</li>
+                        <li>&lt;q&gt; 태그는 태그는 짧은 글을 인용할 때 설정합니다.</li>
+                        <li>&lt;blockquote&gt; 태그는 태그는 긴 글을 인용할 때 설정합니다.</li>
+                        <li>&lt;sub&gt; 태그는 아래첨자를 표현할 때 설정합니다.</li>
+                        <li>&lt;sup&gt; 태그는 위첨자를 표현할 때 설정합니다.</li>
+
+                        <li>&lt;ins&gt; 태그는 추가된 텍스트의 범위를 표현할 때 설정합니다.</li>
+                        <li>&lt;del&gt; 태그는 삭제된 텍스트의 범위를 표현할 때 설정합니다.</li>
+                        <li>&lt;s&gt; 태그는 취소선을 표현할 때 설정합니다.</li>
+
+                        <li>&lt;code&gt; 태그는 소스 코드를 표현할 때 설정합니다.</li> 
+                        <li>&lt;var&gt; 태그는 수학적인 변수나 프로그램의 변수를 표현할 때 설정합니다.</li>
+                        <li>&lt;samp&gt; 태그는 프로그램 출력 결과물을 표현할 때 설정합니다.</li>
+                        <li>&lt;kbd&gt; 태그는 키보드 입력요소를 표현할 때 설정합니다.</li>
+                    </ul>
+
                     <h3>참고(Reference)</h3>
                     <ul>
-                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-b-element" target="_blank">https://html.spec.whatwg.org/multipage/<wbr>text-level-semantics.html<wbr>#the-b-element</a></li>
+                        <li><a href="https://html.spec.whatwg.org/multipage/text-level-semantics.html#the-s-element" target="_blank">https://html.spec.whatwg.org/multipage/<wbr>text-level-semantics.html#the-s-element</a></li>
                     </ul>
 
                     <hr>
@@ -296,6 +307,4 @@
 </html>
 
 
-<!-- b, em, strong, mark, i -->
-
-
+<!-- ins, del, s -->
