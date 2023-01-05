@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2023. 01. 01.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>border-image-outset</h2>
+                    <p>
+                        border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.
+                    </p>
+                    <p>
+                        border-image는 테두리에 이미지를 넣는 기능으로, 이미지를 9등분하여 해당 부분이 네 면에 설정하는 기능입니다. 
+                        단순한 이미지도 넣을 수 있지만, 특별한 테두리를 만들고 싶다면 이 속성을 이용하면 편하게 만들 수 있습니다. 
+                        border-image 속성은 border와 같이 사용됩니다.
+                    </p>
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>
+                                        border-image-outset : 0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>border</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★☆☆☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
+                    </ul>
+
+                    <h3>비교(Compare)</h3>
+                    <ul>
+                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
+                        <li>border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다.</li>
+                        <li>border-image-slice 속성은 테두리 이미지 영역 속성을 설정합니다.</li>
+                        <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
+                        <li>border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다.</li>
+                    </ul>
+
+                    <h3>관련된 속성(Related Properties)</h3>
+                    <ul>
+                        <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-color 속성은 테두리 색 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-style 속성은 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-width 속성은 테두리 두께 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">border-image-outset : length | number</p>
+<pre class="bluePre"><code class="language-css">/* 기본 속성 */ 
+border-image-outset: 1px;               /* length */
+border-image-outset: 1.5;               /* number */
+
+/* 다중 속성 */ 
+border-image-outset: 1px;               /* 위쪽,아래쪽,왼쪽,오른쪽 */
+border-image-outset: 1px 2px;           /* 위쪽,아래쪽 | 왼쪽,오른쪽 */
+border-image-outset: 1px 2px 3px;       /* 위쪽 | 왼쪽,오른쪽 | 아래쪽 */
+border-image-outset: 1px 2px 3px 4px;   /* 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 */
+
+/* 전역 속성 */
+border-image-outset: inherit;   /* 상속 */
+border-image-outset: initial;   /* 초기화 */
+border-image-outset: revert;    /* 원래대로 돌리기 */
+border-image-outset: unset;     /* 설정 해제 */
+</code></pre>
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="20%">
+                                <col width="30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>length</th>
+                                    <td>border-image-outset: 2px</td>
+                                    <td>이미지 간격을 CSS 단위로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>repeat</th>
+                                    <td>border-image-outset: 2;</td>
+                                    <td>이미지 간격을 숫자로 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Sample1 -->
+                    <style>
+                        #border-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 10px;
+                        }
+                        #border-box .box {
+                            width: 100%;
+                            max-width: 400px;
+                            background-color: #a2cbfa;
+                            color: #fff;
+                            min-height: 200px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            box-sizing: border-box;
+                            border-width: 50px;
+                            border-style: dotted;
+                            border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+                            border-image-width: 20px;
+                            border-image-slice: 50;
+                            border-image-outset: 0px;
+                            border-image-repeat: round;
+                        }
+                        #border-box.bg1 .box {
+                            border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+                        }
+                        #border-box.bg2 .box {
+                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+                        }
+                        #border-box.bg3 .box {
+                            border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+                        }
+                        #border-box.bg4 .box {
+                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
+                        }
+                        #border-box.bg5 .box {
+                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
+                        }
+                        #border-box.bg6 .box {
+                            border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+                        }
+                    
+                        .sampleBtn1 a {
+                            background-size: cover;
+                            background-position: center center;
+                            width: 100px; height: 100px;
+                            color: transparent !important;
+                            border-radius: 0 !important;
+                            padding: 0 !important;
+                        }
+                        .sampleBtn1 a:nth-child(1) {
+                            background-image: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+                        }
+                        .sampleBtn1 a:nth-child(2) {
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+                        }
+                        .sampleBtn1 a:nth-child(3) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+                        }
+                        .sampleBtn1 a:nth-child(4) {
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
+                        }
+                        .sampleBtn1 a:nth-child(5) {
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
+                        }
+                        .sampleBtn1 a:nth-child(6) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+                        }
+                    </style>
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>테두리 이미지 스타일을 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div id="border-box" class="bg1">
+                                <div class="box"><span>border: 50px solid #4390e1</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn sampleBtn1">
+                            <a href="#">bg1</a>
+                            <a href="#">bg2</a>
+                            <a href="#">bg3</a>
+                            <a href="#">bg4</a>
+                            <a href="#">bg5</a>
+                            <a href="#">bg6</a>
+                        </div>
+                        <div class="sampleBtn sampleBtn2">
+                            <a href="#">border-image-width: 10px;</a>
+                            <a href="#">border-image-width: 20px;</a>
+                            <a href="#">border-image-width: 30px;</a>
+                        </div>
+                        <div class="sampleBtn sampleBtn2">
+                            <a href="#">border-image-slice: 30;</a>
+                            <a href="#">border-image-slice: 40;</a>
+                            <a href="#">border-image-slice: 50;</a>
+                            <a href="#">border-image-slice: 50 fill;</a>
+                            <a href="#">border-image-slice: 40 fill;</a>
+                            <a href="#">border-image-slice: 30 fill;</a>
+                        </div>
+                        <div class="sampleBtn sampleBtn2">
+                            <a href="#">border-image-outset: 0px;</a>
+                            <a href="#">border-image-outset: 5px;</a>
+                            <a href="#">border-image-outset: 15px;</a>
+                            <a href="#">border-image-outset: 25px;</a>
+                        </div>
+                        <div class="sampleBtn sampleBtn2">
+                            <a href="#">border-image-repeat: stretch;</a>
+                            <a href="#">border-image-repeat: repeat;</a>
+                            <a href="#">border-image-repeat: round;</a>
+                            <a href="#">border-image-repeat: space</a>
+                            <a href="#">border-image-repeat: stretch round</a>
+                            <a href="#">border-image-repeat: round stretch</a>
+                        </div>
+
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div id="border-box" class="bg1"&gt;
+    &lt;div class="box"&gt;&lt;span>border: 50px solid #4390e1&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>#border-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#border-box .box {
+    width: 100%;
+    max-width: 400px;
+    background-color: #a2cbfa;
+    color: #fff;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-width: 50px;
+    border-style: dotted;
+    border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+    border-image-width: 20px 20px 20px 20px;
+    border-image-slice: 50 50 50 50;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: round round;
+}
+#border-box.bg1 .box {
+    border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+}
+#border-box.bg2 .box {
+    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+}
+#border-box.bg3 .box {
+    border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+}
+#border-box.bg4 .box {
+    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
+}
+#border-box.bg5 .box {
+    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
+}
+#border-box.bg6 .box {
+    border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+     
+                    <script>
+                        document.querySelectorAll("#sample1 .sampleBtn1 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.innerText;
+                                document.querySelector("#border-box").setAttribute("class", "");
+                                document.querySelector("#border-box").classList.add(text)
+                            })
+                        });
+                        document.querySelectorAll("#sample1 .sampleBtn2 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.innerText;
+                                document.querySelectorAll("#sample1 #border-box .box").forEach(box => {
+                                    box.setAttribute("style", text);
+                                })
+                            })
+                        });
+                    </script>           
+                    <!-- //Sample1 -->
+
+
+
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">border-image-outset</td>
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>보더와 관련된 속성</h3>
+                    <ul>
+                        <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-color 속성은 테두리 색 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-style 속성은 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-width 속성은 테두리 두께 속성을 일괄적으로 설정합니다.</li>
+
+                        <li>border-top 속성은 테두리 위쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-top-color 속성은 테두리 위쪽 색 속성을 설정합니다.</li>
+                        <li>border-top-style 속성은 테두리 위쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-top-width 속성은 테두리 위쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-right 속성은 테두리 오른쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-right-color 속성은 테두리 오른쪽 색 속성을 설정합니다.</li>
+                        <li>border-right-style 속성은 테두리 오른쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-right-width 속성은 테두리 오른쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-bottom 속성은 테두리 아래쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-bottom-color 속성은 테두리 아래쪽 색 속성을 설정합니다.</li>
+                        <li>border-bottom-style 속성은 테두리 아래쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-bottom-width 속성은 테두리 아래쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-left 속성은 테두리 왼쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-left-color 속성은 테두리 왼쪽 색 속성을 설정합니다.</li>
+                        <li>border-left-style 속성은 테두리 왼쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-left-width 속성은 테두리 왼쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
+                        <li>border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다.</li>
+                        <li>border-image-slice 속성은 테두리 이미지 크기 속성을 설정합니다.</li>
+                        <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
+                        <li>border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다.</li>
+
+                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
+                        <li>border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-top-right-radius 속성은 윗부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-bottom-left-radius 속성은 아래부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-bottom-right-radius 속성은 아래부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                    </ul>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-backgrounds/#the-border-image-outset" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-backgrounds/<wbr>#the-border-image-outset</a></li>
+                    </ul>
+
+                    <hr>
+
+                </div>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- border-image,border-image-outset,border-image-repeat,border-image-slice,border-image-source,border-image-width -->

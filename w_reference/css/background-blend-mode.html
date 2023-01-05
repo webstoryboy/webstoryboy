@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">background-blend-mode 속성은 배경 이미지를 혼합했을 때의 상태를 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2023. 01. 03.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>background-blend-mode</h2>
+                    <p>
+                        background-blend-mode 속성은 배경 이미지를 혼합했을 때의 상태를 설정합니다. <br>
+                        백그라운드 색상과 백그라운드 이미지를 혼합 했을 때 효과를 만들어 주기 때문에, 두가지 요소가 없다면, 적용이 안 될 수 있습니다. 
+                        포토샵의 브랜드 효과와 동일하다고 보시면 됩니다.
+                    </p>
+                    <p>
+                        웹 문서에 이미지를 표현하는 방법은 두가지가 있습니다. 
+                        img 태그와 background 속성을 이용하는 방법입니다.
+                        원칙적으로 의미가 있는 이미지는 img 태그를 사용하고, 그렇지 않은 경우는 background 속성을 사용합니다. 
+                        background 속성은 의미가 없는 이미지를 사용하기 위한 방법입니다. 
+                        배경이 장식용이거나 디자인 용도라면 background를 이용해서 많이 사용합니다. 
+                        여기에는 사이즈, 반복여부, 위치, 효과 등 다양한 속성을 사용할 수 있습니다. 
+                    </p>
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>background-blend-mode : normal</td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>background</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★☆☆☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>background-blend-mode 속성은 배경을 혼합했을 때의 상태를 설정합니다.</li>
+                        <li>blend-mode는 크게 background-blend-mode와 mix-blend-mode로 설정됩니다.</li>
+                        <li>포토샵의 브렌드 모드와 동일한 효과입니다.</li>
+                    </ul>
+
+                    <h3>그래픽 효과 관련된 속성(Graphic Related Properties)</h3>
+                    <ul>
+                        <li>filter 속성은 그래픽 효과를 설정합니다.</li>
+                        <li>backdrop-filter 속성은 배경에 그래픽 효과를 설정합니다.</li>
+                        <li>background-blend-mode 속성은 배경을 혼합했을 때 그래픽 효과를 설정합니다.</li>
+                        <li>mix-blend-mode 속성은 요소를 혼합했을 때 그래픽 효과를 설정합니다.</li>
+                    </ul>
+
+                    <h3>백그라운드 관련된 속성(Background Related Properties)</h3>
+                    <ul>
+                        <li>background 속성은 배경 이미지의 속성을 일괄적으로 설정합니다.</li>
+                        <li>background-image 속성은 배경 이미지 경로 및 그라디언트를 설정합니다.</li>
+                        <li>background-position 속성은 배경 이미지의 위치를 설정합니다.</li>
+                        <li>background-size 속성은 배경 이미지 사이즈를 설정합니다.</li>
+                        <li>background-repeat 속성은 배경 이미지 반복 여부를 설정합니다.</li>
+                        <li>background-origin 속성은 배경 이미지의 위치 기준점을 설정합니다.</li>
+                        <li>background-clip 속성은 배경 이미지의 위치 기준점을 설정합니다.</li>
+                        <li>background-attachment 속성은 배경 이미지의 고정 여부를 설정합니다.</li>
+                        <li>background-color 속성은 배경 색을 설정합니다.</li>
+                        <li>background-blend-mode 속성은 배경 이미지를 혼합했을 때의 상태를 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">background-blend-mode : normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | hard-light | soft-light | difference | exclusion | hue | saturation | color | luminosity</p>
+<pre class="bluePre"><code class="language-css">/* 기본 속성 */
+background-blend-mode : normal; 
+background-blend-mode : multiply;
+background-blend-mode : screen;
+background-blend-mode : overlay; 
+background-blend-mode : darken; 
+background-blend-mode : lighten; 
+background-blend-mode : color-dodge; 
+background-blend-mode : color-burn;
+background-blend-mode : hard-light;
+background-blend-mode : soft-light;
+background-blend-mode : difference;
+background-blend-mode : exclusion;
+background-blend-mode : hue;
+background-blend-mode : saturation;
+background-blend-mode : color;
+background-blend-mode : luminosity;
+
+/* 다중 속성 */
+background-blend-mode : color-dodge, exclusion; 
+background-blend-mode : color-dodge, hue; 
+
+/* 전역 속성 */
+background-attachment : inherit;   /* 상속 */
+background-attachment : initial;   /* 초기화 */
+background-attachment : revert;    /* 원래대로 돌리기 */
+background-attachment : unset;     /* 설정 해제 */
+</code></pre>
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="20%">
+                                <col width="30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>normal</th>
+                                    <td>background-blend-mode : normal;</td>
+                                    <td>배경색의 기본 값을 설정합니다. </td>
+                                </tr>
+                                <tr>
+                                    <th>multiply</th>
+                                    <td>background-blend-mode : multiply;</td>
+                                    <td>배경의 혼합 상태를 multiply(어둡게)으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>screen</th>
+                                    <td>background-blend-mode : screen;</td>
+                                    <td>배경의 혼합 상태를 screen(밝게)으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>overlay</th>
+                                    <td>background-blend-mode : overlay; </td>
+                                    <td>배경의 혼합 상태를 overlay으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>darken</th>
+                                    <td>background-blend-mode : darken; </td>
+                                    <td>배경의 혼합 상태를 darken으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>lighten</th>
+                                    <td>background-blend-mode : lighten;</td>
+                                    <td>배경의 혼합 상태를 lighten으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>color-dodge</th>
+                                    <td>background-blend-mode : color-dodge;</td>
+                                    <td>배경의 혼합 상태를 color-dodge으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>color-burn</th>
+                                    <td>background-blend-mode : color-burn;</td>
+                                    <td>배경의 혼합 상태를 color-burn으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>difference</th>
+                                    <td>background-blend-mode : difference;</td>
+                                    <td>배경의 혼합 상태를 difference으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>exclusion</th>
+                                    <td>background-blend-mode : exclusion;</td>
+                                    <td>배경의 혼합 상태를 exclusion으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>hue</th>
+                                    <td>background-blend-mode : hue;</td>
+                                    <td>배경의 혼합 상태를 hue으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>saturation</th>
+                                    <td>background-blend-mode : saturation;</td>
+                                    <td>배경의 혼합 상태를 saturation으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>color</th>
+                                    <td>background-blend-mode : color;</td>
+                                    <td>배경의 혼합 상태를 color으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>luminosity</th>
+                                    <td>background-blend-mode : luminosity;</td>
+                                    <td>배경의 혼합 상태를 luminosity으로 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+             
+
+                    <style>
+                        #background-box #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            background-color: #4390E1;
+                            background-size: cover;
+                            overflow-y: scroll;
+                            color: #fff;
+                            text-align: center;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        #background-box #box h2 {
+                            padding: 10% 0 !important;
+                            color: #fff;
+                            font-size: 20px;
+                            display: block;
+                            margin: 0 !important;
+                        }
+                        #background-box.bg1 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+                        }
+                        #background-box.bg2 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg);
+                        }
+                        #background-box.bg3 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg);
+                        }
+                        #background-box.bg4 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg);
+                        }
+                        #background-box.bg5 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg);
+                        }
+                        #background-box.bg6 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg);
+                        }
+                        #background-box.bg7 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg);
+                        }
+                        #background-box.bg8 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg);
+                        }
+                        #background-box.bg9 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg);
+                        }
+                        #background-box.bg10 #box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg);
+                        }
+
+                        .sampleBtn1 a:nth-child(1) {background-color:#4390E1;}
+                        .sampleBtn1 a:nth-child(2) {background-color:#de43e1;}
+                        .sampleBtn1 a:nth-child(3) {background-color:#b3e143;}
+                        .sampleBtn1 a:nth-child(4) {background-color:#e14343;}
+                        .sampleBtn1 a:nth-child(5) {background-color:#1f0404;}
+                        .sampleBtn1 a:nth-child(6) {background-color:#e1dfdf;}
+                        .sampleBtn1 a:nth-child(7) {background-color:#805b5b;}
+                        .sampleBtn1 a:nth-child(8) {background-color:#46e143;}
+                        
+                        .sampleBtn1 a {
+                            width: 50px; height: 50px;
+                            border-radius: 50% !important;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 41px;
+                            padding: 0 !important;
+                        }
+                        
+                        #background-box #box.color1 {background-color:#4390E1;}
+                        #background-box #box.color2 {background-color:#de43e1;}
+                        #background-box #box.color3 {background-color:#b3e143;}
+                        #background-box #box.color4 {background-color:#e14343;}
+                        #background-box #box.color5 {background-color:#1f0404;}
+                        #background-box #box.color6 {background-color:#e1dfdf;}
+                        #background-box #box.color7 {background-color:#805b5b;}
+                        #background-box #box.color8 {background-color:#46e143;}
+
+                        .sampleBtn2 a {
+                            background-size: cover;
+                            background-position: center center;
+                            width: 100px; height: 100px;
+                            color: transparent !important;
+                            border-radius: 0 !important;
+                            padding: 0 !important;
+                        }
+                        .sampleBtn2 a:nth-child(1) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(2) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(3) {
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(4) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(5) {
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(6) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(7) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(8) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(9) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg");
+                        }
+                        .sampleBtn2 a:nth-child(10) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg");
+                        }
+                    </style>
+    
+                    <!-- sample1 -->
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>배경색과 백그라운드 이미지를 혼합했을 때 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div id="background-box">
+                                <div id="box">
+                                    <h2>background-blend-mode</h2>
+                                </div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn sampleBtn3">
+                            <a href="#" data-name="background-blend-mode : normal">normal</a>
+                            <a href="#" data-name="background-blend-mode : multiply">multiply</a>
+                            <a href="#" data-name="background-blend-mode : screen">screen</a>
+                            <a href="#" data-name="background-blend-mode : overlay">overlay</a>
+                            <a href="#" data-name="background-blend-mode : darken">darken</a>
+                            <a href="#" data-name="background-blend-mode : lighten">lighten</a>
+                            <a href="#" data-name="background-blend-mode : color-dodge">color-dodge</a>
+                            <a href="#" data-name="background-blend-mode : color-burn">color-burn</a>
+                            <a href="#" data-name="background-blend-mode : hard-light">hard-light</a>
+                            <a href="#" data-name="background-blend-mode : soft-light">soft-light</a>
+                            <a href="#" data-name="background-blend-mode : difference">difference</a>
+                            <a href="#" data-name="background-blend-mode : exclusion">exclusion</a>
+                            <a href="#" data-name="background-blend-mode : hue">hue</a>
+                            <a href="#" data-name="background-blend-mode : saturation">saturation</a>
+                            <a href="#" data-name="background-blend-mode : color">color</a>
+                            <a href="#" data-name="background-blend-mode : luminosity">luminosity</a>
+                        </div>
+                        <div class="sampleBtn sampleBtn1">
+                            <a href="#" data-value="color1"></a>
+                            <a href="#" data-value="color2"></a>
+                            <a href="#" data-value="color3"></a>
+                            <a href="#" data-value="color4"></a>
+                            <a href="#" data-value="color5"></a>
+                            <a href="#" data-value="color6"></a>
+                            <a href="#" data-value="color7"></a>
+                            <a href="#" data-value="color8"></a>
+                        </div>
+                        <div class="sampleBtn sampleBtn2">
+                            <a href="#">bg1</a>
+                            <a href="#">bg2</a>
+                            <a href="#">bg3</a>
+                            <a href="#">bg4</a>
+                            <a href="#">bg5</a>
+                            <a href="#">bg6</a>
+                            <a href="#">bg7</a>
+                            <a href="#">bg8</a>
+                            <a href="#">bg9</a>
+                            <a href="#">bg10</a>
+                        </div>
+                        
+                        
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div id="background-box"&gt;
+    &lt;div id="box"&gt;
+        &lt;h2&gt;background-blend-mode&lt;/h2&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>#background-box #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #4390E1;
+    background-size: cover;
+    overflow-y: scroll;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#background-box #box h2 {
+    padding: 10% 0 !important;
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    margin: 0 !important;
+}
+#background-box.bg1 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+}
+#background-box.bg2 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg);
+}
+#background-box.bg3 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg);
+}
+#background-box.bg4 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg);
+}
+#background-box.bg5 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg);
+}
+#background-box.bg6 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg);
+}
+#background-box.bg7 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg);
+}
+#background-box.bg8 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg);
+}
+#background-box.bg9 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg);
+}
+#background-box.bg10 #box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg);
+}
+
+.sampleBtn1 a:nth-child(1) {background-color:#4390E1;}
+.sampleBtn1 a:nth-child(2) {background-color:#de43e1;}
+.sampleBtn1 a:nth-child(3) {background-color:#b3e143;}
+.sampleBtn1 a:nth-child(4) {background-color:#e14343;}
+.sampleBtn1 a:nth-child(5) {background-color:#1f0404;}
+.sampleBtn1 a:nth-child(6) {background-color:#e1dfdf;}
+.sampleBtn1 a:nth-child(7) {background-color:#805b5b;}
+.sampleBtn1 a:nth-child(8) {background-color:#46e143;}
+
+.sampleBtn1 a {
+    width: 50px; height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    line-height: 41px;
+}
+
+#background-box #box.color1 {background-color:#4390E1;}
+#background-box #box.color2 {background-color:#de43e1;}
+#background-box #box.color3 {background-color:#b3e143;}
+#background-box #box.color4 {background-color:#e14343;}
+#background-box #box.color5 {background-color:#1f0404;}
+#background-box #box.color6 {background-color:#e1dfdf;}
+#background-box #box.color7 {background-color:#805b5b;}
+#background-box #box.color8 {background-color:#46e143;}
+
+.sampleBtn2 a {
+    background-size: cover;
+    background-position: center center;
+    width: 100px; height: 100px;
+    color: transparent !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+}
+.sampleBtn2 a:nth-child(1) {
+    background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg");
+}
+.sampleBtn2 a:nth-child(2) {
+    background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg");
+}
+.sampleBtn2 a:nth-child(3) {
+    background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg");
+}
+.sampleBtn2 a:nth-child(4) {
+    background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg");
+}
+.sampleBtn2 a:nth-child(5) {
+    background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg");
+}
+.sampleBtn2 a:nth-child(6) {
+    background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg");
+}
+.sampleBtn2 a:nth-child(7) {
+    background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg");
+}
+.sampleBtn2 a:nth-child(8) {
+    background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg");
+}
+.sampleBtn2 a:nth-child(9) {
+    background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg");
+}
+.sampleBtn2 a:nth-child(10) {
+    background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg");
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //sample1 -->
+    
+                    <script>
+                        document.querySelectorAll("#sample1 .sampleBtn1 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.dataset.value;
+                                document.querySelectorAll("#sample1 #background-box #box").forEach(box => {
+                                    box.setAttribute("class", text);
+                                })
+                            })
+                        });
+                        document.querySelectorAll("#sample1 .sampleBtn2 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.innerText;
+                                document.querySelectorAll("#sample1 #background-box").forEach(box => {
+                                    box.setAttribute("class", text);
+                                })
+                            })
+                        });
+                        document.querySelectorAll("#sample1 .sampleBtn3 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.dataset.name;
+                                document.querySelectorAll("#sample1 #background-box #box").forEach(box => {
+                                    box.setAttribute("style", text);
+                                })
+                            })
+                        });
+                    </script>
+                    
+                    
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">background-blend-mode</td>
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://drafts.fxtf.org/compositing/#background-blend-mode" target="_blank">https://drafts.fxtf.org/compositing/<wbr>#background-blend-mode</a></li>
+                    </ul>
+
+                    <hr>
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                       
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- background,background-image,background-position,background-size,background-repeat,background-origin,background-clip,background-attachment,background-color,background-blend-mode -->
+     

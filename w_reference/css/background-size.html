@@ -76,22 +76,25 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Reference/CSS</span>
-                <h1 class="title">border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</h1>
+                <h1 class="title">background-size 속성은 배경 이미지 사이즈를 설정합니다.</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
-                    <span class="date">2022. 12. 29.</span>
+                    <span class="date">2023. 01. 03.</span>
                 </div>
             </div>
             <div class="blog__inner container">
                 <div class="blog__contents">
-                    <h2>border-image-source</h2>
+                    <h2>background-size</h2>
                     <p>
-                        border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.
+                        background-size 속성은 배경 이미지 사이즈를 설정합니다.
                     </p>
                     <p>
-                        border-image는 테두리에 이미지를 넣는 기능으로, 이미지를 9등분하여 해당 부분이 네 면에 설정하는 기능입니다. 
-                        단순한 이미지도 넣을 수 있지만, 특별한 테두리를 만들고 싶다면 이 속성을 이용하면 편하게 만들 수 있습니다. 
-                        border-image 속성은 border와 같이 사용됩니다.
+                        웹 문서에 이미지를 표현하는 방법은 두가지가 있습니다. 
+                        img 태그와 background 속성을 이용하는 방법입니다.
+                        원칙적으로 의미가 있는 이미지는 img 태그를 사용하고, 그렇지 않은 경우는 background 속성을 사용합니다. 
+                        background 속성은 의미가 없는 이미지를 사용하기 위한 방법입니다. 
+                        배경이 장식용이거나 디자인 용도라면 background를 이용해서 많이 사용합니다. 
+                        여기에는 사이즈, 반복여부, 위치, 효과 등 다양한 속성을 사용할 수 있습니다. 
                     </p>
                     <hr>
 
@@ -110,21 +113,19 @@
                             <tbody>
                                 <tr>
                                     <th>기본값</th>
-                                    <td>
-                                        border-image-source : none
-                                    </td>
+                                    <td>background-size : auto auto</td>
                                 </tr>
                                 <tr>
                                     <th>적용</th>
-                                    <td>border</td>
+                                    <td>background</td>
                                 </tr>
                                 <tr>
                                     <th>버전</th>
-                                    <td>CSS3</td>
+                                    <td>CSS1</td>
                                 </tr>
                                 <tr>
                                     <th>사용성</th>
-                                    <td>★☆☆☆☆</td>
+                                    <td>★★★★★</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -132,48 +133,54 @@
 
                     <h3>정의(Definition)</h3>
                     <ul>
-                        <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
-                    </ul>
-
-                    <h3>비교(Compare)</h3>
-                    <ul>
-                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
-                        <li>border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다.</li>
-                        <li>border-image-slice 속성은 테두리 이미지 영역 속성을 설정합니다.</li>
-                        <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
-                        <li>border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다.</li>
+                        <li>background-size 속성은 배경 이미지 사이즈를 설정합니다.</li>
                     </ul>
 
                     <h3>관련된 속성(Related Properties)</h3>
                     <ul>
-                        <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-color 속성은 테두리 색 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-style 속성은 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-width 속성은 테두리 두께 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
+                        <li>background 속성은 배경 이미지의 속성을 일괄적으로 설정합니다.</li>
+                        <li>background-image 속성은 배경 이미지 경로 및 그라디언트를 설정합니다.</li>
+                        <li>background-position 속성은 배경 이미지의 위치를 설정합니다.</li>
+                        <li>background-size 속성은 배경 이미지 사이즈를 설정합니다.</li>
+                        <li>background-repeat 속성은 배경 이미지 반복 여부를 설정합니다.</li>
+                        <li>background-origin 속성은 배경 이미지의 위치 기준점을 설정합니다.</li>
+                        <li>background-clip 속성은 배경 이미지의 위치 기준점을 설정합니다.</li>
+                        <li>background-attachment 속성은 배경 이미지의 고정 여부를 설정합니다.</li>
+                        <li>background-color 속성은 배경 색을 설정합니다.</li>
+                        <li>background-blend-mode 속성은 배경 이미지를 혼합했을 때의 상태를 설정합니다.</li>
                     </ul>
 
-
                     <h3>문법(Syntax)</h3>
-                    <p class="blue">border-image-source : none | url </p>
-<pre class="bluePre"><code class="language-css">/* 기본 속성 */ 
-border-image-source : none;
-border-image-source : url(../image.jpg);
+                    <p class="blue">background-size : length | percentage | auto | cover | contain</p>
+<pre class="bluePre"><code class="language-css">/* 기본 속성 */
+background-size : auto;
+background-size : cover;
+background-size : contain;
+
+/* length 속성을 사용한 경우 */
+background-size : 10px;
+background-size : 50%;
+
+/* 너비 값과 높이 값을 설정한 경우 */
+background-size : 10px 100px;
+background-size : auto 100px;
+
+/* 여러개 이미지의 사이즈를 설정한 경우 */
+background-size : 10px, 100px;
+background-size : auto, 100px, 200px;
 
 /* 전역 속성 */
-border: inherit;   /* 상속 */
-border: initial;   /* 초기화 */
-border: revert;    /* 원래대로 돌리기 */
-border: unset;     /* 설정 해제 */
+background-size : inherit;   /* 상속 */
+background-size : initial;   /* 초기화 */
+background-size : revert;    /* 원래대로 돌리기 */
+background-size : unset;     /* 설정 해제 */
 </code></pre>
 
                     <h3>속성(Property)</h3>
                     <div class="table">
                         <table>
                             <colgroup>
-                                <col width="20%">
+                                <col width="15%">
                                 <col width="30%">
                                 <col>
                             </colgroup>
@@ -186,64 +193,72 @@ border: unset;     /* 설정 해제 */
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th>none</th>
-                                    <td>border-image-source : none;</td>
-                                    <td>테두리 이미지를 설정하지 않습니다.</td>
+                                    <td>auto</td>
+                                    <td>background-size : auto;</td>
+                                    <td>이미지의 실제 크기로 표현됩니다.</td>
                                 </tr>
                                 <tr>
-                                    <th>url</th>
-                                    <td>border-image-source : url(../image.jpg);</td>
-                                    <td>테두리 이미지 경로를 설정합니다.</td>
+                                    <td>cover</td>
+                                    <td>background-size : cover;</td>
+                                    <td>이미지를 요소 크기에 맞게 설정됩니다. 화면 크기에 맞게 공백 없이 설정합니다. </td>
+                                </tr>
+                                <tr>
+                                    <td>contain</td>
+                                    <td>background-size : contain;</td>
+                                    <td>이미지를 요소 크기에 맞게 설정됩니다. 가로와 세로 비율은 유지되면서 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>length</td>
+                                    <td>background-size : 10px;</td>
+                                    <td>이미지의 크기를 단위로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <td>percentage</td>
+                                    <td>background-size : 50%;</td>
+                                    <td>이미지의 크기를 %로 설정합니다.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
-                    <!-- Sample1 -->
                     <style>
-                        #border-box {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            padding: 10px;
+                        #bg-box .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+                            background-repeat: repeat;
+                            background-position: center;
+                            background-size: 10%;
+                            height: 400px;
                         }
-                        #border-box .box {
-                            width: 100%;
-                            max-width: 400px;
-                            background-color: #a2cbfa;
-                            color: #fff;
-                            min-height: 200px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            box-sizing: border-box;
-                            border-width: 50px;
-                            border-style: dotted;
-                            border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
-                            border-image-width: 20px;
-                            border-image-slice: 50;
-                            border-image-outset: 0px;
-                            border-image-repeat: round;
+                        #bg-box.bg1 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
                         }
-                        #border-box.bg1 .box {
-                            border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+                        #bg-box.bg2 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg);
                         }
-                        #border-box.bg2 .box {
-                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+                        #bg-box.bg3 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg);
                         }
-                        #border-box.bg3 .box {
-                            border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+                        #bg-box.bg4 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg);
                         }
-                        #border-box.bg4 .box {
-                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
+                        #bg-box.bg5 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg);
                         }
-                        #border-box.bg5 .box {
-                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
+                        #bg-box.bg6 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg);
                         }
-                        #border-box.bg6 .box {
-                            border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+                        #bg-box.bg7 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg);
                         }
-                    
+                        #bg-box.bg8 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg);
+                        }
+                        #bg-box.bg9 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg);
+                        }
+                        #bg-box.bg10 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg);
+                        }
                         .sampleBtn1 a {
                             background-size: cover;
                             background-position: center center;
@@ -253,31 +268,44 @@ border: unset;     /* 설정 해제 */
                             padding: 0 !important;
                         }
                         .sampleBtn1 a:nth-child(1) {
-                            background-image: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg");
                         }
                         .sampleBtn1 a:nth-child(2) {
-                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg");
                         }
                         .sampleBtn1 a:nth-child(3) {
-                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg");
                         }
                         .sampleBtn1 a:nth-child(4) {
-                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg");
                         }
                         .sampleBtn1 a:nth-child(5) {
-                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg");
                         }
                         .sampleBtn1 a:nth-child(6) {
-                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(7) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(8) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(9) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(10) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg");
                         }
                     </style>
-                    <h3>예제1(Sample)</h3>
+                    <!-- sample1 -->
+                    <h3 class="pt50">예제1(Sample)</h3>
                     <div id="sample1" class="sample">
-                        <h4>테두리 이미지 스타일을 설정한 예제입니다.</h4>
+                        <h4>백그라운드 이미지 사이즈를 설정하는 예제입니다.</h4>
                         <div class="sampleView">
                             <!-- ex -->
-                            <div id="border-box" class="bg1">
-                                <div class="box"><span>border: 50px solid #4390e1</span></div>
+                            <div id="bg-box">
+                                <div class="box"></div>
                             </div>
                             <!-- ex -->
                         </div>
@@ -288,35 +316,21 @@ border: unset;     /* 설정 해제 */
                             <a href="#">bg4</a>
                             <a href="#">bg5</a>
                             <a href="#">bg6</a>
+                            <a href="#">bg7</a>
+                            <a href="#">bg8</a>
+                            <a href="#">bg9</a>
+                            <a href="#">bg10</a>
                         </div>
                         <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-width: 10px;</a>
-                            <a href="#">border-image-width: 20px;</a>
-                            <a href="#">border-image-width: 30px;</a>
+                            <a href="#">background-size : cover; </a>
+                            <a href="#">background-size : contain;</a>
+                            <a href="#">background-size : 10%;</a>
+                            <a href="#">background-size : 50px;</a>
+                            <a href="#">background-size : 100px;</a>
+                            <a href="#">background-size : auto;</a>
+                            <a href="#">background-size : 10% 100px</a>
+                            <a href="#">background-size : 20% 50%</a>
                         </div>
-                        <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-slice: 30;</a>
-                            <a href="#">border-image-slice: 40;</a>
-                            <a href="#">border-image-slice: 50;</a>
-                            <a href="#">border-image-slice: 50 fill;</a>
-                            <a href="#">border-image-slice: 40 fill;</a>
-                            <a href="#">border-image-slice: 30 fill;</a>
-                        </div>
-                        <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-outset: 0px;</a>
-                            <a href="#">border-image-outset: 5px;</a>
-                            <a href="#">border-image-outset: 15px;</a>
-                            <a href="#">border-image-outset: 25px;</a>
-                        </div>
-                        <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-repeat: stretch;</a>
-                            <a href="#">border-image-repeat: repeat;</a>
-                            <a href="#">border-image-repeat: round;</a>
-                            <a href="#">border-image-repeat: space</a>
-                            <a href="#">border-image-repeat: stretch round</a>
-                            <a href="#">border-image-repeat: round stretch</a>
-                        </div>
-
                         <div class="sampleCode">
                             <div class="scMenu">
                                 <div>HTML</div>
@@ -325,85 +339,78 @@ border: unset;     /* 설정 해제 */
                             </div>
                             <div class="scCont">
                                 <div>
-<pre class="language-html"><code>&lt;div id="border-box" class="bg1"&gt;
-    &lt;div class="box"&gt;&lt;span>border: 50px solid #4390e1&lt;/span&gt;&lt;/div&gt;
+<pre><code class="language-html">&lt;div id="bg-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                                 </div>
                                 <div>
-<pre class="language-css"><code>#border-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+<pre><code class="language-css">#bg-box .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 10%;
+    height: 400px;
 }
-#border-box .box {
-    width: 100%;
-    max-width: 400px;
-    background-color: #a2cbfa;
-    color: #fff;
-    min-height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    border-width: 50px;
-    border-style: dotted;
-    border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
-    border-image-width: 20px 20px 20px 20px;
-    border-image-slice: 50 50 50 50;
-    border-image-outset: 0px 0px 0px 0px;
-    border-image-repeat: round round;
+#bg-box.bg1 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
 }
-#border-box.bg1 .box {
-    border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+#bg-box.bg2 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg);
 }
-#border-box.bg2 .box {
-    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+#bg-box.bg3 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg);
 }
-#border-box.bg3 .box {
-    border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+#bg-box.bg4 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg);
 }
-#border-box.bg4 .box {
-    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
+#bg-box.bg5 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg);
 }
-#border-box.bg5 .box {
-    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
+#bg-box.bg6 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg);
 }
-#border-box.bg6 .box {
-    border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+#bg-box.bg7 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg);
+}
+#bg-box.bg8 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg);
+}
+#bg-box.bg9 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg);
+}
+#bg-box.bg10 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg);
 }
 </code></pre>
                                 </div>
                                 <div>
-<pre class="language-javascript"><code>//javascript none
+<pre><code class="language-javascript">//Javascript none
 </code></pre>
                                 </div>
                             </div>
                         </div>
                     </div>
-     
+                    <!-- //sample1 -->
                     <script>
                         document.querySelectorAll("#sample1 .sampleBtn1 a").forEach(btn => {
                             btn.addEventListener("click", (e)=> {
                                 e.preventDefault();
                                 const text = btn.innerText;
-                                document.querySelector("#border-box").setAttribute("class", "");
-                                document.querySelector("#border-box").classList.add(text)
+                                document.querySelector("#bg-box").setAttribute("class", "");
+                                document.querySelector("#bg-box").classList.add(text)
                             })
                         });
                         document.querySelectorAll("#sample1 .sampleBtn2 a").forEach(btn => {
                             btn.addEventListener("click", (e)=> {
                                 e.preventDefault();
                                 const text = btn.innerText;
-                                document.querySelectorAll("#sample1 #border-box .box").forEach(box => {
+                                document.querySelectorAll("#sample1 #bg-box .box").forEach(box => {
                                     box.setAttribute("style", text);
                                 })
                             })
                         });
-                    </script>           
-                    <!-- //Sample1 -->
-
-
+                    </script>
 
 
                     <h3>호환성(Compatibility)</h3>
@@ -433,7 +440,7 @@ border: unset;     /* 설정 해제 */
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="ce" scope="row">border-image-source</td>
+                                    <td class="ce" scope="row">background-size</td>
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
@@ -442,9 +449,9 @@ border: unset;     /* 설정 해제 */
                                     <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러6 -->
                                     <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러7 -->
                                     <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러8 -->
-                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러9 -->
-                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러10 -->
-                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러11 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 엣지 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
@@ -453,50 +460,9 @@ border: unset;     /* 설정 해제 */
                         </table>
                     </div>
 
-                    <h3>보더와 관련된 속성</h3>
-                    <ul>
-                        <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-color 속성은 테두리 색 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-style 속성은 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-width 속성은 테두리 두께 속성을 일괄적으로 설정합니다.</li>
-
-                        <li>border-top 속성은 테두리 위쪽 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-top-color 속성은 테두리 위쪽 색 속성을 설정합니다.</li>
-                        <li>border-top-style 속성은 테두리 위쪽 스타일 속성을 설정합니다.</li>
-                        <li>border-top-width 속성은 테두리 위쪽 두께 속성을 설정합니다.</li>
-
-                        <li>border-right 속성은 테두리 오른쪽 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-right-color 속성은 테두리 오른쪽 색 속성을 설정합니다.</li>
-                        <li>border-right-style 속성은 테두리 오른쪽 스타일 속성을 설정합니다.</li>
-                        <li>border-right-width 속성은 테두리 오른쪽 두께 속성을 설정합니다.</li>
-
-                        <li>border-bottom 속성은 테두리 아래쪽 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-bottom-color 속성은 테두리 아래쪽 색 속성을 설정합니다.</li>
-                        <li>border-bottom-style 속성은 테두리 아래쪽 스타일 속성을 설정합니다.</li>
-                        <li>border-bottom-width 속성은 테두리 아래쪽 두께 속성을 설정합니다.</li>
-
-                        <li>border-left 속성은 테두리 왼쪽 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-left-color 속성은 테두리 왼쪽 색 속성을 설정합니다.</li>
-                        <li>border-left-style 속성은 테두리 왼쪽 스타일 속성을 설정합니다.</li>
-                        <li>border-left-width 속성은 테두리 왼쪽 두께 속성을 설정합니다.</li>
-
-                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
-                        <li>border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다.</li>
-                        <li>border-image-slice 속성은 테두리 이미지 크기 속성을 설정합니다.</li>
-                        <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
-                        <li>border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다.</li>
-
-                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
-                        <li>border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.</li>
-                        <li>border-top-right-radius 속성은 윗부분 오른쪽 모서리 굴곡을 설정합니다.</li>
-                        <li>border-bottom-left-radius 속성은 아래부분 왼쪽 모서리 굴곡을 설정합니다.</li>
-                        <li>border-bottom-right-radius 속성은 아래부분 오른쪽 모서리 굴곡을 설정합니다.</li>
-                    </ul>
-
                     <h3>참고(Reference)</h3>
                     <ul>
-                        <li><a href="https://w3c.github.io/csswg-drafts/css-backgrounds/#the-border-image-source" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-backgrounds/<wbr>#the-border-image-source</a></li>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-backgrounds/#the-background-size" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-backgrounds/<wbr>#the-background-size</a></li>
                     </ul>
 
                     <hr>
@@ -526,4 +492,5 @@ border: unset;     /* 설정 해제 */
 </body>
 </html>
 
-<!-- border-image,border-image-outset,border-image-repeat,border-image-slice,border-image-source,border-image-width -->
+<!-- background,background-image,background-position,background-size,background-repeat,background-origin,background-clip,background-attachment,background-color,background-blend-mode -->
+                  

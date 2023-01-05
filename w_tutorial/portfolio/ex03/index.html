@@ -240,15 +240,17 @@
         }
         requestAnimationFrame(raf)
 
-        const horSection = gsap.utils.toArray('.hor__wrap .hor');
+        const horSection = gsap.utils.toArray(".hor__wrap .hor");
+        const horWrap = document.querySelector(".hor__wrap");
+        const horWrapWidth = horWrap.offsetWidth;
 
         const horiz = gsap.to(horSection, {
             xPercent: -100 * (horSection.length - 1),
-            ease: 'none',
+            ease: "none",
             scrollTrigger: {
-                trigger: '.hor__wrap',
-                start: 'top 10%',
-                end: '+=6000',
+                trigger: ".hor__wrap",
+                start: "top 10%",
+                end: () => `+=${horWrapWidth}`,
                 pin: true,
                 scrub: 1,
                 markers: false,

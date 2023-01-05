@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #main > section {
+            width: 100%; 
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        /* #section1 {
+            background-color: #2c4855;
+            color: #fff;
+        }
+        #section2 {
+            background-color: #e3c4b8;
+            color: #fff0f5;
+        }
+        #section3 {
+            background-color: #947e75;
+            color: #ffffff;
+        }
+        #section4 {
+            background-color: #a16a0f;
+            color: #E0B469;
+        }
+        #section5 {
+            background-color: #354E5F;
+            color: #8bb7d4;
+        }
+        #section6 {
+            background-color: #c0621a;
+            color: #ffc192;
+        } */
+
+        /* text__inner */
+        .text__inner {
+            text-align: center;
+            font-size: 9vw;
+            font-family: 'PPEiko-Thin';
+            line-height: .81;
+        }
+        .text__inner .txt1 {
+            margin-left: -40vw;
+        }
+        .text__inner .txt2 {
+            position: relative;
+            z-index: 10;
+        }
+        .text__inner .txt3 {
+            margin-left: -30vw;
+        }
+        .text__inner .img {
+            width: 30vw;
+            height: 30vw;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 50%;
+            position: absolute;
+            right: 10vw;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        .text__inner .img img {
+            width: 100%;
+        }
+        .text__inner .img.img1 {
+            background-image: url(https://images.unsplash.com/photo-1672427045052-1dff001fb0b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80);
+        }
+        .text__inner .img.img2 {
+            background-image: url(https://images.unsplash.com/photo-1672667680124-6b9294abf071?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1166&q=80);
+        }
+        .text__inner .img.img3 {
+            background-image: url(https://images.unsplash.com/photo-1672671225678-cb2588a961f7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+        }
+        .text__inner .img.img4 {
+            background-image: url(https://images.unsplash.com/photo-1672615086113-d7547be45622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+        }
+        .text__inner .img.img5 {
+            background-image: url(https://images.unsplash.com/photo-1672627720536-e5c2843b1d7f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1073&q=80);
+        }
+        .text__inner .img.img6 {
+            background-image: url(https://images.unsplash.com/photo-1672278640012-49e959907a47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+        }
+    </style>
+</head>
+<body>
+    <main id="main">
+        <section id="section1" data-bgcolor="#2c4855" data-bgtext="#ffffff">
+            <div class="text__inner">
+                <div class="img img1"></div>
+                <div class="txt1">Passion</div>
+                <div class="txt2">Creative</div>
+                <div class="txt3">Shining</div>
+            </div>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2" data-bgcolor="#e3c4b8" data-bgtext="#fff0f5">
+            <div class="text__inner">
+                <div class="img img2"></div>
+                <div class="txt1">Passion</div>
+                <div class="txt2">Creative</div>
+                <div class="txt3">Shining</div>
+            </div>
+        </section>
+        <!-- //section2 -->
+
+        <section id="section3" data-bgcolor="#947e75" data-bgtext="#ffffff">
+            <div class="text__inner">
+                <div class="img img3"></div>
+                <div class="txt1">Passion</div>
+                <div class="txt2">Creative</div>
+                <div class="txt3">Shining</div>
+            </div>
+        </section>
+        <!-- //section3 -->
+
+        <section id="section4" data-bgcolor="#a16a0f" data-bgtext="#E0B469">
+            <div class="text__inner">
+                <div class="img img4"></div>
+                <div class="txt1">Passion</div>
+                <div class="txt2">Creative</div>
+                <div class="txt3">Shining</div>
+            </div>
+        </section>
+        <!-- //section4 -->
+
+        <section id="section5" data-bgcolor="#354E5F" data-bgtext="#8bb7d4">
+            <div class="text__inner">
+                <div class="img img5"></div>
+                <div class="txt1">Passion</div>
+                <div class="txt2">Creative</div>
+                <div class="txt3">Shining</div>
+            </div>
+        </section>
+        <!-- //section5 -->
+
+        <section id="section6" data-bgcolor="#c0621a" data-bgtext="#ffc192">
+            <div class="text__inner">
+                <div class="img img6"></div>
+                <div class="txt1">Passion</div>
+                <div class="txt2">Creative</div>
+                <div class="txt3">Shining</div>
+            </div>
+        </section>
+        <!-- //section6 -->
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+
+        const backColor = document.querySelectorAll("[data-bgcolor]");
+
+        backColor.forEach((colorSection, i) => {
+            const prevBg = i === 0 ? "" : backColor[i - 1].dataset.bgcolor;
+            const prevText = i === 0 ? "" : backColor[i - 1].dataset.bgtext;
+
+            ScrollTrigger.create({
+                trigger: colorSection,
+                start: 'top 50%',
+                end: 'bottom 5%',
+                markers: false,
+                onEnter: () => gsap.to("#main", {
+                    backgroundColor: colorSection.dataset.bgcolor,
+                    color: colorSection.dataset.bgtext,
+                }),
+                onLeaveBack: () => gsap.to("#main", {
+                    backgroundColor: prevBg,
+                    color: prevText
+                })
+            });
+        });
+    </script>
+</body>
+</html>

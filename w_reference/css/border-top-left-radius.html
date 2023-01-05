@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2023. 01. 03.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>border-top-left-radius</h2>
+                    <p>
+                        border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.
+                    </p>
+                    <p>
+                        border-radius 속성은 테두리 굴곡을 설정합니다. 
+                        일관적으로 설정할 수도 있지만, 개별적으로도 설정이 가능합니다. 
+                        속성에 "/"가 있으면 x축, y축으로 나누어서 속성 설정이 가능합니다.
+                    </p>
+
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>
+                                        border-top-left-radius : 0
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>border</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★☆☆☆</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                    </ul>
+
+                    <h3>비교(Compare)</h3>
+                    <ul>
+                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
+                        <li>border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-top-right-radius 속성은 윗부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-bottom-left-radius 속성은 아래부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-bottom-right-radius 속성은 아래부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                    </ul>
+
+                    <h3>관련된 속성(Related Properties)</h3>
+                    <ul>
+                        <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-color 속성은 테두리 색 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-style 속성은 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-width 속성은 테두리 두께 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">border-top-left-radius : length | percentage</p>
+<pre><code class="language-css">/* 기본 속성 */ 
+border-top-left-radius: 10px;                   /* 단위 */
+border-top-left-radius: 10%;                    /* 퍼센트 */
+
+/* 개별 속성 */
+border-top-left-radius: 10px 20px;              /* x축 단위 | y축 단위 */
+border-top-left-radius: 10% 20%;                /* x축 퍼센트 | y축 퍼센트 */
+
+/* 전역 속성 */
+border-top-left-radius: inherit;   /* 상속 */
+border-top-left-radius: initial;   /* 초기화 */
+border-top-left-radius: revert;    /* 원래대로 돌리기 */
+border-top-left-radius: unset;     /* 설정 해제 */
+</code></pre>
+
+<style>
+    .radiusbox {
+        max-width: 700px;
+        min-height: 150px;
+        border: 1px solid #777;
+        margin: 35px auto;
+        position: relative;
+        padding: 20px;
+        background: #fff;
+        background-color: #a2cbfa;
+        border: 1px solid #4390e1;
+        border-radius: 20px 30px 40px 50px / 50px 60px 70px 80px
+    }
+    .radiusbox code {
+      display: block;
+      padding: 60px 0;
+      font-family: "Droid Sans Mono", consolas, monaco, monospace;
+    }
+    .radiusbox [data-target] {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      position: absolute;
+      width: 43px;
+      height: 23px;
+      text-align: center;
+      color: #777;
+      font-size: 11px;
+    }
+    .radiusbox [data-target]:before {
+      content: "";
+      position: absolute;
+      border: 1px dotted #9e9e9e;
+    }
+    .radiusbox [data-target].active {
+      font-weight: bold;
+    }
+    .radiusbox [data-target].active:before {
+      border-color: #000;
+    }
+    .radiusbox .top {
+      top: 0;
+    }
+    .radiusbox .top:before {
+      bottom: 0;
+    }
+    .radiusbox .left {
+      left: 0;
+    }
+    .radiusbox .left:before {
+      right: 0;
+    }
+    .radiusbox .right {
+      right: 0;
+    }
+    .radiusbox .right:before {
+      left: 0;
+    }
+    .radiusbox .bottom {
+      bottom: 0;
+    }
+    .radiusbox .bottom:before {
+      top: 0;
+    }
+    .radiusbox .horizontal {
+      margin: -26px 0;
+    }
+    .radiusbox .horizontal:before {
+      right: 0;
+      height: 5px;
+      left: 0;
+    }
+    .radiusbox .horizontal.top:before {
+      border-bottom: 0;
+    }
+    .radiusbox .horizontal.bottom {
+      padding-top: 5px;
+    }
+    .radiusbox .horizontal.bottom:before {
+      border-top: 0;
+    }
+    .radiusbox .horizontal.active {
+      color: #00a3da;
+    }
+    .radiusbox .vertical {
+      margin: 0 -46px;
+    }
+    .radiusbox .vertical:before {
+      bottom: 0;
+      width: 5px;
+      top: 0;
+    }
+    .radiusbox .vertical.left:before {
+      border-right: 0;
+    }
+    .radiusbox .vertical.right:before {
+      border-left: 0;
+    }
+    .radiusbox .vertical.active {
+      color: #dc3a74;
+    }
+    .radiusbox .hor, .radiusbox .ver {
+      position: relative;
+    }
+    .radiusbox .hor:before, .radiusbox .ver:before {
+      content: attr(title);
+      position: absolute;
+      top: -50px;
+      font-size: 10px;
+      font-family: "Quicksand", sans-serif;
+      text-transform: uppercase;
+      font-size: 30px;
+    }
+    .radiusbox .hor:before {
+      color: #00a3da;
+    }
+    .radiusbox .hor span:focus {
+      color: #00a3da;
+    }
+    .radiusbox .ver:before {
+      color: #dc3a74;
+    }
+    .radiusbox .ver span:focus {
+      color: #dc3a74;
+    }
+    .radiusbox-desc {
+        text-align: center;
+        margin-bottom: 30px !important;
+    }
+    .radiusbox-desc em {
+        font-style: normal;
+    }
+    .radiusbox-desc em:nth-child(1) {
+        position: relative;
+        background: #adeaff;
+    }
+    .radiusbox-desc em:nth-child(1)::before {
+        content: "x축";
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        width: 100%;
+        border-top: 1px solid #ccc; 
+    }
+    .radiusbox-desc em:nth-child(2) {
+        position: relative;
+        background: #adeaff;
+    }
+    .radiusbox-desc em:nth-child(2)::before {
+        content: "y축";
+        position: absolute;
+        left: 0;
+        bottom: -30px;
+        width: 100%;
+        border-top: 1px solid #ccc; 
+    }
+</style>
+                    
+                    <div class="blue mt10">
+                        <div class="radiusbox">
+                            <span data-target="tlh" class="top left horizontal">20px</span>
+                            <span data-target="trh" class="top right horizontal">30px</span>
+                            <span data-target="brh" class="bottom right horizontal">40px</span>
+                            <span data-target="blh" class="bottom left horizontal">50px</span>
+                            <span data-target="tlv" class="top left vertical">50px</span>
+                            <span data-target="trv" class="top right vertical">60px</span>
+                            <span data-target="brv" class="bottom right vertical">70px</span>
+                            <span data-target="blv" class="bottom left vertical">80px</span>
+                        </div>
+                        <p class="radiusbox-desc">border-radius: <em>20px 30px 40px 50px</em> / <em>50px 60px 70px 80px</em></p>
+                    </div>
+<pre><code class="language-css">/* 기본 다중 속성 */ 
+border-radius: 10px 11px 12px 13px / 14px;                    /* X축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 / Y축 : 위쪽, 오른쪽, 아래쪽, 왼쪽 */
+border-radius: 10px 11px 12px 13px / 14px 15px;               /* X축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 / Y축 : 위쪽, 아래쪽 | 왼쪽, 오른쪽 */
+border-radius: 10px 11px 12px 13px / 14px 15px 16px;          /* X축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 / Y축 : 위쪽 | 왼쪽, 오른쪽 | 아래쪽 */
+border-radius: 10px 11px 12px 13px / 14px 15px 16px 17px;     /* X축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 / Y축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 */
+
+border-radius: 10px / 14px 15px 16px 17px;                    /* X축 : 위쪽, 오른쪽, 아래쪽, 왼쪽    / Y축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 */
+border-radius: 10px 11px / 14px 15px 16px 17px;               /* X축 : 위쪽, 아래쪽 | 왼쪽, 오른쪽   / Y축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 */
+border-radius: 10px 11px 12px / 14px 15px 16px 17px;          /* X축 : 위쪽 | 왼쪽, 오른쪽 | 아래쪽  / Y축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 */
+border-radius: 10px 11px 12px 13px / 14px 15px 16px 17px;     /* X축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 / Y축 : 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 */
+</code></pre>
+
+
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="25%">
+                                <col width="30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>length</th>
+                                    <td>border-bottom-left-radius: 10px; </td>
+                                    <td>테두리 아래부분 왼쪽 모서리 굴곡을 CSS 단위로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>percentage</th>
+                                    <td>border-bottom-left-radius: 10%;</td>
+                                    <td>테두리 아래부분 오른쪽 모서리 굴곡을 퍼센트로 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Sample1 -->
+                    <style>
+                        #border-generator {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            flex-direction: column;
+                        }
+                        #circle {
+                            --topLeft: 500;
+                            --topRight: 500;
+                            --bottomLeft: 500;
+                            --bottomRight: 500;
+                            --circleHeight: 200;
+                            --circleWidth: 500;
+                            background-color: #a2cbfa;
+                            border: 1px solid #4390e1;
+                            width: calc( 1px * var(--circleWidth));
+                            height: calc( 1px * var(--circleHeight));
+                            transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                            border-radius: calc( 1px * var(--topLeft)) calc( 1px * var(--topRight)) calc( 1px * var(--bottomRight)) calc( 1px * var(--bottomLeft));
+                        }
+                        #result {
+                            padding: 20px;
+                        }
+                        #sample1 .controls div input[type=range] {
+                            -webkit-appearance: none;
+                            background: transparent;
+                            margin-bottom: 10px;
+                            border-color: transparent;
+                        }
+                        #sample1 .controls div input[type=range]::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                        }
+                        #sample1 .controls div input[type=range]:focus {
+                            outline: none;
+                        }
+                        #sample1 .controls div input[type=range]::-ms-track {
+                            width: 100%;
+                            cursor: pointer;
+                            background: transparent;
+                            border-color: transparent;
+                            color: transparent;
+                        }
+                        #sample1 .controls div input[type=range]::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            height: 16px;
+                            width: 16px;
+                            border-radius: 50px;
+                            cursor: pointer;
+                            margin-top: -8px;
+                            background: #a2cbfa;
+                        }
+                        #sample1 .controls div input[type=range]:focus::-webkit-slider-thumb:hover {
+                            background: #4390e1;
+                        }
+                        #sample1 .controls div input[type=range]::-moz-range-thumb {
+                            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                            border: 1px solid #000000;
+                            height: 36px;
+                            width: 16px;
+                            border-radius: 3px;
+                            background: #ffffff;
+                            cursor: pointer;
+                        }
+                        #sample1 .controls div input[type=range]::-webkit-slider-runnable-track {
+                            width: 100%;
+                            height: 1px;
+                            cursor: pointer;
+                            background: #555;
+                            border-radius: 1.3px;
+                        }
+                        #sample1 .controls div input[type=range]:focus::-webkit-slider-runnable-track {
+                            background: #4390e1;
+                        }
+                        #sample1 .controls div input[type=range]::-moz-range-track {
+                            width: 100%;
+                            height: 8.4px;
+                            cursor: pointer;
+                            box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+                            background: #4390e1;
+                            border-radius: 1.3px;
+                            border: 0.2px solid #010101;
+                        }
+                        #sample1 .controls div {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        #sample1 .controls input {
+                            display: inline-block;
+                            width: 70%;
+                        }
+                        #sample1 .controls label {
+                            width: 27%;
+                            border: 1px solid #e6e6e6;
+                            border-radius: 100px;
+                            white-space: nowrap;
+                            padding: 10px 20px;
+                            display: inline-block;
+                            margin-bottom: 10px;
+                            transition: all 0.2s;
+                            text-align: center;
+                            color: #666;
+                        }
+                        @media (max-width: 1000px){
+                            #sample1 .controls div {
+                                flex-direction: column;
+                                margin-bottom: 4%;
+                            }
+                            #sample1 .controls label {
+                                width: 100%;
+                            }
+                            #sample1 .controls input {
+                                width: 100%;
+                                margin-bottom: 30%;
+                                margin-top: 10px;
+                            }
+                            #circle {
+                                --circleWidth: 200;
+                            }
+                            #result {
+                                display: none;
+                            }
+                        }
+                    </style>
+                    <h3>예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>테두리 굴곡을 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div id="border-generator">
+                                <div id="circle" data-value1="500" data-value2="500" data-value3="500" data-value4="500"></div>
+                                <div id="result">border-radius : 500px 500px 500px 500px;</div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <div class="controls">
+                                <div class="topleft">
+                                    <label for="topLeft">border-top-left-radius</label>
+                                    <input class="radius" id="topLeft" max="2000" min="0" step="1" type="range" value="500">
+                                </div>
+                                <div class="topright">
+                                    <label for="topRight">border-top-right-radius</label>
+                                    <input class="radius" id="topRight" max="2000" min="0" step="1" type="range" value="500">
+                                </div>
+                                <div class="bottomright">
+                                    <label for="bottomRight">border-bottom-right-radius</label>
+                                    <input class="radius" id="bottomRight" max="2000" min="0" step="1" type="range" value="500">
+                                </div>
+                                <div class="bottomleft">
+                                    <label for="bottomLeft">border-bottom-left-radius</label>
+                                    <input class="radius" id="bottomLeft" max="2000" min="0" step="1" type="range" value="500">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+     
+                    <script>
+                        const circle = document.querySelector("#circle");
+                        const circleResult = document.querySelector("#result");
+                        const topLeft = document.querySelector("#topLeft");
+                        const topRight = document.querySelector("#topRight");
+                        const bottomRight = document.querySelector("#bottomRight");
+                        const bottomLeft = document.querySelector("#bottomLeft");
+                        const circleHeight = document.querySelector("#height");
+                        const circleWidth = document.querySelector("#width");
+
+                        topLeft.addEventListener("input", e => {
+                            circle.style.setProperty("--topLeft", topLeft.value);
+                            circle.setAttribute("data-value1", e.target.value);
+                            circleResult.innerHTML = "border-radius: " + circle.dataset.value1 + "px " + circle.dataset.value2 + "px " + circle.dataset.value3 + "px " + circle.dataset.value4 + "px ";
+                        });
+                        topRight.addEventListener("input", e => {
+                            circle.style.setProperty("--topRight", topRight.value);
+                            circle.setAttribute("data-value2", e.target.value);
+                            circleResult.innerHTML = "border-radius: " + circle.dataset.value1 + "px " + circle.dataset.value2 + "px " + circle.dataset.value3 + "px " + circle.dataset.value4 + "px ";
+                        });
+                        bottomRight.addEventListener("input", e => {
+                            circle.style.setProperty("--bottomRight", bottomRight.value);
+                            circle.setAttribute("data-value3", e.target.value);
+                            circleResult.innerHTML = "border-radius: " + circle.dataset.value1 + "px " + circle.dataset.value2 + "px " + circle.dataset.value3 + "px " + circle.dataset.value4 + "px ";
+                        });
+                        bottomLeft.addEventListener("input", e => {
+                            circle.style.setProperty("--bottomLeft", bottomLeft.value);
+                            circle.setAttribute("data-value4", e.target.value);
+                            circleResult.innerHTML = "border-radius: " + circle.dataset.value1 + "px " + circle.dataset.value2 + "px " + circle.dataset.value3 + "px " + circle.dataset.value4 + "px ";
+                        });
+                    </script>           
+                    <!-- //Sample1 -->
+
+                    <!-- Sample2 -->
+                    <style>
+                        #blob-wrap {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                        #blob {
+                            --radius-1: 100px;
+                            --radius-2: 100px;
+                            --radius-3: 100px;
+                            --radius-4: 100px;
+                            --radius-5: 100px;
+                            --radius-6: 100px;
+                            --radius-7: 100px;
+                            --radius-8: 100px;
+                            width: 500px;
+                            height: 200px;
+                            background-color: #a2cbfa;
+                            border: 1px solid #4390e1;
+                            transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                            border-radius: var(--radius-1) var(--radius-2) var(--radius-3) var(--radius-4) / var(--radius-5) var(--radius-6) var(--radius-7) var(--radius-8);
+                        }
+                        .blob-Code {
+                            text-align: center;
+                            padding: 20px;
+                        }
+                    </style>
+                    <h3>예제2(Sample)</h3>
+                    <div id="sample2" class="sample">
+                        <h4>테두리 굴곡을 설정한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div id="blob-wrap">
+                                <div id="blob"></div>
+                            </div>
+                            <div class="blob-Code"></div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn">
+                            <div class="controls">
+                                X축
+                                <input type="range" class="rad" id="radius1" min="0" max="500" step="1" value="100" data-value="100">
+                                <input type="range" class="rad" id="radius2" min="0" max="500" step="1" value="100" data-value="100">
+                                <input type="range" class="rad" id="radius3" min="0" max="500" step="1" value="100" data-value="100">
+                                <input type="range" class="rad" id="radius4" min="0" max="500" step="1" value="100" data-value="100">
+                                Y축
+                                <input type="range" class="rad" id="radius5" min="0" max="500" step="1" value="100" data-value="100">
+                                <input type="range" class="rad" id="radius6" min="0" max="500" step="1" value="100" data-value="100">
+                                <input type="range" class="rad" id="radius7" min="0" max="500" step="1" value="100" data-value="100">
+                                <input type="range" class="rad" id="radius8" min="0" max="500" step="1" value="100" data-value="100">
+                            </div>
+                        </div>
+                    </div>
+     
+                    <script>
+                        const rangeInputs = document.querySelectorAll(".rad");
+                        const code = document.querySelector(".blob-Code");
+                        const blob = document.querySelector("#blob");
+                        let root = window.getComputedStyle(blob);
+                        let radius = [
+                            root.getPropertyValue("--radius-1"),
+                            root.getPropertyValue("--radius-2"),
+                            root.getPropertyValue("--radius-3"),
+                            root.getPropertyValue("--radius-4"), 
+                            "/ " + root.getPropertyValue("--radius-5"),
+                            root.getPropertyValue("--radius-6"),
+                            root.getPropertyValue("--radius-7"),
+                            root.getPropertyValue("--radius-8")
+                        ];
+
+                        code.innerHTML = "border-radius: " + radius.join(' ') + ";";
+
+                        rangeInputs.forEach((el, index) => {
+                            el.addEventListener("input", (e) =>{
+                                blob.style.setProperty("--radius-" + (index + 1), e.target.value + "px");
+                                el.setAttribute("data-value", e.target.value + "px");
+                                
+                                if(index === 4){
+                                    radius[index] = "/ " + e.target.value + "px";
+                                } else {
+                                    radius[index] = e.target.value + "px";
+                                }
+                                code.innerHTML = "border-radius: " + radius.join(' ') + ";";
+                            });
+                        })
+                    </script>           
+                    <!-- //Sample2 -->
+
+
+
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">border-top-left-radius</td>
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 할 수 없습니다.">❌</span></td></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>보더와 관련된 속성</h3>
+                    <ul>
+                        <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-color 속성은 테두리 색 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-style 속성은 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-width 속성은 테두리 두께 속성을 일괄적으로 설정합니다.</li>
+
+                        <li>border-top 속성은 테두리 위쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-top-color 속성은 테두리 위쪽 색 속성을 설정합니다.</li>
+                        <li>border-top-style 속성은 테두리 위쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-top-width 속성은 테두리 위쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-right 속성은 테두리 오른쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-right-color 속성은 테두리 오른쪽 색 속성을 설정합니다.</li>
+                        <li>border-right-style 속성은 테두리 오른쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-right-width 속성은 테두리 오른쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-bottom 속성은 테두리 아래쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-bottom-color 속성은 테두리 아래쪽 색 속성을 설정합니다.</li>
+                        <li>border-bottom-style 속성은 테두리 아래쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-bottom-width 속성은 테두리 아래쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-left 속성은 테두리 왼쪽 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-left-color 속성은 테두리 왼쪽 색 속성을 설정합니다.</li>
+                        <li>border-left-style 속성은 테두리 왼쪽 스타일 속성을 설정합니다.</li>
+                        <li>border-left-width 속성은 테두리 왼쪽 두께 속성을 설정합니다.</li>
+
+                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
+                        <li>border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다.</li>
+                        <li>border-image-slice 속성은 테두리 이미지 크기 속성을 설정합니다.</li>
+                        <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
+                        <li>border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다.</li>
+
+                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
+                        <li>border-top-left-radius 속성은 윗부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-top-right-radius 속성은 윗부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-bottom-left-radius 속성은 아래부분 왼쪽 모서리 굴곡을 설정합니다.</li>
+                        <li>border-bottom-right-radius 속성은 아래부분 오른쪽 모서리 굴곡을 설정합니다.</li>
+                    </ul>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-backgrounds/#the-border-radius" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-backgrounds/<wbr>#the-border-radius</a></li>
+                    </ul>
+
+                    <hr>
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                       
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- border-radius,border-top-left-radius,border-top-right-radius,border-bottom-left-radius,border-bottom-right-radius -->

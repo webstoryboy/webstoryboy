@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Reference/CSS</span>
+                <h1 class="title">background-image 속성은 배경 이미지 경로 및 그라디언트를 설정합니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2023. 01. 03.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents">
+                    <h2>background-image</h2>
+                    <p>
+                        background-image 속성은 배경 이미지 경로 및 그라디언트를 설정합니다.
+                    </p>
+                    <p>
+                        웹 문서에 이미지를 표현하는 방법은 두가지가 있습니다. 
+                        img 태그와 background 속성을 이용하는 방법입니다.
+                        원칙적으로 의미가 있는 이미지는 img 태그를 사용하고, 그렇지 않은 경우는 background 속성을 사용합니다. 
+                        background 속성은 의미가 없는 이미지를 사용하기 위한 방법입니다. 
+                        배경이 장식용이거나 디자인 용도라면 background를 이용해서 많이 사용합니다. 
+                        여기에는 사이즈, 반복여부, 위치, 효과 등 다양한 속성을 사용할 수 있습니다. 
+                    </p>
+                    <hr>
+
+                    <div class="table">
+                        <table>
+                            <colgroup> 
+                                <col style="width: 30%;"> 
+                                <col style="width: 70%;"> 
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>특징</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>기본값</th>
+                                    <td>background-image : none</td>
+                                </tr>
+                                <tr>
+                                    <th>적용</th>
+                                    <td>background</td>
+                                </tr>
+                                <tr>
+                                    <th>버전</th>
+                                    <td>CSS1</td>
+                                </tr>
+                                <tr>
+                                    <th>사용성</th>
+                                    <td>★★★★★</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>정의(Definition)</h3>
+                    <ul>
+                        <li>background-image 속성은 배경 이미지 경로 및 그라디언트를 설정합니다.</li>
+                        <li>background-image 속성은 다중 이미지를 익스플로러9 이상부터 지원됩니다.</li>
+                    </ul>
+
+                    <h3>관련된 속성(Related Properties)</h3>
+                    <ul>
+                        <li>background 속성은 배경 이미지의 속성을 일괄적으로 설정합니다.</li>
+                        <li>background-image 속성은 배경 이미지 경로 및 그라디언트를 설정합니다.</li>
+                        <li>background-position 속성은 배경 이미지의 위치를 설정합니다.</li>
+                        <li>background-size 속성은 배경 이미지 사이즈를 설정합니다.</li>
+                        <li>background-repeat 속성은 배경 이미지 반복 여부를 설정합니다.</li>
+                        <li>background-origin 속성은 배경 이미지의 위치 기준점을 설정합니다.</li>
+                        <li>background-clip 속성은 배경 이미지의 위치 기준점을 설정합니다.</li>
+                        <li>background-attachment 속성은 배경 이미지의 고정 여부를 설정합니다.</li>
+                        <li>background-color 속성은 배경 색을 설정합니다.</li>
+                        <li>background-blend-mode 속성은 배경 이미지를 혼합했을 때의 상태를 설정합니다.</li>
+                    </ul>
+
+                    <h3>문법(Syntax)</h3>
+                    <p class="blue">background-image : none | url | gradient</p>
+<pre class="bluePre"><code class="language-css">/* 기본 속성 */
+background-image : none;
+background-image : url("../image.jpg");
+
+/* 다중 이미지 설정 */
+background-image : url("../image1.jpg"), url("../image2.jpg");
+
+/* 그라디언트 설정 */
+background-image : linear-gradient();
+background-image : radial-gradient();
+background-image : repeating-linear-gradient();
+background-image : repeating-radial-gradient();
+
+/* 전역 속성 */
+background-image : inherit;   /* 상속 */
+background-image : initial;   /* 초기화 */
+background-image : revert;    /* 원래대로 돌리기 */
+background-image : unset;     /* 설정 해제 */
+</code></pre>
+
+                    <h3>속성(Property)</h3>
+                    <div class="table">
+                        <table>
+                            <colgroup>
+                                <col width="15%">
+                                <col width="30%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>속성값</th>
+                                    <th>값(예)</th>
+                                    <th>설명</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>none</th>
+                                    <td>background-image : none;</td>
+                                    <td>백그라운드 이미지를 설정하지 않습니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>url</th>
+                                    <td>background-image : url(../img.jpg);</td>
+                                    <td>백그라운드 이미지 경로를 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>gradient</th>
+                                    <td>background-image : radial-gradient();</td>
+                                    <td>백그라운에 그라디언트를 설정합니다.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <style>
+                        #bg-box {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                        }
+                        #bg-box .box {
+                            width: 24%;
+                            padding-bottom: 20%;
+                            border-radius: 10px;
+                            color: #fff;
+                            background-size: cover;
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+                        }
+                        #bg-box .box span {
+                            padding: 10px;
+                            display: inline-block;
+                        }
+                        #bg-box.bg1 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+                        }
+                        #bg-box.bg2 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg);
+                        }
+                        #bg-box.bg3 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg);
+                        }
+                        #bg-box.bg4 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg);
+                        }
+                        #bg-box.bg5 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg);
+                        }
+                        #bg-box.bg6 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg);
+                        }
+                        #bg-box.bg7 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg);
+                        }
+                        #bg-box.bg8 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg);
+                        }
+                        #bg-box.bg9 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg);
+                        }
+                        #bg-box.bg10 .box {
+                            background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg);
+                        }
+                        .sampleBtn1 a {
+                            background-size: cover;
+                            background-position: center center;
+                            width: 100px; height: 100px;
+                            color: transparent !important;
+                            border-radius: 0 !important;
+                            padding: 0 !important;
+                        }
+                        .sampleBtn1 a:nth-child(1) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(2) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(3) {
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(4) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(5) {
+                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(6) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(7) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(8) {
+                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(9) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg");
+                        }
+                        .sampleBtn1 a:nth-child(10) {
+                            background-image: url("https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg");
+                        }
+                    </style>
+                    <!-- sample1 -->
+                    <h3 class="pt50">예제1(Sample)</h3>
+                    <div id="sample1" class="sample">
+                        <h4>백그라운드 이미지를 설정하는 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div id="bg-box">
+                                <div class="box"><span>image01</span></div>
+                                <div class="box"><span>image02</span></div>
+                                <div class="box"><span>image03</span></div>
+                                <div class="box"><span>image04</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleBtn sampleBtn1">
+                            <a href="#">bg1</a>
+                            <a href="#">bg2</a>
+                            <a href="#">bg3</a>
+                            <a href="#">bg4</a>
+                            <a href="#">bg5</a>
+                            <a href="#">bg6</a>
+                            <a href="#">bg7</a>
+                            <a href="#">bg8</a>
+                            <a href="#">bg9</a>
+                            <a href="#">bg10</a>
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre><code class="language-html">&lt;div id="bg-box"&gt;
+    &lt;div class="box"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre><code class="language-css">#bg-box .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 10%;
+    height: 400px;
+}
+#bg-box.bg1 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg1-min.jpg);
+}
+#bg-box.bg2 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg2-min.jpg);
+}
+#bg-box.bg3 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg3-min.jpg);
+}
+#bg-box.bg4 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg4-min.jpg);
+}
+#bg-box.bg5 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg5-min.jpg);
+}
+#bg-box.bg6 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg6-min.jpg);
+}
+#bg-box.bg7 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg7-min.jpg);
+}
+#bg-box.bg8 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg8-min.jpg);
+}
+#bg-box.bg9 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg9-min.jpg);
+}
+#bg-box.bg10 .box {
+    background-image: url(https://tistory1.daumcdn.net/tistory/783187/skin/images/bg10-min.jpg);
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre><code class="language-javascript">//Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //sample1 -->
+                    <script>
+                        document.querySelectorAll("#sample1 .sampleBtn1 a").forEach(btn => {
+                            btn.addEventListener("click", (e)=> {
+                                e.preventDefault();
+                                const text = btn.innerText;
+                                document.querySelector("#bg-box").setAttribute("class", "");
+                                document.querySelector("#bg-box").classList.add(text)
+                            })
+                        });
+                    </script>
+
+
+                    <style>
+                        .gsample {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                        }
+                        .gsample > div {
+                            width: 24%;
+                            padding-bottom: 20%;
+                            border-radius: 10px;
+                            color: #fff;
+                        }
+                        .gsample > div:nth-child(5){margin-top: 1.3%;}
+                        .gsample > div:nth-child(6){margin-top: 1.3%;}
+                        .gsample > div:nth-child(7){margin-top: 1.3%;}
+                        .gsample > div:nth-child(8){margin-top: 1.3%;}
+                        .gsample > div span {
+                            padding: 10px;
+                            display: inline-block;
+                        }
+                        .sampleDesc {
+                            padding: 0 !important;
+                        }
+                        .sampleDesc code {
+                            border-radius: 0 !important;
+                        }
+                        div.code-toolbar {margin-bottom: 0 !important;}
+
+                        .gradient01 {background-image: linear-gradient(to top, #a18cd1, #fbc2eb);}
+                        .gradient02 {background-image: linear-gradient(to right, #a18cd1, #fbc2eb);}
+                        .gradient03 {background-image: linear-gradient(to bottom, #a18cd1, #fbc2eb);}
+                        .gradient04 {background-image: linear-gradient(to left, #a18cd1, #fbc2eb);}
+                    </style>
+
+                    <!-- Sample1 -->
+                    <h3>예제2(Sample)</h3>
+                    <div class="sample">
+                        <h4>linear-gradient(top, right, bottom, left)를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient01"><span>gradient01</span></div>
+                                <div class="gradient02"><span>gradient02</span></div>
+                                <div class="gradient03"><span>gradient03</span></div>
+                                <div class="gradient04"><span>gradient04</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient01 {background-image: linear-gradient(to top, #a18cd1, #fbc2eb);}
+.gradient02 {background-image: linear-gradient(to right, #a18cd1, #fbc2eb);}
+.gradient03 {background-image: linear-gradient(to bottom, #a18cd1, #fbc2eb);}
+.gradient04 {background-image: linear-gradient(to left, #a18cd1, #fbc2eb);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample1 -->
+
+
+                    <style>
+                        .gradient05 {background-image: linear-gradient(0deg, #84fab0, #249092);}
+                        .gradient06 {background-image: linear-gradient(90deg, #84fab0, #249092);}
+                        .gradient07 {background-image: linear-gradient(180deg, #84fab0, #249092);}
+                        .gradient08 {background-image: linear-gradient(260deg, #84fab0, #249092);}
+                    </style>
+                    <!-- Sample2 -->
+                    <h3>예제3(Sample)</h3>
+                    <div class="sample">
+                        <h4>linear-gradient를(각도) 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient05"><span>gradient05</span></div>
+                                <div class="gradient06"><span>gradient06</span></div>
+                                <div class="gradient07"><span>gradient07</span></div>
+                                <div class="gradient08"><span>gradient08</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient05 {background-image: linear-gradient(0deg, #84fab0, #249092);}
+.gradient06 {background-image: linear-gradient(90deg, #84fab0, #249092);}
+.gradient07 {background-image: linear-gradient(180deg, #84fab0, #249092);}
+.gradient08 {background-image: linear-gradient(260deg, #84fab0, #249092);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample2 -->
+
+
+                    <style>
+                        .gradient09 {background-image: linear-gradient(140deg, #fa709a, #fee140);}
+                        .gradient10 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a);}
+                        .gradient11 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0);}
+                        .gradient12 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff);}
+                        .gradient13 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2);}
+                        .gradient14 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd);}
+                        .gradient15 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc);}
+                        .gradient16 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc, #72afd3);}
+                    </style>
+                    <!-- Sample3 -->
+                    <h3>예제4(Sample)</h3>
+                    <div class="sample">
+                        <h4>linear-gradient를(색상 추가) 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient09"><span>gradient09</span></div>
+                                <div class="gradient10"><span>gradient10</span></div>
+                                <div class="gradient11"><span>gradient11</span></div>
+                                <div class="gradient12"><span>gradient12</span></div>
+                                <div class="gradient13"><span>gradient13</span></div>
+                                <div class="gradient14"><span>gradient14</span></div>
+                                <div class="gradient15"><span>gradient15</span></div>
+                                <div class="gradient16"><span>gradient16</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient09 {background-image: linear-gradient(140deg, #fa709a, #fee140);}
+.gradient10 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a);}
+.gradient11 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0);}
+.gradient12 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff);}
+.gradient13 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2);}
+.gradient14 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd);}
+.gradient15 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc);}
+.gradient16 {background-image: linear-gradient(140deg, #fa709a, #fee140, #fa709a, #30cfd0, #66a6ff, #764ba2, #009efd, #2575fc, #72afd3);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample3 -->
+
+
+
+                    <style>
+                        .gradient17 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 20%, #453a94 100%);}
+                        .gradient18 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 30%, #453a94 100%);}
+                        .gradient19 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 40%, #453a94 100%);}
+                        .gradient20 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 50%, #453a94 100%);}
+                        .gradient21 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 60%, #453a94 100%);}
+                        .gradient22 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 70%, #453a94 100%);}
+                        .gradient23 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 80%, #453a94 100%);}
+                        .gradient24 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 90%, #453a94 100%);}
+                    </style>
+                    <!-- Sample4 -->
+                    <h3>예제5(Sample)</h3>
+                    <div class="sample">
+                        <h4>linear-gradient를(위치 변경) 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient17"><span>gradient17</span></div>
+                                <div class="gradient18"><span>gradient18</span></div>
+                                <div class="gradient19"><span>gradient19</span></div>
+                                <div class="gradient20"><span>gradient20</span></div>
+                                <div class="gradient21"><span>gradient21</span></div>
+                                <div class="gradient22"><span>gradient22</span></div>
+                                <div class="gradient23"><span>gradient23</span></div>
+                                <div class="gradient24"><span>gradient24</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient17 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 20%, #453a94 100%);}
+.gradient18 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 30%, #453a94 100%);}
+.gradient19 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 40%, #453a94 100%);}
+.gradient20 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 50%, #453a94 100%);}
+.gradient21 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 60%, #453a94 100%);}
+.gradient22 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 70%, #453a94 100%);}
+.gradient23 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 80%, #453a94 100%);}
+.gradient24 {background-image: linear-gradient(140deg, #f43b47 0%, #fa709a 90%, #453a94 100%);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample4 -->
+
+
+                    <style>
+                        .gradient25 {background-image: linear-gradient(0deg, #c471f5 50%, #fa71cd 50%);}
+                        .gradient26 {background-image: linear-gradient(30deg, #c471f5 50%, #fa71cd 50%);}
+                        .gradient27 {background-image: linear-gradient(60deg, #c471f5 50%, #fa71cd 50%);}
+                        .gradient28 {background-image: linear-gradient(90deg, #c471f5 50%, #fa71cd 50%);}
+                        .gradient29 {background-image: linear-gradient(120deg, #c471f5 50%, #fa71cd 50%);}
+                        .gradient30 {background-image: linear-gradient(150deg, #c471f5 50%, #fa71cd 50%);}
+                        .gradient31 {background-image: linear-gradient(180deg, #c471f5 50%, #fa71cd 50%);}
+                        .gradient32 {background-image: linear-gradient(210deg, #c471f5 50%, #fa71cd 50%);}
+                    </style>
+                    <!-- Sample5 -->
+                    <h3>예제6(Sample)</h3>
+                    <div class="sample">
+                        <h4>linear-gradient(경계선)를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient25"><span>gradient25</span></div>
+                                <div class="gradient26"><span>gradient26</span></div>
+                                <div class="gradient27"><span>gradient27</span></div>
+                                <div class="gradient28"><span>gradient28</span></div>
+                                <div class="gradient29"><span>gradient29</span></div>
+                                <div class="gradient30"><span>gradient30</span></div>
+                                <div class="gradient31"><span>gradient31</span></div>
+                                <div class="gradient32"><span>gradient32</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient25 {background-image: linear-gradient(0deg, #c471f5 50%, #fa71cd 50%);}
+.gradient26 {background-image: linear-gradient(30deg, #c471f5 50%, #fa71cd 50%);}
+.gradient27 {background-image: linear-gradient(60deg, #c471f5 50%, #fa71cd 50%);}
+.gradient28 {background-image: linear-gradient(90deg, #c471f5 50%, #fa71cd 50%);}
+.gradient29 {background-image: linear-gradient(120deg, #c471f5 50%, #fa71cd 50%);}
+.gradient30 {background-image: linear-gradient(150deg, #c471f5 50%, #fa71cd 50%);}
+.gradient31 {background-image: linear-gradient(180deg, #c471f5 50%, #fa71cd 50%);}
+.gradient32 {background-image: linear-gradient(210deg, #c471f5 50%, #fa71cd 50%);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample5 -->
+
+
+                    <style>
+                        .gradient33 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                        .gradient34 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                        .gradient35 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                        .gradient36 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                        .gradient37 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                        .gradient38 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                        .gradient39 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                        .gradient40 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+                    </style>
+                    <!-- Sample6 -->
+                    <h3>예제7(Sample)</h3>
+                    <div class="sample">
+                        <h4>linear-gradient(fixed)를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient33"><span>gradient33</span></div>
+                                <div class="gradient34"><span>gradient34</span></div>
+                                <div class="gradient35"><span>gradient35</span></div>
+                                <div class="gradient36"><span>gradient36</span></div>
+                                <div class="gradient37"><span>gradient37</span></div>
+                                <div class="gradient38"><span>gradient38</span></div>
+                                <div class="gradient39"><span>gradient39</span></div>
+                                <div class="gradient40"><span>gradient40</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient33 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+.gradient34 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+.gradient35 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+.gradient36 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+.gradient37 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+.gradient38 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+.gradient39 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+.gradient40 {background: linear-gradient(20deg, #fa709a, #fee140) fixed;}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample6 -->
+
+
+                    <style>
+                        .gradient41 {background: radial-gradient(#2a5298 0%, #209cff 20%, #68e0cf 100%);}
+                        .gradient42 {background: radial-gradient(#2a5298 0%, #209cff 30%, #68e0cf 100%);}
+                        .gradient43 {background: radial-gradient(#2a5298 0%, #209cff 40%, #68e0cf 100%);}
+                        .gradient44 {background: radial-gradient(#2a5298 0%, #209cff 50%, #68e0cf 100%);}
+                        .gradient45 {background: radial-gradient(#2a5298 0%, #209cff 60%, #68e0cf 100%);}
+                        .gradient46 {background: radial-gradient(#2a5298 0%, #209cff 70%, #68e0cf 100%);}
+                        .gradient47 {background: radial-gradient(#2a5298 0%, #209cff 80%, #68e0cf 100%);}
+                        .gradient48 {background: radial-gradient(#2a5298 0%, #209cff 90%, #68e0cf 100%);}
+                    </style>
+                    <!-- Sample7 -->
+                    <h3>예제8(Sample)</h3>
+                    <div class="sample">
+                        <h4>radial-gradient(위치 변경)를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient41"><span>gradient41</span></div>
+                                <div class="gradient42"><span>gradient42</span></div>
+                                <div class="gradient43"><span>gradient43</span></div>
+                                <div class="gradient44"><span>gradient44</span></div>
+                                <div class="gradient45"><span>gradient45</span></div>
+                                <div class="gradient46"><span>gradient46</span></div>
+                                <div class="gradient47"><span>gradient47</span></div>
+                                <div class="gradient48"><span>gradient48</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient41 {background: radial-gradient(#2a5298 0%, #209cff 20%, #68e0cf 100%);}
+.gradient42 {background: radial-gradient(#2a5298 0%, #209cff 30%, #68e0cf 100%);}
+.gradient43 {background: radial-gradient(#2a5298 0%, #209cff 40%, #68e0cf 100%);}
+.gradient44 {background: radial-gradient(#2a5298 0%, #209cff 50%, #68e0cf 100%);}
+.gradient45 {background: radial-gradient(#2a5298 0%, #209cff 60%, #68e0cf 100%);}
+.gradient46 {background: radial-gradient(#2a5298 0%, #209cff 70%, #68e0cf 100%);}
+.gradient47 {background: radial-gradient(#2a5298 0%, #209cff 80%, #68e0cf 100%);}
+.gradient48 {background: radial-gradient(#2a5298 0%, #209cff 90%, #68e0cf 100%);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample7 -->
+
+
+                    <style>
+                        .gradient49 {background: radial-gradient(ellipse farthest-corner at center top, #f8bfa4 0%, #f33b4e 100%);}
+                        .gradient50 {background: radial-gradient(ellipse farthest-corner at left top, #f8bfa4 0%, #f33b4e 100%);}
+                        .gradient51 {background: radial-gradient(ellipse farthest-corner at right top, #f8bfa4 0%, #f33b4e 100%);}
+                        .gradient52 {background: radial-gradient(ellipse farthest-corner at bottom left, #f8bfa4 0%, #f33b4e 100%);}
+                        .gradient53 {background: radial-gradient(ellipse farthest-corner at bottom center, #f8bfa4 0%, #f33b4e 100%);}
+                        .gradient54 {background: radial-gradient(ellipse farthest-corner at center top, #f8bfa4 0%, #f33b4e 100%);}
+                        .gradient55 {background: radial-gradient(ellipse farthest-corner at left top, #f8bfa4 0%, #f33b4e 100%);}
+                        .gradient56 {background: radial-gradient(ellipse farthest-corner at right center, #f8bfa4 0%, #f33b4e 100%);}
+                    </style>
+                    <!-- Sample8 -->
+                    <h3>예제9(Sample)</h3>
+                    <div class="sample">
+                        <h4>radial-gradient(방향)를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient49"><span>gradient49</span></div>
+                                <div class="gradient50"><span>gradient50</span></div>
+                                <div class="gradient51"><span>gradient51</span></div>
+                                <div class="gradient52"><span>gradient52</span></div>
+                                <div class="gradient53"><span>gradient53</span></div>
+                                <div class="gradient54"><span>gradient54</span></div>
+                                <div class="gradient55"><span>gradient55</span></div>
+                                <div class="gradient56"><span>gradient56</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient49 {background: radial-gradient(ellipse farthest-corner at center top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient50 {background: radial-gradient(ellipse farthest-corner at left top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient51 {background: radial-gradient(ellipse farthest-corner at right top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient52 {background: radial-gradient(ellipse farthest-corner at bottom left, #f8bfa4 0%, #f33b4e 100%);}
+.gradient53 {background: radial-gradient(ellipse farthest-corner at bottom center, #f8bfa4 0%, #f33b4e 100%);}
+.gradient54 {background: radial-gradient(ellipse farthest-corner at center top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient55 {background: radial-gradient(ellipse farthest-corner at left top, #f8bfa4 0%, #f33b4e 100%);}
+.gradient56 {background: radial-gradient(ellipse farthest-corner at right center, #f8bfa4 0%, #f33b4e 100%);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample8 -->
+
+
+
+                    <style>
+                        .gradient57 {background-image: radial-gradient(#e14fad, #f9d423);}
+                        .gradient58 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1);}
+                        .gradient59 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8);}
+                        .gradient60 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb);}
+                        .gradient61 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da);}
+                        .gradient62 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4);}
+                        .gradient63 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea);}
+                        .gradient64 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea, #cddc39);}
+                    </style>
+                    <!-- Sample9 -->
+                    <h3>예제10(Sample)</h3>
+                    <div class="sample">
+                        <h4>radial-gradient(색상 추가)를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient57"><span>gradient57</span></div>
+                                <div class="gradient58"><span>gradient58</span></div>
+                                <div class="gradient59"><span>gradient59</span></div>
+                                <div class="gradient60"><span>gradient60</span></div>
+                                <div class="gradient61"><span>gradient61</span></div>
+                                <div class="gradient62"><span>gradient62</span></div>
+                                <div class="gradient63"><span>gradient63</span></div>
+                                <div class="gradient64"><span>gradient64</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient57 {background-image: radial-gradient(#e14fad, #f9d423);}
+.gradient58 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1);}
+.gradient59 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8);}
+.gradient60 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb);}
+.gradient61 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da);}
+.gradient62 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4);}
+.gradient63 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea);}
+.gradient64 {background-image: radial-gradient(#e14fad, #f9d423, #f48fb1, #ce93d8, #b39ddb, #9fa8da, #80cbc4, #80deea, #cddc39);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample9 -->
+
+
+                    <style>
+                        .gradient65 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #33691e 45px);}
+                        .gradient66 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 10px, #33691e 45px);}
+                        .gradient67 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 10px, #33691e 45px);}
+                        .gradient68 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 10px, #33691e 45px);}
+                    </style>
+                    <!-- Sample10 -->
+                    <h3>예제11(Sample)</h3>
+                    <div class="sample">
+                        <h4>repeating-linear-gradient를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient65"><span>gradient61</span></div>
+                                <div class="gradient66"><span>gradient62</span></div>
+                                <div class="gradient67"><span>gradient63</span></div>
+                                <div class="gradient68"><span>gradient64</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient65 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient66 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient67 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 10px, #33691e 45px);}
+.gradient68 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 10px, #33691e 45px);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample10 -->
+
+
+                    <style>
+                        .gradient69 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #7cb342 45px);}
+                        .gradient70 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 15px, #7cb342 45px);}
+                        .gradient71 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 20px, #7cb342 45px);}
+                        .gradient72 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 25px, #7cb342 45px);}
+                    </style>
+                    <!-- Sample11 -->
+                    <h3>예제12(Sample)</h3>
+                    <div class="sample">
+                        <h4>repeating-linear-gradient를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient69"><span>gradient69</span></div>
+                                <div class="gradient70"><span>gradient70</span></div>
+                                <div class="gradient71"><span>gradient71</span></div>
+                                <div class="gradient72"><span>gradient72</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient69 {background-image: repeating-linear-gradient(45deg, transparent 5px, transparent 25px, #33691e 10px, #7cb342 45px);}
+.gradient70 {background-image: repeating-linear-gradient(45deg, transparent 10px, transparent 25px, #33691e 15px, #7cb342 45px);}
+.gradient71 {background-image: repeating-linear-gradient(45deg, transparent 15px, transparent 25px, #33691e 20px, #7cb342 45px);}
+.gradient72 {background-image: repeating-linear-gradient(45deg, transparent 20px, transparent 25px, #33691e 25px, #7cb342 45px);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample11 -->
+
+
+                    <style>
+                        .gradient73 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 10px);}
+                        .gradient74 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 15px);}
+                        .gradient75 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 20px);}
+                        .gradient76 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 25px);}
+                    </style>
+                    <!-- Sample12 -->
+                    <h3>예제13(Sample)</h3>
+                    <div class="sample">
+                        <h4>repeating-radial-gradient를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient73"><span>gradient73</span></div>
+                                <div class="gradient74"><span>gradient74</span></div>
+                                <div class="gradient75"><span>gradient75</span></div>
+                                <div class="gradient76"><span>gradient76</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient73 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 10px);}
+.gradient74 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 15px);}
+.gradient75 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 20px);}
+.gradient76 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 5px, #fda085 25px);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample12 -->
+
+
+                    <style>
+                        .gradient77 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 10px, #fda085 10px);}
+                        .gradient78 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 15px, #fda085 15px);}
+                        .gradient79 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 20px, #fda085 20px);}
+                        .gradient80 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 25px, #fda085 25px);}
+                    </style>
+                    <!-- Sample13 -->
+                    <h3>예제14(Sample)</h3>
+                    <div class="sample">
+                        <h4>repeating-radial-gradient를 적용한 예제입니다.</h4>
+                        <div class="sampleView">
+                            <!-- ex -->
+                            <div class="gsample">
+                                <div class="gradient77"><span>gradient77</span></div>
+                                <div class="gradient78"><span>gradient78</span></div>
+                                <div class="gradient79"><span>gradient79</span></div>
+                                <div class="gradient80"><span>gradient80</span></div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleDesc">
+<pre class="language-css"><code>.gradient77 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 10px, #fda085 10px);}
+.gradient78 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 15px, #fda085 15px);}
+.gradient79 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 20px, #fda085 20px);}
+.gradient80 {background-image: repeating-radial-gradient(#f6d365, #f6d365 5px, #fda085 25px, #fda085 25px);}
+</code></pre>
+                        </div>
+                    </div>
+                    <!-- //Sample13 -->
+
+<hr>
+
+                    <style>
+                        @import url('https://webfontworld.github.io/iropke/IropkeBatang.css');
+
+                        .sampleView.e {
+                            padding: 0 !important;
+                            height: 500px;
+                        }
+                        .esample {
+                            height: 100%;
+                            background-image: repeating-linear-gradient(135deg, 
+                                #2b3284 0px, #2b3284 100px,
+                                #4177bc 100px, #4177bc 105px,
+                                #2b3284 105px, #2b3284 130px,
+                                #4177bc 130px, #4177bc 260px,
+                                #ffffff 260px, #ffffff 265px,
+                                #4177bc 265px, #4177bc 270px,
+                                #444caa 270px, #444caa 330px
+                            );
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 24px;
+                            font-family: 'IropkeBatang';
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                    </style>
+                    <!-- Example1 -->
+                    <h3>실습1(Example)</h3>
+                    <div class="sample">
+                        <h4>repeating-radial-gradient를 이용한 예제입니다.</h4>
+                        <div class="sampleView e">
+                            <!-- ex -->
+                            <div class="esample">
+                                <div>난 대꾸도 잊은채<br> 환화게 웃는그녀를 잠시 멍하니 바라보았다.</div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="esample"&gt;
+&lt;div&gt;난 대꾸도 잊은채&lt;br&gt; 환화게 웃는그녀를 잠시 멍하니 바라보았다.&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>@import url('https://webfontworld.github.io/iropke/IropkeBatang.css');
+    
+.esample {
+    height: 100%;
+    background-image: repeating-linear-gradient(135deg, 
+        #2b3284 0px, #2b3284 100px,
+        #4177bc 100px, #4177bc 105px,
+        #2b3284 105px, #2b3284 130px,
+        #4177bc 130px, #4177bc 260px,
+        #ffffff 260px, #ffffff 265px,
+        #4177bc 265px, #4177bc 270px,
+        #444caa 270px, #444caa 330px
+    );
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'IropkeBatang';
+    text-align: center;
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>// Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Example1 -->
+
+
+
+                    <style>
+                        .esample2 {
+                            height: 100%;
+                            background:
+                                radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+                                radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+                                radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+                                radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+                                radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+                                radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+                                radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+                                radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+                                radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+                                radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+                            background-color:#b03;
+                            background-size:100px 100px;
+
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 24px;
+                            font-family: 'IropkeBatang';
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                    </style>
+                    <!-- Example2 -->
+                    <h3>실습2(Example)</h3>
+                    <div class="sample">
+                        <h4>radial-gradient를 이용한 예제입니다.</h4>
+                        <div class="sampleView e">
+                            <!-- ex -->
+                            <div class="esample2">
+                                <div>난 대꾸도 잊은채<br> 환화게 웃는그녀를 잠시 멍하니 바라보았다.</div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="esample2"&gt;
+    &lt;div&gt;난 대꾸도 잊은채&lt;br&gt; 환화게 웃는그녀를 잠시 멍하니 바라보았다.&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>   
+                                </div>
+                                <div>
+<pre class="language-css"><code>@import url('https://webfontworld.github.io/iropke/IropkeBatang.css');
+
+.esample2 {
+    height: 100%;
+    background:
+        radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+        radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+        radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+        radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+        radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+        radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+        radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+        radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+        radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+        radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+    background-color:#b03;
+    background-size:100px 100px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'IropkeBatang';
+    text-align: center;
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>// Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Example2 -->
+
+
+                    <style>
+                        .esample3 {
+                            height: 100%;
+                            background:
+                                radial-gradient(black 15%, transparent 16%) 0 0,
+                                radial-gradient(black 15%, transparent 16%) 8px 8px,
+                                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+                                radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+                            background-color:#282828;
+                            background-size:16px 16px;
+                            color: #fff;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 24px;
+                            font-family: 'IropkeBatang';
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                    </style>
+                    <!-- Example3 -->
+                    <h3>실습3(Example)</h3>
+                    <div class="sample">
+                        <h4>radial-gradient를 이용한 예제입니다.</h4>
+                        <div class="sampleView e">
+                            <!-- ex -->
+                            <div class="esample3">
+                                <div>난 대꾸도 잊은채<br> 환화게 웃는그녀를 잠시 멍하니 바라보았다.</div>
+                            </div>
+                            <!-- ex -->
+                        </div>
+                        <div class="sampleCode">
+                            <div class="scMenu">
+                                <div>HTML</div>
+                                <div>CSS</div>
+                                <div>SCRIPT</div>
+                            </div>
+                            <div class="scCont">
+                                <div>
+<pre class="language-html"><code>&lt;div class="esample3"&gt;
+    &lt;div&gt;난 대꾸도 잊은채&lt;br&gt; 환화게 웃는그녀를 잠시 멍하니 바라보았다.&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-css"><code>@import url('https://webfontworld.github.io/iropke/IropkeBatang.css');
+
+.esample3 {
+    height: 100%;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+        background-color:#282828;
+        background-size:16px 16px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'IropkeBatang';
+    text-align: center;
+}
+</code></pre>
+                                </div>
+                                <div>
+<pre class="language-javascript"><code>// Javascript none
+</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //Example3 -->
+
+                    
+                    
+                    
+
+                    <h3>호환성(Compatibility)</h3>
+                    <div class="table">
+                        <table class="compatibility">
+                            <colgroup>
+                                <col style="width:20%" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-chrome1.png" alt="크롬 아이콘" title="크롬 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-firefox1.png" alt="파이어폭스 아이콘" title="파이어폭스 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-safari1.png" alt="사파리 아이콘" title="사파리 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory3.daumcdn.net/tistory/2933724/skin/images/icon-opera1.png" alt="오페라 아이콘" title="오페라 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-whale1.png" alt="네이버 웨일" title="네이버 웨일 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory4.daumcdn.net/tistory/2933724/skin/images/icon-ie6.png" alt="익스플로러6 아이콘" title="인터넷 익스플로러6 브라우저"><em>6</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러7 아이콘" title="인터넷 익스플로러7 브라우저"><em>7</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie7.png" alt="익스플로러8 아이콘" title="인터넷 익스플로러8 브라우저"><em>8</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" alt="익스플로러9 아이콘" title="인터넷 익스플로러9 브라우저"><em>9</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie10.png" alt="익스플로러10 아이콘" title="인터넷 익스플로러10 브라우저"><em>10</em></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie11.png" alt="익스플로러11 아이콘" title="인터넷 익스플로러11 브라우저"><em>11</em></th>
+                                    <th scope="col"><img src="https://tistory1.daumcdn.net/tistory/2933724/skin/images/icon-edge.png" alt="엣지 아이콘" title="엣지 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-android.png" alt="안드로이드 아이콘" title="모바일 안드로이드 브라우저"></th>
+                                    <th scope="col"><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ios.png" alt="ios 아이콘" title="모바일 아이폰 브라우저"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="ce" scope="row">background-image</td>
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 오페라 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 네이버 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러6 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러7 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러8 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러9 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러10 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 익스플로러11 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 엣지 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
+                                    <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>참고(Reference)</h3>
+                    <ul>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-backgrounds/#background-image" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-backgrounds/<wbr>#background-image</a></li>
+                    </ul>
+
+                    <hr>
+
+                </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                       
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script src="../assets/js/webs.js"></script>
+</body>
+</html>
+
+<!-- background,background-image,background-position,background-size,background-repeat,background-origin,background-clip,background-attachment,background-color,background-blend-mode -->
+     
