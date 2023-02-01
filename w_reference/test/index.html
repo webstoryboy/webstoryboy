@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            outline:none!important;
+        }        
+#block{
+	width: 250px;
+	height: 250px;
+	background: #7daf1f;
+	margin: 30px; 
+}
+#generated{
+	width: 400px;
+	height: 150px;
+	margin: 30px;
+	resize: none;
+}
+
+.test{
+	display: table-caption;
+	min-width: 220px;
+}
+
+#generate{
+
+	padding: 20px 40px;
+}
+#clearArea{
+	padding: 20px 40px;
+}
+.minwrap{
+	display: flex;
+}
+.bb{
+	position: relative;
+}
+.full_rad_bold{
+	font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <div class="minwrap">
+        <div class="optionsBlock">
+            <div class="test">
+                <p>Border-top-left-radius:    <input max="250" type="range" id="topLeft"  value="0"></p> 
+                <p>Border-top-right-radius:   <input max="250" type="range" id="topRight" value="0"></p>
+                <p>Border-bottom-left-radius: <input max="250" type="range" id="botLeft"  value="0"></p>
+                <p>Border-bottom-left-radius: <input max="250" type="range" id="botRight" value="0"></p>
+            </div>
+        </div>
+  
+        <div id="block"></div>
+    </div>
+    
+    <script>
+        var radTopLeft = document.querySelector("#topLeft")
+        var radTopRight = document.querySelector("#topRight")
+        var radBotLeft = document.querySelector("#botLeft")
+        var radBotRight = document.querySelector("#botRight")
+        var block = document.querySelector("#block");
+
+        radTopLeft.oninput = singleRad;
+        radTopRight.oninput = singleRad;
+        radBotLeft.oninput = singleRad;
+        radBotRight.oninput = singleRad;
+
+        function singleRad (){	
+            block.style.borderTopLeftRadius = radTopLeft.value + "px" ;
+            block.style.borderTopRightRadius = radTopRight.value + "px";
+            block.style.borderBottomLeftRadius = radBotLeft.value + "px";
+            block.style.borderBottomRightRadius = radBotRight.value + "px";
+        }
+    </script>
+</body>
+</html>

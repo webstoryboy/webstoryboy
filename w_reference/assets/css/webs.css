@@ -920,6 +920,24 @@ code.hljs {
   font-size: 16px;
   line-height: 1.6;
 }
+#blog .sample .sampleSupport {
+  border-bottom: 1px solid #e6e6e6;
+}
+#blog .sample .sampleSupport p {
+  padding: 15px 20px 15px 36px;
+  position: relative;
+}
+#blog .sample .sampleSupport p::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 46%;
+  transform: translateY(-50%);
+  border-left: 7px solid #666;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+}
+
 #blog .sample .sampleBtn a {
   border: 1px solid #e6e6e6;
   border-radius: 100px;
@@ -931,6 +949,12 @@ code.hljs {
   color: #666;
 }
 #blog .sample .sampleBtn a:hover {
+  border-color: #ff4b4b;
+  color: #ff4b4b;
+}
+#blog .sample .sampleBtn .disable {
+  user-select: none;
+  pointer-events: none;
   border-color: #ff4b4b;
   color: #ff4b4b;
 }
@@ -1020,4 +1044,165 @@ code.hljs {
 }
 #blog .sample .sampleCode .scCont .active {
   display: block;
+}
+
+
+/* generateWrap */
+#blog .generateWrap {
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-wrap: wrap;
+}
+#blog .generateWrap h4 {
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0;
+  padding: 15px;
+}
+#blog .generateView {
+  width: 60%;
+  min-height: 400px;
+  border-right: 1px solid #e6e6e6;
+}
+#blog .generateView {
+  background-color: #FAFAFA;
+  display: flex;
+  align-items: center;
+  justify-content: center;    
+  position: relative;
+}
+
+#blog .generateBtn {
+  width: 40%;
+}
+.generateBtn {
+  position: relative;
+  padding: 20px;
+}
+.generateBtn label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.generateBtn input {
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #f7f7f7;
+  padding: 10px;
+  color: #666;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.generateBtn select {
+  width: 100%;
+  background: #f5f5f5;
+  border: 1px solid #f7f7f7;
+  padding: 10px;
+  color: #666;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.generateBtn .check {
+  position: relative;
+}
+.generateBtn .check input {
+  width: auto;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.generateBtn .check label {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: 2px;
+  padding-left: 30px;
+  cursor: pointer;
+}
+.generateBtn .check .mark {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background: #f5f5f5;
+  border-radius: 3px;
+  border: 1px solid #f7f7f7;
+  cursor: pointer;
+}
+.generateBtn .check .mark.up {
+  background-color: #fc6a00;
+}
+.generateBtn .check .mark.up::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 6px;
+  height: 10px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.generateBtn .line {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.generateBtn .col {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+.generateBtn .col.c1 > div {
+  width: 100%;
+}
+.generateBtn .col.c2 > div {
+  width: 48%;
+}
+.generateBtn .col.c3 > div {
+  width: 31%;
+}
+.generateBtn .col.c4 > div {
+  width: 23%;
+}
+.generateBtn .bg > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.generateBtn .bg > div label {
+  width: 100%;
+}
+.generateBtn .bg > div .box-bg1 {
+  display: inline-block;
+  width: calc(100% - 40px);
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.generateBtn .bg > div .box-bg2 {
+  display: inline-block;
+  width: 40px;
+  height: 44px;
+  padding: 7px;
+  outline: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+
+
+#blog .generateCode {
+  width: 100%;
+  border-top: 1px solid #e6e6e6;
+}
+#blog .generateCode pre code.hljs {
+  border-radius: 0;
 }

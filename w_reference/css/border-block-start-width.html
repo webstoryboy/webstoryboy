@@ -76,23 +76,25 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Reference/CSS</span>
-                <h1 class="title">border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</h1>
+                <h1 class="title">border-block-start-width 속성은 블록(위쪽) 테두리 두께 속성을 설정합니다.</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
-                    <span class="date">2023. 01. 01.</span>
+                    <span class="date">2022. 01. 06.</span>
                 </div>
             </div>
             <div class="blog__inner container">
                 <div class="blog__contents">
-                    <h2>border-image-outset</h2>
+                    <h2>border-block-start-width</h2>
                     <p>
-                        border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.
+                        border-block-start-width 속성은 블록(위쪽) 테두리 두께 속성을 설정합니다.
                     </p>
                     <p>
-                        border-image는 테두리에 이미지를 넣는 기능으로, 이미지를 9등분하여 해당 부분이 네 면에 설정하는 기능입니다. 
-                        단순한 이미지도 넣을 수 있지만, 특별한 테두리를 만들고 싶다면 이 속성을 이용하면 편하게 만들 수 있습니다. 
-                        border-image 속성은 border와 같이 사용됩니다.
+                        border는 블록(block)과 인라인(inline)을 구분할 수 있습니다. 
+                        블록은 위쪽, 아래쪽으로 말하고, 인라인은 왼쪽, 아래쪽을 의미합니다. 
+                        블록은 다시 위쪽(start), 아래쪽(end)으로 분류할 수 있으며, 인라인 역시 왼쪽(start), 오른쪽(end)로 분류 할 수 있습니다. 
+                        세부적으로는 두께(width), 스타일(style), 색상(color) 등을 설정할 수 있습니다. 
                     </p>
+
                     <hr>
 
                     <div class="table">
@@ -110,9 +112,7 @@
                             <tbody>
                                 <tr>
                                     <th>기본값</th>
-                                    <td>
-                                        border-image-outset : 0
-                                    </td>
+                                    <td>border-block-start-width : middle</td>
                                 </tr>
                                 <tr>
                                     <th>적용</th>
@@ -132,53 +132,47 @@
 
                     <h3>정의(Definition)</h3>
                     <ul>
-                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
+                        <li>border-block-start-width 속성은 블록(위쪽) 테두리 두께 속성을 설정합니다.</li>
                     </ul>
 
                     <h3>비교(Compare)</h3>
                     <ul>
-                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-image-outset 속성은 테두리 이미지 간격 속성을 설정합니다.</li>
-                        <li>border-image-repeat 속성은 테두리 이미지 반복 속성을 설정합니다.</li>
-                        <li>border-image-slice 속성은 테두리 이미지 영역 속성을 설정합니다.</li>
-                        <li>border-image-source 속성은 테두리 이미지 경로 속성을 설정합니다.</li>
-                        <li>border-image-width 속성은 테두리 이미지 두께 속성을 설정합니다.</li>
-                    </ul>
+                        <li>border-block 속성은 블록(위쪽,아래쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-block-color 속성은 블록(위쪽,아래쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-block-style 속성은 블록(위쪽,아래쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-block-width 속성은 블록(위쪽,아래쪽) 테두리 두께 속성을 설정합니다.</li>
 
-                    <h3>관련된 속성(Related Properties)</h3>
-                    <ul>
-                        <li>border 속성은 테두리 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-color 속성은 테두리 색 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-style 속성은 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-width 속성은 테두리 두께 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-image 속성은 테두리 이미지 속성을 일괄적으로 설정합니다.</li>
-                        <li>border-radius 속성은 테두리 굴곡을 일괄적으로 설정합니다.</li>
+                        <li>border-block-start 속성은 블록(위쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-block-start-color 속성은 블록(위쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-block-start-style 속성은 블록(위쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-block-start-width 속성은 블록(위쪽) 테두리 두께 속성을 설정합니다.</li>
+
+                        <li>border-block-end 속성은 블록(아래쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-block-end-color 속성은 블록(아래쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-block-end-style 속성은 블록(아래쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-block-end-width 속성은 블록(아래쪽) 테두리 두께 속성을 설정합니다.</li>
                     </ul>
 
                     <h3>문법(Syntax)</h3>
-                    <p class="blue">border-image-outset : length | number</p>
+                    <p class="blue">border-block-start-width : length |  thin | medium | thick</p>
 <pre class="bluePre"><code class="language-css">/* 기본 속성 */ 
-border-image-outset: 1px;               /* length */
-border-image-outset: 1.5;               /* number */
-
-/* 다중 속성 */ 
-border-image-outset: 1px;               /* 위쪽,아래쪽,왼쪽,오른쪽 */
-border-image-outset: 1px 2px;           /* 위쪽,아래쪽 | 왼쪽,오른쪽 */
-border-image-outset: 1px 2px 3px;       /* 위쪽 | 왼쪽,오른쪽 | 아래쪽 */
-border-image-outset: 1px 2px 3px 4px;   /* 위쪽 | 오른쪽 | 아래쪽 | 왼쪽 */
+border-block-start-width: 10px;
+border-block-start-width: thin;
+border-block-start-width: medium;
+border-block-start-width: thick;
 
 /* 전역 속성 */
-border-image-outset: inherit;   /* 상속 */
-border-image-outset: initial;   /* 초기화 */
-border-image-outset: revert;    /* 원래대로 돌리기 */
-border-image-outset: unset;     /* 설정 해제 */
+border-block-start-width: inherit;   /* 상속 */
+border-block-start-width: initial;   /* 초기화 */
+border-block-start-width: revert;    /* 원래대로 돌리기 */
+border-block-start-width: unset;     /* 설정 해제 */
 </code></pre>
 
                     <h3>속성(Property)</h3>
                     <div class="table">
                         <table>
                             <colgroup>
-                                <col width="20%">
+                                <col width="15%">
                                 <col width="30%">
                                 <col>
                             </colgroup>
@@ -192,136 +186,111 @@ border-image-outset: unset;     /* 설정 해제 */
                             <tbody>
                                 <tr>
                                     <th>length</th>
-                                    <td>border-image-outset: 2px</td>
-                                    <td>이미지 간격을 CSS 단위로 설정합니다.</td>
+                                    <td>border-block-start-width: 10px</td>
+                                    <td>테두리 두께를 CSS 단위를 설정합니다.</td>
                                 </tr>
                                 <tr>
-                                    <th>repeat</th>
-                                    <td>border-image-outset: 2;</td>
-                                    <td>이미지 간격을 숫자로 설정합니다.</td>
+                                    <th>thin</th>
+                                    <td>border-block-start-width: thin</td>
+                                    <td>테두리 두께를 thin(1px)으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>medium</th>
+                                    <td>border-block-start-width: medium</td>
+                                    <td>테두리 두께를 medium(3px)으로 설정합니다.</td>
+                                </tr>
+                                <tr>
+                                    <th>thick</th>
+                                    <td>border-block-start-width: thick</td>
+                                    <td>테두리 두께를 thick(5px)으로 설정합니다.</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
 
+
                     <!-- Sample1 -->
                     <style>
                         #border-box {
                             display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            padding: 10px;
+                            justify-content: space-around;
                         }
                         #border-box .box {
-                            width: 100%;
-                            max-width: 400px;
+                            width: 30%;
                             background-color: #a2cbfa;
                             color: #fff;
-                            min-height: 200px;
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            box-sizing: border-box;
-                            border-width: 50px;
-                            border-style: dotted;
-                            border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
-                            border-image-width: 20px;
-                            border-image-slice: 50;
-                            border-image-outset: 0px;
-                            border-image-repeat: round;
+                            min-height: 200px;
+                            box-sizing: border-box;   
+                            border-block-start-width: 15px;
+                            border-block-start-style: solid;
+                            border-block-start-color: #4390e1;                         
                         }
-                        #border-box.bg1 .box {
-                            border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+                        #border-box .box:nth-child(1){
+                            border-radius: 10%;
                         }
-                        #border-box.bg2 .box {
-                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+                        #border-box .box:nth-child(3){
+                            border-radius: 50%;
                         }
-                        #border-box.bg3 .box {
-                            border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+                        #border-box.horizontal .box {
+                            writing-mode: horizontal-tb;
                         }
-                        #border-box.bg4 .box {
-                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
-                        }
-                        #border-box.bg5 .box {
-                            border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
-                        }
-                        #border-box.bg6 .box {
-                            border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
-                        }
-                    
-                        .sampleBtn1 a {
-                            background-size: cover;
-                            background-position: center center;
-                            width: 100px; height: 100px;
-                            color: transparent !important;
-                            border-radius: 0 !important;
-                            padding: 0 !important;
-                        }
-                        .sampleBtn1 a:nth-child(1) {
-                            background-image: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
-                        }
-                        .sampleBtn1 a:nth-child(2) {
-                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
-                        }
-                        .sampleBtn1 a:nth-child(3) {
-                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
-                        }
-                        .sampleBtn1 a:nth-child(4) {
-                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
-                        }
-                        .sampleBtn1 a:nth-child(5) {
-                            background-image: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
-                        }
-                        .sampleBtn1 a:nth-child(6) {
-                            background-image: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+                        #border-box.vertical .box {
+                            writing-mode: vertical-rl;
+                            direction: rtl;
                         }
                     </style>
                     <h3>예제1(Sample)</h3>
                     <div id="sample1" class="sample">
-                        <h4>테두리 이미지 스타일을 설정한 예제입니다.</h4>
+                        <h4>테두리 블록을 설정한 예제입니다.</h4>
                         <div class="sampleView">
                             <!-- ex -->
-                            <div id="border-box" class="bg1">
-                                <div class="box"><span>border: 50px solid #4390e1</span></div>
+                            <div id="border-box" class="horizontal">
+                                <div class="box">horizontal</div>
+                                <div class="box">horizontal</div>
+                                <div class="box">horizontal</div>
                             </div>
                             <!-- ex -->
                         </div>
                         <div class="sampleBtn sampleBtn1">
-                            <a href="#">bg1</a>
-                            <a href="#">bg2</a>
-                            <a href="#">bg3</a>
-                            <a href="#">bg4</a>
-                            <a href="#">bg5</a>
-                            <a href="#">bg6</a>
+                            <a href="#">horizontal</a>
+                            <a href="#">vertical</a>
                         </div>
                         <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-width: 10px;</a>
-                            <a href="#">border-image-width: 20px;</a>
-                            <a href="#">border-image-width: 30px;</a>
+                            <a href="#" data-name="border-block-start-width: 5px;" class="disable">border-block-start-width</a> : 
+                            <a href="#" data-name="border-block-start-width: 5px;">5px</a>
+                            <a href="#" data-name="border-block-start-width: 15px;">15px</a>
+                            <a href="#" data-name="border-block-start-width: 25px;">25px</a>
+                            <a href="#" data-name="border-block-start-width: thin;">thin</a>
+                            <a href="#" data-name="border-block-start-width: medium;">medium</a>
+                            <a href="#" data-name="border-block-start-width: thick;">thick</a>
                         </div>
                         <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-slice: 30;</a>
-                            <a href="#">border-image-slice: 40;</a>
-                            <a href="#">border-image-slice: 50;</a>
-                            <a href="#">border-image-slice: 50 fill;</a>
-                            <a href="#">border-image-slice: 40 fill;</a>
-                            <a href="#">border-image-slice: 30 fill;</a>
+                            <a href="#" data-name="border-block-start-style: solid;" class="disable">border-block-start-style</a> : 
+                            <a href="#" data-name="border-block-start-style: none;">none</a>
+                            <a href="#" data-name="border-block-start-style: hidden;">hidden</a>
+                            <a href="#" data-name="border-block-start-style: solid;">solid</a>
+                            <a href="#" data-name="border-block-start-style: dashed;">dashed</a>
+                            <a href="#" data-name="border-block-start-style: dotted;">dotted</a>
+                            <a href="#" data-name="border-block-start-style: double;">double</a>
+                            <a href="#" data-name="border-block-start-style: groove;">groove</a>
+                            <a href="#" data-name="border-block-start-style: ridge;">ridge</a>
+                            <a href="#" data-name="border-block-start-style: inset;">inset</a>
+                            <a href="#" data-name="border-block-start-style: outset;">outset</a>
                         </div>
                         <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-outset: 0px;</a>
-                            <a href="#">border-image-outset: 5px;</a>
-                            <a href="#">border-image-outset: 15px;</a>
-                            <a href="#">border-image-outset: 25px;</a>
+                            <a href="#" data-name="border-block-start-color: solid;" class="disable">border-block-start-color</a> : 
+                            <a href="#" data-name="border-block-start-color: #4390e1;">#4390e1</a>
+                            <a href="#" data-name="border-block-start-color: #f4a2fa;">#f4a2fa</a>
+                            <a href="#" data-name="border-block-start-color: rgb(250, 162, 162);">rgb(250, 162, 162)</a>
+                            <a href="#" data-name="border-block-start-color: rgba(250, 162, 162, 0.4);">rgba(250, 162, 162, 0.4)</a>
+                            <a href="#" data-name="border-block-start-color: hsl(246, 90%, 81%);">hsl(246, 90%, 81%)</a>
+                            <a href="#" data-name="border-block-start-color: hsla(246, 90%, 81%, 0.4);">hsl(246, 90%, 81%, 0.4)</a>
+                            <a href="#" data-name="border-block-start-color: blue;">blue</a>
+                            <a href="#" data-name="border-block-start-color: transparent;">transparent</a>
                         </div>
-                        <div class="sampleBtn sampleBtn2">
-                            <a href="#">border-image-repeat: stretch;</a>
-                            <a href="#">border-image-repeat: repeat;</a>
-                            <a href="#">border-image-repeat: round;</a>
-                            <a href="#">border-image-repeat: space</a>
-                            <a href="#">border-image-repeat: stretch round</a>
-                            <a href="#">border-image-repeat: round stretch</a>
-                        </div>
-
                         <div class="sampleCode">
                             <div class="scMenu">
                                 <div>HTML</div>
@@ -330,52 +299,43 @@ border-image-outset: unset;     /* 설정 해제 */
                             </div>
                             <div class="scCont">
                                 <div>
-<pre class="language-html"><code>&lt;div id="border-box" class="bg1"&gt;
-    &lt;div class="box"&gt;&lt;span>border: 50px solid #4390e1&lt;/span&gt;&lt;/div&gt;
+<pre class="language-html"><code>&lt;div id="border-box" class="horizontal"&gt;
+    &lt;div class="box"&gt;border-block&lt;/div&gt;
+    &lt;div class="box"&gt;border-block&lt;/div&gt;
+    &lt;div class="box"&gt;border-block&lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
                                 </div>
                                 <div>
 <pre class="language-css"><code>#border-box {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 #border-box .box {
-    width: 100%;
-    max-width: 400px;
+    width: 30%;
     background-color: #a2cbfa;
     color: #fff;
-    min-height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-sizing: border-box;
-    border-width: 50px;
-    border-style: dotted;
-    border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
-    border-image-width: 20px 20px 20px 20px;
-    border-image-slice: 50 50 50 50;
-    border-image-outset: 0px 0px 0px 0px;
-    border-image-repeat: round round;
+    min-height: 200px;
+    box-sizing: border-box;   
+    border-block-start-width: 15px;
+    border-block-start-style: solid;
+    border-block-start-color: #4390e1;                         
 }
-#border-box.bg1 .box {
-    border-image-source: url("https://tistory2.daumcdn.net/tistory/783187/skin/images/bi01.png");
+#border-box .box:nth-child(1){
+    border-radius: 10%;
 }
-#border-box.bg2 .box {
-    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi02.png");
+#border-box .box:nth-child(3){
+    border-radius: 50%;
 }
-#border-box.bg3 .box {
-    border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi03.png");
+#border-box.horizontal .box {
+    writing-mode: horizontal-tb;
 }
-#border-box.bg4 .box {
-    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi04.png");
-}
-#border-box.bg5 .box {
-    border-image-source: url("https://tistory4.daumcdn.net/tistory/783187/skin/images/bi05.png");
-}
-#border-box.bg6 .box {
-    border-image-source: url("https://tistory3.daumcdn.net/tistory/783187/skin/images/bi06.png");
+#border-box.vertical .box {
+    writing-mode: vertical-rl;
+    direction: rtl;
 }
 </code></pre>
                                 </div>
@@ -392,17 +352,17 @@ border-image-outset: unset;     /* 설정 해제 */
                             btn.addEventListener("click", (e)=> {
                                 e.preventDefault();
                                 const text = btn.innerText;
-                                document.querySelector("#border-box").setAttribute("class", "");
-                                document.querySelector("#border-box").classList.add(text)
+                                document.querySelectorAll("#sample1 #border-box").forEach(box => {
+                                    box.setAttribute("class", text);
+                                    document.querySelectorAll("#sample1 #border-box .box").forEach(tx => tx.innerText = text)
+                                })
                             })
                         });
                         document.querySelectorAll("#sample1 .sampleBtn2 a").forEach(btn => {
                             btn.addEventListener("click", (e)=> {
                                 e.preventDefault();
-                                const text = btn.innerText;
-                                document.querySelectorAll("#sample1 #border-box .box").forEach(box => {
-                                    box.setAttribute("style", text);
-                                })
+                                const text = btn.dataset.name;
+                                document.querySelectorAll("#sample1 #border-box .box").forEach(tx => tx.setAttribute("style", text))
                             })
                         });
                     </script>           
@@ -438,7 +398,7 @@ border-image-outset: unset;     /* 설정 해제 */
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="ce" scope="row">border-image-outset</td>
+                                    <td class="ce" scope="row">border-block-start-width</td>
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
@@ -454,9 +414,39 @@ border-image-outset: unset;     /* 설정 해제 */
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 안드로이드 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- IOS -->
                                 </tr>
+
                             </tbody>
                         </table>
                     </div>
+
+                    <h3>보더 블록/인라인과 관련된 속성</h3>
+                    <ul>
+                        <li>border-block 속성은 블록(위쪽,아래쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-block-color 속성은 블록(위쪽,아래쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-block-style 속성은 블록(위쪽,아래쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-block-width 속성은 블록(위쪽,아래쪽) 테두리 두께 속성을 설정합니다.</li>
+                        <li>border-block-start 속성은 블록(위쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-block-start-color 속성은 블록(위쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-block-start-style 속성은 블록(위쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-block-start-width 속성은 블록(위쪽) 테두리 두께 속성을 설정합니다.</li>
+                        <li>border-block-end 속성은 블록(아래쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-block-end-color 속성은 블록(아래쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-block-end-style 속성은 블록(아래쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-block-end-width 속성은 블록(아래쪽) 테두리 두께 속성을 설정합니다.</li>
+                       
+                        <li>border-inline 속성은 인라인(왼쪽,오른쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-inline-color 속성은 인라인(왼쪽,오른쪽) 테두리 색 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-inline-style 속성은 인라인(왼쪽,오른쪽) 테두리 스타일 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-inline-width 속성은 인라인(왼쪽,오른쪽) 테두리 두께 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-inline-start 속성은 인라인(왼쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-inline-start-color 속성은 인라인(왼쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-inline-start-style 속성은 인라인(왼쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-inline-start-width 속성은 인라인(왼쪽) 테두리 두께 속성을 설정합니다.</li>
+                        <li>border-inline-end 속성은 인라인(오른쪽) 테두리 속성을 일괄적으로 설정합니다.</li>
+                        <li>border-inline-end-color 속성은 인라인(오른쪽) 테두리 색 속성을 설정합니다.</li>
+                        <li>border-inline-end-style 속성은 인라인(오른쪽) 테두리 스타일 속성을 설정합니다.</li>
+                        <li>border-inline-end-width 속성은 인라인(오른쪽) 테두리 두께 속성을 설정합니다.</li>
+                    </ul>
 
                     <h3>보더와 관련된 속성</h3>
                     <ul>
@@ -494,15 +484,20 @@ border-image-outset: unset;     /* 설정 해제 */
                     </ul>
 
 
-
                     <h3>참고(Reference)</h3>
                     <ul>
-                        <li><a href="https://w3c.github.io/csswg-drafts/css-backgrounds/#the-border-image-outset" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-backgrounds/<wbr>#the-border-image-outset</a></li>
+                        <li><a href="https://w3c.github.io/csswg-drafts/css-logical/#propdef-border-block-color" target="_blank">https://w3c.github.io/<wbr>csswg-drafts/css-logical/<wbr>#propdef-border-block-color</a></li>
                     </ul>
 
                     <hr>
 
                 </div>
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                       
+                    </div>
+                </aside>
             </div>
         </section>
         <!-- //blog -->
@@ -521,4 +516,4 @@ border-image-outset: unset;     /* 설정 해제 */
 </body>
 </html>
 
-<!-- border-image,border-image-outset,border-image-repeat,border-image-slice,border-image-source,border-image-width -->
+<!-- border-block,border-block-color,border-block-style,border-block-width,border-block-start,border-block-start-color,border-block-start-style,border-block-start-width,border-block-end,border-block-end-color,border-block-end-style,border-block-end-width -->
