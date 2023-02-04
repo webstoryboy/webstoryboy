@@ -899,6 +899,9 @@ code.hljs {
   margin-bottom: 0;
   line-height: 1.6;
 }
+#blog .sample .hide {
+  display: none;
+}
 #blog .sample .sampleView {
   border-bottom: 1px solid #e6e6e6;
   padding: 20px;
@@ -937,7 +940,6 @@ code.hljs {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
-
 #blog .sample .sampleBtn a {
   border: 1px solid #e6e6e6;
   border-radius: 100px;

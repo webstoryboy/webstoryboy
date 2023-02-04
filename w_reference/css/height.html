@@ -76,17 +76,17 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Reference/CSS</span>
-                <h1 class="title">width 속성은 요소의 가로 크기를 설정합니다.</h1>
+                <h1 class="title">height 속성은 요소의 세로 크기를 설정합니다.</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
-                    <span class="date">2022. 01. 26.</span>
+                    <span class="date">2022. 02. 04.</span>
                 </div>
             </div>
             <div class="blog__inner container">
                 <div class="blog__contents">
-                    <h2>width</h2>
+                    <h2>height</h2>
                     <p>
-                        width 속성은 요소의 가로 크기를 설정합니다.
+                        height 속성은 요소의 세로 크기를 설정합니다.
                     </p>
                     <p>
                         박스 요소는 width와 height로 크기를 설정할 수 있으며, margin(바깥쪽 여백), padding(안쪽 여백), border(테두리)를 설정할 수 있습니다. 
@@ -109,7 +109,7 @@
                             <tbody>
                                 <tr>
                                     <th>기본값</th>
-                                    <td>width: auto</td>
+                                    <td>height: auto</td>
                                 </tr>
                                 <tr>
                                     <th>적용</th>
@@ -129,7 +129,7 @@
 
                     <h3>정의(Definition)</h3>
                     <ul>
-                        <li>width 속성은 요소의 가로 크기를 설정합니다.</li>
+                        <li>height 속성은 요소의 세로 크기를 설정합니다.</li>
                     </ul>
 
                     <h3>비교(Compare)</h3>
@@ -143,23 +143,23 @@
                     </ul>
 
                     <h3>문법(Syntax)</h3>
-                    <p class="blue">width : length | percentage | auto | max-content | min-content | fit-content</p>
+                    <p class="blue">height : length | percentage | auto | max-content | min-content | fit-content</p>
 <pre class="bluePre"><code class="language-css">/* 기본 속성 */ 
-width: 10px;        /* 단위 설정 */
-width: 1em;        /* 단위 설정 */
-width: 10%;        /* 퍼센트 설정 */
+height: 10px;        /* 단위 설정 */
+height: 1em;         /* 단위 설정 */
+height: 10%;         /* 퍼센트 설정 */
 
 /* 키워드 속성 */ 
-width: auto;       
-width: max-content;     
-width: min-content;     
-width: fit-content;     
+height: auto;       
+height: max-content;     
+height: min-content;     
+height: fit-content;     
 
 /* 전역 속성 */
-width: inherit;   /* 상속 */
-width: initial;   /* 초기화 */
-width: revert;    /* 원래대로 돌리기 */
-width: unset;     /* 설정 해제 */
+height: inherit;   /* 상속 */
+height: initial;   /* 초기화 */
+height: revert;    /* 원래대로 돌리기 */
+height: unset;     /* 설정 해제 */
 </code></pre>
 
                     <h3>속성(Property)</h3>
@@ -180,32 +180,32 @@ width: unset;     /* 설정 해제 */
                             <tbody>
                                 <tr>
                                     <th>length</th>
-                                    <td>width: 2px</td>
+                                    <td>height: 2px</td>
                                     <td>요소의 가로 크기를 CSS 단위를 통해 설정합니다.</td>
                                 </tr>
                                 <tr>
                                     <th>percentage</th>
-                                    <td>width: 2%</td>
+                                    <td>height: 2%</td>
                                     <td>요소의 가로 크기를 %를 통해 설정합니다.</td>
                                 </tr>
                                 <tr>
                                     <th>auto</th>
-                                    <td>width: auto</td>
+                                    <td>height: auto</td>
                                     <td>요소의 가로 크기를 기본값으로 설정합니다.</td>
                                 </tr>
                                 <tr>
                                     <th>max-content</th>
-                                    <td>width: max-content</td>
+                                    <td>height: max-content</td>
                                     <td>요소의 가로 크기를 콘텐츠를 기준으로 최대로 설정합니다.</td>
                                 </tr>
                                 <tr>
                                     <th>min-content</th>
-                                    <td>width: min-content</td>
+                                    <td>height: min-content</td>
                                     <td>요소의 가로 크기를 콘텐츠를 기준으로 최소로 설정합니다.</td>
                                 </tr>
                                 <tr>
                                     <th>fit-content</th>
-                                    <td>width: fit-content</td>
+                                    <td>height: fit-content</td>
                                     <td>요소의 가로 크기를 콘텐츠를 기준으로 설정합니다.</td>
                                 </tr>
                             </tbody>
@@ -296,13 +296,11 @@ width: unset;     /* 설정 해제 */
                     <script>
                         const generateBox = document.querySelector(".generateView .box");
                         const generateCode = document.querySelector(".generateCode pre code");
-
                         const boxWidth = document.querySelector("#box-width");
                         const boxHeight = document.querySelector("#box-height");
                         const boxMargin = document.querySelector("#box-margin");
                         const boxPadding = document.querySelector("#box-padding");
                         const boxBorder = document.querySelector("#box-border");
-
                         const boxBg1 = document.querySelector(".generateBtn .box-bg1");
                         const boxBg2 = document.querySelector(".generateBtn .box-bg2");
 
@@ -355,9 +353,14 @@ hljs.highlightAll();
                             display: flex;
                         }
                         #sample1 .box-wrap .box {
-                            width: 48%;
+                            width: 49%;
                             background-color: #cae3ff;
+                            padding: 10px;
                             margin-right: 2%;
+                            overflow: auto;
+                        }
+                        #sample1 .box-wrap .box div {
+                            border: 1px solid #64acff;
                         }
                     </style>
                     <h3>예제1(Sample)</h3>
@@ -367,10 +370,20 @@ hljs.highlightAll();
                             <!-- ex -->
                             <div class="box-wrap">
                                 <div class="box">
-                                    어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다.
+                                    어렸을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 
+                                    단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다. 
+                                    서울에는 집이 없지만, 이곳에서는 나만의 집이 많다. 
+                                    그 집은 비용도 들지 않고 언제든지 만들 수 있다. 
+                                    나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거 같다. 
+                                    그 한구석에 나만의 꿈을 설계하고 디자인을 하며 앞으로도 살고 싶다.
                                 </div>
                                 <div class="box">
-                                    Since I was young, I liked to make my own space and I liked my own attic.
+                                    Since I was young, I liked to make my own space and I liked my own attic. 
+                                    I hope that even one person will be inspired or moved in the space I created. 
+                                    I don't have a house in Seoul, but I have a lot of my own houses here. 
+                                    The house can be built at any time without cost. 
+                                    I think being able to create my own space is a great attraction for coding. 
+                                    I want to design and design my own dream in one corner and live in the future.
                                 </div>
                             </div>
                             <!-- ex -->
@@ -378,13 +391,13 @@ hljs.highlightAll();
                         <div class="sampleSupport">
                         </div>
                         <div class="sampleBtn">
-                            <a href="#" data-support="박스의 크기를 200px로 설정하였습니다.">width: 200px;</a>
-                            <a href="#" data-support="박스의 크기를 20%로 설정하였습니다.">width: 20%;</a>
-                            <a href="#" data-support="박스의 크기를 30em으로 설정하였습니다. 현재 em이 16px이니 가로 값은 16 * 30 = 480px입니다.">width: 30em;</a>
-                            <a href="#" data-support="박스의 크기를 기본값으로 설정하였습니다.">width: auto;</a>
-                            <a href="#" data-support="박스 안에 컨텐츠를 기준으로 최대 크기를 설정하였습니다.">width: max-content;</a>
-                            <a href="#" data-support="박스 안에 컨텐츠를 기준으로 최소 크기를 설정하였습니다.">width: min-content;</a>
-                            <a href="#" data-support="박스 안에 컨텐츠를 기준으로 설정하였습니다.">width: fit-content;</a>
+                            <a href="#" data-support="박스의 크기를 100px로 설정하였습니다.">height: 100px;</a>
+                            <a href="#" data-support="박스의 크기를 20%로 설정하였습니다.">height: 20%;</a>
+                            <a href="#" data-support="박스의 크기를 10em으로 설정하였습니다.">height: 10em;</a>
+                            <a href="#" data-support="박스의 최소 크기값을 설정하지 않습니다. ">height: none;</a>
+                            <a href="#" data-support="박스 안에 컨텐츠를 기준으로 최대 크기를 설정하였습니다.">height: max-content;</a>
+                            <a href="#" data-support="박스 안에 컨텐츠를 기준으로 최소 크기를 설정하였습니다.">height: min-content;</a>
+                            <a href="#" data-support="박스 안에 컨텐츠를 기준으로 설정하였습니다.">height: fit-content;</a>
                         </div>
                         <div class="sampleCode">
                             <div class="scMenu">
@@ -396,10 +409,20 @@ hljs.highlightAll();
                                 <div>
 <pre class="language-html"><code>&lt;div class="box-wrap"&gt;
     &lt;div class="box"&gt;
-        어려을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다.
+        어렸을 때부터 나만의 공간을 만드는 것을 좋아했고 나만의 다락방을 좋아했다. 
+        단 한 사람이라도 내가 만든 공간 속에서 영감을 받거나 마음이 움직였으면 좋겠다. 
+        서울에는 집이 없지만, 이곳에서는 나만의 집이 많다. 
+        그 집은 비용도 들지 않고 언제든지 만들 수 있다. 
+        나만의 공간을 마음것 만들 수 있다는 건 코딩에 엄청난 매력인거 같다. 
+        그 한구석에 나만의 꿈을 설계하고 디자인을 하며 앞으로도 살고 싶다.
     &lt;/div&gt;
     &lt;div class="box"&gt;
-        Since I was young, I liked to make my own space and I liked my own attic.
+        Since I was young, I liked to make my own space and I liked my own attic. 
+        I hope that even one person will be inspired or moved in the space I created. 
+        I don't have a house in Seoul, but I have a lot of my own houses here. 
+        The house can be built at any time without cost. 
+        I think being able to create my own space is a great attraction for coding. 
+        I want to design and design my own dream in one corner and live in the future.
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
@@ -409,9 +432,14 @@ hljs.highlightAll();
     display: flex;
 }
 #sample1 .box-wrap .box {
-    width: 48%;
+    width: 49%;
     background-color: #cae3ff;
+    padding: 10px;
     margin-right: 2%;
+}
+#sample1 .box-wrap .box span {
+    border: 1px solid #64acff;
+    display: inline-block;
 }
 </code></pre>
                                 </div>
@@ -442,6 +470,7 @@ hljs.highlightAll();
                     </script>           
                     <!-- //Sample1 -->
 
+
                     <h3>호환성(Compatibility)</h3>
                     <div class="table">
                         <table class="compatibility">
@@ -469,7 +498,7 @@ hljs.highlightAll();
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="ce" scope="row">width</td>
+                                    <td class="ce" scope="row">height</td>
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 크롬 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 파이어폭스 -->
                                     <td class="ce"><span title="사용 가능합니다.">○</span></td><!-- 사파리 -->
@@ -563,7 +592,6 @@ hljs.highlightAll();
                         <li>width 속성은 요소의 가로 크기를 설정합니다.</li>
                         <li>max-width 속성은 요소의 최대 가로 크기를 설정합니다.</li>
                         <li>min-width 속성은 요소의 최소 가로 크기를 설정합니다.</li>
-
                         <li>height 속성은 요소의 세로 크기를 설정합니다.</li>
                         <li>max-height 속성은 요소의 최대 세로 크기를 설정합니다.</li>
                         <li>min-height 속성은 요소의 최소 세로 크기를 설정합니다.</li>
@@ -602,5 +630,6 @@ hljs.highlightAll();
     <script src="../assets/js/webs.js"></script>
 </body>
 </html>
+
 
 <!-- width,max-width,min-width,height,max-height,min-height -->
