@@ -269,8 +269,6 @@
   color: #fff;
   background: #000;
   padding: 4px 4px 2px 4px;
-  margin-top: 50px;
-  margin-bottom: 10px;
   border-radius: 2px;
 }
 
@@ -281,14 +279,13 @@
   color: #666;
 }
 
-.blog__contents ul {
+/* .blog__contents ul {
   padding-left: 20px;
-}
+} */
 
 .blog__contents li {
   font-size: 16px;
   line-height: 1.8;
-  list-style: disc;
   color: #666;
 }
 
@@ -305,6 +302,16 @@
   margin-bottom: 10px;
   line-height: 1.6;
   color: #666;
+}
+
+.blog__contents details {
+  cursor: pointer;
+}
+.blog__contents details > div {
+  background-color: #ecedff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .blog__contents p strong {
