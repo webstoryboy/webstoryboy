@@ -49,6 +49,7 @@
 https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex01/index.html  
 https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/index.html  
 
+https://webstoryboy.github.io/webstoryboy/w_tutorial/javascript/javascriptTest01.html
 https://webstoryboy.github.io/webstoryboy/w_tutorial/javascript/javascriptTest02.html
 
 
