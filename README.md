@@ -1,9 +1,7 @@
 ## Hi there 👋 어떤 일이라도 노력하고 즐기면  그 결과는 빛을 바란다고 생각합니다.
 
 
-##
-https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex01/index.html  
-https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/index.html     
+   
 
 
 ### 👨‍💻 프로그래밍 & 마크업 언어
@@ -44,5 +42,14 @@ https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/index.html
   <a href="#"><img alt="Postman" src="https://img.shields.io/badge/Postman-FF6C37?logo=Postman&logoColor=white"></a>
   <a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual Studio Code-007ACC?logo=Visual Studio Code&logoColor=white"></a>
 </div>
+
+
+
+##
+https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex01/index.html  
+https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/index.html  
+
+https://webstoryboy.github.io/webstoryboy/w_tutorial/javascript/javascriptTest02.html
+
 
 
