@@ -306,6 +306,7 @@
 
 .blog__contents details {
   cursor: pointer;
+  margin-bottom: 15px;
 }
 .blog__contents details > div {
   background-color: #ecedff;
