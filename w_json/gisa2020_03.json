@@ -1,0 +1,674 @@
+[
+    {
+        "subject": "소프트웨어 설계",
+        "question": "요구사항 분석 시에 필요한 기술로 가장 거리가 먼 것은?",
+        "correct_answer": "설계 및 코딩 기술",
+        "incorrect_answers": ["청취과 인터뷰 질문 기술","분석과 중재기술","관찰 및 모델 작성 기술"]
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "다음 내용이 설명하는 디자인 패턴은?",
+        "question_desc": "- 객체를 생성하기 위한 인터페이스를 정의하여 어떤 클래스가 인스턴스화될 것인지는 서브 클래스가 결정하도록 하는 것<br>- Virtual-Constructor패턴이라고도 한다.",
+        "correct_answer": "Factory Method 패턴",
+        "incorrect_answers": ["Visitor 패턴","Observer 패턴","Bridge 패턴"],
+        "keyword" : "디자인 패턴"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "럼바우 객체 지향 분석과 거리가 먼 것은?",
+        "correct_answer": "정적 모델링",
+        "incorrect_answers": ["기능 모델링","동적 모델링","객체 모델링"]
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "애자일 기법에 대한 설명으로 맞지 않은 것은?",
+        "correct_answer": "계획에 중점을 두어 변경 대응이 난해하다.",
+        "incorrect_answers": ["절차와 도구보다 개인과 소통을 중요하게 생각한다.","소프트웨어가 잘 실행되는데 가치를 둔다.","고객과의 피드백을 중요하게 생각한다."],
+        "desc": "에자일에 핵심가치는 사용자와의 상호작용, 문서보다는 실행, 계약보다는 고객과의 협업, 계획보다는 변화 대응에 중점을 두고 있습니다.",
+        "keyword": "애자일"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "미들웨어 솔루션의 유형에 포함되지 않는 것은?",
+        "correct_answer": "Web Server",
+        "incorrect_answers": ["WAS","RPC","ORB"],
+        "desc": "WAS(웹 애플리케이션 서버) : 웹 환경에서 동적인 콘텐츠를 처리하기 위한 미들웨어입니다.<br>RPC(Remote Procedure Call) : 원격 프로시저 호출 미들웨어입니다.<br>ORB(Object Request Broker) : 객체 지향 미들웨어로 객체를 생성, 배포, 관리하는 미들웨어입니다.",
+        "keyword": "미들웨어",
+        "keyword_num": "34"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "UML에서 시퀀스 다이어그램의 구성 항목에 해당하지 않는 것은?",
+        "correct_answer": "확장",
+        "incorrect_answers": ["생명선","실행","메시지"],
+        "desc": "시퀀스 다이어그램 구성 항목에는 생명선(life line), 메시지, 활성(실행) 객체가 있습니다.",
+        "keyword": "UML",
+        "keyword_num": "31"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "객체지향에서 정보 은닉과 가장 밀접한 관계가 있는 것은?",
+        "correct_answer": "Encapsulation",
+        "incorrect_answers": ["Class","Method","Instance"],
+        "desc": "캡슐화(Encapsulation)는 공개된 정보만 접근 조작이 가능하고 객체가 실제 데이터를 처리하는 과정을 알 수가 없습니다.",
+        "keyword": "객체지향",
+        "keyword_num": "22"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "디자인 패턴 중에서 행위적 패턴에 속하지 않는 것은?",
+        "correct_answer": "프로토타입(Prototype) 패턴",
+        "incorrect_answers": ["커맨드(Command) 패턴","옵저버(Obseerver) 패턴","상태(State) 패턴"],
+        "desc": "행위적 패턴(Behavioral Pattern)에는 책임 연쇄(Chain of Responsibility), 커맨드(Command), 인터프리터(Interpreter), 반복자(Iterator), 중재자(Mediator), 메멘토(Memento), 옵서버(Observer), 상태(State), 전략(Strategy), 템플릿 메소드(template Method), 방문자(Visitor)가 있습니다.",
+        "keyword": "디자인 패턴",
+        "keyword_num": "24"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "UI 설계 원칙 중 누구나 쉽게 이해하고 사용할 수 있어야 한다는 원칙은?",
+        "correct_answer": "직관성",
+        "incorrect_answers": ["희소성","유연성","멀티운용성"],
+        "keyword": "UI",
+        "keyword_num": "5"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "코드의 기본 기능으로 거리가 먼 것은?",
+        "correct_answer": "복잡성",
+        "incorrect_answers": ["표준화","분류","식별"],
+        "desc": "코드의 주요 기능으로는 식별 기능, 분류 기능, 배열 기능, 표준화 기능이 있습니다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "다음 ( ) 안에 들어갈 내용으로 옳은 것은?",
+        "question_desc": "컴포넌트 설계시 '( )에 의한 설계'를 따를 경우, 해당 명세에서는<br>(1) 컴포넌트의 오퍼레이션 사용 전에 참이 되어야 할 선행조건<br>(2) 사용 후 만족되어야 할 결과조건<br>(3) 오퍼레이션이 실행되는 동안 항상 만족되어야 할 불변조건 등이 포함되어야 한다.",
+        "correct_answer": "협약(Contract)",
+        "incorrect_answers": ["프로토콜(Protocol)","패턴(Pattern)","관계(Relation)"],
+        "desc": "협약에 의한 설계시 선행조건(precondition), 결과조건(postcondition), 불변조건(invariant)의 타입이 있습니다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "UML에서 활용되는 다이어그램 중, 시스템의 동작을 표현하는 행위(Behavioral) 다이어그램에 해당하지 않는 것은?",
+        "correct_answer": "배치 다이어그램(Deployment Diagram)",
+        "incorrect_answers": ["유스케이스 다이어그램(Use Case Diagram)","시퀀스 다이어그램(Sequence Diagram)","활동 다이어그램(Activity Diagram)"],
+        "desc": "행위(Behavioral) 다이어그램에는 유스케이스(UseCase), 시퀀스(Sequence), 커뮤니케이션(Communication), 상태(State), 활동(Activity), 상호작용 개요(Interaction Overview), 타이밍(Timing) 다이어그램이 있습니다.",
+        "keyword": "UML",
+        "keyword_num": "31"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "객체 지향 소프트웨어 공학에서 하나 이상의 유사한 객체들을 묶어서 하나의 공통된 특성을 표현한 것은?",
+        "correct_answer": "클래스",
+        "incorrect_answers": ["트랜지션","시퀀스","서브루틴"],
+        "desc": "클래스는 공통된 속성과 연산(행위)을 갖는 객체의 집합을 의미합니다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "아래의 UML 모델에서 '차' 클래스와 각 클래스의 관계로 옳은 것은?",
+        "question_img": "gisa2020_03_01",
+        "correct_answer": "일반화 관계",
+        "incorrect_answers": ["추상화 관계","의존 관계","그룹 관계"],
+        "keyword": "UML",
+        "keyword_num": "31"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "객체지향 소프트웨어 설계시 디자인 패턴을 구성하는 요소로서 가장 거리가 먼 것은?",
+        "correct_answer": "개발자 이름",
+        "incorrect_answers": ["문제 및 배경","사례","샘플코드"]
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "자료 사전에서 자료의 반복을 의미하는 것은?",
+        "correct_answer": "{}",
+        "incorrect_answers": ["=","()","[]"],
+        "desc": "= : 정의, + : 연결, () : 생략, {} : 반복, ** : 주석"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "객체지향 설계 원칙 중, 서브타입(상속받은 하위 클래스)은 어디에서나 자신의 기반타입(상위클래스)으로 교체할 수 있어야 함을 의미하는 원칙은?",
+        "correct_answer": "LSP(Liskov Substitution Principle)",
+        "incorrect_answers": ["ISP(Interface Segregation Principle)","DIP(Dependency Inversion Principle)","SRP(Single Responsibility Principle)"],
+        "desc": "ISP(인터페이스 분리 원칙), DIP(의존 역전 원칙), SRP(단일 책임 원칙)"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "자료흐름도(Data Flow Diagram)의 구성요소로 옳은 것은?",
+        "correct_answer": " process, data flow, data store, terminator",
+        "incorrect_answers": ["process, data flow, data store, comment","data flow, data store, terminator, data dictionary","process, data store, terminator, mini-spec"],
+        "desc": "자료 흐름도 구성 요소애는 프로세스(Process), 자료 흐름(Data Flow), 자료 저장소(Data Store), 단말(Terminator)이 있습니다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "CASE(Computer-Aided Software Engineering)도구에 대한 설명으로 거리가 먼 것은?",
+        "correct_answer": "소프트웨어 개발 과정의 일부 또는 전체를 자동화하기 위한 도구이다.",
+        "incorrect_answers": ["표준화된 개발 환경 구축 및 문서 자동화 기능을 제공한다.","작업 과정 및 데이터 공유를 통해 작업자간 커뮤니케이션을 증대한다.","2000년대 이후 소개되었으며, 객체지향 시스템에 한해 효과적으로 활용된다."]
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "인터페이스 요구 사항 검토 방법에 대한 설명이 옳은 것은?",
+        "correct_answer": "동료검토 : 요구 사항 명세서 작성자가 요구 사항 명세서를 설명하고 이해관계자들이 설명을 들으면서 결함을 발견",
+        "incorrect_answers": ["리팩토링 : 작성자 이외의 전문 검토 그룹이 요구사항 명세서를 상세히 조사하여 결함, 표준 위배, 문제점 등을 파악","인스펙션 : 자동화된 요구 사항 관리 도구를 이용하여 요구 사항 추적성과 일관성을 검토","CASE 도구 : 검토 자료를 회의 전에 배포해서 사전 검토한 후 짧은 시간 동안 검토 회의를 진행하면서 결함을 발견"],
+        "desc": "리팩토링(Refactoring) : 외부 동작을 바꾸지 않으면서 내부 구조를 개선하는 방법<br> 인스펙션(Inspection) : 명세서 작성자를 제외한 다른 검토 전문가들이 명세서를 확인하면서 결함을 발견하는 방법<br>CASE 도구 : 일관성 분석을 통해 요구사항 변경사항의 추적 및 분석, 관리하고, 표준 준수 여부를 확인하는 방법",
+        "keyword": "요구사항 분석",
+        "keyword_num": "35"
+    },
+    {
+        "subject": "소프트웨어 개발",
+        "question": "인터페이스 보안을 위해 네트워크 영역에 적용될 수 있는 솔루션과 거리가 먼 것은?",
+        "correct_answer": "SMTP",
+        "incorrect_answers": ["IPSec","SSL","S-HTTP"],
+        "desc": "IPSec : IP 패킷 단위의 데이터 변조 방지 및 은닉 기능 제공.<br>SSL : 인증, 암호화, 무결성을 보장하는 프로토콜,<br>S-HTTP : 클라이언트와 서버 간 전송되는 모든 메시지를 암호화하는 프로토콜<br>SMTP(Simple Mail Transfer Protocol)은 전자 우편을 교환하는 서비스를 제공하는 프로토콜"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "소프트웨어 공학의 기본 원칙이라고 볼 수 없는 것은?",
+        "correct_answer": "최대한 많은 인력 투입",
+        "incorrect_answers": ["품질 높은 소프트웨어 상품 개발","지속적인 검증 시행","결과에 대한 명확한 기록 유지"]
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "패키지 소프트웨어의 일반적인 제품 품질 요구사항 및 테스트를 위한 국제 표준은?",
+        "correct_answer": " ISO/IEC 12119",
+        "incorrect_answers": ["ISO/IEC 2196","IEEE 19554","ISO/IEC 14959"],
+        "desc": "ISO/IEC 9126 : 소프트웨어 품질 특성 및 척도에 대한 표준화<br>ISO/IEC 14598 : 소프트웨어 제품 평가<br>ISO/IEC 9126 사용을 위한 절차와 기본 상황 및 소프트웨어 평가 프로세스에 대한 표준 규정<br>ISO/IEC 12119 : 패키지 소프트웨어 평가"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 중 클린 코드 작성원칙으로 거리가 먼 것은?",
+        "correct_answer": "중복이 최대화된 코드 작성",
+        "incorrect_answers": ["누구든지 쉽게 이해하는 코드 작성","다른 모듈에 미치는 영향 최소화","단순, 명료한 코드 작성"]
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "블랙박스 테스트의 유형으로 틀린 것은?",
+        "correct_answer": "조건, 루프 검사",
+        "incorrect_answers": ["경계값 분석","오류 예측","동등 분할 기법"],
+        "desc": "블랙박스 테스트 유형에는 동치 분할 검사(Equivalence Partitioning Testing), 경계값 분석(Boundary Value Analysis), 원인 효과 그래프 검사(Cause Effect Graphing Testing), 오류 예측 검사(Error Guessing), 비교 검사(Comparison Testing)가 있습니다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "제어흐름 그래프가 다음과 같을 때 McCabe의 cyclomatic 수는 얼마인가?",
+        "question_img": "gisa2020_03_02",
+        "correct_answer": "4",
+        "incorrect_answers": ["3","5","6"],
+        "desc": "순회복잡도 = 엣지(화살표) - 노드(동그라미) + 2"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 자료에 대하여 선택(Selection) 정렬을 이용하여 오름차순으로 정렬하고자 한다. 3회전 후의 결과로 옳은 것은?",
+        "question_desc": "37, 14, 17, 40, 35",
+        "correct_answer": "14, 17, 35, 40, 37",
+        "incorrect_answers": ["14, 17, 37, 40, 35","14, 37, 17, 40, 35","17, 14, 37, 35, 40"],
+        "desc": "선택정렬은 가장 작은 값을 찾아 첫번째 값과 교환합니다.<br>1회전 14 37 17 40 35<br>2회전 14 17 37 40 35<br>3회전 14 17 35 40 37",
+        "keyword": "정렬"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "형상 관리 도구의 주요 기능으로 거리가 먼 것은?",
+        "correct_answer": "정규화(Normalization)",
+        "incorrect_answers": ["체크인(Check-in)"," 체크아웃(Check-out)","커밋(commit)"],
+        "desc": "형상 관리에는 저장소(Repository), 커밋(Commit), 체크아웃(Check-out), 체크인(Check-in), 동기화, 업데이트, 되될리기 등이 있습니다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": " 다음 트리를 Preorder 운행법으로 운행할 경우 가장 먼저 탐색되는 것은?",
+        "question_img": "gisa2020_03_03",
+        "correct_answer": "A",
+        "incorrect_answers": ["B","D","G"],
+        "desc": "Preorder 운행 : Root → Left → Right<br>Inorder 운행 : Left → Root → Right<br>Postorder 운행 : Left → Right → Root"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "소프트웨어 품질 목표 중 주어진 시간동안 주어진 기능을 오류없이 수행하는 정도를 나타내는 것은?",
+        "correct_answer": "신뢰성",
+        "incorrect_answers": ["직관성","용이성","이식성"],
+        "desc": "직관성: 판단이나 추론 없이 대상을 직접 인식할 수 있는 특성<br>용이성: 사용이 간단하고 쉬움<br>이식성: 다른 플랫폼으로 용이하게 옮길 수 있는 정도"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "알고리즘 설계 기법으로 거리가 먼 것은?",
+        "correct_answer": "Static Block",
+        "incorrect_answers": ["Divide and Conquer","Greedy","Backtracking"],
+        "desc": "Divide and Conquer(분할 정복 알고리즘): 작은 문제로 분할하여 문제를 해결하는 알고리즘<br>Greedy(탐욕): 가장 최적의 방법을 선택하는 알고리즘<br>Backtracking: 막힌 곳으로 되돌아가서 다시 찾아나아가는 방식의 알고리즘"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "제품 소프트웨어의 형상 관리 역할로 틀린 것은?",
+        "correct_answer": "프로젝트 개발비용을 효율적으로 관리",
+        "incorrect_answers": ["형상 관리를 통해 이전 리버전이나 버전에 대한 정보에 접근 가능하여 배포본 관리에 유용","불필요한 사용자의 소스 수정 제한","동일한 프로젝트에 대해 여러 개발자 동시 개발 가능"],
+        "desc": "형상관리는 소스를 관리하기 위한 방법으로 개발 비용과는 거리가 멀다.",
+        "keyword": "형상 관리",
+        "keyword_num": "39"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "제품 소프트웨어 패키징 도구 활용 시 고려사항이 아닌 것은?",
+        "correct_answer": "내부 콘텐츠에 대한 보안은 고려하지 않는다.",
+        "incorrect_answers": ["제품 소프트웨어의 종류에 적합한 암호화 알고리즘을 고려한다.","추가로 다양한 이기종 연동을 고려한다.","사용자 편의성을 위한 복잡성 및 비효율성 문제를 고려한다."],
+        "desc": "제품 소프트웨어 패키징 도구 활용 시 암호화, 보안, 연동, 편의성, 비효율성 문제, 암호화, 알고리즘 등을 고려합니다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "디지털 저작권 관리(DRM) 기술과 거리가 먼 것은?",
+        "correct_answer": "콘텐츠 오류 감지 및 복구",
+        "incorrect_answers": ["콘텐츠 암호화 및 키 관리","콘텐츠 식별체계 표현","라이센스 발급 및 관리"],
+        "desc": "디지털 저작권 관리(DRM)의 기술 요소에는 암호화(Encryption), 키관리(Key Management), 암호와 파일 생성(Packager), 식별 기술(Identification), 저작권 표현(Right Expression), 정책 관리(Policy Management), 크랙방지(Tamper Resistance), 인증(Authentication) 등이 있다.",
+        "keyword": "DRM"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "물리데이터 저장소의 파티션 설계에서 파티션 유형으로 옳지 않은 것은?",
+        "correct_answer": "유닛분할(Unit Partitioning)",
+        "incorrect_answers": ["범위분할(Range Partitioning)","해시분할(Hash Partitioning)","조합분할(Composite Partitioning)"],
+        "desc": "파티션 유형에는 범위 분할(Range Partitioning), 해시 분할(Hash Partitioning), 조합 분할(Composite Partitioning) 등이 있습니다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음이 설명하는 애플리케이션 통합 테스트 유형은?",
+        "question_desc": "- 깊이 우선 방식 또는 너비 우선 방식이 있다.<br>- 상위 컴포넌트를 테스트 하고 집중적으로 하위 컴포넌트를 테스트 한다.<br>- 하위 컴포넌트 개발이 완료되지 않은 경우 스텁(Stub)을 사용하기도 한다.",
+        "correct_answer": "하향식 통합 테스트",
+        "incorrect_answers": ["상향식 통합 테스트","회귀 테스트","빅뱅 테스트"],
+        "desc": "상향식 통합 테스트: 하위 모듈에서 상위 모듈 방항으로 통합하면서 테스트, 하나의 주요 제어 모듈과 관련된 종속 모듈의 그룹인 클러스터 필요, 상위 모듈 개발이 완료되지 않는 경우 드라이버(Driver)를 사용하기도 함",
+        "keyword": "통합테스트",
+        "keyword_num": "3"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "인터페이스 구현시 사용하는 기술 중 다음 내용이 설명하는 것은?",
+        "question_desc": "Javascript를 사용한 비동기 통신기술로 클라이언트와 서버간에 XML 데이터를 주고 받는 기술",
+        "correct_answer": "AJAX",
+        "incorrect_answers": ["Procedure","Trigger","Greedy"],
+        "desc": "Procedure: 주기적인 작업을 진행하기 위한 작업 단위<br>Trigger: 특정 상황에서 이벤트가 발생하면 자동으로 실행되는 작업 단위<br>Greedy: 탐욕 알고리즘"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": " 소프트웨어 재공학이 소프트웨어의 재개발에 비해 갖는 장점으로 거리가 먼 것은?",
+        "correct_answer": "개발시간의 증가",
+        "incorrect_answers": ["위험부담 감소","비용 절감","시스템 명세의 오류억제"],
+        "desc": "소프트웨어 3R(Reverse-Engineering, Re-Engineering, Re-Use)은 개발 생산성 향상, 비용 절감, 신속한 대응, 유지보수 효율성 향상, 테스트 용이 및 변경, 위기극복 등을 위해 필요합니다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "알파, 베타 테스트와 가장 밀접한 연관이 있는 테스트 단계는?",
+        "correct_answer": "인수 테스트",
+        "incorrect_answers": ["단위 테스트","시스템 테스트","통합 테스트"],
+        "desc": "인수 테스트에는 사용자 인수 테스트, 운영상의 인수 테스트, 계약 인수 테스트, 규정 인수 테스트, 알파 테스트, 베타 테스트 등이 있습니다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 트리의 차수(degree)는?",
+        "question_img": "gisa2020_03_04",
+        "correct_answer": "3",
+        "incorrect_answers": ["2","4","5"],
+        "desc": "전체 트리 중에서 가장 많은 차수를 말합니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "릴레이션 R의 모든 결정자(determinant)가 후보키이면 그 릴레이션 R은 어떤 정규형에 속하는가?",
+        "correct_answer": "보이스/코드 정규형",
+        "incorrect_answers": ["제1 정규형","제2 정규형","제4 정규형"],
+        "desc": "제1 정규형: 반복그룹을 제거<br>제2 정규형: 부분 함수적 종속 제거<br>제3 정규형: 이행적 함수 종속 제거<br>보이스/코드 정규형: 모든 결정자가 후보키<br>제4 정규형: 다치 종속 제거"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "다음 관계형 데이터 모델에 대한 설명으로 옳은 것은?",
+        "question_img": "gisa2020_03_05",
+        "correct_answer": "relation 1개, attribute 3개, tuple 5개",
+        "incorrect_answers": ["relation 3개, attribute 3개, tuple 5개","relation 3개, attribute 5개, tuple 3개","relation 1개, attribute 5개, tuple 3개"],
+        "desc": "relation: 테이블 수, attribute: 열의 수, tuple: 행의 수"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "Commit과 Rollback 명령어에 의해 보장 받는 트랜잭션의 특성은?",
+        "correct_answer": "원자성",
+        "incorrect_answers": ["병행성","보안성","로그"],
+        "desc": "원자성(Atomicity)은 트랜잭션을 구성하는 연산은 모두 반영(Commit:실행)하거나 또는 모두 반영(Rollback:복구)되지 않아야 한다.",
+        "keyword": "트랜잭션",
+        "keyword_num": "29"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "관계 데이터베이스인 테이블 R1에 대한 아래 SQL 문의 실행결과로 옳은 것은?",
+        "question_img": "gisa2020_03_06",
+        "correct_answer": "2",
+        "incorrect_answers": ["1","3","4"],
+        "desc": "DISTINCT는 중복 튜플 발견 시 그 중 첫번째 하나만 검색합니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "DCL(Data Control Language) 명령어가 아닌 것은?",
+        "correct_answer": "SELECT",
+        "incorrect_answers": ["COMMIT","ROLLBACK","GRANT"],
+        "desc": "DDL(데이터 정의어): CREATE, ALTER, DROP<br>DML(데이터 조작어): SELECT, INSERT, UPDATE, DELETE<br>DCL(데이터 제어어): GRANT, REVOKE, COMMIT, ROLLBACK",
+        "keyword": "SQL 명령어",
+        "keyword_num": "20"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "병행제어 기법 중 로킹에 대한 설명으로 옳지 않은 것은?",
+        "correct_answer": "로킹의 단위가 커지면 데이터베이스 공유도가 증가한다.",
+        "incorrect_answers": ["로킹의 대상이 되는 객체의 크기를 로킹 단위라고 한다.","데이터베이스, 파일, 레코드 등은 로킹 단위가 될 수 있다.","로킹의 단위가 작아지면 로킹 오버헤드가 증가한다."],
+        "desc": "로킹(Locking)은 하나의 트랜잭션이 실행하는 동안 특정 데이터 항목에 대해서 다른 트랜잭션이 동시에 접근하지 못하도록 상호배재 기능을 제공하는 기법이다. 단위가 크면 단위 수 감소, 제어 간편, 병행성(공유도)이 감소하고, 단위가 작으면 단위 수 증가, 제어 불편, 병행성(공유도)이 증가한다.",
+        "keyword": "로킹",
+        "keyword_num": "40"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "관계 데이터모델의 무결성 제약 중 기본키 값의 속성 값이 널(Null)값이 아닌 원자 값을 갖는 성질은?",
+        "correct_answer": "개체 무결성",
+        "incorrect_answers": ["참조 무결성","도메인 무결성","튜플의 유일성"],
+        "desc": "개체 무결성: 기본키가 null이 아닌 고유값을 유지<br>참조 무결성: 외래키가 null이거나 기본키의 값을 참조<br>도메인 무결성: 지정한 범위의 데이터 입력만 가능"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "뷰(View)의 장점이 아닌 것은?",
+        "correct_answer": "뷰 자체로 인덱스를 가짐",
+        "incorrect_answers": ["데이터 보안 용이","논리적 독립성 제공","사용자 데이터 관리 용이"],
+        "desc": "뷰는 논리적 데이터로 독립성을 제공하고 데이터 관리를 간단하게 해주고, 접근 제어를 통한 자동 보안을 제공합니다. 하지만 독립적인 인덱스와 뷰의 정의를 변경할 수 없으며, 삽입, 삭제, 갱신, 연산에 제약이 따릅니다.",
+        "keyword": "뷰(View)",
+        "keyword_num": "32"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "분산 데이터베이스의 투명성(Transparency)에 해당 하지 않는 것은?",
+        "correct_answer": "Media Access Transparency",
+        "incorrect_answers": ["Location Transparency","Replication Transparency","Failure Transparency"],
+        "desc": "분산 데이터베이스 투명성(Transparency)에는 분산, 위치, 지역, 중복, 장애, 병행 등이 있습니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "정규화의 목적으로 옳지 않은 것은?",
+        "correct_answer": "중복을 배제하여 삽입, 삭제, 갱신 이상의 발생을 야기한다.",
+        "incorrect_answers": ["어떠한 릴레이션이라도 데이터베이스 내에서 표현 가능하게 만든다.","데이터 삽입시 릴레이션을 재구성할 필요성을 줄인다.","효과적인 검색 알고리즘을 생성할 수 있다."],
+        "desc": "정규화의 목적은 삽입 이상(Insertion Anomaly), 갱신 이상(Modification Anomaly), 삭제 이상(Deletion Anomaly) 등의 이상들을 제거하기 위함입니다.",
+        "keyword": "정규화",
+        "keyword_num": "19"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "다음에 해당하는 함수 종속의 추론 규칙은?",
+        "question_desc": "X -> Y이고 Y -> Z이면  X -> Z이다.",
+        "correct_answer": "이행 규칙",
+        "incorrect_answers": ["분해 규칙","반사 규칙","결합 규칙"]
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "다음 R과 S 두 릴레이션에 대한 Division 연산의 수행 결과는?",
+        "question_img": "gisa2020_03_07",
+        "correct_answer": "4",
+        "incorrect_answers": ["1","2","3"],
+        "desc": "릴레이션 s의 원소{1,A}를 모두 가진 튜플에서, 릴레이션 s에 없는 속성만 출력합니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "player 테이블에는 player_name, team_id, height 컬럼이 존재한다. 아래 SQL문에서 문법적 오류가 있는 부분은?",
+        "question_desc": "(1) SELECT player_name,height<br>(2) FROM player<br>(3) WHERE team_id = 'korea'<br>(4) AND height BETWEEN 170 or 180;",
+        "correct_answer": "4",
+        "incorrect_answers": ["1","2","3"],
+        "desc": "BETWEEN 170 AND 180"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "데이터베이스 로그(log)를 필요로 하는 회복 기법은?",
+        "correct_answer": "즉각 갱신 기법",
+        "incorrect_answers": ["대수적 코딩 방법","타임 스탬프 기법","폴딩 기법"],
+        "desc": "즉각 갱신 기법(Immediate Update) : 트랜잭션의 연산을 수행하여 데이터를 갱신할 때 실제 데이터 베이스에 반영하는 기법으로 트랜잭션 수행으로 갱신할 내용은 로그(Log)에 보관합니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "DML(Data Manipulation Language) 명령어가 아닌 것은?",
+        "correct_answer": "ALTER",
+        "incorrect_answers": ["INSERT","UPDATE","DELETE"],
+        "desc": "DDL(데이터 정의어): CREATE, ALTER, DROP<br>DML(데이터 조작어): SELECT, INSERT, UPDATE, DELETE<br>DCL(데이터 제어어): GRANT, REVOKE, COMMIT, ROLLBACK",
+        "keyword": "SQL 명령어",
+        "keyword_num": "20"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": " 다음과 같이 위쪽 릴레이션을 아래쪽 릴레이션으로 정규화를 하였을 때 어떤 정규화 작업을 한 것인가?",
+        "question_img": "gisa2020_03_08",
+        "correct_answer": "제1정규형",
+        "incorrect_answers": ["제2정규형","제3정규형","제4정규형"],
+        "desc": "제1 정규형: 반복그룹을 제거<br>제2 정규형: 부분 함수적 종속 제거<br>제3 정규형: 이행적 함수 종속 제거<br>보이스/코드 정규형: 모든 결정자가 후보키<br>제4 정규형: 다치 종속 제거",
+        "keyword": "정규화",
+        "keyword_num": "19"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": " 관계대수의 순수관계 연산자가 아닌 것은?",
+        "correct_answer": "Cartesian Product",
+        "incorrect_answers": ["Select","Division","Project"],
+        "desc": "순수 관계 연산자에는 select(σ), project(Π), join(?), division(÷)가 있습니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "다음 중 SQL의 집계 함수(aggregation function)가 아닌 것은?",
+        "correct_answer": "CREATE",
+        "incorrect_answers": ["AVG","COUNT","SUM"],
+        "desc": "집계 함수 종류애는 AVG(평균), COUNT(개수), MAX(최대값), MIN(최소값), SUM(합계)가 있습니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "릴레이션 조작 시 데이터들이 불필요하게 중복되어 예기치 않게 발생하는 곤란한 현상을 의미하는 것은?",
+        "correct_answer": "anomaly",
+        "incorrect_answers": ["normalization","rollback","cardinality"],
+        "desc": "normalization: 정규화, rollback: 트랜잭션 취소, cardinality: 튜플의 개수",
+        "keyword": "정규화",
+        "keyword_num": "19"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "릴레이션에 대한 설명으로 거리가 먼 것은?",
+        "correct_answer": "한 릴레이션에 포함된 튜플 사이에는 순서가 있다.",
+        "incorrect_answers": ["튜플들의 삽입, 삭제 등의 작업으로 인해 릴레이션은 시간에 따라 변한다.","한 릴레이션에 포함된 튜플들은 모두 상이하다.","애트리뷰트는 논리적으로 쪼갤 수 없는 원자값으로 저장한다."],
+        "keyword": "릴레이션"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 자바 프로그램 조건문에 대해 삼항 조건 연산자를 사용하여 옳게 나타낸 것은?",
+        "question_desc": "int i = 7, j = 9;<br>int k;<br>if(i > j)<br>nbsp;nbsp;nbsp;nbsp; k = i - j<br>else<br>nbsp;nbsp;nbsp;nbsp; k = i + j;",
+        "correct_answer": "int i = 7, j = 9;<br>int k;<br>k = (i > j)?(i - j):(i + j);",
+        "incorrect_answers": ["int i = 7, j = 9;<br>int k;<br>k = (i < j)?(i - j):(i + j);","int i = 7, j = 9;<br>int k;<br>k = (i > j)?(i + j):(i - j);","int i = 7, j = 9;<br>int k;<br>k = (i < j)?(i + j):(i - j);"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 내용이 설명하는 소프트웨어 취약점은?",
+        "question_desc": "메모리를 다루는 데 오류가 발생하며 잘못된 동작을 하는 프로그램 취약점",
+        "correct_answer": "버퍼 오버플로",
+        "incorrect_answers": ["FTP 바운스 공격","SQL 삽입","디렉토리 접근 공격"],
+        "desc": "FTP 바운스 공격: FTP 프로토콜 구조의 허점을 이용한 공격<br>SQL 삽입: 악의적인 SQL문을 실행하여 데이터베이스를 비정상적으로 조작<br>디렉토리 접근 공격: 웹브라우저를 이용해 웹 서버의 파일 목록을 접근하는 취약점"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 중 bash 쉘 스크립트에서 사용할 수 있는 제어문이 아닌 것은?",
+        "correct_answer": "repeat_do",
+        "incorrect_answers": ["if","for","while"],
+        "desc": "쉘 스크립트에서 사용할 수 있는 제어문에는 if, for, while, case가 있습니다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "IPv6에 대한 설명으로 틀린 것은?",
+        "correct_answer": "32비트의 주소체계를 사용한다.",
+        "incorrect_answers": ["멀티미디어의 실시간 처리가 가능하다.","IPv4보다 보안성이 강화되었다.","자동으로 네트워크 환경구성이 가능하다."]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "효과적인 모듈 설계를 위한 유의사항으로 거리가 먼 것은?",
+        "correct_answer": "모듈의 기능은 예측이 가능해야 하며 지나치게 제한적 이여야 한다.",
+        "incorrect_answers": ["모듈간의 결합도를 약하게 하면 모듈 독립성이 향상된다.","복잡도와 중복성을 줄이고 일관성을 유지시킨다.","유지보수가 용이해야 한다."]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "HRN 방식으로 스케줄링 할 경우, 입력된 작업이 다음과 같을 때 처리되는 작업 순서로 옳은 것은?",
+        "question_img": "gisa2020_03_09",
+        "correct_answer": "D→B→C→A",
+        "incorrect_answers": ["A→B→C→D","A→C→B→D","A→C→B→D"],
+        "desc": "HRN 방식의 우선순위 산정 공식 : (대기시간 + 서비스시간) / 서비스 시간"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "운영체제에 대한 설명으로 거리가 먼 것은?",
+        "correct_answer": "운영체제의 종류로는 매크로 프로세서, 어셈블러, 컴파일러 등이 있다.",
+        "incorrect_answers": ["다중 사용자와 다중 응용프로그램 환경하에서 자원의 현재 상태를 파악하고 자원 분배를 위한 스케줄링을 담당한다.","CPU, 메모리 공간, 기억 장치, 입출력 장치 등의 자원을 관리한다","입출력 장치와 사용자 프로그램을 제어한다."],
+        "desc": "운영체제에 Windows, Linux, Unix, Mac 등이 있으며, 매크로 프로세서는 시스템 소프트웨어입니다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "배치 프로그램의 필수 요소에 대한 설명으로 틀린 것은?",
+        "correct_answer": "무결성은 주어진 시간 내에 처리를 완료할 수 있어야 하고, 동시에 동작하고 있는 다른 애플리케이션을 방해하지 말아야 한다.",
+        "incorrect_answers": ["자동화는 심각한 오류 상황 외에는 사용자의 개입 없이 동작해야 한다.","안정성은 어떤 문제가 생겼는지, 언제 발생했는지 등을 추적할 수 있어야 한다.","대용량 데이터는 대용량의 데이터를 처리할 수 있어야 한다"],
+        "desc": "배치 프로그램의 필수 요소에는 대용량 처리, 자동화, 안정성, 성능, 견고성이 있습니다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "TCP 프로토콜에 대한 설명으로 거리가 먼 것은?",
+        "correct_answer": "기본 헤더 크기는 100byte이고 160byte까지 확장 가능하다.",
+        "incorrect_answers": ["신뢰성이 있는 연결 지향형 전달 서비스이다.","스크림 전송 기능을 제공한다.","순서제어, 오류제어, 흐름제어 기능을 제공한다."],
+        "desc": "기본 헤더 크기는 최소 20byte 최대 60byte, 헤더에 Option값 포함 시 최대 40byte 추가 가능합니다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음이 설명하는 응집도의 유형은?",
+        "question_desc": "모듈이 다수의 관련 기능을 가질 때 모듈안의 구성 요소들이 그 기능을 순차적으로 수행할 경우의 응집도",
+        "correct_answer": "절차적 응집도",
+        "incorrect_answers": ["기능적 응집도","우연적 응집도"," 논리적 응집도"],
+        "desc": "기능적 응집도: 모든 기능이 하나의 목적을 위해 수행<br>우연적 응집도: 서로 관련 없는 요소로만 구성<br>논리적 응집도: 유사한 성격, 형태로 분류되는 요소들이 한 모듈에서 처리되는 경우",
+        "keyword": "응집도"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "OSI-7Layer에서 링크의 설정과 유지 및 종료를 담당하며, 노드간의 오류제어와 흐름제어 기능을 수행하는 계층은?",
+        "correct_answer": "데이터링크 계층",
+        "incorrect_answers": ["물리 계층","세션 계층","응용 계층"],
+        "desc": "응용계층: 사용자에게 서비스 제공<br>표현계층: 데이터변환, 압축, 암호화<br>세션계층: 프로세스 간의 동기화<br>전송계층: 분할/재조립, 연결/흐름제어, 오류제어<br>네트워크계층: 패킷전달, 라우팅<br>데이터링크계층: 노드 사잍 오류/흐름제어, 데이터 전달<br>물리계층: 비트 흐름 전송, 기능과 절차",
+        "keyword": "OSI 7계층"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 중 가장 결합도가 강한 것은?",
+        "correct_answer": "common coupling",
+        "incorrect_answers": ["data coupling","stamp coupling","control coupling"],
+        "desc": "(약)자료(data) - 스탬프(stamp) - 제어(Control) - 외부(External) - 공통(Common) - 내용(Content)(강)",
+        "keyword": "결합도",
+        "keyword_num": "12"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": " 메모리 관리 기법 중 Worst fit 방법을 사용할 경우 10K 크기의 프로그램 실행을 위해서는 어느 부분에 할당되는가?",
+        "question_img": "gisa2020_03_10",
+        "correct_answer": "NO.5",
+        "incorrect_answers": ["NO.2","NO.3","NO.4"],
+        "desc": "first-fit 할당: 할당 가능한 최초의 공간에 할당<br>best-fit: 할당 가능한 공간 중 가장 좁은 곳에 할당<br>worst-fit: 할당 가능한 공간 중 가장 넉넉한 곳에 할당"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": " 200.1.1.0/24 네트워크를 FLSM 방식을 이용하여 10개의 Subnet으로 나누고 ip subnet-zero를 적용했다. 이때 서브네팅된 네트워크 중 10번째 네트워크의 broadcast IP 주소는?",
+        "correct_answer": "200.1.1.159",
+        "incorrect_answers": ["201.1.5.175","202.1.11.254","203.1.255.245"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음은 사용자로부터 입력받은 문자열에서 처음과 끝의 3글자를 추출한 후 합쳐서 출력하는 파이썬 코드에서 ㉠에 들어갈 내용은?(입력값: HELLO WORDL, 최종출력: HELLO)",
+        "question_desc": "String = input('7문자 이상 문자열을 입력하시요:1)<br>m = (㉠)<br>print(m)",
+        "correct_answer": "string[0:3] + string[-3:]",
+        "incorrect_answers": ["string[1:3] + string[-3:]","string[:3] + string[-3:-1]","string[0:] + string[:-1]"],
+        "desc": "[:] 처음부터 끝까지<br>[start:] start 오프셋부터 끝까지<br>[:end] 처음부터 end-1 오프셋까지<br>[start : end] start오프셋부터 end-1 오프셋까지"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "파이썬의 변수 작성 규칙 설명으로 옳지 않은 것은?",
+        "correct_answer": "변수 이름의 중간에 공백을 사용할 수 있다.",
+        "incorrect_answers": ["첫 자리에 숫자를 사용할 수 없다.","영문 대문자/소문자, 숫자, 밑줄(_)의 사용이 가능하다","이미 사용되고 있는 예약어는 사용할 수 없다."],
+        "desc": "밑줄(_)사용은 가능하지만, 공백은 사용할 수 없습니다.",
+        "keyword": "파이썬"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "어떤 모듈이 다른 모듈의 내부 논리 조직을 제어하기 위한 목적으로 제어신호를 이용하여 통신하는 경우이며, 하위 모듈에서 상위 모듈로 제어신호가 이동하여 상위 모듈에게 처리 명령을 부여하는 권리 전도현상이 발생하게 되는 결합도는?",
+        "correct_answer": "control coupling",
+        "incorrect_answers": ["data coupling","stamp coupling","common coupling"],
+        "desc": "자료 결합도(Data Coupling): 매개변수 데이터 공유<br>스탬프 결합도(Stamp Coupling): 데이터 구조 공유<br>제어 결합도(Control Coupling): 데이터 제어 공유<br>공통(Common Coupling): 전역 테이터 공유",
+        "keyword": "결합도",
+        "keyword_num": "12"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 C 프로그램의 결과 값은?",
+        "question_desc": "main(vodi){<br>&nbsp;&nbsp;&nbsp;&nbsp;int i;<br>&nbsp;&nbsp;&nbsp;&nbsp;int sum = 0;<br>&nbsp;&nbsp;&nbsp;&nbsp;for(i=1; i<=10; i=i+2)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sum = sum + i;<br>&nbsp;&nbsp;&nbsp;&nbsp;printf('%d', sum);<br>}",
+        "correct_answer": "25",
+        "incorrect_answers": ["15","19","27"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "UNIX에서 새로운 프로세스를 생성하는 명령어는?",
+        "correct_answer": "fork",
+        "incorrect_answers": ["ls","chmod","cat"],
+        "desc": "ls: 디렉토리나 파일목록 출력, cat: 파일 내용 출력, chmod: 파일이나 디렉토리에 대한 접근권한 변경",
+        "keyword": "UNIX"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "C언어에서 정수 자료형으로 옳은 것은?",
+        "correct_answer": "int",
+        "incorrect_answers": ["float","double","char"],
+        "desc": "char: 문자, float: 실수, double: 실수",
+        "keyword": "C언어",
+        "keyword_num": "42"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "물리적인 사물과 컴퓨터에 동일하게 표현되는 가상의 모델로 실제 물리적인 자산 대신 소프트웨어로 가상화함으로써 실제 자산의 특성에 대한 정확한 정보를 얻을 수 있고, 자산 최적화, 돌발사고 최소화, 생산성 증가 등 설계부터 제조, 서비스에 이르는 모든 과정의 효율성을 향상시킬 수 있는 모델은?",
+        "correct_answer": "디지털 트윈",
+        "incorrect_answers": ["최적화","실행 시간","N-Screen"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "정보보안의 3대 요소에 해당하지 않는 것은?",
+        "correct_answer": "휘발성",
+        "incorrect_answers": ["기밀성","무결성","가용성"],
+        "desc": "기밀성(Confidentiality) : 허락된 사용자만 접근<br>무결성(Integrity) : 허락된 사용자만 변경<br>가용성(Availability) : 허락된 사용자가 필요로 하는 시점에 접근이 가능"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "다음 빈칸에 알맞은 기술은?",
+        "question_desc": "(  )은/는 웹에서 제공하는 정보 및 서비스를 이용하여 새로운 소프트웨어나 서비스, 데이터베이스 등을 만드는 기술이다.",
+        "correct_answer": "Digital Rights Management",
+        "incorrect_answers": ["Quantum Key Distribution","Grayware","Mashup"],
+        "desc": "Quantum Key Distribution: 안전한 통신을 위한 양자 암호 체계<br>Grayware: 사용자 동의하에 설치하는 프로그램"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "기능점수(Functional Point)모형에서 비용산정에 이용되는 요소가 아닌 것은?",
+        "correct_answer": "클래스 인터페이스",
+        "incorrect_answers": ["명령어(사용자 질의수)","데이터파일","출력보고서"],
+        "desc": "FP 모형 비용 산정 기준에는 입력, 출력, 질의, 파일, 인터페이스의 개수별로 단순, 보통, 복잡의 가중치 부여가 있습니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "블록 암호화 방식이 아닌 것은?",
+        "correct_answer": "RC4",
+        "incorrect_answers": ["DES","AES","SEED"],
+        "desc": "블록 암호화 방식에는 DES, RC5, AES, SEED, IDEA가 있습니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "Putnam 모형을 기초로 해서 만든 자동화 추정 도구는?",
+        "correct_answer": "SLIM",
+        "incorrect_answers": ["SQLR/30","NFV","MESH"],
+        "desc": "Putnam 모형이란 소프트웨어 생명주기 전과정 동안 사용될 곡선의 노력 분포를 가정해주는 모형을 말합니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "큰 숫자를 소인수 분해하기 어렵다는 기반 하에 1978년 MIT에 의해 제안된 공개키 암호화 알고리즘은?",
+        "correct_answer": "RSA",
+        "incorrect_answers": ["ARIA","DES","SEED"],
+        "desc": "DES는 블록 암호의 일종으로 미국 NBS에서 국가 표준으로 정한 암호<br>ARIA는 경량 및 하드웨어 구현을 위해 최적화된 국가 암호화 알고리즘<br>SEED는 시드 블록 암호 알고리즘으로 국내 기술로 개발된 128비트 및 256비트 대칭키 블록의 암호 알고리즘",
+        "keyword": "암호 알고리즘",
+        "keyword_num": "38"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "COCOMO 모델의 프로젝트 유형으로 거리가 먼 것은?",
+        "correct_answer": "Sequentail",
+        "incorrect_answers": ["Organic","Semi-detached","Embedded"],
+        "desc": "복잡도에 따라 조직형(Organic(5만 라인)), 반분리형(Semi-detached(30만 라인이하)), 내장형(Embedded(30만 라인이상))으로 분류합니다.",
+        "keyword": "COCOMO",
+        "keyword_num": "10"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "빅데이터 분석 기술 중 대량의 데이터를 분석하여 데이터 속에 내재되어 있는 변수 사이의 상호관례를 규명하여 일정한 패턴을 찾아내는 기법은?",
+        "correct_answer": "Data Mining",
+        "incorrect_answers": ["Wm-Bus","Digital Twin","Zigbee"],
+        "desc": "Wm-Bus: 계량기 원격 판독을 위한 표준<br>Digital Twin: 컴퓨터에 현실 속 쌍둥이를 만들고 시뮬레이션을 통해 결과를 예측하는 기술<br>Zigbee: 저전력 디지털 라이오를 통해 개인 통신망을 구성하는 기술"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "기존 무선 랜의 한계 극복을 위해 등장하였으며, 대규모 디바이스의 네트워크 생성에 최적화되어 차세대 이동통신, 홈네트워킹, 공공 안전 등의 특수목적을 위한 새로운 방식의 네트워크 기술을 의미하는 것은?",
+        "correct_answer": "Mesh Network",
+        "incorrect_answers": ["Software Defined Perimeter","Virtual Private Network","Local Area Network"],
+        "desc": "Software Defined Perimeter(블랙 클라우드): 신원을 기반으로 리소스에 대해 액세스를 제어하는 프레임워크입니다.<br>Virtual Private Network(가상사설망, VPN): 내용을 바깥 사람에게 드러내지 않고 통신할 목적으로 쓰이는 사설 통신망입니다.<br>Local Area Network(근거리 통신망): 네트워크 매체를 이용하여 집, 사무실, 학교 등의 건물과 같은 가까운 지역을 한데 묶는 컴퓨터 네트워크입니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "DDoS 공격과 연관이 있는 공격 방법은?",
+        "correct_answer": "Tribe Flood Network",
+        "incorrect_answers": ["Secure shell ","Deadlock","Nimda"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "CPM 네트워크가 다음과 같을 때 임계경로의 소요기일은?",
+        "question_img": "gisa2020_03_11",
+        "correct_answer": "14일",
+        "incorrect_answers": ["10일","12일","16일"],
+        "desc": "임계경로는 가장 오래 걸리는 경로를 말합니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "RIP(Routing Information Protocol)에 대한 설명으로 틀린 것은?",
+        "correct_answer": "최대 홉 카운트를 115홉 이하로 한정하고 있다.",
+        "incorrect_answers": ["거리 벡터 라우팅 프로토콜이라고도 한다.","소규모 네트워크 환경에 적합하다.","최단경로탐색에는 Bellman-Ford 알고리즘을 사용한다"],
+        "desc": "RIP의 최대 홉 카운트는 15로 제한됩니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "소프트웨어 생명주기 모형 중 고전적 생명주기 모형으로 선형 순차적 모델이라고도 하며, 타당성 검토, 계획, 요구사항 분석, 구현, 테스트, 유지보수의 단계를 통해 소프트웨어를 개발하는 모형은?",
+        "correct_answer": "폭포수 모형",
+        "incorrect_answers": ["애자일 모형","컴포넌트 기반 방법론","6GT 모형"],
+        "keyword": "소프트웨어 생명주기",
+        "keyword_num": "37"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "소프트웨어 개발 모델 중 나선형 모델의 4가지 주요 활동이 순서대로 나열된 것은?",
+        "question_desc": "Ⓐ 계획수립 Ⓑ 고객평가 Ⓒ 개발 및 검증 Ⓓ 위험분석",
+        "correct_answer": "Ⓐ - Ⓓ - Ⓒ - Ⓑ 순으로 반복",
+        "incorrect_answers": ["Ⓐ - Ⓑ - Ⓓ - Ⓒ 순으로 반복","Ⓐ - Ⓑ - Ⓒ - Ⓓ 순으로 반복","Ⓐ - Ⓒ - Ⓑ - Ⓓ 순으로 반복"],
+        "desc": "나선형모델 활동 순서는 계획 수립 - 위험 분석 - 개발 - 검증 - 고객평가입니다.",
+        "keyword": "소프트웨어 생명주기",
+        "keyword_num": "37"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "전자 칩과 같은 소프트웨어 부품, 즉 블록(모듈)을 만들어서 끼워 맞추는 방법으로 소프트웨어를 완성시키는 재사용 방법은?",
+        "correct_answer": "합성 중심",
+        "incorrect_answers": ["생성 중심","분리 중심","구조 중심"],
+        "desc": "합성 중심(Composition-Based): 블록(모듈)을 결합하여 소프트웨어를 완성<br>생성 중심(Generation-Based): 추상적인 명세를 구체화하여 소프트웨어를 완성"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "다음 JAVA코드에서 밑줄로 표시된 부분에는 어떤 보안 약점이 존재하는가? (단, key는 암호화 키를 저장하는 변수이다.)",
+        "question_desc": "import javax.crypto.KeyGenerator;<br>import javax.crypto.spec.SecretKeySpec;<br>import javax.crypto.Cipher;<br>...생략<br>public String encripString(String usr){<br>&nbsp;&nbsp;&nbsp;&nbsp; <i style='text-decoration: underline'>String key = '22df3023sf~2;asn!@#/>as';</i><br>&nbsp;&nbsp;&nbsp;&nbsp; if(key != null) {<br>&nbsp;&nbsp;&nbsp;&nbsp; byte[] bToEncrypt = use.getBytes('UTF-8');<br>.....생략",
+        "correct_answer": "하드코드된 암호화 키 사용",
+        "incorrect_answers": ["무결성 검사 없는 코드 다운로드","중요 자원에 대한 잘못된 권한 설정","적절한 인증없는 중요 기능 허용"],
+        "desc": "소스안에 코드 데이터를 직접 입력하였습니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "소프트웨어 개발 표준 중 소프트웨어 품질 및 생산성 향상을 위해 소프트웨어 프로세스를 평가 및 개선하는 국제표준은?",
+        "correct_answer": "SPICE",
+        "incorrect_answers": ["SCRUM","ISO/IEC 12509","CASE"],
+        "keyword": "소프트웨어 개발방법론",
+        "keyword_num": "7"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "실무적으로 검증된 개발보안 방법론 중 하나로써 SW보안의 모범 사례를 SDLC(Software Development LifeCycle)에 통합한 소프트웨어 개발 보안 생명주기 방법론은?",
+        "correct_answer": "Seven Touchpoints",
+        "incorrect_answers": ["CLASP","CWE","PIMS"],
+        "desc": "CLASP(Comprehensive, Lightweight Application Security Process): 소프트웨어 개발 생명주기(SDLC) 초기단계에 보안강화를 목적으로 하는 정형화된 프로세스<br>CWE(Common Weakness Enumeration): 주요 보안 취약점, 보안 약점 리스트<br>PIMS(Personal Information Management System): 개인정보 보호관리체계.<br>Seven Touchpoints - 소프트웨어 개발 생명주기 (SDLC)의 각 단계에 관련된 7가지의 보안 강화 활동을 개발자에게 집중적으로 관리하도록 요구하여 실무적으로 검증된 개발보안 방법론입니다.",
+        "keyword": "소프트웨어 생명주기",
+        "keyword_num": "37"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "다음 LAN의 네트워크 토폴로지는?",
+        "question_img": "gisa2020_03_12",
+        "correct_answer": "버스형",
+        "incorrect_answers": ["성형","링형","그물형"],
+        "desc": "성형: 중앙을 중심으로 뻗어나가는 형태<br>링형: 노드의 시작과 끝이 이어진 형태<br>그물형: 모든 노드가 서로 각각 이어진 형태"
+    }
+]

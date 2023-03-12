@@ -1,0 +1,652 @@
+[
+    {
+        "subject": "소프트웨어 설계",
+        "question": "시스템의 구성요소로 볼 수 없는 것은?",
+        "correct_answer": "Maintenance",
+        "incorrect_answers": ["Process","Control","Feedback"],
+        "desc": "시스템의 구성요소에는 Input, Output, Process, Control, Feedback이 있다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "유스케이스(Usecase)에 대한 설명 중 옳은 것은?",
+        "correct_answer": "액터는 대상 시스템과 상호 작용하는 사람이나 다른 시스템에 의한 역할이다.",
+        "incorrect_answers": ["유스케이스 다이어그램은 개발자의 요구를 추출하고 분석하기 위해 주로 사용한다.","사용자 액터는 본 시스템과 데이터를 주고받는 연동 시스템을 의미한다","연동의 개념은 일방적으로 데이터를 파일이나 정해진 형식으로 넘겨주는 것을 의미한다."],
+        "desc": "유스케이스는 시스템이 액터에게 제공해야 하는 기능으로, 시스템의 요구사항이자 기능을 의미합니다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "요구사항 개발 프로세스의 순서로 옳은 것은?",
+        "question_desc": "㉠ 도출(Elicitation) ㉡ 분석(Analysis) ㉢ 명세(Specification) ㉣ 확인(Validatioin)",
+        "correct_answer": "㉠ - ㉡ - ㉢ - ㉣",
+        "incorrect_answers": ["㉠ - ㉢ - ㉡ - ㉣","㉠ - ㉣ - ㉡ - ㉢","㉠ - ㉡ - ㉣ - ㉢"]
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "객체지향 기법에서 같은 클래스에 속한 각각의 객체를 의미하는 것은?",
+        "correct_answer": "instance",
+        "incorrect_answers": ["message","method","module"],
+        "desc": "객체지향 구성 요소에는 클래스(Class), 객체(Object), 인스턴스(Instance), 메시지(Message), 메소드(Method) 등이 있다.",
+        "keyword": "객체지향", 
+        "keyword_num": "22"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "객체지향 설계에서 객체가 가지고 있는 속성과 오퍼레이션의 일부를 감추어서 객체의 외부에서는 접근이 불가능하게 하는 개념은?",
+        "correct_answer": "캡슐화(Encapsulation)",
+        "incorrect_answers": ["조직화(Organizing)","정보은닉(Infomation Hiding)","구조화(Structuralization)"],
+        "desc": "객체지향 기술에는 캡슐화(Encapsulation), 정보은닉(Information Hiding), 추상화(Abstract), 상속(Inheritance), 다형성(Ploymorphism) 등이 있다.",
+        "keyword": "객체지향", 
+        "keyword_num": "22"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "GoF(Gangs of Four) 디자인 패턴에 대한 설명으로 틀린 것은?",
+        "correct_answer": "bridge pattern은 기존에 구현되어 있는 클래스에 기능 발생 시 기존 클래스를 재사용할 수 있도록 중간에서 맞춰주는 역할을 한다.",
+        "incorrect_answers": ["factory method pattern은 상위클래스에서 객체를 생성하는 인터페이스를 정의하고, 하위클래스에서 인스턴스를 생성하도록 하는 방식이다.","prototype pattern은 prototype을 먼저 생성하고 인스턴스를 복제하여 사용하는 구조이다.","mediator pattern은 객체간의 통제와 지시의 역할을 하는 중재자를 두어 객체지향의 목표를 달성하게 해준다."],
+        "desc": "bridge pattern은 하나의 게층에 복잡하게 존재하는 클래스들을 기능 클래스와 구현 클래스로 분리하여 두 클래스를 연결하는 패턴이다.",
+        "keyword": "디자인 패턴",
+        "keyword_num": "24"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "요구사항 분석이 어려운 이유가 아닌 것은?",
+        "correct_answer": "사용자의 요구는 예외가 거의 없어 열거와 구조화가 어렵지 않다.",
+        "incorrect_answers": ["개발자와 사용자 간의 지식이나 표현의 차이가 커서 상호 이해가 쉽지 않다.","사용자의 요구사항이 모호하고 불명확하다.","소프트웨어 개발 과정 중에 요구사항이 계속 변할 수 있다."]
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "소프트웨어 아키텍처 설계에서 시스템 품질속성이 아닌 것은?",
+        "correct_answer": " 독립성(Isolation)",
+        "incorrect_answers": ["가용성(Availability)","변경 용이성(Modifiability)","사용성(Usability)"],
+        "desc": "시스템 품질 속성은 가용성, 변경 용이성, 성능, 보안성, 사용 편의성, 시험 용의성 6가지가 있다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": " 다음 설명에 해당하는 시스템으로 옳은 것은?",
+        "question_desc": "시스템 인터페이스를 구성하는 시스템으로, 연계할 데이터를 데이터베이스와 애플리케이션으로부터 연계 테이블 또는 파일 형태로 생성하여 송신하는 시스템이다.",
+        "correct_answer": "송신 시스템",
+        "incorrect_answers": ["연계 서버","중계 서버","수신 시스템"]
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "CASE(Computer-Aided Software Engineering)의 원천기술이 아닌 것은?",
+        "correct_answer": "일괄처리 기술",
+        "incorrect_answers": ["구조적 기법","프로토타이핑 기술","정보 저장소 기술"],
+        "desc": "CASE의 원천 기술은 구조적 기법, 프로토타이핑 기술, 자동프로그래밍 기술, 정보 저장소 기술, 분산 처리 기술이 있다.",
+        "keyword": "CASE",
+        "keyword_num": "36"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "객체에게 어떤 행위를 하도록 지시하는 명령은?",
+        "correct_answer": "Message",
+        "incorrect_answers": ["Class","Package","Object"],
+        "keyword": "객체지향",
+        "keyword_num": "22"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "서브시스템이 입력 데이터를 받아 처리하고 결과를 다른 시스템에 보내는 작업이 반복되는 아키텍처 스타일은?",
+        "correct_answer": "파이프 필터 구조",
+        "incorrect_answers": ["클라이언트 서버 구조","계층 구조","MVC 구조"],
+        "desc": "클라이언트 서버 구조 : 컴포넌트가 다른 컴포넌트에게 서비스를 요청. 데이터가 여러 컴포넌트를 거치며 처리<br>계층구조 : 모듈들로 응집된 계층 단위로 SW를 구성. 계층간에 사용 가능의 관계로 표현<br>MVC 구조 : 모델-뷰-컨트롤러, 기능을 분리한 아키텍처<br>파이프 필터 : 파이프를 통해 받은 데이터를 변경시키고 그 결과를 파이프로 전송"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "럼바우(Rumbaugh)의 객체지향 분석에서 사용하는 분석 활동으로 옳은 것은?",
+        "correct_answer": "객체 모델링, 동적 모델링, 기능 모델링",
+        "incorrect_answers": ["객체 모델링, 동적 모델링, 정적 모델링","동적 모델링, 기능 모델링, 정적 모델링","정적 모델링, 객체 모델링, 기능 모델링"],
+        "keyword": "객체지향 분석 방법론",
+        "keyword_num": "23"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "UML 다이어그램이 아닌 것은?",
+        "correct_answer": "절차 다이어그램(Procedural diagram)",
+        "incorrect_answers": ["액티비티 다이어그램(Activity diagram)","클래스 다이어그램(Class diagram)","시퀀스 다이어그램(Sequence diagram)"],
+        "desc": "구조적 다이어프램: 클래스, 객체, 컴포넌트, 배치, 복합체, 패키지<br>행위 다이어그램: 유스케이스, 시퀀스, 커뮤니케이션, 상태, 활동, 상호작용 개요, 타이밍",
+        "keyword": "UML",
+        "keyword_num": "31"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "UML 모델에서 한 객체가 다른 객체에게 오퍼레이션을 수행하도록 지정하는 의미적 관계로 옳은 것은?",
+        "correct_answer": "Realization",
+        "incorrect_answers": ["Dependency","Association","Generalization"],
+        "keyword": "UML",
+        "keyword_num": "31"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "다음 중 상위 CASE 도구가 지원하는 주요기능으로 볼 수 없는 것은?",
+        "correct_answer": "전체 소스코드 생성 기능",
+        "incorrect_answers": ["모델들 사이의 모순검사 기능","모델의 오류검증 기능","자료흐름도 작성 기능"],
+        "desc": "CASE는 자동 개발 시스템이 아니라 자동화 지원 도구이다.",
+        "keyword": "CASE",
+        "keyword_num": "36"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "요구사항 관리 도구의 필요성으로 틀린 것은?",
+        "correct_answer": "기존 시스템과 신규 시스템의 성능 비교",
+        "incorrect_answers": ["요구사항 변경으로 인한 비용 편익 분석","요구사항 변경의 추적","요구사항 변경에 따른 영향 평가"],
+        "desc": "요구사항 관리 도구는 시스템 변경이 아닌 요구사항의 변경사항을 관리한다."
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "애자일 개발 방법론이 아닌 것은?",
+        "correct_answer": "하둡(Hadoop)",
+        "incorrect_answers": ["스크럼(Scrum)","익스트림 프로그래밍(XP, eXtreme Programming)","기능 주도 개발(FDD, Feature Driven Development)"],
+        "keyword": "애자일 방법론",
+        "keyword_num": "9"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "GoF(Gangs of Four) 디자인 패턴 중 생성패턴으로 옳은 것은?",
+        "correct_answer": "singleton pattern",
+        "incorrect_answers": ["adapter pattern","decorator pattern","state pattern"],
+        "desc": "생성 패턴에는 Abstract Factory, Factory Method, Builder, Prototype, Singleton이 있다.",
+        "keyword": "디자인 패턴",
+        "keyword_num": "24"
+    },{
+        "subject": "소프트웨어 설계",
+        "question": "사용자 인터페이스(UI)의 특징으로 틀린 것은?",
+        "correct_answer": "사용자의 편의성을 높임으로써 작업시간을 증가시킨다.",
+        "incorrect_answers": ["구현하고자 하는 결과의 오류를 최소화한다.","막연한 작업 기능에 대해 구체적인 방법을 제시하여 준다.","사용자 중심의 상호 작용이 되도록 한다."],
+        "keyword": "UI",
+        "keyword_num": "5"
+    },
+    {
+        "subject": "소프트웨어 개발",
+        "question": "힙 정렬(Heap Sort)에 대한 설명으로 틀린것은?",
+        "correct_answer": "최악의 수행 시간은 O(2n4)이다.",
+        "incorrect_answers": ["정렬할 입력 레코드들로 힙을 구성하고 가장 큰 키 값을 갖는 루트 노드를 제거하는 과정을 반복하여 정렬하는 기법이다.","평균 수행 시간은 O(nlog2n)이다.","완전 이진트리(complete binary tree)로 입력자료의 레코드를 구성한다."],
+        "desc": "힙 정렬(Heap Sort)의 시간 복잡도는 평균, 최악 모두 O(nlogn) 이다.",
+        "keyword": "정렬",
+        "keyword_num": "14"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 중 단위 테스트를 통해 발견할 수 있는 오류가 아닌 것은?",
+        "correct_answer": "모듈 간의 비정상적 상호작용으로 인한 원치 않는 결과",
+        "incorrect_answers": ["알고리즘 오류에 따른 원치 않는 결과","탈출구가 없는 반복문의 사용","틀린 계산 수식에 의한 잘못된 결과"],
+        "desc": "단위 테스트는 테스트 코드가 독립적이어야 함으로 각 모듈간의 상호작용은 해당되지 않는다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 설명의 소프트웨어 테스트의 기본원칙은?",
+        "question_desc": "파레토 법칙이 좌우한다.<br>애플리케이션 결함의 대부분은 소수의 특정한 모듈에 집중되어 존재한다.<br>결합은 발생한 모듈에서 계속 추가로 발생할 가능성이 높다.",
+        "correct_answer": "결함 집중",
+        "incorrect_answers": ["살충제 패러독스","오류 부재의 궤변","완벽한 테스팅은 불가능"],
+        "desc": "살충제 패러독스: 동일한 테스트 케이스로 반복 실행하면 더 이상 새로운 결함을 발견할 수 없으므로 주기적으로 테스트 케이스를 점검하고 개선해야 한다.<br>오류 부재의 궤변: 사용자의 요구사항을 만족하지 못한다면 오류를 발견하고 제거해도 품질이 높다고 말할 수 없다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "버전 관리 항목 중 저장소에 새로운 버전의 파일로 갱신하는 것을 의미하는 용어는?",
+        "correct_answer": "체크인(Check-In)",
+        "incorrect_answers": ["형상 감사(Configuration Audit)","롤백(Rollback)","단위 테스트(Unit Test)"],
+        "desc": "소프트웨어 버전 등록 관련 주요 용어<br>- 저장소: 최신 버전의 파일들과 변경 내역에 대한 정보들이 저장되어 있는 곳<br>- 가져오기: 버전 관리가 되고 있지 않은 아무것도 없는 저장소에 처음으로 파일을 복사한다.<br>- 체크아웃: 프로그램을 수정하기 위해 저장소에서 파일을 받아 온다.<br>- 체크인: 체크아웃한 파일의 수정을 완료한 후 저장소의 파일을 새로운 버전으로 갱신<br>- 커밋: 체크인을 수행할 때 이전에 갱신된 내용이 있는 경우에는 충돌을 알리고, 수정한 후 갱신 완료<br>- 동기화: 저장소에 있는 최신 버전으로 자신의 작업공간을 동기화"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "소프트웨어 테스트와 관련한 설명으로 틀린것은?",
+        "correct_answer": "화이트박스 테스트에서 기본 경로(BasisPath)란 흐름 그래프의 시작 노드에서 종료노드까지의 서로 독립된 경로로 싸이클을 허용하지 않는 경로를 말한다.",
+        "incorrect_answers": ["화이트 박스 테스트는 모듈의 논리적인 구조를 체계적으로 점검할 수 있다.","블랙박스 테스트는 프로그램의 구조를 고려하지 않는다.","테스트 케이스에는 일반적으로 시험 조건, 테스트 데이터, 예상 결과가 포함되어야한다."],
+        "desc": "화이트 박스에는 기초 경로(Basic Path), 조건 검사(Condition Testing), 루프 검사(Loop Testing), 데이터 흐름 검사(Data Flow Testing) 테스트가 있으며, 블랙 박스 테스트에는 동등 분할(Equivalence Partitioning), 경계선 분석(Boundary Value Analysis), 원인-효과 그래프(Cause-Effect Graphing), 오류 예측(Error Guessing), 비교(Comparison) 테스트가 있습니다.</li>",
+        "keyword": "화이트 박스",
+        "keyword_num": "17"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "애플리케이션의 처리량, 응답시간, 경과시간, 자원사용률에 대해 가상의 사용자를 생성하고 테스트를 수행함으로써 성능 목표를 달성하였는지를 확인하는 테스트 자동화 도구는?",
+        "correct_answer": "성능 테스트 도구",
+        "incorrect_answers": ["명세 기반 테스트 설계 도구","코드 기반 테스트 설계 도구","기능 테스트 수행 도구"]
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "소프트웨어 형상 관리에 대한 설명으로 거리가 먼 것은?",
+        "correct_answer": "대표적인 형상관리 도구로 Ant, Maven, Gradle 등이 있다.",
+        "incorrect_answers": ["소프트웨어에 가해지는 변경을 제어하고 관리한다.","프로젝트 계획, 분석서, 설계서, 프로그램, 테스트 케이스 모두 관리 대상이다.","유지 보수 단계뿐만 아니라 개발 단계에도 적용할 수 있다."],
+        "desc": "Ant, Maven, Gradle는 빌드자동화 도구이며, 형상관리 도구에는 CVS, SVN, GIT, Perforce 등이 있다.",
+        "keyword": "형상관리",
+        "keyword_num": "39"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "디지털 저작권 관리(DRM) 구성 요소가 아닌 것은?",
+        "correct_answer": "Dataware house",
+        "incorrect_answers": ["DRM Controller","Packager","Contents Distributor"],
+        "desc": "Dataware house는 기업의 전략적 관점에서 효율적인 의사 결정을 지원하기 위해 데이터의 시계열적 축적과 통합을 목표로 하는 기술적 구조적, 통합적 환경을 말한다.<br>Clearing House는 디지털 저작권 라이선스의 중개 및 발급을 수행하는 곳으로 디지털 저작물의 이용 내역을 근거로 저작권료의 정산 및 분배가 수행된다.<br>디지털 저작권 관리(DRM)의 기술 요소에는 암호화(Encryption), 키관리(Key Management), 암호와 파일 생성(Packager), 식별 기술(Identification), 저작권 표현(Right Expression), 정책 관리(Policy Management), 크랙방지(Tamper Resistance), 인증(Authentication) 등이 있다.",
+        "keyword": "DRM",
+        "keyword_num": "16"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 설명의 소프트웨어 버전 관리도구 방식은?",
+        "question_desc": "버전관리 자료가 원격저장소와 로컬저장소에 함께 저장되어 관리된다.<br>로컬 저장소에서 버전관리가가 가능하므로 원격 저장소에 문제가 생격도 로컬 저장소의 자료를 이용하여 작업할 수 있다.<br>대표적인 버전 관리 도구로 Git이 있다.",
+        "correct_answer": "분산 저장소 방식",
+        "incorrect_answers": ["단일 저장소 방식","공유폴더 방식","클라이언트 서버 방식"]
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "블랙박스 테스트를 이용하여 발견할 수 있는 오류가 아닌 것은?",
+        "correct_answer": "반복 조건을 만족하는데도 루프 내의 문장이 수행되지 않는 경우",
+        "incorrect_answers": ["비정상적인 자료를 입력해도 오류 처리를 수행하지 않는 경우","정상적인 자료를 입력해도 요구된 기능이 제대로 수행되지 않는 경우","경계값을 입력할 경우 요구된 출력 결과가 나오지 않는 경우"],
+        "desc": "화이트 박스에는 기초 경로(Basic Path), 조건 검사(Condition Testing), 루프 검사(Loop Testing), 데이터 흐름 검사(Data Flow Testing) 테스트가 있으며, 블랙 박스 테스트에는 동등 분할(Equivalence Partitioning), 경계선 분석(Boundary Value Analysis), 원인-효과 그래프(Cause-Effect Graphing), 오류 예측(Error Guessing), 비교(Comparison) 테스트가 있습니다.</li>",
+        "keyword": "화이트 박스",
+        "keyword_num": "17"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 자료를 버블 정렬을 이용하여 오름차순으로 정렬할 경우 Pass 2의 결과는?<div class='qd'>9, 6, 7, 3, 5</div>",
+        "correct_answer": "6, 3, 5, 7, 9",
+        "incorrect_answers": ["3, 5, 6, 7, 9","6, 7, 3, 5, 9","3, 5, 9, 6, 7"],
+        "desc": "1회전 : 6, 7, 3, 5, 9<br>2회원 : 6, 3, 5, 7, 9<br>3회원 : 3, 5, 6, 7, 9"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "정렬된 N개의 데이터를 처리하는 데 O(Nlog<sub>2</sub>N)의 시간이 소요되는 정렬 알고리즘은?",
+        "correct_answer": "합병정렬",
+        "incorrect_answers": ["버블정렬","선택정렬","삽입정렬"],
+        "desc": "버블, 선택, 삽입 정렬은 O(n<sup>2</sup>)의 시간잡도를 가진다.",
+        "keyword": "정렬",
+        "keyword_num": "14"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 postfix로 표현된 연산식의 연산 결과로 옳은 것은?",
+        "question_desc": "3 4 * 5 6 * +",
+        "correct_answer": "42",
+        "incorrect_answers": ["35","81","360"],
+        "desc": "(3 * 4)+(5 * 6) = 12 + 30 = 42"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "EAI(Enterprise Application Integration) 구축 유형에서 애플리케이션 사이에 미들웨어를 두어 처리하는 것은? ",
+        "correct_answer": "Message Bus",
+        "incorrect_answers": ["Point-to-point","Hub & Spoke","Hybrid"],
+        "desc": "EAI(Enterprise Application Integration)기업 내 상호 연동이 가능하게 해주는 솔루션을 말합니다.",
+        "keyword": "EAI",
+        "keyword_num": "15"
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "인터페이스 구현 검증 도구가 아닌 것은?",
+        "correct_answer": "Foxbase",
+        "incorrect_answers": ["STAF","watir","xUnit"],
+        "desc":"Foxbase는 텍스트 기반의 절차 지향 프로그램밍 언어 및데이터 베이스 관리 시스템이다. 인터페이스 구현 검증 도구는 xUnit, STAF, Fitnesse, NTAF, Selenium, watir 등이 있다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "클린코드 작성원칙에 대한 설명으로 틀린 것은?",
+        "correct_answer": "코드가 다른 모듈에 미치는 영향을 최대화하도록 작성한다.",
+        "incorrect_answers": ["코드의 중복을 최소화 한다.","누구든지 코드를 쉽게 읽을 수 있도록 작성한다.","간단하게 코드를 작성한다."]
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "소프트웨어 패키징에 대한 설명으로 틀린 것은?",
+        "correct_answer": "패키징은 개발자 중심으로 진행한다.",
+        "incorrect_answers": ["신규 및 변경 개발소스를 식별하고, 이를 모듈화하여 상용제품으로 패키징 한다","고객의 편의성을 위해 매뉴얼 및 버전관리를 지속적으로 한다.","범용 환경에서 사용이 가능하도록 일반적인 배포 형태로 패키징이 진행된다."],
+        "desc": "패키징은 사용자 중심으로 진행한다."
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "공학적으로 잘된 소프트웨어(Well Engineered Software)의 설명 중 틀린 것은?",
+        "correct_answer": "소프트웨어는 사용자 수준에 무관하게 일관된 인터페이스를 제공해야 한다.",
+        "incorrect_answers": ["소프트웨어는 유지보수가 용이해야 한다.","소프트웨어는 신뢰성이 높아야 한다.","소프트웨어는 충분한 테스팅을 거쳐야 한다."]
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "테스트와 디버그의 목적으로 옳은 것은?",
+        "correct_answer": "테스트는 오류를 찾는 작업이고 디버깅은 오류를 수정하는 작업이다.",
+        "incorrect_answers": [" 테스트는 오류를 수정하는 작업이고 디버깅은 오류를 찾는 작업이다.","둘 다 소프트웨어의 오류를 찾는 작업으로 오류 수정은 하지 않는다.","둘 다 소프트웨어 오류의 발견, 수정과 무관하다."]
+    },{
+        "subject": "소프트웨어 개발",
+        "question": "다음 중 스택을 이용한 연산과 거리가 먼 것은?",
+        "correct_answer": "선택정렬",
+        "incorrect_answers": ["재귀호출","후위표현(Post-fix expression)의 연산","깊이우선탐색"],
+        "desc": "선택정렬은 큐를 이용해서 정렬합니다.",
+        "keyword": "자료구조",
+        "keyword_num": "13"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "병렬 데이터베이스 환경 중 수평 분할에서 활용되는 분할기법이 아닌 것은?",
+        "correct_answer": "예측 분할",
+        "incorrect_answers": ["라운드-로빈","범위 분할","해시 분할"]
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "시스템 카탈로그에 대한 설명으로 옳지 않은 것은?",
+        "correct_answer": "사용자가 직접 시스템 카탈로그의 내용을 갱신하여 데이터베이스 무결성을 유지한다.",
+        "incorrect_answers": ["시스템 자신이 필요로 하는 스키마 및 여러가지 객체에 관한 정보를 포함하고 있는 시스템 데이터베이스이다.","시스템 카탈로그에 저장되는 내용을 메타데이터라고도 한다.","시스템 카탈로그는 DBMS가 스스로 생성하고 유지한다."]
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "SQL 문에서 SELECT에 대한 설명으로 옳지않은 것은?",
+        "correct_answer": "검색결과에 중복되는 레코드를 없애기위해서는 WHERE 절에 'DISTINCT'키워드를 사용한다.",
+        "incorrect_answers": ["FROM 절에는 질의에 의해 검색될 데이터들을 포함하는 테이블명을 기술한다.","HAVING 절은 GROUP BY 절과 함께 사용되며, 그룹에 대한 조건을 지정한다","ORDER BY 절은 특정 속성을 기준으로 정렬하여 검색할 때 사용한다."],
+        "desc": "DISTINCT 키워드는 필드 앞에 위치시킨다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "SQL에서 VIEW를 삭제할 때 사용하는 명령은?",
+        "correct_answer": "DROP",
+        "incorrect_answers": ["ERASE","KILL","DELETE"],
+        "desc": "DELETE = 조건을 달아서 특정 행을 삭제할 때 사용<br>DROP = VIEW, TABLE, DATABASE를 완전 삭제할 때 사용"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "DDL(Data Define Language)의 명령어 중 스키마, 도메인, 인덱스 등을 정의할 때 사용하는 SQL문은?",
+        "correct_answer": "CREATE",
+        "incorrect_answers": ["ALTER","SELECT","INSERT"],
+        "desc": "DDL(데이터 정의어): CREATE, ALTER, DROP<br>DML(데이터 조작어): SELECT, INSERT, UPDATE, DELETE<br>DCL(데이터 제어어): GRANT, REVOKE, COMMIT, ROLLBACK",
+        "keyword": "SQL 명령어",
+        "keyword_num": "20"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "테이블 R1, R2에 대하여 다음 SQL문의결과는?",
+        "question_img": "gisa2021_02_01",
+        "correct_answer": "2",
+        "incorrect_answers": ["1","3","4"]
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "데이터베이스 설계 시 물리적 설계 단계에서 수행하는 사항이 아닌 것은?",
+        "correct_answer": "목표 DBMS에 맞는 스키마 설계",
+        "incorrect_answers": ["레코드 집중의 분석 및 설계","접근 경로 설계","저장 레코드의 양식 설계"],
+        "desc": "목표 DBMS에 맞는 스키마 설계는 논리적 설계 단계에서 수행한다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "릴레이션에서 기본 키를 구성하는 속성은 널(Null)값이나 중복 값을 가질 수 없다는 것을 의미하는 제약조건은?",
+        "correct_answer": "개체 무결성",
+        "incorrect_answers": ["참조 무결성","보안 무결성","정보 무결성"],
+        "desc": "개체 무결성 : 릴레이션에서 기본키를 구성하는 속성은 널(Null)값이나 중복값을 가질 수 없다.<br>참조 무결성 : 외래키 값은 NULL이거나 참조 릴레이션의 기본키 값과 동일해야함<br>도메인 무결성 : 특정 속성의 값이 그 속성이 정의된 도메인에 속한 값이어야 한다는 규정",
+        "keyword": "무결성",
+        "keyword_num": "33"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "병행제어 기법의 종류가 아닌 것은?",
+        "correct_answer": "시분할 기법",
+        "incorrect_answers": ["로킹 기법","타임 스탬프 기법","다중 버전 기법"],
+        "desc": "병행제어 기법에는 로킹, 타임스탬프, 낙관적 병행제어, 다중 버전 병행제어이 있습니다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "다음 R1과 R2의 테이블에서 아래의 실행 결과를 얻기 위한 SQL문은?",
+        "question_img": "gisa2021_02_02",
+        "correct_answer": "SELECT 과목번호, 과목이름 FROM RI, R2 WHERE R1.학번 = R2. 학번 AND R1.학과='전자공학' AND R1.이름 = '강남길’;",
+        "incorrect_answers": ["SELECT 과목번호, 과목이름 FROM RI, R2 WHERE R1.학번 = R2.학번 OR R1.학과='전자공학' OR R1.이름 = '홍길동';","SELECT 과목번호, 과목이름 FROM R1, R2 WHERE R1.학번 = R2.학번 AND R1.학과=‘컴퓨터공학' AND R1.이름 '강남길’; ","SELECT 과목번호, 과목이름 FROM R1, R2 WHERE R1.학번 = R2.학번 OR R1.학과='컴퓨터공학' OR R1.이름 = '홍길동';"],
+        "desc": "두 테이블의 학번이 일치하는 상태(AND)에서 조건을 검색(WHERE R1.학번 = R2.학번 AND)<br>전기공학과 강남길의 튜플 검색(R1.학과='전기공학' AND R1.이름 = '강남길')<br>검색된 튜플의 과목번호와 과목이름 출력(SELECT 과목번호, 과목이름)"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "다음 관계 대수 중 순수 관계 연산자가 아닌 것은?",
+        "correct_answer": "차집합(difference)",
+        "incorrect_answers": ["프로젝트(project)","조인(join)","디비전(division)"],
+        "desc": "차집합은 일반 집합 연산자이다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "관계형 데이터 모델의 릴레이션에 대한 설명으로 틀린 것은?",
+        "correct_answer": "한 릴레이션을 구성하는 속성 사이에는 순서가 존재한다.",
+        "incorrect_answers": ["모든 속성 값은 원자 값을 갖는다.","한 릴레이션에 포함된 튜플은 모두 상이하다.","한 릴레이션에 포함된 튜플 사이에는 순서가 없다."],
+        "desc": "릴레이션을 구성하는 튜플과 속성들은 순서 및 중복이 존재하지 않는다."
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "릴레이션 R의 차수가 4이고 카디널리티가 5이며, 릴레이션 S의 차수가 6이고 카디널리티가 7일 때, 두 개의 릴레이션을 카티션 프로덕트한 결과의 새로운 릴레이 션의 차수와 카디널리티는 얼마인가?",
+        "correct_answer": "10, 35",
+        "incorrect_answers": ["24, 35","24, 12","10, 12"],
+        "desc": "카디션 프로덕트 = 기수의 곳, 차수의 합<br>차수 : 4+6=10, 카디널리티 : 5*7=35",
+        "keyword": "릴레이션",
+        "keyword_num": "30"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "속성(attribute)에 대한 설명으로 틀린 것은?",
+        "correct_answer": "속성의 수를 'cardinality' 라고 한다.",
+        "incorrect_answers": ["속성은 개체의 특성을 기술한다.","속성은 데이터베이스를 구성하는 가장 작은 논리적 단위이다.","속성은 파일 구조상 데이터 항목 또는 데이터 필드에 해당된다."],
+        "desc": "cardinality 는 튜플의 수를 나타낸다.<br>속성의 수 = 열(attribute)의 수 = 필드의 수 = 차수 = Degree",
+        "keyword": "릴레이션",
+        "keyword_num": "30"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "다음 SQL 문에서 ( ) 안에 들어갈 내용으로 옳은 것은?",
+        "question_desc": "UPDATE 인사급여 (  ) 호봉 = 15 WHERE 성명 = '홍길동';",
+        "correct_answer": "SET",
+        "incorrect_answers": ["FROM","INTO","IN"]
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "관계 데이터베이스 모델에서 차수(Degree)의 의미는?",
+        "correct_answer": "애트리뷰트의 수",
+        "incorrect_answers": ["테이블의 수","데이터베이스의 수","튜플의 수"],
+        "desc": "차수 = Degree = Attribute의 수 = 속성의 수(관계 DB의 열)<br>기수 = Cardinality = Tuple의 수 = 대응수(관계 DB의 행)"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "개체-관계 모델(E-R)의 그래픽 표현으로 옳지 않은 것은?",
+        "correct_answer": "연결 - 삼각형",
+        "incorrect_answers": ["개체타입 - 사각형","속성 - 원형","관계타입 - 마름모"],
+        "desc": "연결 - 실선"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "트랜잭션의 실행이 실패하였음을 알리는 연산자로 트랜잭션이 수행한 결과를 원래의 상태로 원상 복귀 시키는 연산은?",
+        "correct_answer": "ROLLBACK 연산",
+        "incorrect_answers": ["COMMIT 연산","BACKUP 연산","LOG 연산"],
+        "keyword": "트랜잭션",
+        "keyword_num": "29"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "데이터 속성 간의 종속성에 대한 엄밀한 고려없이 잘못 설계된 데이터베이스에서는 데이터 처리 연산 수행 시 각종 이상 현상이 발생할 수 있는데, 이러한 이상 현상이 아닌 것은?",
+        "correct_answer": "검색 이상",
+        "incorrect_answers": ["삽입 이상","삭제 이상","갱신 이상"],
+        "desc": "이상 현상은 갱신 이상(Modification Anomaly), 삽입 이상(Insertion Anomaly), 삭제 이상(Deletion Anomaly)으로 구성된다.",
+        "keyword": "정규화",
+        "keyword_num": "19"
+    },{
+        "subject": "데이터베이스 구축",
+        "question": "제3정규형(3NF)에서 BCNF(Boyce-Codd Normal Form)가 되기 위한 조건은?",
+        "correct_answer": "결정자가 후보키가 아닌 함수 종속 제거",
+        "incorrect_answers": ["이행적 함수 종속 제거","부분적 함수 종속 제거","원자값이 아닌 도메인 분해"],
+        "desc": "비정규 릴레이션<br>↓(도메인이 원자값)<br>1NF<br>↓(부분적 함수 종속 제거)<br>2NF<br>↓(이행적 함수 종속 제거)<br>3NF<br>↓(결정자이면서 후보키가 아닌것 제거)<br>BCNF<br>↓(다치 종속)<br>4NF<br>↓(조인 종속성 이용)<br>5NF",
+        "keyword": "정규화",
+        "keyword_num": "19"
+    },
+    {
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 설명에 해당하는 방식은?",
+        "question_desc": "무선 랜에서 데이터 전송 시, 매체가 비어 있음을 확인한 뒤 충돌을 회피하기 위해 임의 시간을 기다린 후 데이터를 전송하는 방법이다.<br>네트워크에 데이터의 존송이 없는 경우라도 동시 전송에 의한 충돌에 대비하여 확인 신호를 전송한다.",
+        "correct_answer": "CSMA/CA",
+        "incorrect_answers": ["STA","Collision Domain","CSMA/CD"],
+        "desc": "CSMA/CA(Collision Detection): 충돌을 감지하여 제어하는 통신 방식, 유선 LAN 사용<br>CSMA/CD(Collision Avoidance): 충돌을 회피하는 통신 방식, 무선 LAN 사용"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 중 가장 약한 결합도(Coupling)는?",
+        "correct_answer": "Stamp Coupling",
+        "incorrect_answers": ["Common Coupling","Content Coupling","External Coupling"],
+        "desc": "(약)자료(data) - 스탬프(stamp) - 제어(Control) - 외부(External) - 공통(Common) - 내용(Content)(강)",
+        "keyword": "결합도",
+        "keyword_num": "12"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 C언어 프로그램이 실행되었을 때의 결과는?",
+        "question_img": "gisa2021_02_03",
+        "correct_answer": "7",
+        "incorrect_answers": ["3","4","10"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 파이썬(Python) 프로그램이 실행되었을 때의 결과는?",
+        "question_img": "gisa2021_02_04",
+        "correct_answer": "6",
+        "incorrect_answers": ["0","2","4"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "교착상태의 해결 방법 중 은행원 알고리즘(Banker's Algorithm)이 해당되는 기법은?",
+        "correct_answer": "Avoidance",
+        "incorrect_answers": ["Detection","Recovery","Prevention"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "CIDR(Classless Inter-Domain Routing) 표기로 203.241.132.82/27과 같이 사용되었다면, 해당 주소의 서브넷 마스크(subnet mask)는?",
+        "correct_answer": "255.255.255.224",
+        "incorrect_answers": ["255.255.255.0","255.255.255.240","255.255.255.248"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 JAVA 프로그램이 실행되었을 때의 결과는?",
+        "question_img": "gisa2021_02_05",
+        "correct_answer": "5, 5, 5",
+        "incorrect_answers": ["5, 6, 5","6, 5, 5","5, 6, 4"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "프로세스 적재 정책과 관련한 설명으로 틀린 것은?",
+        "correct_answer": "일반적으로 페이지 교환에 보내는 시간보다 프로세스 수행에 보내는 시간이 더 크면 스레싱(Thrashing)이 발생한다.",
+        "incorrect_answers": ["반복, 스택, 부프로그램은 시간 지역성(Temporal Locality)과 관련이 있다.","공간 지역성(Spatial Locality)은 프로세스가 어떤 페이지를 참조했다면 이후 가상주소공간상 그 페이지와 인접한 페이지들을 참조할 가능성이 높음을 의미한다.","스레싱(Thrashing) 현상을 방지하기 위해서는 각 프로세스가 필요로 하는 프레임을 제공할 수 있어야 한다."],
+        "desc": "스레싱(Thrashing) 발생 조건 = 페이지 교환 시간 > 프로세스 수행시간"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "프레임워크(Framework)에 대한 설명으로 옳은 것은?",
+        "correct_answer": "소프트웨어 구성에 필요한 기본 구조를 제공함으로써 재사용이 가능하게 해준다",
+        "incorrect_answers": ["소프트웨어 개발 시 구조가 잡혀 있기 때문에 확장이 불가능하다.","소프트웨어 아키텍처(Architecture)와 동일한 개념이다.","모듈화(Modularity)가 불가능하다."]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 JAVA 프로그램이 실행되었을 때의 결과는?",
+        "question_img": "gisa2021_02_06",
+        "correct_answer": "2",
+        "incorrect_answers": ["3","4","5"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "리눅스 Bash 쉘(Shell)에서 export와 관련한 설명으로 틀린 것은?",
+        "correct_answer": "변수를 출력하고자 할 때는 export를 사용해야 한다. ",
+        "incorrect_answers": ["export가 매개변수 없이 쓰일 경우 현재 설정된 환경 변수들이 출력된다.","사용자가 생성하는 변수는 export 명령어 표시하지 않는 한 현재 쉘에 국한된다.","변수를 export 시키면 전역(Global)변수처럼 되어 끝까지 기억된다."],
+        "desc": "export는 환경 변수 설정 명령이다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 C언어 프로그램이 실행되었을 때의 결과는?",
+        "question_img": "gisa2021_02_07",
+        "correct_answer": "66",
+        "incorrect_answers": ["1","11","98"],
+        "desc": "'A'의 아스키코드 값은 65, 'a'의 아스키코드 값은 97이다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 C언어 프로그램이 실행되었을 때의 결과는?",
+        "question_img": "gisa2021_02_08",
+        "correct_answer": "121",
+        "incorrect_answers": ["55","77","132"]
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "페이징 기법에서 페이지 크기가 작아질수록 발생하는 현상이 아닌 것은?",
+        "correct_answer": "페이지 맵 테이블의 크기가 감소한다.",
+        "incorrect_answers": ["기억장소 이용 효율이 증가한다.","입·출력 시간이 늘어난다.","내부 단편화가 감소한다."],
+        "desc": "페이징 기법은컴퓨터가 메인 메모리에서 사용하기 위해 데이터를 저장하고 검색하는 메모리 관리 기법이다<br>페이지 크기가 작을 경우, 페이지 맵 테이블 크기 상승으로 인한 매핑 속도, 입출력 속도가 저하되고, 페이지 크기가 클 경우, 페이지 맴 테이블 크기 감소로 인한 매핑 속도, 입출력 속도가 상승한다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "다음 중 가장 강한 응집도(Cohesion)는?",
+        "correct_answer": "Sequential Cohesion",
+        "incorrect_answers": ["Procedural Cohesion","Logical Cohesion","Coincidental Cohesion"],
+        "desc": "(약)우연적 - 논리적 - 시간적 - 절차적 - 통신적 - 순차적 - 기능적(강)",
+        "keyword": "응집도",
+        "keyword_num": "12"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "TCP 프로토콜과 관련한 설명으로 틀린 것은?",
+        "correct_answer": "인접한 노드 사이의 프레임 전송 및 오류를 제어한다.",
+        "incorrect_answers": ["흐름 제어(Flow Control)의 기능을 수행한다.","전이 중(Full Duplex) 방식의 양방향 가상회선을 제공한다.","전송 데이터와 응답 데이터를 함께 전송할 수 있다."],
+        "desc": "TCP 프로토콜은 인접한 노드가 아닌 멀리 떨어진 종단 시스템 간 전송 및 오류 제어를 수행한다."
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "C언어에서 연산자 우선순위가 높은 것에서 낮은 것으로 바르게 나열된 것은?",
+        "question_desc": "㉠ ( ), ㉡ ==, ㉢ <, ㉣ <<, ㉤ || ㉥/ ",
+        "correct_answer": "㉠, ㉥, ㉣, ㉢, ㉡, ㉤",
+        "incorrect_answers": ["㉠, ㉣, ㉥, ㉢, ㉡, ㉤","㉠, ㉣, ㉥, ㉢, ㉤, ㉡","㉠, ㉥, ㉣, ㉤, ㉡, ㉢"],
+        "keyword": "C언어",
+        "keyword_num": "42"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "C언어 라이브러리 중 stdlib.h에 대한설명으로 옳은 것은?",
+        "correct_answer": "문자열을 수치 데이터로 바꾸는 문자 변환함수와 수치를 문자열로 바꿔주는 변환함수 등이 있다.",
+        "incorrect_answers": ["문자열 처리 함수로 strlen()이 포함되어 있다.","표준 입출력 라이브러리이다.","삼각 함수, 제곱근, 지수 등 수학적인 함수를 내장하고 있다."],
+        "keyword": "C언어",
+        "keyword_num": "42"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "자바스크립트(JavaScript)와 관련한 설명으로 틀린 것은?",
+        "correct_answer": "클래스 기반으로 객체 상속을 지원한다.",
+        "incorrect_answers": ["프로토타입(Prototype)의 개념이 존재한다.","Prototype Link와 Prototype Object를 활용할 수 있다.","객체지향 언어이다."],
+        "desc": "전부 정답 처리"
+    },{
+        "subject": "프로그래밍 언어 활용",
+        "question": "OSI 7계층 중 네트워크 계층에 대한 설명으로 틀린 것은?",
+        "correct_answer": "한 노드로부터 다른 노드로 프레임을 전송하는 책임을 진다.",
+        "incorrect_answers": ["패킷을 발신지로부터 최종 목적지까지 전달하는 책임을 진다.","패킷에 발신지와 목적지의 논리 주소를 추가한다.","라우터 또는 교환기는 패킷 전달을 위해 경로를 지정하거나 교환 기능을 제공한다."],
+        "desc": "노드 간의 전송을 보장하는 계층은 데이터링크 계층이다.<br>OSI 7계층은 물리 계층, 데이터 링크 계층, 네트워크 계층, 전송 계층, 세션 계층, 표현 계층, 응용 계층이 있다. [물데네,전세,표응]",
+        "keyword": "OSI 7계층",
+        "keyword_num": "27"
+    },
+    {
+        "subject": "정보시스템 구축관리",
+        "question": "다음 내용이 설명하는 것은?",
+        "question_desc": "네트워크상에 광채널 스위치의 이점인 고속 전송과 장거리 연결 및 멀티 프로토콜 기능을 활용<br>각기 다른 운영체제를 가진 여러 기종들이 네트워크상에서 동일 저장장치의 데이터를 공유하게 함으로써, 여러 개의 저장장치나 백업 장비를 단일화시킨 시스템",
+        "correct_answer": "SAN",
+        "incorrect_answers": ["MBR","NAC","NIC"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "SSH(Secure Shell)에 대한 설명으로 틀린 것은?",
+        "correct_answer": "SSH의 기본 네트워크 포트는 220번을 사용한다",
+        "incorrect_answers": ["전송되는 데이터는 암호화 된다.","키를 통한 인증은 클라이언트의 공개키를 서버에 등록해야 한다.","서로 연결되어 있는 컴퓨터 간 원격 명령실행이나 셀 서비스 등을 수행한다."],
+        "desc": "SSH의 기본 네트워크 포트는 22번이다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "CBD(Component Based Development) SW개발 표준 산출물 중 분석 단계에 해당하는 것은?",
+        "correct_answer": "사용자 요구사항 정의서",
+        "incorrect_answers": ["클래스 설계서","통합시험 결과서","프로그램 코드"],
+        "desc": "분석단계에 산출물에는 사용자 요구사항 정의서, 유스케이스 명세서, 요구사항 추적표가 있습니다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "다음 내용이 설명하는 접근 제어 모델은?",
+        "question_desc": "- 군대의 보안 레벨처럼 정보의 기밀성에 따라 상하 관계가 구분된 정보를 보호하기 위해 사용<br>- 자신의 권한 보다 낮은 보안 레벨 권한을 가진 경우에는 높은 보안 레벨의 문서를 읽을 수 없도 자신의 권한보다 낮은 수준의 문서만 읽을 수 있다.<br>- 자신의 권한보다 높은 보안 레벨의 문서에는 쓰기가 가능하지만 보안레벨이 낮은 문서의 쓰기 권한은 제한한다.",
+        "correct_answer": "Bell-Lapadula Model",
+        "incorrect_answers": ["Clark-Wilson Integrity Model","PDCA Model","Chinese Wall Model"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "하둡(Hadoop)과 관계형 데이터베이스간에 데이터를 전송할 수 있도록 설계된 도구는?",
+        "correct_answer": "Sqoop",
+        "incorrect_answers": ["Apnic","Topology","SDB"],
+        "desc": "Sqoop은 커넥터를 사용하여 관계형 디비시스템(RDBMS)에서 HDFS로 데이터를 수집하는 빅데이터 기술이다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "라우팅 프로토콜인 OSPF(Open Shortest Path First)에 대한 설명으로 옳지 않은 것은?",
+        "correct_answer": "거리 벡터 라우팅 프로토콜이라고 한다.",
+        "incorrect_answers": ["네트워크 변화에 신속하게 대처할 수 있다.","멀티캐스팅을 지원한다.","최단 경로 탐색에 Dijkstra 알고리즘을 사용한다."],
+        "desc": "거리 벡터(Distance Vector) 라우팅 프로토콜을 사용하는 프로토콜은 BGP(Border Gateway Protocol)이다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "소프트웨어 비용 추정 모형(estimation models)이 아닌 것은?",
+        "correct_answer": "PERT",
+        "incorrect_answers": ["COCOMO","Putnam","Function-Point"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "코드의 기입 과정에서 원래 '12536'으로 기입되어야 하는데 '12936‘으로 표기되었을 경우, 어떤 코드 오류에 해당하는가?",
+        "correct_answer": "Transcription Error",
+        "incorrect_answers": ["Addition Error","Omission Error","Sequence Error"],
+        "desc": "- 생략 오류(omission error) : 입력 시 한 자리를 빼놓고 기록한 경우(1234 → 123)<br>- 필사 오류(Transcription error) : 입력 시 임의의 한 자리를 잘못 기록한 경우(1234 → 1235)<br>- 전위 오류(Transposition error) : 입력 시 좌우 자리를 바꾸어 기록한 경우(1234 → 1243)<br> - 이중 오류(Double Transposition error) : 전위 오류가 두 가지 이상 발생한 경우(1234 → 2143)<br>- 추가 오류(Addition error) : 입력 시 한 자리 추가로 기록한 경우(1234 → 12345)<br>- 임의 오류(Random error) : 위의 오류가 두 가지 이상 결합하여 발생한 경우(1234 → 12367)"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "ISO 12207 표준의 기본 생명주기의 주요 프로세스에 해당하지 않는 것은?",
+        "correct_answer": "성능평가 프로세스",
+        "incorrect_answers": ["획득 프로세스","개발 프로세스","유지보수 프로세스"],
+        "desc": "ISO 12207 표준의 기본 생명주기의 주요 프로세스는 획득, 공급, 개발, 운영, 유지보수이다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "소프트웨어 비용 산정 기법 중 개발 유형으로 organic, semi-detached, embedded로 구분되는 것은?",
+        "correct_answer": "COCOMO",
+        "incorrect_answers": ["PUTNAM","SLIM","FP"],
+        "keyword": "소프트웨어 비용 산정"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "SPICE 모델의 프로세스 수행능력 수준의 단계별 설명이 틀린 것은?",
+        "correct_answer": "수준 7 - 미완성 단계",
+        "incorrect_answers": ["수준 5 - 최적화 단계","수준 4 - 예측 단계","수준 3 - 확립 단계"],
+        "desc": "SPICE 모델은 수준 0부터 수준 5까지 총 6개의 수준이다. 0: 불안전, 1: 수행, 2:관리, 3:확립, 4:예측, 5: 최적화",
+        "keyword": "소프트웨어 개발방법론",
+        "keyword_num": "7"
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "PC, TV, 휴대폰에서 원하는 콘텐츠를 끊김없이 자유롭게 이용할 수 있는 서비스는?",
+        "correct_answer": "N-Screen",
+        "incorrect_answers": ["Memristor","MEMS","SNMP"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "해쉬(Hash) 기법에 대한 설명으로 틀린 것은?",
+        "correct_answer": "주로 공개키 암호화 방식에서 키 생성을 위해 사용한다.",
+        "incorrect_answers": ["임의의 길이의 입력 데이터를 받아 고정된 길이의 해쉬 값으로 변환한다. ","대표적인 해쉬 알고리즘으로 HAVAL, SHA-1 등이 있다.","해쉬 함수는 일방향 함수(One-way function)이다."],
+        "desc": "Hash는 데이터의 암호화가 아닌 무결성을 검증하기 위한 방법으로 사용된다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "IPSec(IP Security)에 대한 설명으로 틀린 것은?",
+        "correct_answer": "암호화 수행시 일방향 암호화만 지원한다.",
+        "incorrect_answers": ["ESP는 발신지 인증, 데이터 무결성, 기밀성 모두를 보장한다.","운영 모드는 Tunnel 모드와 Transport 모드로 분류된다","AH는 발신지 호스트를 인증하고, IP 패킷의 무결성을 보장한다"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "메모리상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술은?",
+        "correct_answer": "Stack Guard",
+        "incorrect_answers": ["Bridge","ASLR","FIN"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "침입차단 시스템(방화벽) 중 다음과 같은 형태의 구축 유형은?",
+        "correct_answer": "Screened Subnet",
+        "incorrect_answers": ["Block Host","Tree Host ","Ring Homed"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "Secure OS의 보안 기능으로 거리가 먼 것은?",
+        "correct_answer": "고가용성 지원",
+        "incorrect_answers": ["식별 및 인증","임의적 접근 통제","강제적 접근 통제"],
+        "desc": "보안의 기본은 통제와 식별, 인증이다."
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "서버에 열린 포트 정보를 스캐닝해서 보안취약점을 찾는데 사용하는 도구는?",
+        "correct_answer": "nmap",
+        "incorrect_answers": ["type","mkdir","ftp"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": " 서로 다른 네트워크 대역에 있는 호스트들 상호간에 통신 할 수 있도록 해주는 네트워크 장비는?",
+        "correct_answer": "라우터",
+        "incorrect_answers": ["L2 스위치","HIPO","RAD"]
+    },{
+        "subject": "정보시스템 구축관리",
+        "question": "암호화 키와 복호화 키가 동일한 암호화 알고리즘은?",
+        "correct_answer": "AES",
+        "incorrect_answers": ["RSA","DSA","ECC"]
+    }
+]
