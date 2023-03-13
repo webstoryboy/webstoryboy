@@ -257,62 +257,68 @@
         "question": "응용 프로그램의 보안 취약점을 이용해서 악의적인 SQL 구문을 삽입, 실행시켜서 데이터베이스의 접근을 통해 정보를 탈취하거나 조작 등의 행위를 하는 공격기법을 작성하시오.",
         "correct_answer": "SQL 삽입(Injection)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "범죄 행위에 대한 사실을 사법기관에 제출하기 위해 디지털 증거자료를 획득, 분석, 보관, 제출, 기록하는 일련의 과정을 지칭하는 용어는 무엇인가?",
+        "correct_answer": "디지털 포렌식",
+        "desc": "디지털 포렌식의 원칙은 정당성, 재현성, 연계성, 신속성, 무결성이다."
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "시스템 침입 후 침입 사실을 숨긴 채 차후의 침입을 위한 백도어, 트로이 목마 설치, 원격 접근, 내부사용 흔적 삭제, 관리자 권한 획득 등 주로 불법적인 해킹에 사용되는 기능을 제고하는 프로그램의 모음을 뜻하는 보안 관련 용어를 작성하시오.",
+        "correct_answer": "루트킷(Rootkit)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "해커가 시스템의 민감한 정보를 수집하거나, 네트워크상의 다른 시스템을 공격 또는 추적 회피를 중간 지점으로 이용하더라도 로그를 지워 버릴 수 있어 탐지하기 어려운 도구를 뜻하는 보안 관련 용어를 작성하시오.",
+        "correct_answer": "루트킷(Rootkit)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "온라인 상에서 범죄와 같은 불법적인 행위를 수행하기 위해 제작된 컴퓨터 프로그램으로 공격용 툴 킷으로 불리고, 악성 코드로 구성된 프로그램이 사용자를 속여 PC에 설치되면 불법적으로 정보를 수집하거나 PC의 자원을 사용하여 원하는 대상을 공격하는 용도로 사용되는 보안 관련 용어를 작성하시오.",
+        "correct_answer": "크라임웨어(Crimeware)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "외부 인터넷망이 차단된 상태에서 인트라넷 망만을 활용하여 개발환경을 구축하는 방식으로 데이터와 정보의 외부 유출이 민감한 경우 해당 장비를 자체 구매하고 특정 공간에 개발 환경을 구축하는 것을 무엇이라고 하는가?",
+        "correct_answer": "온프레미스(On-Premise)",
+        "desc": "개발환경 인프라 구성 방식에는 온프레미스 방식, 클라우드 방식, 하이브리드 방식이 있다."
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "분석 자동화 도구 유형 중 계획수립, 요구분석, 기본설계 단계를 다이어그램으로 표현하고, 모델들 사이의 모순 검사 및 모델의 오류 검증, 일관성 검증 지원을 하는 유형은 무엇인가?",
+        "correct_answer": "상위 CSAS(Upper CASE)",
+        "desc": "분석 자동화 도구인 CASE 도구의 유형에는 상위 CASE, 하위 CASE가 있다."
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "분석 자동화 도구 유형 중 구문 중심 편집 및 정정, 동적 테스트를 지원하고, 시스템 명세서 생성 및 소스 코드 생성을 지원하는 유형은 무엇인가?",
+        "correct_answer": "하위 CSAS(Lower CASE)",
+        "desc": "분석 자동화 도구인 CASE 도구의 유형에는 상위 CASE, 하위 CASE가 있다."
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "입력 데이터 검증 및 표현 취약점에 해당하며, 보안 공격 기법 중 사용자가 자신의 의지와는 무관하게 공격자가 의도한 행위를 특정 웹사이트에 요청하게 하는 공격 기법은 무엇인가?",
+        "correct_answer": "사이트 간 요청 위조(CSRF, Cross-Site Request Forgery)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "인터넷 프로토콜 스택 중 네트워크 계층의 프로토콜로서 버전 6인 인터넷 프로토콜로 제정된 차세대 인터넷 프로토콜은 무엇인가?",
+        "correct_answer": "IPv6"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "데이터 전송을 위해 목적지까지 갈 수 있는 여러 경로 중 최적의 경로를 설정해주는 라우터 간의 상호 통신 규약을 무엇이라고 하는가?",
+        "correct_answer": "라우팅 프로토콜(Routing Protocol)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "회복 기법 중 장애 발생 시 검사점 이후에 처리된 트랜잭션에 대해서만 장애 발생 이전의 상태로 복원시키는 회복 기법은 무엇인지 작성하시오.",
+        "correct_answer": "체크 포인트(검사점) 기법(Checkpoint Recovery)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "서버 프로그램 구현을 위해 특정 타입의 데이터베이스에 추상 인터페이스를 제공하며, 세부내용 노출 없이 데이터 조작을 수행하는 객체는 무엇인가?",
+        "correct_answer": "DAO(Data Access Object)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "TCL에서 트랜잭션을 메모리에 영구적으로 저장하는 명령어는 무엇인지 작성하시오.",
+        "correct_answer": "커밋(Commit)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "Iot 관련 프로토콜 중 M2M 노드들 사이에서 이벤트에 대한 송수신을 비동기적으로 전송하는 REST 기반의 프로토콜을 말하며, RFC 7252에 정의한 제약이 있는 장치들을 위한 특수한 인터넷 애플리케이션 프로토콜로 단순한 웹 연동을 위해 HTTP로 쉽게 변환되도록 설계되었으며, 멀티캐스트 지원과 같은 특수한 요건을 충족하면서도 부하가 낮고 단순한 특징이 있다. 이것을 무엇을 의미하는가?",
+        "correct_answer": "CoAP(Constrained Application Protocol)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "HIPO 차트 종류 중 프로그램을 구성하는 기능을 기술한 것으로 입력, 처리, 출력에 대한 전반적인 정보를 제공하는 도표는 무엇인가?",
+        "correct_answer": "총체적 도표",
+        "desc": "UIPO 차트의 종류에는 가시적 도표, 총체적 도표, 세부적 도표가 있다."
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "데이터베이스 무결성 중 외래 키가 참조하는 다른 객체의 기본 키에 해당하는 값이 기본 키값이나 NULL이어야 한다는 무결성은 무엇인가?",
+        "correct_answer": "참조 무결성",
+        "desc": "데이터베이스 무결성의 종류에는 개체 무결성, 참조 무결성, 속성 무결성, 사용자 무결성, 키 무결성이 있다."
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "여러개의 하드시스크로 디스크 배열을 구성하여 파일을 구성하고 있는 데이터 블록들을 서로 다른 시스크들에 분산 저장하는 기술을 무엇이라고 하는가?",
+        "correct_answer": "RAID(Redundant Array of Independent Disks, 복수 배열 독립 디스크)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "IT 조직이 기존의 기술 중심적인 운영에서 사용자들의 요구에 초점을 맞춘 고객 지향적인 운영방식을 채택함에 따라 각자 개별적인 IT 관리 관행을 만드는 것을 방지하기 위해서 영국 정부가 다양한 IT 서비스들의 관리 방법들을 모아 만든 표준적인 참고 문서는 무엇인가?",
+        "correct_answer": "ITIL(Information Technology Infrastructure Library, 정보기술 인프라 라이브러리)"
     },{
-        "question": "",
-        "correct_answer": ""
+        "question": "커널의 유형 중 장치 드라이버, 프로토콜 스택, 파일 시스템과 같은 전통적인 OS의 기능들을 사용자 영역에 놓고 하드웨어 추상화를 최소하한 컨널로 목적이 분명한 임베디드 시스템이나 성능 최적화가 필요한 영역에서 활용하는 커널은 무엇인가?",
+        "correct_answer": "마이크로 커널(Micro Kernel)"
     },{
         "question": "",
         "correct_answer": ""

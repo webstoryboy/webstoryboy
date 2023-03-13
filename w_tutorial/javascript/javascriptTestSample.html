@@ -511,6 +511,32 @@
                     </div>
 
 
+                    <h3>23. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num = [56, 4, 3, 65, 78];
+    let temp;
+
+    for(let i=0; i&lt;1; i++){
+        for(let j=0; j&lt;num.length-i-1; j++){
+            if(num[j]&gt;num[j+1]){
+                temp = num[j];
+                num[j] = num[j+1];
+                num[j+1] = temp;
+            }
+        }
+    }
+
+    for(let i=0; i&lt;num.length; i++){
+        console.log(num[i]);
+    }
+}
+//4 3 56 65 78
+</code></pre>
+                    </div>
+
+
                 </div>
                 <!-- //blog__contents -->
 
@@ -535,14 +561,22 @@
     <script src="../assets/js/highlight.min.js"></script>
     <script src="../assets/js/webs.js"></script>
     <script>
-        let i=0, sum=0;
-        while(i<10){
-            i++;
-            if(i%2 == 1) continue;
-            sum += i
+        let num = [56, 4, 3, 65, 78];
+        let temp;
+
+        for(let i=0; i<1; i++){
+            for(let j=0; j<num.length-i-1; j++){
+                if(num[j]>num[j+1]){
+                    temp = num[j];
+                    num[j] = num[j+1];
+                    num[j+1] = temp;
+                }
+            }
         }
-        console.log(sum)
-        
+
+        for(let i=0; i<num.length; i++){
+            console.log(num[i]);
+        }
     </script>
 </body>
 </html>
