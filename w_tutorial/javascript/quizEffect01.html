@@ -73,10 +73,10 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Tutorial/Portfolio</span>
-                <h1 class="title">텍스트 애니메이션 및 Three.js 배경 효과 만들기</h1>
+                <h1 class="title">정답만 확인하는 퀴즈 게임 만들기</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
-                    <span class="date">2022. 12. 15.</span>
+                    <span class="date">2023. 03. 14.</span>
                 </div>
             </div>
             <div class="blog__inner container">
@@ -87,7 +87,7 @@
                     <div class="desc">
                         <div class="left">
                             <span class="num">Tutorial</span>
-                            <div class="title">기본적인 퀴즈 게임 만들기</div>
+                            <div class="title">퀴즈 이펙트01</div>
                             <span class="difficulty">난이도 <span>중간</span></span>
                         </div>
                         <div class="right">
@@ -102,33 +102,32 @@
                 <div class="blog__contents tutorial">
                     <h2>소개</h2>
                     <p>
-                        안녕하세요! 오늘은 포트폴리오 메인페이지를 만들어 보겠습니다. 
-                        배경에 THREE.JS<sup>1</sup> 효과와 메인 로딩애니메이션은 GSAP<sup>2</sup>를 사용할 것입니다.
-                        사이트는 studyhall<sup>3</sup> 사이트를 참고하였으며, 폰트는 pangrampangram<sup>4</sup>에서 무료 버전과 구글폰트를 사용하였습니다.
-                        그럼 시작해보겠습니다.
+                        안녕하세요! 오늘은 퀴즈 게임을 만들어보겠습니다.
+                        정보처리를 공부하거나 개인적인 공부를 할 때 CBT를 이용하는 경우가 있지만,
+                        디자인이나 UX가 맘에 들지 않어 내가 만들어 봐야겠다라는 생각을 종종했습니다. 
+                        이번 기회에 기본부터 CBT까지 만들어 보면서 자바스크립트에 기본 개념을 정확히 익히는 기회가 됐으면 좋겠습니다.
                     </p>
+
+                    <hr>
+
+                    <h2>배울것들</h2>
+                    <ol>
+                        <li>데이터 저장하기 : 변수</li>
+                        <li>querySelector() : 문서에서 특정 CSS 선택자로 요소를 찾는 DOM 메서드</li>
+                        <li>innerText : DOM 요소의 텍스트 내용을 가져오거나 설정하는데 사용되는 속성</li>
+                        <li>style : 자바스크립트에서 CSS 스타일을 표현하는 방법</li>
+                        <li>classList : 자바스크립트에서 CSS 스타일을 추가하는 방법</li>
+                        <li>addEventListener : 자바스크립트에서 이벤트를 처리하는 함수</li>
+                    </ol>
 
                     <hr>
 
                     <h3>01. 기본 코딩</h3>
                     <p data-num="01">기본 골격부터 작업하겠습니다. 헤더, 메인, 푸터 영역을 설정하겠습니다.</p>
-<pre><code class="language-html">&lt;header id="header"&gt;&lt;/header&gt;&lt;!-- //header --&gt;
-&lt;main id="main"&gt;&lt;/main&gt;&lt;!-- //main --&gt;
-&lt;footer id="footer"&gt;&lt;/footer&gt;&lt;!-- //footer --&gt;
+<pre><code class="language-html">
 </code></pre>
                     
-                    <p data-num="02">기본 css를 설정하겠습니다.</p>
-<pre><code class="language-css">* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    width: 100%;
-    height: 100vh;
-    background-color: #0B130D;
-}
-</code></pre>
+
 
                     <hr>
 
