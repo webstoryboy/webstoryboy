@@ -554,6 +554,74 @@
 </code></pre>
                     </div>
 
+                    <h3>25. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let a, b = 10;
+
+    for(let i=0; i&lt;5; i++){
+        a = i;
+        b -= a;
+    }
+    console.log(a, b)
+}
+//4 0
+</code></pre>
+                    </div>
+
+                    <h3>26. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num1 = 128;
+    let num2 = 0;
+    
+    console.log(num1 ^ num2);
+}
+//128
+</code></pre>
+                    </div>
+
+                    <h3>27. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num1 = 7;
+    let num2 = 3;
+    
+    num1 &lt; num2 ? ++num1 : num2--;
+    
+    console.log(num1, num2);
+}
+//7 2
+</code></pre>
+                    </div>
+
+                    <h3>27. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num1 = 20;
+    let num2 = 4;
+    let result;
+    
+    result = num1 &gt;&gt; 3 &lt;&lt; num2;
+
+    console.log(result);
+}
+//32
+</code></pre>
+                    </div>
+
+                    <hr><hr>
+
+                    <h3>01. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>[영어] 테이블에서 등급이 A부터 D사이인 학생의 이름을 검색하되 중복된 값을 제거한다.</p>
+                    <div class="code">
+<pre><code class="language-js">SELECT DISTINCT 이름 FROM [영어] WHERE IN('A','B','C','D');</code></pre>
+                    </div>
+
 
                 </div>
                 <!-- //blog__contents -->
@@ -579,14 +647,13 @@
     <script src="../assets/js/highlight.min.js"></script>
     <script src="../assets/js/webs.js"></script>
     <script>
-        let num = 10;
-        num += 2;
-        num -= 3;
-        num *= 5;
-        num /= 5;
-        num %= 9;
+        let num1 = 20;
+        let num2 = 4;
+        let result;
         
-        console.log(num)
+        result = num1 >> 3 << num2;
+
+        console.log(result);
     </script>
 </body>
 </html>
