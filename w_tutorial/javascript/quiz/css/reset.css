@@ -1,0 +1,38 @@
+@import url('https://webfontworld.github.io/DungGeunMo/DungGeunMo.css');
+@import url('https://webfontworld.github.io/PyeongChang/PyeongChang.css');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+li, ul, ol {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    width: 100%;
+}
+em {
+    font-style: normal;
+}
+body {
+    background:
+        radial-gradient(#a4a4a4 3px, transparent 4px),
+        radial-gradient(#a4a4a4 3px, transparent 4px),
+        linear-gradient(#fff 4px, transparent 0),
+        linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+        linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+        #fff;
+    background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}

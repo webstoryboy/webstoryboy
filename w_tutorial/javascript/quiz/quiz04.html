@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 이펙트03</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <header id="header">
+        <h1><a href="../javascript14.html">Quiz</a> <em>객관식 확인하기 유형</em></h1>
+        <ul>
+            <li><a href="quizEffect01.html">1</a></li>
+            <li><a href="quizEffect02.html">2</a></li>
+            <li><a href="quizEffect03.html">3</a></li>
+            <li class="active"><a href="quizEffect04.html">4</a></li>
+        </ul>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="quiz__wrap">
+            <div class="quiz">
+                <div class="quiz__header">
+                    <h2 class="quiz__title"></h2>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question"></div>
+                    <div class="quiz__view">
+                        <div class="dog__wrap">
+                            <div class="true">정답입니다!</div>
+                            <div class="false">틀렸습니다!</div>
+                            <div class="card-container">
+                                <div class="dog">
+                                    <div class="head">
+                                        <div class="ears"></div>
+                                        <div class="face"></div>
+                                        <div class="eyes">
+                                            <div class="teardrop"></div>
+                                        </div>
+                                        <div class="nose"></div>
+                                        <div class="mouth">
+                                            <div class="tongue"></div>
+                                        </div>
+                                        <div class="chin"></div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="tail"></div>
+                                        <div class="legs"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__choice">
+                        <label for="choice1">
+                            <input type="radio" id="choice1" name="choice" value="1">
+                            <span></span>
+                        </label>
+                        <label for="choice2">
+                            <input type="radio" id="choice2" name="choice" value="2">
+                            <span></span>
+                        </label>
+                        <label for="choice3">
+                            <input type="radio" id="choice3" name="choice" value="3">
+                            <span></span>
+                        </label>
+                        <label for="choice4">
+                            <input type="radio" id="choice4" name="choice" value="4">
+                            <span></span>
+                        </label>
+                    </div>
+                    <div class="quiz__answer">
+                        <button class="confirm">정답 확인하기</button>
+                    </div>
+                    <div class="quiz__desc"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:webstoryboy@naver.com">webstoryboy@naver.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script>
+        // 선택자
+        const quizWrap = document.querySelector(".quiz__wrap");
+        const quizTitle = quizWrap.querySelector(".quiz__title"); 
+        const quizQuestion= quizWrap.querySelector(".quiz__question");
+        const quizChoice = quizWrap.querySelectorAll(".quiz__choice span");
+        const quizSelect = quizWrap.querySelectorAll(".quiz__choice input");
+        const quizDesc = quizWrap.querySelector(".quiz__desc");
+        const quizAnswer = quizWrap.querySelector(".quiz__answer");
+        const quizConfirm = quizWrap.querySelector(".quiz__answer .confirm");
+        const dogWrap = quizWrap.querySelector(".dog__wrap");     
+
+        // 문제 정보
+        const quizInfo = [
+            {
+                infoType: "웹디자인 기능사",
+                infoTime: "2016년 4회",
+                infoNumber: "1",
+                infoQuestion: "다음 중 디자인의 기본 요소들로 옳은 것은?",
+                infoChoice: ["선, 색채, 공간, 수량", "점, 선, 면, 질감", "시간, 수량, 구조, 공간", "면, 구조, 공간, 수량"],
+                infoAnswer: "2",
+                infoDesc: "디자인의 기본 요소에는 점, 선, 면, 질감이 있습니다."
+            }
+        ];
+
+        // 문제 출력
+        function updateQuiz(){
+            quizTitle.innerHTML = quizInfo[0].infoType +" "+ quizInfo[0].infoTime;
+            quizQuestion.innerHTML = "<em>"+quizInfo[0].infoNumber+"</em>."+ quizInfo[0].infoQuestion;
+            quizDesc.innerHTML = quizInfo[0].infoDesc;
+
+            for(let i=0; i<4; i++){
+                quizChoice[i].textContent = quizInfo[0].infoChoice[i];
+            }
+
+            // 해설 숨기기
+            quizDesc.style.display = "none";
+        }
+
+        // 정답 확인
+        function answerQuiz(){
+            // 사용자가 선택한 인풋박스(checked) == 문제 정답(quizInfo[0].infoAnswer)
+            for(let i=0; i<quizChoice.length; i++){
+                if(quizSelect[i].checked == true){  //사용자가 보기를 체크한 상태
+                    if(quizSelect[i].value == quizInfo[0].infoAnswer){
+                        // alert("정답입니다.");
+                        dogWrap.classList.add("like");
+                    } else {
+                        // alert("오답입니다.")
+                        dogWrap.classList.add("dislike");
+                    }
+                }
+            }
+
+            //해설 보이기
+            quizDesc.style.display = "block";
+
+            //정답 숨기기
+            quizAnswer.style.display = "none";
+        }
+
+        // 정답 클릭
+        quizConfirm.addEventListener("click", answerQuiz);
+
+        //문제 출력
+        updateQuiz();   
+    </script>
+</body>
+</html>

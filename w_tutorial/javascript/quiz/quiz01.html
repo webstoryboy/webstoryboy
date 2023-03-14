@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>퀴즈 이펙트01</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <header id="header">
+        <h1><a href="../javascript14.html">Quiz</a> <em>정답 확인하기 유형</em></h1>
+        <ul>
+            <li class="active"><a href="quizEffect01.html">1</a></li>
+            <li><a href="quizEffect02.html">2</a></li>
+            <li><a href="quizEffect03.html">3</a></li>
+            <li><a href="quizEffect04.html">4</a></li>
+        </ul>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <div class="quiz__wrap">
+            <div class="quiz">
+                <div class="quiz__header">
+                    <h2 class="quiz__title"><span></span> <em></em></h2>
+                </div>
+                <div class="quiz__main">
+                    <div class="quiz__question">
+                        <em></em>. <span></span> 
+                    </div>
+                    <div class="quiz__view">
+                        <div class="dog__wrap">
+                            <div class="card-container">
+                                <div class="dog">
+                                    <div class="head">
+                                        <div class="ears"></div>
+                                        <div class="face"></div>
+                                        <div class="eyes">
+                                            <div class="teardrop"></div>
+                                        </div>
+                                        <div class="nose"></div>
+                                        <div class="mouth">
+                                            <div class="tongue"></div>
+                                        </div>
+                                        <div class="chin"></div>
+                                    </div>
+                                    <div class="body">
+                                        <div class="tail"></div>
+                                        <div class="legs"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quiz__answer">
+                        <button class="confirm">정답 확인하기</button>
+                        <div class="result">연변대비</div>
+                    </div>
+                </div>
+                <div class="quiz__footer"></div>
+            </div>
+        </div>
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <a href="mailto:webstoryboy@naver.com">webstoryboy@naver.com</a>
+    </footer>
+    <!-- //footer -->
+
+    <script>
+        //선택자
+        const quizWrap = document.querySelector(".quiz__wrap");
+        const quizTitle = quizWrap.querySelector(".quiz__title span");
+        const quizTime = quizWrap.querySelector(".quiz__title em");
+        const quizQuestion = quizWrap.querySelector(".quiz__question span");
+        const quizQuestionNum = quizWrap.querySelector(".quiz__question em");
+        const quizAnswerConfirm = quizWrap.querySelector(".quiz__answer .confirm");
+        const quizAnswerResult = quizWrap.querySelector(".quiz__answer .result");
+        const dogWrap = quizWrap.querySelector(".dog__wrap");
+        
+        // 문제 정보
+        const infoType = "웹디자인 기능사";
+        const infoTime = "2012년 1회";
+        const infoNumber = "1";
+        const infoQuestion = "인접하는 두 색의 경계 부분에 색상, 명도, 채도의 대비가 더욱 강하게 일어나는 현상을 무엇이라고 하는가?";
+        const infoAnswer = "연변대비";
+
+        // 문제 출력
+        quizTitle.innerText = infoType;
+        quizTime.innerText = infoTime;
+        quizQuestionNum.innerText = infoNumber;
+        quizQuestion.innerText = infoQuestion;
+        quizAnswerResult.innerText = infoAnswer;
+
+        // 정답 숨기기
+        quizAnswerResult.style.display = "none";
+
+        // 정답 확인
+        quizAnswerConfirm.addEventListener("click", function(){
+            quizAnswerResult.style.display = "block";
+            quizAnswerConfirm.style.display = "none";
+            dogWrap.classList.add("like");
+        });
+    </script>
+</body>
+</html>
