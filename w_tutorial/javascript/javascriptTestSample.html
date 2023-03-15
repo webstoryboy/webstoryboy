@@ -614,12 +614,71 @@
 </code></pre>
                     </div>
 
+                    <h3>27. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num = [1, 23, 42, 19, 50];
+    let temp;
+
+    for(let i=0; i&lt;=4; i++){
+        for(let j=0; j&lt;4; j++){
+            if(num[i] &gt;= num[j]){
+                temp = num[i];
+                num[i] = num[j];
+                num[j] = temp;
+            }
+        }
+    }
+    
+    console.log(num);
+}
+//[50, 42, 23, 19, 1]
+</code></pre>
+                    </div>
+
+                    <h3>27. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num = 1;
+
+    switch(num){
+        case "1":
+            console.log(num + 1);
+            break;
+        case "2":
+            console.log(num + 2);
+            break;
+        case "2":
+            console.log(num + 3);
+            break;
+        default : 
+            console.log(num);
+    }
+}
+//[50, 42, 23, 19, 1]
+</code></pre>
+                    </div>
+
                     <hr><hr>
 
                     <h3>01. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
                     <p>[영어] 테이블에서 등급이 A부터 D사이인 학생의 이름을 검색하되 중복된 값을 제거한다.</p>
                     <div class="code">
 <pre><code class="language-js">SELECT DISTINCT 이름 FROM [영어] WHERE IN('A','B','C','D');</code></pre>
+                    </div>
+
+                    <h3>02. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>[시험] 테이블에서 점수가 80~90점인 사람의 이름을 출력하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">SELECT 이름 FROM [시험] WHERE 점수 BEWTEEN 80 AND 90;</code></pre>
+                    </div>
+
+                    <h3>03. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>[학생] 테이블에서 2학년 이상 학생의 과목을 검색하고 같은 과목값은 한 번만 검색하는 SQL문을 작성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">SELECT DISTINCT 과목 FROM [학생] WHERE 학년 &gt;=2 </code></pre>
                     </div>
 
 
@@ -647,13 +706,14 @@
     <script src="../assets/js/highlight.min.js"></script>
     <script src="../assets/js/webs.js"></script>
     <script>
-        let num1 = 20;
-        let num2 = 4;
-        let result;
+        function func1(){
+            let num = 5;
+            num++;
+            console.log(num)
+        }
+        func1();
         
-        result = num1 >> 3 << num2;
-
-        console.log(result);
+        
     </script>
 </body>
 </html>
