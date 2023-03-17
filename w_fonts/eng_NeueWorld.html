@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neue World</title>
+
+    <link rel="stylesheet" href="assets/css/prism.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+    
+    <style>
+        /* font-face */
+        @font-face {
+            font-family: 'PPNeueWorld';
+            font-weight: 400;
+            font-style: normal;
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.eot');
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.eot?#iefix') format('embedded-opentype'),
+                url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.woff2') format('woff2'),
+                url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.woff') format('woff'),
+                url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.ttf') format("truetype");
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'PPNeueWorld';
+            font-weight: 100;
+            font-style: normal;
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.eot');
+            src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.eot?#iefix') format('embedded-opentype'),
+                url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.woff2') format('woff2'),
+                url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.woff') format('woff'),
+                url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.ttf') format("truetype");
+            font-display: swap;
+        }
+        .comments h2,
+        .comments .comment-list ul li p,
+        .comments .comment-form textarea,
+        .comments .comment-form .submit .btn,
+        .related-articles ul li .title,
+        .tags,
+        .related-articles h2 {font-family: 'PPNeueWorld' !important;}
+
+        .webFont__intro, 
+        .webFont__use, 
+        .webFont__use pre,
+        .webFont__use code,
+        .webFont__feel,
+        .webFont__image,
+        .webFont__animation,
+        .webFont__code,
+        .webFont__weight,
+        .webFont__weight__input,
+        .webFont__size, 
+        .webFont__size__input,
+        .webFont__layout,
+        .webFont__layout__input,
+        .webFont__letter,
+        .range-input .value,
+        .webFont__license,
+        .webFont__cross {font-family: 'PPNeueWorld';}
+
+        .webFont__weight,
+        .webFont__intro h2,
+        .webFont__use h2,
+        .webFont__feel h2,
+        .webFont__image h2,
+        .webFont__animation h2,
+        .webFont__code h2,
+        .webFont__weight h2,
+        .webFont__weight__input h2,
+        .webFont__size h2,
+        .webFont__layout h2,
+        .webFont__layout__input,
+        .webFont__letter h2,
+        .webFont__license h2,
+        .webFont__cross h2,
+        .webFont__intro__img .intro {font-weight: 400;}
+        .webFont__intro__img .intro {background-color: #7f00d5; font-size: 3vw;}
+
+        /* tistory */
+        .hgroup {max-width: initial; margin: 0; padding: 0;}
+        .hgroup .category {display: none;}
+        .hgroup h1 {display: none;}
+        .inner {padding: 0;}
+
+    </style>
+    <section id="webFont2" class="webFont2">
+        <div class="webFont__intro webFont__container">
+            <h2>Neue World</h2>
+            <div class="webFont__intro__img">
+                <div class="intro">
+                    <div>ABCDEFGHIJKLMNOPQRSTUWXYZ</div>
+                    <div>abcdefghijklnmopqrstuwxyz</div>
+                    <div>1234567890!@#$%^&*[]{}\:;'"?/</div>
+                </div>
+                <div class="img1"><img src="assets/img/ReciaSerifDisplay01.jpg" alt="웹 폰트1"></div>
+                <div class="img2"><img src="assets/img/ReciaSerifDisplay03.jpg" alt="웹 폰트2"></div>
+                <div class="img3"><img src="assets/img/ReciaSerifDisplay02.jpg" alt="웹 폰트3"></div>
+                <div class="img4"><img src="assets/img/ReciaSerifDisplay04.jpg" alt="웹 폰트3"></div>
+            </div>
+            <div class="webFont__intro__btn">
+                <a href="https://pangrampangram.com/products/neue-world">Download</a>
+                <a href="https://github.com/webfontworld/PPNeueWorld">Webfont Download</a>
+            </div>
+        </div>
+        <!-- //webFont__intro -->
+
+        <div class="webFont__use webFont__container">
+            <h2>Using web fonts</h2>
+            <div class="webFont__use__menu">
+                <ul>
+                    <li class="active"><a href="#c">CSS Setting</a></li>
+                    <li><a href="#c">link Setting</a></li>
+                    <li><a href="#c">import Setting</a></li>
+                    <li><a href="#c">font-face Setting</a></li>
+                    <li><a href="#c">How to use</a></li>
+                </ul>
+            </div>
+            <div class="webFont__use__cont">
+                <div>
+<pre><code>font-family: 'PPNeueWorld';</code></pre>
+                </div>
+                <div>
+<pre><code>&lt;link href="https://webfontworld.github.io/PPNeueWorld/PPNeueWorld.css" rel="stylesheet"&gt;</code></pre>
+                </div>
+                <div>
+<pre><code>@import url('https://webfontworld.github.io/PPNeueWorld/PPNeueWorld.css');</code></pre>
+                </div>
+                <div>
+<pre><code>@font-face {
+    font-family: 'PPNeueWorld';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'PPNeueWorld-Thin';
+    font-weight: 100;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/PPNeueWorld/PPNeueWorld-Thin.ttf') format("truetype");
+    font-display: swap;
+}
+</code></pre>
+                </div>
+                <div>
+<pre><code>How to Use
+1. Select one of link method, import method, and font-face method to copy.
+2. Set font-family to the font property you want to apply.
+---------
+- You can put the link method inside the head tag.
+- The import method is placed at the top of the css file.
+- You can also put the font-face method at the top of the css file.
+- If you set font-family: 'Web font file name'; in the desired property, it will be applied.
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <!-- //webFont__use -->
+
+        <div class="webFont_ad">
+            <div class="ad"></div>
+        </div>
+        <!-- //webFont_ad -->
+
+        <div class="webFont__weight webFont__container">
+            <h2>Web Font / Weight</h2>
+            <input type="text" id="webFont__weight__input" class="webFont__weight__input" placeholder="It is changed by entering text.">
+            <ul class="webFont__weight__preview">
+                <li class="w100">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w200 notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w300 notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w400">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w500 notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w600 notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w700 notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w800 notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="w900 notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="wLighter notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="wNormal notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="wBold notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+                <li class="wBolder notActive">There are several WEIGHTs of this font. There are several WEIGHTs of this font. The thickness of this font is different.</li>
+            </ul>
+        </div>
+        <!-- //webFont__weight -->
+        
+        <div class="webFont__image">
+            <h2 class="webFont__container">Web Font / Images
+                <em>
+                    <span class="notActive">normal</span>
+                    <span class="notActive">bold</span>
+                    <span class="">100</span>
+                    <span class="notActive">200</span>
+                    <span class="notActive">300</span>
+                    <span class="active">400</span>
+                    <span class="notActive">500</span>
+                    <span class="notActive">600</span>
+                    <span class="notActive">700</span>
+                    <span class="notActive">800</span>
+                    <span class="notActive">900</span>
+                </em>
+            </h2>
+            <div class="webFont__image__view webFont__container">
+                <button class="style1"></button>
+                <button class="style2"></button>
+                <button class="style3"></button>
+                <button class="style4"></button>
+                <button class="style5"></button>
+                <button class="style6"></button>
+                <button class="style7"></button>
+                <button class="style8"></button>
+                <button class="style9"></button>
+                <button class="style10"></button>
+                <button class="style11"></button>
+                <button class="style12"></button>
+                <button class="style13"></button>
+            </div>
+            <div class="webFont__image__font">
+                <div class="style6">
+                    <strong>Neue World</strong> 
+                    <em>Display</em>
+                </div>
+            </div>
+        </div>
+        <!-- //webFont__image -->
+
+        <div class="webFont__size webFont__container">
+            <h2>Web Font / Size
+                <em>
+                    <span class="notActive">normal</span>
+                    <span class="notActive">bold</span>
+                    <span class="">100</span>
+                    <span class="notActive">200</span>
+                    <span class="notActive">300</span>
+                    <span class="active">400</span>
+                    <span class="notActive">500</span>
+                    <span class="notActive">600</span>
+                    <span class="notActive">700</span>
+                    <span class="notActive">800</span>
+                    <span class="notActive">900</span>
+                </em>
+            </h2>
+            <input type="text" id="webFont__size__input" class="webFont__size__input" placeholder="It is changed by entering text.">
+            <ul class="webFont__size__preview">
+                <li class="s10">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s12">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s14">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s16">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s18">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s20">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s24">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s28">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s32">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s36">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s40">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s48">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s56">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s64">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+                <li class="s76">a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9 a b c d e f g h i j k l m n o p q r s t u v w x y z 0 1 2 3 4 5 6 7 8 9</li>
+            </ul>
+        </div>
+        <!-- //webFont__size -->
+
+        <div class="webFont__feel">
+            <h2 class="webFont__container">Web Font / Color
+                <em>
+                    <span class="notActive">normal</span>
+                    <span class="notActive">bold</span>
+                    <span class="">100</span>
+                    <span class="notActive">200</span>
+                    <span class="notActive">300</span>
+                    <span class="active">400</span>
+                    <span class="notActive">500</span>
+                    <span class="notActive">600</span>
+                    <span class="notActive">700</span>
+                    <span class="notActive">800</span>
+                    <span class="notActive">900</span>
+                </em>
+            </h2>
+            <div class="webFont__feel__color webFont__container">
+                <button class="style1"></button>
+                <button class="style2"></button>
+                <button class="style3"></button>
+                <button class="style4"></button>
+                <button class="style5"></button>
+                <button class="style6"></button>
+                <button class="style7"></button>
+                <button class="style8"></button>
+                <button class="style9"></button>
+                <button class="style10"></button>
+                <button class="style11"></button>
+                <button class="style12"></button>
+                <button class="style13"></button>
+            </div>
+            <div class="webFont__feel__view">
+                <div class="style9">
+                    <strong>Neue World</strong> 
+                    <em>Font</em>
+                </div>
+            </div>
+        </div>
+        <!-- //webFont__feel -->
+
+        <div class="webFont__layout webFont__container">
+            <h2>Web Font / Layout
+                <em>
+                    <span class="active">normal</span>
+                    <span class="notActive">bold</span>
+                    <span class="notActive">100</span>
+                    <span class="notActive">200</span>
+                    <span class="notActive">300</span>
+                    <span class="notActive">400</span>
+                    <span class="notActive">500</span>
+                    <span class="notActive">600</span>
+                    <span class="notActive">700</span>
+                    <span class="notActive">800</span>
+                    <span class="notActive">900</span>
+                </em>
+            </h2>
+            <input type="text" id="webFont__layout__input" class="webFont__layout__input" placeholder="It is changed by entering text.">
+            <div class="webFont__layout__view">
+                <div class="col4">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col4">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col4">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col4 last">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col3">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col3">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col3 last">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col2">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people. All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col2 last">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people. All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+                <div class="col1">All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people. All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people. All citizens have dignity and value as human beings and have the right to pursue happiness. The state has the duty to confirm and guarantee the inviolable basic human rights of individuals. Korea's sovereignty The people belong to the people, and all power comes from the people.</div>
+            </div>
+        </div>
+        <!-- //webFont__layout -->
+
+        <div class="webFont__letter">
+            <h2 class="webFont__container">WebFont / Letter Spacing
+                <em>
+                    <span class="notActive">normal</span>
+                    <span class="notActive">bold</span>
+                    <span class="">100</span>
+                    <span class="notActive">200</span>
+                    <span class="notActive">300</span>
+                    <span class="active">400</span>
+                    <span class="notActive">500</span>
+                    <span class="notActive">600</span>
+                    <span class="notActive">700</span>
+                    <span class="notActive">800</span>
+                    <span class="notActive">900</span>
+                </em>
+            </h2>
+            <div class="webFont__letter__range webFont__container">
+                <div class="range-input">
+                    <label for="range">Letter Spacing</label>
+                    <input type="range" id="range" min="0" max="100" value="0" step="1">
+                    <div class="value"><div></div></div>
+                </div>
+                <div class="range-input2">
+                    <label for="range">Size</label>
+                    <input type="range" id="range" min="0" max="250" value="150" step="1">
+                    <div class="value"><div></div></div>
+                </div>
+            </div>
+            <div class="webFont__letter__view">
+                <div>Neue World</div>
+                <div>font</div>
+            </div>
+        </div>
+        <!-- //webFont__letter -->
+
+        <div class="webFont__animation">
+            <h2 class="webFont__container">Web Font / Animation</h2>
+            <div class="webFont__animation__btn webFont__container">
+                <button class="style1"></button>
+                <button class="style2"></button>
+                <button class="style3"></button>
+                <button class="style4"></button>
+                <button class="style5"></button>
+                <button class="style6"></button>
+            </div>
+            <div class="webFont__animation__view webFont__container">
+                <div class="style6">
+                    <div class="ani1 WeightBold">
+                        <div>WebFont</div>
+                    </div>
+                    <div class="ani2 WeightBold">
+                        <div data-shadow='WebFont'>WebFont</div>
+                    </div>
+                    <div class="ani3 WeightBold">
+                        <div>WebFont</div>
+                    </div>
+                    <div class="ani4 WeightBold">
+                        <div>WebFont</div>
+                    </div>
+                    <div class="ani5 WeightBold">
+                        <div><span>W</span><span>E</span><span>B</span></div>
+                    </div>
+                    <div class="ani6 WeightBold uppercase">
+                        <ul>
+                            <li>WebFont</li>
+                            <li>WebFont</li>
+                            <li>WebFont</li>
+                            <li>WebFont</li>
+                            <li>WebFont</li>
+                            <li>WebFont</li>
+                            <li>WebFont</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //webFont__animation -->
+
+        <div class="webFont_ad">
+            <div class="ad"></div>
+        </div>
+        <!-- //webFont_ad -->
+
+        <div class="webFont__code webFont__container">
+            <h2>Web Font / Code</h2>
+            <div class="webFont__code__btn">
+                <button class="style1"></button>
+                <button class="style2"></button>
+            </div>
+            <div class="webFont__code__view">
+                <div class="style2">
+<pre class="line-numbers language-html"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+    &lt;style&gt;
+        .ani2 div {
+            position: relative;
+            display: inline-block;
+            color: white;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class="dSearch"&gt;
+        &lt;input type="search" placeholder="search" /&gt;
+    &lt;/div&gt;
+
+    &lt;script&gt;
+        $(".webFont__image__view button").click(function(){
+            var target = $(this).attr("class");
+            $(".webFont__image__font &gt; div").removeClass();
+            $(".webFont__image__font &gt; div").addClass(target)
+        });
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                </div>
+            </div>
+        </div>
+        <!-- //webFont__code -->
+
+        <hr>
+
+        <div class="webFont__license webFont__container">
+            <h2>Check the license usage scope</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Scope of use</th>
+                        <th>Permit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Print</td>
+                        <td>Printed brochures, catalogs, DMs, flyers, posters, packages, calendars, etc</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Publications such as books, comic books, magazines, periodicals, and newspapers</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Signs, banners, panels, etc.</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Advertisements such as newspaper advertisements, magazine advertisements</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Create PDF files for printing and document sharing</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">WebSite</td>
+                        <td>Web page, advertisement banner, mail, E-brochure, etc</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Font for web server</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="5">Video</td>
+                        <td>Broadcast and video subtitles</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>TV-CF, online video advertisement</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Movie (DVD / video), opening and ending credits subtitles</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Personal UCC and promotional materials</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>E-Learning content, online video lectures, flash lectures좌</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Wrapping paper</td>
+                        <td>Package of goods for sale</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Embedding</td>
+                        <td>Font loading in website and program server, E-book production</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>BI/CI</td>
+                        <td>Company name, brand name, product name, logo, mark, slogan, catchphrase</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">OFL</td>
+                        <td>Modification, editing and redistribution of font files</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td class="red">Paid sales of font files</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Purpose</td>
+                        <td>Personal use</td>
+                        <td>O</td>
+                    </tr>
+                    <tr>
+                        <td>Commercial use</td>
+                        <td class="red">No</td>
+                    </tr>
+                    <tr>
+                        <td>Source</td>
+                        <td>Source Display</td>
+                        <td class="red">No</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="list">
+                <li>폰트 라이센스 바로가기 : <a href="https://pangrampangram.com/pages/faq#font-licensing" target="_blank">Font licensing</a></li>
+                <li>모든 글꼴은 상업용 프로젝트에 사용되지 않는 한 개인적인 용도로 무료로 사용해 볼 수 있습니다.</li>
+                <li>모든 폰트의 일부분을 파일로 제공됩니다. 포트폴리오(PDF, 인쇄 또는 웹) 및 학교 프로젝트에서 예시로 사용할 수 있습니다.</li>
+                <li class="line">All rights, including intellectual property rights, of all fonts provided are reserved by the manufacturer, so please check the manufacturer's website before using.</li>
+                <li class="line">The part that applies to your inquiry is not listed in the license, so please inquire with the manufacturer before using it.</li>
+                <li class="line">Please note that images and fonts are sourced from the manufacturer's site.</li>
+            </ul>
+        </div>
+        <!-- //webFont__license -->
+
+        <div class="webFont__cross webFont__container">
+            <h2>Web Font Compatibility</h2>
+            <table>
+                <tr>
+                    <th></th>
+                    <th><img src="https://tistory2.daumcdn.net/tistory/2933724/skin/images/icon-ie9.png" style="width:30px" alt="익스플로러"></th>
+                    <th><img src="https://tistory3.daumcdn.net/tistory/2851562/skin/images/edge.png" style="width:30px" alt="엣지"></th>
+                    <th><img src="https://tistory3.daumcdn.net/tistory/2851562/skin/images/firefox.png" style="width:30px" alt="파이어폭스"></th>
+                    <th><img src="https://tistory4.daumcdn.net/tistory/2851562/skin/images/safari.gif" style="width:30px" alt="사파리"></th>
+                    <th><img src="https://tistory2.daumcdn.net/tistory/2851562/skin/images/opera.gif" style="width:30px" alt="오페라"></th>
+                    <th><img src="https://tistory2.daumcdn.net/tistory/2851562/skin/images/chrome.png" style="width:30px" alt="크롬"></th>
+                    <th><img src="https://tistory3.daumcdn.net/tistory/2851562/skin/images/whale.png" style="width:30px" alt="웨일"></th>
+                </tr>
+                <tr>
+                    <td>TTF</td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                </tr>
+                <tr>
+                    <td>OTF</td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                </tr>
+                <tr>
+                    <td>WOFF</td>
+                    <td><span title="익스플로러 9.0버전 부터 지원">○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                </tr>
+                <tr>
+                    <td>WOFF2</td>
+                    <td class="red"><span>No Support</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                    <td><span>○</span></td>
+                </tr>
+                <tr>
+                    <td>SVG</td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                    <td>○</td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                </tr>
+                <tr>
+                    <td>EOT</td>
+                    <td><span title="6.0">○</span></td>
+                    <td><span title="6.0">○</span></td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                    <td class="red"><span>No Support</span></td>
+                </tr>
+            </table>
+            <ul class="list">
+                <li>TTF : Font type used on Windows and Mac. </li>
+                <li>OTF : Font type for printing. This font is used on Mac.</li>
+                <li>WOFF : Font type to be applied to all browsers (recommended)</li>
+                <li>WOFF2 : The latest font type for all browsers (recommended)</li>
+                <li>SVG : Font type for implementation on mobile. </li>
+                <li>EOT : This is a dedicated font type used in Explorer.</li>
+                <li>If you want the latest browser support and low-capacity web fonts, we recommend WOFF and WOFF2 types.</li>
+            </ul>
+        </div>
+        <!-- //webFont__cross -->
+
+        <div class="webFont_ad">
+            <div class="ad"></div>
+        </div>
+        <!-- //webFont_ad -->
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/js/prism.js"></script>
+    <script src="assets/js/style.js"></script>
+</body>
+</html>

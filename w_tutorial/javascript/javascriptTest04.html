@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../assets/css/fonts.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left"> 
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Tutorial/Test</span>
+                <h1 class="title">세번째 자바스크립트 테스트입니다.</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2023. 02. 21.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div class="blog__contents tutorial">
+                    <h2>자바스크립트 테스트</h2>
+                    <p>
+                        수업시간에 배운 자바스크립트를 간단하게 테스트합니다. 제대로 배웠는지 간단하게 테스해보세요!
+                    </p>
+
+                    <hr>
+
+                    <!-- 01 -->
+                    <div>
+                        <h3>01. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    (function(){
+        console.log("함수가 실행되었습니다.");
+    })();
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 02 -->
+                    <div>
+                        <h3>02. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    function func(str = "함수가 실행되었습니다."){
+        document.write(str);
+    }
+    func();
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 03 -->
+                    <div>
+                        <h3>03. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let sum = 0;
+    for(var i=1; i&lt;=10; i+=2) {
+        sum += i;
+    };
+    document.write(sum);
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 04 -->
+                    <div>
+                        <h3>04. 다음의 결괏값을 보고 빈칸을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const obj = {
+        a: 100,
+        b: 200,
+        c: "javascript"
+    }
+    const { a, b, c } = _______;
+
+    document.write(a);
+    document.write(b);
+    document.write(c);
+
+    //100
+    //200
+    //javascript
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 05 -->
+                    <div>
+                        <h3>05. 다음의 결괏값을 보고 빈칸을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const objA = {
+        a: 100,
+        b: 200
+    }
+    const objB = {
+        c: "javascript",
+        d: "jquery"
+    }
+    const spread = {______, ______}
+
+    document.write(spread.a);
+    document.write(spread.b);
+    document.write(spread.c);
+    document.write(spread.d);
+
+    //100
+    //200
+    //javascript
+    //jquery
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 06 -->
+                    <div>
+                        <h3>06. 다음의 결괏값이 나오도록 보기에서 빈칸에 해당되는 것을 모두 고르시오<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    if( _____ ){
+        document.write("조건문이 실행되었습니다.(true)");
+    } else {
+        document.write("조건문이 실행되었습니다.(false)");
+    }
+
+    //document.write("조건문이 실행되었습니다.(false)");
+    //보기
+    //true, false, 1, "1", "", 0, null, undefined, [], {}
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 07 -->
+                    <div>
+                        <h3>07. 다음의 if문은 삼항 연산자로 변경하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    if( num == 100 ){
+        document.write("true");
+    }
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 08 -->
+                    <div>
+                        <h3>08. 다음의 결괏값을 작성하시오!<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    for(var i=1; i&lt;=1; i++){
+        document.write(i);
+        for(var j=1; j&lt;=5; j++){
+            document.write(j);
+        }
+    }
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 09 -->
+                    <div>
+                        <h3>09. 다음의 결괏값을 보고 빈칸을 작성하시오!<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const num = [100, 200, 300, 400, 500];
+
+    for(let i=0; i&lt;num.length; i++){
+        document.write(_______);
+    }
+
+    //100 200 300 400 500
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 10 -->
+                    <div>
+                        <h3>10. 다음의 결괏값을 보고 빈칸을 작성하시오!<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const num = [100, 200, 300, 400, 500];
+
+    num.forEach(function(el){
+        document.write(________);
+    });
+
+    //100 200 300 400 500
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 11 -->
+                    <div>
+                        <h3>11. 다음을 보고 리턴값을 생략하여 한줄로 표현하시오!<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const func = str => {
+        return str;
+    }
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 12 -->
+                    <div>
+                        <h3>12. 다음의 결괏값을 보고 빈 칸을 채우시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const num = [100, 200, 300, 400, 500];
+
+    for(let index of _____ ){
+        document.write(index);
+    }
+
+    //결과값
+    //100 200 300 400 500
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 13 -->
+                    <div>
+                        <h3>13. 다음의 결괏값을 보고 빈 칸을 채우시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    function func(){
+        let i = 5, j = 4, k = 1, l, m;
+        l = i > 5 || j != 0;
+        m = j &lt;= 4 && k &lt; 1;
+        document.write(l);
+        document.write(m);
+    }
+    func();
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 14 -->
+                    <div>
+                        <h3>14. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const arr = [100, 200, 300, 400, 500];
+    const text = arr.push(600);
+
+    document.write(arr);
+
+    const arr2 = [100, 200, 300, 400, 500];
+    const text2 = arr2.unshift(600);
+
+    document.write(arr2);
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 15 -->
+                    <div>
+                        <h3>15. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    const obj = {
+        a: 100, 
+        b: 200
+    };
+
+    for(let key in obj) { 
+        console.log(key);
+    }
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 16 -->
+                    <div>
+                        <h3>16. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let num = 0;
+
+    while(false){
+        num++;
+        if( num == 3 ){
+            continue;
+        }
+        if( num > 6 ){
+            break;
+        }
+    }
+    console.log(num);
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                    <!-- 17 -->
+                    <div>
+                        <h3>17. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let a, b, result;
+    a = 7, b = 4
+    result = a & b;
+
+    console.log(result, a, b)
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 18 -->
+                    <div>
+                        <h3>18. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let a = 1, b = 2, c = 3, result;
+    result = ++a + b++ + ++c;
+
+    console.log(result);
+    console.log(a);
+    console.log(b+c);
+    console.log(c);
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 19 -->
+                    <div>
+                        <h3>19. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    let data = [70, 80, 75, 60, 90];
+    let best = 0;
+    let score = 0;
+
+    for(let i=0; i&lt;data.length; i++){
+        if(data[i]>80) {
+            best++;
+        }
+        if(score &lt; data[i]) {
+            score = data[i];
+        }
+    }
+
+    console.log(best, score)
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- 20 -->
+                    <div>
+                        <h3>20. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <div class="code">
+<pre class="line-numbers"><code class="language-js">{
+    function func(num1, num2){
+        if(num1 > num2) return num1
+        else return num2
+    }
+    console.log(func(10, 23) + func(40, 50))
+}
+</code></pre>
+                        </div>
+                    </div>
+                    <hr>
+
+
+                </div>
+                <!-- //blog__contents -->
+
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/jquery-ui.js"></script>
+    <script src="../assets/js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+        //01. 함수가 실행되었습니다.
+        //02. 함수가 실행되었습니다.
+        //03. 25
+        //04. obj
+        //05. ...objA ...objB
+        //06. false, 0, "", null, undefined
+        //07. if(num == 100) document.write("true");
+        //08. 112345
+        //09. num[i]
+        //10. el
+        //11. const func = str => str;
+        //12. num
+        //13. true false
+        //14. 100,200,300,400,500,600 600,100,200,300,400,500
+        //15. a b
+        //16. 0
+        //17. 4 7 4
+        //18. 8 2 7 4
+        //19. 1 90
+        //20. 73
+
+    </script>
+    <script>
+
+    </script>
+</body>
+</html>
+

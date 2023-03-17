@@ -661,6 +661,28 @@
 </code></pre>
                     </div>
 
+                    <h3>28. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    function func1(num){
+        ++num;
+        return num++;
+    }
+
+    function func2(){
+        let num1 = 5;
+        let num2 = 4;
+        let result;
+        result = func1(num1) + num2++;
+        console.log(result, num1, num2);
+    }
+    func2();
+}
+//10 5 5
+</code></pre>
+                    </div>
+
                     <hr><hr>
 
                     <h3>01. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
@@ -679,6 +701,18 @@
                     <p>[학생] 테이블에서 2학년 이상 학생의 과목을 검색하고 같은 과목값은 한 번만 검색하는 SQL문을 작성하시오.</p>
                     <div class="code">
 <pre><code class="language-js">SELECT DISTINCT 과목 FROM [학생] WHERE 학년 &gt;=2 </code></pre>
+                    </div>
+                    
+                    <h3>04. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>김동원에게 학생 테이블에 대한 검색 권한을 회수하는 SQL 쿼리문을 작성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">REVOKE SELECT ON 학생 FROM 김동원</code></pre>
+                    </div>
+
+                    <h3>04. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>SQL 구문에서 삭제하려는 요소가 다른 개체를 참조하고 있을 때에는 삭제되지 않게 하는 명령어로 작성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">DROP TABLE 테이블명 RESTRICT</code></pre>
                     </div>
 
 
@@ -706,12 +740,19 @@
     <script src="../assets/js/highlight.min.js"></script>
     <script src="../assets/js/webs.js"></script>
     <script>
-        function func1(){
-            let num = 5;
-            num++;
-            console.log(num)
+        function func1(num){
+            ++num;
+            return num++;
         }
-        func1();
+
+        function func2(){
+            let num1 = 5;
+            let num2 = 4;
+            let result;
+            result = func1(num1) + num2++;
+            console.log(result, num1, num2);
+        }
+        func2();
         
         
     </script>
