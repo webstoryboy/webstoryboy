@@ -683,6 +683,97 @@
 </code></pre>
                     </div>
 
+                    <h3>29. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let max, min, arr, sum;
+    arr = [82, 61, 74];
+    max = min = sum = 0;
+
+    for(let i=0; i&lt;3; i++){
+        if(max &lt; arr[i]) max = arr[i];
+        if(min > arr[i]) min = arr[i];
+        sum += arr[i];
+    }
+    sum = sum - max - min;
+
+    console.log(sum)
+}
+//135
+</code></pre>
+                    </div>
+
+                    <h3>30. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">let a, b, c, result;
+    a = 12, b = 5, c = 6;
+    result = a & b | c;
+
+    console.log(result)
+//6
+</code></pre>
+                    </div>
+
+                    <h3>31. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">let num1, num2, result1, result2;
+    num1 = num2 = 15;
+
+    result1 = ++num1 >= num2++;
+    result2 = ++num1 &lt;= num2++;
+
+    console.log(result1 , result2);
+//true false
+</code></pre>
+                    </div>
+
+                    <h3>32. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">let num1, num2, result;
+    num1 = 20;
+    num2 = 4;
+    result = num1 >> 3 > num2;
+
+    console.log(result)
+
+//0001 0100(20)
+//0000 0010(2) > 3
+//false
+</code></pre>
+                    </div>
+
+                    <h3>33. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">let num = 10;
+    let result;
+    num &lt;&lt; 2;
+    result = num >> 2;
+
+    console.log(result);
+
+//2
+</code></pre>
+                    </div>
+
+                    <h3>34. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기능사</p>
+                    <div class="code">
+<pre><code class="language-js">let a = 9; b = 5;
+    while(a != b){
+        if(a > b) a -= b;
+        else b -= a;
+    }
+    console.log(a, b);
+
+//1 1
+</code></pre>
+                    </div>
+
                     <hr><hr>
 
                     <h3>01. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
@@ -715,6 +806,48 @@
 <pre><code class="language-js">DROP TABLE 테이블명 RESTRICT</code></pre>
                     </div>
 
+                    <h3>05. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>[학생] 테이블에서 3학년과 4학년 학생의 학번, 이름을 검색하는 SQL문을 IN 키워드를 사용하여 작성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">SELECT 학번, 이름 FROM 학생 WHERE 학년 IN(3,4)</code></pre>
+                    </div>
+
+                    <h3>06. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>홍길동에게 회원 명단 테이이블에 대한 수정할 수 있는 권한을 해제하는 명령문을 완성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">REVOKE UPDATE ON 회원명단 FROM 홍길동</code></pre>
+                    </div>
+
+                    <h3>07. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>회원을 뷰를 제거하고 연관되어 잇는 뷰들을 연쇄적으로 추가 제거하고 싶을 때 명령문을 완성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">DROP VIEW 회원 CASECADE</code></pre>
+                    </div>
+
+                    <h3>08. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>학교 테이블에서 과목이 과학인 반을 A반으로 변경하는 SQL문을 완성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">UPDATA 학교 SET 반 = 'A반' WHERE 과목 = '과학'</code></pre>
+                    </div>
+
+                    <h3>09. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>학생뷰(VIEW)와 연관된 뷰를 연쇄적으로 제거하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">DROP VIEW 학생 CASECADE</code></pre>
+                    </div>
+
+                    <h3>10. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>성적표 테이블에 대한 수정할 수 있는 권한을 PATH에게 주는 명령어를 작성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">GRANT UPDATE ON 성적표 TO PATH</code></pre>
+                    </div>
+
+                    <h3>11. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>학생 테이블에서 2학년 학생들의 성명, 사진, 학년으로 구성된 뷰를 출석부라는 이름으로 생성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">CREATE VIEW 출석부 AS SELECT 성명, 사진, 학년 FROM 학생 WHERE 학년 = 2</code></pre>
+                    </div>
+
 
                 </div>
                 <!-- //blog__contents -->
@@ -740,21 +873,19 @@
     <script src="../assets/js/highlight.min.js"></script>
     <script src="../assets/js/webs.js"></script>
     <script>
-        function func1(num){
-            ++num;
-            return num++;
-        }
+        let num = 1;
 
-        function func2(){
-            let num1 = 5;
-            let num2 = 4;
-            let result;
-            result = func1(num1) + num2++;
-            console.log(result, num1, num2);
+        do {
+            num++;
+        } while(num<10);
+
+        console.log(num * 10)
+
+        while(num<10){
+            num++;
         }
-        func2();
         
-        
+        console.log(num * 10)
     </script>
 </body>
 </html>
