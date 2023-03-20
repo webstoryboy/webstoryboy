@@ -873,13 +873,19 @@
     <script src="../assets/js/highlight.min.js"></script>
     <script src="../assets/js/webs.js"></script>
     <script>
-        let a = 9; b = 5;
-        while(a != b){
-            if(a > b) a -= b;
-            else b -= a;
+        let num = 1;
+
+        do {
+            num++;
+        } while(num<10);
+
+        console.log(num * 10)
+
+        while(num<10){
+            num++;
         }
-        console.log(a, b)
         
+        console.log(num * 10)
     </script>
 </body>
 </html>
