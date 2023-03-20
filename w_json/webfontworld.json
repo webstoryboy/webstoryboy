@@ -1,5 +1,23 @@
 [
     {
+        "name" : "롯데리아 촵땡겨체",
+        "name_eng" : "LotteriaChab",
+        "weight" : ["normal"],
+        "download" : "https://www.lotteriafont.com/",
+        "link" : "545"
+    },{
+        "name" : "롯데리아 딱붙어체",
+        "name_eng" : "LotteriaDdag",
+        "weight" : ["normal"],
+        "download" : "https://www.lotteriafont.com/",
+        "link" : "544"
+    },{
+        "name" : "더잠실체",
+        "name_eng" : "TheJamsil",
+        "weight" : ["100","300","400","500","700","800"],
+        "download" : "https://www.jincheon.go.kr/home/sub.do?menukey=3837",
+        "link" : "543"
+    },{
         "name" : "생거진천체",
         "name_eng" : "SaenggeoJincheon",
         "weight" : ["normal"],
