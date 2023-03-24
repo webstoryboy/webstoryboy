@@ -204,6 +204,7 @@
     background: #fff;
     box-shadow: inset 0 0 0 4px #6fa30b;
     transition: all 0.2s;
+    flex-shrink: 0;
 }
 .quiz__choice label input:checked + span {
     background-color: #f5ffe7;
@@ -211,6 +212,45 @@
 .quiz__choice label input:checked + span::before {
     box-shadow: inset 0 0 0 8px #6fa30b;
 }
+.quiz__check {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 130px;
+    height: 130px;
+    line-height: 130px;
+    border-radius: 50%;
+    z-index: 1000;
+    text-align: center;
+    background: #000;
+    color: #fff;
+    font-family: 'PyeongChang';
+    cursor: pointer;
+}
+.quiz__info {
+    position: fixed;
+    right: 20px;
+    bottom: 170px;
+    background-color: #ff3c3c;
+    text-align: center;
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 10px;
+    font-family: 'PyeongChang';
+    color: #fff;
+}
+.quiz__info::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    bottom: -10px;
+    border-top: 10px solid #ff3c3c;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
 
 /* dog__wrap */
 .dog .tail, 

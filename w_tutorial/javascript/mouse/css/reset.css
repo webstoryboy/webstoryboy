@@ -1,0 +1,68 @@
+@import url('https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css');
+@import url('https://webfontworld.github.io/ssf/BeanPole.css');
+@import url('https://webfontworld.github.io/116watermelon/116watermelon.css');
+@import url('https://webfontworld.github.io/hahmlet/Hahmlet.css');
+@import url('https://webfontworld.github.io/Cafe24SsurroundAir/Cafe24SsurroundAir.css');
+@import url('https://webfontworld.github.io/designhouse/DesignHouse.css');
+@import url('https://webfontworld.github.io/kt/YUniverse.css');
+@import url('https://webfontworld.github.io/MaruBuri/MaruBuri.css');
+@import url('https://webfontworld.github.io/seoulhangang/SeoulHangangC.css');
+@import url('https://webfontworld.github.io/TheJamsil/TheJamsil.css');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #222;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+li, ul, ol {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+    width: 100%;
+}
+em {
+    font-style: normal;
+}
+.font01 {
+    font-family: 'NexonLv1Gothic';
+    font-weight: 300;
+}
+.font02 {
+    font-family: 'BeanPole';
+}
+.font03 {
+    font-family: '116watermelon';
+}
+.font04 {
+    font-family: 'Hahmlet';
+}
+.font05 {
+    font-family: 'Cafe24SsurroundAir';
+}
+.font06 {
+    font-family: 'DesignHouse';
+}
+.font07 {
+    font-family: 'YUniverse';
+}
+.font08 {
+    font-family: 'MaruBuri';
+}
+.font09 {
+    font-family: 'SeoulHangangC';
+}
+.font10 {
+    font-family: 'TheJamsil';
+}

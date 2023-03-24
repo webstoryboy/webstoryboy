@@ -313,7 +313,7 @@
         "time": "기능사(2022년01회)",
         "question": "운영체제에 대한 설명 중 괄호 안에 알맞은 내용을 작성하시오.",
         "question_desc": "운영체제는 ( ① )프로그램과 ( ② ) 프로그램으로 나뉘어 있으며, ( ① ) 프로그램은 감시 프로그램, 작업 관리 프로그램, 데이터 관리 프로그램이 있고, ( ② ) 프로그램은 언어 번역 프로그램, 서비스 프로그램 등이 존재한다.",
-        "correct_answer": "① ②"
+        "correct_answer": "① 제어 ② 처리"
     },{
         "time": "기능사(2022년01회)",
         "question": "다음 빈칸에 알맞은 용어를 작성하시오.",
@@ -742,5 +742,20 @@
         "time": "변형",
         "question": "SQL의 일종으로 데이터베이스를 제어하고 보호하며, 권한 부여 및 삭제를 담당하는 데이터베이스 언어는 무엇인지 작성하시오.",
         "correct_answer": "DCL"
+    },{
+        "time": "변형",
+        "question": "테스트 목적에 따른 테스트 종류 중 시스템에 실패를 유도하고 시스템의 정상적 복귀 여부를 테스트하는 기법은 무엇인가?",
+        "correct_answer": "회복(Recovery)",
+        "desc": "테스트 목적에 따른 테스트는 회복(Recovery), 안전(Security), 강도(Stress), 성능(Performance), 회귀(Regression), 병행(Parallel)이 있다."
+    },{
+        "time": "변형",
+        "question": "테스트 목적에 따른 테스트 종류 중 과장 정보량을 입력하여 과부하 시에도 정상적으로 작동하는지를 검증하는 기법은 무엇인가?",
+        "correct_answer": "회복(Recovery)",
+        "desc": "테스트 목적에 따른 테스트는 회복(Recovery), 안전(Security), 강도(Stress), 성능(Performance), 회귀(Regression), 병행(Parallel)이 있다."
+    },{
+        "time": "변형",
+        "question": "테스트 목적에 따른 테스트 종류 중 변경 또는 수정된 코드에 새로운 결함 여부를 평가하는 기법은 무엇인가?",
+        "correct_answer": "회귀(Regression)",
+        "desc": "테스트 목적에 따른 테스트는 회복(Recovery), 안전(Security), 강도(Stress), 성능(Performance), 회귀(Regression), 병행(Parallel)이 있다."
     }
 ]

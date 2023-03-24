@@ -1,0 +1,115 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-position: center center;
+    background-size: cover;
+}
+body.img01 {
+    background-image: url(../img/mouseEffect01-min.jpg);
+}
+body.img02 {
+    background-image: url(../img/mouseEffect02-min.jpg);
+}
+body.img03 {
+    background-image: url(../img/mouseEffect03-min.jpg);
+}
+body.img04 {
+    background-image: url(../img/mouseEffect04-min.jpg);
+}
+body.img05 {
+    background-image: url(../img/mouseEffect05-min.jpg);
+}
+body.img06 {
+    background-image: url(../img/mouseEffect06-min.jpg);
+}
+body.img07 {
+    background-image: url(../img/mouseEffect07-min.jpg);
+}
+body.img08 {
+    background-image: url(../img/mouseEffect08-min.jpg);
+}
+body.img09 {
+    background-image: url(../img/mouseEffect09-min.jpg);
+}
+body.img10 {
+    background-image: url(../img/mouseEffect10-min.jpg);
+}
+body::after {
+    content: '';
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(5, 36, 70, 0.87);
+    z-index: -1;
+}
+body.bg01::after {
+    background: rgba(5, 36, 70, 0.87);
+}
+body.bg02::after {
+    background: rgba(34, 5, 70, 0.87);
+}
+body.bg03::after {
+    background: rgba(88, 20, 81, 0.97);
+}
+body.bg04::after {
+    background: rgba(88, 20, 20, 0.87);
+}
+body.bg05::after {
+    background: rgba(88, 65, 20, 0.87);
+}
+body.bg06::after {
+    background: rgba(62, 88, 20, 0.87);
+}
+body.bg07::after {
+    background: rgba(20, 88, 29, 0.87);
+}
+body.bg08::after {
+    background: rgba(20, 88, 76, 0.87);
+}
+body.bg09::after {
+    background: rgba(20, 55, 88, 0.87);
+}
+body.bg10::after {
+    background: rgba(6, 17, 27, 0.87);
+}
+
+/* header */
+#header {
+    padding: 20px;
+    position: absolute;
+    left: 0; 
+    top: 0;
+}
+#header h1 {
+    margin-bottom: 10px;
+}
+#header p {
+    margin-bottom: 10px;
+}
+#header li {
+    display: inline-block;
+}
+#header li a {
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    color: #fff;
+}
+#header li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+/* footer */
+#footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+}
+#footer a {
+    color: #fff;
+}

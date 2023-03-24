@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'CookieRun';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunRegular.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'CookieRun';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBold.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBold.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBold.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBold.ttf') format("truetype");
+    font-display: swap;
+} 
+@font-face {
+    font-family: 'CookieRun';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/cookierun/CookieRunBlack.ttf') format("truetype");
+    font-display: swap;
+} 
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'CookieRun';
+}
+
+body.pink {
+    background-color: #FFD9F4;
+    background-image:
+      linear-gradient(90deg, #FFB9EA 0px, #FFB9EA 1px, transparent 1px, transparent 99px,  transparent 100px),
+      linear-gradient(#FFB9EA 0px, #FFB9EA 1px, transparent 1px, transparent 99px,  transparent 100px),
+      linear-gradient(#FFB9EA 0px, #FFB9EA 1px, transparent 1px, transparent 99px,  transparent 100px),
+      linear-gradient(90deg, #FFB9EA 0px, #FFB9EA 1px, transparent 1px, transparent 99px,  transparent 100px),
+      linear-gradient(transparent 0px, transparent 5px, #FFD9F4 5px, #FFD9F4 95px, transparent 95px, transparent 100px),
+      linear-gradient(90deg, #FFB9EA 0px, #FFB9EA 1px, transparent 1px, transparent 99px, #FFB9EA 99px, #FFB9EA 100px),
+      linear-gradient(90deg, transparent 0px, transparent 5px, #FFD9F4 5px, #FFD9F4 95px, transparent 95px, transparent 100px),
+      linear-gradient(#FFB9EA, #FFB9EA);
+    background-size:100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
+}
+body.yellow {
+    background-color: #FFEF4A;
+    background-image:
+        linear-gradient(90deg, #E6D535 0px, #E6D535 1px, transparent 1px, transparent 99px, transparent 100px),
+        linear-gradient(#E6D535 0px, #E6D535 1px, transparent 1px, transparent 99px, transparent 100px),
+        linear-gradient(#E6D535 0px, #E6D535 1px, transparent 1px, transparent 99px, transparent 100px),
+        linear-gradient(90deg, #E6D535 0px, #E6D535 1px, transparent 1px, transparent 99px, transparent 100px),
+        linear-gradient(transparent 0px, transparent 5px, #FFEF4A 5px, #FFEF4A 95px, transparent 95px, transparent 100px),
+        linear-gradient(90deg, #E6D535 0px, #E6D535 1px, transparent 1px, transparent 99px, #E6D535 99px, #E6D535 100px),
+        linear-gradient(90deg, transparent 0px, transparent 5px, #FFEF4A 5px, #FFEF4A 95px, transparent 95px, transparent 100px),
+        linear-gradient(#E6D535, #E6D535);
+    background-size: 100px 100%, 100% 100px, 100% 10px, 10px 100%, 100% 100px, 100px 100%, 100px 100%, 100px 100px, 100px 100px;
+}
