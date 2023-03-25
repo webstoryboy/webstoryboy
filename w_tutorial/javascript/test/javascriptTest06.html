@@ -90,18 +90,28 @@
 
                     <!-- 01 -->
                     <div>
-                        <h3>01. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                        <h3>01. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    const str = "javascript";
+    const str = "javascript refercence";
 
-    const text = str.indexOf("a");
-    const text2 = str.lastIndexOf("a");
-    const text3 = str.includes("a");
-
-    console.log(text);
-    console.log(text2);
-    console.log(text3);
+    str.indexOf("javascript");     
+    str.indexOf("javascripts");     
+    str.indexOf("j");              
+    str.indexOf("J");               
+    str.indexOf("a");              
+    str.indexOf("ja");             
+    str.indexOf("jv");              
+    str.indexOf("refercence");      
+    str.indexOf("r");              
+    str.indexOf("re");              
+    str.indexOf("javascript", 0);  
+    str.indexOf("javascript", 1);   
+    str.indexOf("refercence", 0);   
+    str.indexOf("refercence", 11);  
+    str.indexOf("refercence", 12);  
+    str.indexOf("r", 7);            
+    str.indexOf("r", 12);           
 }
 </code></pre>
                         </div>
@@ -110,20 +120,17 @@
 
                     <!-- 02 -->
                     <div>
-                        <h3>02. 다음의 결괏값을 보고 빈칸을 채우시오.<span class="dot"></span></h3>
+                        <h3>02. 다음의 결괏값을 작성하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
     function func(){
-        document.write("함수2가 실행되었습니다.");
+        console.log("함수1가 실행되었습니다.");
     }
     function callback(str){
-        document.write("함수1가 실행되었습니다.");
-        _______();
+        console.log("함수2가 실행되었습니다.");
+        str();
     }
     callback(func);
-
-    //함수1가 실행되었습니다.
-    //함수2가 실행되었습니다.
 }
 </code></pre>
                         </div>
@@ -135,11 +142,15 @@
                         <h3>03. 결괏값을 작성하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    function func(a, b){
-        console.log(arguments[0]);
-        console.log(arguments[1]);
+    function func(){
+        let a = [];
+
+        for(i=1; i&lt;=5; i++){
+            a += [i];
+        }
+        console.log(a);
     }
-    func("1", "2");
+    func();
 }
 </code></pre>
                         </div>
@@ -175,6 +186,7 @@
     
     info1.result1();
     info2.result2();
+    info3.result3();
 }
 </code></pre>
                         </div>
@@ -201,6 +213,8 @@
     const info3 = new func("3", "제이쿼리", "실행");
 
     info1.result();
+    info2.result();
+    info3.result();
 }
 </code></pre>
                         </div>
@@ -216,7 +230,7 @@
         console.log("함수가 실행되었습니다." + index);
     }
     function callback(num){
-        for( let i=1; i&lt;=1; i++){
+        for(let i=0; i&lt;=5; i++){
             num(i);
         }
     }
@@ -232,13 +246,12 @@
                         <h3>07. 결괏값을 작성하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    let num = 1;
+    let num = 0;
 
     do {
-        num++;
         console.log("실행되었습니다.");
-    } while (num &lt;= 5);
-
+        num++;
+    } while (num &lt;= 3);
 }
 </code></pre>
                         </div>
@@ -253,15 +266,14 @@
     const arr = [100, 200, 300, 400, 500];
 
     const text1 = arr.join("*");
-    const text2 = arr.join("-");
+    arr.push("600");
     const text3 = arr.join("");
+    arr.pop();
     const text4 = arr.join(" ");
 
     console.log(text1);
-    console.log(text2);
     console.log(text3);
     console.log(text4);
-
 }
 </code></pre>
                         </div>
@@ -273,10 +285,13 @@
                         <h3>09. 다음을 최대한 짧게 약식으로 표현하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    function func(str){
-        return str;
+    let a, b = 10;
+
+    for(let i=0; i&lt;5; i++){
+        a = i;
+        b -= a;
     }
-    func("함수가 실행되었습니다.")
+    console.log(a, b)
 }
 </code></pre>
                         </div>
@@ -289,7 +304,7 @@
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
     function func(){
-        let i = 10, j = 10, k = 30;
+        let i = 20, j = 20, k = 30;
         i /= j;
         j -= i;
         k %= j;
@@ -310,7 +325,7 @@
                         <h3>11. 다음을 결과값을 작성하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    let k = 0;
+    let k = 1;
     let temp;
     for(let i=0; i&lt;=3; i++){
         temp = k;
@@ -330,7 +345,7 @@
 <pre class="line-numbers"><code class="language-js">{
     let num1 = 3;
     let num2 = 7;
-    if(++num1 &lt; 5 || ++num2 > 8){
+    if(++num1 > 5 || num2++ &lt; 1){
         console.log(num1);
     }
     console.log(num2)
@@ -347,7 +362,7 @@
 <pre class="line-numbers"><code class="language-js">{
     let num = [1, 5, 1, 2, 7, 5];
     for(let i=0; i&lt;6; i++){
-        if((i+1) % 2 == 0){
+        if((i+2) % 2 == 0){
             console.log(num[i]);
         }
     }
@@ -363,13 +378,13 @@
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
     let num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-    for(let i=9; i&gt;=0; i--){
+    for(let i=0; i&lt;=9; i++){
         switch(num[i] % 2){
             case 1:
                 console.log(num[i]);
                 break;
             default:
-                console.log("*");
+                console.log("**");
         }
     }
 }
@@ -388,10 +403,10 @@
     for(let i=0; i&lt;=7; i++){
         if(i%2 == 1){
             cnt++;
-            sum = sum + i;
+            sum += i;
         }
     }
-    console.log(cnt + ", "+sum);
+    console.log(cnt + ", "+sum/2);
 }
 </code></pre>
                         </div>
@@ -408,7 +423,7 @@
     let score = 0;
 
     for(let i=0; i&lt;data.length; i++){
-        if(data[i]>80) {
+        if(data[i]>=80) {
             best++;
         }
         if(score &lt; data[i]) {
@@ -430,7 +445,7 @@
 <pre class="line-numbers"><code class="language-js">{
     let a, b, result;
     a = 7, b = 4
-    result = a & b;
+    result = a | b;
 
     console.log(result)
 }
@@ -445,18 +460,18 @@
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
     function solution(a, b, c){
-        let answer="YES", max;
-        let tot = a + b + c;
+        let answer = "YES", max;
+        let total = a + b + c;
 
         if(a > b) max = a;
         else max = b;
         if(c > max) max = c;
-        if(tot-max &lt;= max) answer = "NO"; 
+        if(total-max &lt;= max) answer = "NO"; 
         
         return answer;
     }
 
-    console.log(solution(13, 33, 17));
+    console.log(solution(53, 93, 107));
 }
 </code></pre>
                         </div>
@@ -472,10 +487,10 @@
         let answer;
         if(a &lt; b) answer = a;
         else answer = b;
-        if(c &lt; answer) answer = c; 
+        if(c &lt;= answer) answer = c; 
         return answer;
     }
-    console.log(solution(2, 5, 1));
+    console.log(solution(15, 12, 11));
 }
 </code></pre>
                         </div>
@@ -495,8 +510,8 @@
         return answer;
     }
     
-    arr = [25, 23, 11, 47, 53, 17, 33];
-    console.log(solution(3, arr));
+    arr = [25, 23, 11, 47, 53, 17, 33, 40];
+    console.log(solution(0, arr));
 }
 </code></pre>
                         </div>
@@ -527,7 +542,7 @@
     <script src="../../assets/js/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
-        //01. 1 3 true
+        //01. 1 3 false
         //02. str
         //03. 1 2
         //04. 1. 함수가 실행되었습니다. 2. 자바스크립트가 실행되었습니다.
@@ -552,19 +567,18 @@
         //19. 1
         //20. 3
 
-        function solution(a, b, c){
-        let answer="YES", max;
-        let tot = a + b + c;
+        const arr = [100, 200, 300, 400, 500];
 
-        if(a > b) max = a;
-        else max = b;
-        if(c > max) max = c;
-        if(tot-max <= max) answer = "NO"; 
-        
-        return answer;
-    }
+        const text1 = arr.join("*");
+        arr.push("600");
+        const text3 = arr.join("");
+        arr.pop();
+        const text4 = arr.join(" ");
 
-    console.log(solution(13, 33, 17));
+        console.log(text1);
+        console.log(text3);
+        console.log(text4);
+
 
     </script>
 </body>
