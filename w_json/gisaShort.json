@@ -28,7 +28,7 @@
         "time": "기사(2020년01회)",
         "question": "다음 빈칸을 채우시오.",
         "question_desc": "( ① ): 정해진 시간에 처리할 수 있는 연산, 트랜잭션의 수이다.<br>( ② ): 명령이 입력된 후 응답 출력이 개시될 때까지의 시간이다.<br>( ③ ): 사용자가 데이터 및 명령을 입력한 시점부터 트랜잭션 처리 후 결과의 출력이 완료할 때까지 결리는 시간이다.",
-        "correct_answer": "1. 처리량(Throughput) 2. 응답시간(Response Time) 3. 반환시간(Turaround Time)",
+        "correct_answer": "① 처리량(Throughput) ② 응답시간(Response Time) ③ 반환시간(Turaround Time)",
         "keyword": "트랜잭션",
         "keyword_num": "29"
     },{

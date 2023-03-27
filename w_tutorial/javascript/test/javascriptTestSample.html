@@ -939,6 +939,26 @@ console.log(c)
 </code></pre>
                     </div>
 
+                    <h3>41. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 변형</p>
+                    <div class="code">
+<pre><code class="language-js">let a, b, c, sum;
+a = b = 1;
+sum = a + b;
+
+for(let i=3; i&lt;=5; i++){
+    c = a + b;
+    sum += c;
+    a = b;
+    b = c;
+}
+
+console.log(sum)
+
+//12
+</code></pre>
+                    </div>
+
                     <hr><hr>
 
                     <h3>01. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
@@ -1013,6 +1033,12 @@ console.log(c)
 <pre><code class="language-js">CREATE VIEW 출석부 AS SELECT 성명, 사진, 학년 FROM 학생 WHERE 학년 = 2</code></pre>
                     </div>
 
+                    <h3>12. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
+                    <p>[위인] 테이블에서 이름이 이광수인 튜플을 삭제하는 쿼리를 작성하시오.</p>
+                    <div class="code">
+<pre><code class="language-js">DELETE FROM 위인 WHRER 이름 = '이광수'</code></pre>
+                    </div>
+
 
                 </div>
                 <!-- //blog__contents -->
@@ -1038,17 +1064,18 @@ console.log(c)
     <script src="../../assets/js/highlight.min.js"></script>
     <script src="../../assets/js/webs.js"></script>
     <script>
-        for(let i=1; i<100; i++){
-            let sum = 0;
-            for(let j=1; j<i; j++){
-                if(i % j == 0){
-                    sum += j;
-                }
-            }
-            if(sum == i){
-                console.log(i)
-            }
+        let a, b, c, sum;
+        a = b = 1;
+        sum = a + b;
+
+        for(let i=3; i<=5; i++){
+            c = a + b;
+            sum += c;
+            a = b;
+            b = c;
         }
+
+        console.log(sum)
     </script>
 </body>
 </html>
