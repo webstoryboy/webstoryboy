@@ -959,6 +959,86 @@ console.log(sum)
 </code></pre>
                     </div>
 
+                    <h3>42. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 변형</p>
+                    <div class="code">
+<pre><code class="language-js">let a = 2, r = 3, total = a;
+for(let i=0; i&lt;3; i++){
+    a *= r;
+    total += a;
+}
+console.log(total)
+
+// a = a * r;
+// total = total + a;
+
+// 2 + (2*3) + (2*3)*3 + ((2*3)*3)*3
+
+//80
+</code></pre>
+                    </div>
+
+                    <h3>43. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>소수 구하기</p>
+                    <div class="code">
+<pre><code class="language-js">let num, i;
+for(num=2; num&lt;=10; num++){
+    for(i=2; i&lt;num; i++){
+        if(num % i == 0) break;
+    }
+    if(i==num){
+        console.log(num)
+    }
+}
+
+//2 3 5 7
+</code></pre>
+                    </div>
+
+                    <h3>44. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p></p>
+                    <div class="code">
+<pre><code class="language-js">let a=1, b=1, num;
+for(let i=0; i&lt;6; i++){
+    num = a + b;
+    a = b;
+    b = num;
+}
+
+console.log(num)
+
+// 1 1 2
+// 1 2 3
+// 2 3 5
+// 3 5 8
+// 5 8 13
+// 8 13 21
+
+//21
+</code></pre>
+                    </div>
+
+                    <h3>45. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p></p>
+                    <div class="code">
+<pre><code class="language-js">let i = 0;
+let sum = 0;
+while(i &lt; 10){
+    i++;
+    if(i%2 == 1){
+        continue;
+    }
+    sum += i;
+}
+console.log(sum)
+
+// 0 1 2 3 4 5  6 7  8 9
+// 1 2 3 4 5 6  7 8  9 10
+//   2   6   12   20   30
+// 30    
+</code></pre>
+                    </div>
+
                     <hr><hr>
 
                     <h3>01. 다음을 보고 SQL문을 작성하시오.<span class="dot"></span></h3>
@@ -1064,18 +1144,7 @@ console.log(sum)
     <script src="../../assets/js/highlight.min.js"></script>
     <script src="../../assets/js/webs.js"></script>
     <script>
-        let a, b, c, sum;
-        a = b = 1;
-        sum = a + b;
-
-        for(let i=3; i<=5; i++){
-            c = a + b;
-            sum += c;
-            a = b;
-            b = c;
-        }
-
-        console.log(sum)
+        
     </script>
 </body>
 </html>
