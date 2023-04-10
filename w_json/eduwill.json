@@ -21,5 +21,36 @@
         "question": "2010년 제임스 딕슨이 소개한 개념으로 조직에서 가공되지 않은 정형, 비정형 데이터를 원래의 형태로 저장하고, 활용할 때는 데이터 스키마를 정의하여 필요한 형태로 변환하여 사용하도록 하는 대용량 실시간 데이터 저장소를 의미하는 용어를 작성하시오.",
         "correct_answer": "데이터 레이크(Data Lake)",
         "desc" : "데이터 레이크(Data Lake)는 방대한 양의 원본 데이터를 저장하는 중앙 데이터 저장소이다."
+    },{
+        "question": "IETF에서 고안한 IPv4에서 IPv6로 전환하는데 사용되는 전략을 작성하시오.",
+        "correct_answer": "Dual Stack, Tunneling, Header Translation",
+        "desc" : "이중 스택(Dual Stack), 터널링(Tunneling), 헤더 변환(Header Translation)이 있다."
+    },{
+        "question": "빅테이터 분석 기술 중 대량의 데이터를 분석하여 데이터에 내재된 변수 사이의 상호관계를 규명하여 일정한 패턴을 찾아내는 기법을 의미하는 용어를 작성하시오.",
+        "correct_answer": "데이터 마이닝"
+    },{
+        "question": "교착상태의 해결 방법 중 교착 상태 회피 분야에 속하는 Dijkstra 제안한 알고리즘을 작성하시오.",
+        "correct_answer": "은행가 알고리즘"
+    },{
+        "question": "다음의 관계 대수식을 SQL 명령문으로 쓰시오.",
+        "question_desc": "π이름(σ학과='교육'(학생))",
+        "correct_answer": "SELECT 이름 FROM 학생 WHERE 학과='교육'"
+    },{
+        "question": "다음 공통으로 설명하는 용어를 작성하시오.",
+        "question_desc": "여러 운영체제에서 응응 프로그램들 사이에 위치한 소프트웨어이다.<br>소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.",
+        "correct_answer": "미들웨어"
+    },{
+        "question": "릴레이션이 데이터를 조작할 때 발생할 수 있는 이상현상(Anomaly) 3가지를 작성하시오.",
+        "correct_answer": "삭제이상, 갱신이상, 삽입이상"
+    },{
+        "question": "멀티터치(Mutil-touch), 동작 인식(Gesture Recongnition) 등 사용자의 자연스러운 움직임을 인식하여 서로 주고받는 정보를 제공하는 사용자 인터페이스를 영어 약어로 작성하시오.",
+        "correct_answer": "NUI"
+    },{
+        "question": "크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경 했을 때 분석하는 도구를 작성하시오.",
+        "correct_answer": "트립와이어(Tripwire)"
+    },{
+        "question": "화이트박스 검사 기법에 해당하는 것을 고르시오",
+        "question_desc": "",
+        "correct_answer": "트립와이어(Tripwire)"
     }
 ]
