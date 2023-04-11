@@ -302,5 +302,140 @@
     },{
         "question": "모듈 내부의 모든 기능 요소들이 한 문제와 연관되어 수행하는 응집도는?",
         "correct_answer": "기능적 응집도"
+    },{
+        "question": "W3C의 표준 객체 모델로 유효한 HTML 문서나 XML 문서의 구조, 내용, 스타일을 다루기 위한 플랫폼과 언어에 중립적인 웹 페이지에 대한 인터페이스를 영문 약어로 쓰시오.",
+        "correct_answer": "DOM"
+    },{
+        "question": "다음에 설명하는 테스트 커버리지를 작성하시오.",
+        "question_desc": "( ① ) : 코드 구조 내의 모든 문장에 대해 한 번 이상 수행하는 테스트 커버리지<br>( ② ) : 결정 포인트 내의 모든 분기문에 대해 수행하는 테스트 커버리지<br>( ③ ) : 결정 포인트 내의 모든 개별 조건식에 대해 수행하는 테스트 커버리지",
+        "correct_answer": "① 구문 ② 결정 ③ 조건"
+    },{
+        "question": "다음에 설명하는 내용을 작성하시오.",
+        "question_desc": "( ① ) : 사용자가 시스템에 접근을 허용하기 전에 가입자 신분을 확인하는 기능이다<br>( ② ) : 사용자가 시스템 자원에 대한 접근 권한 유무를 판별 후 접근 허가를 결정하는 기능이다.<br>( ③ ) : 사용 시간, 정보, 위치 등 정보 수집 등 시스템 자원 사용의 정보를 수집하고 관리하는 기능이다.",
+        "correct_answer": "① 인증(Authentication) ② 인가(Authoriztion) ③ 과금(Accounting)"
+    },{
+        "question": "다음에 설명하는 내용을 작성하시오.",
+        "question_desc": "- 접근통제 모델 중 정보의 소유자가 정보의 보안 수준을 결정하고 이에 대한 정보의 접근 및 통제까지 설정하는 모델이다.<br>- 주체 또는 소속 그룹의 아이디에 근거하여 소유자가 자신의 의지대로 데이터에 대한 접근 권한을 지정하고 제어하는 방식이다.<br>- 객체별로 세분된 접근제어가 가능하며 유연한 접근제어 서비스를 제공할 수 있다.",
+        "correct_answer": "DAC(임의 접근 통제)",
+        "desc": "접근 통제 모델에는 강제적 접근 통제(MAC, Mandatory Access Control), 임의적 접근 통제(DAC, Discretionary Access Control), 역할 기반 접근 통제(RBAC, Role Based Access Control)이 있다."
+    },{
+        "question": "다음에 설명하는 내용을 작성하시오.",
+        "question_desc": "- 미국의 Bell 연구소에서 만든 운영체제로 멀티태스킹과 멀티 프로그램이 가능하며, 주로 중대형 서버에 사용되는 운영체제이다.<br>트리 구조의 파일 시스템을 가지며, 이식성이 높고 장치간의 호환성이 높다.",
+        "correct_answer": "유닉스(UNIX)"
+    },{
+        "question": "다음은 럼바우의 객체지향 분설 모델링을 설명하는 내용이다. 빈칸을 채우시오.",
+        "question_desc": "( ① ) : 프로세스들의 자료 흐름을 중심으로 처리 과정을 자료흐름도(DFD, Data Flow Diagram)로 만드는 과정이다.<br>( ② ) : 시간의 흐름에 따라 객체 간의 제어 흐름, 동작 순서 등의 동적인 행위를 상태 흐름도(STD, State Diagram)로 만드는 과정이다.<br>( ③ ) : 객체의 속성, 관계를 객체 다이어그램으로 표현하는 과정이다.",
+        "correct_answer": "① 기능 모델링(Functional) ② 동적 모델링(Dynamic)  ③ 객체 모델링(Objecte)",
+        "desc": "럼바우의 객체지향 분설 모델링에는 객체 모델링(Objecte Modeling), 기능 모델링(Functional Modeling), 동적 모델링(Dynamic Modeling)이 있다."
+    },{
+        "question": "다음에 설명하는 내용을 작성하시오.",
+        "question_desc": "- '클라이언트는 자신이 사용하지 않는 메서드에 의존 관계를 맺으면 안된다.'라는 설계 원칙이다.<br>'클리아언트가 사용하지 않는 인터페이스 때문에 영향을 받아서는 안된다.'라는 설계의 원칙이다.",
+        "correct_answer": "인터페이스 분리의 원칙(ISP, Interface Segregation Principle)",
+        "desc": "객체지향 설계의 5원칙에는 SRP(Single Responsibility Principle) 단일책임의 원칙, OCP(Open Closed Principle) 개방 패쇄 원칙, LSP(Liskov Substitution Principle) 리스코프 치환 원칙, ISP(Interface Segregation Principle) 인터페이스 분리 원칙, DIP(Dependency Inversion Principle) 의존 역전 원칙이 있다."
+    },{
+        "question": "Telnet, FTP 등 TCP를 사용한 모든 세션의 갈취가 가능한 TCP의 취약점을 이용한 능동적 공격 방법을 작성하시오.",
+        "correct_answer": "세션 하이재킹"
+    },{
+        "question": "데이터베이스 시스템과 관련된 모든 자원에 대해 기회, 통제를 하며 데이터베이스 언어를 이용해 DBMS를 거쳐 전체적인 관리 운영에 책임을 지는 사람이나 집단을 의미하는 용어를 작성하시오.",
+        "correct_answer": "DBA(데이터베이스 관리자)"
+    },{
+        "question": "UML의 구성요소 3가지를 작성하시오.",
+        "correct_answer": "사물, 관계, 다이어그램",
+        "desc": "UML은 객체 지향 시스템을 개발할 때 산출물의 명세화, 시각화, 문서화에 사용되는 표준화된 모델링 언어이다. 구성요소에는 사물(Thing), 관계(Relatioinship), 다이어그램(Diagram)이 있다."
+    },{
+        "question": "TCL의 명령어 3가지를 작성하시오.",
+        "correct_answer": "COMMIT, ROLLBACK, CHECKPOINT",
+        "desc": "TCL(Transaction Control Language)는 데이터베이스의 무결성 유지, 보안관 권한 검사, 회복절차이행, 병행수행제어 등을 제어하기 위한 언어인 DCL의 일부이다."
+    },{
+        "question": "위조된 매체 접근 제어(MAC) 주소를 지속적으로 네트워크로 흘려보내, 스위치 MAC 주소 테이블의 저장 기능을 혼란시켜 더미 허브처럼 작동하게 하는 공격을 의미하는 용어를 작성하시오.",
+        "correct_answer": "Switch Jamming(스위칭 재밍)"
+    },{
+        "question": "데이터베이스에 영향을 주는 생성, 읽기, 갱신, 삭제 연산으로 프로세스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하는 것을 의미하는 용어를 작성하시오.",
+        "correct_answer": "CRUD 분석"
+    },{
+        "question": "기기를 키오스트에 갖다 대면 원하는 데이터를 바로 가져올 수 있는 기술로 10cm 이내 근접 거리에서 기가급 속도로 데이터 전송이 가능한 초고속 근접무선통신(NFC) 기술을 의미하는 용어를 작성하시오.",
+        "correct_answer": "Zing"
+    },{
+        "question": "1990년대 유럽에서 개발되었으며, PGB로 채태된 8라운드 알고리즘이며, 128비트의 키로 64비트 평문을 8라운드를 거쳐 64비트의 암호문을 생성하는 블록 암호화 방식은?",
+        "correct_answer": "IDEA"
+    },{
+        "question": "정규화(Normalization)의 개념을 간단히 서술하시오.",
+        "correct_answer": "정규화는 데이터 중복을 최소화하고 데이터 정확성을 최대화하기 위하여 관계형 DB를 분석하고 능률적인 형태로 분해하는 방법이다."
+    },{
+        "question": "어떤 릴레이션 R에 속한 모든 도메인이 원자값만으로 되어 있는 정규형은?",
+        "correct_answer": "제1정규형"
+    },{
+        "question": "시스템 내 클래스 정적 구조를 표현하고 클래스와 클래스, 클래스 속성 사이의 관계를 나타내는 UML 다이어그램은?",
+        "correct_answer": "Class Diagram"
+    },{
+        "question": "대기 중인 프로세서가 요청한 자원들이 다른 대기 중인 프로세스에 의해 점유되어 다시 프로세스 상태를 변경시킬 수 없는 경우가 발행하게 되는데 이러한 상황을 의미하는 용어를 작성하시오.",
+        "correct_answer": "교착상태",
+        "desc": "교착 상태 발생 조건에는 상호 배재(Mutual Exclusion), 점유와 대기(Hold and Wait), 비선전(Non-Preemption), 환형 대기(Circular Wait)가 있고, 해결방법에는 예방(Prevention), 회피(Avoidance), 발견(Detection), 회복(Recovery)가 있다."
+    },{
+        "question": "웹페이지에 입력되는 입력 값 검증 및 필터링 등을 수행하는 방화벽을 의미하는 용어는 작성하시오.",
+        "correct_answer": "WAF(Web Application Firewall)"
+    },{
+        "question": "백도어(Backdoor) 탐지 기법을 골라 작성하시오.",
+        "question_desc": "무결성 검사, 닫힌 포트 확인, 로그 분석, SetUID 파일 검사, 백도어 탐지 툴 사용",
+        "correct_answer": "백도어(Backdoor) 탐지 기법에는 무결성 검사, 열린 포트 확인, 로그 분석, SetUID 파일 검사, 백도어 탐지 툴 사용이 있다."
+    },{
+        "question": "다음에 해당하는 결합도를 작성하시오.",
+        "question_desc": "한 모듈에서 다른 모듈의 내부로 제어 이동<br>한 모듈이 다른 모듈 내부 자료의 조회 또는 변경<br>두 모듈이 동일한 문자의 공유",
+        "correct_answer": "Control Coupling"
+    },{
+        "question": "클라우드 서비스오 정반대 개념으로 IT 서비스 운영을 위해, 직접적으로 인프라를 구축하는 방식을 작성하시오.",
+        "correct_answer": "온프레스미(On-Premise)"
+    },{
+        "question": "UNIX 시스템에서는 일반 계정의 비밀번호를 저장할 때 암호화에 이용되는 알고리즘을 작성하시오.",
+        "correct_answer": "MD5"
+    },{
+        "question": "상위 클래스에서 객체를 생성하는 인터페이스를 정의하고, 하위 클래스에서 인스턴스를 생성하도록 하는 방식의 디자인 패턴을 무엇인가?",
+        "correct_answer": "Factory Method"
+    },{
+        "question": "공식적으로 검토 및 동의되었고 추후 개발의 기초가 되며 오직 공식적인 변경 통제 절차에 의해서만 변경될 수 있는 형상항목은 무엇인가?",
+        "correct_answer": "기준선(BaseLine)"
+    },{
+        "question": "다음 설명에 해당하는 용어를 작성하시오.",
+        "question_desc": "- 하나의 프로세스 내에서 병행성을 증대시키기 위한 기법으로 '경량 프로세스'라고 불린다.<br>- 자신만의 스택과 레지스터를 갖는다.",
+        "correct_answer": "스레드(Thread)"
+    },{
+        "question": "UML(객체지향 분석설계 모델링 언어)의 기본 구성요소를 작성하시오.",
+        "correct_answer": "사물, 관계, 다이어그램"
+    },{
+        "question": "다음 설명에 해당하는 용어를 작성하시오.",
+        "question_desc": "- 복구 시간 목표로 조직에서 재해 후 애플리케이션과 프로세스를 복구하는데 쇼요할 수 있는 목표 시간이다.<br>중단 시작부터 측정되며 백업 및 실행할 애플리케이션과 프로세스를 복구할 미래의 시간을 결정한다.",
+        "correct_answer": "RTO(Recovery Time Objective) 복구 시간 목표"
+    },{
+        "question": "애플리케이션 개발 시점에 프로그램의 소스코드를 분석해 결함을 찾아내는 테스트 기법을 작성하시오.",
+        "correct_answer": "정적 분석"
+    },{
+        "question": "연속된 메모리 공간을 사용하는 프로그램에서 할당된 메모리의 범위를 넘어서 위치에 자료를 읽거나 쓰려고 할 때 발생하는 공격을 의미하는 용어를 작성하시오.",
+        "correct_answer": "버퍼 오버플로우(Buffer Overflow Attack)"
+    },{
+        "question": "단순 객체 접근 프로토콜로 XML과 HTTP 등을 기반으로 하여 다른 컴퓨터에 있는 데이터나 서비스를 호출하기 위한 통신규약을 의미하는 용어를 작성하시오.",
+        "correct_answer": "SOAP(Simple Object Access Protocol)"
+    },{
+        "question": "다음 설명에 해당하는 용어를 작성하시오.",
+        "question_desc": "- W3C의 디렉터 팀 버너리스가 서술한 개방형 연결 데이터를 의미한다.<br>인물, 지명 등과 같이 정적 데이터 형태로 연관성이 높은 데이터가 많은 경우 제공하는 방식이다.",
+        "correct_answer": "LOD(Linked Open Data)"
+    },{
+        "question": "TCP/IP 계층 구조에서 IP의 동작 과정에서의 전송 오류가 발생하는 경우에 대비해 오류 정보를 전송하는 목적으로 사용하는 프로토콜을 작성하시오.",
+        "correct_answer": "ICMP(Internet Control Message Protocol)"
+    },{
+        "question": "사용자가 원하는 파일이나 데이터베이스, 프린터 등의 자원들이 지역 컴퓨터 또는 네트워크 내의 다른 원격지 컴퓨터에 존재하더라도 위치에 관계없이 그의 사용을 보장하는 개념은?",
+        "correct_answer": "위치 투명성",
+        "desc": "분산 데이터베이스 시스템의 투명성에는 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성이 있다."
+    },{
+        "question": "웹 서비스에 대한 정보의 공개 및 검색에 대한 방법을 정의하는 XML 기반의 공용 디렉토리 또는 프로토콜의 집합체를 의미하는 용어를 작성하시오.",
+        "correct_answer": "UDDI(Universal Description Discovery and Intergration)"
+    },{
+        "question": "주소 부족 문제를 해결하기 위해 사설망에서 사용하는 IP Address를 공인망에서 사용할 수 있는 IP Address로 매핑하여, 공인망에서도 통신이 가능하도록 도와주는 주소 변환기술을 의미하는 용어를 작성하시오.",
+        "correct_answer": "NAT(Network Address Translation)"
+    },{
+        "question": "형상 통제(Configuration Control)의 개념을 간단히 서술하시오.",
+        "correct_answer": "형상 목록의 변경 요구를 검토 및 승인하여 현재의 소프트웨어 기준선에 반영될 수 있도록 통제하는 일련의 과정이다."
+    },{
+        "question": "기존의 여러가지 IT기술과 해킹방법들을 종합적으로 활용하여 다양한 종류의 보안위협들을 지속적으로 만듦으로써 특정한 대상을 계속하여 공격하는 행위를 무엇이라고 하는가?",
+        "correct_answer": "APT(Advanced Persistent Threat) 지능형 지속 공격"
     }
 ]
