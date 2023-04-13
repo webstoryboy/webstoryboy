@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webstoryboy : 웹스토리보이 : 웹과 관련된 모든 정보</title>
+
+    <link rel="stylesheet" href="../../assets/css/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/webs.css">
+
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/favicon.png">
+    <link rel="icon" href="../../assets/ico/favicon.png">
+    <link rel="icon" href="../../assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="../../assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="../../assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="포트폴리오를 위한 레퍼런스 사이트입니다. 자바스크립트, 애니메이션, Three.js, 리액트, 뷰, PHP 등 다양한 언어를 배우고 포트폴리오에 표현합니다.">
+    <meta name="keywords" content="포트폴리오, 웹스토리보이, 웹쓰, 사이트제작, 사이트만들기, 프로트앤드, 웹 퍼블리셔, portfolio, webstoryboy, frontend, public, javascript, html, css, three.js">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="../../assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="웹과 관련된 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이" />
+    <meta name="twitter:description" content="웹과 관련된 정보를 제공합니다." />
+    <meta property="twitter:image" content="../../assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left"> 
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Tutorial/Test</span>
+                <h1 class="title">자바스크립트 테스트</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2023. 02. 21.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div id="youtube" class="blog__contents__intro">
+                    <div class="video nonex resizable draggable sampleBtn3">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="desc rightX">
+                        <div class="left">
+                            <span class="num">01</span>
+                            <div class="title">자바스크립트 테스트 - 기사 알고리즘 발췌</div>
+                            <span class="difficulty">난이도 <span>쉬움</span></span>
+                        </div>
+                        <div class="right">
+                            <div class="btn">소스 다운로드</div>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex01/index.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/tree/main/w_tutorial/portfolio/ex01" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog__contents__intro -->
+
+                <div class="blog__contents tutorial">
+                    <h2>테스트</h2>
+                    <p>
+                        다음의 스크립트를 보고 결과 값을 작성하거나 빈칸을 채우시오.
+                    </p>
+
+                    <hr>
+
+                    <h3>01. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let data = [10, 6, 7, 9, 3];
+    let temp;
+
+    for(let i=0; i&lt;4; i++){
+        for(let j=i+1; j&lt;5; j++){
+            if(data[i] > data[j]){
+                temp = data[i];
+                data[i] = data[j];
+                data[j] = temp;
+            }
+        }
+    }
+
+    console.log(data)
+    //[3, 6, 7, 9, 10]
+}
+</code></pre>
+                    </div>
+
+                    <h3>02. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let a = func(4);
+
+    for(let i=0; i&lt;a.length; i++){
+        console.log(a[i]);
+    }
+
+    function func(n){
+        let num = [];
+        for(let i=0; i&lt;n; i++){
+            num[i] = i;
+        }
+        return num;
+    }
+
+    //0
+    //1
+    //2
+    //3
+}</code></pre>
+                    </div>
+
+                    <h3>03. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let i = 3, k = 1;
+
+    switch(i){
+        case 1: k++;
+        case 2: k += 3;
+        case 3: k = 0;
+        case 4: k += 3;
+        case 5: k -= 10;
+        default: k--;
+    }
+    console.log(k);
+
+    //-8
+}</code></pre>
+                    </div>
+
+                    <h3>04. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let i=0, c=0;
+
+    while(i&lt;10){
+        i++;
+        c *= i;
+    }
+
+    console.log(c);
+    //0
+}</code></pre>
+                    </div>
+
+                    <h3>05. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    function func1(){
+        return 10;
+    }
+    function func2(){
+        return (30 + func1());
+    }
+    function func3(){
+        return (60 + func2());
+    }
+    function func4(){
+        return (80 + func3());
+    }
+    console.log(func4());
+
+    //180
+}</code></pre>
+                    </div>
+
+                    <h3>06. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let i = 0;
+    let sum = 0;
+
+    while(i &lt; 10){
+        i++;
+        if(i % 2 == 1){
+            continue;
+        }
+        sum += i;
+    }
+
+    console.log(sum)
+
+    //30
+}</code></pre>
+                    </div>
+
+
+                    <h3>07. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    function func(num1, num2){
+        let res = 1;
+        for(let i=0; i&lt;num2; i++){
+            res *= num1;
+        }
+        return res;
+    }
+    let res = func(2, 10);
+
+    console.log(res)
+
+    //1024
+}</code></pre>
+                    </div>
+
+                    <h3>08. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let a = 3, b = 4, c = 3, d = 5;
+
+    if( (a == 2 | a == c) & !(c > d) & (1 == b ^ c != d) ){
+        a = b + c;
+        if( 7 == b ^ c != a ){
+            console.log(a);
+        } else {
+            console.log(b);
+        }
+    }
+
+    //7
+}</code></pre>
+                    </div>
+
+                    <h3>09. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    function func(a){
+        if( a &lt; 1 ) return 1
+        return a * func(a - 1);
+    }
+    
+    console.log(func(5))
+
+    // 5 * func(4) = 120
+    // 4 * func(3) = 24
+    // 3 * func(2) = 6
+    // 1 * func(1) = 2
+    // 120
+}</code></pre>
+                    </div>
+
+                    <h3>10. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    function func(){
+        let a=2, d=6, total=a, n=2;
+        for(let i=0; i&lt;5; i++){
+            total += a + (n-1) * d;
+            n++;
+        }
+        console.log(total)
+    }
+    func();
+}</code></pre>
+                    </div>
+
+                    <h3>11. 결괏값을 보고 밑줄을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let score = 85;
+        
+    score = parseInt(______);
+
+    switch (  score  ){
+        case 9 :
+            console.log("A+");
+            break;
+        case 8 :
+            console.log("B+");
+            break;
+        case 7 :
+            console.log("C+");
+            break;
+        case 6 :
+            console.log("D+");
+            break;
+        default :
+            console.log("F+");
+            break;
+    }
+    //B+
+}</code></pre>
+                    </div>
+
+                    <h3>12. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let score = [70, 40, 30, 90, 30]
+    let up80 = 0, m = 0;
+
+    for(let i=0; i&lt;5; i++){
+        if(score[i] > 80) up80++;
+        if(m &lt; score[i]) m = score[i];
+    }
+
+    console.log(up80, m);
+
+    //1 90
+}</code></pre>
+                    </div>
+
+                    <h3>13. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let score = [17, 15, 24, 18, 27];
+    let cnt = 0;
+
+    for(let i=0; i&lt;5; i++){
+        if(score[i]%2 + score[i]%3 == 0) cnt++
+    }
+
+    console.log(cnt);
+
+    //2
+}</code></pre>
+                    </div>
+
+                    <h3>14. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let a = 10, b = 15;
+
+    console.log(++a/5 &lt;&lt; b/2-1*2);
+
+    //64
+}</code></pre>
+                    </div>
+
+                    <h3>15. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let a = Math.ceil((21/4) * 3);
+    let b = Math.round((a * a) / a);
+
+    console.log(a + b)
+
+    //32
+}</code></pre>
+                    </div>
+
+                    <h3>16. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let a = 10, b = 5;
+
+    console.log(a / b * 2);
+    console.log(++a * 3);
+    console.log(a > b && a != 5);
+
+    //4
+    //33
+    //true
+}</code></pre>
+                    </div>
+
+                    <h3>17. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let a=1, b=1, num;
+
+    for(let i=0; i&lt;6; i++){
+        num = a + b;
+        a = b;
+        b = num;
+    }
+    console.log(num)
+
+    //21
+}</code></pre>
+                    </div>
+
+                    <h3>18. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    
+
+    //21
+}</code></pre>
+                    </div>
+
+
+                </div>
+                <!-- //blog__contents -->
+
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="../../assets/js/jquery-3.6.0.js"></script>
+    <script src="../../assets/js/jquery-ui.js"></script>
+    <script src="../../assets/js/highlight.min.js"></script>
+    <script src="../../assets/js/webs.js"></script>
+    <script>
+        let a=1, b=1, num;
+        for(let i=0; i<6; i++){
+            num = a + b;
+            a = b;
+            b = num;
+        }
+        console.log(num)
+        
+    </script>
+</body>
+</html>
+
