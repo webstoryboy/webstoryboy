@@ -445,15 +445,17 @@
                         <h3>18. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    let i = 0;
-    let sum = 0;
-    while(i &lt; 10){
-        i++;
-        if(i%2 == 1){
-            continue;
-        }
-        sum += i;
+    let a, b, c, sum;
+    a = b = 1;
+    sum = a + b;
+
+    for(let i=3; i&lt;=5; i++){
+        c = a + b;
+        sum += c;
+        a = b;
+        b = c;
     }
+
     console.log(sum)
 }
 </code></pre>
@@ -466,14 +468,12 @@
                         <h3>19. 다음의 결과값을 완성하시오.<span class="dot"></span></h3>
                         <div class="code">
 <pre class="line-numbers"><code class="language-js">{
-    let a=1, b=1, num;
-    for(let i=0; i&lt;6; i++){
-        num = a + b;
-        a = b;
-        b = num;
+    let a = 2, r = 3, total = a;
+    for(let i=0; i&lt;3; i++){
+        a *= r;
+        total += a;
     }
-
-    console.log(num)
+    console.log(total)
 }
 </code></pre>
                         </div>
@@ -523,26 +523,16 @@
     <script src="../../assets/js/highlight.min.js"></script>
     <script>
         hljs.highlightAll();
+        function func(num1, num2){
+        let res = 1;
+        for(let i=0; i<num2; i++){
+            res *= num1;
+        }
+        return res;
+    }
+    let res = func(2, 10);
 
-        //01 [3, 6, 7, 9, 10]  
-        //02 
-        //0
-        //1
-        //2
-        //3
-        //03 -8
-        //04 0
-        //05 180
-        //06 30
-        //07 1024
-        //08 7
-
-        //09
-        // 5 * func(4) = 120
-        // 4 * func(3) = 24
-        // 3 * func(2) = 6
-        // 1 * func(1) = 2
-        // 120
+    console.log(res)
 
     </script>
 </body>
