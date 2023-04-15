@@ -44,7 +44,9 @@
         "correct_answer": "삭제이상, 갱신이상, 삽입이상"
     },{
         "question": "멀티터치(Mutil-touch), 동작 인식(Gesture Recongnition) 등 사용자의 자연스러운 움직임을 인식하여 서로 주고받는 정보를 제공하는 사용자 인터페이스를 영어 약어로 작성하시오.",
-        "correct_answer": "NUI"
+        "correct_answer": "NUI",
+        "keyword": "UI",
+        "keyword_num": "59"
     },{
         "question": "크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경 했을 때 분석하는 도구를 작성하시오.",
         "correct_answer": "트립와이어(Tripwire)"
@@ -80,13 +82,17 @@
         "correct_answer": "표현 계층"
     },{
         "question": "테스트의 결과가 참인지 거짓인지를 판단하기 위해서 사전에 정의된 참값을 입력하여 비교하는 기법 및 활동을 무엇이라고 하는가?",
-        "correct_answer": "테스트 오라클"
+        "correct_answer": "테스트 오라클",
+        "keyword": "테스트 오라클",
+        "keyword_num": "62"
     },{
         "question": "'민첩한', '날렵한', '기민한'이란 뜻의 사전적 의미를 가지고 있는 소프트웨어 개발 방법론으로 반복적인 개발을 통한 잦은 출시가 목표이다. 이 방법론은 무엇인가?",
         "correct_answer": "애자일"
     },{
         "question": "관계형 데이터베이스 반정규화(Denormailiztion)의 개념에 대해 간략히 서술하시오.",
-        "correct_answer": "시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법이다."
+        "correct_answer": "시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법이다.",
+        "keyword": "정규화",
+        "keyword_num": "63"
     },{
         "question": "외부의 스니핑(Sniffing) 공격의 대응 방안으로 기본 포트 22번을 사용하여 원격 컴퓨터에 안전하게 액세스하기 위한 유닉스 기반의 데이터 기밀성을 보장할 수 있는 프로토콜을 작성하시오.",
         "correct_answer": "SSH"
@@ -130,7 +136,9 @@
         "desc": "순수 관계 연산자 셀렉트(Select, σ), 프로젝트(Project,π), 조인(Join, ⋈), 디비전(Division, ÷)이 있다."
     },{
         "question": "UI 설계 원칙 4가지를 작성하시오.",
-        "correct_answer": "직관성, 유효성, 학습성, 유연성"
+        "correct_answer": "직관성, 유효성, 학습성, 유연성",
+        "keyword": "UI",
+        "keyword_num": "59"
     },{
         "question": "사용자가 요구분석 명세서에 명시된 사항을 모두 충족하는지 판정하고, 시스템이 예상대로 동작하고 있는지를 판정하는 테스는?",
         "correct_answer": "통합테스트(Intergration)",
@@ -155,7 +163,9 @@
         "desc": "스니피(Sniffing): 네트워크상의 다른 상대방의 패킷 내용을 도청하는 해킹 수법<br>스누핑(Snooping): 네트워크상의 중요 정보를 몰래 획득하는 해킹 수법<br>스푸핑(Snoofing): TCP/IP의 구조적 결함을 이용해 사용자의 시스템 권한을 획득한 후, 신뢰 관계에 있는 시스템의 IP를 도용하여 정보를 획득하는 해킹 수법"
     },{
         "question": "ARP, IPX, IP 프로토콜이 사용되는 OSI 7계층 모델의 명칭을 작성하시오.",
-        "correct_answer": "네트워크 계층"
+        "correct_answer": "네트워크 계층",
+        "keyword": "OSI 7계층",
+        "keyword_num": "52"
     },{
         "question": "GoF가 제안한 디자인 패턴의 분류 3가지를 작성하시오.",
         "correct_answer": "행위, 구조, 생성"
@@ -184,7 +194,9 @@
         "correct_answer": "VDW(Virtual Data Warehouse)"
     },{
         "question": "장치들 간의 물리적인 접속과 비트 정보를 다른 시스템에 전송하는 데 필요한 기계적, 전기적, 기능적, 절차적 기능을 정의하는 OSI 7계층 모델의 계층명을 작성하시오.",
-        "correct_answer": "물리 계층"
+        "correct_answer": "물리 계층",
+        "keyword": "OSI 7계층",
+        "keyword_num": "52"
     },{
         "question": "트랜잭션의 원자성(Atomicity)의 개념에 대해서 간단히 서술하시오.",
         "correct_answer": "트랜잭션 연산은 완전하게 수행이 완료되지 않으면 전혀 수행되지 않아야 한다는 특성이다."
@@ -232,7 +244,9 @@
         "correct_answer": "IPv6"
     },{
         "question": "테스트 오라클의 유형 중 전수 테스트가 불가한 경우 특정한 몇 개의 입려값에 대해서만 기대하는 결과를 제공해주는 오라클로 경계값, 구간별 예상값 결과 작성시 사용되는 오라클을 작성하시오.",
-        "correct_answer": "샘플링 오라클"
+        "correct_answer": "샘플링 오라클",
+        "keyword": "테스트 오라클",
+        "keyword_num": "62"
     },{
         "question": "'임시 키 무결성 프로토콜'을 의미하며 무선 라우터에서 WEP 암호화를 대체하기 위해 만들어진 보안 프로토콜을 영문 약어로 작성하시오.",
         "correct_answer": "TKIP(Temporal Key Intergrity Protocol)"
@@ -360,10 +374,14 @@
         "correct_answer": "IDEA"
     },{
         "question": "정규화(Normalization)의 개념을 간단히 서술하시오.",
-        "correct_answer": "정규화는 데이터 중복을 최소화하고 데이터 정확성을 최대화하기 위하여 관계형 DB를 분석하고 능률적인 형태로 분해하는 방법이다."
+        "correct_answer": "정규화는 데이터 중복을 최소화하고 데이터 정확성을 최대화하기 위하여 관계형 DB를 분석하고 능률적인 형태로 분해하는 방법이다.",
+        "keyword": "정규화",
+        "keyword_num": "63"
     },{
         "question": "어떤 릴레이션 R에 속한 모든 도메인이 원자값만으로 되어 있는 정규형은?",
-        "correct_answer": "제1정규형"
+        "correct_answer": "제1정규형",
+        "keyword": "정규화",
+        "keyword_num": "63"
     },{
         "question": "시스템 내 클래스 정적 구조를 표현하고 클래스와 클래스, 클래스 속성 사이의 관계를 나타내는 UML 다이어그램은?",
         "correct_answer": "Class Diagram"
@@ -547,7 +565,9 @@
     },{
         "question": "UI 설계 원칙을 작성하시오.",
         "question_desc": "( ① ) : 누구나 쉽게 이해하고 사용할 수 있어야 한다.<br>( ② ) : 사용자 목적을 정확하게 달성하여야 한다.<br>( ③ ) : 누구나 쉽게 배우고 익힐 수 있어야 한다.<br>( ④ ) : 사용자의 요구사항을 최대한 수용하며, 오류를 최소화하여야 한다.",
-        "correct_answer": "① 직관성 ② 유효성 ③ 학습성 ④ 유연성"
+        "correct_answer": "① 직관성 ② 유효성 ③ 학습성 ④ 유연성",
+        "keyword": "UI",
+        "keyword_num": "59"
     },{
         "question": "TCP 프로토콜상에서 사용되는 SSL을 기반으로 만들어진 인터넷 커뮤니케이션을 위한 암호화 보안 프로토콜은 무엇인가?",
         "correct_answer": "TLS(Transport Layer Security)"
