@@ -277,6 +277,49 @@
 </code></pre>
                     </div>
 
+                    <h3>09. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num = ["0","1","2","3","4","5","6","7","8","9"];
+    let sum = 100;
+
+    for(let i=0; i&lt;num.length; i++){
+        num[i] = i+1;
+    }
+    for(let i=0; i&lt;num.length; i++){
+        if(i % 3 == 1){
+            sum -= num[i];
+        }
+    }
+    console.log(sum)
+}
+</code></pre>
+                    </div>
+
+                    <h3>10. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let arr = [1,2,3,4,5];
+    let temp = [1,2,4,6,8];
+    let idx = 0;
+    let flag = true;
+
+    for(let i=0; i&lt;arr.length; i++){
+        flag = false;
+        if(arr[i] == temp[i]){
+            flag = true;
+        }
+        if(!flag){
+            temp[idx++] = arr[i];
+            console.log(temp[idx]);
+        }
+    }
+}
+</code></pre>
+                    </div>
+
 
 
                 </div>
@@ -303,32 +346,19 @@
     <script src="../../assets/js/highlight.min.js"></script>
     <script src="../../assets/js/webs.js"></script>
     <script>
-        let str = ["1","2","3","4","5","0","0"];
-        let i, j;
+        let temp;
+        let a = [14, 22, 53, 45, 1];
 
-        for(i=0; i<str.length; i++){
-            ch = str[i];
-            if(ch == "0"){
-                break;
+        for(i=0; i<4; i++){
+            for(j=0; j<4-i; j++){
+                if(a[j] > a[j+1]){
+                    temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
+                }
             }
         }
-        console.log(str)
-
-        for(j=0; j<i; j++){
-            i--;
-            ch = str[i];
-            str[j] = str[i];
-            str[i] = ch;
-        }
-
-        console.log(str)
-        
-
-        
-        
-
-        
-        
+        console.log(a[i])
 
 
     </script>
