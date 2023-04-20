@@ -1,804 +1,1038 @@
 [
     {
+        "time": "변형",
         "question": "기본키는 NULL값을 가져서는 안되며, 릴레이션이션 내에 오직 하나의 값만 존재햐야 한다는 무결성 제약조건은?",
         "correct_answer": "개체 무결성",
         "desc": "데이터베이스의 무결성 제약 조건에는 개체 무결성, 참조 무결성, 도메인 무결성이 있다."
     },{
+        "time": "변형",
         "question": "릴레이션은 참조할 수 없는 외래키 값을 가질 수 없다는 무결성 제약 조건은?",
         "correct_answer": "참조 무결성",
         "desc": "데이터베이스의 무결성 제약 조건에는 개체 무결성, 참조 무결성, 도메인 무결성이 있다."
     },{
+        "time": "변형",
         "question": "속성값은 그 속성의 도메인 범위 내에 존재해야 한다는 무결성 제약 조건은?",
         "correct_answer": "도메인 무결성",
         "desc": "데이터베이스의 무결성 제약 조건에는 개체 무결성, 참조 무결성, 도메인 무결성이 있다."
     },{
+        "time": "변형",
         "question": "하향식 통합 테스트에서 모듈 간의 통합 테스트를 하기 위해 일시적으로 필요한 조건만 가지고 임시고 제공되는 시험용 모듈의 의미하는 용어를 쓰시오",
         "correct_answer": "스텀"
     },{
+        "time": "변형",
         "question": "소인수분해 문제를 이용해 공개키 암호화 기법에 널리 사용되는 암호 알고리즘 기법을 영문 약어로 쓰시오.",
         "correct_answer": "RSA"
     },{
+        "time": "변형",
         "question": "2010년 제임스 딕슨이 소개한 개념으로 조직에서 가공되지 않은 정형, 비정형 데이터를 원래의 형태로 저장하고, 활용할 때는 데이터 스키마를 정의하여 필요한 형태로 변환하여 사용하도록 하는 대용량 실시간 데이터 저장소를 의미하는 용어를 작성하시오.",
         "correct_answer": "데이터 레이크(Data Lake)",
         "desc" : "데이터 레이크(Data Lake)는 방대한 양의 원본 데이터를 저장하는 중앙 데이터 저장소이다."
     },{
+        "time": "변형",
         "question": "IETF에서 고안한 IPv4에서 IPv6로 전환하는데 사용되는 전략을 작성하시오.",
         "correct_answer": "Dual Stack, Tunneling, Header Translation",
         "desc" : "이중 스택(Dual Stack), 터널링(Tunneling), 헤더 변환(Header Translation)이 있다."
     },{
+        "time": "변형",
         "question": "빅테이터 분석 기술 중 대량의 데이터를 분석하여 데이터에 내재된 변수 사이의 상호관계를 규명하여 일정한 패턴을 찾아내는 기법을 의미하는 용어를 작성하시오.",
         "correct_answer": "데이터 마이닝"
     },{
+        "time": "변형",
         "question": "교착상태의 해결 방법 중 교착 상태 회피 분야에 속하는 Dijkstra 제안한 알고리즘을 작성하시오.",
         "correct_answer": "은행가 알고리즘"
     },{
+        "time": "변형",
         "question": "다음의 관계 대수식을 SQL 명령문으로 쓰시오.",
         "question_desc": "π이름(σ학과='교육'(학생))",
         "correct_answer": "SELECT 이름 FROM 학생 WHERE 학과='교육'"
     },{
+        "time": "변형",
         "question": "다음 공통으로 설명하는 용어를 작성하시오.",
         "question_desc": "여러 운영체제에서 응응 프로그램들 사이에 위치한 소프트웨어이다.<br>소프트웨어 컴포넌트를 연결하기 위한 준비된 인프라 구조를 제공한다.",
         "correct_answer": "미들웨어"
     },{
+        "time": "변형",
         "question": "릴레이션이 데이터를 조작할 때 발생할 수 있는 이상현상(Anomaly) 3가지를 작성하시오.",
         "correct_answer": "삭제이상, 갱신이상, 삽입이상"
     },{
+        "time": "변형",
         "question": "멀티터치(Mutil-touch), 동작 인식(Gesture Recongnition) 등 사용자의 자연스러운 움직임을 인식하여 서로 주고받는 정보를 제공하는 사용자 인터페이스를 영어 약어로 작성하시오.",
         "correct_answer": "NUI",
         "keyword": "UI",
         "keyword_num": "59"
     },{
+        "time": "변형",
         "question": "크래커가 침입하여 백도어를 만들어 놓거나, 설정 파일을 변경 했을 때 분석하는 도구를 작성하시오.",
         "correct_answer": "트립와이어(Tripwire)"
     },{
+        "time": "변형",
         "question": "화이트박스 검사 기법에 해당하는 것을 고르시오",
-        "question_desc": "① 데이터 흐름 검사 ② 루프검사 ③ 동등 분할 검사 ④ 경계값 분석 ⑤ 원인결과 그래프 기법 ⑥ 오류 예측기법",
-        "correct_answer": "①②"
+        "question_desc": "① 데이터 흐름 검사 ② 경계값 분석 ③ 동등 분할 검사 ④ 루프검사 ⑤ 원인결과 그래프 기법 ⑥ 오류 예측기법",
+        "correct_answer": "데이터 흐름 검사, "
     },{
+        "time": "변형",
         "question": "애플리케이션 성능 측정 지표를 작성하시오.",
         "question_desc": "( ① ) : 일정 시간내에 애플리케이션이 처리하는 일의 양이다.<br>( ② ) : 애플리케이션에 요청을 전달한 시간부터 응답이 도착할 때까지 걸린 시간이다.<br>( ③ ) : 애플리케이션에 작업을 의뢰한 시간부터 처리가 완료될 때까지 걸린 시간이다.",
         "correct_answer": "① 처리량(Throughput) ② 응답시간(Response Time) ③ 경과시간(Turn Around Time)",
         "desc": "애플리케이션 성능 측정 4가지 지표는 처리량, 응답시간, 경과시간, 자원 사용률이다."
     },{
+        "time": "변형",
         "question": "데이터베이스의 스키마(Schema)의 개념에 대해서 서술하시오.",
         "correct_answer": "구조와 제약조건에 관한 전반적인 명세를 기술한 메타데이터의 집합이다."
     },{
+        "time": "변형",
         "question": "절차와 도구보다 개인과 소통을 중요하게 생각하는 소프트웨어 개발 방법론으로 반복적인 개발을 통한 잦은 출시를 목표로 하는 소프트웨어 생명주기 모델은?",
-        "correct_answer": "애자일 모델"
+        "correct_answer": "애자일 모델",
+        "desc": "소프트웨어 개발 생명주기에는 폭포수 모델, 프로타이핑 모델, 나선형 모델, 애자일 모델이 있다."
     },{
+        "time": "변형",
         "question": "SQL Injection 공격에 대해서 간략히 서술하시오.",
         "correct_answer": "임의로 작성한 SQL 구문을 애플리케이션에 삽입하여 데이터베이스를 공격하는 악의정의 행위이다."
     },{
+        "time": "변형",
         "question": "한국인터넷진흥원(KISA)이 인증하는 '정보보호 관리체계'로 각 조직에 적합한 정보통신망의 안정성 확보를 위하여 수립, 운영하고 있는 기술적, 물리적 보호 조치를 포함한 종합적인 관리체계에 대한 인증 제도는 무엇인지 작성하시오.",
         "correct_answer": "ISMS(정보보호 관리체계 인증, Information Security Management System)"
     },{
+        "time": "변형",
         "question": "통신 경로상의 물리적 연결을 이용해 지점간 신뢰성 있는 프레임 전송을 위해 동기화, 오류 제어, 흐름 제어를 담당하는 계층은?",
         "correct_answer": "데이터 링크 계층"
     },{
+        "time": "변형",
         "question": "발신지에서 목적지까지 패킷 전달을 담당하며 패킷의 경로 선택, 중계 역할, 폭주 제어를 하는 계층은?",
         "correct_answer": "네트워크 계층"
     },{
+        "time": "변형",
         "question": "두 응응 프로그램 간의 코드 변환, 암호화와 복호와, 구문 검색을 통해 표현상의 차이와 무관하게 통신이 가능도록 독립성을 제공하는 계층은?",
         "correct_answer": "표현 계층"
     },{
+        "time": "변형",
+        "question": "다음은 OLAP(On-Line Analytical Processing)에 대한 설명이다.",
+        "question_desc": "( ① ) : 상세 범위에서 요약된 범위로 분석할 항목을 단계적으로 분석하는 기능<br> ( ② ) : 최종 결과 보고서의 행, 열, 페이지 차원(축)을 바꾸어 볼 수 있는 기능<br> ( ③ ) : 요약된 범위에서 상세 범위로 분석할 항목을 단계적으로 접근하여 분석하는 기능",
+        "correct_answer": "① Roll up ② Pivoting ③ Drill-Down"
+    },{
+        "time": "변형",
         "question": "테스트의 결과가 참인지 거짓인지를 판단하기 위해서 사전에 정의된 참값을 입력하여 비교하는 기법 및 활동을 무엇이라고 하는가?",
         "correct_answer": "테스트 오라클",
+        "desc": "테스트 오라클 종류에는 참, 샘플링, 추정, 일관성 검사가 있다.",
         "keyword": "테스트 오라클",
         "keyword_num": "62"
     },{
+        "time": "변형",
         "question": "'민첩한', '날렵한', '기민한'이란 뜻의 사전적 의미를 가지고 있는 소프트웨어 개발 방법론으로 반복적인 개발을 통한 잦은 출시가 목표이다. 이 방법론은 무엇인가?",
         "correct_answer": "애자일"
     },{
+        "time": "변형",
         "question": "관계형 데이터베이스 반정규화(Denormailiztion)의 개념에 대해 간략히 서술하시오.",
         "correct_answer": "시스템의 성능 향상과 개발 운영의 단순화를 위해 중복, 통합, 분리 등을 수행하는 데이터 모델링 기법이다.",
         "keyword": "정규화",
         "keyword_num": "63"
     },{
+        "time": "변형",
         "question": "외부의 스니핑(Sniffing) 공격의 대응 방안으로 기본 포트 22번을 사용하여 원격 컴퓨터에 안전하게 액세스하기 위한 유닉스 기반의 데이터 기밀성을 보장할 수 있는 프로토콜을 작성하시오.",
         "correct_answer": "SSH"
     },{
+        "time": "변형",
         "question": "'분산원장 기술'이라고도 하며, 분산 데이터 저장 환경에 관리 대상 데이터를 저장함으로써 누구도 임의로 수정할 수 없고 누구나 변경의 결과를 열람할 수 있도록 탈중앙화를 핵심 개념으로 하는 데이터의 신뢰성 및 투영성을 제공하는 분산 컴퓨터 기술을 의미하는 용어를 작성하시오.",
         "correct_answer": "블록체인"
     },{
+        "time": "변형",
         "question": "프로토콜의 기본 구성요소 3가지를 작성하시오.",
         "correct_answer": "구문, 의미, 타이밍"
     },{
+        "time": "변형",
         "question": "화이트박스 테스트 기법을 모두 고르시오.",
         "question_desc": "① Equivalence Partitioning Test ② Boundary Value Analysis Test ③ Comparison Test ④ Cause-Effect Graphic Test ⑤ Loop Test ⑥ Data Flow Test ⑦ Basic Path Test ⑧ Condition Test",
         "correct_answer": "⑤⑥⑦⑧"
     },{
+        "time": "변형",
         "question": "호스트의 물리 주소(Mac Address)를 알고 있을 때 이에 대응하는 논리주소(IP Address)로 변환하여 되돌려주는 프로토콜을 영문 약어로 작성하시오.",
         "correct_answer": "RARP",
         "desc": "Reverse Address Resolution Protocol"
     },{
+        "time": "변형",
         "question": "비선점 기법으로 준비상태 큐에서 대기하는 프로세스들 중에서 실행 시간이 가장 짧은 프로세스에게 먼저 CPU가 할당되는 기법은?",
         "correct_answer": "SJF",
         "desc": "Shortest Job First"
     },{
+        "time": "변형",
         "question": "선점 기법으로 주어진 시간 할당량(Time Slice) 내에 작업을 마치지 못하면 준비 완료 리스트(Ready List)의 가장 뒤로 배치되는 스케줄링 기법은?",
         "correct_answer": "RR",
         "desc": "Round Robin"
     },{
+        "time": "변형",
         "question": "순수 관계 연산자 중 두 릴레이션을 공통 속성을 기준으로 결합하여 새로운 릴레이션을 만드는 연산은?",
         "correct_answer": "조인(⋈)",
         "desc": "순수 관계 연산자 셀렉트(Select, σ), 프로젝트(Project,π), 조인(Join, ⋈), 디비전(Division, ÷)이 있다."
     },{
+        "time": "변형",
         "question": "순수 관계 연산자 중 두 릴레이션 A와 B에 대하여 릴레이션 B의 모든 조건을 만족하는 튜플들을 릴레이션 A에서 분리해내어 프로젝션하는 연산은?",
         "correct_answer": "디비전(÷)",
         "desc": "순수 관계 연산자 셀렉트(Select, σ), 프로젝트(Project,π), 조인(Join, ⋈), 디비전(Division, ÷)이 있다."
     },{
+        "time": "변형",
         "question": "순수 관계 연산자 중 릴레이션에서 조건에 해당하는 튜플을 수평적으로 추출하는 연산은?",
         "correct_answer": "셀렉트(σ)",
         "desc": "순수 관계 연산자 셀렉트(Select, σ), 프로젝트(Project,π), 조인(Join, ⋈), 디비전(Division, ÷)이 있다."
     },{
+        "time": "변형",
         "question": "순수 관계 연산자 중 주어진 속성만 수직 추출하는 연산은?",
         "correct_answer": "프로젝트(π)",
         "desc": "순수 관계 연산자 셀렉트(Select, σ), 프로젝트(Project,π), 조인(Join, ⋈), 디비전(Division, ÷)이 있다."
     },{
+        "time": "변형",
         "question": "UI 설계 원칙 4가지를 작성하시오.",
         "correct_answer": "직관성, 유효성, 학습성, 유연성",
         "keyword": "UI",
         "keyword_num": "59"
     },{
+        "time": "변형",
         "question": "사용자가 요구분석 명세서에 명시된 사항을 모두 충족하는지 판정하고, 시스템이 예상대로 동작하고 있는지를 판정하는 테스는?",
         "correct_answer": "통합테스트(Intergration)",
         "desc": "단계별 소프트웨어 검사 절차에는 단위 검사(Unit Test), 통합 검사(Intergration Test), 시스템 검사(System Test), 인수 검사(Acceptance Test)가 있다."
     },{
+        "time": "변형",
         "question": "IP 패킷 단위로 '암호화', '인증', '키 관리'를 통해 보안 서비스를 제공해주는 표준화된 IP 계층의 보안 프로토콜을 쓰시오",
         "correct_answer": "IPsec"
     },{
+        "time": "변형",
         "question": "2005년 미국의 프로그래머 더그 컷팅(Doug Cutting)이 방대한 데이터의 저장과 분석을 위해 구글의 GFS와 맵리듀스(MapReduce) 등을 활용하여 구현한 자바 기반의 분산 컴퓨터 프레임 워크를 작성하시오.",
         "correct_answer": "하둡(Hadoop)"
     },{
+        "time": "변형",
         "question": "네트워크상의 다른 상대방의 패킷 내용을 도청하는 해킹 수법은?",
         "correct_answer": "스니피(Sniffing)",
         "desc": "스니피(Sniffing): 네트워크상의 다른 상대방의 패킷 내용을 도청하는 해킹 수법<br>스누핑(Snooping): 네트워크상의 중요 정보를 몰래 획득하는 해킹 수법<br>스푸핑(Snoofing): TCP/IP의 구조적 결함을 이용해 사용자의 시스템 권한을 획득한 후, 신뢰 관계에 있는 시스템의 IP를 도용하여 정보를 획득하는 해킹 수법"
     },{
+        "time": "변형",
         "question": "네트워크상의 중요 정보를 몰래 획득하는 해킹 수법은?",
         "correct_answer": "스누핑(Snooping)",
         "desc": "스니피(Sniffing): 네트워크상의 다른 상대방의 패킷 내용을 도청하는 해킹 수법<br>스누핑(Snooping): 네트워크상의 중요 정보를 몰래 획득하는 해킹 수법<br>스푸핑(Snoofing): TCP/IP의 구조적 결함을 이용해 사용자의 시스템 권한을 획득한 후, 신뢰 관계에 있는 시스템의 IP를 도용하여 정보를 획득하는 해킹 수법"
     },{
+        "time": "변형",
         "question": "TCP/IP의 구조적 결함을 이용해 사용자의 시스템 권한을 획득한 후, 신뢰 관계에 있는 시스템의 IP를 도용하여 정보를 획득하는 해킹 수법은?",
         "correct_answer": "스푸핑(Snoofing)",
         "desc": "스니피(Sniffing): 네트워크상의 다른 상대방의 패킷 내용을 도청하는 해킹 수법<br>스누핑(Snooping): 네트워크상의 중요 정보를 몰래 획득하는 해킹 수법<br>스푸핑(Snoofing): TCP/IP의 구조적 결함을 이용해 사용자의 시스템 권한을 획득한 후, 신뢰 관계에 있는 시스템의 IP를 도용하여 정보를 획득하는 해킹 수법"
     },{
+        "time": "변형",
         "question": "ARP, IPX, IP 프로토콜이 사용되는 OSI 7계층 모델의 명칭을 작성하시오.",
         "correct_answer": "네트워크 계층",
         "keyword": "OSI 7계층",
         "keyword_num": "52"
     },{
+        "time": "변형",
         "question": "GoF가 제안한 디자인 패턴의 분류 3가지를 작성하시오.",
         "correct_answer": "행위, 구조, 생성"
     },{
+        "time": "변형",
         "question": "블랙박스 테스트의 종류 중 프로그램의 입력 조건에 중점을 두고, 어느 하나의 입력 조건에 대해여 타당한 값과 그렇지 못한 값을 설정하여 해당 입력 자료에 맞는 결과가 출력되는지 확인하는 테스트 기법을 작성하시오.",
         "correct_answer": "동치 분할 테스트"
     },{
+        "time": "변형",
         "question": "메모리상에서 프로그램의 복귀 주소와 변수 사이에 특정 값을 저장해 두었다가 그 값이 변경되었을 경우 오버플로우 상태로 가정하여 프로그램 실행을 중단하는 기술을 의미하는 용어를 작성하시오",
         "correct_answer": "스택 가드(Stack Guard)"
     },{
+        "time": "변형",
         "question": "한 모듈 내에 있는 처리 요소들 사이의 기능적인 연관정도를 나타내며, 이것이 높으면 시스템 구현 및 유지보가 어렵다.",
         "correct_answer": "결합도"
     },{
+        "time": "변형",
         "question": "한 모듈 내부의 처리 요소들 간의 기능적 연관도를 나타내며, 모듈 내부 요소는 명령어, 명령어의 모임, 호출문 특정 작업 수행 코드을 나타내는 이것은 무엇인지 작성하시오.",
         "correct_answer": "응집도"
     },{
+        "time": "변형",
         "question": "리팩토링의 목적을 간략히 설명하시오.",
         "correct_answer": "소프트웨어의 디자인이 개선되어 코드가 단순해지고 결함을 찾는데 도움을 주어 유지보수하기 쉽게 된다."
     },{
+        "time": "변형",
         "question": "다음이 설명하고 있는 프로그램 품질 관리의 방법을 작성하시오.",
         "question_desc": "품질 보증 활동으로 인식한다.<br>정적 테스트의 하나이다.<br>검사핌은 관련 전문가로 이루어지며 검사목록을 제공한다.",
         "correct_answer": "인스펙션(Inspection)"
     },{
+        "time": "변형",
         "question": "다음이 설명하고 있는 용어를 작성하시오.",
         "question_desc": "( )는 실제 컴퓨터시스템에 데이터웨어하우스를 구축하는 것 없이 사용자가 사용하는 데 있어서 구축한 것과 같은 효과를 내는 가상 시스템이다.<br>( )의 장점으로는 빠른 다차원 데이터 분석이 가능하고 구축 기간 및 노력을 크게 줄일 수 있다는 것이다.",
         "correct_answer": "VDW(Virtual Data Warehouse)"
     },{
+        "time": "변형",
         "question": "장치들 간의 물리적인 접속과 비트 정보를 다른 시스템에 전송하는 데 필요한 기계적, 전기적, 기능적, 절차적 기능을 정의하는 OSI 7계층 모델의 계층명을 작성하시오.",
         "correct_answer": "물리 계층",
         "keyword": "OSI 7계층",
         "keyword_num": "52"
     },{
+        "time": "변형",
         "question": "트랜잭션의 원자성(Atomicity)의 개념에 대해서 간단히 서술하시오.",
         "correct_answer": "트랜잭션 연산은 완전하게 수행이 완료되지 않으면 전혀 수행되지 않아야 한다는 특성이다."
     },{
+        "time": "변형",
         "question": "다음이 설명하고 있는 용어를 작성하시오.",
         "question_desc": "명백한 역할을 가지고 독립적으로 존재할 수 잇는 시스템의 부분으로 넓은 의미에서는 재사용되는 모든 단위라고 볼 수 있다.<br>인터페이스를 통해서만 접근 할 수 있다.",
         "correct_answer": "컴퍼넌트(Component)"
     },{
+        "time": "변형",
         "question": "관계형 데이터 베이스의 이상현상(Anomaly)의 개념에 대해 간단히 서술하시오.",
         "correct_answer": "이상현상은 데이터의 중복으로 인하여 관계 연산을 처리할 때 예기치 못한 곤란한 현상이 발생하는 것이다."
     },{
+        "time": "변형",
         "question": "테스트 단계 중 시스템을 당장 사용할 수 있도록 준비되어 있는지 확인하기 위한 단계로, 베타 테스가 포함된 테스트는 무엇인가?",
         "correct_answer": "인수 테스트(Acceptance Test)",
         "desc": "단계별 소프트웨어 검사 절차에는 단위 검사(Unit Test), 통합 검사(Intergration Test), 시스템 검사(System Test), 인수 검사(Acceptance Test)가 있다."
     },{
+        "time": "변형",
         "question": "'심'이라고도 하며, 외부와 내부 네트워크의 모든 IT 시스템에서 생성되는 로그와 이벤트를 통합 관리하여 외부 위험을 사전에 예측하고 내부 정보의 유출을 방지할 수 있도록 하는 개념의 보안 솔루션을 영문 약어로 작성하시오.",
         "correct_answer": "SIEM",
         "desc": "Security Information Evnet Management"
     },{
+        "time": "변형",
         "question": "경유 라우터의 대수에 따라 최단 경로를 동적으로 결정하는 거리 벡터 알고리즘을 사용하는 내부 라우팅 프로토콜은?",
         "correct_answer": "RIP",
         "desc": "Routing Information Protocol"
     },{
+        "time": "변형",
         "question": "링크 상태 라우팅 프로토콜로 IP 패킷에서 프로토콜 번호 89번을 사용하여 라우팅 정보를 전송하여 안정되고 다양한 기능으로 가장 많이 사용되는 프로토콜은?",
         "correct_answer": "OSPF",
         "desc": "Open Shortest Path First Protocol"
     },{
+        "time": "변형",
         "question": "다음이 설명하고 있는 용어를 작성하시오.",
         "question_desc": "어떠한 인증이던 하나의 시스템에서 이용할 수 있게 해주는 시스템이다.<br>인증 받은 사용자는 재인증 없이 다수의 정보시스템에 접근할 수 있다.",
         "correct_answer": "SSO",
         "desc": "Single Sign On"
     },{
+        "time": "변형",
         "question": "시스템 명세, 설계 결과, 프로그램 코드 등을 각각 여러 사람이 검토하게 함으로써 그 안에 포함되어 있는 오류를 조기에 발견하고자 하는 프로그램 품질 관리의 활동을 작성하시오.",
         "correct_answer": "워크스루"
     },{
+        "time": "변형",
         "question": "다음이 설명하고 있는 용어를 작성하시오.",
         "question_desc": "'기반 구조 없는 네트워크'라고도 하는 무선 기반의 이동 단말기 간의 연결망이다.<br>무선 공유기 없이도 동적으로 경로를 설정할 수 있으며 험난한 지형 위험한 장송에서의 네트워크 구성을 하는데 유용하다.",
         "correct_answer": "애드 훅 네트워크(Ad-hoc Network)"
     },{
+        "time": "변형",
         "question": "구조 패턴을 고르시오.",
         "question_desc": "Adapter 패턴, Bridge 패턴, Builder 패턴, Proxy 패턴, Singleton 패턴, Interator 패턴, Observe 패턴, Prototype 패턴",
         "correct_answer": "Adapter 패턴, Bridge 패턴, Builder 패턴"
     },{
+        "time": "변형",
         "question": "주소 유형은 유니 캐스트, 멀티 캐스트, 애니 캐스트 3가지이며, 주소의 길이는 128bit이고 8개 블록으로 각 블록은 16비트이다.",
         "correct_answer": "IPv6"
     },{
+        "time": "변형",
         "question": "테스트 오라클의 유형 중 전수 테스트가 불가한 경우 특정한 몇 개의 입려값에 대해서만 기대하는 결과를 제공해주는 오라클로 경계값, 구간별 예상값 결과 작성시 사용되는 오라클을 작성하시오.",
         "correct_answer": "샘플링 오라클",
         "keyword": "테스트 오라클",
         "keyword_num": "62"
     },{
+        "time": "변형",
         "question": "'임시 키 무결성 프로토콜'을 의미하며 무선 라우터에서 WEP 암호화를 대체하기 위해 만들어진 보안 프로토콜을 영문 약어로 작성하시오.",
         "correct_answer": "TKIP(Temporal Key Intergrity Protocol)"
     },{
+        "time": "변형",
         "question": "살충제 패러독스(Pesticide Paradox)의 개념에 대해서 간단히 서술하시오.",
         "correct_answer": "동일한 케이스를 반복 실행하면 새로운 문제점을 발견할 수 없다."
     },{
+        "time": "변형",
         "question": "DCL 명령문을 작성하시오.",
         "question_desc": "( ① ) : 데이터베이스 사용자의 사용 권한을 부여한다.<br>( ② ) : 데이터베이스의 사용자의 사용 권한을 취소한다.<br>( ③ ) : 트랜잭션 실행이 완료되었음을 선언한다.<br>( ④ ) : 트랜잭션 실행이 실패하였음을 선언한다.",
         "correct_answer": "① GRANT ② REVOKE ③ COMMIT ④ ROLLBACK"
     },{
+        "time": "변형",
         "question": "Kent Beck이 작성한 인터페리스 구현 검증을 위한 JAVA 언어를 지원하는 오픈 소스인 단위 테스트 프레임 워크를 작성하시오.",
         "correct_answer": "JUnit"
     },{
+        "time": "변형",
         "question": "한 모듈이 다른 모듈 내부에 있는 지역 변수나 기능을 사용하는 경우의 결합도는?",
         "correct_answer": "내용 결합도"
     },{
+        "time": "변형",
         "question": "모듈 간의 인터페이스로 배열이나 오브젝트(Object), 스트럭처(Structure) 등이 전달되는 경우의 결합도는?",
         "correct_answer": "스탬프 결합도"
     },{
+        "time": "변형",
         "question": "파라미터가 아닌 모듈 밖에 선언되어 있는 전역 변수를 참조하고 전역 변수를 갱신하는 식으로 상호 작용하는 경우의 결합도는?",
         "correct_answer": "공통 결합도"
     },{
+        "time": "변형",
         "question": "데이터 베이스에 표현된 개체 인스턴스를 처리하는 작업에 대한 명세로서 데이터베이스를 조작하는 기본 도구의 구성요소는?",
         "correct_answer": "연산",
         "desc": "데이터 모델의 3요소는 구조, 연산, 제약조건이 있다."
     },{
+        "time": "변형",
         "question": "데이터 베이스에 표현될 대상으로서의 개채 타입과 개체 타입 간의 관계를 무엇이라고 하는가?",
         "correct_answer": "연산",
         "desc": "데이터 모델의 3요소는 구조, 연산, 제약조건이 있다."
     },{
+        "time": "변형",
         "question": "다음에서 설명하는 언어를 작성하시오",
         "question_desc": "OMG에서 만든 통합 모델링 언어로 객체 지향 시스템을 개발할 때 산출물의 명세화, 시각화, 문서화를 위해 사용된다.<br>개발하는 시스템을 이해하기 쉬운 형태로 표현하여 분석가, 의뢰인, 설계자가 효율적인 의사소통을 할 수 있게 해준다.<br>개발 방법론이나 개발 프로세스가 아니라 표준화된 모델링 언어이다.",
         "correct_answer": "UML",
         "desc": "Unified Modeling Language"
     },{
+        "time": "변형",
         "question": "가상 사설망으로 인터넷과 같은 공중망을 이용하여 사설망의 효과를 얻기 위한 기술을 영문 약어로 작성하시오.",
         "correct_answer": "VPN"
     },{
+        "time": "변형",
         "question": "블랙박스 테스트를 고르시오.",
         "question_desc": "Equivalence Partitioning Test, Boundary Value Analysis Test, Comparison Test, Cause-Effect Graphic Test, Loop Test, Data Flow Test, Basic Path Test, Condition Test",
         "correct_answer": "Equivalence Partitioning Test, Cause-Effect Graphic Test, Comparison Test, Boundary Value Analysis Test"
     },{
+        "time": "변형",
         "question": "두 릴레이션 A, B에 대해 B 릴레이션의 모든 조건을 만족하는 튜플들을 릴레이션 A에서 분리해 내어 프로젝션하는 관계 대수 연산은?",
         "correct_answer": "디비전(Division)(÷)"
     },{
+        "time": "변형",
         "question": "네트워크 패킷의 출발지 IP를 변조하여 공격 대상의 자원을 소모시키는 공격으로 기밀성과 가용성을 침해하는 공격 네트워크 유형을 작성하시오.",
         "correct_answer": "랜드 어택(Land Attack)"
     },{
+        "time": "변형",
         "question": "검사(Validation) 기법 중 개발자의 장소에서 사용자가 개발자 앞에서 행하는 기법으로, 일반적으로 통제된 환경에서 사용자와 개발자가 함께 확인하면서 수행되는 검사 기법을 작성하시오",
         "correct_answer": "알파 검사"
     },{
+        "time": "변형",
         "question": "1996년 W3C 표준 권고안에 제시된 데이터를 정의하는 규칙을 제공하는 확장 가능한 마크업 언어를 영문 약어로 작성하시오.",
         "correct_answer": "XML"
     },{
+        "time": "변형",
         "question": "CPU가 어떤 프로세스 실행 중에 다른 프로세스가 CPU를 요구하면 실행 중인 프로세스를 중단하고 요구한 프로세스가 실행될 수 있도록 설계한 스케줄링 기법은?",
         "correct_answer": "선점현 방식"
     },{
+        "time": "변형",
         "question": "하나의 트랜잭션이 데이터를 액세스하는 동안 다른 트랜잭션이 그 데이터 항목을 접근할 수 없도록 하는 병행제어 기법을 작성하시오.",
         "correct_answer": "로킹(Locking)"
     },{
+        "time": "변형",
         "question": "모듈이 다수의 관련 기능을 가질 때 모듈 내부의 기능 요소들이 그 기능을 순차적으로 수행하는 응집도는?",
         "correct_answer": "절차적 응집도"
     },{
+        "time": "변형",
         "question": "동일한 입력과 출력을 사용하는 소작업들이 모인 응집도는?",
         "correct_answer": "교환적 응집도"
     },{
+        "time": "변형",
         "question": "모듈 내부의 모든 기능 요소들이 한 문제와 연관되어 수행하는 응집도는?",
         "correct_answer": "기능적 응집도"
     },{
+        "time": "변형",
         "question": "W3C의 표준 객체 모델로 유효한 HTML 문서나 XML 문서의 구조, 내용, 스타일을 다루기 위한 플랫폼과 언어에 중립적인 웹 페이지에 대한 인터페이스를 영문 약어로 쓰시오.",
         "correct_answer": "DOM"
     },{
+        "time": "변형",
         "question": "다음에 설명하는 테스트 커버리지를 작성하시오.",
         "question_desc": "( ① ) : 코드 구조 내의 모든 문장에 대해 한 번 이상 수행하는 테스트 커버리지<br>( ② ) : 결정 포인트 내의 모든 분기문에 대해 수행하는 테스트 커버리지<br>( ③ ) : 결정 포인트 내의 모든 개별 조건식에 대해 수행하는 테스트 커버리지",
         "correct_answer": "① 구문 ② 결정 ③ 조건"
     },{
+        "time": "변형",
         "question": "다음에 설명하는 내용을 작성하시오.",
         "question_desc": "( ① ) : 사용자가 시스템에 접근을 허용하기 전에 가입자 신분을 확인하는 기능이다<br>( ② ) : 사용자가 시스템 자원에 대한 접근 권한 유무를 판별 후 접근 허가를 결정하는 기능이다.<br>( ③ ) : 사용 시간, 정보, 위치 등 정보 수집 등 시스템 자원 사용의 정보를 수집하고 관리하는 기능이다.",
         "correct_answer": "① 인증(Authentication) ② 인가(Authoriztion) ③ 과금(Accounting)"
     },{
+        "time": "변형",
         "question": "다음에 설명하는 내용을 작성하시오.",
         "question_desc": "- 접근통제 모델 중 정보의 소유자가 정보의 보안 수준을 결정하고 이에 대한 정보의 접근 및 통제까지 설정하는 모델이다.<br>- 주체 또는 소속 그룹의 아이디에 근거하여 소유자가 자신의 의지대로 데이터에 대한 접근 권한을 지정하고 제어하는 방식이다.<br>- 객체별로 세분된 접근제어가 가능하며 유연한 접근제어 서비스를 제공할 수 있다.",
         "correct_answer": "DAC(임의 접근 통제)",
         "desc": "접근 통제 모델에는 강제적 접근 통제(MAC, Mandatory Access Control), 임의적 접근 통제(DAC, Discretionary Access Control), 역할 기반 접근 통제(RBAC, Role Based Access Control)이 있다."
     },{
+        "time": "변형",
         "question": "다음에 설명하는 내용을 작성하시오.",
         "question_desc": "- 미국의 Bell 연구소에서 만든 운영체제로 멀티태스킹과 멀티 프로그램이 가능하며, 주로 중대형 서버에 사용되는 운영체제이다.<br>트리 구조의 파일 시스템을 가지며, 이식성이 높고 장치간의 호환성이 높다.",
         "correct_answer": "유닉스(UNIX)"
     },{
+        "time": "변형",
         "question": "다음은 럼바우의 객체지향 분설 모델링을 설명하는 내용이다. 빈칸을 채우시오.",
         "question_desc": "( ① ) : 프로세스들의 자료 흐름을 중심으로 처리 과정을 자료흐름도(DFD, Data Flow Diagram)로 만드는 과정이다.<br>( ② ) : 시간의 흐름에 따라 객체 간의 제어 흐름, 동작 순서 등의 동적인 행위를 상태 흐름도(STD, State Diagram)로 만드는 과정이다.<br>( ③ ) : 객체의 속성, 관계를 객체 다이어그램으로 표현하는 과정이다.",
         "correct_answer": "① 기능 모델링(Functional) ② 동적 모델링(Dynamic)  ③ 객체 모델링(Objecte)",
         "desc": "럼바우의 객체지향 분설 모델링에는 객체 모델링(Objecte Modeling), 기능 모델링(Functional Modeling), 동적 모델링(Dynamic Modeling)이 있다."
     },{
+        "time": "변형",
         "question": "다음에 설명하는 내용을 작성하시오.",
         "question_desc": "- '클라이언트는 자신이 사용하지 않는 메서드에 의존 관계를 맺으면 안된다.'라는 설계 원칙이다.<br>'클리아언트가 사용하지 않는 인터페이스 때문에 영향을 받아서는 안된다.'라는 설계의 원칙이다.",
         "correct_answer": "인터페이스 분리의 원칙(ISP, Interface Segregation Principle)",
         "desc": "객체지향 설계의 5원칙에는 SRP(Single Responsibility Principle) 단일책임의 원칙, OCP(Open Closed Principle) 개방 패쇄 원칙, LSP(Liskov Substitution Principle) 리스코프 치환 원칙, ISP(Interface Segregation Principle) 인터페이스 분리 원칙, DIP(Dependency Inversion Principle) 의존 역전 원칙이 있다."
     },{
+        "time": "변형",
         "question": "Telnet, FTP 등 TCP를 사용한 모든 세션의 갈취가 가능한 TCP의 취약점을 이용한 능동적 공격 방법을 작성하시오.",
         "correct_answer": "세션 하이재킹"
     },{
+        "time": "변형",
         "question": "데이터베이스 시스템과 관련된 모든 자원에 대해 기회, 통제를 하며 데이터베이스 언어를 이용해 DBMS를 거쳐 전체적인 관리 운영에 책임을 지는 사람이나 집단을 의미하는 용어를 작성하시오.",
         "correct_answer": "DBA(데이터베이스 관리자)"
     },{
+        "time": "변형",
         "question": "UML의 구성요소 3가지를 작성하시오.",
         "correct_answer": "사물, 관계, 다이어그램",
         "desc": "UML은 객체 지향 시스템을 개발할 때 산출물의 명세화, 시각화, 문서화에 사용되는 표준화된 모델링 언어이다. 구성요소에는 사물(Thing), 관계(Relatioinship), 다이어그램(Diagram)이 있다."
     },{
+        "time": "변형",
         "question": "TCL의 명령어 3가지를 작성하시오.",
         "correct_answer": "COMMIT, ROLLBACK, CHECKPOINT",
         "desc": "TCL(Transaction Control Language)는 데이터베이스의 무결성 유지, 보안관 권한 검사, 회복절차이행, 병행수행제어 등을 제어하기 위한 언어인 DCL의 일부이다."
     },{
+        "time": "변형",
         "question": "위조된 매체 접근 제어(MAC) 주소를 지속적으로 네트워크로 흘려보내, 스위치 MAC 주소 테이블의 저장 기능을 혼란시켜 더미 허브처럼 작동하게 하는 공격을 의미하는 용어를 작성하시오.",
         "correct_answer": "Switch Jamming(스위칭 재밍)"
     },{
+        "time": "변형",
         "question": "데이터베이스에 영향을 주는 생성, 읽기, 갱신, 삭제 연산으로 프로세스와 테이블 간에 매트릭스를 만들어서 트랜잭션을 분석하는 것을 의미하는 용어를 작성하시오.",
         "correct_answer": "CRUD 분석"
     },{
+        "time": "변형",
         "question": "기기를 키오스트에 갖다 대면 원하는 데이터를 바로 가져올 수 있는 기술로 10cm 이내 근접 거리에서 기가급 속도로 데이터 전송이 가능한 초고속 근접무선통신(NFC) 기술을 의미하는 용어를 작성하시오.",
         "correct_answer": "Zing"
     },{
+        "time": "변형",
         "question": "1990년대 유럽에서 개발되었으며, PGB로 채태된 8라운드 알고리즘이며, 128비트의 키로 64비트 평문을 8라운드를 거쳐 64비트의 암호문을 생성하는 블록 암호화 방식은?",
         "correct_answer": "IDEA"
     },{
+        "time": "변형",
         "question": "정규화(Normalization)의 개념을 간단히 서술하시오.",
         "correct_answer": "정규화는 데이터 중복을 최소화하고 데이터 정확성을 최대화하기 위하여 관계형 DB를 분석하고 능률적인 형태로 분해하는 방법이다.",
         "keyword": "정규화",
         "keyword_num": "63"
     },{
+        "time": "변형",
         "question": "어떤 릴레이션 R에 속한 모든 도메인이 원자값만으로 되어 있는 정규형은?",
         "correct_answer": "제1정규형",
         "keyword": "정규화",
         "keyword_num": "63"
     },{
+        "time": "변형",
         "question": "시스템 내 클래스 정적 구조를 표현하고 클래스와 클래스, 클래스 속성 사이의 관계를 나타내는 UML 다이어그램은?",
         "correct_answer": "Class Diagram"
     },{
+        "time": "변형",
         "question": "대기 중인 프로세서가 요청한 자원들이 다른 대기 중인 프로세스에 의해 점유되어 다시 프로세스 상태를 변경시킬 수 없는 경우가 발행하게 되는데 이러한 상황을 의미하는 용어를 작성하시오.",
         "correct_answer": "교착상태",
         "desc": "교착 상태 발생 조건에는 상호 배재(Mutual Exclusion), 점유와 대기(Hold and Wait), 비선전(Non-Preemption), 환형 대기(Circular Wait)가 있고, 해결방법에는 예방(Prevention), 회피(Avoidance), 발견(Detection), 회복(Recovery)가 있다."
     },{
+        "time": "변형",
         "question": "웹페이지에 입력되는 입력 값 검증 및 필터링 등을 수행하는 방화벽을 의미하는 용어는 작성하시오.",
         "correct_answer": "WAF(Web Application Firewall)"
     },{
+        "time": "변형",
         "question": "백도어(Backdoor) 탐지 기법을 골라 작성하시오.",
         "question_desc": "무결성 검사, 닫힌 포트 확인, 로그 분석, SetUID 파일 검사, 백도어 탐지 툴 사용",
         "correct_answer": "백도어(Backdoor) 탐지 기법에는 무결성 검사, 열린 포트 확인, 로그 분석, SetUID 파일 검사, 백도어 탐지 툴 사용이 있다."
     },{
+        "time": "변형",
         "question": "다음에 해당하는 결합도를 작성하시오.",
         "question_desc": "한 모듈에서 다른 모듈의 내부로 제어 이동<br>한 모듈이 다른 모듈 내부 자료의 조회 또는 변경<br>두 모듈이 동일한 문자의 공유",
         "correct_answer": "Control Coupling"
     },{
+        "time": "변형",
         "question": "클라우드 서비스오 정반대 개념으로 IT 서비스 운영을 위해, 직접적으로 인프라를 구축하는 방식을 작성하시오.",
         "correct_answer": "온프레스미(On-Premise)"
     },{
+        "time": "변형",
         "question": "UNIX 시스템에서는 일반 계정의 비밀번호를 저장할 때 암호화에 이용되는 알고리즘을 작성하시오.",
         "correct_answer": "MD5"
     },{
+        "time": "변형",
         "question": "상위 클래스에서 객체를 생성하는 인터페이스를 정의하고, 하위 클래스에서 인스턴스를 생성하도록 하는 방식의 디자인 패턴을 무엇인가?",
         "correct_answer": "Factory Method"
     },{
+        "time": "변형",
         "question": "공식적으로 검토 및 동의되었고 추후 개발의 기초가 되며 오직 공식적인 변경 통제 절차에 의해서만 변경될 수 있는 형상항목은 무엇인가?",
         "correct_answer": "기준선(BaseLine)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 하나의 프로세스 내에서 병행성을 증대시키기 위한 기법으로 '경량 프로세스'라고 불린다.<br>- 자신만의 스택과 레지스터를 갖는다.",
         "correct_answer": "스레드(Thread)"
     },{
+        "time": "변형",
         "question": "UML(객체지향 분석설계 모델링 언어)의 기본 구성요소를 작성하시오.",
         "correct_answer": "사물, 관계, 다이어그램"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 복구 시간 목표로 조직에서 재해 후 애플리케이션과 프로세스를 복구하는데 쇼요할 수 있는 목표 시간이다.<br>중단 시작부터 측정되며 백업 및 실행할 애플리케이션과 프로세스를 복구할 미래의 시간을 결정한다.",
         "correct_answer": "RTO(Recovery Time Objective) 복구 시간 목표"
     },{
+        "time": "변형",
         "question": "애플리케이션 개발 시점에 프로그램의 소스코드를 분석해 결함을 찾아내는 테스트 기법을 작성하시오.",
         "correct_answer": "정적 분석"
     },{
+        "time": "변형",
         "question": "연속된 메모리 공간을 사용하는 프로그램에서 할당된 메모리의 범위를 넘어서 위치에 자료를 읽거나 쓰려고 할 때 발생하는 공격을 의미하는 용어를 작성하시오.",
         "correct_answer": "버퍼 오버플로우(Buffer Overflow Attack)"
     },{
+        "time": "변형",
         "question": "단순 객체 접근 프로토콜로 XML과 HTTP 등을 기반으로 하여 다른 컴퓨터에 있는 데이터나 서비스를 호출하기 위한 통신규약을 의미하는 용어를 작성하시오.",
         "correct_answer": "SOAP(Simple Object Access Protocol)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- W3C의 디렉터 팀 버너리스가 서술한 개방형 연결 데이터를 의미한다.<br>인물, 지명 등과 같이 정적 데이터 형태로 연관성이 높은 데이터가 많은 경우 제공하는 방식이다.",
         "correct_answer": "LOD(Linked Open Data)"
     },{
+        "time": "변형",
         "question": "TCP/IP 계층 구조에서 IP의 동작 과정에서의 전송 오류가 발생하는 경우에 대비해 오류 정보를 전송하는 목적으로 사용하는 프로토콜을 작성하시오.",
         "correct_answer": "ICMP(Internet Control Message Protocol)"
     },{
+        "time": "변형",
         "question": "사용자가 원하는 파일이나 데이터베이스, 프린터 등의 자원들이 지역 컴퓨터 또는 네트워크 내의 다른 원격지 컴퓨터에 존재하더라도 위치에 관계없이 그의 사용을 보장하는 개념은?",
         "correct_answer": "위치 투명성",
         "desc": "분산 데이터베이스 시스템의 투명성에는 위치 투명성, 중복 투명성, 병행 투명성, 장애 투명성이 있다."
     },{
+        "time": "변형",
         "question": "웹 서비스에 대한 정보의 공개 및 검색에 대한 방법을 정의하는 XML 기반의 공용 디렉토리 또는 프로토콜의 집합체를 의미하는 용어를 작성하시오.",
         "correct_answer": "UDDI(Universal Description Discovery and Intergration)"
     },{
+        "time": "변형",
         "question": "주소 부족 문제를 해결하기 위해 사설망에서 사용하는 IP Address를 공인망에서 사용할 수 있는 IP Address로 매핑하여, 공인망에서도 통신이 가능하도록 도와주는 주소 변환기술을 의미하는 용어를 작성하시오.",
         "correct_answer": "NAT(Network Address Translation)"
     },{
+        "time": "변형",
         "question": "형상 통제(Configuration Control)의 개념을 간단히 서술하시오.",
         "correct_answer": "형상 목록의 변경 요구를 검토 및 승인하여 현재의 소프트웨어 기준선에 반영될 수 있도록 통제하는 일련의 과정이다."
     },{
+        "time": "변형",
         "question": "기존의 여러가지 IT기술과 해킹방법들을 종합적으로 활용하여 다양한 종류의 보안위협들을 지속적으로 만듦으로써 특정한 대상을 계속하여 공격하는 행위를 무엇이라고 하는가?",
         "correct_answer": "APT(Advanced Persistent Threat) 지능형 지속 공격"
     },{
+        "time": "변형",
         "question": "디지털 콘텐츠와 디바이스의 사용을 제한하기 위해 하드웨어 제조업자, 저작권자, 출판업자 등이 사용할 수 있는 접근 제어 기술을 의미하는 용어를 작성하시오.",
         "correct_answer": "DRM(Digital Right Management)"
     },{
+        "time": "변형",
         "question": "조사된 정보를 바탕으로 정보시스템, 웹 애플리케이션 등의 알려지지 않은 취약점 및 보안시스템에서 탐지되지 않는 악성코드 등을 감염시키는 공격 기법을 작성하시오.",
         "correct_answer": "제로데이 공격"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 반복적이고 점진적인 개발 프로세스를 제공하며 기능의 추가 변경의 요구에 따른 커스터마이징이 가능하다.<br>사용 컴포넌트를 조립하는 상향식 개발 방법론으로 생산성과 품질을 높이고 유지보수 비용을 최소화할 수 있다.",
         "correct_answer": "CBD(Component Base Developement)"
     },{
+        "time": "변형",
         "question": "클라우드 컴퓨터와 관련된 용어를 작성하시오.",
         "question_desc": "( ① ) : 사용자는 웹 브라우저 등의 클라이언트를 통해 접속하여 응용소프트웨어를 사용<br>( ② ) : 사용자 필요에 따라 가상화된 서버, 스토리지, 네트워크 등의 하드웨어 자원을 제공<br>( ③ ) : 응용 소프트웨어 개발에 필요한 개발 요소들과 실행 환경을 제공",
         "correct_answer": "① SaaS ② Iaas  ③ PaaS",
         "desc": "클라우드 컴퓨터에는 SaaS(Software as a Service), IaaS(Infrastructure as a Service), PaaS(Plarform as a Service)가 있다."
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 병행 중인 프로세스들 간에 공유 변수를 엑세스하고 있는 하나의 프로세스 이외에는 다른 모든 프로세스들이 공유 변수를 엑세스하지 목하도록 제어하는 기법이다.<br>구현 기법으로는 데커 알고리즘, 피터슨 알고리즘, Test and set 기법, Lamport의 빵집 알고리즘, Swap 명령어 기법 등이 있다.",
         "correct_answer": "상호배제(Mutual Exclusion)"
     },{
+        "time": "변형",
         "question": "트랜잭션의 수행이 실패하여 Rollback 연산을 실행한 상태를 무엇이라고 하는가?",
         "correct_answer": "철회(Aborted)",
         "desc": "트랜잭션의 상태에는 실행(Active), 부분완료(Partially Committed), 완료(Commit), 실패(Fail), 철회(Aborted)가 있다."
     },{
+        "time": "변형",
         "question": "트랜잭션의 마지막 연산이 실행된 직후의 상태로, 모든 연산의 처리는 끝났지만 트랜잭션이 수행한 최종 결과를 데이터베이스에 반영하지 않은 상태를 무엇이라고 하는가?",
         "correct_answer": "부분완료(Partially Committed)",
         "desc": "트랜잭션의 상태에는 실행(Active), 부분완료(Partially Committed), 완료(Commit), 실패(Fail), 철회(Aborted)가 있다."
     },{
+        "time": "변형",
         "question": "다양한 하드웨어 환경에서도 운용할 수 있도록 다른 하드웨어에도 쉽게 적용될 수 있는 정도를 의미하는 소프트웨어 품질 목표를 작성하시오.",
         "correct_answer": "이식성",
         "desc": "소프트웨어 품질 목표에는 정확성, 신뢰성, 효율성, 무결성, 이식성, 재사용성, 사용 용이성, 상호운용성 등이 있다."
     },{
+        "time": "변형",
         "question": "구글의 구글 브레인 팀이 제작하여 공개한 기계 학습을 위한 오픈소스 소프트웨어 라이브러리를 의미하는 용어를 작성하시오.",
         "correct_answer": "텐서플로"
     },{
+        "time": "변형",
         "question": "개별 모듈을 시험하는 것으로 모듈이 정확하게 구현되었는지, 예정한 기능이 제대로 수행되는지를 점검하는 것이 주요 모적인 테스트 단계를 작성하시오.",
         "correct_answer": "단위테스트",
         "desc": "단계별 소프트웨어 검사에는 단위 검사, 통합 검사, 시스템 검사, 인수 검사가 있다."
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- ( )는 네트워크상에서 사용할 수 있는 기존 서비스를 이용하여 소프트웨어 애플리케이션을 구성하는 아키텍처이다.<br>- (  )를 구현하는 핵심 기술에는 WSDL, SOAP, UDDI가 있다.",
         "correct_answer": "SOA(Service Oriented Architecture) 서비스 지향 아키텍처"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 네트워크 계층인 IP 계층에서 보안 서비스를 제공하기 위한 프로토콜이다.<br>- IETF에서 개발 및 관리되며, 정보 패킷이 패킷 해더 또는 주소에 따라 교환되는 IP 계층에서의 보안 패킷교환을 보장하는 일련의 프로토콜로 구성된다.",
         "correct_answer": "IPsec"
     },{
+        "time": "변형",
         "question": "MIT의 Athena 프로젝트에서 개발된 개방 네트워크상에서 인증과 통신의 암호화를 시행하여 보안성을 확보하기 위한 알고리즘의 티켓(Ticket)기반 인증 프로토콜을 작성하시오.",
         "correct_answer": "커버로스(Kerberos)"
     },{
+        "time": "변형",
         "question": "스웨인(A.Swain)이 제안한 부적절하거나 원치 않는 인간의 결정 또는 행위로 소프트웨어가 정해진 설계와는 다른 코드를 구현하는 오류를 의미하는 용어를 작성하시오.",
         "correct_answer": "휴먼 에러"
     },{
+        "time": "변형",
         "question": "여러 개의 독립된 통신장치가 UWB(Ultra-Wide Band) 기술 또는 블루투스 기술을 사용하여 통신망을 형성하는 무선 네트워크 기술을 작성하시오.",
         "correct_answer": "피코넷(Piconet)"
     },{
+        "time": "변형",
         "question": "데이터베이스 시스템에서 삽입, 갱신, 삭제 등의 이벤트가 발생할 때마다 관련 작업이 자동으로 수행되는 절차형 SQL을 의미하는 용어를 작성하시오.",
         "correct_answer": "트리거(Trigger)"
     },{
+        "time": "변형",
         "question": "다음 보기에서 시간 지역성(Temporal Locality)를 고르시오.",
         "question_desc": "부프로그램, 배열 순회, 스택, 순차 실행, 집계 처리 변수, 관련 변수 선언",
         "correct_answer": "부프로그램, 스택, 집계 처리 변수",
         "desc": "지역성에는 시간 지역성(Temporal Locality)과 공간 지역성(Spatial Locality)으로 나뉜다. 지역성은 프로세서들이 기억장치 내의 정보를 균일하게 접근하는 것이 아니라, 어느 한순간에 특정 부분을 집중적으로 참조하는 특성을 말한다."
     },{
+        "time": "변형",
         "question": "그래프의 특수한 형태로 노드(Node)와 선분(Branch)으로 되어 있고, 정점 사이에 사이클(Cycle)이 형성되어 있지 않으며, 자료 사이의 관계성이 계층 형식으로 나타나는 비선형 구조를 의미하는 용어를 작성하시오.",
         "correct_answer": "트리(Tree)"
     },{
+        "time": "변형",
         "question": "객체지향 설계 5원칙(SOLID)를 약문 약어를 작성하시오.",
         "correct_answer": "SRP, OCP, LSP, ISP, DIP",
         "desc": "객체지향 설계의 5원칙에는 SRP(Single Responsibility Principle) 단일책임의 원칙, OCP(Open Closed Principle) 개방 패쇄 원칙, LSP(Liskov Substitution Principle) 리스코프 치환 원칙, ISP(Interface Segregation Principle) 인터페이스 분리 원칙, DIP(Dependency Inversion Principle) 의존 역전 원칙이 있다"
     },{
+        "time": "변형",
         "question": "시스템 전체의 수행을 검사하는 것으로 시스템 성능과 관련된 고객의 요구 사항이 완벽하게 수행되는지를 평가하는 테스트 단계를 작성하시오..",
         "correct_answer": "시스템 테스트",
         "desc": "단계별 소프트웨어 검사에는 단위 검사(Unit Test), 통합 검사(Intergration Test), 시스템 검사(System Test), 인수 검사(Acceptance Test)가 있다."
     },{
+        "time": "변형",
         "question": "부인방지(Non-repudiation)의 개념을 간단히 서술하시오.",
         "correct_answer": "부인방지는 메시지의 송,수신자가 송,수진 사실을 부인하지 못하도록 하는 방법이다."
     },{
+        "time": "변형",
         "question": "서비스 기술 언어로 Web Service가 제공하는 서비스에 대한 정보를 기술하기 위한 XML 기반의 마크업 언어를 작업하시오.",
         "correct_answer": "WSDL(Web Service Description Language)"
     },{
+        "time": "변형",
         "question": "웹 보안을 제공하는 전송계층 프로토콜로 사이버 공간에서 전달되는 정보의 안전한 거래를 보장하기 위해 넷스케이프사가 정한 인터넷 통신 규약 프로토콜을 작성하시오.",
         "correct_answer": "SSL(Secure Socket Layer)"
     },{
+        "time": "변형",
         "question": "케빈 미트닉(Kevin Mitnick)이 사용하던 해킹 수법으로 정보보안에서 사람의 심리적인 취약점을 약용하여 비밀 정보를 취득하거나 컴퓨터 접근권한 등을 얻으려고 하는 공격 방법을 의미하는 것은?",
         "correct_answer": "사회공학(Social Engineering)"
     },{
+        "time": "변형",
         "question": "프로세스 간 통신으로 여러 프로세스 간의 자원이나 데이터를 주고받는 통신 방법을 의미하는 용어를 작성하시오.",
         "correct_answer": "IPC(Inter Process Communication)"
     },{
+        "time": "변형",
         "question": "종단(End-Point) 간 단말기 사이에 오류제어(Error Control)와 흐름제어를 수행하여 신뢰성 있고 명확한 데이터 전송을 하는 계층은?",
         "correct_answer": "전송계층(Transport Layer)"
     },{
+        "time": "변형",
         "question": "스마트폰의 AP칩에 적용된 보안 영역으로 AP칩 내부의 안드로이드 OS와는 분리된 안정영역에 별도의 보안 OS를 구동시키는 기술을 의미하는 용어를 작성하시오.",
         "correct_answer": "트러스트존(Trust Zone)"
     },{
+        "time": "변형",
         "question": "객체 사이에 일대다의 종속성을 정의하고 한 객체의 상태가 변하면 종속된 다른 객체에 통보가 가고 자동으로 수정이 일어나게 하는 행위 패턴은 무엇인가?",
         "correct_answer": "옵저버 패턴"
     },{
+        "time": "변형",
         "question": "기능 클래스 계층과 구현 클래스 계층을 연결하고, 구현부에서 추상 계층을 분리하여 각자 독립적으로 변형할 수 있도록 해주는 구조 패턴은 무엇인가?",
         "correct_answer": "브릿지 패턴"
     },{
+        "time": "변형",
         "question": "실제로 데이터베이스에 저장될 레코드의 형식을 정의하고 저장 데이터 항목의 표현 방법, 내부 레코드의 물리적 순서 등을 기술한 물리적 저장 장치의 입장에서 본 데이터베이스 구조는 무엇인가?",
         "correct_answer": "내부 스키마"
     },{
+        "time": "변형",
         "question": "개체 간의 관계와 제약조건을 나타내고, 데이터베이스 접근 권한, 보안 및 무결성 규칙을 기술한 범기관적 입장에서 본 데이터베이스 구조는 무엇인가?",
         "correct_answer": "개념 스키마"
     },{
+        "time": "변형",
         "question": "UI 설계 원칙을 작성하시오.",
         "question_desc": "( ① ) : 누구나 쉽게 이해하고 사용할 수 있어야 한다.<br>( ② ) : 사용자 목적을 정확하게 달성하여야 한다.<br>( ③ ) : 누구나 쉽게 배우고 익힐 수 있어야 한다.<br>( ④ ) : 사용자의 요구사항을 최대한 수용하며, 오류를 최소화하여야 한다.",
         "correct_answer": "① 직관성 ② 유효성 ③ 학습성 ④ 유연성",
         "keyword": "UI",
         "keyword_num": "59"
     },{
+        "time": "변형",
         "question": "TCP 프로토콜상에서 사용되는 SSL을 기반으로 만들어진 인터넷 커뮤니케이션을 위한 암호화 보안 프로토콜은 무엇인가?",
         "correct_answer": "TLS(Transport Layer Security)"
     },{
+        "time": "변형",
         "question": "자바 프로그램이 데이터베이스와 연결되어 데이터를 주고받을 수 있게 해주는 프로그래밍 인터페이스를 의미하는 용어를 작성하시오.",
         "correct_answer": "JDBC(Java Datavase Connectivity)"
     },{
+        "time": "변형",
         "question": "관계대수 연산에서 두 릴레이션이 공통으로 가지고 있는 속성을 이용하여 두 개의 릴레이션을 하나로 합쳐서 새로운 릴레이션을 만드는 연산의 기호를 작성하시오.",
         "correct_answer": "⋈",
         "desc": "순수 관계 연산자 셀렉트(Select, σ), 프로젝트(Project,π), 조인(Join, ⋈), 디비전(Division, ÷)이 있다."
     },{
+        "time": "변형",
         "question": "사이트 간 스크립트라는 의미로 검증되지 않은 외부 입력값에의해 브라우저에서 악의적인 코드가 실행되는 보안 취약점을 의미하는 용어를 작성하시오.",
         "correct_answer": "XSS(크로스사이트 스크립트, Cross Site Scripting)"
     },{
+        "time": "변형",
         "question": "TCP 흐름제어기법 중 프레임이 손실되었을 때, 손실된 프레임 1개를 전송하고 수신자의 응답을 기다리는 방식으로 한 번에 프레임 1개만 전송할 수 있는 기법을 작성하시오.",
         "correct_answer": "정지-대기-기법(Stop and Wait)"
     },{
+        "time": "변형",
         "question": "JAVA 언어의 접근 제어자를 작성하시오.",
         "question_desc": "( ① ) : 해당 클래스에서만 접근을 허용<br>( ② ) : 같은 패키지에서만 접근을 허용.<br>( ③ ) : 같은 패키지에서 접근을 허용하고, 다른 패키지는 해당 클래스를 상속받아야 접근이 가능<br>( ④ ) : 모든 접근을 허용",
         "correct_answer": "① private ② default  ③ protected ④ public"
     },{
+        "time": "변형",
         "question": "정상 도메인과 비슷한 이름의 도메인을 등록해두고, 자주 사용하는 사이트의 URL을 교모하게 바꿔 가짜 사이트로 유도하거나, 파일 이름을 속인 악성 소프트웨어를 내려받도록 유도하는 공격 기법을 의미하는 용어를 작성하시오.",
         "correct_answer": "타이포스쿼티(Typosquatting)"
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "( ① ) : 주어진 명세를 빠짐없이 모두 테스트케이스로 구현하고 있는지 확인하는 검사<br>( ② ) : 소프트웨어 내부 논리 흐름에 맞춰 테스트케이스를 작성하고 확인하는 검사.<br>( ③ ) : 유사 소프트웨어나 유사 기술 평가에서 검사자의 경험을 토대로 한, 직관과 기술 능력을 기반으로 수행하는 검사",
         "correct_answer": "① 명세기반 테스트 ② 구조기반 테스트  ③ 경험기반 테스트"
     },{
+        "time": "변형",
         "question": "'스트리밍 텍스트 지향 메시지 프로토골'로 Publish-Subscribe 매커니즘을 제공하는 웹 소켓(WebSocket)상에서 동작하는 텍스트 기반 메시징 프로토콜을 영문 약어를 작성하시오.",
         "correct_answer": "Stomp(Simple Text Oriented Messaging Protocol)"
     },{
+        "time": "변형",
         "question": "컴퓨터 운영체제의 커널에 보안 기능을 추가한 것으로 운영체제의 보안상 결함으로 인하여 발생 가능한 각종 해킹으로부터 시스템을 보호하기 위하여 사용되는 것을 의미하는 용어를 쓰시오.",
         "correct_answer": "Secure OS"
     },{
+        "time": "변형",
         "question": "모듈 테스트를 위해 개발자가 작성한 애플리케이션 컴포넌트 및 모듈의 테스트를 위해 생성된 코드와 데이터를 의미하는 용어를 작성하시오.",
         "correct_answer": "테스트 하네스(Test Harness)"
     },{
+        "time": "변형",
         "question": "대형 소프트웨어 프로젝트의 기능들을 작고 독립접이며 느슨하게 결합된 모듈로 분해하여 서비스를 제공하는 아키첵처를 의미하는 용어를 작성하시오.",
         "correct_answer": "마이크로 서비스"
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "( ① ) : 일괄 자료 처리나 과학 기술 계산용, 비즈니스 자료처리용의 5만 라인 이하의 중소 규모 소프트웨어를 개발하는 유형<br>( ② ) : 트랜잭션 처리시스템이나 운영체제, 데이터 베이스 관리시스템 등의 30만 라인 이하의 소프트웨어를 개발하는 유형.<br>( ③ ) : 최대형 규모의 트랜잭션 처리 시스템이나 운영체제 등의 30만 라인 이상의 소프트웨어를 개발하는 유형",
         "correct_answer": "① 유기적 모드(Organic Mode) ② 반결합 모드(Semi-Detached Mode)  ③ 내장 모드(Embedded Mode)"
     },{
+        "time": "변형",
         "question": "소프트웨어 비용 산정 기법 중 산정 요원과 조정자에 의해 산정하는 방법을 작성하시오.",
         "correct_answer": "델파이 기법"
     },{
+        "time": "변형",
         "question": "켄트 백(Kent Beck)에 의해 고안된 '테스트 주도 개발'을 의미하는 반복 테스트를 이용한 소프트웨어 방법론으로 테스트 코드를 먼저 작성한 뒤에 실제 코드를 작성하는 개발 방식을 의미하는 용어를 작성하시오.",
         "correct_answer": "TDD(Test Driven Development)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 절차형 SQL을 활용하여 특정 기능을 수행할 수 있는 트랜잭션 언어를 의미한다.<br>- 응용프로그램이나 내부 스케줄러의 호출을 통해 실행된다.<br>- 호출 시 SQL 작업을 포함하는 데이터 조작어를 수행하는 것이 일반적이다.",
         "correct_answer": "프로시저(Procedure)"
     },{
+        "time": "변형",
         "question": "기존의 라우터, 스위치 등과 같이 하드웨어에 의존하는 네트워크 체계에서 안정성, 속도, 보안 등을 소프트웨어로 제어, 관리하기 위한 기술을 작성하시오.",
         "correct_answer": "SDN(Software Defined Networking)"
     },{
+        "time": "변형",
         "question": "시맨틱 웹의 중요한 기반으로 Noy와 McGuinness가 언급한 개념 간의 관계를 정의하고 개념을 추론하기 위한 논리적 규칙을 명시하는 서술의 집합을 의미하는 용어를 작성하시오.",
         "correct_answer": "온톨로지(Ontology)"
     },{
+        "time": "변형",
         "question": "해싱에서 충돌로 인해 동일한 홈 주소를 갖는 레코드들의 집합을 의마하는 용어를 작성하시오.",
         "correct_answer": "동의어(Synonym)"
     },{
+        "time": "변형",
         "question": "웹 해킹으로 서버 권한을 획득한 후, 해당 서버에서 공격자의 PC로 연결하고 공격자가 직접 명령을 입력하여 개인정보 전송 등의 악의적인 행위를 하는 공격을 의미하는 용어를 작성하시오.",
         "correct_answer": "리버스 텔넷(Reverse Tanlet)"
     },{
+        "time": "변형",
         "question": "객체지향 설계의 정보 은닉(Information Hiding)의 개념을 간단히 서술하시오.",
         "correct_answer": "정보 은닉은 객체지향 설계에서 필요하지 않은 정보를 접근할 수 없도록 하여, 한 모듈 또는 하부 시스템이 다른 모듈의 구현에 영향을 받지 않게 설계되는 것을 의미한다."
     },{
+        "time": "변형",
         "question": "로컬 루프백(Loopback)주소를 나타내는 특수 IP 주소를 쓰시오.",
         "correct_answer": "127. 0. 0. 1"
     },{
+        "time": "변형",
         "question": "애자일(Agile) 프로세스 모델러 팀이 작업을 관리하고 짧은 주기로 공동으로 문제를 해결하는 데 사용하는 프레임워크를 작성하시오.",
         "correct_answer": "스크럼(Scrum)"
     },{
+        "time": "변형",
         "question": "UML의 정적 다이어그램을 고르시오.",
         "question_desc": "클래스 다이어그램, 유스케이스 다이어그램, 객체 다이어그램, 컴포넌트 다이어그램, 시퀀스 다이어그램, 상태 다이어그램, 활동 다이어그램",
         "correct_answer": "클래스, 객체, 컴포넌트"
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "인간처럼 학습하고 추론할 수 있는 지능을 가진 컴퓨터 시스템을 만드는 기술이다. ( ① )는 컴퓨터를 인간처럼 학습시켜 스스로 규칙을 형성할 수 있도록 하는 인공지능의 분야이다. ( ② )은 인공 신경망을 기반으로 하는 ( ① )알고리즘의 한 종류이다.",
         "correct_answer": "① 머신 러닝 ② 딥러닝"
     },{
+        "time": "변형",
         "question": "코딩, 디버스, 컴파일, 배포 등 프로그램 개발에 관련된 모든 작업을 하나의 프로그램 안에서 처리하는 환경을 제공하는 소프트웨어 의미하는 용어를 작성하시오.",
         "correct_answer": "IDE(Integrated Development Environment), 통합개발환경"
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "- '투명한 데이터 암호화'라는 의미로 응용 프로그램에 대한 수정 없이 인덱스의 경우 DBMS 자체 인덱싱 기능과 연동이 가능하다.<br>- 데이터베이스 내부에서 페이지 단위에서 실시간으로 암,복호 처리를 하는 방식이다.<br>- DEK 대칭 키를 사용해서 암호화한다.",
         "correct_answer": "TED(Transparent Data Encryption) 방식"
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "- SQL 친화적인 국내 실무 개발 환경에 맞아서 많이 사용되는 SQL Mapping 기반 오픈 소스 Access Framework이다.<br>- 질의하기 위한 SQL 쿼리를 별도의 XML 파일로 분리하고 Mapping을 통해서 SQL을 실행한다.",
         "correct_answer": "마이바티스(MyBatis)"
     },{
+        "time": "변형",
         "question": "프로세스가 어떤 자원에 대한 무한 정지와 기아 현상을 방지하기 위해 싯템에서는 어떤 자원을 기다린 시간에 비례하여 프로세스에게 우선순위를 부여하는 기법을 의미하는 용어를 작성하시오.",
         "correct_answer": "에이징(Aging)"
     },{
+        "time": "변형",
         "question": "'뒷문'이라는 뜻으로 시스템 관리자가 만든 시스템의 보안상의 허점을 이용하여 시스템에 비인가된 접근을 하는 악성 소프트웨어를 작성하시오.",
         "correct_answer": "백도어(Backdoor)"
     },{
+        "time": "변형",
         "question": "경계값 분석(Boundary Value Analysis)의 개념을 간단히 서술하시오.",
         "correct_answer": "입력의 경계값에서 발생하는 오류를 제거하기 위한 검사 기법이다."
     },{
+        "time": "변형",
         "question": "UML 확장 모델에서 스테레오 타입 객체를 표현할 때 사용하는 기호를 작성하시오.",
         "correct_answer": "<< >>"
     },{
+        "time": "변형",
         "question": "테스트 수행 시 실제로 수행한 작업과 발생한 모든 세부적인 오류들을 시간대별로 기록한 문서를 의미하는 용어를 작성하시오.",
         "correct_answer": "테스트 로그(Test Log)"
     },{
+        "time": "변형",
         "question": "빅테이터를 분석 시 맵리듀스(MapReduce) 대신 SQL을 통해 분산 파일 시스템을 읽어 내는 하둡 기반 데이터웨어하우스 시스템을 의미하는 용어를 작성하시오.",
         "correct_answer": "타조(Tajo)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 MS 윈도우 운영체제 네트워크 관련 용어를 작성하시오.",
         "question_desc": "( ① ) : TCP/IP 설정을 표시하는 명령어<br> ( ② ) : 프로토콜의 통계와 현재 TCP/IP 연결을 확인 할 때 사용하는 명령어<br> ( ③ ) : ICMP 프로토콜을 사용하여 컴퓨터 네트워크 상태를 점검 및 진단하는 명령어",
         "correct_answer": "① ipconfig ② nbtstat ③ Ping"
     },{
+        "time": "변형",
         "question": "존재하지 않는 클라이언트가 서버별로 한정된 접속 가능 공간에 접속한 것처럼 속여 다른 사용자가 서비스를 이용하지 못하게 하는 Dos(Denial of Service)공격 유형을 작성하시오.",
         "correct_answer": "SYN Flooding"
     },{
+        "time": "변형",
         "question": "통신 프로토콜(Protocol)의 개념을 간단히 서술하시오.",
         "correct_answer": "컴퓨터를 이용한 정보통신 시스템에서 정확한 데이터를 주고받기 위해서 컴퓨터 간의 미리 정해진 약속이다."
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "- 빌드 테스팅(Build Acceptance Testing)이라고도 하며 각 모듈의 중요한 기능을 테스트 한다.<br>- 빌드(배포)가 가능한 수준인지 확인하기 위한 테스트이다.",
         "correct_answer": "스모크 테스트(Smoke Test)"
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "- 컨테이너에 기반해 애플리케이션을 구축하는 오픈소스로된 가상화 소프트웨어 플랫폼이다.<br>- 구글, 아마존, 마이크로소프트에서 지원하고 있으며 컨테이너 환경에서 독립적으로 애플리케이션을 실행할 수 있도록 컨테이너를 만들고 관리하는 것을 도와주는 도구이다.",
         "correct_answer": "도커(Docker)"
     },{
+        "time": "변형",
         "question": "다음 설명에 맞는 용어를 작성하시오.",
         "question_desc": "- 개인용 또는 서버용 운영체제로 오픈소스 기반 운영체제이다. 리누스 토발즈가 최초로 유닉스 운영체제를 기반으로 제작하여 현재는 PC, 서버, 임베디드 기반 가전기기용 운영체제로까지 그 영역을 확장하였다.",
         "correct_answer": "리눅스(Linux)"
     },{
+        "time": "변형",
         "question": "페이지 부재가 너무 자주 일어나 프로세스가 실행에 보내는 시간보다 페이지 교체에 보내는 시간이 더 많은 상황을 의미하는 용어를 작성하시오.",
         "correct_answer": "스래싱(Thrashing)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 객체지향 소프트웨어 설계의 원칙을 작성하시오.",
         "question_desc": "- 하나의 클래스는 하나의 책임을 갖는다.<br>- 클래스나 모듈은 한 가지 기능만을 가지고 있으며 이를 변경하려는 이유도 딱 한 가지여야 한다. 하나의 클래스에 둘 이상의 기능이 들어가 있으면 복잡해진다.",
         "correct_answer": "단일 책임의 원칙"
     },{
+        "time": "변형",
         "question": "모든 팀원이 이해하기 쉽도록 작성된 에러 처리가 잘 되어 있으며 하나의 역할을 수행하는 단순하고 직접적인 코드를 의미하는 용어를 작성하시오.",
         "correct_answer": "클린코딩"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 조인 연산을 작성하시오.",
         "question_desc": "- 가장 기본이 되는 조인으로 두 릴레이션의 모든 속성을 합한 하나의 릴레이션 구조로 만들어진다.<br>- 중복되는 속성도 모두 표현된다.",
         "correct_answer": "동일조인(Equi Join)",
         "desc": "조인에는 동일 조인(Equi Join), 자연 조인(Natural Join), 외부 조인(Outer Join), 세타 조인(Theta Join)이 있다."
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 객체지향의 원리와 관련된 용오를 작성하시오.",
         "question_desc": "- 실행 시간에 하위클래스의 객체 타입에 따라서 하위클래스의 적합한 동작이 자동으로 정해진다.<br>- 오버라이딩 다형성을 지원하여 처리해준다.",
         "correct_answer": "동적 바인딩(Dynamic Binding)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 스토리지 시스템 용어를 작성하시오.",
         "question_desc": "( ① ) : 저장장치가 호스트 기기에 네트워크 디바이스 없이 직접 연결되어 사용 및 관리되는 방식<br> ( ② ) : 저장장치가 네트워크에 기반하여 호스트 기기에 대이터 공유가 이루어지는 방식<br> ( ③ ) : 여러 저장장치로 구성되 ㄴ저장자치 전용 네트워크에 각 호스트가 접근하여 데이터를 공유하는 방식",
         "correct_answer": "① DAS ② NAS ③ SAN",
         "desc": "스토리지 시스템 DAS(Direct Attached Storage, 직접 연결 저장 장치), NAS(Network Attached Storage, 네트워크 연결 저장 장치), SAN(Storage Area Network, 스토리지 전용 네트워크)가 있다."
     },{
+        "time": "변형",
         "question": "데이터베이스 응용 프로그램, 데이터베이스 자체, 운영체제 등의 조정을 통하여 데이터베이스 관리시스템의 성능을 향상시키는 작업을 의미하는 용어를 작성하시오.",
         "correct_answer": "튜닝(Tunning)"
     },{
+        "time": "변형",
         "question": "ICMP Echo Request 패키슬 브로드캐스트 주소로 전송하여 많은 양의 응답 패킷이 공격 대상으로 전송되게 하는 서비스 거부 공격을 의미하는 용어를 작성하시오.",
         "correct_answer": "스머프 공격(Smurf Attack)"
     },{
+        "time": "변형",
         "question": "사람이 직접 소스 코드를 보면서 코드의 품질을 확인하는 과정으로 Peer Review, Walk Through, Team Review, Code Inspection 등의 방식 잇는 테스트를 의미하는 용어를 작성하시오.",
         "correct_answer": "코드 리뷰(Code Review)"
     },{
+        "time": "변형",
         "question": "개발과 운영의 합성어로 조직 내에서 상호 의존적인 시스템 개발과 시스템 운영을 병행하고 협업하는 방식을 의미하는 용어를 작성하시오.",
         "correct_answer": "데브옵스(DevOps)"
     },{
+        "time": "변형",
         "question": "관계형 데이터 모델의 릴레이셔(Relation)의 주요 특징 4가지를 간단히 서술하시오.",
         "correct_answer": "튜플의 유일성, 튜플의 무순서성, 속성의 무순서성, 속성의 원자값"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 객체지향의 원리 용어를 작성하시오.",
         "question_desc": "- 여러 클래스들이 공통으로 가지고 있는 동일한 이름의 연산이 각 클래스에 따라 따르게 동작하는 것이다.<br>- 동일한 이름의 연산을 다른 목적으로 사용할 수 있게 해준다.<br>- 상위클래스에 정의된 연산이 하위클래스에 따라서 다양하게 동작하도록 해준다.",
         "correct_answer": "다형성(Polymorphism)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 IT 스토리지 기술 용어를 작성하시오.",
         "question_desc": "- 가상화를 적용하여 필요한 공간만큼 나눠 사용할 수 있도록 하며 서버 가상화와 유사함<br>- 컴퓨팅 소프트웨어로 규정하는 데이터 스토리지 체계이며, 일정 조직 내 여러 스토리지를 하나처럼 관리하고 운용하는 컴퓨터 이용 환경<br>- 스토리지 자원을 효율적으로 나누어 쓰는 방법으로 이해 할 수 있음",
         "correct_answer": "SDS(Software Defined Storage, 소프트웨어 정의 스토리지)"
     },{
+        "time": "변형",
         "question": "다중 하드디스크 드라이브들 사이에서 데이터를 나누고 중복할 수 있도록 컴퓨터 데이터 저장장치 체계를 의미하는 용어를 작성하시오.",
         "correct_answer": "RAID",
         "desc": "다중 하드디스크 드라이브(Redundant Array of Inexpensive Disks)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 프로그램이 실행되면서 동적 할당하여 사용되는 메모리 영역이다.<br>- C언어의 malloc(), C++의 new를 통해 프로그램이 접근하는 메모리 영역이다.<br>- 오버플로우 시켜 특정 코드를 실행하도록 하는 공격이 가능한 영역이다.",
         "correct_answer": "힙(heap)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 정보보안의 3요소를 작성하시오.",
         "question_desc": "( ① ) : 허락되지 않은 사용자나 대상이 정보의 내용을 알 수 없도록 하는 것<br>( ② ) : 허락되지 않은 사용자나 대상이 정보를 함부로 수정 및 삭제 등 변경할 수 없도록 하는 것<br> ( ③ ) : 허락된 사용자나 대상이 정보에 접근하고자 할 때 방해받지 않도록 하는 것",
         "correct_answer": "① 기밀성 ② 무결성 ③ 가용성"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 각 트랜잭션이 데이터에 접근할 시간을 미리 지정하여 기억시키 뒤 그 시간의 순서에 따라 순서대로 데이터에 접근하여 수행하는 방법을 말한다.<br>- 모든 트랜잭션 데이터의 접근 시간에 맞춰 수행하므로 교착상태가 발생하지 않는다.",
         "correct_answer": "타임 스탬프"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 암호화 관련 용어를 작성하시오.",
         "question_desc": "( ① ) : 데이터를 비밀코드로 변환하는 과정<br>( ② ) : 암호화되지 않은 데이터<br>( ③ ) : 암호화된 데이터<br>( ④ ) : 암호화, 복호화 시 같은 키 사용<br>( ⑤ ) : 암호화, 복호화 시 다른 키 사용",
         "correct_answer": "① 암호화(Encryption) ② 평문(Plain Text) ③ 암호문(Cipher Text) ④ 대칭키 암호(Symmetric-key Encryption) ⑤ 공개킹 암호(Public-key Encryption)"
     },{
+        "time": "변형",
         "question": "소프트웨어를 검사할 때 소프트웨어의 내부구조를 일부만 파악한 상태에서 진행하는 검사하는 의미하는 용어를 작성하시오.",
         "correct_answer": "그레이박스 테스트(Gray Box Testing)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "- 소프트웨어의 각 요소는 확장에 열려 있고 변경에는 닫혀 있어야 한다.<br>- 변경이 필요한 경우 기존 코드를 수정하지 말고 상속과 확장을 활용하여 변경한다.",
         "correct_answer": "개방 패쇄 원칙(Open Closed Principle)"
     },{
+        "time": "변형",
         "question": "화면 배치, 내비게이션 시스템, 버튼, 입력창과 같은 인터페이스 요소들을 간단한 선으로 단순화하여 대략적인 레이아웃을 정적으로 재현한 UI 설계를 작성하시오.",
         "correct_answer": "와이어 프레임"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 암호화 관련 용어를 작성하시오.",
         "question_desc": "( ① ) : 하나의 테이블에서 원하는 자료를 얻지 못하는 경우 다른 테이블을 참조하기 위해 사용되는 속성<br>( ② ) : 한 릴레이션 내의 속성들의 집합으로 구성된 속성이며 유일성은 만족시키지만 최소성은 불만족<br>( ③ ) : 릴레이션에서 각 튜플을 유일하게 식별할 수 있는 속성이나 속성의 집합이며, 유일성과 최소성을 모든 만족<br>( ④ ) : 후보키 중에서 튜플을 식별하기 위해 특별히 선택된 속성",
         "correct_answer": "① 외래키(Foreign key) ② 슈퍼키(Super key) ③ 후보키(Candidate key) ④ 기본키(Primary key)"
     },{
+        "time": "변형",
         "question": "JAVA에서 힙(Heap)에 남아 있으나 변수가 가지고 있던 참조값을 잃거나 변수 자체가 없어짐으로써 더 이상 사용되지 않는 객체를 제거해주는 역할을 하는 모듈을 의미하는 용어를 작성하시오.",
         "correct_answer": "가비지 켈렉터(Garbage Collector)"
     },{
+        "time": "변형",
         "question": "테스트를 위한 드라이버와 스텁 없이 모든 실제 모듈들을 동시에 통합하여 테스트를 진행하는 소프트웨어 테스티 기법을 작성하시오.",
         "correct_answer": "빅뱅 통합 테스트"
     },{
+        "time": "변형",
         "question": "각 테스트 대상 분산 환경에 데몬을 사용하여 테스트 대상 프로그램을 통해 테스트를 수행하고, 통합하여 자동화하는 인터페이스 구현 검증 도구를 작성하시오.",
         "correct_answer": "STAF(Software Testing Automation Framework)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "( ① ) : 두 개 이상의 트랜잭션이 같은 자료를 공유하여 갱신할 때 갱신 결과의 일부가 분실되는 현상<br>( ② ) : 두 개의 트랜잭션 수행이 끝났지만, 원치 않는 연산 결과가 나타나고 데이터베이스 자체도 모순된 상태로 남게 된 현상<br>( ③ ) : 병행 트랜잭션 중 문제가 발생한 트랜잭션을 Rollback하면 다른 트랜잭션도 함께 Rollback 되는 현상",
         "correct_answer": "① 갱신분실(Lost Update) ② 모순성(Inconsistency) ③ 연쇄 복귀(Cascading Rollback)"
     },{
+        "time": "변형",
         "question": "목표 시스템을 공격하기 위하여 다양하고 방대한 값들을 꾸준히 그리고 철저하게 입력하면서 시스템의 반응상태를 추적하는 공격을 쓰시오.",
         "correct_answer": "무차별 대입 공격(Brute Force Attack)"
     },{
+        "time": "변형",
         "question": "다음 설명에 해당하는 용어를 작성하시오.",
         "question_desc": "( ① ) : 현실과 가상환경을 융합하는 복합형 가상현실 기술<br>( ② ) : 컴퓨터를 통해 가상현실을 체험하게 해주는 기술<br>( ③ ) : 현실 세계와 가상세계 정보를 결합해 두 세계를 융합시키는 공간을 만들어내는 기술",
         "correct_answer": "① AR ② VR ③ MR"

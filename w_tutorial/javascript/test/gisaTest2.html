@@ -320,6 +320,52 @@
 </code></pre>
                     </div>
 
+                    <h3>11. 다음은 최솟값을 출력하는 예제이다. 밑줄에 적합한 표현을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let num = [30,40,24,80,99];
+    let min = 9999;
+
+    for(let i=0; i&lt;5; i++){
+        if(min > num[i]){
+            min = ________;
+        }
+    }
+
+    console.log("최소값 : ", min);
+}
+</code></pre>
+                    </div>
+
+                    <h3>12. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let s1 = "Remember november";
+    let s2 = s1.slice(0, 3) + s1.slice(12, 16);
+    let s3 = "r AND you";
+
+    console.log(s2 + s3)
+}
+</code></pre>
+                    </div>
+
+                    <h3>13. 결괏값을 작성하시오.<span class="dot"></span></h3>
+                    <p>기사 기출 변형 문제</p>
+                    <div class="code">
+<pre><code class="language-js">{
+    let x = 1;
+
+    console.log( !(x>0) );
+    console.log( x>0 || x&lt;4 );
+    console.log( x&lt;&lt;2 );
+    console.log( x&2 );
+    console.log( x&3 );
+}
+</code></pre>
+                    </div>
+
 
 
                 </div>
@@ -346,19 +392,14 @@
     <script src="../../assets/js/highlight.min.js"></script>
     <script src="../../assets/js/webs.js"></script>
     <script>
-        let temp;
-        let a = [14, 22, 53, 45, 1];
+        let x = 1;
 
-        for(i=0; i<4; i++){
-            for(j=0; j<4-i; j++){
-                if(a[j] > a[j+1]){
-                    temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
-                }
-            }
-        }
-        console.log(a[i])
+        console.log( !(x>0) );
+        console.log( x>0 || x<4 );
+        console.log( x<<2 );
+        console.log( x&2 );
+        console.log( x&3 );
+        
 
 
     </script>
