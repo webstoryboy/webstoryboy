@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인 기능사 레이아웃 연습</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'GmarketSans';
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        h1 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        i {
+            width: 100%;
+            display: block;
+            font-style: normal;
+            padding: 10px;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+        /* layout */
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        #header h1 {
+            width: 30%;
+            background-color: #efefef;
+        }
+        #header nav {
+            width: 70%;
+            background-color: #e5e5e5;
+        }
+        #slider {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            background-color: #dddddd;
+        }
+        #contents {
+            width: 100%;
+            height: 200px;
+            background-color: #d6d6d6;
+            display: flex;
+        }
+        .content1 {
+            width: 33.3333%;
+            background-color: #cacaca;
+        }
+        .content2 {
+            width: 33.3333%;
+            background-color: #c0c0c0;
+        }
+        .content3 {
+            width: 33.3333%;
+            background-color: #b5b5b5;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            background-color: #a4a4a4;
+        }
+        .footer1 {
+            width: 20%;
+            background-color: #9b9b9b;
+        }
+        .footer2 {
+            width: 60%;
+            background-color: #8d8d8d;
+        }
+        .footer3 {
+            width: 20%;
+            background-color: #808080;
+        }
+        .sliderWrap {
+            display: flex;
+        }
+        .slider {
+            position: relative;
+        }
+        .slider img {
+            vertical-align: top;
+        }
+        .slider span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255,255,255,0.4);
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="container">
+        <header id="header">
+            <h1></h1>
+            <nav></nav>
+        </header>
+        <!-- //header -->
+
+        <section id="slider">
+            <div class="sliderWrap">
+                <div class="slider"><img src="slider01.jpg" alt="이미지 설명"><span>이미지1</span></div>
+                <div class="slider"><img src="slider02.jpg" alt="이미지 설명"><span>이미지2</span></div>
+                <div class="slider"><img src="slider03.jpg" alt="이미지 설명"><span>이미지3</span></div>
+            </div>
+        </section>
+        <!-- //slider -->
+
+        <section id="contents">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </section>
+        <!-- //contents -->
+
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        setInterval(function(){
+            $(".sliderWrap").animate({"margin-left":"-100%"}, function(){
+                $(".slider").first().appendTo(".sliderWrap");
+                $(".sliderWrap").css({"margin-left":"0%"});
+            })
+        }, 3000);
+    </script>
+</body>
+</html>

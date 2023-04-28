@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인 레이아웃</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'GmarketSans';
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        h1 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        i {
+            width: 100%;
+            display: block;
+            font-style: normal;
+            padding: 10px;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+
+        /* layout */
+        #wrap {
+            display: flex;
+        }
+        #aside {
+            width: 25%;
+            height: 650px;
+        }
+        #aside h1 {
+            width: 100%;
+            height: 100px;
+            background-color: #b3b3b3;
+        }
+        #aside nav {
+            width: 100%;
+            height: 550px;
+            background-color: #9e9e9e;
+        }
+        #main {
+            width: 75%;
+            height: 650px;
+            background-color: #b3b3b3;
+        }
+        #slider {
+            width: 100%;
+            height: 350px;
+            background-color: #ababab;
+        }
+        #contents {
+            width: 100%;
+            height: 200px;
+            background-color: #7d7d7d;
+            display: flex;
+        }
+        .content1 {
+            width: 33.3333%;
+            background-color: #cacaca;
+        }
+        .content2 {
+            width: 33.3333%;
+            background-color: #c0c0c0;
+        }
+        .content3 {
+            width: 33.3333%;
+            background-color: #b5b5b5;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+        .footer1 {
+            width: 20%;
+            background-color: #828282;
+        }
+        .footer2 {
+            width: 80%;
+            background-color: #646464;
+        }
+        .footer2-1 {
+            width: 100%;
+            height: 50%;
+            background-color: #9f9f9f;
+        }
+        .footer2-2 {
+            width: 100%;
+            height: 50%;
+            background-color: #515151;
+        }
+        .container {
+            width: 1000px;
+            height: inherit;
+            margin: 0 auto;
+            background-color: rgba(0,0,0,0.3);
+        }
+        .nav > ul > li {
+            position: relative;
+        }
+        .nav > ul > li > a {
+            padding: 10px;
+            display: block;
+            background-color: #ccc;
+            text-align: center;
+        }
+        .nav > ul > li > ul {
+            position: absolute;
+            right: -200px;
+            top: 0;
+            background: #6d6d6d;
+            width: 200px;
+            display: none;
+        }
+        .nav > ul > li > ul > li > a {
+            padding: 10px;
+            display: block;
+        }
+        .nav > ul > li > ul > li > a:hover {
+            background-color: #c0c0c0;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="container">
+        <aside id="aside">
+            <h1></h1>
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a href="#">메뉴1</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴1-1</a></li>
+                            <li><a href="#">서브메뉴1-2</a></li>
+                            <li><a href="#">서브메뉴1-3</a></li>
+                            <li><a href="#">서브메뉴1-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴2</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴2-1</a></li>
+                            <li><a href="#">서브메뉴2-2</a></li>
+                            <li><a href="#">서브메뉴2-3</a></li>
+                            <li><a href="#">서브메뉴2-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴3</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴3-1</a></li>
+                            <li><a href="#">서브메뉴3-2</a></li>
+                            <li><a href="#">서브메뉴3-3</a></li>
+                            <li><a href="#">서브메뉴3-4</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">메뉴4</a>
+                        <ul class="submenu">
+                            <li><a href="#">서브메뉴4-1</a></li>
+                            <li><a href="#">서브메뉴4-2</a></li>
+                            <li><a href="#">서브메뉴4-3</a></li>
+                            <li><a href="#">서브메뉴4-4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main id="main">
+            <section id="slider"></section>
+            <section id="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
+                <div class="content3"></div>
+            </section>
+            <footer id="footer">
+                <div class="footer1"></div>
+                <div class="footer2">
+                    <div class="footer2-1"></div>
+                    <div class="footer2-2"></div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(".nav > ul > li").mouseenter(function(){        
+            $(this).find(".submenu").stop().slideDown();  
+        });
+
+        $(".nav > ul > li").mouseleave(function(){
+            $(this).find(".submenu").stop().slideUp();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인 레이아웃</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <style>
+        /* reset */
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'GmarketSans';
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        h1 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        i {
+            width: 100%;
+            display: block;
+            font-style: normal;
+            padding: 10px;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+        /* layout */
+        #wrap {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #aside {
+            width: 200px;
+            height: 850px;
+        }
+        #aside h1 {
+            width: 100%;
+            height: 100px;
+            background-color: #ccc;
+        }
+        #aside nav {
+            width: 100%;
+            height: 750px;
+            background-color: #bababa;
+        }
+        #main {
+            width: calc(100% - 200px);
+            height: 850px;
+            background-color: #b3b3b3;
+        }
+        #slider {
+            width: 100%;
+            height: 400px;
+            background-color: #9d9d9d;
+            position: relative;
+        }
+        .link {
+            position: absolute;
+            right: 0; top: 0;
+            width: 150px;
+            height: 300px;
+            background-color: #707070;
+        }
+        #banner {
+            width: 100%;
+            height: 200px;
+            background-color: #b3b3b3;
+        } 
+        #contents {
+            width: 100%;
+            height: 250px;
+            background-color: #7d7d7d;
+        }
+        #footer {
+            width: 100%;
+            height: 100px;
+            background-color: #646464;
+            display: flex;
+        }
+        .footer1 {
+            width: 20%;
+            background-color: #828282;
+        }
+        .footer2 {
+            width: 60%;
+            background-color: #646464;
+        }
+        .footer3 {
+            width: 20%;
+            background-color: #969696;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h1><i>로고</i></h1>
+            <nav><i>메뉴</i></nav>
+        </aside>
+        <main id="main">
+            <section id="slider">
+                <i>이미지 슬라이드</i>
+                <article class="link"><i>링크</i></article>
+            </section>
+            <section id="banner"><i>배너</i></section>
+            <section id="contents"><i>공지사항</i></section>
+        </main>
+        <footer id="footer">
+            <div class="footer1"><i>로고</i></div>
+            <div class="footer2"><i>카피라이터</i></div>
+            <div class="footer3"><i>SNS</i></div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2023 웹디자인 기능사 실기</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'GmarketSans';
+        }
+        a {
+            text-decoration: none;
+        }
+        li {
+            list-style: none;
+        }
+        #nav {
+            padding: 20px;
+        }
+        #nav ul {
+            display: flex;
+        }
+        #nav li a {
+            border: 1px solid #ccc;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin-bottom: 2px;
+            margin-right: 2px;
+            color: #666;
+            line-height: 50px;
+            text-align: center;
+        }
+        #nav li:hover a,
+        #nav li.active a {
+            border-color: #000;
+            background-color: #000;
+            color: #fff;
+        }
+        #main {
+            margin: 20px;
+            border: 1px solid #ccc;
+            width: calc(100% - 40px);
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <nav id="nav">
+            <ul>
+                <li class="active"><a href="layout/a1.html">A-1</a></li>
+                <li><a href="layout/a2.html">A-2</a></li>
+                <li><a href="layout/a3.html">A-3</a></li>
+                <li><a href="layout/a4.html">A-4</a></li>
+                <li><a href="layout/b1.html">B-1</a></li>
+                <li><a href="layout/b2.html">B-2</a></li>
+                <li><a href="layout/b3.html">B-3</a></li>
+                <li><a href="layout/b4.html">B-4</a></li>
+                <li><a href="layout/c1.html">C-1</a></li>
+                <li><a href="layout/c2.html">C-2</a></li>
+                <li><a href="layout/c3.html">C-3</a></li>
+                <li><a href="layout/c4.html">C-4</a></li>
+                <li><a href="layout/d1.html">D-1</a></li>
+                <li><a href="layout/d2.html">D-2</a></li>
+                <li><a href="layout/d3.html">D-3</a></li>
+                <li><a href="layout/d4.html">D-4</a></li>
+                <li><a href="layout/e1.html">E-1</a></li>
+                <li><a href="layout/e2.html">E-2</a></li>
+                <li><a href="layout/e3.html">E-3</a></li>
+                <li><a href="layout/e4.html">E-4</a></li>
+            </ul>
+            <ul>
+                <li><a href="menu/m1.html">M-1</a></li>
+                <li><a href="menu/m2.html">M-2</a></li>
+                <li><a href="menu/m3.html">M-3</a></li>
+                <li><a href="menu/m4.html">M-4</a></li>
+                <li><a href="menu/m5.html">M-5</a></li>
+                <li><a href="menu/m6.html">M-6</a></li>
+            </ul>
+            <ul>
+                <li><a href="slider/s1.html">S-1</a></li>
+                <li><a href="slider/s2.html">S-2</a></li>
+                <li><a href="slider/s3.html">S-3</a></li>
+            </ul>
+        </nav>
+        <main id="main">
+            <iframe src="layout/a1.html" frameborder="0"></iframe>
+        </main>
+    </div>
+
+    <script>
+        document.querySelectorAll("#nav ul li").forEach(li => {
+            li.addEventListener("click", (e) => {
+                e.preventDefault();
+                let href = li.querySelector("a").getAttribute("href");
+                document.querySelector("#main iframe").setAttribute("src", href);
+
+                document.querySelectorAll("#nav ul li").forEach(el => {
+                    el.classList.remove("active");
+                });
+
+                li.classList.add("active");
+            });
+        });
+    </script>
+</body>
+</html>
