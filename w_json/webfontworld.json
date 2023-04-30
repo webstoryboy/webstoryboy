@@ -4,55 +4,64 @@
         "name_eng" : "LotteriaChab",
         "weight" : ["normal"],
         "download" : "https://www.lotteriafont.com/",
-        "link" : "545"
+        "link": "https://wess.tistory.com/545",
+        "git": "https://github.com/webfontworld/LotteriaChab"
     },{
         "name" : "롯데리아 딱붙어체",
         "name_eng" : "LotteriaDdag",
         "weight" : ["normal"],
         "download" : "https://www.lotteriafont.com/",
-        "link" : "544"
+        "link" : "https://wess.tistory.com/544",
+        "git": "https://github.com/webfontworld/LotteriaDdag"
     },{
         "name" : "더잠실체",
         "name_eng" : "TheJamsil",
         "weight" : ["100","300","400","500","700","800"],
         "download" : "https://www.jincheon.go.kr/home/sub.do?menukey=3837",
-        "link" : "543"
+        "link" : "https://wess.tistory.com/543",
+        "git": "https://github.com/webfontworld/TheJamsil"
     },{
         "name" : "생거진천체",
         "name_eng" : "SaenggeoJincheon",
         "weight" : ["normal"],
         "download" : "https://www.jincheon.go.kr/home/sub.do?menukey=3837",
-        "link" : "542"
+        "link" : "https://wess.tistory.com/542",
+        "git": "https://github.com/webfontworld/SaenggeoJincheon"
     },{
         "name" : "땅스부대찌개",
         "name_eng" : "TangsBudaeJjigae",
         "weight" : ["300","500","700"],
         "download" : "http://tsbudae.com/theme/GT2/contents/Fontpage.php",
-        "link" : "541"
+        "link" : "https://wess.tistory.com/541",
+        "git": "https://github.com/webfontworld/TangsBudaeJjigae"
     },{
         "name" : "나눔스퀘어네오",
         "name_eng" : "NanumSquareNeo",
         "weight" : ["300","400","700","800","900"],
         "download" : "https://hangeul.naver.com/font",
-        "link" : "540"
+        "link" : "https://wess.tistory.com/540",
+        "git": "https://github.com/webfontworld/NanumSquareNeo"
     },{
         "name" : "116수박화체",
-        "name_eng" : "116WaterMelon",
+        "name_eng" : "116watermelon",
         "weight" : ["normal"],
         "download" : "https://blog.naver.com/wosr1/221324032660",
-        "link" : "539"
+        "link" : "https://wess.tistory.com/539",
+        "git": "https://github.com/webfontworld/116watermelon"
     },{
         "name" : "레베카체",
         "name_eng" : "Rebecca",
         "weight" : ["normal"],
         "download" : "http://www.earlyfont.com/portfolio/EF_REBECCA",
-        "link" : "538"
+        "link" : "https://wess.tistory.com/538",
+        "git": "https://github.com/webfontworld/Rebecca"
     },{
         "name" : "창원단감아삭체",
         "name_eng" : "ChangwonDangamAsac",
         "weight" : ["normal"],
         "download" : "https://www.changwon.go.kr/depart/contents.do?mId=1006160000",
-        "link": "537"
+        "link": "https://wess.tistory.com/537",
+        "git": "https://github.com/webfontworld/ChangwonDangamAsac"
     },{
         "name" : "카페24클래식타입체",
         "name_eng" : "Cafe24ClassicType",

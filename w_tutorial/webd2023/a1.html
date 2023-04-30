@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인 기능사 레이아웃 A-1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            width: 100%;
+            display: flex;
+        }
+        #header h1 {
+            width: 20%;
+            height: 100px;
+            background-color: #ffeded;
+        }
+        #header nav {
+            width: 80%;
+            height: 100px;
+            background-color: #ffe0e0;
+        }
+        #slider {
+            width: 100%;
+            height: 300px;
+            background-color: #ffd7d7;
+        }
+        #contents {
+            width: 100%;
+            display: flex;
+        }
+        .content1 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #ffcccc;
+        }
+        .content2 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #fcbebe;
+        }
+        .content3 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #ffb5b5;
+        }
+        #footer {
+            width: 100%;
+            display: flex;
+        }
+        .footer1 {
+            width: 20%;
+            height: 100px;
+            background-color: #ffa4a4;
+        }
+        .footer2 {
+            width: 60%;
+            height: 100px;
+            background-color: #fc9292;
+        }
+        .footer3 {
+            width: 20%;
+            height: 100px;
+            background-color: #ff8686;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <h1></h1>
+            <nav></nav>
+        </header>
+        <!-- //header -->
+
+        <article id="slider">
+        </article>
+        <!-- //slider -->
+
+        <section id="contents">
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+        </section>
+        <!-- //contents -->
+
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+</html>

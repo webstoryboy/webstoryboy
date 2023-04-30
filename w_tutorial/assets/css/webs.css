@@ -650,10 +650,33 @@
   font-size: 0.9em;
   background: #433992;
   color: #fff;
-  padding: 5px 4px 4px 4px;
+  padding: 3px 4px 2px 4px;
   vertical-align: 2px;
   border-radius: 5px;
   font-family: 'NEXONLv1Gothic';
+}
+.blog__contents.tutorial p i {
+  position: relative;
+  font-style: normal;
+}
+.blog__contents.tutorial p i::before {
+  content: '';
+  position: absolute;
+  left: 0; 
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #e0dbff;
+  border-radius: 20px;
+  z-index: -1;
+}
+.blog__contents.tutorial p b {
+  font-weight: normal;
+  cursor: help;
+}
+.blog__contents.tutorial p b:hover {
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 
@@ -662,6 +685,16 @@
   position: absolute;
   left: -30px;
   top: -1px;
+  opacity: 0.3;
+}
+.blog__contents.tutorial div {
+  position: relative;
+}
+.blog__contents.tutorial div[data-num]::before {
+  content: attr(data-num);
+  position: absolute;
+  left: -30px;
+  top: 2px;
   opacity: 0.3;
 }
 

@@ -31,20 +31,32 @@
             color: #fff;
         }
         .font__list {
+            /* display: flex;
+            flex-wrap: wrap;
+            color: #fff; */
+        }
+        .fontWrap {
             display: flex;
             flex-wrap: wrap;
-            color: #fff;
+            gap: 10px;
+            margin-bottom: 10px;
         }
-        .font__list > div {
-            width: 10%;
-            padding: 0.1%;
+        .fontWrap .view {
+            width: 200px;
+            border-radius: 5px;
+            overflow: hidden;
         }
-        .font__list > div img {
-            border-radius: 3px;
-            transition: all 0.3s;
+        .fontWrap .view img {
+            width: 100%;
         }
-        .font__list > div img:hover {
-            border-radius: 20px;
+        .fontWrap .img {
+            display: flex;
+        }
+        .fontWrap .img span {
+            width: 90px;
+            height: 90px;
+            margin-right: 10px;
+            border-radius: 5px;
             overflow: hidden;
         }
         
@@ -73,7 +85,7 @@
         }
 
         const dataFont = () => {
-            fetch("assets/json/font.json")
+            fetch("../w_json/webfontworld.json")
             .then(res => res.json())
             .then(items => {
                 fontsAll = items.map((item, index) => {
@@ -81,13 +93,27 @@
                         name: item.name,
                         name_eng: item.name_eng,
                         name_full: item.name + "(" + item.name_eng + ")",
-                        img_svg: "https://webfontworld.github.io/webfontworld/assets/svg/"+ item.name_eng + ".svg",
-                        img_jpg1: "https://webfontworld.github.io/webfontworld/assets/img/"+ item.name_eng + "01.jpg",
-                        img_jpg2: "https://webfontworld.github.io/webfontworld/assets/img/"+ item.name_eng + "02.jpg",
-                        img_jpg3: "https://webfontworld.github.io/webfontworld/assets/img/"+ item.name_eng + "03.jpg",
-                        img_jpg4: "https://webfontworld.github.io/webfontworld/assets/img/"+ item.name_eng + "04.jpg",
+                        down: item.download,
+                        git_down: "https://github.com/webfontworld/"+item.name_eng,
+                        
+                        face_eot: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+".eot",
+                        face_woff: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+".woff",
+                        face_woff2: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+".woff2",
+                        face_ttf: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+".ttf",
+                        face_svg: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+".svg",
+                        
+                        src_img1: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+"01.jpg",
+                        src_img2: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+"02.jpg",
+                        src_img3: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+"03.jpg",
+                        src_img4: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+"04.jpg",
+                        
+                        view: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+"View.svg",
+                        view2: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+"View2.svg",
+
+                        src_css: "https://cdn.jsdelivr.net/gh/webfontworld/"+item.name_eng+"/"+item.name_eng+".css",
                     };
-                    console.log(formattedFont)
+
+                    console.log(formattedFont.name_full)
                     return formattedFont;
                 });
                 newfont();     
@@ -100,7 +126,15 @@
 
             fontsAll.forEach(font => {
                 fontSvg.push(`
-                    <div><img src=${font.img_svg} alt=${font.name_full}></div>
+                    <div class="fontWrap">
+                        <div class="view"><img src=${font.view} alt=${font.name_full}></div>
+                        <div class="img">
+                            <span><img src=${font.src_img1} alt=${font.name_full}></span>
+                            <span><img src=${font.src_img2} alt=${font.name_full}></span>
+                            <span><img src=${font.src_img3} alt=${font.name_full}></span>
+                            <span><img src=${font.src_img4} alt=${font.name_full}></span>
+                        </div>
+                    </div>
                 `);
                 fontList.innerHTML = fontSvg.join('');
             })
