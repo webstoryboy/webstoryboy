@@ -79,7 +79,7 @@
         }
 
         const dataFont = () => {
-            fetch("../w_json/webfontworld.json")
+            fetch("webfontworld.json")
             .then(res => res.json())
             .then(items => {
                 fontsAll = items.map((item, index) => {

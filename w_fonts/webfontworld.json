@@ -81,97 +81,113 @@
         "name_eng" : "MYArirangGothic",
         "weight" : ["normal"],
         "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "516"
+        "link" : "https://wess.tistory.com/516",
+        "git": "https://github.com/webfontworld/MYArirangGothic"
     },{
         "name" : "밀양해맑은상상체",
         "name_eng" : "MYHaemalgeunSangsang",
         "weight" : ["normal"],
         "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "515"
+        "link" : "https://wess.tistory.com/515",
+        "git": "https://github.com/webfontworld/MYHaemalgeunSangsang"
     },{
         "name" : "밀양영남루체",
         "name_eng" : "MYYeongnamnu",
         "weight" : ["normal"],
         "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "514"
+        "link" : "https://wess.tistory.com/514",
+        "git": "https://github.com/webfontworld/MYYeongnamnu"
     },{
         "name" : "밀양아리랑체",
         "name_eng" : "MYArirang",
         "weight" : ["normal"],
         "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "513"
+        "link" : "https://wess.tistory.com/513",
+        "git": "https://github.com/webfontworld/MYArirang"
     },{
         "name" : "마이쮸체",
         "name_eng" : "CrownMychew",
         "weight" : ["normal"],
         "download" : "https://www.crown.co.kr/main/index.asp",
-        "link" : "512"
+        "link" : "https://wess.tistory.com/512",
+        "git": "https://github.com/webfontworld/CrownMychew"
     },{
         "name" : "혀니고딕체",
-        "name_eng" : "EF_Hyunygothic",
+        "name_eng" : "HyunyGothic",
         "weight" : ["normal"],
         "download" : "http://www.earlyfont.com/portfolio/EARLYFONT_HYUNY%20GO",
-        "link" : "511"
+        "link" : "https://wess.tistory.com/511",
+        "git": "https://github.com/webfontworld/HyunyGothic"
     },{
         "name" : "마초체",
-        "name_eng" : "EF_Macho",
+        "name_eng" : "Macho",
         "weight" : ["normal"],
         "download" : "http://www.earlyfont.com/portfolio/EARLYFONT_MACHO",
-        "link" : "510"
+        "link" : "https://wess.tistory.com/510",
+        "git": "https://github.com/webfontworld/Macho"
     },{
         "name" : "달성힐링체",
         "name_eng" : "DalseoHealing",
         "weight" : ["normal"],
         "download" : "https://dalseo.daegu.kr/index.do?menu_id=00003453",
-        "link" : "509"
+        "link" : "https://wess.tistory.com/509",
+        "git": "https://github.com/webfontworld/DalseoHealing"
     },{
         "name" : "달성달링체",
         "name_eng" : "DalseoDarling",
         "weight" : ["normal"],
         "download" : "https://dalseo.daegu.kr/index.do?menu_id=00003452",
-        "link" : "508"
+        "link" : "https://wess.tistory.com/508",
+        "git": "https://github.com/webfontworld/DalseoDarling"
     },{
         "name" : "읏찬체",
         "name_eng" : "OKChan",
         "weight" : ["normal"],
         "download" : "http://www.3jong.com/download.html",
-        "link" : "507"
+        "link" : "https://wess.tistory.com/507",
+        "git": "https://github.com/webfontworld/OKChan"
     },{
         "name" : "읏궁체",
         "name_eng" : "OKGung",
         "weight" : ["normal"],
         "download" : "http://www.3jong.com/download.html",
-        "link" : "506"
+        "link" : "https://wess.tistory.com/506",
+        "git": "https://github.com/webfontworld/OKGung"
     },{
         "name" : "읏뚱체",
         "name_eng" : "OKDdung",
         "weight" : ["normal"],
         "download" : "http://www.3jong.com/download.html",
-        "link" : "505"
+        "link" : "https://wess.tistory.com/505",
+        "git": "https://github.com/webfontworld/OKDdung"
     },{
         "name" : "평창체",
         "name_eng" : "PyeongChang",
         "weight" : ["400", "700"],
         "download" : "https://www.pc.go.kr/portal/intro/intro-summary/pcFont",
-        "link" : "504"
+        "link" : "https://wess.tistory.com/504",
+        "git": "https://github.com/webfontworld/PyeongChang"
     },{
         "name" : "평창평화체",
         "name_eng" : "PyeongChangPeace",
         "weight" : ["300", "700"],
         "download" : "https://www.pc.go.kr/portal/intro/intro-summary/pcFont",
-        "link" : "503"
+        "link" : "https://wess.tistory.com/503",
+        "git": "https://github.com/webfontworld/PyeongChangPeace"
     },{
         "name" : "마비옛체",
         "name_eng" : "MabinogiClassic",
         "weight" : ["normal"],
         "download" : "https://mabinogi.nexon.com/page/pds/font.asp",
-        "link" : "502"
+        "link" : "https://wess.tistory.com/502",
+        "git": "https://github.com/webfontworld/MabinogiClassic"
     },{
         "name" : "우리다움체",
-        "name_eng" : "Wooridaum",
+        "name_eng" : "WooriDaum",
         "weight" : ["300","400","700"],
         "download" : "https://www.woorifg.com/kor/company/ci/font/contentsid/581/index.do",
-        "link" : "499"
+        "link" : "https://wess.tistory.com/499",
+        "git": "https://github.com/webfontworld/WooriDaum"
     },{
         "name" : "추사사랑체",
         "name_eng" : "ChusaLove",
