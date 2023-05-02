@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Tutorial/webd</span>
-                <h1 class="title">웹디자인 기능사 레이아웃 연습하기(A-2유형)</h1>
+                <h1 class="title">웹디자인 기능사 레이아웃 연습하기(A-3유형)</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2023. 04. 29.</span>
@@ -87,7 +87,7 @@
                     <div class="desc">
                         <div class="left">
                             <span class="num">01</span>
-                            <div class="title">기본 레이아웃 연습 : A-2유형</div>
+                            <div class="title">기본 레이아웃 연습 : A-3유형</div>
                             <span class="difficulty">난이도 <span>쉬움</span></span>
                         </div>
                         <div class="right">
@@ -120,159 +120,11 @@
                             lang는 <i>ko</i>로 변경하고 title도 변경해주었습니다.
                             기본 레이아웃과 영역 설정을 작업하겠습니다.
                         </p>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html lang="ko"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;웹디자인 기능사 레이아웃 A-2&lt;/title&gt;
-    &lt;style&gt;
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        #wrap {
-            width: 1200px;
-            height: 700px;
-            background-color: #e0e0e0;
-            margin: 0 auto;
-        }
-        #header {
-            width: 100%;
-            height: 100px;
-            background-color: #d1d1d1;
-        }
-        #slider {
-            width: 100%;
-            height: 300px;
-            background-color: #bdbdbd;
-        }
-        #contents {
-            width: 100%;
-            height: 200px;
-            background-color: #b1b1b1;
-        }
-        #footer {
-            width: 100%;
-            height: 100px;
-            background-color: #979797;
-        }
-    &lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="wrap"&gt;
-        &lt;header id="header"&gt;&lt;/header&gt;
-        &lt;article id="slider"&gt;&lt;/article&gt;
-        &lt;section id="contents"&gt;&lt;/section&gt;
-        &lt;footer id="footer"&gt;&lt;/footer&gt;
-    &lt;/div&gt;
-&lt;/body&gt;
-&lt;/html&gt;
+<pre><code class="language-html">
 </code></pre>
                     </div>
 
-                    <h3>02. 구조 잡기</h3>
-                    <div data-num="01" data-title="헤더 영역 만들기">
-                        <p>
-                            헤더 영역에는 두개의 영역으로 구성되어 있습니다. 로고와 네비게이션으로 나누어 작업하겠습니다.
-                        </p>
-<pre><code class="language-html">&lt;header id="header"&gt;
-    &lt;h1&gt;&lt;/h1&gt;
-    &lt;nav&gt;&lt;/nav&gt;
-&lt;/header&gt;
-&lt;!-- //header --&gt;
-</code></pre>
-<pre><code class="language-css">#header {
-    width: 100%;
-    display: flex;
-}
-#header h1 {
-    width: 20%;
-    height: 100px;
-    background-color: #daffea;
-}
-#header nav {
-    width: 80%;
-    height: 100px;
-    background-color: #ccf6de;
-}
-</code></pre>
-                    </div>
-
-                    <div data-num="02" data-title="슬라이드 영역 및 컨텐츠 영역 만들기">
-                        <p>
-                            슬라이드 영역은 작업할께 없으니 백그라운 색만 변경하겠습니다.
-                            콘텐츠 영역은 3개의 박스로 구성되기 때문에 3개의 박스를 만들면 블록구조이기 때문에 가로 정렬이 되지 않고 세로 정렬로 됩니다. 
-                            구조가 깨진것처럼 보이지만ㅡ 3개의 부모 박스한테 <code>display: flex</code>를 설정하여 가로로 정렬 하겠습니다.
-                        </p>
-<pre><code class="language-html">&lt;article id="slider"&gt;
-&lt;/article&gt;
-&lt;!-- //slider --&gt;
-
-&lt;section id="contents"&gt;
-    &lt;article class="content1"&gt;&lt;/article&gt;
-    &lt;article class="content2"&gt;&lt;/article&gt;
-    &lt;article class="content3"&gt;&lt;/article&gt;
-&lt;/section&gt;
-&lt;!-- //contents --&gt;
-</code></pre>
-<pre><code class="language-css">#slider {
-    width: 100%;
-    height: 300px;
-    background-color: #b0ffd2;
-}
-#contents {
-    width: 100%;
-    display: flex;
-}
-.content1 {
-    width: 33.3333%;
-    height: 200px;
-    background-color: #8fffbf;
-}
-.content2 {
-    width: 33.3333%;
-    height: 200px;
-    background-color: #85edb2;
-}
-.content3 {
-    width: 33.3333%;
-    height: 200px;
-    background-color: #78e0a5;
-}
-</code></pre>
-                    </div>
-
-                    <div data-num="03" data-title="푸터 영역 만들기">
-                        <p>
-                            푸터 영역도 3개의 자식 박스들로 구성되어 있습니다.
-                            각각의 박스를 만들고 <code>class</code> 이름을 만들고, <code>width</code>, <code>height</code>, <code>background-color</code>를 설정합니다.
-                        </p>
-<pre><code class="language-html">&lt;footer id="footer"&gt;
-    &lt;div class="footer1"&gt;&lt;/div&gt;
-    &lt;div class="footer2"&gt;&lt;/div&gt;
-    &lt;div class="footer3"&gt;&lt;/div&gt;
-&lt;/footer&gt;
-&lt;!-- //footer --&gt;
-</code></pre>
-<pre><code class="language-css">.footer1 {
-    width: 20%;
-    height: 100px;
-    background-color: #69c591;
-}
-.footer2 {
-    width: 60%;
-    height: 100px;
-    background-color: #5baf80;
-}
-.footer3 {
-    width: 20%;
-    height: 100px;
-    background-color: #4c9c6f;
-}
-</code></pre>
-                    </div>
+                   
                     
                     <h3>03. 마무리</h3>
                     <p>

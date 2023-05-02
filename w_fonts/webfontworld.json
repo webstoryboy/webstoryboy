@@ -43,11 +43,11 @@
         "git": "https://github.com/webfontworld/NanumSquareNeo"
     },{
         "name" : "116수박화체",
-        "name_eng" : "116watermelon",
+        "name_eng" : "116WaterMelon",
         "weight" : ["normal"],
         "download" : "https://blog.naver.com/wosr1/221324032660",
         "link" : "https://wess.tistory.com/539",
-        "git": "https://github.com/webfontworld/116watermelon"
+        "git": "https://github.com/webfontworld/116WaterMelon"
     },{
         "name" : "레베카체",
         "name_eng" : "Rebecca",
@@ -67,13 +67,15 @@
         "name_eng" : "Cafe24ClassicType",
         "weight" : ["normal"],
         "download" : "https://fonts.cafe24.com/",
-        "link" : "529"
+        "link" : "https://wess.tistory.com/529",
+        "git": "https://github.com/webfontworld/Cafe24ClassicType"
     },{
         "name" : "안성탕면체",
-        "name_eng" : "Ansungtangmyun",
+        "name_eng" : "AnsungTangMyun",
         "weight" : ["normal"],
         "download" : "http://www.nongshim.com/promotion/event/view/2022/09_ansung/ansung_event",
-        "link" : "517"
+        "link" : "https://wess.tistory.com/517",
+        "git": "https://github.com/webfontworld/Ansungtangmyun"
     },{
         "name" : "밀양아리랑고딕체",
         "name_eng" : "MYArirangGothic",
