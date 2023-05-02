@@ -1,145 +1,127 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인 레이아웃</title>
-    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <title>웹디자인기능사 레이아웃 B-1</title>
     <style>
-        /* reset */
         * {
             margin: 0;
             padding: 0;
-            font-family: 'GmarketSans';
         }
-        li {
-            list-style: none;
-        }
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-        h1 {
-            font-size: 16px;
-            font-weight: normal;
-        }
-        i {
+        #wrap {
             width: 100%;
-            display: block;
-            font-style: normal;
-            padding: 10px;
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-
-        /* layout */
-        .container {
-            width: 1200px;
-            height: inherit;
-            margin: 0 auto;
-            background-color: rgba(0,0,0,0.3);
         }
         #header {
             width: 100%;
             height: 100px;
-            background-color: #ccc;
-        }
-        #header .container {
-            display: flex;
-        }
-        #header h1 {
-            width: 30%;
             background-color: #efefef;
         }
-        #header nav {
-            width: 70%;
-            background-color: #e5e5e5;
-        }
-        #slider {
-            width: 100%;
-            height: 300px;
-            background-color: #dddddd;
-        }
-        #contents {
-            width: 100%;
-            height: 200px;
-            background-color: #9d9d9d;
-        }
-        #contents .container {
+        .header_container {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #c7c7c7;
             display: flex;
         }
-        .content1 {
-            width: 33.3333%;
-            background-color: #cacaca;
+        .header_container .logo {
+            width: 20%;
+            height: 100px;
+            background-color: #d9d9d9;
         }
-        .content2 {
-            width: 33.3333%;
-            background-color: #c0c0c0;
+        .header_container .nav {
+            width: 80%;
+            height: 100px;
+            background-color: #d1d1d1;
         }
-        .content3 {
+        #slider {
+            width: 1200px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #c7c7c7;
+        }
+        #contents {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+        }
+        #contents .content1 {
             width: 33.3333%;
-            background-color: #b5b5b5;
+            height: 200px;
+            background-color: #bcbcbc;
+        }
+        #contents .content2 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #b1b1b1;
+        }
+        #contents .content3 {
+            width: 33.3333%;
+            height: 200px;
+            background-color: #a3a3a3;
         }
         #footer {
             width: 100%;
             height: 100px;
-            background-color: #a7a7a7;
+            background-color: #d1d1d1;
         }
-        #footer .container {
+        .footer_container {
+            width: 1200px;
+            margin: 0 auto;
             display: flex;
         }
         .footer1 {
             width: 20%;
-        }
-        .footer1-1 {
-            width: 100%;
-            height: 50%;
-            background-color: #9b9b9b;
-        }
-        .footer1-2 {
-            width: 100%;
-            height: 50%;
-            background-color: #7e7e7e;
+            height: 100px;
+            background-color: #9d9d9d;
         }
         .footer2 {
             width: 80%;
-            background-color: #777777;
         }
-        
+        .footer2-1 {
+            width: 100%;
+            height: 50px;
+            background-color: #929292;
+        }
+        .footer2-2 {
+            width: 100%;
+            height: 50px;
+            background-color: #838383;
+        }
     </style>
 </head>
 <body>
     <div id="wrap">
         <header id="header">
-            <div class="container">
-                <h1><i>로고</i></h1>
-                <nav><i>메뉴</i></nav>
+            <div class="header_container">
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
             </div>
         </header>
-        <section id="slider">
-            <div class="container">
-                <i>이미지 슬라이드</i>
-            </div>
-        </section>
-        <section id="contents">
-            <div class="container">
-                <div class="content1"><i>공지사항</i></div>
-                <div class="content2"><i>배너</i></div>
-                <div class="content3"><i>바로가기</i></div>
-            </div>
-        </section>
+        <!-- //header -->
+
+        <article id="slider">
+        </article>
+        <!-- //slider -->
+
+        <main id="contents">
+            <section class="content1"></section>
+            <section class="content2"></section>
+            <section class="content3"></section>
+        </main>
+        <!-- //contents -->
+
         <footer id="footer">
-            <div class="container">
-                <div class="footer1">
-                    <i>로고</i>
-                </div>
+            <div class="footer_container">
+                <div class="footer1"></div>
                 <div class="footer2">
-                    <div class="footer1-1"><i>하단메뉴</i></div>
-                    <div class="footer1-2"><i>카피라이터</i></div>
+                    <div class="footer2-1"></div>
+                    <div class="footer2-2"></div>
                 </div>
             </div>
         </footer>
+        <!-- //footer -->
     </div>
+    <!-- //wrap -->
 </body>
 </html>

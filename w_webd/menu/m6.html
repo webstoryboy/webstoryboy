@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인 레이아웃</title>
+    <title>웹디자인기능사 레이아웃 D-4</title>
     <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
-        /* reset */
         * {
             margin: 0;
             padding: 0;
@@ -20,19 +19,6 @@
             text-decoration: none;
             color: #000;
         }
-        h1 {
-            font-size: 16px;
-            font-weight: normal;
-        }
-        i {
-            width: 100%;
-            display: block;
-            font-style: normal;
-            padding: 10px;
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-        /* layout */
         #wrap {
             width: 100%;
             display: flex;
@@ -40,65 +26,72 @@
         }
         #aside {
             width: 200px;
-            height: 850px;
         }
         #aside h1 {
             width: 100%;
             height: 100px;
-            background-color: #ccc;
+            background-color: #efefef;
         }
         #aside nav {
             width: 100%;
-            height: 750px;
-            background-color: #bababa;
+            height: 700px;
+            background-color: #e3e3e3;
         }
         #main {
             width: calc(100% - 200px);
-            height: 850px;
-            background-color: #b3b3b3;
         }
         #slider {
             width: 100%;
             height: 400px;
-            background-color: #9d9d9d;
-            position: relative;
+            background-color: #d9d9d9;
         }
-        .link {
-            position: absolute;
-            right: 0; top: 0;
-            width: 150px;
-            height: 300px;
-            background-color: #707070;
-        }
-        #banner {
+        #link {
             width: 100%;
-            height: 200px;
-            background-color: #b3b3b3;
-        } 
+            height: 150px;
+            background-color: #d1d1d1;
+        }
         #contents {
             width: 100%;
+            display: flex;
+        }
+        #contents .content1 {
+            width: 50%;
             height: 250px;
-            background-color: #7d7d7d;
+            background-color: #c7c7c7;
+        }
+        #contents .content2 {
+            width: 50%;
+            height: 250px;
+            background-color: #bcbcbc;
         }
         #footer {
             width: 100%;
-            height: 100px;
-            background-color: #646464;
             display: flex;
         }
-        .footer1 {
+        #footer .footer1 {
             width: 20%;
-            background-color: #828282;
+            height: 120px;
+            background-color: #b1b1b1;
         }
-        .footer2 {
+        #footer .footer2 {
             width: 60%;
-            background-color: #646464;
         }
-        .footer3 {
+        #footer .footer2 .footer2-1 {
+            width: 100%;
+            height: 60px;
+            background-color: #a3a3a3;
+        }
+        #footer .footer2 .footer2-2 {
+            width: 100%;
+            height: 60px;
+            background-color: #9d9d9d;
+        }
+        #footer .footer3 {
             width: 20%;
-            background-color: #969696;
+            height: 120px;
+            background-color: #929292;
         }
-
+        /* nav */
         #main {
             position: relative;
         }
@@ -122,7 +115,7 @@
         .nav > ul > li > a {
             padding: 10px;
             display: block;
-            background-color: #7b7b7b;
+            background-color: #c0c0c0;
         }
         .nav > ul > li > a:hover {
             background-color: #b4b4b4;
@@ -202,42 +195,42 @@
                             <li><a href="#">서브메뉴4-4</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#">메뉴5</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴5-1</a></li>
-                            <li><a href="#">서브메뉴5-2</a></li>
-                            <li><a href="#">서브메뉴5-3</a></li>
-                            <li><a href="#">서브메뉴5-4</a></li>
-                        </ul>
-                    </li>
                 </ul>
             </nav>
         </aside>
+        <!-- //aside -->
+
         <main id="main">
-            <section id="slider">
-                <article class="link"></article>
+            <article id="slider"></article>
+            <article id="link"></article>
+            <section id="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
             </section>
-            <section id="banner"></section>
-            <section id="contents"></section>
         </main>
+        <!-- //main -->
+
         <footer id="footer">
             <div class="footer1"></div>
-            <div class="footer2"></div>
+            <div class="footer2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
             <div class="footer3"></div>
         </footer>
+        <!-- //footer -->
     </div>
-
+    <!-- //wrap -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
         $(".nav > ul > li").mouseenter(function(){        
-            $(".nav > ul > li > ul").stop().slideDown();  
+            $(".nav > ul > li > ul").stop().fadeIn();  
             $("#main").addClass("on");  
         });
 
         $(".nav > ul > li").mouseleave(function(){
-            $(".nav > ul > li > ul").stop().slideUp();
+            $(".nav > ul > li > ul").stop().fadeOut();
             $("#main").removeClass("on");  
         });
     </script>

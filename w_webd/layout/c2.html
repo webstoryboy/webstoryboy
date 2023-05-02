@@ -4,135 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인 레이아웃</title>
-    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
+    <title>웹디자인기능사 레이아웃 C-2</title>
     <style>
-        /* reset */
         * {
             margin: 0;
             padding: 0;
-            font-family: 'GmarketSans';
         }
-        li {
-            list-style: none;
-        }
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-        h1 {
-            font-size: 16px;
-            font-weight: normal;
-        }
-        i {
-            width: 100%;
-            display: block;
-            font-style: normal;
-            padding: 10px;
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-
-        /* layout */
         #wrap {
+            width: 1000px;
             display: flex;
         }
         #aside {
-            width: 25%;
+            width: 20%;
             height: 650px;
+            background-color: #efefef;
         }
         #aside h1 {
             width: 100%;
             height: 100px;
-            background-color: #b3b3b3;
+            background-color: #d9d9d9;
         }
         #aside nav {
             width: 100%;
             height: 550px;
-            background-color: #9e9e9e;
+            background-color: #d1d1d1;
         }
         #main {
-            width: 75%;
-            height: 650px;
-            background-color: #b3b3b3;
+            width: 80%;
         }
         #slider {
             width: 100%;
             height: 350px;
-            background-color: #ababab;
+            background-color: #c7c7c7;
         }
         #contents {
             width: 100%;
-            height: 200px;
-            background-color: #7d7d7d;
             display: flex;
         }
-        .content1 {
+        #contents .content1 {
             width: 33.3333%;
-            background-color: #cacaca;
+            height: 200px;
+            background-color: #bcbcbc;
         }
-        .content2 {
+        #contents .content2 {
             width: 33.3333%;
-            background-color: #c0c0c0;
+            height: 200px;
+            background-color: #b1b1b1;
         }
-        .content3 {
+        #contents .content3 {
             width: 33.3333%;
-            background-color: #b5b5b5;
+            height: 200px;
+            background-color: #a3a3a3;
         }
         #footer {
             width: 100%;
-            height: 100px;
             display: flex;
         }
-        .footer1 {
+        #footer .footer1 {
             width: 80%;
-            background-color: #828282;
+            background-color: #838383;
         }
-        .footer2 {
+        
+        #footer .footer2 {
             width: 20%;
-            background-color: #646464;
         }
-        .footer2-1 {
+        #footer .footer2 .footer2-1 {
             width: 100%;
-            height: 50%;
-            background-color: #9f9f9f;
+            height: 50px;
+            background-color: #9d9d9d;
         }
-        .footer2-2 {
+        #footer .footer2 .footer2-2 {
             width: 100%;
-            height: 50%;
-            background-color: #515151;
+            height: 50px;
+            background-color: #929292;
         }
-        .container {
-            width: 1000px;
-            height: inherit;
-            margin: 0 auto;
-            background-color: rgba(0,0,0,0.3);
-        }
+        
     </style>
 </head>
 <body>
-    <div id="wrap" class="container">
+    <div id="wrap">
         <aside id="aside">
-            <h1><i>로고</i></h1>
-            <nav><i>메뉴</i></nav>
+            <h1></h1>
+            <nav></nav>
         </aside>
+        <!-- //aside -->
+
         <main id="main">
-            <section id="slider">
-                <i>이미지 슬라이드</i>
-            </section>
+            <article id="slider">
+            </article>
+            <!-- //slider -->
+
             <section id="contents">
-                <div class="content1"><i>공지사항</i></div>
-                <div class="content2"><i>배너</i></div>
-                <div class="content3"><i>바로가기</i></div>
+                <article class="content1"></article>
+                <article class="content2"></article>
+                <article class="content3"></article>
             </section>
+            <!-- //contents -->
             <footer id="footer">
-                <div class="footer1"><i>카피라이터</i></div>
+                <div class="footer1"></div>
                 <div class="footer2">
-                    <div class="footer2-1"><i>SNS</i></div>
-                    <div class="footer2-2"><i>패밀리 사이트</i></div>
+                    <div class="footer2-1"></div>
+                    <div class="footer2-2"></div>
                 </div>
             </footer>
         </main>
+        <!-- //main -->
     </div>
+    <!-- //wrap -->
 </body>
 </html>
