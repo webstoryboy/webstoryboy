@@ -93,10 +93,18 @@
             background-color: #808080;
         }
         .sliderWrap {
-            display: flex;
-        }
-        .slider {
             position: relative;
+        }
+        /* .sliderWrap > div {
+            display: none;
+        }
+        .sliderWrap > div:first-child {
+            display: block;
+        } */
+        .slider {
+            position: absolute;
+            left: 0;
+            top: 0;
         }
         .slider img {
             vertical-align: top;
@@ -121,9 +129,9 @@
 
         <section id="slider">
             <div class="sliderWrap">
-                <div class="slider"><img src="slider01.jpg" alt="이미지 설명"><span>이미지1</span></div>
-                <div class="slider"><img src="slider02.jpg" alt="이미지 설명"><span>이미지2</span></div>
-                <div class="slider"><img src="slider03.jpg" alt="이미지 설명"><span>이미지3</span></div>
+                <div class="slider s1"><img src="slider01.jpg" alt="이미지 설명"><span>이미지1</span></div>
+                <div class="slider s2"><img src="slider02.jpg" alt="이미지 설명"><span>이미지2</span></div>
+                <div class="slider s3"><img src="slider03.jpg" alt="이미지 설명"><span>이미지3</span></div>
             </div>
         </section>
         <!-- //slider -->
@@ -145,12 +153,38 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        setInterval(function(){
-            $(".sliderWrap").animate({"margin-left":"-100%"}, function(){
-                $(".slider").first().appendTo(".sliderWrap");
-                $(".sliderWrap").css({"margin-left":"0%"});
-            })
-        }, 3000);
+        // $(function() {
+        //     let currentIndex = 0;
+        //     const $slider = $('.slider');
+        //     $slider.hide().first().show();
+
+        //     setInterval(() => {
+        //         let nextIndex = (currentIndex + 1) % $slider.length;
+            
+        //         $slider.eq(currentIndex).fadeOut(1200);
+        //         $slider.eq(nextIndex).fadeIn(1200);
+
+        //         currentIndex = nextIndex;
+        //     }, 3000);
+        // });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let currentIndex = 0;
+            const slider = document.querySelectorAll(".slider");
+            slider.forEach(el => el.style.opacity = "0");
+            slider[0].style.opacity = "1";
+
+            setInterval(() => {
+                let nextIndex = (currentIndex + 1) % slider.length;
+                
+                slider[currentIndex].style.opacity = "0";
+                slider[nextIndex].style.opacity = "1";
+                slider.forEach(el => el.style.transition = "all 1s");
+
+                currentIndex = nextIndex;
+            }, 3000);
+        });
+        
     </script>
 </body>
 </html>

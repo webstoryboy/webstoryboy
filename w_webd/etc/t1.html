@@ -92,22 +92,21 @@
             width: 20%;
             background-color: #808080;
         }
-        .sliderWrap {
-            display: flex;
+        .tab-menu {
+            padding: 20px;
         }
-        .slider {
-            position: relative;
+        .tab-btn li {
+            display: inline-block;
         }
-        .slider img {
-            vertical-align: top;
+        .tab-btn li a {
+            display: block;
+            background-color: #8d8d8d;
+            padding: 10px;
         }
-        .slider span {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            background-color: rgba(255,255,255,0.4);
-            padding: 10px 20px;
+        .tab-cont > div {
+            padding: 10px;
+            background-color: #b0b0b0;
+            line-height: 1.4;
         }
     </style>
 </head>
@@ -119,17 +118,29 @@
         </header>
         <!-- //header -->
 
-        <section id="slider">
-            <div class="sliderWrap">
-                <div class="slider s1"><img src="slider01.jpg" alt="이미지 설명"><span>이미지1</span></div>
-                <div class="slider s2"><img src="slider02.jpg" alt="이미지 설명"><span>이미지2</span></div>
-                <div class="slider s3"><img src="slider03.jpg" alt="이미지 설명"><span>이미지3</span></div>
-            </div>
+        <section id="slider">   
         </section>
         <!-- //slider -->
 
         <section id="contents">
-            <div class="content1"></div>
+            <div class="content1">
+                <div class="tab-menu">
+                    <div class="tab-btn">
+                        <ul>
+                            <li class="active"><a href="#">탭메뉴1</a></li>
+                            <li><a href="#">탭메뉴2</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div>
+                            탭메뉴1 내용<br>탭메뉴1 내용<br>탭메뉴1 내용<br>탭메뉴1 내용
+                        </div>
+                        <div>
+                            탭메뉴2 내용<br>탭메뉴2 내용<br>탭메뉴2 내용<br>탭메뉴2 내용
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="content2"></div>
             <div class="content3"></div>
         </section>
@@ -145,51 +156,37 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(function() {
-            let currentIndex = 0;
-            const $sliderWrap = $('.sliderWrap');
-            const $slider = $('.slider');
-            const $sliderWidth = $slider.width();
-            $sliderWrap.append($slider.first().clone(true));
-
-            setInterval(function() {
-                currentIndex++;
-                $sliderWrap.animate({ marginLeft: -$sliderWidth * currentIndex }, 600);
-
-                if (currentIndex === $slider.length) {
-                    setTimeout(function() {
-                        $sliderWrap.animate({ marginLeft: 0 }, 0);
-                        currentIndex = 0;
-                    }, 700);
-                }
-            }, 2000);
-        });
-
-        
-        
-        // document.addEventListener("DOMContentLoaded", function() {
-        //     let currentIndex = 0;
-        //     const sliderWrap = document.querySelector(".sliderWrap");
-        //     const slider = sliderWrap.querySelectorAll(".slider");
-        //     const sliderWidth = slider[0].offsetWidth;
-        //     const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
-        //     sliderWrap.appendChild(sliderClone);
-
-        //     setInterval(() => {
-        //         currentIndex++;
-        //         sliderWrap.style.transition = "all 0.6s";
-        //         sliderWrap.style.transform = `translateX(-${currentIndex * sliderWidth}px)`;
-
-        //         if (currentIndex == slider.length) {
-        //             setTimeout(() => {
-        //                 sliderWrap.style.transition = "0s";
-        //                 sliderWrap.style.transform = "translateX(0)";
-        //                 currentIndex = 0;
-        //             }, 700);
-        //         }
-        //     }, 2000);
+        // $(function() {
+        //     var tabBtn = $('.tab-btn > ul > li');
+        //     var tabCont = $('.tab-cont > div');
+        //     tabCont.hide().eq(0).show();
+            
+        //     tabBtn.on('click', function() {
+        //         const index = $(this).index();
+                
+        //         $(this).addClass('active').siblings().removeClass('active');
+        //         $('.tab-cont > div').eq(index).show().siblings().hide();
+        //     });
         // });
         
+        document.addEventListener("DOMContentLoaded", function() {
+            const tabBtns = document.querySelectorAll('.tab-btn li');
+            const tabConts = document.querySelectorAll('.tab-cont > div');
+
+            tabConts.forEach(el => el.style.display = "none");
+            tabConts[0].style.display = "block";
+
+            tabBtns.forEach((tab, index) => {
+                tab.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    tabBtns.forEach(tab => tab.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    tabConts.forEach(content => content.style.display = 'none');
+                    tabConts[index].style.display = 'block';
+                });
+            });
+        });
     </script>
 </body>
 </html>

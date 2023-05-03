@@ -93,7 +93,7 @@
             background-color: #808080;
         }
         .sliderWrap {
-            display: flex;
+            
         }
         .slider {
             position: relative;
@@ -145,51 +145,49 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(function() {
+        // $(function() {
+        //     let currentIndex = 0;
+        //     const $sliderWrap = $('.sliderWrap');
+        //     const $slider = $('.slider');
+        //     const $sliderHeight = $slider.height();
+
+        //     $sliderWrap.append($slider.first().clone(true));
+
+        //     setInterval(() => {
+        //         currentIndex++;
+        //         $sliderWrap.animate({ marginTop: -$sliderHeight * currentIndex + "px" }, 600);
+
+        //         if (currentIndex === $slider.length) {
+        //         setTimeout(() => {
+        //             $sliderWrap.animate({ marginTop: 0 }, 0);
+        //             currentIndex = 0;
+        //         }, 700);
+        //         }
+        //     }, 2000);
+        // });
+
+        document.addEventListener("DOMContentLoaded", function() {
             let currentIndex = 0;
-            const $sliderWrap = $('.sliderWrap');
-            const $slider = $('.slider');
-            const $sliderWidth = $slider.width();
-            $sliderWrap.append($slider.first().clone(true));
+            const sliderWrap = document.querySelector(".sliderWrap");
+            const slider = sliderWrap.querySelectorAll(".slider");
+            const sliderHeight = slider[0].offsetHeight;
+            const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
+            sliderWrap.appendChild(sliderClone);
 
-            setInterval(function() {
+            setInterval(() => {
                 currentIndex++;
-                $sliderWrap.animate({ marginLeft: -$sliderWidth * currentIndex }, 600);
+                sliderWrap.style.transition = "all 0.6s";
+                sliderWrap.style.transform = `translateY(-${currentIndex * sliderHeight}px)`;
 
-                if (currentIndex === $slider.length) {
-                    setTimeout(function() {
-                        $sliderWrap.animate({ marginLeft: 0 }, 0);
+                if (currentIndex == slider.length) {
+                    setTimeout(() => {
+                        sliderWrap.style.transition = "0s";
+                        sliderWrap.style.transform = "translateY(0)";
                         currentIndex = 0;
                     }, 700);
                 }
             }, 2000);
         });
-
-        
-        
-        // document.addEventListener("DOMContentLoaded", function() {
-        //     let currentIndex = 0;
-        //     const sliderWrap = document.querySelector(".sliderWrap");
-        //     const slider = sliderWrap.querySelectorAll(".slider");
-        //     const sliderWidth = slider[0].offsetWidth;
-        //     const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
-        //     sliderWrap.appendChild(sliderClone);
-
-        //     setInterval(() => {
-        //         currentIndex++;
-        //         sliderWrap.style.transition = "all 0.6s";
-        //         sliderWrap.style.transform = `translateX(-${currentIndex * sliderWidth}px)`;
-
-        //         if (currentIndex == slider.length) {
-        //             setTimeout(() => {
-        //                 sliderWrap.style.transition = "0s";
-        //                 sliderWrap.style.transform = "translateX(0)";
-        //                 currentIndex = 0;
-        //             }, 700);
-        //         }
-        //     }, 2000);
-        // });
-        
     </script>
 </body>
 </html>
