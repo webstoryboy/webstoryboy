@@ -189,17 +189,12 @@
         "link" : "https://wess.tistory.com/499",
         "git": "https://github.com/webfontworld/WooriDaum"
     },{
-        "name" : "추사사랑체",
-        "name_eng" : "ChusaLove",
-        "weight" : ["400","700"],
-        "download" : "https://www.yesan.go.kr/kor/sub04_01_01_05.do",
-        "link" : "498"
-    },{
         "name" : "다이어리체",
-        "name_eng" : "EF_Diary",
+        "name_eng" : "Diary",
         "weight" : ["normal"],
         "download" : "http://www.earlyfont.com/portfolio/EARLYFONT_DIARY",
-        "link" : "497"
+        "link" : "https://wess.tistory.com/497",
+        "git": "https://github.com/webfontworld/Diary"
     },{
         "name" : "닉스곤폰트",
         "name_eng" : "NixgonFonts",
