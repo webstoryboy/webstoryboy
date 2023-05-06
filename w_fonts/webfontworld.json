@@ -189,6 +189,13 @@
         "link" : "https://wess.tistory.com/499",
         "git": "https://github.com/webfontworld/WooriDaum"
     },{
+        "name" : "추사사랑체",
+        "name_eng" : "ChusaLove",
+        "weight" : ["400","700"],
+        "download" : "https://www.yesan.go.kr/kor/sub04_01_01_05.do",
+        "link" : "https://wess.tistory.com/498",
+        "git": "https://github.com/webfontworld/ChusaLove"
+    },{
         "name" : "다이어리체",
         "name_eng" : "Diary",
         "weight" : ["normal"],
@@ -200,193 +207,218 @@
         "name_eng" : "NixgonFonts",
         "weight" : ["normal"],
         "download" : "http://www.nixgon.com/nixgon-fonts",
-        "link" : "495"
+        "link" : "https://wess.tistory.com/495",
+        "git": "https://github.com/webfontworld/NixgonFonts"
     },{
         "name" : "나눔바른고딕체",
         "name_eng" : "NanumBarunGothic",
         "weight" : ["200","300","400","700"],
         "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "494"
+        "link" : "https://wess.tistory.com/494",
+        "git": "https://github.com/webfontworld/NanumBarunGothic"
     },{
         "name" : "나눔바른펜",
-        "name_eng" : "NanumBarunpen",
+        "name_eng" : "NanumBarunPen",
         "weight" : ["400","800"],
         "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "493"
+        "link" : "https://wess.tistory.com/493",
+        "git": "https://github.com/webfontworld/NanumBarunPen"
     },{
         "name" : "나눔스퀘어라운드",
         "name_eng" : "NanumSquareRound",
         "weight" : ["300","400","700","800"],
         "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "492"
+        "link" : "https://wess.tistory.com/492",
+        "git": "https://github.com/webfontworld/NanumSquareRound"
     },{
         "name" : "나눔스퀘어",
         "name_eng" : "NanumSquare",
         "weight" : ["300","400","700","800"],
         "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "491"
+        "link" : "https://wess.tistory.com/491",
+        "git": "https://github.com/webfontworld/NanumSquare"
     },{
         "name" : "나눔명조체",
         "name_eng" : "NanumMyeongjo",
         "weight" : ["400","700","800"],
         "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "490"
+        "link" : "https://wess.tistory.com/490",
+        "git": "https://github.com/webfontworld/NanumMyeongjo"
     },{
         "name" : "김포평화 바탕체",
         "name_eng" : "GimpoBatang",
         "weight" : ["normal"],
         "download" : "https://www.gimpo.go.kr/portal/contents.do?key=6502",
-        "link" : "488"
+        "link" : "https://wess.tistory.com/488",
+        "git": "https://github.com/webfontworld/GimpoBatang"
     },{
         "name" : "김포평화 제목체",
         "name_eng" : "GimpoTitle",
         "weight" : ["normal"],
         "download" : "https://www.gimpo.go.kr/portal/contents.do?key=6501",
-        "link" : "487"
+        "link" : "https://wess.tistory.com/487",
+        "git": "https://github.com/webfontworld/GimpoTitle"
     },{
         "name" : "김포평화 고딕체",
         "name_eng" : "GimpoGothic",
         "weight" : ["normal"],
         "download" : "https://www.gimpo.go.kr/portal/contents.do?key=6503",
-        "link" : "486"
+        "link" : "https://wess.tistory.com/486",
+        "git": "https://github.com/webfontworld/GimpoGothic"
     },{
         "name" : "한림명조체",
         "name_eng" : "HallymMjo",
         "weight" : ["400","700"],
         "download" : "https://www.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_about&screen=ptp117_3_2",
-        "link" : "485"
+        "link" : "https://wess.tistory.com/485",
+        "git": "https://github.com/webfontworld/HallymMjo"
     },{
         "name" : "한림고딕체",
-        "name_eng" : "Hallym",
+        "name_eng" : "HallymGothic",
         "weight" : ["400","500","700"],
         "download" : "https://www.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_about&screen=ptp117_3_2",
-        "link" : "484"
+        "link" : "https://wess.tistory.com/484",
+        "git": "https://github.com/webfontworld/HallymGothic"
     },{
         "name" : "국립공원 반달이체",
         "name_eng" : "KNPSBandali",
         "weight" : ["normal"],
         "download" : "https://www.knps.or.kr/portal/bandal/sub01.do",
-        "link" : "479"
+        "link" : "https://wess.tistory.com/479",
+        "git": "https://github.com/webfontworld/KNPSBandali"
     },{
         "name" : "부산체",
         "name_eng" : "Busan",
         "weight" : ["normal"],
         "download" : "https://www.busan.go.kr/bhbusan",
-        "link" : "478"
+        "link" : "https://wess.tistory.com/478",
+        "git": "https://github.com/webfontworld/Busan"
     },{
         "name" : "수성 혜정체",
         "name_eng" : "SuseongHyejeong",
         "weight" : ["normal"],
         "download" : "https://www.suseong.kr/index.do?menu_id=00041081",
-        "link" : "477"
+        "link" : "https://wess.tistory.com/477",
+        "git": "https://github.com/webfontworld/SuseongHyejeong"
     },{
         "name" : "수성 바탕체",
         "name_eng" : "SuseongBatang",
         "weight" : ["normal"],
         "download" : "https://www.suseong.kr/index.do?menu_id=00041080",
-        "link" : "476"
+        "link" : "https://wess.tistory.com/476",
+        "git": "https://github.com/webfontworld/SuseongBatang"
     },{
         "name" : "수성 돋움체",
         "name_eng" : "SuseongDotum",
         "weight" : ["normal"],
         "download" : "https://www.suseong.kr/index.do?menu_id=00041081",
-        "link" : "475"
+        "link" : "https://wess.tistory.com/475",
+        "git": "https://github.com/webfontworld/SuseongDotum"
     },{
         "name" : "김해가야체",
         "name_eng" : "GimhaeGaya",
         "weight" : ["400","700"],
         "download" : "https://www.gimhae.go.kr/00954/01017/01027.web",
-        "link" : "474"
+        "link" : "https://wess.tistory.com/474",
+        "git": "https://github.com/webfontworld/GimhaeGaya"
     },{
         "name" : "ACC 어린이 마음고운체",
-        "name_eng" : "ACC_childrenheart",
+        "name_eng" : "ChildrenHeart",
         "weight" : ["normal"],
         "download" : "https://www.acc.go.kr/main/contents.do?PID=0808",
-        "link" : "473"
+        "link" : "https://wess.tistory.com/473",
+        "git": "https://github.com/webfontworld/ChildrenHeart"
     },{
         "name" : "ACC 어린이 하늘맑은체",
-        "name_eng" : "ACC_childrensky",
+        "name_eng" : "ChildrenSky",
         "weight" : ["normal"],
         "download" : "https://www.acc.go.kr/main/contents.do?PID=0808",
-        "link" : "472"
+        "link" : "https://wess.tistory.com/472",
+        "git": "https://github.com/webfontworld/ChildrenSky"
     },{
         "name" : "ACC 어린이 가을담은체",
-        "name_eng" : "ACC_childrenfall",
+        "name_eng" : "ChildrenFall",
         "weight" : ["normal"],
         "download" : "https://www.acc.go.kr/main/contents.do?PID=0808",
-        "link" : "471"
+        "link" : "https://wess.tistory.com/471",
+        "git": "https://github.com/webfontworld/ChildrenFall"
     },{
         "name" : "해남체",
-        "name_eng" : "haenam",
+        "name_eng" : "Haenam",
         "weight" : ["normal"],
         "download" : "http://www.haenam.go.kr/index.9is?contentUid=18e3368f5d745106015e558a03a5349d",
-        "link" : "470"
+        "link" : "https://wess.tistory.com/470",
+        "git": "https://github.com/webfontworld/Haenam"
     },{
         "name" : "가비아 납작블럭체",
-        "name_eng" : "gabia_napjakBlock",
+        "name_eng" : "NapjakBlock",
         "weight" : ["normal"],
         "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "469"
+        "link" : "https://wess.tistory.com/469",
+        "git": "https://github.com/webfontworld/NapjakBlock"
     },{
         "name" : "가비아 솔미체",
-        "name_eng" : "gabia_solmee",
+        "name_eng" : "Solmee",
         "weight" : ["normal"],
         "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "468"
+        "link" : "https://wess.tistory.com/468",
+        "git": "https://github.com/webfontworld/Solmee"
     },{
         "name" : "가비아 청연체",
-        "name_eng" : "gabia_cheongyeon",
+        "name_eng" : "CheongYeon",
         "weight" : ["normal"],
         "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "467"
+        "link" : "https://wess.tistory.com/467",
+        "git": "https://github.com/webfontworld/CheongYeon"
     },{
         "name" : "가비아 마음결체",
-        "name_eng" : "gabia_maeumgyeol",
+        "name_eng" : "MaeumGyeol",
         "weight" : ["normal"],
         "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "466"
-    },{
-        "name" : "가비아 봄바람체",
-        "name_eng" : "",
-        "weight" : [""],
-        "download" : "https://company.gabia.com/introduce/ci",
-        "link" : ""
+        "link" : "https://wess.tistory.com/466",
+        "git": "https://github.com/webfontworld/MaeumGyeol"
     },{
         "name" : "칠곡할매 추유을체",
-        "name_eng" : "Chilgok_Cye",
+        "name_eng" : "ChilgokCye",
         "weight" : ["normal"],
         "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "465"
+        "link" : "https://wess.tistory.com/465",
+        "git": "https://github.com/webfontworld/ChilgokCye"
     },{
         "name" : "칠곡할매 이종희체",
-        "name_eng" : "Chilgok_ljh",
+        "name_eng" : "ChilgokLjh",
         "weight" : ["normal"],
         "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "464"
+        "link" : "https://wess.tistory.com/464",
+        "git": "https://github.com/webfontworld/ChilgokLjh"
     },{
         "name" : "칠곡할매 이원순체",
-        "name_eng" : "Chilgok_lws",
+        "name_eng" : "ChilgokLws",
         "weight" : ["normal"],
         "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "463"
+        "link" : "https://wess.tistory.com/463",
+        "git": "https://github.com/webfontworld/ChilgokLws"
     },{
         "name" : "칠곡할매 권안자체",
-        "name_eng" : "Chilgok_Kaj",
+        "name_eng" : "ChilgokKaj",
         "weight" : ["normal"],
         "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "462"
+        "link" : "https://wess.tistory.com/462",
+        "git": "https://github.com/webfontworld/ChilgokKaj"
     },{
         "name" : "칠곡할매 김영분체",
-        "name_eng" : "Chilgok_kyb",
+        "name_eng" : "ChilgokKyb",
         "weight" : ["normal"],
         "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "461"
+        "link" : "https://wess.tistory.com/461",
+        "git": "https://github.com/webfontworld/ChilgokKyb"
     },{
         "name" : "순천체",
-        "name_eng" : "Suncheon",
+        "name_eng" : "SunCheon",
         "weight" : ["400","700"],
         "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "460"
+        "link" : "https://wess.tistory.com/460",
+        "git": "https://github.com/webfontworld/SunCheon"
     },{
         "name" : "영도체",
         "name_eng" : "Yeongdo",
