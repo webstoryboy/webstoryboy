@@ -52,5 +52,8 @@ https://webstoryboy.github.io/webstoryboy/w_tutorial/portfolio/ex02/index.html
 https://webstoryboy.github.io/webstoryboy/w_tutorial/javascript/javascriptTest01.html
 https://webstoryboy.github.io/webstoryboy/w_tutorial/javascript/javascriptTest02.html
 
+## 웹디자인기능사2023
+https://webstoryboy.github.io/webstoryboy/w_webd/index.html
+
 
 
