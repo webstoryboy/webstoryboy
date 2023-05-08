@@ -92,7 +92,7 @@
             left: 0; 
             top: 100px;
             background-color: #808080;
-            transition: all 0.3s;
+            transition: all 0.4s;
             z-index: 1;
         }
         #header.on::after {
@@ -125,14 +125,14 @@
             position: absolute;
             top: 38px;
             left: 0;
-            background-color: #ccc;
             width: 100%;
             box-sizing: border-box;
-            display: none;
+            height: 0;
+            overflow: hidden;
+            transition: height 400ms;
         }
         .nav > ul > li > ul > li > a {
             display: flex;
-            background-color: #808080;
             padding: 10px;
         }
         .nav > ul > li > ul > li > a:hover {
@@ -209,15 +209,35 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(".nav > ul > li").mouseenter(function(){        
-            $(".nav > ul > li > ul").stop().slideDown(200);  
-            $("#header").addClass("on");  
-        });
+        // $(function(){
+        //     $(".nav > ul > li").mouseenter(function(){        
+        //         $(".nav > ul > li > ul").stop().slideDown(300);  
+        //         $("#header").addClass("on");  
+        //     });
 
-        $(".nav > ul > li").mouseleave(function(){
-            $(".nav > ul > li > ul").stop().slideUp(200);
-            $("#header").removeClass("on");  
-        });
+        //     $(".nav > ul > li").mouseleave(function(){
+        //         $(".nav > ul > li > ul").stop().slideUp(300);
+        //         $("#header").removeClass("on");  
+        //     });
+        // });
+
+        window.onload = function(){
+            let navList = document.querySelector(".nav > ul");
+            
+            navList.addEventListener("mouseover", function(){
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.height = "152px";
+                });
+                document.getElementById("header").classList.add("on");
+            });
+
+            navList.addEventListener("mouseout", function(){
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.height = "0px";
+                });
+                document.getElementById("header").classList.remove("on");
+            });
+        };
     </script>
 </body>
 </html>

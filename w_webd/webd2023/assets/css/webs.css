@@ -624,12 +624,16 @@
 
 .blog__contents__intro .desc .right a {
   background: #fff;
-  padding: 10px 40px;
+  padding: 12px 30px 10px 30px;
   display: inline-block;
   border-radius: 40px;
-  margin-right: 10px;
-  margin-bottom: 10px;
+  margin: 5px 5px 5px 0px;
   color: #6151d2;
+  line-height: 1;
+  transition: background-color 0.4s;
+}
+.blog__contents__intro .desc .right a:hover {
+  background-color: #e0dcff;
 }
 
 .blog__contents__intro .desc .right a.black {

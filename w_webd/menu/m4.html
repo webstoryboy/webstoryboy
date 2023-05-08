@@ -102,15 +102,17 @@
             background-color: #bdbdbd;
         }
         .nav > ul > li > ul {
-            padding: 10px;
-            display: none;
+            height: 0;
+            overflow: hidden;
+            transition: height 400ms;
         }
         .nav > ul > li > ul > li > a {
-            padding: 5px;
+            padding: 10px;
             display: block;
+            text-align: center;
         }
         .nav > ul > li > ul > li > a:hover {
-            background-color: #c0c0c0;
+            background-color: #c0c0c0;                                                                                                                                                                                                                                                                                                         
         }
     </style>
 </head>
@@ -185,13 +187,27 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(".nav > ul > li").mouseenter(function(){        
-            $(this).find(".submenu").stop().slideDown();  
-        });
+        // $(function(){
+        //     $(".nav > ul > li").mouseenter(function(){        
+        //         $(this).find(".submenu").stop().slideDown();  
+        //     });
+        //     $(".nav > ul > li").mouseleave(function(){
+        //         $(this).find(".submenu").stop().slideUp();
+        //     });
+        // });
 
-        $(".nav > ul > li").mouseleave(function(){
-            $(this).find(".submenu").stop().slideUp();
-        });
+        window.onload = function(){
+            var navList = document.querySelectorAll(".nav > ul > li");
+
+            navList.forEach(function(navItem) {
+                navItem.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.height = "152px";
+                });
+                navItem.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.height = "0px";
+                });
+            });
+        };
     </script>
 </body>
 </html>

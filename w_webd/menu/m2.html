@@ -107,7 +107,9 @@
             background-color: #ccc;
             width: 100%;
             box-sizing: border-box;
-            display: none;
+            height: 0;
+            overflow: hidden;
+            transition: height 600ms;
         }
         .nav > ul > li > ul > li > a {
             display: flex;
@@ -188,13 +190,31 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(".nav > ul > li").mouseenter(function(){        
-            $(".nav > ul > li > ul").stop().slideDown(200);    
-        });
+        // $(function(){
+        //     $(".nav > ul > li").mouseenter(function(){        
+        //         $(".nav > ul > li > ul").stop().slideDown(200);    
+        //     });
 
-        $(".nav > ul > li").mouseleave(function(){
-            $(".nav > ul > li > ul").stop().slideUp(200);
-        });
+        //     $(".nav > ul > li").mouseleave(function(){
+        //         $(".nav > ul > li > ul").stop().slideUp(200);
+        //     });
+        // });
+
+        window.onload = function(){
+            let navList = document.querySelector(".nav > ul");
+            
+            navList.addEventListener("mouseover", function(){
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.height = "152px";
+                })
+            });
+
+            navList.addEventListener("mouseout", function(){
+                navList.querySelectorAll(".submenu").forEach(sub => {
+                    sub.style.height = "0px";
+                })
+            });
+        };
     </script>
 </body>
 </html>

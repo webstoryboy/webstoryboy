@@ -107,7 +107,9 @@
             background-color: #ccc;
             width: 100%;
             box-sizing: border-box;
-            display: none;
+            height: 0;
+            overflow: hidden;
+            transition: height 600ms;
         }
         .nav > ul > li > ul > li > a {
             display: flex;
@@ -188,12 +190,27 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(".nav > ul > li").mouseover(function(){
-            $(this).find(".submenu").stop().slideDown(200);
-        });
-        $(".nav > ul > li").mouseout(function(){
-            $(this).find(".submenu").stop().slideUp(200);
-        });
+        // $(function(){
+        //     $(".nav > ul > li").mouseover(function(){
+        //         $(this).find(".submenu").stop().slideDown(200);
+        //     });
+        //     $(".nav > ul > li").mouseout(function(){
+        //         $(this).find(".submenu").stop().slideUp(200);
+        //     });
+        // })
+
+        window.onload = function(){
+            var navList = document.querySelectorAll(".nav > ul > li");
+
+            navList.forEach(function(navItem) {
+                navItem.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.height = "152px";
+                });
+                navItem.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.height = "0px";
+                });
+            });
+        };
     </script>
 </body>
 </html>
