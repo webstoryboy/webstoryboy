@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Tutorial/webd</span>
-                <h1 class="title">2023년 웹디자인 기능사 메뉴 : M-4</h1>
+                <h1 class="title">2023년 웹디자인 기능사 슬라이드 : S-3</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2023. 05. 01.</span>
@@ -86,14 +86,14 @@
                     </div>
                     <div class="desc">
                         <div class="left">
-                            <span class="num">25</span>
-                            <div class="title">웹디자인 기능사 메뉴 유형 : M-4</div>
+                            <span class="num">30</span>
+                            <div class="title">웹디자인 기능사 슬라이드 유형 : S-3</div>
                             <span class="difficulty">난이도 <span>중급</span></span>
                         </div>
                         <div class="right">
                             <div class="btn">소스 다운로드</div>
-                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/menu/m4.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
-                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/menu/m4.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/slider/s3.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/slider/s3.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
                             <a href="https://webstoryboy.github.io/webstoryboy/w_webd/index.html" target="_blank" class="sampleBtn">미리보기</a>
                             <a href="https://www.figma.com/file/iD3Ehm4HRhe16Vx6kxz3ob/%5B%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EA%B0%80-%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4%5D-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8E%B8?type=design&node-id=26248%3A1098&t=CfKBEPG0lp6GJUNI-1" target="_blank" class="sampleBtn">디자인 보기</a>
                         </div>
@@ -105,13 +105,11 @@
                     <h2>소개</h2>
                     <p>
                         안녕하세요! 웹스토리보이입니다. 
-                        이번에는 네번째 메뉴 유형을 작업하겠습니다. 
-                        이번 메뉴는 세로 유형이며, 사이드 메뉴가 있는 레이아웃에서 사용되는 메뉴 스타일입니다. 
-                        PDF를 확인해보면 반응형 레이아웃 및 정적인 레이아웃에서 다 사용이 되지만 반응형에서 메뉴 유형이 조금 더 어려울 것 같아서
-                        이번에는 반응형 레이아웃에서 작업을 해보겠습니다. 
-                        가로형 1,2,3과 세로형 1,2,3는 같은 원리이지만, 가로 세로에 따라 약간의 차이가 있습니다.
-                        기존에 1,2,3번을 다시 한번 복습한다고 생각하고 다시 작업해보겠습니다.
-                        그럼 또 시작해볼까요! 😆
+                        마지막 이미지 슬라이드입니다. 이번 유형은 두번째 유형과 똑같습니다. 
+                        이미지가 좌에서 위로 움직이는 것 빼고는 똑같습니다. 
+                        이 부분은 몇 가지만 바꾸면 구현이 되기 때문에 두번째 유형을 완벽하게 이해했다면, 응용해서 작업할 수 있는 유형입니다. 
+                        저랑 같이 하기 전에 먼저 해보시는 것을 추천합니다. 
+                        그럼 시작해볼까요? 🫢
                     </p>
 
                     <hr>
@@ -119,33 +117,31 @@
                     <div>
                         <h3>1. 구조 잡기</h3>
                         <p data-num="01" data-title="구조 잡기">
-                            이번에는 D-1 유형 레이아웃에 메뉴 유형을 작업을 해보겠습니다. 
-                            기본적인 코드는 그대로 복사하셔서 사용하셔도 됩니다. 
+                            이번에는 A-2 유형의 레이아웃을 사용하겠습니다. 
+                            레이아웃을 그대로 복사하셔서 사용하셔도 됩니다.  
                         </p>
 <pre><code class="language-html">&lt;body&gt;
     &lt;div id="wrap"&gt;
-        &lt;aside id="aside"&gt;
-            &lt;h1&gt;&lt;/h1&gt;
-            &lt;nav&gt;&lt;/nav&gt;
-        &lt;/aside&gt;
-        &lt;!-- //aside --&gt;
+        &lt;header id="header"&gt;
+            &lt;h1 class="logo"&gt;&lt;/h1&gt;
+            &lt;nav class="nav"&gt;&lt;/nav&gt;
+        &lt;/header&gt;
+        &lt;!-- //header --&gt;
 
-        &lt;main id="main"&gt;
-            &lt;article id="slider"&gt;&lt;/article&gt;
-            &lt;article id="link"&gt;&lt;/article&gt;
-            &lt;section id="contents"&gt;
-                &lt;div class="content1"&gt;&lt;/div&gt;
-                &lt;div class="content2"&gt;&lt;/div&gt;
-            &lt;/section&gt;
+        &lt;article id="slider"&gt;
+        &lt;/article&gt;
+        &lt;!-- //slider --&gt;
+
+        &lt;main id="contents"&gt;
+            &lt;section class="content1"&gt;&lt;/section&gt;
+            &lt;section class="content2"&gt;&lt;/section&gt;
+            &lt;section class="content3"&gt;&lt;/section&gt;
         &lt;/main&gt;
-        &lt;!-- //main --&gt;
+        &lt;!-- //contents --&gt;
 
         &lt;footer id="footer"&gt;
             &lt;div class="footer1"&gt;&lt;/div&gt;
-            &lt;div class="footer2"&gt;
-                &lt;div class="footer2-1"&gt;&lt;/div&gt;
-                &lt;div class="footer2-2"&gt;&lt;/div&gt;
-            &lt;/div&gt;
+            &lt;div class="footer2"&gt;&lt;/div&gt;
             &lt;div class="footer3"&gt;&lt;/div&gt;
         &lt;/footer&gt;
         &lt;!-- //footer --&gt;
@@ -157,56 +153,46 @@
     margin: 0;
     padding: 0;
 }
-li {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: #000;
-}
 #wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+#header {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
 }
-#aside {
-    width: 200px;
-}
-#aside h1 {
-    width: 100%;
+#header .logo {
+    width: 20%;
     height: 100px;
     background-color: #efefef;
 }
-#aside nav {
-    width: 100%;
-    height: 700px;
+#header .nav {
+    width: 80%;
+    height: 100px;
     background-color: #e3e3e3;
-}
-#main {
-    width: calc(100% - 200px);
 }
 #slider {
     width: 100%;
-    height: 400px;
+    height: 300px;
     background-color: #d9d9d9;
-}
-#link {
-    width: 100%;
-    height: 150px;
-    background-color: #d1d1d1;
 }
 #contents {
     width: 100%;
     display: flex;
 }
 #contents .content1 {
-    width: 50%;
-    height: 250px;
-    background-color: #c7c7c7;
+    width: 33.3333%;
+    height: 200px;
+    background-color: #d1d1d1;
 }
 #contents .content2 {
-    width: 50%;
-    height: 250px;
+    width: 33.3333%;
+    height: 200px;
+    background-color: #c7c7c7;
+}
+#contents .content3 {
+    width: 33.3333%;
+    height: 200px;
     background-color: #bcbcbc;
 }
 #footer {
@@ -215,114 +201,103 @@ a {
 }
 #footer .footer1 {
     width: 20%;
-    height: 120px;
+    height: 100px;
     background-color: #b1b1b1;
 }
 #footer .footer2 {
     width: 60%;
-}
-#footer .footer2 .footer2-1 {
-    width: 100%;
-    height: 60px;
+    height: 100px;
     background-color: #a3a3a3;
-}
-#footer .footer2 .footer2-2 {
-    width: 100%;
-    height: 60px;
-    background-color: #9d9d9d;
 }
 #footer .footer3 {
     width: 20%;
-    height: 120px;
-    background-color: #929292;
+    height: 100px;
+    background-color: #9d9d9d;
 }
 </code></pre>
 
-                        <p data-num="02" data-title="메뉴 구조 잡기">
-                            메뉴 코드를 추가하고 CSS를 설정하겠습니다.
-                            CSS는 기존보다 조금 더 간단합니다. 
-                            우선 서브 메뉴는 잠시 숨겨놓겠습니다.  
+                        <p data-num="02" data-title="슬라이드 구조 잡기">
+                            이번에는 슬라이드 영역을 작업해보겠습니다. 
+                            이미지는 3장이 있다고 가정을 하고 이미지와 글씨를 보여줄 부분을 작업하였습니다. 
+                            <code>img</code> 태그를 작성할 때에는 <code>alt</code> 속성을 꼭 적어주셔야 합니다. 
+                            웹 표준을 준수하기 위한 가장 기본 규칙이며, 만약 이미지가 없을 때 대체 문자가 나오는 부분입니다.
+                            시험지에 웹 표준을 준수하라고 명시되어 있기 때문에 이런 부분이 없다면, 감정 요인일 것입니다. 
                         </p>
-<pre><code class="language-html">&lt;nav class="nav"&gt;
-    &lt;ul&gt;
-        &lt;li&gt;
-            &lt;a href="#"&gt;메뉴1&lt;/a&gt;
-            &lt;ul class="submenu"&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴1-1&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴1-2&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴1-3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴1-4&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a href="#"&gt;메뉴2&lt;/a&gt;
-            &lt;ul class="submenu"&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-1&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-2&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-4&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a href="#"&gt;메뉴3&lt;/a&gt;
-            &lt;ul class="submenu"&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-1&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-2&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-4&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-            &lt;a href="#"&gt;메뉴4&lt;/a&gt;
-            &lt;ul class="submenu"&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-1&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-2&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-4&lt;/a&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/nav&gt;
+<pre><code class="language-html">&lt;article id="slider"&gt;
+    &lt;div class="sliderWrap"&gt;
+        &lt;div class="slider s1"&gt;
+            &lt;img src="slider01.jpg" alt="이미지 설명"&gt;
+            &lt;span&gt;이미지1&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="slider s2"&gt;
+            &lt;img src="slider02.jpg" alt="이미지 설명"&gt;
+            &lt;span&gt;이미지2&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class="slider s3"&gt;
+            &lt;img src="slider03.jpg" alt="이미지 설명"&gt;
+            &lt;span&gt;이미지3&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/article&gt;
+&lt;!-- //slider --&gt;
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > a {
-    padding: 10px;
-    display: block;
-    background-color: #ccc;
-    text-align: center;
+                        <p>
+                            이미지는 세로로 정렬할 것이기 때문에 특별히 할 것이 없습니다. 
+                            원래 이미지는 세로로 정렬이 되니깐요! 
+                            하지만 여기서 중요한 점은 이미지에 간격이 생기는 현상을 막아야 합니다. 
+                            이미지는 인라인 구조이기 때문에 보이지 않는 폰트 크기, 간격 등이 생깁니다. 
+                            그래서 블록구조로 변경하거나 폰트사이즈를 0으로 설정하면 해결이 되지만 
+                            <code>vertical-align: top;</code> 이 방법을 제일 많이 사용하니깐, 
+                            이렇게 설정할께요~ 그러면 간격이 없어지기 때문에 이미지가 일정한 간격으로 이동하게 됩니다. 
+                            저기서 틀리는 분들도 많더라구요! 주의해주세요!
+                        </p>
+<pre><code class="language-css">.slider {
+    position: relative;
 }
-.nav > ul > li > a:hover {
-    background-color: #bdbdbd;
+.slider img {
+    vertical-align: top;
 }
-.nav > ul > li > ul > li > a {
-    padding: 10px;
-    display: block;
-    text-align: center;
-}
-.nav > ul > li > ul > li > a:hover {
-    background-color: #c0c0c0;                                                                                                                                                                                                                                                                                                         
+.slider span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255,255,255,0.4);
+    padding: 10px 20px;
 }</code></pre>
                     </div>
 
                     <div>
                         <h3>2. 스크립트 작업 : 제이쿼리</h3>
                         <p data-num="03" data-title="제이쿼리 설정하기">
-                            라이브러리 소스를 연동하고, 스크립트는 메뉴 유형1과 동일하게 넣어주면 됩니다. 
-                            스크립트 소스상에는 차이가 없지만 CSS 영역에 따라 다르게 나오는 구조입니다. 
-                            메뉴에 마우스를 오버하면 해당 메뉴의 서브메뉴를 찾아서 슬라이딩으로 보여줘라!를 제이쿼리로 짜면 다음과 같습니다. 
-                            메뉴 선택자 <code>$(".nav > ul > li")</code>를 만들고, 마우스 오버 효과 <code>이벤트(mouseenter)</code>를 설정합니다. 
-                            해당 메뉴의 자식을 찾기 위해 <code>$(this)</code>를 사용하고, <code>submenu</code> 클래스를 찾습니다. 
-                            그리고 서브 메뉴를 슬라이딩으로 살며시 보여주기 위해 <code>slideDown()</code>를 사용하면 완료가 됩니다. 
-                            마우스 아웃 역시 반대로 주시면 완성이 됩니다. 
-                            <code>stop()</code> 메서드는 애니메이션이 반복적을 일어나는 현상을 막아주기 위해 사용하였습니다. 
+                            이미지의 이동이 왼쪽에서 위쪽으로 움직이기 때문에 
+                            이미지의 가로 값이 아닌 <code>$slider.height()</code>을 구합니다. 
+                            첫 번재 이미지를 복사해서 마지막에 넣어주는 부분은 동일합니다. 
+
+                            이미지를 위쪽으로 움직이기 때문에 애니메이션에 <code>marginTop</code>을 설정합니다. 
+                            그리고 이미지가 마지막에 왔을 때 애니메이션을 정지하고 0으로 초기화하면 됩니다. 
+                            주석으로 설명을 달아놓을께요! 참고하세요!
                         </p>
 <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-    $(".nav &gt; ul &gt; li").mouseenter(function(){        
-        $(this).find(".submenu").stop().slideDown();  
-    });
+    $(function() {
+        let currentIndex = 0;   //현재 이미지
+        const $sliderWrap = $('.sliderWrap');   //전체 이미지
+        const $slider = $('.slider');               //각각의 이미지
+        const $sliderHeight = $slider.height();         //이미지의 높이 값
+        $sliderWrap.append($slider.first().clone(true));    //첫번째 이미지 복사
 
-    $(".nav &gt; ul &gt; li").mouseleave(function(){
-        $(this).find(".submenu").stop().slideUp();
+        setInterval(() => {
+            currentIndex++;     //현재 이미지를 1씩 증가
+            $sliderWrap.animate({ marginTop: -$sliderHeight * currentIndex + "px" }, 600);  //이미지를 위쪽으로 이동
+
+            if (currentIndex === $slider.length) {  //마지막 이미지일 경우에
+                setTimeout(() => {
+                    $sliderWrap.animate({ marginTop: 0 }, 0);   //애니메이션 정지
+                    currentIndex = 0;       //현재 이미지 초기화
+                }, 700);
+            }
+        }, 2000);
     });
 &lt;/script&gt;
 </code></pre>
@@ -331,44 +306,58 @@ a {
                     <div>
                         <h3>3. 스크립트 작업 : 자바스크립트</h3>
                         <p data-num="04" data-title="자바스크립트 설정하기">
-                            자바스크립트 역시 메뉴 유형1과 동일합니다. 
-                            메뉴 항목을 변수로 설정하고, 항목의 갯수가 여러개 나오기 때문에 <code>forEach</code>를 사용하여, 
-                            각각의 항목에 마우스오버를 하게되면, 해당 항목의 <code>submenu</code>를 찾아서 높이 값을 설정합니다. 
-                            자바스크립트는 제이쿼리처럼 자동으로 애니메이션을 처리하는 메서드가 없기 때문에 
-                            높이값을 통해 애니메이션을 만들어 줄 것입니다. 
-                            높이값을 0에서 152px로 주면서 <code>transition</code> 효과를 주면 애니메이션화 됩니다. 
-                            마우스아웃 했을 때도 다시 높이 값을 0으로 설정해주면 슬라이딩 애니메이션이 완성됩니다. 
-                            대신 제이쿼리에서 설정하지 않았던 CSS를 따로 설정해주어야 합니다. 
-                            물론 이것도 자바스크립트로 설정이 가능하지만, 소스가 복잡해지기 때문에 CSS로 설정했습니다. 
+                            원리는 동일합니다. 첫번째 이미지를 복사해서 마지막에 넣어주고, 이미지가 마지막이 됐을 때, 애니메이션 정지하고, 초기화하면 됩니다. 
+                            주의할 점은 이미지가 세로로 여백없이 정렬되어 있어야 합니다. 이 부분은 CSS에서 완벽하게 하고 와야 합니다. 
+                            현재 이미지를 0으로 초기화하고 전체 이미지와 각각의 이미지를 변수에 저장합니다. 
+                            첫번째 이미지의 높이값(<code>offsetHeight</code>) 구하고 첫번째 자식(<code>firstElementChild</code>) 이미지를 복사(<code>cloneNode(true)</code>)합니다. 
+                            복사한 이미지는 마지막에 위치하도록 합니다. 
+
+                            일정한 간격으로 실행하는 <code>setInterval()</code>을 작성하고 현재 이미지 값을 1씩 증가합니다. 
+                            애니메이션을 주기 위해 <code>all 0.6s</code>을 설정하고 위쪽으로 움직이기 위해 <code>translateY</code>를 설정합니다. 
+                            현재 이미지와 이미지 갯수가 같을 때 <code>transition</code>을 0으로 초기화 하고 <code>translateY</code>도 0으로 초기화 합니다. 
+                            당연히 현재 이미지도 0으로 초기화합니다. 
                         </p>
 <pre><code class="language-js">window.onload = function(){
-    var navList = document.querySelectorAll(".nav > ul > li");
+    let currentIndex = 0;   //현재 이미지 설정
+    const sliderWrap = document.querySelector(".sliderWrap");   //전체 이미지 설정
+    const slider = sliderWrap.querySelectorAll(".slider");      //각각이 이미지 설정
+    const sliderHeight = slider[0].offsetHeight;            //첫번째 이미지 높이 값
+    const sliderClone = sliderWrap.firstElementChild.cloneNode(true);   //첫번째 이미지를 복사
+    sliderWrap.appendChild(sliderClone);    //복사한 이미지를 마지막에 위치
 
-    navList.forEach(function(navItem) {
-        navItem.addEventListener("mouseover", function() {
-            this.querySelector(".submenu").style.height = "152px";
-        });
-        navItem.addEventListener("mouseout", function() {
-            this.querySelector(".submenu").style.height = "0px";
-        });
-    });
+    setInterval(() => {     //2초마다 실행
+        currentIndex++;     //현재 이미지를 1씩 증가
+        sliderWrap.style.transition = "all 0.6s";   //애니메이션 설정
+        sliderWrap.style.transform = `translateY(-${currentIndex * sliderHeight}px)`;   //이미지를 위쪽으로 이동
+
+        if (currentIndex == slider.length) {    //마지막 이미지일때
+            setTimeout(() => {
+                sliderWrap.style.transition = "0s"; //애니메이션 움직임을 0으로 설정
+                sliderWrap.style.transform = "translateY(0)";   //위치를 0으로 설정
+                currentIndex = 0;   //현재 이미지를 0으로 초기화
+            }, 700);
+        }
+    }, 2000);
 };
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > ul {
-    height: 0;
-    overflow: hidden;
-    transition: height 400ms;
-}
-</code></pre>
+                        
                     </div>
 
                     <div>
                         <h3>3. 마무리</h3>
                         <p>
-                            네번째 유형은 첫번째 유형과 동일하니 크게 외울 것은 없습니다. 
-                            단지 CSS 설정이 다르니 이점만 유의해서 코딩을 한다면 크게 어려울 것이 없을 것 같습니다. 
-                            자바스크립트로 작업했을 때에는 신경쓸 것이니 많으니 연습이 덜 된 분들은 제이쿼리를 추천합니다. 
-                            수고하셨습니다.🥸 
+                            세번째 이미지 슬라이드도 끝났습니다. 
+                            두번째 이미지 슬라이드 복습편이라고 생각하면 되겠죠! 
+                            이미지 슬라이드를 못하면 나머지를 잘해도 무조건 떨어지기 때문에 꼭 구현해야 합니다. 
+                            기본 원리를 생각하고, 스크립트를 하나씩 작업하면 될겁니다. 
+                            그래도 안되면 그냥 100번 쓰세요! 그럼 됩니다. 
+                            기준점이 생기는 스크립트가 있으면, 나중에 변형해서 자유롭게 쓸 수 있거든요! 
+                            코딩하는 분들한테는 도움이 될겁니다. 제가 그랬거든요! 
+                            이미지 슬라이드를 완벽하게 코딩하게 되면 나머지도 변형 및 응용이 가능합니다. 
+                            쓰는 것만 계속 쓰게 되거든요! 
+                            웹디기에서 나오는 이미지 슬라이드는 정말 기초구요! 
+                            좀 더 깊이 하고 싶은 분들은 여기에 버튼, 닷 메뉴, 자동 플레이 같은 기능도 붙여서 작업하면 더 도움이 됩니다. 
+                            수고하셨습니다. 😏
                         </p>
                     </div>
 

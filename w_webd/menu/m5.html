@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인기능사 레이아웃 D-4</title>
+    <title>웹디자인기능사 메뉴 M-5</title>
     <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
         * {
@@ -192,13 +192,34 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(".nav > ul > li").mouseenter(function(){        
-            $(this).find(".submenu").stop().slideDown();  
-        });
+        // $(function(){
+        //     $(".nav > ul > li").mouseenter(function(){        
+        //         $(this).find(".submenu").stop().slideDown();  
+        //     });
+        //     $(".nav > ul > li").mouseleave(function(){
+        //         $(this).find(".submenu").stop().slideUp();
+        //     });
+        // });
 
-        $(".nav > ul > li").mouseleave(function(){
-            $(this).find(".submenu").stop().slideUp();
-        });
+        window.onload = function(){
+            var navList = document.querySelectorAll(".nav > ul > li");
+
+            navList.forEach(nav => {
+                nav.querySelector("ul").style.display = "block";
+                nav.querySelector("ul").style.height = "0";
+                nav.querySelector("ul").style.overflow = "hidden";
+                nav.querySelector("ul").style.transition = "height 400ms";
+            });
+
+            navList.forEach(function(navItem) {
+                navItem.addEventListener("mouseover", function() {
+                    this.querySelector(".submenu").style.height = "152px";
+                });
+                navItem.addEventListener("mouseout", function() {
+                    this.querySelector(".submenu").style.height = "0px";
+                });
+            });
+        };
     </script>
 </body>
 </html>

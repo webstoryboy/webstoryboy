@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Tutorial/webd</span>
-                <h1 class="title">2023년 웹디자인 기능사 메뉴 : M-4</h1>
+                <h1 class="title">2023년 웹디자인 기능사 메뉴 : M-5</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2023. 05. 01.</span>
@@ -86,14 +86,14 @@
                     </div>
                     <div class="desc">
                         <div class="left">
-                            <span class="num">25</span>
-                            <div class="title">웹디자인 기능사 메뉴 유형 : M-4</div>
+                            <span class="num">26</span>
+                            <div class="title">웹디자인 기능사 메뉴 유형 : M-5</div>
                             <span class="difficulty">난이도 <span>중급</span></span>
                         </div>
                         <div class="right">
                             <div class="btn">소스 다운로드</div>
-                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/menu/m4.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
-                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/menu/m4.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/menu/m5.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/menu/m5.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
                             <a href="https://webstoryboy.github.io/webstoryboy/w_webd/index.html" target="_blank" class="sampleBtn">미리보기</a>
                             <a href="https://www.figma.com/file/iD3Ehm4HRhe16Vx6kxz3ob/%5B%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EA%B0%80-%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4%5D-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8E%B8?type=design&node-id=26248%3A1098&t=CfKBEPG0lp6GJUNI-1" target="_blank" class="sampleBtn">디자인 보기</a>
                         </div>
@@ -105,13 +105,11 @@
                     <h2>소개</h2>
                     <p>
                         안녕하세요! 웹스토리보이입니다. 
-                        이번에는 네번째 메뉴 유형을 작업하겠습니다. 
-                        이번 메뉴는 세로 유형이며, 사이드 메뉴가 있는 레이아웃에서 사용되는 메뉴 스타일입니다. 
-                        PDF를 확인해보면 반응형 레이아웃 및 정적인 레이아웃에서 다 사용이 되지만 반응형에서 메뉴 유형이 조금 더 어려울 것 같아서
-                        이번에는 반응형 레이아웃에서 작업을 해보겠습니다. 
-                        가로형 1,2,3과 세로형 1,2,3는 같은 원리이지만, 가로 세로에 따라 약간의 차이가 있습니다.
-                        기존에 1,2,3번을 다시 한번 복습한다고 생각하고 다시 작업해보겠습니다.
-                        그럼 또 시작해볼까요! 😆
+                        메뉴 유형 5번째 시간입니다. 
+                        이 유형은 M-4 유형과 동일합니다. 
+                        단지 서브메뉴의 위치만 다르기 때문에 이것은 CSS로 컨트롤 해주면 됩니다. 
+                        스크립트 부분은 동일하게 때문에 먼저 해보시고, 따라하시면 더 도움이 될 것 같습니다. 
+                        그럼 시작해보겠습니다. 😇
                     </p>
 
                     <hr>
@@ -119,7 +117,7 @@
                     <div>
                         <h3>1. 구조 잡기</h3>
                         <p data-num="01" data-title="구조 잡기">
-                            이번에는 D-1 유형 레이아웃에 메뉴 유형을 작업을 해보겠습니다. 
+                            이번에도 D-1 유형 레이아웃에 메뉴 유형을 작업을 해보겠습니다. 
                             기본적인 코드는 그대로 복사하셔서 사용하셔도 됩니다. 
                         </p>
 <pre><code class="language-html">&lt;body&gt;
@@ -240,8 +238,9 @@ a {
 
                         <p data-num="02" data-title="메뉴 구조 잡기">
                             메뉴 코드를 추가하고 CSS를 설정하겠습니다.
-                            CSS는 기존보다 조금 더 간단합니다. 
-                            우선 서브 메뉴는 잠시 숨겨놓겠습니다.  
+                            서브메뉴가 오른쪽으로 나오는 위치기 때문에 <code>position: absolute</code>로 위치를 잡아주면 됩니다. 
+                            기준점이 되는 li에 <code>position: relative</code>를 넣어주면 됩니다. 
+                            위치는 오른쪽에 위치해야 하기 때문에 <code>right: -200px;</code>를 설정해주고, width 값을 <code>200px</code>로 설정해주면 됩니다.
                         </p>
 <pre><code class="language-html">&lt;nav class="nav"&gt;
     &lt;ul&gt;
@@ -284,7 +283,10 @@ a {
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > a {
+<pre><code class="language-css">.nav > ul > li {
+    position: relative;
+}
+.nav > ul > li > a {
     padding: 10px;
     display: block;
     background-color: #ccc;
@@ -293,27 +295,35 @@ a {
 .nav > ul > li > a:hover {
     background-color: #bdbdbd;
 }
+.nav > ul > li > ul {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    background: #6d6d6d;
+    width: 200px;
+    display: none;
+}
 .nav > ul > li > ul > li > a {
     padding: 10px;
     display: block;
-    text-align: center;
 }
 .nav > ul > li > ul > li > a:hover {
-    background-color: #c0c0c0;                                                                                                                                                                                                                                                                                                         
+    background-color: #c0c0c0;
 }</code></pre>
                     </div>
 
                     <div>
                         <h3>2. 스크립트 작업 : 제이쿼리</h3>
                         <p data-num="03" data-title="제이쿼리 설정하기">
-                            라이브러리 소스를 연동하고, 스크립트는 메뉴 유형1과 동일하게 넣어주면 됩니다. 
-                            스크립트 소스상에는 차이가 없지만 CSS 영역에 따라 다르게 나오는 구조입니다. 
-                            메뉴에 마우스를 오버하면 해당 메뉴의 서브메뉴를 찾아서 슬라이딩으로 보여줘라!를 제이쿼리로 짜면 다음과 같습니다. 
-                            메뉴 선택자 <code>$(".nav > ul > li")</code>를 만들고, 마우스 오버 효과 <code>이벤트(mouseenter)</code>를 설정합니다. 
-                            해당 메뉴의 자식을 찾기 위해 <code>$(this)</code>를 사용하고, <code>submenu</code> 클래스를 찾습니다. 
-                            그리고 서브 메뉴를 슬라이딩으로 살며시 보여주기 위해 <code>slideDown()</code>를 사용하면 완료가 됩니다. 
-                            마우스 아웃 역시 반대로 주시면 완성이 됩니다. 
-                            <code>stop()</code> 메서드는 애니메이션이 반복적을 일어나는 현상을 막아주기 위해 사용하였습니다. 
+                            라이브러리 소스를 연동하고, <code>script</code>를 작성하고, <code>$(".nav &gt; ul &gt; li")</code> 선택자에 마우스오버 이벤트를 설정했습니다. 
+                            여기서 이벤트라 함은 무엇이 일어났을 때 함수를 작동시키는 것을 의미합니다. 
+                            마우스 오버라는 사건이 발생하면 해당 항목에 서브메뉴를 찾습니다. 
+                            <code>.find(".submenu")</code> 메서드가 그런 역할을 합니다. 
+                            해당 서브메뉴를 찾았으면 슬라이드 형식으로 애니메이션을 작동시켜주면 끝납니다. 
+                            마우스아웃 했을 때에도 똑같이 작업하면 되겠죠! 
+                            몇 번 반복해서 만들어 보니까 느낌이 오시죠.🥹
+                            점점 쉬어지고 있지 않나요?
+                            제이쿼로 작업할 분은 여기서 작업완료하시면 되구요! 자바스크립트로 한번 해보고 싶다는 분은 다음 섹션을 보시면 됩니다. 
                         </p>
 <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
@@ -331,15 +341,17 @@ a {
                     <div>
                         <h3>3. 스크립트 작업 : 자바스크립트</h3>
                         <p data-num="04" data-title="자바스크립트 설정하기">
-                            자바스크립트 역시 메뉴 유형1과 동일합니다. 
-                            메뉴 항목을 변수로 설정하고, 항목의 갯수가 여러개 나오기 때문에 <code>forEach</code>를 사용하여, 
-                            각각의 항목에 마우스오버를 하게되면, 해당 항목의 <code>submenu</code>를 찾아서 높이 값을 설정합니다. 
-                            자바스크립트는 제이쿼리처럼 자동으로 애니메이션을 처리하는 메서드가 없기 때문에 
-                            높이값을 통해 애니메이션을 만들어 줄 것입니다. 
-                            높이값을 0에서 152px로 주면서 <code>transition</code> 효과를 주면 애니메이션화 됩니다. 
-                            마우스아웃 했을 때도 다시 높이 값을 0으로 설정해주면 슬라이딩 애니메이션이 완성됩니다. 
-                            대신 제이쿼리에서 설정하지 않았던 CSS를 따로 설정해주어야 합니다. 
-                            물론 이것도 자바스크립트로 설정이 가능하지만, 소스가 복잡해지기 때문에 CSS로 설정했습니다. 
+                            자바스크립트 역시 기존 메뉴 유형과 동일합니다. 
+                            이번에는 다른 방식으로 작업해보겠습니다. 
+                            <code>.nav > ul > li</code> 항목이 4개이기 때문에 다중 선택을 해야 합니다. 
+                            다중 선택을 한다는건 반복문을 사용해야 한다는 뜻입니다. 
+                            그래서 <code>forEach</code>를 사용해야 합니다. 
+                            forEach를 사용하면 또 다시 <code>function</code>을 사용할 수 있는데, 이것을 콜백함수라고 합니다. 
+                            콜백함수라는게 있구나! 하고 가볍게 넘기시면 됩니다. 
+                            콜백함수를 정확하게 100% 이해하고 넘어갈 필요는 없습니다. 
+                            가볍게 넘기도 다음에 또 공부하면 됩니다. 코드는 그렇게 공부해야 합니다. 
+                            그건 그렇고, 마우스 오버 했을 때 아웃 했을 때 <code>submenu</code>의 높이값을 설정합니다. 
+                            높이값이 줄어들고 늘어남에 따라 애니메이션을 표현할 수 있기 때문에 <code>height</code> 값을 컨트롤 하는 것입니다. 
                         </p>
 <pre><code class="language-js">window.onload = function(){
     var navList = document.querySelectorAll(".nav > ul > li");
@@ -354,21 +366,42 @@ a {
     });
 };
 </code></pre>
+                        <p>
+                            그리고 다음과 같이 CSS 설정을 해야 애니메이션이 작동했습니다. 
+                            이 부분을 자바스크립트로 표현해보겠습니다. 
+                            다중 선택을 해야 하기 때문에 여기도 <code>forEach</code>를 사용했고, 
+                            CSS에서 설정한 부분을 자바스크립트로 표현했습니다. 
+                            <code>style</code>을 사용하면 그대로 쓸 수 있습니다. 
+                            대신 두번째 ul을 선택해야 하기 때문에 <code>nav.querySelector("ul")</code>를 사용했습니다. 
+                            이런식으로도 작업이 가능합니다.
+                            이렇게 하면 CSS는 따로 설정하지 않아도 됩니다. 
+                        </p>
 <pre><code class="language-css">.nav > ul > li > ul {
     height: 0;
     overflow: hidden;
     transition: height 400ms;
 }
 </code></pre>
+<pre><code class="language-js">.navList.forEach(nav => {
+    nav.querySelector("ul").style.display = "block";
+    nav.querySelector("ul").style.height = "0";
+    nav.querySelector("ul").style.overflow = "hidden";
+    nav.querySelector("ul").style.transition = "height 400ms";
+});
+</code></pre>
                     </div>
 
                     <div>
                         <h3>3. 마무리</h3>
                         <p>
-                            네번째 유형은 첫번째 유형과 동일하니 크게 외울 것은 없습니다. 
-                            단지 CSS 설정이 다르니 이점만 유의해서 코딩을 한다면 크게 어려울 것이 없을 것 같습니다. 
-                            자바스크립트로 작업했을 때에는 신경쓸 것이니 많으니 연습이 덜 된 분들은 제이쿼리를 추천합니다. 
-                            수고하셨습니다.🥸 
+                            메뉴 섹션의 5번째 유형도 마무리 했습니다. 
+                            유형이 6개 있지만 대부분 비슷하기 때문에 하나를 완벽하게 하면 나머지도 자동으로 완성됩니다. 
+                            자바스크립트 부분도 CSS로 작성하지 않고, 스크립트로도 표현해 봤습니다. 
+                            실무에서는 제이쿼리보다 자바스크립트가 더 중요하기 때문에 자바스크립트를 공부하는 것이 더 좋습니다. 
+                            어자피 공부할바에는.... 
+                            스크립트를 처음해보는 분들은 <code>forEach</code> 사용하는 방법이 어려울 수 있습니다. 
+                            이 부분은 보충용으로 따로 만들어서 안내해드리겠습니다. 
+                            오늘도 수고하셨습니다.🥳
                         </p>
                     </div>
 

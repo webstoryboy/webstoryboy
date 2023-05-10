@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인기능사 레이아웃 E-1</title>
+    <title>웹디자인기능사 슬라이드 S-4</title>
+    <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
+            font-family: 'GmarketSans';
         }
         #wrap {
             width: 100%;           
@@ -84,6 +86,47 @@
             height: 60px;
             background-color: #838383;
         }
+
+        /* slider */
+        .sliderWrap {
+            position: relative;
+            height: 100%;
+        }
+        /* .sliderWrap > div {
+            display: none;
+        }
+        .sliderWrap > div:first-child {
+            display: block;
+        } */
+        .slider {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        .slider.s1 {
+            background-image: url(slider04.jpg);
+        }
+        .slider.s2 {
+            background-image: url(slider05.jpg);
+        }
+        .slider.s3 {
+            background-image: url(slider06.jpg);
+        }
+        .slider img {
+            vertical-align: top;
+        }
+        .slider span {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255,255,255,0.4);
+            padding: 10px 20px;
+        }
     </style>
 </head>
 <body>
@@ -104,6 +147,17 @@
             <!-- //contents -->
             
             <article id="slider">
+                <div class="sliderWrap">
+                    <div class="slider s1">
+                        <span>이미지1</span>
+                    </div>
+                    <div class="slider s2">
+                        <span>이미지2</span>
+                    </div>
+                    <div class="slider s3">
+                        <span>이미지3</span>
+                    </div>
+                </div>
             </article>
             <!-- //slider -->
         </main>
@@ -118,5 +172,39 @@
         <!-- //footer -->
     </div>
     <!-- //wrap -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        // $(function() {
+        //     let currentIndex = 0;
+        //     const $slider = $(".slider");
+
+        //     setInterval(() => {
+        //         let nextIndex = (currentIndex + 1) % $slider.length;
+            
+        //         $slider.eq(currentIndex).fadeOut(1200);
+        //         $slider.eq(nextIndex).fadeIn(1200);
+
+        //         currentIndex = nextIndex;
+        //     }, 3000);
+        // });
+
+        window.onload = function(){
+            let currentIndex = 0;
+            const slider = document.querySelectorAll(".slider");
+            slider.forEach(el => el.style.opacity = "0");
+            slider[0].style.opacity = "1";
+
+            setInterval(() => {
+                let nextIndex = (currentIndex + 1) % slider.length;
+                
+                slider[currentIndex].style.opacity = "0";
+                slider[nextIndex].style.opacity = "1";
+                slider.forEach(el => el.style.transition = "all 1s");
+
+                currentIndex = nextIndex;
+            }, 3000);
+        };
+    </script>
 </body>
 </html>

@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Tutorial/webd</span>
-                <h1 class="title">2023년 웹디자인 기능사 메뉴 : M-4</h1>
+                <h1 class="title">2023년 웹디자인 기능사 메뉴 : M-6</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2023. 05. 01.</span>
@@ -86,14 +86,14 @@
                     </div>
                     <div class="desc">
                         <div class="left">
-                            <span class="num">25</span>
-                            <div class="title">웹디자인 기능사 메뉴 유형 : M-4</div>
+                            <span class="num">27</span>
+                            <div class="title">웹디자인 기능사 메뉴 유형 : M-6</div>
                             <span class="difficulty">난이도 <span>중급</span></span>
                         </div>
                         <div class="right">
                             <div class="btn">소스 다운로드</div>
-                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/menu/m4.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
-                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/menu/m4.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/menu/m6.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/menu/m6.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
                             <a href="https://webstoryboy.github.io/webstoryboy/w_webd/index.html" target="_blank" class="sampleBtn">미리보기</a>
                             <a href="https://www.figma.com/file/iD3Ehm4HRhe16Vx6kxz3ob/%5B%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EA%B0%80-%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4%5D-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8E%B8?type=design&node-id=26248%3A1098&t=CfKBEPG0lp6GJUNI-1" target="_blank" class="sampleBtn">디자인 보기</a>
                         </div>
@@ -105,13 +105,11 @@
                     <h2>소개</h2>
                     <p>
                         안녕하세요! 웹스토리보이입니다. 
-                        이번에는 네번째 메뉴 유형을 작업하겠습니다. 
-                        이번 메뉴는 세로 유형이며, 사이드 메뉴가 있는 레이아웃에서 사용되는 메뉴 스타일입니다. 
-                        PDF를 확인해보면 반응형 레이아웃 및 정적인 레이아웃에서 다 사용이 되지만 반응형에서 메뉴 유형이 조금 더 어려울 것 같아서
-                        이번에는 반응형 레이아웃에서 작업을 해보겠습니다. 
-                        가로형 1,2,3과 세로형 1,2,3는 같은 원리이지만, 가로 세로에 따라 약간의 차이가 있습니다.
-                        기존에 1,2,3번을 다시 한번 복습한다고 생각하고 다시 작업해보겠습니다.
-                        그럼 또 시작해볼까요! 😆
+                        드뎌 메뉴 유형도 마지막입니다. 
+                        마지막 유형은 백그라운드가 들어간 메뉴 유형입니다. 
+                        M-3 유형에서 작업을 했습니다. 
+                        이번엔 전체 배경이 가로로 들어간 형태이기 때문에 기존 유형과 약간 다르기 합니다. 
+                        그래도 원리는 동일하니까! 바로 한번 시작해보겠습니다. 
                     </p>
 
                     <hr>
@@ -119,7 +117,7 @@
                     <div>
                         <h3>1. 구조 잡기</h3>
                         <p data-num="01" data-title="구조 잡기">
-                            이번에는 D-1 유형 레이아웃에 메뉴 유형을 작업을 해보겠습니다. 
+                            이번에도 D-1 유형 레이아웃에 메뉴 유형을 작업을 해보겠습니다. 
                             기본적인 코드는 그대로 복사하셔서 사용하셔도 됩니다. 
                         </p>
 <pre><code class="language-html">&lt;body&gt;
@@ -240,8 +238,11 @@ a {
 
                         <p data-num="02" data-title="메뉴 구조 잡기">
                             메뉴 코드를 추가하고 CSS를 설정하겠습니다.
-                            CSS는 기존보다 조금 더 간단합니다. 
-                            우선 서브 메뉴는 잠시 숨겨놓겠습니다.  
+                            전체 배경이 오른쪽에 나오기 때문에 <code>main</code> 요소에 가상요소를 작업해야 합니다. 
+                            만약 사이드 영역에 가상요소를 잡으면 전체 영역을 잡을 수 없기 때문에 상관이 없는 메인 영역에 가상요소를 작업해야 합니다. 
+                            해당 메뉴의 서브 메뉴들은 <code>position: absolute</code>를 이용하여 각각 위치값을 설정해야 합니다. 
+                            구조상 이게 제일 편한 방법일 것 같습니다. 혹시 더 좋은 의견이 있으면 댓글 부탁드립니다. 
+                            어째든 배경이 될 수 있는 요소는 메인 영역에 설정하고, 서브메뉴는 절대 위치를 통해 위치를 억지로 잡아줬습니다. 
                         </p>
 <pre><code class="language-html">&lt;nav class="nav"&gt;
     &lt;ul&gt;
@@ -284,45 +285,97 @@ a {
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > a {
+                        <p>
+                            <code>::after</code> 가상 요소 속성을 이용해서 전체 영역을 설정했습니다. 
+                            위치는 <code>position: absolute</code>를 이용해서 잡아주고, 기준점이 되는 메인 영역에 <code>position: relative</code>를 설정했습니다. 
+                            나중에 스크립트로 클래스 <code>on</code>이 붙으면 <code>width: 100%;</code>가 설정되어 있기 때문에 배경이 활성화 될 것입니다.
+                            서브 메뉴들의 위치는 <code>nth-child()</code>를 이용하면, 자식들을 선택적으로 선택할 수 있습니다. 
+                        </p>
+<pre><code class="language-css">#main {
+    position: relative;
+}
+#main::after {
+    content: '';
+    width: 0%;
+    height: 200px;
+    background-color: #929292;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    z-index: 1;
+    transition: all 0.3s;
+}
+#main.on::after {
+    width: 100%;
+}
+.nav > ul {
+    position: relative;
+}
+.nav > ul > li > a {
     padding: 10px;
     display: block;
-    background-color: #ccc;
-    text-align: center;
+    background-color: #c0c0c0;
 }
 .nav > ul > li > a:hover {
-    background-color: #bdbdbd;
+    background-color: #b4b4b4;
+} 
+.nav > ul > li > ul {
+    position: absolute;
+    right: -200px;
+    top: 0;
+    /* background-color: #929292; */
+    width: 150px;
+    z-index: 100;
+    display: none;
+}
+.nav > ul > li:nth-child(1) ul {
+    right: -150px;
+}
+.nav > ul > li:nth-child(2) ul {
+    right: -300px;
+}
+.nav > ul > li:nth-child(3) ul {
+    right: -450px;
+}
+.nav > ul > li:nth-child(4) ul {
+    right: -600px;
+}
+.nav > ul > li:nth-child(5) ul {
+    right: -750px;
 }
 .nav > ul > li > ul > li > a {
     padding: 10px;
     display: block;
-    text-align: center;
 }
 .nav > ul > li > ul > li > a:hover {
-    background-color: #c0c0c0;                                                                                                                                                                                                                                                                                                         
+    background-color: #c0c0c0;
 }</code></pre>
                     </div>
 
                     <div>
                         <h3>2. 스크립트 작업 : 제이쿼리</h3>
                         <p data-num="03" data-title="제이쿼리 설정하기">
-                            라이브러리 소스를 연동하고, 스크립트는 메뉴 유형1과 동일하게 넣어주면 됩니다. 
-                            스크립트 소스상에는 차이가 없지만 CSS 영역에 따라 다르게 나오는 구조입니다. 
-                            메뉴에 마우스를 오버하면 해당 메뉴의 서브메뉴를 찾아서 슬라이딩으로 보여줘라!를 제이쿼리로 짜면 다음과 같습니다. 
-                            메뉴 선택자 <code>$(".nav > ul > li")</code>를 만들고, 마우스 오버 효과 <code>이벤트(mouseenter)</code>를 설정합니다. 
-                            해당 메뉴의 자식을 찾기 위해 <code>$(this)</code>를 사용하고, <code>submenu</code> 클래스를 찾습니다. 
-                            그리고 서브 메뉴를 슬라이딩으로 살며시 보여주기 위해 <code>slideDown()</code>를 사용하면 완료가 됩니다. 
-                            마우스 아웃 역시 반대로 주시면 완성이 됩니다. 
-                            <code>stop()</code> 메서드는 애니메이션이 반복적을 일어나는 현상을 막아주기 위해 사용하였습니다. 
+                            라이브러리 소스를 연동하고, 제이쿼리 시작을 의미하는 <code>$(function(){})</code>를 설정했습니다. 
+                            각 메뉴에 마우스를 오버하면 두가지가 작동을 할 것입니다. 
+                            첫번째는 서브 메뉴가 서서히 나타납니다. 기존에는 슬라이드 방식을 사용했지만 이번에는 슬라이드 방식이 아닌 천천히 나타나는 방식입니다. 
+                            두번째는 메인 영역의 가상 요소 배경이 나타날 것입니다. 
+                            이제 이 한글로 된 설명을 제이쿼리라는 언어로 번역하면 됩니다. 
+                            그럼 다음과 같이 되겠죠^^ 
+                            서서히 없어지거나 나타나게 하려면 <code>fadeIn()</code>과 <code>fadeOut()</code>을 사용하면 됩니다. 
+                            애니메이션의 버그 현상을 없애려면 <code>stop()</code> 메서드를 추가하고,
+                            클래스를 추가하거나 삭제하려면 <code>addClass()</code>와 <code>removeClass()</code>를 사용하면 됩니다. 
                         </p>
 <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-    $(".nav &gt; ul &gt; li").mouseenter(function(){        
-        $(this).find(".submenu").stop().slideDown();  
-    });
-
-    $(".nav &gt; ul &gt; li").mouseleave(function(){
-        $(this).find(".submenu").stop().slideUp();
+    $(function(){
+        $(".nav &gt; ul &gt; li").mouseenter(function(){        
+            $(".nav &gt; ul &gt; li &gt; ul").stop().fadeIn();  
+            $("#main").addClass("on");  
+        });
+        $(".nav &gt; ul &gt; li").mouseleave(function(){
+            $(".nav &gt; ul &gt; li &gt; ul").stop().fadeOut();
+            $("#main").removeClass("on");  
+        });
     });
 &lt;/script&gt;
 </code></pre>
@@ -331,44 +384,44 @@ a {
                     <div>
                         <h3>3. 스크립트 작업 : 자바스크립트</h3>
                         <p data-num="04" data-title="자바스크립트 설정하기">
-                            자바스크립트 역시 메뉴 유형1과 동일합니다. 
-                            메뉴 항목을 변수로 설정하고, 항목의 갯수가 여러개 나오기 때문에 <code>forEach</code>를 사용하여, 
-                            각각의 항목에 마우스오버를 하게되면, 해당 항목의 <code>submenu</code>를 찾아서 높이 값을 설정합니다. 
-                            자바스크립트는 제이쿼리처럼 자동으로 애니메이션을 처리하는 메서드가 없기 때문에 
-                            높이값을 통해 애니메이션을 만들어 줄 것입니다. 
-                            높이값을 0에서 152px로 주면서 <code>transition</code> 효과를 주면 애니메이션화 됩니다. 
-                            마우스아웃 했을 때도 다시 높이 값을 0으로 설정해주면 슬라이딩 애니메이션이 완성됩니다. 
-                            대신 제이쿼리에서 설정하지 않았던 CSS를 따로 설정해주어야 합니다. 
-                            물론 이것도 자바스크립트로 설정이 가능하지만, 소스가 복잡해지기 때문에 CSS로 설정했습니다. 
+                            자바스크립트 기본 원리는 동일합니다. 
+                            서브메뉴는 애니메이션을 보여줄 필요가 없기 때문에 <code>display: block</code>과 <code>display: none</code>을 설정하면 됩니다. 
+                            마우스 오버했을 때 메인 영역에 클래스를 붙여주기 위해서 <code>.classList.add("on")</code>을 사용했습니다. 
+                            클래스 on이 붙으면, CSS에서 애니메이션 처리를 했기 때문에 스크립트는 특별하게 할 것이 없습니다. 
                         </p>
 <pre><code class="language-js">window.onload = function(){
-    var navList = document.querySelectorAll(".nav > ul > li");
+    let navList = document.querySelector(".nav > ul");
+    
+    navList.addEventListener("mouseover", function(){
+        navList.querySelectorAll(".submenu").forEach(sub => {
+            sub.style.display = "block";
+        });
+        document.getElementById("main").classList.add("on");
+    });
 
-    navList.forEach(function(navItem) {
-        navItem.addEventListener("mouseover", function() {
-            this.querySelector(".submenu").style.height = "152px";
+    navList.addEventListener("mouseout", function(){
+        navList.querySelectorAll(".submenu").forEach(sub => {
+            sub.style.display = "none";
         });
-        navItem.addEventListener("mouseout", function() {
-            this.querySelector(".submenu").style.height = "0px";
-        });
+        document.getElementById("main").classList.remove("on");
     });
 };
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > ul {
-    height: 0;
-    overflow: hidden;
-    transition: height 400ms;
-}
-</code></pre>
+                        
                     </div>
 
                     <div>
                         <h3>3. 마무리</h3>
                         <p>
-                            네번째 유형은 첫번째 유형과 동일하니 크게 외울 것은 없습니다. 
-                            단지 CSS 설정이 다르니 이점만 유의해서 코딩을 한다면 크게 어려울 것이 없을 것 같습니다. 
-                            자바스크립트로 작업했을 때에는 신경쓸 것이니 많으니 연습이 덜 된 분들은 제이쿼리를 추천합니다. 
-                            수고하셨습니다.🥸 
+                            처음 배우는 메뉴 유형의 스크립트가 끝났습니다. 
+                            어떤가요? 할만 한가요? 어렵나요? 
+                            지금은 어렵고 포기할 수 있지만, 여러분의 실력이 향상되고 다시 보면 아주 쉽다고 느낄 수 있습니다. 
+                            꾸준히 또 꾸준히 하면 자신도 모르게 실력이 향상된걸 느낄 수 있을거예요! 
+                            포기하지 말고 끝까지 한번 해보세요!
+                            다음 시간에는 스크립트의 하이라이트 이미지 슬라이드를 해보겠습니다. 
+                            웹디자인기능사에서 가장 어렵고 까다로운 부분입니다. 
+                            기대가 되지 않나요? 
+                            그럼 다음 시간에 뵐께요! 😁
                         </p>
                     </div>
 
