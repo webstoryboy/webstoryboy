@@ -4,105 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인 기능사 레이아웃 연습</title>
+    <title>웹디자인 기능사 팝업 P-1</title>
     <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
-        /* reset */
         * {
             margin: 0;
             padding: 0;
             font-family: 'GmarketSans';
         }
-        li {
-            list-style: none;
-        }
         a {
             text-decoration: none;
             color: #000;
         }
-        h1 {
-            font-size: 16px;
-            font-weight: normal;
-        }
-        i {
-            width: 100%;
-            display: block;
-            font-style: normal;
-            padding: 10px;
-            text-decoration: underline;
-            text-underline-position: under;
-        }
-        /* layout */
-        .container {
+        #wrap {
             width: 1200px;
             margin: 0 auto;
         }
-        #wrap {
-            position: relative;
-        }
         #header {
             width: 100%;
-            height: 100px;
             display: flex;
         }
-        #header h1 {
-            width: 30%;
+        #header .logo {
+            width: 20%;
+            height: 100px;
             background-color: #efefef;
         }
-        #header nav {
-            width: 70%;
-            background-color: #e5e5e5;
+        #header .nav {
+            width: 80%;
+            height: 100px;
+            background-color: #e3e3e3;
         }
         #slider {
             width: 100%;
             height: 300px;
-            overflow: hidden;
-            background-color: #dddddd;
+            background-color: #d9d9d9;
         }
         #contents {
             width: 100%;
-            height: 200px;
-            background-color: #d6d6d6;
             display: flex;
         }
-        .content1 {
+        #contents .content1 {
             width: 33.3333%;
-            background-color: #cacaca;
+            height: 200px;
+            background-color: #d1d1d1;
         }
-        .content2 {
+        #contents .content2 {
             width: 33.3333%;
-            background-color: #c0c0c0;
+            height: 200px;
+            background-color: #c7c7c7;
         }
-        .content3 {
+        #contents .content3 {
             width: 33.3333%;
-            background-color: #b5b5b5;
+            height: 200px;
+            background-color: #bcbcbc;
         }
         #footer {
             width: 100%;
-            height: 100px;
             display: flex;
-            background-color: #a4a4a4;
         }
-        .footer1 {
+        #footer .footer1 {
             width: 20%;
-            background-color: #9b9b9b;
+            height: 100px;
+            background-color: #b1b1b1;
         }
-        .footer2 {
+        #footer .footer2 {
             width: 60%;
-            background-color: #8d8d8d;
+            height: 100px;
+            background-color: #a3a3a3;
         }
-        .footer3 {
+        #footer .footer3 {
             width: 20%;
-            background-color: #808080;
+            height: 100px;
+            background-color: #9d9d9d;
+        }
+        /* popup */
+        #wrap {
+            position: relative;
         }
         .content3 {
             display: flex;
-            align-items: center;    
+            align-items: center;
             justify-content: center;
         }
-        .content3 a {
-            padding: 10px 20px;
-            background-color: #fff;
+        .popup-btn {
+            background-color: rgba(255,255,255,0.4);
+            padding: 10px;
         }
         .popup-view {
             position: absolute;
@@ -113,6 +99,7 @@
             height: 400px;
             background-color: #a2a2a2;
             display: none;
+            border: 4px solid green;
         }
         .popup-view a {
             display: inline-block;
@@ -122,24 +109,24 @@
     </style>
 </head>
 <body>
-    <div id="wrap" class="container">
+    <div id="wrap">
         <header id="header">
-            <h1></h1>
-            <nav></nav>
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
         </header>
         <!-- //header -->
 
-        <section id="slider">   
-        </section>
+        <article id="slider">
+        </article>
         <!-- //slider -->
 
-        <section id="contents">
-            <div class="content1"></div>
-            <div class="content2"></div>
-            <div class="content3">
+        <main id="contents">
+            <section class="content1"></section>
+            <section class="content2"></section>
+            <section class="content3">
                 <a href="#" class="popup-btn">팝업</a>
-            </div>
-        </section>
+            </section>
+        </main>
         <!-- //contents -->
 
         <footer id="footer">
@@ -154,6 +141,7 @@
             <a href="#" class="popup-close">닫기</a>
         </div>
     </div>
+    <!-- //wrap -->
 
     
 
@@ -168,7 +156,7 @@
         //     });
         // });
 
-        document.addEventListener("DOMContentLoaded", function() {
+        window.onload = function(){
             document.querySelector(".popup-btn").addEventListener("click", function(e){
                 e.preventDefault();
                 document.querySelector(".popup-view").style.display = "block";
@@ -177,7 +165,7 @@
                 e.preventDefault();
                 document.querySelector(".popup-view").style.display = "none";
             });
-        })
+        };
         
     </script>
 </body>

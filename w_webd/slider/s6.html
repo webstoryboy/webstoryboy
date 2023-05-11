@@ -172,49 +172,46 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        $(function() {
-            let currentIndex = 0;
-            const $sliderWrap = $(".sliderWrap");
-            const $slider = $(".slider");
-            const $sliderHeight = $slider.height();
-
-            $sliderWrap.append($slider.first().clone(true));
-
-            setInterval(() => {
-                currentIndex++;
-                $sliderWrap.animate({ marginTop: -100 * currentIndex + "vh" }, 600);
-
-                if (currentIndex === $slider.length) {
-                    setTimeout(() => {
-                        $sliderWrap.animate({ marginTop: 0 }, 0);
-                        currentIndex = 0;
-                    }, 700);
-                }
-            }, 5000);
-        });
-
-        // window.onload = function(){
+        // $(function() {
         //     let currentIndex = 0;
-        //     const sliderWrap = document.querySelector(".sliderWrap");
-        //     const slider = sliderWrap.querySelectorAll(".slider");
-        //     const sliderHeight = slider[0].offsetHeight;
-        //     const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
-        //     sliderWrap.appendChild(sliderClone);
+        //     const $sliderWrap = $(".sliderWrap");
+        //     const $slider = $(".slider");
+        //     $sliderWrap.append($slider.first().clone(true));
 
         //     setInterval(() => {
         //         currentIndex++;
-        //         sliderWrap.style.transition = "all 0.6s";
-        //         sliderWrap.style.transform = `translateY(-${currentIndex * sliderHeight}px)`;
+        //         $sliderWrap.animate({ marginTop: -100 * currentIndex + "vh" }, 600);
 
-        //         if (currentIndex == slider.length) {
+        //         if (currentIndex === $slider.length) {
         //             setTimeout(() => {
-        //                 sliderWrap.style.transition = "0s";
-        //                 sliderWrap.style.transform = "translateY(0)";
+        //                 $sliderWrap.animate({ marginTop: 0 }, 0);
         //                 currentIndex = 0;
         //             }, 700);
         //         }
-        //     }, 2000);
-        // };
+        //     }, 3000);
+        // });
+
+        window.onload = function(){
+            let currentIndex = 0;
+            const sliderWrap = document.querySelector(".sliderWrap");
+            const slider = sliderWrap.querySelectorAll(".slider");
+            const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
+            sliderWrap.appendChild(sliderClone);
+
+            setInterval(() => {
+                currentIndex++;
+                sliderWrap.style.transition = "all 0.6s";
+                sliderWrap.style.transform = `translateY(-${currentIndex * 100}vh)`;
+
+                if (currentIndex == slider.length) {
+                    setTimeout(() => {
+                        sliderWrap.style.transition = "0s";
+                        sliderWrap.style.transform = "translateY(0)";
+                        currentIndex = 0;
+                    }, 700);
+                }
+            }, 2000);
+        };
     </script>
 </body>
 </html>
