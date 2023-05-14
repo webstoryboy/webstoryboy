@@ -82,7 +82,7 @@
             <div class="blog__inner container">
                 <div id="youtube" class="blog__contents__intro">
                     <div class="video nonex resizable draggable sampleBtn3">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="#" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="desc">
                         <div class="left">
@@ -283,24 +283,25 @@ a {
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-<pre><code class="language-css">.nav > ul > li {
+<pre><code class="language-css">/* nav */
+.nav > ul > li {
     position: relative;
 }
 .nav > ul > li > a {
     padding: 10px;
     display: block;
-    background-color: #ccc;
     text-align: center;
+    background-color: #ccc;
 }
 .nav > ul > li > a:hover {
-    background-color: #bdbdbd;
+    background-color: #dbdbdb;
 }
 .nav > ul > li > ul {
     position: absolute;
     right: -200px;
     top: 0;
-    background: #6d6d6d;
     width: 200px;
+    background-color: #6d6d6d;
     display: none;
 }
 .nav > ul > li > ul > li > a {
@@ -327,11 +328,10 @@ a {
                         </p>
 <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-    $(".nav &gt; ul &gt; li").mouseenter(function(){        
-        $(this).find(".submenu").stop().slideDown();  
+    $(".nav > ul > li").mouseover(function(){
+        $(this).find(".submenu").stop().slideDown();
     });
-
-    $(".nav &gt; ul &gt; li").mouseleave(function(){
+    $(".nav > ul > li").mouseout(function(){
         $(this).find(".submenu").stop().slideUp();
     });
 &lt;/script&gt;
@@ -358,7 +358,7 @@ a {
 
     navList.forEach(function(navItem) {
         navItem.addEventListener("mouseover", function() {
-            this.querySelector(".submenu").style.height = "152px";
+            this.querySelector(".submenu").style.height = "155px";
         });
         navItem.addEventListener("mouseout", function() {
             this.querySelector(".submenu").style.height = "0px";

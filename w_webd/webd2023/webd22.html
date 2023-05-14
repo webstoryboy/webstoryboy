@@ -82,7 +82,7 @@
             <div class="blog__inner container">
                 <div id="youtube" class="blog__contents__intro">
                     <div class="video nonex resizable draggable sampleBtn3">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="#" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="desc">
                         <div class="left">
@@ -272,42 +272,47 @@ a {
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-<pre><code class="language-css">.nav {
-    padding: 30px 40px;
-}
-.nav &gt; ul {
-    text-align: right;
+<pre><code class="language-css">/* nav */
+.nav > ul {
     display: flex;
     justify-content: right;
-    height: 40px;
+    margin-top: 30px;
 }
-.nav &gt; ul &gt; li {
+.nav > ul > li {
     position: relative;
 }
-.nav &gt; ul &gt; li &gt; a {
-    display: block;
-    padding: 10px 40px;
-    background-color: #c0c0c0;
+.nav > ul > li > a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #b0b0b0;
 }
-.nav &gt; ul &gt; li &gt; a:hover {
-    background-color: #9d9d9d;
+.nav > ul > li > a:hover {
+    background-color: #696969;
 }
-.nav &gt; ul &gt; li &gt; ul {
+.nav > ul > li > ul {
     position: absolute;
+    left: 0; 
     top: 38px;
-    left: 0;
-    background-color: #ccc;
     width: 100%;
-    box-sizing: border-box;
+    text-align: center;
     display: none;
 }
-.nav &gt; ul &gt; li &gt; ul &gt; li &gt; a {
-    display: flex;
-    background-color: #808080;
+.nav > ul > li > ul > li > a {
+    display: inline-block;
     padding: 10px;
+    background-color: #c1c1c1;
+    width: 100%;
+    box-sizing: border-box;
 }
-.nav &gt; ul &gt; li &gt; ul &gt; li &gt; a:hover {
-    background-color: #909090;
+.nav > ul > li > ul > li > a:hover {
+    background-color: #8f8f8f;
+}
+/* 자바스크립트 CSS */
+.nav > ul > li > ul {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    transition: all 600ms;
 }</code></pre>
                     </div>
 
@@ -337,11 +342,11 @@ a {
                             여기서 마무리 하셔도 되구요! 자바스크립트를 도전하셔도 됩니다. 
                         </p>
 <pre><code class="language-js">$(function(){
-    $(".nav > ul > li").mouseenter(function(){        
+    $(".nav > ul > li").mouseover(function(){        
         $(".nav > ul > li > ul").stop().slideDown(200);    
     });
 
-    $(".nav > ul > li").mouseleave(function(){
+    $(".nav > ul > li").mouseout(function(){
         $(".nav > ul > li > ul").stop().slideUp(200);
     });
 })</code></pre>
@@ -360,24 +365,25 @@ a {
                         </p>
 <pre><code class="language-js">window.onload = function(){
     let navList = document.querySelector(".nav > ul");
-    
+
     navList.addEventListener("mouseover", function(){
         navList.querySelectorAll(".submenu").forEach(sub => {
-            sub.style.height = "152px";
-        })
+            sub.style.height = "155px";
+        });
     });
-
     navList.addEventListener("mouseout", function(){
         navList.querySelectorAll(".submenu").forEach(sub => {
             sub.style.height = "0px";
-        })
+        });
     });
-};
+}
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > ul {
+<pre><code class="language-css">/* 자바스크립트 CSS */
+.nav > ul > li > ul {
+    display: block;
     height: 0;
     overflow: hidden;
-    transition: height 600ms;
+    transition: all 600ms;
 }
 </code></pre>
                     </div>

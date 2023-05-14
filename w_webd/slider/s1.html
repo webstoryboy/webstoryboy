@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인기능사 슬라이드 S-1</title>
+    <title>웹디자인기능사 메뉴 S-1</title>
     <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
         * {
@@ -73,32 +73,37 @@
             height: 100px;
             background-color: #9d9d9d;
         }
-
         /* slider */
         .sliderWrap {
             position: relative;
         }
-        /* .sliderWrap > div {
+        .sliderWrap > div {
             display: none;
         }
         .sliderWrap > div:first-child {
             display: block;
-        } */
-        .slider {
+        }
+        .sliderWrap .slider {
             position: absolute;
             left: 0;
             top: 0;
         }
-        .slider img {
+        .sliderWrap .slider img {
             vertical-align: top;
         }
-        .slider span {
+        .sliderWrap .slider span {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(255,255,255,0.4);
+            background-color: rgba(0,0,0,0.4);
             padding: 10px 20px;
+            color: #fff;
+        }
+
+        /* 자바스크립트용 CSS */
+        .sliderWrap > div {
+            display: block;
         }
     </style>
 </head>
@@ -113,15 +118,15 @@
         <article id="slider">
             <div class="sliderWrap">
                 <div class="slider s1">
-                    <img src="slider01.jpg" alt="이미지 설명">
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider01.jpg" alt="이미지 설명">
                     <span>이미지1</span>
                 </div>
                 <div class="slider s2">
-                    <img src="slider02.jpg" alt="이미지 설명">
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg" alt="이미지 설명">
                     <span>이미지2</span>
                 </div>
                 <div class="slider s3">
-                    <img src="slider03.jpg" alt="이미지 설명">
+                    <img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider03.jpg" alt="이미지 설명">
                     <span>이미지3</span>
                 </div>
             </div>
@@ -145,38 +150,38 @@
     <!-- //wrap -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>
-        // $(function() {
-        //     let currentIndex = 0;
-        //     const $slider = $('.slider');
-        //     $slider.hide().first().show();
-
-        //     setInterval(() => {
-        //         let nextIndex = (currentIndex + 1) % $slider.length;
+    <!-- <script>
+        $(function(){
+            let currentIndex = 0;   //현재 이미지
             
-        //         $slider.eq(currentIndex).fadeOut(1200);
-        //         $slider.eq(nextIndex).fadeIn(1200);
+            setInterval(function(){     //3초에 한번씩 실행
+                let nextIndex = (currentIndex + 1) % 3; // 1 2 0 1 2 무한반복
 
-        //         currentIndex = nextIndex;
-        //     }, 3000);
-        // });
+                $(".slider").eq(currentIndex).fadeOut(1200);    //첫번째 이미지 사라짐
+                $(".slider").eq(nextIndex).fadeIn(1200);        //두번째 이미지 나타남
 
-        window.onload = function(){
-            let currentIndex = 0;
-            const slider = document.querySelectorAll(".slider");
-            slider.forEach(el => el.style.opacity = "0");
-            slider[0].style.opacity = "1";
-
-            setInterval(() => {
-                let nextIndex = (currentIndex + 1) % slider.length;
-                
-                slider[currentIndex].style.opacity = "0";
-                slider[nextIndex].style.opacity = "1";
-                slider.forEach(el => el.style.transition = "all 1s");
-
-                currentIndex = nextIndex;
+                currentIndex = nextIndex;  //두번째 인덱값을 현재 인덱값에 저장
             }, 3000);
-        };
+        });
+    </script> -->
+
+    <script>
+        window.onload = function(){
+            let currentIndex = 0;   //현재 이미지
+            const slider = document.querySelectorAll(".slider");    //모든 이미지를 변수에 저장
+            slider.forEach(img => img.style.opacity ="0");  //모든 이미지를 투명하게
+            slider[0].style.opacity = "1";  //첫번째 이미지만 보이게
+
+            setInterval(() => { //3초에 한번씩 실행
+                let nextIndex = (currentIndex + 1) % slider.length; // 1 2 0 1 2 무한반복
+
+                slider[currentIndex].style.opacity = "0";   //첫번째 이미지 사라짐
+                slider[nextIndex].style.opacity = "1";      //두번째 이미지 나타남
+                slider.forEach(img => img.style.transition = "all 1s"); //이미지 애니메이션 추가
+
+                currentIndex = nextIndex; //두번째 인덱값을 현재 인덱값에 저장
+            }, 3000);
+        }
     </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,26 +93,31 @@
         }
         /* nav */
         .nav > ul > li > a {
-            padding: 10px;
             display: block;
+            padding: 10px;
             background-color: #ccc;
             text-align: center;
         }
         .nav > ul > li > a:hover {
-            background-color: #bdbdbd;
+            background-color: #9c9c9c;
         }
         .nav > ul > li > ul {
-            height: 0;
-            overflow: hidden;
-            transition: height 400ms;
+            display: none;
         }
         .nav > ul > li > ul > li > a {
-            padding: 10px;
             display: block;
+            padding: 10px;
             text-align: center;
         }
         .nav > ul > li > ul > li > a:hover {
-            background-color: #c0c0c0;                                                                                                                                                                                                                                                                                                         
+            background-color: #c0c0c0;
+        }
+        /* 자바스크립트용 CSS */
+        .nav > ul > li > ul {
+            display: block;
+            height: 0;
+            overflow: hidden;
+            transition: all 400ms;
         }
     </style>
 </head>
@@ -183,31 +188,34 @@
         </footer>
         <!-- //footer -->
     </div>
-    <!-- //wrap --> 
+    <!-- //wrap -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $(".nav > ul > li").mouseover(function(){
+                $(this).find(".submenu").stop().slideDown();
+            });
+            $(".nav > ul > li").mouseout(function(){
+                $(this).find(".submenu").stop().slideUp();
+            });
+        })
+    </script> -->
     <script>
-        // $(function(){
-        //     $(".nav > ul > li").mouseenter(function(){        
-        //         $(this).find(".submenu").stop().slideDown();  
-        //     });
-        //     $(".nav > ul > li").mouseleave(function(){
-        //         $(this).find(".submenu").stop().slideUp();
-        //     });
-        // });
-
         window.onload = function(){
-            var navList = document.querySelectorAll(".nav > ul > li");
+            let navList = document.querySelectorAll(".nav > ul > li");
 
-            navList.forEach(function(navItem) {
+            navList.forEach(navItem => {
                 navItem.addEventListener("mouseover", function() {
-                    this.querySelector(".submenu").style.height = "152px";
+                    this.querySelector(".submenu").style.height = "155px";
                 });
+            });
+            navList.forEach(navItem => {
                 navItem.addEventListener("mouseout", function() {
                     this.querySelector(".submenu").style.height = "0px";
                 });
             });
-        };
+        }
     </script>
 </body>
 </html>

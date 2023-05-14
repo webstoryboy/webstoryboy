@@ -284,22 +284,26 @@ a {
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > a {
-    padding: 10px;
+<pre><code class="language-css">/* nav */
+.nav > ul > li > a {
     display: block;
+    padding: 10px;
     background-color: #ccc;
     text-align: center;
 }
 .nav > ul > li > a:hover {
-    background-color: #bdbdbd;
+    background-color: #9c9c9c;
+}
+.nav > ul > li > ul {
+    display: none;
 }
 .nav > ul > li > ul > li > a {
-    padding: 10px;
     display: block;
+    padding: 10px;
     text-align: center;
 }
 .nav > ul > li > ul > li > a:hover {
-    background-color: #c0c0c0;                                                                                                                                                                                                                                                                                                         
+    background-color: #c0c0c0;
 }</code></pre>
                     </div>
 
@@ -317,11 +321,11 @@ a {
                         </p>
 <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-    $(".nav &gt; ul &gt; li").mouseenter(function(){        
+    $(".nav &gt; ul &gt; li").mouseover(function(){        
         $(this).find(".submenu").stop().slideDown();  
     });
 
-    $(".nav &gt; ul &gt; li").mouseleave(function(){
+    $(".nav &gt; ul &gt; li").mouseout(function(){
         $(this).find(".submenu").stop().slideUp();
     });
 &lt;/script&gt;
@@ -346,7 +350,7 @@ a {
 
     navList.forEach(function(navItem) {
         navItem.addEventListener("mouseover", function() {
-            this.querySelector(".submenu").style.height = "152px";
+            this.querySelector(".submenu").style.height = "155px";
         });
         navItem.addEventListener("mouseout", function() {
             this.querySelector(".submenu").style.height = "0px";
@@ -354,11 +358,13 @@ a {
     });
 };
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > ul {
-    height: 0;
-    overflow: hidden;
-    transition: height 400ms;
-}
+<pre><code class="language-css">/* 자바스크립트용 CSS */
+    .nav > ul > li > ul {
+        display: block;
+        height: 0;
+        overflow: hidden;
+        transition: all 400ms;
+    }
 </code></pre>
                     </div>
 

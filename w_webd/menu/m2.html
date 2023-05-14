@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,141 +80,144 @@
             background-color: #9d9d9d;
         }
         /* nav */
-        .nav {
-            padding: 30px 40px;
-        }
         .nav > ul {
-            text-align: right;
             display: flex;
             justify-content: right;
-            height: 40px;
+            margin-top: 30px;
         }
         .nav > ul > li {
             position: relative;
         }
         .nav > ul > li > a {
-            display: block;
-            padding: 10px 40px;
-            background-color: #c0c0c0;
+            display: inline-block;
+            padding: 10px 50px;
+            background-color: #b0b0b0;
         }
         .nav > ul > li > a:hover {
-            background-color: #9d9d9d;
+            background-color: #696969;
         }
         .nav > ul > li > ul {
             position: absolute;
+            left: 0; 
             top: 38px;
-            left: 0;
-            background-color: #ccc;
             width: 100%;
-            box-sizing: border-box;
-            height: 0;
-            overflow: hidden;
-            transition: height 600ms;
+            text-align: center;
+            display: none;
         }
         .nav > ul > li > ul > li > a {
-            display: flex;
-            background-color: #808080;
+            display: inline-block;
             padding: 10px;
+            background-color: #c1c1c1;
+            width: 100%;
+            box-sizing: border-box;
         }
         .nav > ul > li > ul > li > a:hover {
-            background-color: #909090;
+            background-color: #8f8f8f;
+        }
+        /* 자바스크립트 CSS */
+        .nav > ul > li > ul {
+            display: block;
+            height: 0;
+            overflow: hidden;
+            transition: all 600ms;
         }
     </style>
 </head>
 <body>
-    <div id="wrap">
-        <div id="header">
-            <div class="logo"></div>
-            <nav class="nav">
-                <ul>
-                    <li>
-                        <a href="#">메뉴1</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴1-1</a></li>
-                            <li><a href="#">서브메뉴1-2</a></li>
-                            <li><a href="#">서브메뉴1-3</a></li>
-                            <li><a href="#">서브메뉴1-4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">메뉴2</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴2-1</a></li>
-                            <li><a href="#">서브메뉴2-2</a></li>
-                            <li><a href="#">서브메뉴2-3</a></li>
-                            <li><a href="#">서브메뉴2-4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">메뉴3</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴3-1</a></li>
-                            <li><a href="#">서브메뉴3-2</a></li>
-                            <li><a href="#">서브메뉴3-3</a></li>
-                            <li><a href="#">서브메뉴3-4</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">메뉴4</a>
-                        <ul class="submenu">
-                            <li><a href="#">서브메뉴4-1</a></li>
-                            <li><a href="#">서브메뉴4-2</a></li>
-                            <li><a href="#">서브메뉴4-3</a></li>
-                            <li><a href="#">서브메뉴4-4</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
+    <body>
+        <div id="wrap">
+            <div id="header">
+                <div class="logo"></div>
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">메뉴1</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴1-1</a></li>
+                                <li><a href="#">서브메뉴1-2</a></li>
+                                <li><a href="#">서브메뉴1-3</a></li>
+                                <li><a href="#">서브메뉴1-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴2</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴2-1</a></li>
+                                <li><a href="#">서브메뉴2-2</a></li>
+                                <li><a href="#">서브메뉴2-3</a></li>
+                                <li><a href="#">서브메뉴2-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴3</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴3-1</a></li>
+                                <li><a href="#">서브메뉴3-2</a></li>
+                                <li><a href="#">서브메뉴3-3</a></li>
+                                <li><a href="#">서브메뉴3-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">메뉴4</a>
+                            <ul class="submenu">
+                                <li><a href="#">서브메뉴4-1</a></li>
+                                <li><a href="#">서브메뉴4-2</a></li>
+                                <li><a href="#">서브메뉴4-3</a></li>
+                                <li><a href="#">서브메뉴4-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- //header -->
+    
+            <div id="slider">
+            </div>
+            <!-- //slider -->
+    
+            <div id="contents">
+                <div class="content1"></div>
+                <div class="content2"></div>
+                <div class="content3"></div>
+            </div>
+            <!-- //contents -->
+    
+            <div id="footer">
+                <div class="footer1"></div>
+                <div class="footer2"></div>
+                <div class="footer3"></div>
+            </div>
+            <!-- //footer -->
         </div>
-        <!-- //header -->
-
-        <div id="slider">
-        </div>
-        <!-- //slider -->
-
-        <div id="contents">
-            <div class="content1"></div>
-            <div class="content2"></div>
-            <div class="content3"></div>
-        </div>
-        <!-- //contents -->
-
-        <div id="footer">
-            <div class="footer1"></div>
-            <div class="footer2"></div>
-            <div class="footer3"></div>
-        </div>
-        <!-- //footer -->
-    </div>
-    <!-- //wrap -->
+        <!-- //wrap -->
+    </body>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script>
+        $(function(){
+            $(".nav > ul > li").mouseover(function(){
+                $(".nav > ul > li > ul").stop().slideDown();
+            });
+            $(".nav > ul > li").mouseout(function(){
+                $(".nav > ul > li > ul").stop().slideUp();
+            });
+        });
+    </script> -->
     <script>
-        // $(function(){
-        //     $(".nav > ul > li").mouseenter(function(){        
-        //         $(".nav > ul > li > ul").stop().slideDown(200);    
-        //     });
-
-        //     $(".nav > ul > li").mouseleave(function(){
-        //         $(".nav > ul > li > ul").stop().slideUp(200);
-        //     });
-        // });
-
         window.onload = function(){
             let navList = document.querySelector(".nav > ul");
-            
+
             navList.addEventListener("mouseover", function(){
                 navList.querySelectorAll(".submenu").forEach(sub => {
-                    sub.style.height = "152px";
-                })
+                    sub.style.height = "155px";
+                });
             });
-
             navList.addEventListener("mouseout", function(){
                 navList.querySelectorAll(".submenu").forEach(sub => {
                     sub.style.height = "0px";
-                })
+                });
             });
-        };
+        }
     </script>
 </body>
 </html>

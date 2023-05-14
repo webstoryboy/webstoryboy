@@ -261,7 +261,6 @@ a {
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-1&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-2&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴2-4&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li&gt;
@@ -269,8 +268,6 @@ a {
             &lt;ul class="submenu"&gt;
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-1&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-2&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴3-4&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
         &lt;li&gt;
@@ -279,7 +276,12 @@ a {
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-1&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-2&lt;/a&gt;&lt;/li&gt;
                 &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-3&lt;/a&gt;&lt;/li&gt;
-                &lt;li&gt;&lt;a href="#"&gt;서브메뉴4-4&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;
+            &lt;a href="#"&gt;메뉴5&lt;/a&gt;
+            &lt;ul class="submenu"&gt;
+                &lt;li&gt;&lt;a href="#"&gt;서브메뉴5-1&lt;/a&gt;&lt;/li&gt;
             &lt;/ul&gt;
         &lt;/li&gt;
     &lt;/ul&gt;
@@ -291,64 +293,57 @@ a {
                             나중에 스크립트로 클래스 <code>on</code>이 붙으면 <code>width: 100%;</code>가 설정되어 있기 때문에 배경이 활성화 될 것입니다.
                             서브 메뉴들의 위치는 <code>nth-child()</code>를 이용하면, 자식들을 선택적으로 선택할 수 있습니다. 
                         </p>
-<pre><code class="language-css">#main {
+<pre><code class="language-css">/* nav */
+.nav {
     position: relative;
+    z-index: 1000;
 }
-#main::after {
-    content: '';
-    width: 0%;
-    height: 200px;
-    background-color: #929292;
-    position: absolute;
-    left: 0px;
-    top: 100px;
-    z-index: 1;
-    transition: all 0.3s;
-}
-#main.on::after {
-    width: 100%;
-}
-.nav > ul {
+.nav > ul > li {
     position: relative;
 }
 .nav > ul > li > a {
     padding: 10px;
     display: block;
-    background-color: #c0c0c0;
+    text-align: center;
+    background-color: #ccc;
 }
 .nav > ul > li > a:hover {
-    background-color: #b4b4b4;
-} 
+    background-color: #aeaeae;
+}
 .nav > ul > li > ul {
     position: absolute;
-    right: -200px;
+    right: -500px;
     top: 0;
-    /* background-color: #929292; */
-    width: 150px;
-    z-index: 100;
+    width: 500px;
     display: none;
 }
-.nav > ul > li:nth-child(1) ul {
-    right: -150px;
-}
-.nav > ul > li:nth-child(2) ul {
-    right: -300px;
-}
-.nav > ul > li:nth-child(3) ul {
-    right: -450px;
-}
-.nav > ul > li:nth-child(4) ul {
-    right: -600px;
-}
-.nav > ul > li:nth-child(5) ul {
-    right: -750px;
+.nav > ul > li > ul > li {
+    display: inline;
 }
 .nav > ul > li > ul > li > a {
     padding: 10px;
-    display: block;
+    display: inline-block;
+    width: 100px;
 }
 .nav > ul > li > ul > li > a:hover {
-    background-color: #c0c0c0;
+    background-color: #a2a2a2;
+}
+#main {
+    position: relative;
+}
+#main::after {
+    content: '';
+    width: 0%;
+    height: 193px;
+    background-color: #b0b0b0;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    z-index: 1;
+    transition: all 300ms;
+}
+#main.on::after {
+    width: 100%;
 }</code></pre>
                     </div>
 
@@ -368,11 +363,11 @@ a {
 <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
     $(function(){
-        $(".nav &gt; ul &gt; li").mouseenter(function(){        
+        $(".nav &gt; ul &gt; li").mouseover(function(){        
             $(".nav &gt; ul &gt; li &gt; ul").stop().fadeIn();  
             $("#main").addClass("on");  
         });
-        $(".nav &gt; ul &gt; li").mouseleave(function(){
+        $(".nav &gt; ul &gt; li").mouseout(function(){
             $(".nav &gt; ul &gt; li &gt; ul").stop().fadeOut();
             $("#main").removeClass("on");  
         });
@@ -391,21 +386,20 @@ a {
                         </p>
 <pre><code class="language-js">window.onload = function(){
     let navList = document.querySelector(".nav > ul");
-    
+
     navList.addEventListener("mouseover", function(){
         navList.querySelectorAll(".submenu").forEach(sub => {
             sub.style.display = "block";
         });
         document.getElementById("main").classList.add("on");
     });
-
     navList.addEventListener("mouseout", function(){
         navList.querySelectorAll(".submenu").forEach(sub => {
             sub.style.display = "none";
         });
         document.getElementById("main").classList.remove("on");
     });
-};
+}
 </code></pre>
                         
                     </div>

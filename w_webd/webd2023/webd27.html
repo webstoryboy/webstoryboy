@@ -82,7 +82,7 @@
             <div class="blog__inner container">
                 <div id="youtube" class="blog__contents__intro">
                     <div class="video nonex resizable draggable sampleBtn3">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="#" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="desc">
                         <div class="left">
@@ -240,15 +240,15 @@
 <pre><code class="language-html">&lt;article id="slider"&gt;
     &lt;div class="sliderWrap"&gt;
         &lt;div class="slider s1"&gt;
-            &lt;img src="slider01.jpg" alt="이미지 설명"&gt;
+            &lt;img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider01.jpg" alt="이미지 설명"&gt;
             &lt;span&gt;이미지1&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class="slider s2"&gt;
-            &lt;img src="slider02.jpg" alt="이미지 설명"&gt;
+            &lt;img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider02.jpg" alt="이미지 설명"&gt;
             &lt;span&gt;이미지2&lt;/span&gt;
         &lt;/div&gt;
         &lt;div class="slider s3"&gt;
-            &lt;img src="slider03.jpg" alt="이미지 설명"&gt;
+            &lt;img src="https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider03.jpg" alt="이미지 설명"&gt;
             &lt;span&gt;이미지3&lt;/span&gt;
         &lt;/div&gt;
     &lt;/div&gt;
@@ -266,7 +266,8 @@
                             이렇게 하면 기본 셋팅은 끝났습니다. 
                             이제 스크립트를 들어가보겠습니다.
                         </p>
-<pre><code class="language-css">.sliderWrap {
+<pre><code class="language-css">/* slider */
+.sliderWrap {
     position: relative;
 }
 .sliderWrap > div {
@@ -274,22 +275,23 @@
 }
 .sliderWrap > div:first-child {
     display: block;
-} 
-.slider {
+}
+.sliderWrap .slider {
     position: absolute;
     left: 0;
     top: 0;
 }
-.slider img {
+.sliderWrap .slider img {
     vertical-align: top;
 }
-.slider span {
+.sliderWrap .slider span {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(0,0,0,0.4);
     padding: 10px 20px;
+    color: #fff;
 }</code></pre>
                     </div>
 
@@ -330,18 +332,16 @@
                         </p>
 <pre><code class="language-html">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"&gt;&lt;/script&gt;
 &lt;script&gt;
-    $(function() {
-        let currentIndex = 0;
-        const $slider = $('.slider');
-        $slider.hide().first().show();
-
-        setInterval(() =&gt; {
-            let nextIndex = (currentIndex + 1) % $slider.length;
+    $(function(){
+        let currentIndex = 0;   //현재 이미지
         
-            $slider.eq(currentIndex).fadeOut(1200);
-            $slider.eq(nextIndex).fadeIn(1200);
+        setInterval(function(){     //3초에 한번씩 실행
+            let nextIndex = (currentIndex + 1) % 3; // 1 2 0 1 2 무한반복
 
-            currentIndex = nextIndex;
+            $(".slider").eq(currentIndex).fadeOut(1200);    //첫번째 이미지 사라짐
+            $(".slider").eq(nextIndex).fadeIn(1200);        //두번째 이미지 나타남
+
+            currentIndex = nextIndex;  //두번째 인덱값을 현재 인덱값에 저장
         }, 3000);
     });
 &lt;/script&gt;
@@ -374,21 +374,26 @@
                             현재 이미지값은 1씩 증가하게 됩니다. 
                         </p>
 <pre><code class="language-js">window.onload = function(){
-    let currentIndex = 0;
-    const slider = document.querySelectorAll(".slider");
-    slider.forEach(el => el.style.opacity = "0");
-    slider[0].style.opacity = "1";
+    let currentIndex = 0;   //현재 이미지
+    const slider = document.querySelectorAll(".slider");    //모든 이미지를 변수에 저장
+    slider.forEach(img => img.style.opacity ="0");  //모든 이미지를 투명하게
+    slider[0].style.opacity = "1";  //첫번째 이미지만 보이게
 
-    setInterval(() => {
-        let nextIndex = (currentIndex + 1) % slider.length;
-        
-        slider[currentIndex].style.opacity = "0";
-        slider[nextIndex].style.opacity = "1";
-        slider.forEach(el => el.style.transition = "all 1s");
+    setInterval(() => { //3초에 한번씩 실행
+        let nextIndex = (currentIndex + 1) % slider.length; // 1 2 0 1 2 무한반복
 
-        currentIndex = nextIndex;
+        slider[currentIndex].style.opacity = "0";   //첫번째 이미지 사라짐
+        slider[nextIndex].style.opacity = "1";      //두번째 이미지 나타남
+        slider.forEach(img => img.style.transition = "all 1s"); //이미지 애니메이션 추가
+
+        currentIndex = nextIndex; //두번째 인덱값을 현재 인덱값에 저장
     }, 3000);
-};
+}
+</code></pre>
+<pre><code class="language-css">/* 자바스크립트용 CSS */
+.sliderWrap > div {
+    display: block;
+}
 </code></pre>
                         
                     </div>

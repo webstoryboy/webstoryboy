@@ -82,7 +82,7 @@
             <div class="blog__inner container">
                 <div id="youtube" class="blog__contents__intro">
                     <div class="video nonex resizable draggable sampleBtn3">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="#" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="desc">
                         <div class="left">
@@ -272,60 +272,59 @@ a {
                             메뉴에 마우스 오버를 하면 서브 메뉴도 나오고 가상 요소 전체 배경도 나오게 작업할 것입니다. 
                             스크립트를 작업하기 전에 CSS를 완벽하게 하고 넘어가야 합니다.  
                         </p>
-<pre><code class="language-css">#header {
+<pre><code class="language-css">/* nav */
+#header {
     position: relative;
 }
 #header::after {
     content: '';
     width: 100%;
-    height: 0;
-    position: absolute;
-    left: 0; 
-    top: 100px;
+    height: 0px;
     background-color: #808080;
-    transition: all 0.4s;
+    position: absolute;
+    left: 0;
+    top: 100px;
     z-index: 1;
+    transition: all 400ms;
 }
 #header.on::after {
-    height: 180px;
+    height: 155px;
 }
 .nav {
-    padding: 0 0 0 40px;
-    position: relative;
-    z-index: 10;
+    z-index: 1000;
 }
 .nav > ul {
-    text-align: right;
     display: flex;
     justify-content: right;
-    height: 40px;
-    margin-top: 62px;
+    margin-top: 61px;
 }
 .nav > ul > li {
     position: relative;
 }
 .nav > ul > li > a {
-    display: block;
-    padding: 10px 40px;
-    background-color: #c0c0c0;
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #b0b0b0;
 }
 .nav > ul > li > a:hover {
-    background-color: #9d9d9d;
+    background-color: #696969;
 }
 .nav > ul > li > ul {
     position: absolute;
-    top: 38px;
     left: 0;
+    top: 39px;
     width: 100%;
-    box-sizing: border-box;
+    text-align: center;
     display: none;
 }
 .nav > ul > li > ul > li > a {
-    display: flex;
+    display: inline-block;
     padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 .nav > ul > li > ul > li > a:hover {
-    background-color: #909090;
+    background-color: #8f8f8f;
 }</code></pre>
                     </div>
 
@@ -340,13 +339,13 @@ a {
                             마우스 아웃 할 때에도 반대로 처리하면 완성이 됩니다.  
                         </p>
 <pre><code class="language-js">$(function(){
-    $(".nav > ul > li").mouseenter(function(){        
-        $(".nav > ul > li > ul").stop().slideDown(300);  
+    $(".nav > ul > li").mouseover(function(){        
+        $(".nav > ul > li > ul").stop().slideDown(900);  
         $("#header").addClass("on");  
     });
 
-    $(".nav > ul > li").mouseleave(function(){
-        $(".nav > ul > li > ul").stop().slideUp(300);
+    $(".nav > ul > li").mouseout(function(){
+        $(".nav > ul > li > ul").stop().slideUp(100);
         $("#header").removeClass("on");  
     });
 })</code></pre>
@@ -362,26 +361,28 @@ a {
                         </p>
 <pre><code class="language-js">window.onload = function(){
     let navList = document.querySelector(".nav > ul");
-    
-    navList.addEventListener("mouseover", function(){
+
+    navList.addEventListener("mouseover", () => {
         navList.querySelectorAll(".submenu").forEach(sub => {
-            sub.style.height = "152px";
+            sub.style.height = "155px";
         });
         document.getElementById("header").classList.add("on");
     });
 
-    navList.addEventListener("mouseout", function(){
+    navList.addEventListener("mouseout", () => {
         navList.querySelectorAll(".submenu").forEach(sub => {
             sub.style.height = "0px";
         });
         document.getElementById("header").classList.remove("on");
     });
-};
+}
 </code></pre>
-<pre><code class="language-css">.nav > ul > li > ul {
+<pre><code class="language-css">/* 자바스크립트용 CSS */
+.nav > ul > li > ul {
+    display: block;
     height: 0;
     overflow: hidden;
-    transition: height 400ms;
+    transition: all 400ms;
 }
 </code></pre>
                     </div>
