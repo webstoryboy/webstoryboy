@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,50 +11,47 @@
             padding: 0;
         }
         #wrap {
-            width: 100%;           
+            width: 100%;
         }
         #main {
             width: 100%;
-            background-color: #efefef;
             display: flex;
         }
         #header {
             width: 200px;
-            height: 100%;
         }
-        #header h1 {
+        #header .logo {
             width: 100%;
             height: 100px;
-            background-color: #e3e3e3;
+            background-color: #efefef;
         }
-        #header nav {
+        #header .nav {
             width: 100%;
             height: 650px;
-            background-color: #d9d9d9;
+            background-color: #e3e3e3;
         }
         #contents {
             width: 400px;
-            height: 100%;
         }
         #contents .banner {
             width: 100%;
             height: 150px;
-            background-color: #d1d1d1;
+            background-color: #d9d9d9;
         }
         #contents .notice {
             width: 100%;
             height: 300px;
-            background-color: #c7c7c7;
+            background-color: #d1d1d1;
         }
         #contents .gallery {
             width: 100%;
             height: 300px;
-            background-color: #bcbcbc;
+            background-color: #c7c7c7;
         }
         #slider {
-            width: calc(100% - 600px);
+            width: calc(100% - 400px);
             height: 750px;
-            background-color: #a3a3a3;
+            background-color: #bcbcbc;
         }
         #footer {
             width: 100%;
@@ -63,17 +60,17 @@
         #footer .footer1 {
             width: 20%;
             height: 100px;
-            background-color: #9d9d9d;
+            background-color: #b1b1b1;
         }
         #footer .footer2 {
             width: 60%;
             height: 100px;
-            background-color: #929292;
+            background-color: #a3a3a3;
         }
         #footer .footer3 {
             width: 20%;
             height: 100px;
-            background-color: #838383;
+            background-color: #9d9d9d;
         }
     </style>
 </head>
@@ -81,26 +78,29 @@
     <div id="wrap">
         <main id="main">
             <header id="header">
-                <h1></h1>
-                <nav></nav>
+                <h1 class="logo"></h1>
+                <nav class="nav"></nav>
             </header>
             <!-- //header -->
+
             <section id="contents">
-                <div class="banner"></div>
-                <div class="notice"></div>
-                <div class="gallery"></div>
+                <article class="banner"></article>
+                <article class="notice"></article>
+                <article class="gallery"></article>
             </section>
             <!-- //contents -->
+
             <article id="slider">
             </article>
             <!-- //slider -->
         </main>
         <!-- //main -->
+
         <footer id="footer">
             <div class="footer1"></div>
             <div class="footer2"></div>
             <div class="footer3"></div>
-        </footer>
+        </footer> 
         <!-- //footer -->
     </div>
     <!-- //wrap -->

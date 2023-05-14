@@ -293,42 +293,41 @@ a {
     &lt;/ul&gt;
 &lt;/nav&gt;
 </code></pre>
-<pre><code class="language-css">.nav {
-    padding: 30px 40px;
-}
-.nav &gt; ul {
-    text-align: right;
+<pre><code class="language-css">/* nav */
+.nav > ul {
     display: flex;
     justify-content: right;
-    height: 40px;
+    margin-top: 30px;
 }
-.nav &gt; ul &gt; li {
+.nav > ul > li {
     position: relative;
 }
-.nav &gt; ul &gt; li &gt; a {
-    display: block;
-    padding: 10px 40px;
-    background-color: #c0c0c0;
+.nav > ul > li > a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #b0b0b0;
 }
-.nav &gt; ul &gt; li &gt; a:hover {
-    background-color: #9d9d9d;
+.nav > ul > li > a:hover {
+    background-color: #696969;
 }
-.nav &gt; ul &gt; li &gt; ul {
+.nav > ul > li > ul {
     position: absolute;
-    top: 38px;
     left: 0;
-    background-color: #ccc;
+    top: 38px;
+    background-color: #c7c7c7;
     width: 100%;
-    box-sizing: border-box;
+    text-align: center;
     display: none;
 }
-.nav &gt; ul &gt; li &gt; ul &gt; li &gt; a {
-    display: flex;
-    background-color: #808080;
+.nav > ul > li > ul > li > a {
+    display: inline-block;
     padding: 10px;
+    background-color: #c1c1c1;
+    width: 100%;
+    box-sizing: border-box;
 }
-.nav &gt; ul &gt; li &gt; ul &gt; li &gt; a:hover {
-    background-color: #909090;
+.nav > ul > li > ul > li > a:hover {
+    background-color: #8f8f8f;
 }</code></pre>
                     </div>
 
@@ -394,10 +393,10 @@ $(function(){
                         </p>
 <pre><code class="language-js">$(function(){
     $(".nav > ul > li").mouseover(function(){
-        $(this).find(".submenu").stop().slideDown(200);
+        $(this).find(".submenu").stop().slideDown();
     });
     $(".nav > ul > li").mouseout(function(){
-        $(this).find(".submenu").stop().slideUp(200);
+        $(this).find(".submenu").stop().slideUp();
     });
 })</code></pre>
                     </div>
@@ -443,24 +442,29 @@ document.addEventListener("DOMContentLoaded", function() {
                         </p>
 <pre><code class="language-js">window.onload = function(){
     let navList = document.querySelectorAll(".nav > ul > li");
-
-    navList.forEach(function(navItem) {
-        navItem.addEventListener("mouseover", function() {
-            this.querySelector(".submenu").style.height = "152px";
+    
+    navList.forEach(function(navItem){
+        navItem.addEventListener("mouseover", function(){
+            this.querySelector(".submenu").style.height = "155px";
         });
-        navItem.addEventListener("mouseout", function() {
+    });
+    navList.forEach(function(navItem){
+        navItem.addEventListener("mouseout", function(){
             this.querySelector(".submenu").style.height = "0px";
         });
     });
-};
+}
 </code></pre>
                         <p>
                             그리고 CSS에 높이값과 트랜지션 효과를 설정해주면 애니메이션이 작동됩니다. 
                         </p>
-<pre><code class="language-css">.nav > ul > li > ul {
+<pre><code class="language-css">/* 자바스크립트용 CSS */
+.nav > ul > li > ul {
+    display: block;
     height: 0;
+    /* height: 155px; */
     overflow: hidden;
-    transition: height 600ms;
+    transition: all 600ms;
 }
 </code></pre>
                     </div>

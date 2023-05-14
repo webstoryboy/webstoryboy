@@ -82,7 +82,7 @@
             <div class="blog__inner container">
                 <div id="youtube" class="blog__contents__intro">
                     <div class="video nonex resizable draggable sampleBtn3">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/TG6az1PXRUw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="#" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="desc">
                         <div class="left">
@@ -92,8 +92,9 @@
                         </div>
                         <div class="right">
                             <div class="btn">소스 다운로드</div>
-                            <a href="#" target="_blank" class="sampleBtn">완성 화면 보기X</a>
-                            <a href="#" target="_blank" class="sampleBtn">완성 코드 보기X</a>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/layout/d1.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/layout/d1.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/index.html" target="_blank" class="sampleBtn">미리보기</a>
                             <a href="https://www.figma.com/file/iD3Ehm4HRhe16Vx6kxz3ob/%5B%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EA%B0%80-%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4%5D-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8E%B8?type=design&node-id=26248%3A1098&t=CfKBEPG0lp6GJUNI-1" target="_blank" class="sampleBtn">디자인 보기</a>
                         </div>
                     </div>
@@ -239,7 +240,31 @@
 </code></pre>
                     <div>
                         <h3>2. 각 섹션 작업하기</h3>
-                        <p data-num="04" data-title="슬라이드 영역 작업하기">
+                        <p data-num="04" data-title="사이드 영역 작업하기">
+                            사이드 영역의 로고와 메뉴를 설정하겠습니다. 
+                            따로 크기에 대한 정의가 없으므로, 임의로 설정하겠습니다. 
+                        </p>
+<pre><code class="language-html">&lt;aside id="aside"&gt;
+    &lt;h1 class="logo"&gt;&lt;/h1&gt;
+    &lt;nav class="nav"&gt;&lt;/nav&gt;
+&lt;/aside&gt;
+</code></pre>
+<pre><code class="language-css">#aside {
+    width: 200px;
+}
+#aside .logo {
+    width: 100%;
+    height: 100px;
+    background-color: #efefef;
+}
+#aside .nav {
+    width: 100%;
+    height: 750px;
+    background-color: #e3e3e3;
+}
+</code></pre>
+
+                        <p data-num="05" data-title="슬라이드 영역 작업하기">
                             슬라이드 영역을 작업해보겠습니다. 
                             이번 유형의 슬라이드는 특이한게 링크 배너가 슬라이드 위에 위치해 있습니다. 
                             그래서 <code>position:absolute</code>를 이용하여 내가 원하는 위치로 설정할 것입니다. 
@@ -266,7 +291,7 @@
 }
 </code></pre>
 
-                        <p data-num="05" data-title="배너 영역 작업하기">
+                        <p data-num="06" data-title="배너 영역 작업하기">
                             배너 영역도 특이한 부분이 없기 때문에 영역만 확인하겠습니다. 
                         </p>
 <pre><code class="language-html">&lt;article id="banner"&gt;&lt;/article&gt;
@@ -278,7 +303,7 @@
 }
 </code></pre>
 
-                        <p data-num="06" data-title="컨텐츠 영역 작업하기">
+                        <p data-num="07" data-title="컨텐츠 영역 작업하기">
                             콘텐츠 공지사항 영역도 특이한 부분이 없기 때문에 영역만 확인하겠습니다.
                         </p>
 <pre><code class="language-html">&lt;section id="contents"&gt;&lt;/section&gt;
@@ -289,7 +314,7 @@
     background-color: #c7c7c7;
 }
 </code></pre>
-                        <p data-num="07" data-title="푸터 영역 작업하기">
+                        <p data-num="08" data-title="푸터 영역 작업하기">
                             푸터 영역은 3개의 영역으로 작업하겠습니다. 
                         </p>
 <pre><code class="language-html">&lt;footer id="footer"&gt;
@@ -337,65 +362,68 @@
 
                     <h3>PDF 샘플</h3>
                     <ul class="refer2">
-                        <li><a href="assets/pdf/A-1.pdf">A-1</a></li>
-                        <li><a href="assets/pdf/A-2.pdf">A-2</a></li>
-                        <li><a href="assets/pdf/A-3.pdf">A-3</a></li>
-                        <li><a href="assets/pdf/A-4.pdf">A-4</a></li>
-                        <li><a href="assets/pdf/B-1.pdf">B-1</a></li>
-                        <li><a href="assets/pdf/B-2.pdf">B-2</a></li>
-                        <li><a href="assets/pdf/B-3.pdf">B-3</a></li>
-                        <li><a href="assets/pdf/B-4.pdf">B-4</a></li>
-                        <li><a href="assets/pdf/C-1.pdf">C-1</a></li>
-                        <li><a href="assets/pdf/C-2.pdf">C-2</a></li>
-                        <li><a href="assets/pdf/C-3.pdf">C-3</a></li>
-                        <li><a href="assets/pdf/C-4.pdf">C-4</a></li>
-                        <li><a href="assets/pdf/D-1.pdf">D-1</a></li>
-                        <li><a href="assets/pdf/D-2.pdf">D-2</a></li>
-                        <li><a href="assets/pdf/D-3.pdf">D-3</a></li>
-                        <li><a href="assets/pdf/D-4.pdf">D-4</a></li>
-                        <li><a href="assets/pdf/E-1.pdf">E-1</a></li>
-                        <li><a href="assets/pdf/E-2.pdf">E-2</a></li>
-                        <li><a href="assets/pdf/E-3.pdf">E-3</a></li>
-                        <li><a href="assets/pdf/E-4.pdf">E-4</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/A-1.pdf">A1</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/A-2.pdf">A2</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/A-3.pdf">A3</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/A-4.pdf">A4</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/B-1.pdf">B1</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/B-2.pdf">B2</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/B-3.pdf">B3</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/B-4.pdf">B4</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/C-1.pdf">C1</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/C-2.pdf">C2</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/C-3.pdf">C3</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/C-4.pdf">C4</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/D-1.pdf">D1</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/D-2.pdf">D2</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/D-3.pdf">D3</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/D-4.pdf">D4</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/E-1.pdf">E1</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/E-2.pdf">E2</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/E-3.pdf">E3</a></li>
+                        <li><a href="https://webstoryboy.github.io/webstoryboy/w_webd/pdf/E-4.pdf">E4</a></li>
                     </ul>
 
                     <h3>레이아웃</h3>
                     <ul class="refer2">
-                        <li><a href="a1.html">A-1 유형</a></li>
-                        <li><a href="a1.html">A-2 유형</a></li>
-                        <li><a href="a1.html">A-3 유형</a></li>
-                        <li><a href="a1.html">A-4 유형</a></li>
-                        <li><a href="a1.html">B-1 유형</a></li>
-                        <li><a href="a1.html">B-2 유형</a></li>
-                        <li><a href="a1.html">B-3 유형</a></li>
-                        <li><a href="a1.html">B-4 유형</a></li>
-                        <li><a href="a1.html">C-1 유형</a></li>
-                        <li><a href="a1.html">C-2 유형</a></li>
-                        <li><a href="a1.html">C-3 유형</a></li>
-                        <li><a href="a1.html">C-4 유형</a></li>
-                        <li><a href="a1.html">D-1 유형</a></li>
-                        <li><a href="a1.html">D-2 유형</a></li>
-                        <li><a href="a1.html">D-3 유형</a></li>
-                        <li><a href="a1.html">D-4 유형</a></li>
-                        <li><a href="a1.html">E-1 유형</a></li>
-                        <li><a href="a1.html">E-2 유형</a></li>
-                        <li><a href="a1.html">E-3 유형</a></li>
-                        <li><a href="a1.html">E-4 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1870">A1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1871">A2 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1872">A3 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1873">A4 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1874">B1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1875">B2 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1876">B3 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1877">B4 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1878">C1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1879">C2 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1880">C3 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1881">C4 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1882">D1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1883">D2 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1884">D3 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1885">D4 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1886">E1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1887">E2 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1888">E3 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1889">E4 유형</a></li>
                     </ul>
 
                     <h3>스크립트 유형</h3>
                     <ul class="refer2">
-                        <li><a href="a1.html">M-1 유형</a></li>
-                        <li><a href="a1.html">M-2 유형</a></li>
-                        <li><a href="a1.html">M-3 유형</a></li>
-                        <li><a href="a1.html">M-4 유형</a></li>
-                        <li><a href="a1.html">M-5 유형</a></li>
-                        <li><a href="a1.html">M-6 유형</a></li>
-                        <li><a href="a1.html">S-1 유형</a></li>
-                        <li><a href="a1.html">S-2 유형</a></li>
-                        <li><a href="a1.html">S-3 유형</a></li>
-                        <li><a href="a1.html">T-1 유형</a></li>
-                        <li><a href="a1.html">P-1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1890">M1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1891">M2 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1892">M3 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1893">M4 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1894">M5 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1895">M6 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1896">S1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1897">S2 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1898">S3 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1899">S4 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1900">S5 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1901">S6 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1902">T1 유형</a></li>
+                        <li><a href="https://webstoryboy.tistory.com/1903">P1 유형</a></li>
                     </ul>
 
                     <h3>실전 사이트 유형</h3>

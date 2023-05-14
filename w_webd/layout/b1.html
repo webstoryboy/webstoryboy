@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,23 +13,21 @@
         #wrap {
             width: 100%;
         }
-        #header {
+        #haeader {
             width: 100%;
-            height: 100px;
             background-color: #efefef;
         }
-        .header_container {
+        #haeader .header_container {
             width: 1200px;
             margin: 0 auto;
-            background-color: #c7c7c7;
             display: flex;
         }
-        .header_container .logo {
+        #haeader .header_container .logo {
             width: 20%;
             height: 100px;
             background-color: #d9d9d9;
         }
-        .header_container .nav {
+        #haeader .header_container .nav {
             width: 80%;
             height: 100px;
             background-color: #d1d1d1;
@@ -62,28 +60,27 @@
         }
         #footer {
             width: 100%;
-            height: 100px;
             background-color: #d1d1d1;
         }
-        .footer_container {
+        #footer .footer__container {
             width: 1200px;
             margin: 0 auto;
             display: flex;
         }
-        .footer1 {
+        #footer .footer__container .footer1 {
             width: 20%;
             height: 100px;
             background-color: #9d9d9d;
         }
-        .footer2 {
+        #footer .footer__container .footer2 {
             width: 80%;
         }
-        .footer2-1 {
+        #footer .footer__container .footer2 .footer2-1 {
             width: 100%;
             height: 50px;
             background-color: #929292;
         }
-        .footer2-2 {
+        #footer .footer__container .footer2 .footer2-2 {
             width: 100%;
             height: 50px;
             background-color: #838383;
@@ -92,13 +89,13 @@
 </head>
 <body>
     <div id="wrap">
-        <header id="header">
+        <header id="haeader">
             <div class="header_container">
                 <h1 class="logo"></h1>
                 <nav class="nav"></nav>
             </div>
         </header>
-        <!-- //header -->
+        <!-- //haeader -->
 
         <article id="slider">
         </article>
@@ -112,7 +109,7 @@
         <!-- //contents -->
 
         <footer id="footer">
-            <div class="footer_container">
+            <div class="footer__container">
                 <div class="footer1"></div>
                 <div class="footer2">
                     <div class="footer2-1"></div>
@@ -122,6 +119,5 @@
         </footer>
         <!-- //footer -->
     </div>
-    <!-- //wrap -->
 </body>
 </html>
