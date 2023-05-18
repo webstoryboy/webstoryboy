@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 유형03</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #E1F5FE;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            height: 100px;
+            background-color: #B3E5FC;
+        }
+        #nav {
+            height: 100px;
+            background-color: #81D4FA;
+        }
+        #main {
+            display: grid;
+            grid-template-areas: 
+                "aside article1 article1"
+                "aside article2 article2"
+                "aside article3 article3";
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 260px 260px 260px;
+        }
+        #aside {
+            background-color: #4FC3F7;
+            grid-area: aside;
+        }
+        #article1 {
+            background-color: #29B6F6;
+            grid-area: article1;
+        }
+        #article2 {
+            background-color: #03A9F4;
+            grid-area: article2;
+        }
+        #article3 {
+            background-color: #039BE5;
+            grid-area: article3;
+        }
+        #footer {
+            height: 100px;
+            background-color: #0288D1;
+        }
+
+        /* 미디어쿼리 */
+        @media (max-width: 1300px){
+            #wrap {
+                width: 96%;
+            }
+            #main {
+                grid-template-areas: 
+                    "aside article1 article1"
+                    "aside article2 article3"
+                    "aside article2 article3";
+                grid-template-columns: 30% 35% 35%;
+                grid-template-rows: 260px 520px;
+            }
+        }
+        @media (max-width: 768px){
+            #wrap {
+                width: 100%;
+            }
+            #main {
+                grid-template-areas: 
+                    "aside article1"
+                    "aside article2";
+                grid-template-columns: 30% 70%;
+                grid-template-rows: 390px 390px;
+            }
+            #article3 {
+                display: none;
+            }
+        }
+        @media (max-width: 480px){
+            #main {
+                grid-template-areas: 
+                    "aside"
+                    "article1"
+                    "article2";
+                grid-template-columns: 100%;
+                grid-template-rows: 200px 430px 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="nav"></div>
+        <div id="main">
+            <div id="aside"></div>
+            <div id="article1"></div>
+            <div id="article2"></div>
+            <div id="article3"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+
+    <!-- 
+        layout03_01 : float 방식 레이아웃
+        layout03_02 : float 방식 반응형 레이아웃
+        layout03_03 : flex 방식 레이아웃
+        layout03_04 : flex 방식 반응형 레이아웃
+        layout03_05 : grid 방식 레이아웃
+        layout03_06 : grid 방식 반응형 레이아웃
+    -->
+</body>
+</html>

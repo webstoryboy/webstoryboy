@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 유형02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #E8F5E9;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            height: 100px;
+            background-color: #C8E6C9;
+        }
+        #nav {
+            height: 100px;
+            background-color: #A5D6A7;
+        }
+        #main {
+            display: flex;
+        }
+        #aside {
+            width: 30%;
+            height: 780px;
+            background-color: #81C784;
+        }
+        #section {
+            width: 40%;
+            height: 780px;
+            background-color: #66BB6A;
+        }
+        #article {
+            width: 30%;
+            height: 780px;
+            background-color: #4CAF50;
+        }
+        #footer {
+            height: 100px;
+            background-color: #43A047;
+        }
+        /* 미디어쿼리 */
+        @media (max-width: 1300px){
+           
+        }
+        @media (max-width: 768px){
+            
+        }
+        @media (max-width: 480px){
+          
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <nav id="nav"></nav>
+        <main id="main">
+            <aside id="aside"></aside>
+            <section id="section"></section>
+            <article id="article"></article>
+        </main>
+        <footer id="footer"></footer>
+    </div>
+</body>
+</html>

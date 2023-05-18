@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 유형01</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #FFF3E0;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-areas: 
+                "header header"
+                "nav nav"
+                "aside section"
+                "footer footer";
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 100px 100px 780px 100px;
+        }
+        #header {
+            background-color: #FFE0B2;
+            grid-area: header;
+        }
+        #nav {
+            background-color: #FFCC80;
+            grid-area: nav;
+        }
+        #aside {
+            background-color: #FFB74D;
+            grid-area: aside;
+        }
+        #section {
+            background-color: #FFA726;
+            grid-area: section;
+        }
+        #footer {
+            background-color: #FF9800;
+            grid-area: footer;
+        }
+
+        /* 미디어쿼리 */
+        @media (max-width: 1300px){
+            #wrap {
+                width: 96%;
+            }
+        }
+        @media (max-width: 768px){
+            #wrap {
+                width: 100%;
+            }
+        }
+        @media (max-width: 480px){
+            #wrap {
+                grid-template-areas: 
+                    "header"
+                    "nav"
+                    "aside"
+                    "section"
+                    "footer";
+                grid-template-columns: 100%;
+                grid-template-rows: 100px 100px 300px 480px 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <nav id="nav"></nav>
+        <aside id="aside"></aside>
+        <section id="section"></section>
+        <footer id="footer"></footer>
+    </div>
+
+
+    <!-- 
+        layout01_01 : float 방식 레이아웃
+        layout01_02 : float 방식 반응형 레이아웃
+        layout01_03 : flex 방식 레이아웃
+        layout01_04 : flex 방식 반응형 레이아웃
+        layout01_05 : grid 방식 레이아웃
+        layout01_06 : grid 방식 반응형 레이아웃
+    -->
+</body>
+</html>

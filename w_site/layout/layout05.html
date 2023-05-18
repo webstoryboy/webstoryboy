@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 유형05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #header {
+            height: 100px;
+            background-color: #EEEBE9;
+        } 
+        #nav {
+            height: 100px;
+            background-color: #B9AAA5;
+        } 
+        #main {
+            height: 780px;
+            background-color: #886F65;
+        } 
+        #footer {
+            height: 100px;
+            background-color: #4E342E;
+        } 
+        .container {
+            width: 1200px;
+            height: inherit;
+            margin: 0 auto;
+            background: rgba(0,0,0,0.1);
+        }
+        .contents {
+            display: grid;
+            grid-template-areas: 
+                "cont1 cont1"
+                "cont2 cont2"
+                "cont3 cont4";
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100px 200px 480px;
+        }
+        .contents .cont1 {
+            background-color: #74574A;
+            grid-area: cont1;
+        }
+        .contents .cont2 {
+            background-color: #684D43;
+            grid-area: cont2;
+        }
+        .contents .cont3 {
+            background-color: #594139;
+            grid-area: cont3;
+        }
+        .contents .cont4 {
+            background-color: #4A352F;
+            grid-area: cont4;
+        }
+
+        /* 미디어쿼리 */
+        @media (max-width: 1300px){
+            .container {
+                width: 96%;
+            }
+            .contents {
+                grid-template-areas: 
+                    "cont1 cont2 cont2"
+                    "cont1 cont3 cont4";
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 768px){
+            .container {
+                width: 100%;
+            }
+            .contents {
+                grid-template-areas: 
+                    "cont1 cont2"
+                    "cont1 cont3"
+                    "cont1 cont4";
+                grid-template-columns: 30% 70%;
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+        @media (max-width: 480px){
+            .contents {
+                grid-template-areas: 
+                    "cont1"
+                    "cont2"
+                    "cont3"
+                    "cont4";
+                grid-template-columns: 100%;
+                grid-template-rows: 150px 210px 210px 210px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+            <div class="container"></div>
+        </div>
+        <div id="nav">
+            <div class="container"></div>
+        </div>
+        <div id="main">
+            <div class="contents container">
+                <div class="cont1"></div>
+                <div class="cont2"></div>
+                <div class="cont3"></div>
+                <div class="cont4"></div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="container"></div>
+        </div>
+    </div>
+
+    <!-- 
+        layout05_01 : float 방식 레이아웃
+        layout05_02 : float 방식 반응형 레이아웃
+        layout05_03 : flex 방식 레이아웃
+        layout05_04 : flex 방식 반응형 레이아웃
+        layout05_05 : grid 방식 레이아웃
+        layout05_06 : grid 방식 반응형 레이아웃
+    -->
+</body>
+</html>

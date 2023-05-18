@@ -1,0 +1,76 @@
+.imgText__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.imgText__inner > div {
+    width: 32%;
+    height: 500px;
+}
+.imgText__txt .small {
+    font-size: 16px;
+    color: #666;
+    text-decoration: underline;
+    margin-bottom: 20px;
+    display: block;
+    text-align: left;
+}
+.imgText__txt .title {
+    font-size: 50px;
+    font-weight: 300;
+    word-break: keep-all;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.imgText__txt .desc {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 10px;
+}
+.imgText__txt .list {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.imgText__txt .list li {
+    position: relative;
+    padding-left: 20px;
+}
+.imgText__txt .list li::before {
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #666;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 9px;
+}
+.imgText__txt .list li a {
+    color: #666;
+}
+.imgText__img {
+    border-radius: 10px;
+    position: relative;
+}
+.imgText__img a {
+    background-color: #7C2B39;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+}
+.imgText__img a.blue {
+    background-color: #2B387C;
+}
+.imgText__img.img1 {
+    background: url(../img/imgText_bg01.jpg) no-repeat center / cover;
+}
+.imgText__img.img2 {
+    background: url(../img/imgText_bg02.jpg) no-repeat center / cover;
+}

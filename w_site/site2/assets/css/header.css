@@ -1,0 +1,40 @@
+.header__inner {
+  padding: 10px;
+}
+.header__logo {
+  text-align: center;
+}
+.header__logo h1 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.header__logo h1 em {
+  text-transform: lowercase;
+}
+.header__menu {
+  text-align: center;
+}
+.header__menu li {
+  display: inline;
+  margin: 0 30px;
+}
+.header__menu li a {
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+}
+.header__menu li a::before {
+  content: "";
+  width: calc(100% - 20px);
+  height: 2px;
+  background: #000;
+  position: absolute;
+  bottom: 4px;
+  transition: all 0.3s ease;
+  transform: scaleX(0);
+}
+.header__menu li a:hover::before {
+  transform: scaleX(1);
+}

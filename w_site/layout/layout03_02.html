@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레이아웃 유형03</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #E1F5FE;
+        }
+        #wrap {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        #header {
+            height: 100px;
+            background-color: #B3E5FC;
+        }
+        #nav {
+            height: 100px;
+            background-color: #81D4FA;
+        }
+        #main {
+
+        }
+        #aside {
+            width: 30%;
+            height: 780px;
+            background-color: #4FC3F7;
+            float: left;
+        }
+        #article1 {
+            width: 70%;
+            height: 260px;
+            background-color: #29B6F6;
+            float: left;
+        }
+        #article2 {
+            width: 70%;
+            height: 260px;
+            background-color: #03A9F4;
+            float: left;
+        }
+        #article3 {
+            width: 70%;
+            height: 260px;
+            background-color: #039BE5;
+            float: left;
+        }
+        #footer {
+            height: 100px;
+            background-color: #0288D1;
+        }
+
+        /* clearfix */
+        .clearfix::before,
+        .clearfix::after {
+            content: '';
+            display: block;
+            line-height: 0;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+
+        /* 미디어쿼리 */
+        @media (max-width: 1300px){
+            #wrap {
+                width: 96%;
+            }
+            #article2 {
+                width: 35%;
+                height: 520px;
+            }
+            #article3 {
+                width: 35%;
+                height: 520px;
+            }
+        }
+        @media (max-width: 768px){
+            #wrap {
+                width: 100%;
+            }
+            #article1 {
+                width: 70%;
+                height: 390px;
+            }
+            #article2 {
+                width: 70%;
+                height: 390px;
+            }
+            #article3 {
+                display: none;
+            }
+        }
+        @media (max-width: 480px){
+            #aside {
+                width: 100%;
+                height: 100px;
+            }
+            #article1 {
+                width: 100%;
+                height: 430px;
+            }
+            #article2 {
+                width: 100%;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header"></div>
+        <div id="nav"></div>
+        <div id="main" class="clearfix">
+            <div id="aside"></div>
+            <div id="article1"></div>
+            <div id="article2"></div>
+            <div id="article3"></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+</body>
+</html>
