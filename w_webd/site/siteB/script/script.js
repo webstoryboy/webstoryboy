@@ -1,4 +1,20 @@
 $(function(){
+    //이미지 슬라이드
+    let currentIndex = 0;   
+    $(".sliderWrap").append($(".slider").first().clone(true));   
+ 
+    setInterval(function(){
+        currentIndex++;    
+        $(".sliderWrap").animate({marginLeft: -1200 * currentIndex}, 600);
+
+        if(currentIndex == 3){
+            setTimeout(function(){
+                $(".sliderWrap").animate({ marginLeft: 0},0);
+                currentIndex = 0;
+            }, 700);
+        }
+    }, 3000);
+
     //메뉴 
     $(".nav > ul > li").mouseover(function(){
         $(".nav > ul > li > ul").stop().fadeIn(400);
@@ -9,22 +25,11 @@ $(function(){
         $("#header .container").removeClass("on");
     });
 
-    //슬라이드
-    let currentIndex = 0;   
-    const $sliderWrap = $(".sliderWrap");  //이미지 부모 : 움직이는 영역
-    const $slider = $(".slider");           //각각의 이미지
-    const $sliderWidth = $slider.width();   //이미지 가로값
-    $sliderWrap.append($slider.first().clone(true));   //첫 번재 이미지를 복사 마지막에 추가
-
-    setInterval(function(){
-        currentIndex++;     //현재 이미지를 1씩 증가
-        $sliderWrap.animate({marginLeft: -$sliderWidth * currentIndex}, 600);
-
-        if(currentIndex === $slider.length){
-            setTimeout(function(){
-                $sliderWrap.animate({ marginLeft: 0},0);
-                currentIndex = 0;
-            }, 700);
-        }
-    }, 3000)
+    // 팝업
+    $(".popup-btn").click(function(){
+        $(".popup-view").show();
+    });
+    $(".popup-close").click(function(){
+        $(".popup-view").hide ();
+    });
 });
