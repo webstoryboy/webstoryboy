@@ -74,7 +74,6 @@ img {
 #header .container .nav > ul > li > a {
     display: block;
     padding: 15px 40px;
-    background-color: #ffe194;
 }
 #header .container .nav > ul > li > a:hover {
     background-color: #ffd66f;
@@ -193,6 +192,9 @@ img {
 #main .container .gallery ul {
     display: flex;
 }
+#main .container .gallery ul li:hover img {
+    opacity: 0.8;
+}
 #main .container .banner {
     width: 400px;
     background-image: url(../images/banner.jpg);
@@ -202,7 +204,7 @@ img {
 #main .container .banner h3 {
     margin-top: 40px;
     font-size: 24px;
-    color: #3a2727;
+    color: #fff;
 }
 #main .container .banner a {
     background-color: rgba(0,0,0,1);

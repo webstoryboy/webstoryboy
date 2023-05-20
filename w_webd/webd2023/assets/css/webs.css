@@ -721,6 +721,16 @@
   top: 2px;
   opacity: 0.3;
 }
+.blog__contents.tutorial h4 {
+  position: relative;
+}
+.blog__contents.tutorial h4[data-num]::before {
+  content: attr(data-num);
+  position: absolute;
+  left: -30px;
+  top: 0;
+  opacity: 0.3;
+}
 
 /* aside */
 /* .blog__aside {

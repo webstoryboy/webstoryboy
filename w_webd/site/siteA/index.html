@@ -6,15 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>강원천문대</title>
 
+    <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- script -->
+    <script src="script/jquery.min.js"></script>
     <script src="script/script.js"></script>
 </head>
 <body>
     <div id="wrap">
         <header id="header">
-            <h1 class="logo"><a href="#">강원천문대</a></h1>
+            <h1 class="logo">
+                <a href="#">강원천문대</a>
+            </h1>
             <nav class="nav">
                 <ul>
                     <li>
@@ -88,36 +92,40 @@
                     <a href="#">갤러리</a>
                 </h3>
                 <div class="info-cont">
-                    <ul class="notice">
-                        <li><a href="#">강원천문대 2023년 휴관일 안내</a><span>2023.05.01</span></li>
-                        <li><a href="#">강원천문대 2023년 온라인 예매 안내</a><span>2023.05.02</span></li>
-                        <li><a href="#">강원천문대 휴관일 및 이벤트 안내</a><span>2023.05.03</span></li>
-                        <li><a href="#">강원천문대 주차장 이용 및 숙박 안내</a><span>2023.05.04</span></li>
-                    </ul>
-                    <ul class="gallery">
-                        <li><a href="#"><img src="images/gallery01.jpg" alt="독일 천문대"></a></li>
-                        <li><a href="#"><img src="images/gallery02.jpg" alt="미국 천문대"></a></li>
-                        <li><a href="#"><img src="images/gallery03.jpg" alt="영국 천문대"></a></li>
-                    </ul>
+                    <div class="notice">
+                        <ul>
+                            <li><a href="#" class="popup-btn">강원천문대 2023년 휴관일 안내</a><span>2023.05.01</span></li>
+                            <li><a href="#">강원천문대 2023년 온라인 예매 안내</a><span>2023.05.02</span></li>
+                            <li><a href="#">강원천문대 휴관일 및 이벤트 안내</a><span>2023.05.03</span></li>
+                            <li><a href="#">강원천문대 주차장 이용 및 숙박 안내</a><span>2023.05.04</span></li>
+                        </ul>
+                    </div>
+                    <div class="gallery">
+                        <ul>
+                            <li><a href="#"><img src="images/gallery01.jpg" alt="독일 천문대"></a></li>
+                            <li><a href="#"><img src="images/gallery02.jpg" alt="미국 천문대"></a></li>
+                            <li><a href="#"><img src="images/gallery03.jpg" alt="영국 천문대"></a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <!-- //info -->
-
+            
             <section class="banner">
                 <h3>강원천문대 온라인 예매하기</h3>
                 <a href="#">예매하기</a>
             </section>
             <!-- //banner -->
-
-            <article class="link">
+            
+            <section class="link">
                 <h3>이달의 별자리 구경하기</h3>
                 <a href="#">바로가기</a>
-            </article>
+            </section>
             <!-- //link -->
         </main>
         <!-- //main -->
 
-        <footer id="footer">
+        <footer id="footer">  
             <div class="footer1">
                 <h4>강원천문대</h4>
             </div>
@@ -136,6 +144,17 @@
             </div>
         </footer>
         <!-- //footer -->
+
+        <div class="popup-view">
+            <h3>강원천문대 공지사항</h3>
+            <p>
+                2023년 하반기 천체 관측 프로그램 참가 신청 안내
+                안녕하세요. 강원천문대입니다. 2023년 하반기 천체 관측 프로그램에 참가하실 분들을 모집하고 있습니다. 
+                관심 있는 분들은 많은 연락바랍니다. 
+            </p>
+            <a href="#" class="popup-close">닫기</a>
+        </div>
+        <!-- //popup -->
     </div>
     <!-- //wrap -->
 </body>
