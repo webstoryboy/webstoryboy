@@ -276,38 +276,38 @@
 <pre><code class="language-css">/* slider */
 #slider {
     overflow: hidden;
-    height: calc(100vh - 120px);    //푸터 높이 제거
+    height: calc(100vh - 120px);
 }
 .sliderWrap {
     width: 100%;
-    height: 400vh;  /* 이미지는 4개니까! */
+    height: 300vh;
 }
-.slider {
+.sliderWrap .slider {
     width: 100%;
     height: 100vh;
-    background-size: cover;     /* 화면에 꽉차게 설정 */
-    background-position: center;    /* 이미지는 가운데로 설정 */
-    background-repeat: no-repeat;   /* 이미지는 한번만 나오게 */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
-.slider.s1 {
-    background-image: url(slider04.jpg);
+.sliderWrap .slider.s1 {
+    background-image: url(https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider04.jpg);
 }
-.slider.s2 {
-    background-image: url(slider05.jpg);
+.sliderWrap .slider.s2 {
+    background-image: url(https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider05.jpg);
 }
-.slider.s3 {
-    background-image: url(slider06.jpg);
+.sliderWrap .slider.s3 {
+    background-image: url(https://webstoryboy.github.io/webstoryboy/w_webd/slider/slider06.jpg);
 }
-.slider img {
-    vertical-align: top;    /* 이미지 여백 제거 */
+.sliderWrap .slider img {
+    vertical-align: top;
 }
-.slider span {
+.sliderWrap .slider span {
     position: absolute;
     left: 50%;
     top: calc(50% - 60px);
     transform: translate(-50%, -50%);
-    background-color: rgba(255,255,255,0.4);
+    background-color: rgba(255,255,255,0.3);
     padding: 10px 20px;
 }
 </code></pre>
@@ -329,19 +329,17 @@
 &lt;script&gt;
     $(function() {
         let currentIndex = 0;   //현재 이미지 설정
-        const $sliderWrap = $(".sliderWrap");      //전체 이미지 설정  
-        const $slider = $(".slider");   //각각의 이미지 설정    
-        $sliderWrap.append($slider.first().clone(true));    //이미지 복사 후 추가
+        $(".sliderWrap").append($(".slider").first().clone(true));  //첫 번째 이미지를 복사해서 마지막에 추가
 
         setInterval(() => {
-            currentIndex++;     //현재 이미지 1씩 증가
-            $sliderWrap.animate({ marginTop: -100 * currentIndex + "vh" }, 600);    //이미지 애니메이션
+            currentIndex++;     //현재 이미지를 1씩 증가
+            $(".sliderWrap").animate({marginTop: -100 * currentIndex + "vh"}, 600);
 
-            if (currentIndex === $slider.length) {  //마지막 이미지
+            if(currentIndex == 3){
                 setTimeout(() => {
-                    $sliderWrap.animate({ marginTop: 0 }, 0);   //애니메이션 정지
-                    currentIndex = 0;   //현재 이미지 초기화
-                }, 700);
+                    $(".sliderWrap").animate({marginTop: 0}, 0);    //애니메이션 정지
+                    currentIndex = 0;       //현재 이미지 초기화
+                }, 700)
             }
         }, 3000);
     });
@@ -358,26 +356,27 @@
                             그리고 이미지가 마지막일 때 모든 값을 0으로 초기화 했습니다. 
                         </p>
 <pre><code class="language-js">window.onload = function(){
-    let currentIndex = 0;   //현재 이미지 설정
-    const sliderWrap = document.querySelector(".sliderWrap");   //전체 이미지 설정
-    const slider = sliderWrap.querySelectorAll(".slider");  //각각의 이미지 설정
-    const sliderClone = sliderWrap.firstElementChild.cloneNode(true);   //첫 번째 이미지 복사
-    sliderWrap.appendChild(sliderClone);    //마지막 위치에 추가
+    let currentIndex = 0;
+    const sliderWrap = document.querySelector(".sliderWrap");
+    const slider = document.querySelectorAll(".slider");
+    const sliderClone = sliderWrap.firstElementChild.cloneNode(true);
+    sliderWrap.appendChild(sliderClone);
 
-    setInterval(() => {     //3초에 한번씩 실행
-        currentIndex++;     //현재 이미지 1씩 증가
-        sliderWrap.style.transition = "all 0.6s";   //애니메이션 효과 추가
-        sliderWrap.style.transform = `translateY(-${currentIndex * 100}vh)`;    //이미지 이동
+    setInterval(() => {
+        currentIndex++;
+        sliderWrap.style.transition = "all 0.6s";
+        //    sliderWrap.stype.transform = "translateY(-100%)"; 
+        sliderWrap.style.transform = `translateY(-${currentIndex * 100}vh)`; 
 
-        if (currentIndex == slider.length) {    //마지막 이미지일 때
-            setTimeout(() => {      //한번만 실행함
-                sliderWrap.style.transition = "0s";     //애니메이션 초기화
-                sliderWrap.style.transform = "translateY(0)";   //애니메이션 위치 초기화
-                currentIndex = 0;   //현재 이미지 초기화
-            }, 700);
+        if(currentIndex == slider.length){
+            setTimeout(() => {
+                sliderWrap.style.transition = "0s";
+                sliderWrap.style.transform = "translateY(0)";
+                currentIndex = 0;
+            }, 700)
         }
-    }, 2000);
-};
+    }, 3000)
+}
 </code></pre>
                     </div>
 

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹디자인 기능사 레이아웃 연습</title>
+    <title>웹디자인기능사 슬라이드 T-1</title>
     <link href="https://webfontworld.github.io/gmarket/GmarketSans.css" rel="stylesheet">
     <style>
         * {
@@ -77,23 +77,33 @@
             height: 100px;
             background-color: #9d9d9d;
         }
+
         /* tab-menu */
         .tab-menu {
             padding: 20px;
         }
-        .tab-btn li {
-            display: inline-block;
+        .tab-menu .tab-btn ul {
+            display: flex;
         }
-        .tab-btn li a {
+        .tab-menu .tab-btn li {
+            list-style: none;
+        }
+        .tab-menu .tab-btn li.active a {
+            text-decoration: underline;
+        }
+        .tab-menu .tab-btn li a {
             display: block;
-            background-color: #8d8d8d;
             padding: 10px;
+            background-color: #6b6b6b;
         }
-        .tab-cont > div {
+        .tab-menu .tab-cont > div {
             padding: 10px;
             background-color: #b0b0b0;
-            line-height: 1.4;
+            line-height: 1.6;
         }
+        /* .tab-menu .tab-cont > div:nth-child(2){
+            display: none;
+        } */
     </style>
 </head>
 <body>
@@ -103,11 +113,11 @@
             <nav class="nav"></nav>
         </header>
         <!-- //header -->
-
+    
         <article id="slider">
         </article>
         <!-- //slider -->
-
+    
         <main id="contents">
             <section class="content1">
                 <div class="tab-menu">
@@ -119,20 +129,19 @@
                     </div>
                     <div class="tab-cont">
                         <div>
-                            탭메뉴1 내용<br>탭메뉴1 내용<br>탭메뉴1 내용<br>탭메뉴1 내용
+                            탭메뉴1<br>탭메뉴1<br>탭메뉴1<br>탭메뉴1
                         </div>
                         <div>
-                            탭메뉴2 내용<br>탭메뉴2 내용<br>탭메뉴2 내용<br>탭메뉴2 내용
+                            탭메뉴2<br>탭메뉴2<br>탭메뉴2<br>탭메뉴2
                         </div>
                     </div>
                 </div>
-                <!-- //tab-menu -->
             </section>
             <section class="content2"></section>
             <section class="content3"></section>
         </main>
         <!-- //contents -->
-
+    
         <footer id="footer">
             <div class="footer1"></div>
             <div class="footer2"></div>
@@ -142,39 +151,38 @@
     </div>
     <!-- //wrap -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-        // $(function() {
-        //     var tabBtn = $(".tab-btn > ul > li");
-        //     var tabCont = $(".tab-cont > div");
-        //     tabCont.hide().eq(0).show();
-            
-        //     tabBtn.on("click", function() {
-        //         const index = $(this).index();
-                
-        //         $(this).addClass("active").siblings().removeClass("active");
-        //         $(".tab-cont > div").eq(index).show().siblings().hide();
-        //     });
-        // });
-        
-        window.onload = function(){
-            const tabBtns = document.querySelectorAll(".tab-btn li");
-            const tabConts = document.querySelectorAll(".tab-cont > div");
+        $(function(){
+            let tabBtn = $(".tab-btn > ul > li");   //버튼 설정
+            let tabCont = $(".tab-cont > div");     //콘텐츠 설정
+            tabCont.hide().eq(0).show();    //첫번째 콘텐츠만 보이게 설정
 
-            tabConts.forEach(el => el.style.display = "none");
-            tabConts[0].style.display = "block";
+            tabBtn.click(function(){
+                const index = $(this).index();  //클릭한 번호를 저장
+                // alert(index);
 
-            tabBtns.forEach((tab, index) => {
-                tab.addEventListener("click", (e) => {
-                    e.preventDefault();
-                    tabBtns.forEach(tab => tab.classList.remove("active"));
-                    tab.classList.add("active");
-
-                    tabConts.forEach(content => content.style.display = "none");
-                    tabConts[index].style.display = "block";
-                });
+                $(this).addClass("active").siblings().removeClass("active");    //내가 클릭한 버튼에 클래스를 추가하고 나머지 버튼은 삭제
+                tabCont.eq(index).show().siblings().hide(); //내가 클릭한 버튼의 콘텐츠는 보여주고 나머지는 숨김
             });
-        };
+        });
+    </script> -->
+    <script>
+        const tabBtn = document.querySelectorAll(".tab-btn > ul > li"); //버튼 설정
+        const tabCont = document.querySelectorAll(".tab-cont > div");   //콘텐츠 설정
+
+        tabCont.forEach(el => el.style.display = "none");   //모든 콘텐츠를 숨김
+        tabCont[0].style.display = "block";     //첫 번째 콘텐츠를 보이게 설정
+
+        tabBtn.forEach((tab, index) => {
+            tab.addEventListener("click", () => {
+                tabBtn.forEach(tab => tab.classList.remove("active"));  //모든 버튼 클래스 삭제
+                tab.classList.add("active");        //클릭한 버튼만 클래스 추가
+
+                tabCont.forEach(cont => cont.style.display = "none");   //모든 콘텐츠를 숨기
+                tabCont[index].style.display = "block";     //클릭한 버튼의 콘텐츠 내용을 보여줌
+            });
+        });
     </script>
 </body>
 </html>
