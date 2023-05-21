@@ -158,7 +158,44 @@ Is this OK? (yes) </code></pre>
 <pre><code class="language-html">npm install webpack webpack-cli --save-dev</code></pre>
 
                         <h4>1.4 webpack.config 설정하기</h4>
-<pre><code class="language-html">npm install webpack webpack-cli --save-dev</code></pre>
+<pre><code class="language-html">const path = require('path');
+    const HtmlWebpackPlugin = require('html-webpack-plugin');
+    const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+    
+    module.exports = {
+        mode: "production",
+        entry: {
+            index: './src/index.js'
+        },
+        output: {
+            path: path.resolve(__dirname, 'dist'),
+            filename: 'js/[name]_main.js',
+        },
+        plugins: [
+            new HtmlWebpackPlugin({
+                template: './src/index.html',
+                filename: './index.html',
+                hash: true,
+                showErrors: true
+            }),
+            new MiniCssExtractPlugin({
+                filename: "./css/style.css",
+            }),
+        ],
+        devServer: {
+            static: './dist'
+        },
+        module: {
+            rules: [
+                {
+                    test: /\.css$/,
+                    // use: ["style-loader", "css-loader"],
+                    use: [MiniCssExtractPlugin.loader, "css-loader"],
+                    exclude: /node_modules/,
+                }
+            ],
+        },
+    };</code></pre>
 
                         <h4>1.5 webpack-dev-server</h4>
 <pre><code class="language-html">npm install webpack-dev-server --save-dev</code></pre>
