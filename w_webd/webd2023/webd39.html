@@ -73,7 +73,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Tutorial/webd</span>
-                <h1 class="title">2023년 웹디자인 기능사 실전 사이트 : C유형</h1>
+                <h1 class="title">2023년 웹디자인 기능사 실전 사이트 : E유형</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2023. 05. 01.</span>
@@ -86,14 +86,14 @@
                     </div>
                     <div class="desc">
                         <div class="left">
-                            <span class="num">38</span>
-                            <div class="title">웹디자인 기능사 실전 사이트 : C유형</div>
+                            <span class="num">40</span>
+                            <div class="title">웹디자인 기능사 실전 사이트 : E유형</div>
                             <span class="difficulty">난이도 <span>중급</span></span>
                         </div>
                         <div class="right">
                             <div class="btn">소스 다운로드</div>
-                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/site/siteC/index.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
-                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/site/siteC/index.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/site/siteE/index.html" target="_blank" class="sampleBtn">완성 화면</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/site/siteE/index.html" target="_blank" class="sampleBtn">완성 코드</a>
                             <a href="https://webstoryboy.github.io/webstoryboy/w_webd/index.html" target="_blank" class="sampleBtn">미리보기</a>
                             <a href="https://www.figma.com/file/iD3Ehm4HRhe16Vx6kxz3ob/%5B%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EA%B0%80-%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4%5D-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8E%B8?type=design&node-id=26248%3A1098&t=CfKBEPG0lp6GJUNI-1" target="_blank" class="sampleBtn">디자인 보기</a>
                         </div>
@@ -105,11 +105,9 @@
                     <h2>소개</h2>
                     <p>
                         안녕하세요! 웹스토리보이입니다. 
-                        이번에는 C유형 연습니다. 샘플은 C-4 유형을 참고하시면 됩니다.
-                        이번 레이아웃은 약간 옛날 스타일 레이아웃입니다. 
-                        이런 레이아웃을 아직까지 쓰고 잇는 회사가 있을까 싶은데.. 
-                        그래도 시험이니까 한번 만들어보죠! 
-                        고고 😫
+                        이번에는 웹디자인 기능사에서 가장 어려운 부분인 E유형입니다. 
+                        반응형도 신경써야 하고 스크립트까지 접목시켜야 완성할 수 있습니다. 
+                        그럼 마지막까지 화이팅해봅시다.
                     </p>
                     <div style="display: none;">
                         <h3>인덱스</h3>
@@ -152,7 +150,7 @@
     &lt;meta charset="UTF-8"&gt;
     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Vallery Festival&lt;/title&gt;
+    &lt;title&gt;철길 마을&lt;/title&gt;
 
     &lt;!-- css --&gt;
     &lt;link rel="stylesheet" href="css/style.css"&gt;
@@ -168,31 +166,38 @@
 </code></pre>
                         <h4 data-num="02">1-2. 전체 레이아웃 잡기</h4>
                         <p>
-                            전체적인 레이아웃은 사이드와 메인으로 이루어져 있습니다. 
-                            사이드 영역에는 로고와 메뉴, 메인은 슬라이드와 콘텐츠 및 푸터로 이루어져 있습니다. 
+                            전체적인 레이아웃은 메인과 푸터로 잡았습니다. 
+                            메인에는 헤더와 콘텐츠, 슬라이드로 구성되어 있습니다.
                         </p>
 <pre><code class="language-html">&lt;body&gt;
     &lt;div id="wrap"&gt;
-        &lt;aside id="aside"&gt;
-            &lt;h1 class="logo"&gt;&lt;/h1&gt;
-            &lt;nav class="nav"&gt;&lt;/nav&gt;
-        &lt;/aside&gt;
-        &lt;!-- //asdile --&gt;
-
         &lt;main id="main"&gt;
-            &lt;article id="slider"&gt;&lt;/article&gt;
-            &lt;section id="contents"&gt;&lt;/section&gt;
-            &lt;footer id="footer"&gt;&lt;/footer&gt;
+            &lt;header id="header"&gt;
+            &lt;/header&gt;
+            &lt;!-- //header --&gt;
+
+            &lt;section id="contents"&gt;
+            &lt;/section&gt;
+            &lt;!-- //contents --&gt;
+
+            &lt;article id="slider"&gt;
+            &lt;/article&gt;
+            &lt;!-- //slider --&gt;
         &lt;/main&gt;
         &lt;!-- //main --&gt;
+
+        &lt;footer id="footer"&gt;
+        &lt;/footer&gt;
+        &lt;!-- //footer --&gt;
     &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
 &lt;/body&gt;
 </code></pre>
                         <p>
                             css도 언어설정을 해주어야 합니다. 
                             <code>@charset "UTF-8"</code>를 설정하고 기본 색상은 <code>#333</code>으로 설정합니다. 
                         </p>
-<pre><code class="language-css">@charset "UTF-8";
+<pre><code class="language-css">@charset "UTF-8";=
 /* reset */
 * {
     margin: 0;
@@ -207,176 +212,179 @@ li {
     list-style: none;
 }
 img {
-    width: 100%;
     vertical-align: top;
 }
 
 /* wrap */
 #wrap {
-    width: 1000px;
-    display: flex;
-}
-
-/* aside */
-#aside {
-    width: 200px;
-}
-#aside .logo {
-    width: 200px;
-    height: 100px;
-    background-color: #efefef;
-}
-#aside .nav {
-    width: 200px;
-    height: 550px;
-    background-color: #e3e3e3;
+    width: 100%;
 }
 
 /* main */
 #main {
-    width: 800px;
-    height: 650px;
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
 }
 
-/* slider */
-#slider {
-    width: 800px;
-    height: 350px;
-    background-color: #d9d9d9;
+/* header */
+#header {
+    width: 200px;
+    height: 100%;
+    background-color: #efefef;
 }
 
 /* contents */
 #contents {
-    width: 800px;
-    height: 200px;
-    background-color: #d1d1d1;
+    width: 400px;
+    height: 100%;
+    background-color: #e3e3e3;
+}
+
+/* slider */
+#slider {
+    width: calc(100% - 600px);
+    height: 100%;
+    background-color: #d9d9d9;
 }
 
 /* footer */
 #footer {
-    width: 800px;
-    height: 100px;
-    background-color: #c7c7c7;
+    width: 100%; 
+    height: 120px;   
+    background-color: #d1d1d1;
 }
 </code></pre>
-                        <h4 data-num="03">1-3. 각 섹션 작업하기</h4>
+
+                        <h4 data-num="03">1-3. 세부적인 레이아웃 작업하기</h4>
                         <p>
-                            콘텐츠 영역과 푸터 영역을 작업하겠습니다. 
-                            콘텐츠 영역은 3개의 박스로 푸터 영역도 3개의 박스로 구성되어 있습니다. 
-                            해당 영역에 <code>width</code>와 <code>height</code>를 설정하고 백그라운드 색을 추가하였습니다. 
+                            헤더 영역은 로고와 네비로 구성되어 있고, 
+                            콘텐츠 영역은 4개의 섹션으로 구성되어 있습니다. 
+                            푸터는 3개의 영역으로 나누고 가운데 영역은 두개의 영역으로 분리됩니다.
                         </p>
 <pre><code class="language-html">&lt;body&gt;
     &lt;div id="wrap"&gt;
-        &lt;aside id="aside"&gt;
-            &lt;h1 class="logo"&gt;&lt;/h1&gt;
-            &lt;nav class="nav"&gt;&lt;/nav&gt;
-        &lt;/aside&gt;
-        &lt;!-- //asdile --&gt;
- 
         &lt;main id="main"&gt;
-            &lt;article id="slider"&gt;
-            &lt;/article&gt;
-            &lt;!-- //slider --&gt;
+            &lt;header id="header"&gt;
+                &lt;h1 class="logo"&gt;&lt;/h1&gt;
+                &lt;nav class="nav"&gt;&lt;/nav&gt;
+            &lt;/header&gt;
+            &lt;!-- //header --&gt;
 
             &lt;section id="contents"&gt;
+                &lt;article class="banner"&gt;&lt;/article&gt;
                 &lt;article class="notice"&gt;&lt;/article&gt;
                 &lt;article class="gallery"&gt;&lt;/article&gt;
-                &lt;article class="banner"&gt;&lt;/article&gt;
+                &lt;article class="link"&gt;&lt;/article&gt;
             &lt;/section&gt;
             &lt;!-- //contents --&gt;
 
-            &lt;footer id="footer"&gt;
-                &lt;div class="footer1"&gt;&lt;/div&gt;
-                &lt;div class="footer2"&gt;&lt;/div&gt;
-                &lt;div class="footer3"&gt;&lt;/div&gt;
-            &lt;/footer&gt;
-            &lt;!-- //footer --&gt;
+            &lt;article id="slider"&gt;
+            &lt;/article&gt;
+            &lt;!-- //slider --&gt;
         &lt;/main&gt;
         &lt;!-- //main --&gt;
+
+        &lt;footer id="footer"&gt;
+            &lt;div class="footer1"&gt;&lt;/div&gt;
+            &lt;div class="footer2"&gt;
+                &lt;div class="footer2-1"&gt;&lt;/div&gt;
+                &lt;div class="footer2-2"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class="footer3"&gt;&lt;/div&gt;
+        &lt;/footer&gt;
+        &lt;!-- //footer --&gt;
     &lt;/div&gt;
+    &lt;!-- //wrap --&gt;
 &lt;/body&gt;</code></pre>
 <pre><code class="language-css">/* wrap */
 #wrap {
-    width: 1000px;
-    display: flex;
-}
-
-/* aside */
-#aside {
-    width: 200px;
-}
-#aside .logo {
-    width: 200px;
-    height: 100px;
-    background-color: #efefef;
-}
-#aside .nav {
-    width: 200px;
-    height: 550px;
-    background-color: #e3e3e3;
+    width: 100%;
 }
 
 /* main */
 #main {
-    width: 800px;
-    height: 650px;
+    width: 100%;
+    height: calc(100vh - 120px);
+    display: flex;
 }
 
-/* slider */
-#slider {
-    width: 800px;
-    height: 350px;
-    background-color: #d9d9d9;
+/* header */
+#header {
+    width: 200px;
+}
+#header .logo {
+    width: 100%;
+    height: 10%;
+    background-color: #efefef;
+}
+#header .nav {
+    width: 100%;
+    height: 90%;
+    background-color: #e3e3e3;
 }
 
 /* contents */
 #contents {
-    width: 800px;
-    display: flex;
+    width: 400px;
 }
-
-/* notice */
+#contents .banner {
+    width: 100%;
+    height: 15%;
+    background-color: #d9d9d9;
+}
 #contents .notice {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 35%;
     background-color: #d1d1d1;
 }
-
-/* gallery */
 #contents .gallery {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    height: 35%;
     background-color: #c7c7c7;
 }
-
-/* banner */
-#contents .banner {
-    width: 200px;
-    height: 200px;
+#contents .link {
+    width: 100%;
+    height: 15%;
     background-color: #bcbcbc;
+}
+
+/* slider */
+#slider {
+    width: calc(100% - 600px);
+    height: 100%;
+    background-color: #b1b1b1;
 }
 
 /* footer */
 #footer {
-    width: 800px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
 }
 #footer .footer1 {
     width: 200px;
-    height: 100px;
-    background-color: #b1b1b1;
+    height: 120px;
+    background-color: #a3a3a3;
 }
 #footer .footer2 {
-    width: 400px;
-    height: 100px;
-    background-color: #a3a3a3;
+    width: calc(100% - 400px);
+}
+#footer .footer2 .footer2-1 {
+    width: 100%;
+    height: 60px;
+    background-color: #9d9d9d;
+}
+#footer .footer2 .footer2-2 {
+    width: 100%;
+    height: 60px;
+    background-color: #929292;
 }
 #footer .footer3 {
     width: 200px;
-    height: 100px;
-    background-color: #9d9d9d;
-}
-</code></pre>
+    height: 120px;
+    background-color: #838383;
+}</code></pre>
                     </div>
 
                     <!-- 광고 영역 -->
@@ -384,86 +392,84 @@ img {
                     
                     <div>
                         <h3>2. 각 섹션 작업하기</h3>
-                        <h4 data-num="04">2-1. 사이드 영역 작업하기</h4>
+                        <h4 data-num="04">2-1. 헤더 영역 작업하기</h4>
                         <p>
-                            사이드 영역은 로고와 메뉴로 설정되어 있습니다. 
-                            메뉴는 서브메뉴가 있는 구조입니다.
+                            헤더 영역은 로고와 메뉴로 구성되어 있습니다. 
                         </p>
-<pre><code class="language-html">&lt;aside id="aside"&gt;
+<pre><code class="language-html">&lt;header id="header"&gt;
     &lt;h1 class="logo"&gt;
-        &lt;a href="#"&gt;Vallery Festival&lt;/a&gt;
+        &lt;a href="#"&gt;철길 마을&lt;/a&gt;
     &lt;/h1&gt;
     &lt;nav class="nav"&gt;
         &lt;ul&gt;
-            &lt;li&gt;&lt;a href="#"&gt;축제소개&lt;/a&gt;
+            &lt;li&gt;&lt;a href="#"&gt;철길 마을&lt;/a&gt;
                 &lt;ul class="submenu"&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;Festival소개&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;행사장 안내&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;조직위원회&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;마을 소개&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;마을의 유래&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;볼거리&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;찾아오시는 길&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;예약안내&lt;/a&gt;
+            &lt;li&gt;&lt;a href="#"&gt;주변 맛집&lt;/a&gt;
                 &lt;ul class="submenu"&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;예약하기&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;예약확인/취소&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;단체예약문의&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;빵집&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;간장게장&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;중국음식점&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;횟집&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;정보서비스&lt;/a&gt;
+            &lt;li&gt;&lt;a href="#"&gt;주변 여행지&lt;/a&gt;
                 &lt;ul class="submenu"&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;고릴라즈&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;메이저 레이저&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;아우스게인&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;타임로드&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;은파호수공원&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;초원사진관&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;월명공원&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;진포해양공원&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/li&gt;
-            &lt;li&gt;&lt;a href="#"&gt;커뮤니티&lt;/a&gt;
+            &lt;li&gt;&lt;a href="#"&gt;도움마당&lt;/a&gt;
                 &lt;ul class="submenu"&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;공지사항&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;사진갤러리&lt;/a&gt;&lt;/li&gt;
-                    &lt;li&gt;&lt;a href="#"&gt;영상갤러리&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;교통정보&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;주변 주차장&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;자료실&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="#"&gt;자료마당&lt;/a&gt;&lt;/li&gt;
                 &lt;/ul&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
     &lt;/nav&gt;
-&lt;/aside&gt;
-&lt;!-- //aside --&gt;
+&lt;/header&gt;
+&lt;!-- //header --&gt;
 </code></pre>
-                        <p>
-                            서브메뉴는 오른쪽에 나오는 구조이기 때문에 <code>absolute</code>를 통해 위치를 설정했습니다.
-                        </p>
-<pre><code class="language-css">/* aside */
-#aside {
+<pre><code class="language-css">/* header */
+#header {
     width: 200px;
-    height: 650px;
-    background-color: #ebe1ff;
+    height: 100%;
+    background-color: rgb(255, 219, 219);
 }
-#aside h1 {
+#header .logo {
     width: 100%;
-    padding: 20px;
-}
-#aside h1 a {
-    color: #58339E;
-}
-#aside .nav {
-    position: relative;
-    z-index: 100;
-}
-#aside .nav > ul > li {
+    padding: 20px 0;
     text-align: center;
-    position: relative;
+    background-color: #fff;
 }
-#aside .nav > ul > li > a {
+#header .logo a {
+    color: #b40000;
+}
+#header .nav > ul > li {
+    position: relative;
+    text-align: center;
+    z-index: 1000;
+}
+#header .nav > ul > li > a {
     display: inline-block;
-    background-color: #58339E;
+    padding: 10px 0;
+    background-color: #ff6d6d;
     color: #fff;
     width: 100%;
-    padding: 10px 0;
 }
-#aside .nav > ul > li > a:hover {
-    background-color: #8258d1;
+#header .nav > ul > li > a:hover {
+    background-color: #ff8888;
 }
-#aside .nav > ul > li > ul {
+#header .nav > ul > li > ul {
     position: absolute;
     right: -200px;
     top: 0;
@@ -471,232 +477,357 @@ img {
     background-color: #fff;
     display: none;
 }
-#aside .nav > ul > li > ul > li > a {
+#header .nav > ul > li > ul > li > a {
     display: inline-block;
-    background-color: #ffffff;
-    color: #000;
     padding: 10px 0;
+    background-color: #ff6d6d;
+    color: #fff;
     width: 100%;
 }
-#aside .nav > ul > li > ul > li > a:hover {
-    background-color: #8258d1;
-    color: #fff;
+#header .nav > ul > li > ul > li > a:hover {
+    background-color: #ffa9a9;
 }
 </code></pre>
 
-                        <h4 data-num="05">2-2. 슬라이드 작업하기</h4>
+                        <h4 data-num="05">2-2. 콘텐츠 배너 작업하기</h4>
                         <p>
-                            이미지는 총 3장이 들어가며, 이미지마다 제목과 설명글을 적었습니다. 
-                            슬라이드 구조는 아래에서 위로 올라가는 구조입니다. 
-                            설명글은 이미지위에 올리는 방법을 적용하였습니다. 
-                        </p>
-<pre><code class="language-html">&lt;article id="slider"&gt;
-    &lt;div class="sliderWrap"&gt;
-        &lt;div class="slider s1"&gt;
-            &lt;img src="images/slider01.jpg" alt="Vallery Festival1"&gt;
-            &lt;div class="text"&gt;
-                &lt;h2&gt;Vallery &lt;em&gt;Festival&lt;/em&gt;&lt;/h2&gt;
-                &lt;p&gt;신나는 축제 놀아봅시다!&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="slider s2"&gt;
-            &lt;img src="images/slider02.jpg" alt="Vallery Festival1"&gt;
-            &lt;div class="text"&gt;
-                &lt;h2&gt;Vallery &lt;em&gt;Festival&lt;/em&gt;&lt;/h2&gt;
-                &lt;p&gt;신나는 축제 놀아봅시다!&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class="slider s3"&gt;
-            &lt;img src="images/slider03.jpg" alt="Vallery Festival1"&gt;
-            &lt;div class="text"&gt;
-                &lt;h2&gt;Vallery &lt;em&gt;Festival&lt;/em&gt;&lt;/h2&gt;
-                &lt;p&gt;신나는 축제 놀아봅시다!&lt;/p&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-&lt;/article&gt;
-&lt;!-- //slider --&gt;</code></pre>  
-                        <p>
-                            이미지는 따로 정렬할 필요는 없습니다. 
-                            글씨만 가운데로 오게 설정해주고, 이미지에 여백이 생겼는지만 확인하면 됩니다. 
-                            리셋 css에 설정을 했지만, 혹시 안했으면 이미지에는 <code>vertical-align: top</code>이 설정되어 있어야 여백이 없어집니다. 
-                            이 점 주의 바랍니다.
-                        </p>
-<pre><code class="language-css">/* slider */
-#slider {
-    width: 100%;
-    height: 350px;
-    overflow: hidden;
-}
-#slider .sliderWrap {
-    overflow: hidden;
-}
-#slider .sliderWrap .slider {
-    height: 350px;
-    position: relative;
-}
-#slider .sliderWrap .slider .text {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.3);
-    color: #fff;
-    padding: 20px 40px;
-    width: 400px;
-}
-#slider .sliderWrap .slider .text h2 {
-    font-size: 40px;
-    margin-bottom: 5px;
-}
-#slider .sliderWrap .slider .text h2 em {
-    font-style: normal;
-    color: rgb(188, 116, 255)
-}</code></pre>  
-
-                        <h4 data-num="06">2-3. 게시판 작업하기</h4>
-                        <p>
-                            목록만 표현되어 있는 게시판 유형입니다. 
-                            목록 앞에는 블릿 기호가 표시되어 있습니다.
-                        </p>
-<pre><code class="language-html">&lt;article class="notice"&gt;
-    &lt;h3&gt;Vallery Festival 공지사항&lt;/h3&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;주차장 안내 및 티켓 수령 장소&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Vallery Festival 날짜 및 장소 안내&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;아티스트 라인 업 및 티켓팅 하는 방법&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;주의 사항 및 안내사항 참고 필수&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;Vallery Festival 사이트 업데이트 안내&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/article&gt;
-&lt;!-- //notice --&gt;</code></pre>
-                        <p>
-                            게시글 앞에 블릿기호가 있습니다. 
-                            보통은 li를 사용하면 자동으로 생기지만 우리는 reset에서 지웠습니다. 
-                            호환성을 맞추기 위해서 가상요소로 작업을 했습니다. 
-                            브라우저마다 블릿기호의 형태가 다르고 위치도 다르기 때문에 보통은 실무에서 이렇게 설정합니다.
-                            기본 블릿 기호를 사용해도 되지만 저희는 가상요소를 설정하겠습니다. 
-                            어렵다고 느끼는 분들은 기본 블릿 기호를 사용하셔도 됩니다. 
-                        </p>
-<pre><code class="language-css">/* contents : notice */
-#contents .notice {
-    width: 300px;
-    height: 200px;
-    background-color: #f9ddff;
-    padding: 20px;
-    box-sizing: border-box;
-}
-#contents .notice h3 {
-    margin-bottom: 10px;
-}
-#contents .notice ul li {
-    line-height: 1.6;
-    position: relative;
-    padding-left: 14px;
-}
-#contents .notice ul li::before {
-    content: '';
-    width: 5px;
-    height: 5px;
-    background-color: #000;
-    border-radius: 50%;
-    position: absolute;
-    left: 0;
-    top: 8px;
-}
-#contents .notice ul li a:hover {
-    text-decoration: underline;
-}</code></pre>
-
-                        <h4 data-num="07">2-4. 갤러리 작업하기</h4>
-                        <p>
-                            갤러리 형태의 유형입니다. 
-                            이미지는 3장이 들어가고 <code>alt</code> 속성도 작성해주어야 합니다.
-                        </p>
-<pre><code class="language-html">&lt;article class="gallery"&gt;
-    &lt;h3&gt;Vallery Festival 현장 사진&lt;/h3&gt;
-    &lt;ul&gt;
-        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/gallery01.jpg" alt="현장 사진1"&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/gallery02.jpg" alt="현장 사진2"&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;a href="#"&gt;&lt;img src="images/gallery03.jpg" alt="현장 사진3"&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;/article&gt;
-&lt;!-- //gallery --&gt;</code></pre>
-<pre><code class="language-css">/* contents : gallery */
-#contents .gallery {
-    width: 300px;
-    height: 200px;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: #e0bfff;
-}
-#contents .gallery h3 {
-    margin-bottom: 10px;
-}
-#contents .gallery ul {
-    display: flex;
-}
-#contents .gallery li {
-    margin-right: 8px;
-}
-#contents .gallery img {
-    width: 80px;
-}</code></pre>
-
-                        <h4 data-num="08">2-5. 배너 작업하기</h4>
-                        <p>
-                            배너이미지는 백그라운드로 처리하고 <code>a</code> 태그로 버튼을 설정했습니다. 
+                            콘텐츠 영역의 배너입니다. 
+                            배너 이미지는 백그라운드로 넣고 버튼을 작업하였습니다.  
                         </p>
 <pre><code class="language-html">&lt;article class="banner"&gt;
-    &lt;h3&gt;Vallery Festival&lt;/h3&gt;
-    &lt;a href="#" class="popup-btn"&gt;티켓 구매&lt;/a&gt;
+    &lt;h3&gt;기차 여행&lt;/h3&gt;
+    &lt;a href="#"&gt;떠나기!&lt;/a&gt;
 &lt;/article&gt;
-&lt;!-- //banner --&gt;</code></pre>
+&lt;!-- //banner --&gt;</code></pre>  
 <pre><code class="language-css">/* contents : banner */
 #contents .banner {
-    width: 200px;
-    height: 200px;
-    background-image: url(../images/banner.jpg);
-    color: #fff;
+    width: 100%;
+    height: 15%;
+    background: url(../images/banner.jpg) no-repeat center;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 #contents .banner h3 {
-    text-transform: uppercase;
+    color: #fff;
     font-size: 30px;
-    text-align: center;
-    line-height: 1;
-    margin-bottom: 5px;
 }
 #contents .banner a {
-    background-color: #58339E;
     color: #fff;
+    background-color: #ff6d6da9;
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 #contents .banner a:hover {
-    background-color: #7049b8;
+    background-color: #ff6d6d;
+}</code></pre>  
+
+                        <h4 data-num="06">2-3. 콘텐츠 게시판 작업하기</h4>
+                        <p>
+                            목록과 더보기가 있는 게시판 유형입니다.
+                        </p>
+<pre><code class="language-html">&lt;article class="notice"&gt;
+    &lt;h3&gt;철길 마을 공지사항&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;철길 마을 축제 일정 변경 안내&lt;/a&gt;&lt;span&gt;2023.03.04&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;철길 마을 도서관 임시 폐쇄 안내&lt;/a&gt;&lt;span&gt;2023.05.04&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;철길 마을 자원봉사자 모집 공고&lt;/a&gt;&lt;span&gt;2023.04.04&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;철길 마을 청소 캠페인 안내&lt;/a&gt;&lt;span&gt;2023.05.04&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;철길 마을의 최신 소식&lt;/a&gt;&lt;span&gt;2023.04.04&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="#" class="more"&gt;더보기+&lt;/a&gt;
+&lt;/article&gt;
+&lt;!-- //notice --&gt;</code></pre>
+<pre><code class="language-css">/* contents : notice */
+#contents .notice {
+    width: 100%;
+    height: 35%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+#contents .notice h3 {
+    background-color: #ff6d6d;
+    color: #fff;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
+#contents .notice li {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.6;
+    padding-left: 15px;
+    position: relative;
+}
+#contents .notice li::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    background-color: #ff6d6d;
+}
+#contents .notice li a {
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#contents .notice li a:hover {
+    text-decoration: underline;
+    text-underline-offset: under;
+}
+#contents .notice li span {
+    width: 30%;
+    text-align: right;
+} 
+#contents .notice .more {
+    position: absolute;
+    right: 26px;
+    top: 26px;
+    color: #fff;
 }</code></pre>
 
-                        <h4 data-num="09">2-6. 푸터 작업하기</h4>
+                        <h4 data-num="07">2-4. 콘텐츠 갤러리 작업하기</h4>
                         <p>
-                            푸터 영역은 세개의 영역으로 나누고 작업합니다.  
+                            갤러리 형태의 유형입니다. 
+                            이미지는 백그라운드로 들어가고 마우스 오버 효과를 추가하였습니다. 
                         </p>
-<pre><code class="language-html">&lt;footer id="footer"&gt;
+<pre><code class="language-html">&lt;article class="gallery"&gt;
+    &lt;h3&gt;철길 마을 갤러리&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;최고의 뷰&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;위험한 뷰&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;아름다운 뷰&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a href="#" class="more"&gt;더보기+&lt;/a&gt;
+&lt;/article&gt;
+&lt;!-- //gallery --&gt;</code></pre>
+<pre><code class="language-css">/* contents : gallery */
+#contents .gallery {
+    width: 100%;
+    height: 35%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffecec;
+    overflow: hidden;
+    position: relative;
+}
+#contents .gallery h3 {
+    background-color: #ff6d6d;
+    color: #fff;
+    padding: 4px 10px;
+    margin-bottom: 10px;
+}
+#contents .gallery ul {
+    display: flex;
+    justify-content: space-between;
+}
+#contents .gallery li {
+    width: 110px;
+    height: 150px;
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#contents .gallery li:nth-child(1) {
+    background-image: url(../images/gallery01.jpg);
+}
+#contents .gallery li:nth-child(2) {
+    background-image: url(../images/gallery02.jpg);
+}
+#contents .gallery li:nth-child(3) {
+    background-image: url(../images/gallery03.jpg);
+}
+#contents .gallery li a {
+    display: block;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contents .gallery li a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+#contents .gallery .more {
+    position: absolute;
+    right: 26px;
+    top: 26px;
+    color: #fff;
+}</code></pre>
+
+                        <h4 data-num="08">2-5. 콘텐츠 링크 작업하기</h4>
+                        <p>
+                            링크 영역은 4개의 버튼을 만들었습니다.
+                        </p>
+<pre><code class="language-html">&lt;article class="link"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#"&gt;사진찍기&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;분실물&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;예약&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;전화하기&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/article&gt;
+&lt;!-- //link --&gt;</code></pre>
+<pre><code class="language-css">/* contents : link */
+#contents .link {
+    width: 100%;
+    height: 15%;
+}
+#contents .link ul {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#contents .link li {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+#contents .link li a {
+    display: block;
+    padding-top: 40px;
+    position: relative;
+}
+#contents .link li a::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-position: center;
+    background-size: cover;
+}
+#contents .link li a:hover {
+    color: #ff6d6d;
+}
+#contents .link li:nth-child(1) a::before {
+    background-image: url(../images/icon01.png);
+}
+#contents .link li:nth-child(2) a::before {
+    background-image: url(../images/icon04.png);
+}
+#contents .link li:nth-child(3) a::before {
+    background-image: url(../images/icon02.png);
+}
+#contents .link li:nth-child(4) a::before {
+    background-image: url(../images/icon03.png);
+}</code></pre>
+
+                        <h4 data-num="09">2-6. 슬라이드 작업하기</h4>
+                        <p>
+                            슬라이드 영역은 3장의 이미지로 구성되어 있습니다.
+                        </p>
+<pre><code class="language-html">&lt;article id="slider"&gt;
+    &lt;div class="sliderWrap"&gt;
+        &lt;div class="slider s1"&gt;
+            &lt;div class="text"&gt;
+                &lt;h3&gt;추억을 소환하는 철길 마을&lt;/h3&gt;
+                &lt;p&gt;철길마을&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="slider s2"&gt;
+            &lt;div class="text"&gt;
+                &lt;h3&gt;추억을 소환하는 철길 마을&lt;/h3&gt;
+                &lt;p&gt;철길마을&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="slider s3"&gt;
+            &lt;div class="text"&gt;
+                &lt;h3&gt;추억을 소환하는 철길 마을&lt;/h3&gt;
+                &lt;p&gt;철길마을&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/article&gt;
+&lt;!-- //slider --&gt;</code></pre>
+<pre><code class="language-css">/* slider */
+#slider {
+    width: calc(100% - 600px);
+    height: 100%;
+    overflow: hidden;
+}
+#slider .sliderWrap {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+#slider .sliderWrap .slider {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#slider .sliderWrap .slider .text {
+    background-color: #ff6d6da3;
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#slider .sliderWrap .slider .text h3 {
+    color: #fff;
+    font-size: 20px;
+}
+#slider .sliderWrap .slider .text p {
+    color: #fff;
+    margin-top: 5px;
+}
+#slider .sliderWrap .slider.s1 {
+    background-image: url(../images/slider01.jpg);
+}
+#slider .sliderWrap .slider.s2 {
+    background-image: url(../images/slider02.jpg);
+}
+#slider .sliderWrap .slider.s3 {
+    background-image: url(../images/slider03.jpg);
+}</code></pre>
+
+                        <h4 data-num="10">2-7. 푸터 작업하기</h4>
+                        <p>
+                            푸터 영역은 세개의 영역으로 작업합니다.
+                        </p>
+<pre><code class="language-html">&lt;footer id="footer"&gt;s
     &lt;div class="footer1"&gt;
-        &lt;h4&gt;Vallery Festival&lt;/h4&gt;
+        &lt;h4&gt;철길 마을&lt;/h4&gt;
     &lt;/div&gt;
     &lt;div class="footer2"&gt;
-        주소 서울시 강남구 삼성로 100 삼성동빌딩 100층&lt;br&gt;
-        COPYRIGHT(C) ALL RIGHTS RESERVED.
+        &lt;div class="footer2-1"&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#"&gt;개인정보처리방침&lt;/a&gt;&lt;/li&gt; |
+                &lt;li&gt;&lt;a href="#"&gt;정보 공개&lt;/a&gt;&lt;/li&gt; |
+                &lt;li&gt;&lt;a href="#"&gt;홈페이지 운영지침&lt;/a&gt;&lt;/li&gt; |
+                &lt;li&gt;&lt;a href="#"&gt;분실물 확인하기&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div class="footer2-2"&gt;
+            15073 전라북도 군산시 군산로 237 (정왕동) 철길 마을 COPYRIGHT(C) ALL RIGHTS RESERVED.
+        &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class="footer3"&gt;
-        &lt;select name="select" id="select"&gt;
-            &lt;option value="패밀리 사이트"&gt;패밀리 사이트&lt;/option&gt;
-            &lt;option value="패밀리 사이트"&gt;패밀리 사이트&lt;/option&gt;
-            &lt;option value="패밀리 사이트"&gt;패밀리 사이트&lt;/option&gt;
-            &lt;option value="패밀리 사이트"&gt;패밀리 사이트&lt;/option&gt;
+        &lt;select name="family" id="family"&gt;
+            &lt;option value="철길마을1"&gt;철길마을1&lt;/option&gt;
+            &lt;option value="철길마을2"&gt;철길마을2&lt;/option&gt;
+            &lt;option value="철길마을3"&gt;철길마을3&lt;/option&gt;
         &lt;/select&gt;
     &lt;/div&gt;
 &lt;/footer&gt;
@@ -704,46 +835,67 @@ img {
 <pre><code class="language-css">/* footer */
 #footer {
     width: 100%;
-    height: 100px;
-    background-color: #e69bff;
     display: flex;
-    align-items: center;
+    background-color: #efefef;
 }
 #footer .footer1 {
-    width: 30%;
-    text-align: center;
-}
-#footer .footer1 h4 {
-    font-size: 20px;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #858585;
 }
 #footer .footer2 {
-    width: 60%;
+    width: calc(100% - 400px);
+}
+#footer .footer2 .footer2-1 {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+#footer .footer2 .footer2-1 li {
+    display: inline-block;
+}
+#footer .footer2 .footer2-1 li a {
+    padding: 20px 10px;
+    display: inline-block;
+}
+#footer .footer2 .footer2-1 li a:hover {
+    text-decoration: underline;
+}
+#footer .footer2 .footer2-2 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #footer .footer3 {
-    width: 30%;
+    width: 200px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #footer .footer3 select {
     width: 90%;
+    height: 30px;
 }</code></pre>
 
-                        <h4 data-num="10">2-7. 팝업 작업하기</h4>   
+                        <h4 data-num="11">2-8. 팝업 작업하기</h4>   
                         <p>
-                            이번에 팝업 버튼은 링크 영역에 넣겠습니다. 
-                            시험지를 참고하시면 어디에 넣으라고 명시가 되어 있을 겁니다. 
-                            팝업 버튼에 <code>popup-btn</code>을 추가하겠습니다. 
+                            공지사항 첫번째 글에 <code>popup-btn</code>클래스를 추가하고 
+                            다음과 같이 팝업을 만들어서 숨겼놓겠습니다. 
                         </p>                  
-<pre><code class="language-html">&lt;article class="banner"&gt;
-    &lt;h3&gt;Vallery Festival&lt;/h3&gt;
-    &lt;a href="#" class="popup-btn"&gt;티켓 구매&lt;/a&gt;
-&lt;/article&gt;
-&lt;!-- //banner --&gt;</code></pre>
 <pre><code class="language-html">&lt;div class="popup-view"&gt;
-    &lt;h3&gt;Vallery Festival 2023 티켓 예매 일정 변경 안내&lt;/h3&gt;
+    &lt;h3&gt;철길마을 공지사항&lt;/h3&gt;
     &lt;p&gt;
-        안녕하세요, Vallery Festival 운영팀입니다. 
-        2023년 Vallery Festival 티켓 예매 일정에 변경이 있어 안내드립니다.
-        기존 예매 일정에 따르면 6월 1일부터 6월 30일까지 티켓 예매가 가능하였으나, 
-        운영상의 문제로 인해 일정이 변경되었습니다.
+        안녕하세요, 철길마을 주민 여러분!
+        철길마을 축제 개최 안내드립니다
+        참고 하시고 많은 참여 바랍니다. 
+        감사합니다.
     &lt;/p&gt;
     &lt;a href="#" class="popup-close"&gt;닫기&lt;/a&gt;
 &lt;/div&gt;
@@ -757,20 +909,23 @@ img {
     transform: translate(-50%, -50%);
     width: 300px;
     height: 300px;
-    background-color: #D0AEF0;
-    display: none;
-    border: 4px solid #7636B1;
+    background-color: #ffcbcb;
+    border: 4px solid #ff6d6d;
     padding: 20px;
+    display: none;
 }
 .popup-view h3 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6d6d;
+    color: #ff6d6d;
+    padding-bottom: 5px;
 }
 .popup-view a {
     display: inline-block;
     padding: 8px 20px;
     color: #fff;
-    background-color: #7636B1;
+    background-color: #ff6d6d;
     position: absolute;
     left: 50%;
     bottom: 20px;
@@ -784,76 +939,74 @@ img {
                     
                     <div>
                         <h3>3. 스크립트 작업하기</h3>
-                        <h4 data-num="11">3-1. 이미지 슬라이드 작업하기</h4>
+                        <h4 data-num="12">3-1. 이미지 슬라이드 작업하기</h4>
                         <p>
-                            스크립트에서 가장 어려운 이미지 슬라이드부터 시작해보겠습니다. 
-                            이미지 슬라이드를 못하면 바로 탈락이기 때문에 이것부터 신경써서 작업하겠습니다.
-                            많이 해봤기 때문에 이제는 익숙할거라고 생각이 듭니다. 
-                            주석표시를 보면서 하나씩 해석해 보면 되겠습니다. 
+                            이미지 슬라이드를 작업하겠습니다. 
+                            반응형으로 작업해야 하기 때문에 세부적인 부분은 CSS를 통해서 설정해야 합니다. 
+                            이미지를 복사하여 추가하는 형태이므로 전체 가로 값은 <code>400%</code>입니다. 
+                            이부분을 고쳐야 오류가 없습니다. 
                         </p>
 <pre><code class="language-js">$(function(){
     // 이미지 슬라이드
-    let currentIndex = 0;      //현재 이미지 설정
-    $(".sliderWrap").append($(".slider").first().clone(true));  //첫번째 이미지를 복사후 마지막에 추가
+    let currentIndex = 0;
+    $(".sliderWrap").append($(".slider").first().clone(true));
 
-    setInterval(function(){     //3초에 한번씩 실행
-        currentIndex++;    //현재 이미지 1씩 증가
-        $(".sliderWrap").animate({marginTop: -currentIndex * 350 + "px"}, 600);    //이미지를 위쪽으로 애니메이션
+    setInterval(function(){
+        currentIndex++;
+        $(".sliderWrap").animate({marginLeft: -100 * currentIndex + "%" }, 600);
 
-        if(currentIndex == 3){      //마지막 이미지가 됐을 때
-            setTimeout(function(){  //한번만 실행
-                $(".sliderWrap").animate({ marginTop:0 }, 0);   //애니메이션 정지
-                currentIndex = 0;   //현재 이미지 초기화
+        if(currentIndex == 3){
+            setTimeout(function(){
+                $(".sliderWrap").animate({marginLeft: 0}, 0);
+                currentIndex = 0;
             }, 700);
         }
     }, 3000);
 });</code></pre>
+<pre><code class="language-css">#slider .sliderWrap {
+    width: 400%;
+}</code></pre>
 
-                        <h4 data-num="12">3-2. 메뉴 작업하기</h4>
+                        <h4 data-num="13">3-2. 메뉴 작업하기</h4>
                         <p>
                             메뉴는 서브메뉴가 오른쪽으로 나오는 구조입니다. 
-                            이미 CSS는 처리가 되어 있기 때문에 해당되는 메뉴에 오버했을 때 
-                            해당 자식 메뉴가 나오는 구조입니다. 
+                            이미 CSS는 처리가 되어 있기 때문에 해당되는 메뉴에 오버했을 때 해당 자식 메뉴가 나오는 구조입니다. 
                         </p>
-<pre><code class="language-js">$(".nav > ul > li").mouseover(function(){
+<pre><code class="language-js">// 메뉴
+$(".nav > ul > li").mouseover(function(){
     $(this).find(".submenu").stop().slideDown();
 });
 $(".nav > ul > li").mouseout(function(){
     $(this).find(".submenu").stop().slideUp();
 });</code></pre>
-<pre><code class="language-css">#aside .nav {
-    position: relative;
-    z-index: 100;
-}</code></pre>
             
-                        <h4 data-num="13">3-3. 팝업 작업하기</h4>
+                        <h4 data-num="14">3-3. 팝업 작업하기</h4>
                         <p>
                             마지막 스크립트는 팝업입니다. 
-                            여기도 어려운 부분은 없으니 살짝 보시면 되겠습니다.
+                            버튼을 클릭하면 숨겨놨던 팝업을 보여주고, 버튼을 클릭하면 다시 숨기는 구조입니다.
                         </p>
-<pre><code class="language-js">// 팝업
-$(".popup-btn").click(function(){   //팝업 버튼 클릭
-    $(".popup-view").show();    //팝업 나타나기
+<pre><code class="language-js">$(".popup-btn").click(function(){
+    $(".popup-view").show();
 });
-$(".popup-close").click(function(){     //팝업 닫기 버튼 클릭
-    $(".popup-view").hide ();   //팝업 숨기기
+$(".popup-close").click(function(){
+    $(".popup-view").hide ();
 });</code></pre>
                     </div>
                     <div>
                         <h3>4. 마무리</h3>
                         <p>
-                            C유형도 마무리가 되었습니다. 
-                            점점 시간이 단축이 되는지요?
-                            전체적인 코딩에 시간이 많이 소요되고, 스크립트는 의외로 금방합니다. 
-                            중요한건 안되는 부분이 있을 때 그것을 스스로 해결하는 능력이 중요합니다. 
-                            그런 부분은 반복적으로 많이 하셔야 생기게 됩니다. 
-                            화이팅 😲
+                            제일 어렵게 느껴졌던 E유형도 마무리가 되었습니다. 
+                            지금까지 5개에 사이트를 만들어 봤습니다. 
+                            이 정도 연습했다면 시험을 충분히 합격할 수 있다고 생각합니다. 
+                            기타 궁금한 사항이나 질문이 있으면 댓글 부탁드립니다. 
+                            그동안 정말 수고하셨습니다.  
+                            감사합니다. 🫤🤕🤬🥺😬👻
                         </p>
                     </div>
                     
                     <div class="right_refer">
-                        <a href="https://webstoryboy.github.io/webstoryboy/w_webd/site/siteC/index.html" target="_blank" class="sampleBtn">완성 화면</a>
-                        <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/site/siteC/index.html" target="_blank" class="sampleBtn">완성 코드</a>
+                        <a href="https://webstoryboy.github.io/webstoryboy/w_webd/site/siteE/index.html" target="_blank" class="sampleBtn">완성 화면</a>
+                        <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/site/siteE/index.html" target="_blank" class="sampleBtn">완성 코드</a>
                         <a href="https://webstoryboy.github.io/webstoryboy/w_webd/index.html" target="_blank" class="sampleBtn">미리보기</a>
                         <a href="https://www.figma.com/file/iD3Ehm4HRhe16Vx6kxz3ob/%5B%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EA%B0%80-%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4%5D-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8E%B8?type=design&node-id=26248%3A1098&t=CfKBEPG0lp6GJUNI-1" target="_blank" class="sampleBtn">디자인 보기</a>
                     </div>
