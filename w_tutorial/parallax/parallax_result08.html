@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패랠랙스 이펙트</title>
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        body {
+            color: #fff;
+            font-family: "NexonLv1Gothic";
+            font-weight: 300;
+        }
+        #parallax__title {
+            position: fixed;
+            left: 0; top: 0;
+            padding: 20px;
+            z-index: 1000;
+        }
+        #parallax__title h1 {
+            font-size: 30px;
+            border-bottom: 1px dashed #fff;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            font-weight: 400;
+            display: inline-block;
+        }
+        #parallax__title p {
+            font-size: 16px;
+        }
+        #parallax__title ul {
+            margin-top: 10px;
+        }
+        #parallax__title li {
+            display: inline;
+        }
+        #parallax__title li a {
+            width: 20px; 
+            height: 20px;
+            border-radius: 50%;
+            border: 1px dashed #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        #parallax__title li.active a {
+            background: #fff;
+            color: #000;
+        }
+        #parallax__nav {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+            z-index: 1000;
+            background-color: rgba(0,0,0,0.4);
+            padding: 15px 20px;
+            border-radius: 50px;
+        }
+        #parallax__nav li {
+            list-style: none;
+            display: inline;
+        }
+        #parallax__nav li a {
+            display: inline-block;
+            width: 30px; 
+            height: 30px;
+            padding: 5px;
+            text-align: center;
+            line-height: 30px;
+        }
+        #parallax__nav li.active a {
+            background: #fff;
+            color: #000;
+            border-radius: 50%;
+        }
+
+        /* parallax__cont */
+        #parallax__cont {
+            position: fixed;
+            left: 0; 
+            top: 0;
+            display: flex;
+        }
+        .content__item {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        #section1 {background-color: #111;}
+        #section2 {background-color: #222;}
+        #section3 {background-color: #333;}
+        #section4 {background-color: #444;}
+        #section5 {background-color: #555;}
+        #section6 {background-color: #666;}
+        #section7 {background-color: #777;}
+        #section8 {background-color: #888;}
+        #section9 {background-color: #999;}
+
+        .content__item__num {
+            position: absolute;
+            bottom: 20px; 
+            right: 20px;
+            color: #fff;
+            font-size: 20vw;
+            z-index: 10000;
+            font-family: 'Lato';
+        }
+    </style>
+</head>
+<body>
+    <header id="parallax__title">
+        <h1><a href="parallaxEffect.html">JavaScript Parallax Effect08</a></h1>
+        <p>패럴랙스 스크롤링 효과 - 가로 효과</p>
+        <ul>
+            <li><a href="parallax_result01.html">1</a></li>
+            <li><a href="parallax_result02.html">2</a></li>
+            <li><a href="parallax_result03.html">3</a></li>
+            <li><a href="parallax_result04.html">4</a></li>
+            <li><a href="parallax_result05.html">5</a></li>
+            <li><a href="parallax_result06.html">6</a></li>
+            <li><a href="parallax_result07.html">7</a></li>
+            <li class="active"><a href="parallax_result08.html">8</a></li>
+            <li><a href="parallax_result09.html">9</a></li>
+        </ul>
+    </header>
+    <!-- //parallax__title  -->
+
+    <main id="parallax__cont">
+        <section id="section1" class="content__item">
+            <span class="content__item__num">01</span>
+        </section>
+        <!-- //section1 -->
+        <section id="section2" class="content__item">
+            <span class="content__item__num">02</span>
+        </section>
+        <!-- //section2 -->
+        <section id="section3" class="content__item">
+            <span class="content__item__num">03</span>
+        </section>
+        <!-- //section3 -->
+        <section id="section4" class="content__item">
+            <span class="content__item__num">04</span>
+        </section>
+        <!-- //section4 -->
+        <section id="section5" class="content__item">
+            <span class="content__item__num">05</span>
+        </section>
+        <!-- //section5 -->
+        <section id="section6" class="content__item">
+            <span class="content__item__num">06</span>
+        </section>
+        <!-- //section6 -->
+        <section id="section7" class="content__item">
+            <span class="content__item__num">07</span>
+        </section>
+        <!-- //section7 -->
+        <section id="section8" class="content__item">
+            <span class="content__item__num">08</span>
+        </section>
+        <!-- //section8 -->
+        <section id="section9" class="content__item">
+            <span class="content__item__num">09</span>
+        </section>
+        <!-- //section9 -->
+    </main>
+    <!-- //parallax__cont -->
+
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script>
+        const parallaxCont = document.getElementById("parallax__cont");
+        const parallaxItem = document.querySelector(".content__item");
+
+        function scroll(){
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
+
+            let parallaxWidth = parallaxCont.offsetWidth;
+            document.body.style.height = parallaxWidth + 'px';
+
+            let viewWidth = parallaxWidth - window.innerWidth;
+            let viewHeight = parallaxWidth - window.innerHeight;
+            let goLeft = scrollTop * (viewWidth / viewHeight);
+
+            gsap.to(parallaxCont, {left: -goLeft})
+
+            requestAnimationFrame(scroll);
+        }
+        scroll();
+
+        window.addEventListener("resize", scroll);
+    </script>
+
+</body>
+</html>
