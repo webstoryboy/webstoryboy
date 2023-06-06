@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>패랠랙스 이펙트</title>
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        body {
+            color: #fff;
+            font-family: "NexonLv1Gothic";
+            font-weight: 300;
+            background-color: #111;
+        }
+        #parallax__title {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            z-index: 1000;
+        }
+        #parallax__title h1 {
+            font-size: 30px;
+            border-bottom: 1px dashed #fff;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            font-weight: 400;
+            display: inline-block;
+        }
+        #parallax__title p {
+            font-size: 16px;
+        }
+        #parallax__title ul {
+            margin-top: 10px;
+        }
+        #parallax__title li {
+            display: inline;
+        }
+        #parallax__title li a {
+            width: 20px; 
+            height: 20px;
+            border-radius: 50%;
+            border: 1px dashed #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        #parallax__title li.active a {
+            background: #fff;
+            color: #000;
+        }
+
+        .content__item {
+            width: 100%;
+            height: 100vh;
+            background-color: #222;
+            position: relative;
+        }
+        #section1 {
+            background-color: #111;
+        }
+        #section2 {
+            background-color: #222;
+        }
+        #section3 {
+            background-color: #333;
+        }
+        #section4 {
+            background-color: #444;
+        }
+        #section5 {
+            background-color: #111;
+        }
+        #section6 {
+            background-color: #222;
+        }
+        #section7 {
+            background-color: #333;
+        }
+        #section8 {
+            background-color: #444;
+        }
+        #section9 {
+            background-color: #111;
+        }
+
+        /* content__item */
+        .content__item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .content__item__num {
+            font-size: 5vw;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            opacity: 1;
+            font-family: "Lato";
+            font-weight: 100;
+        }
+        .content__item__img {
+            width: 200px;
+            height: 200px;
+            background-color: #ff0000;
+            background-size: cover;
+            border-radius: 20px;
+            margin: 10px;
+        }
+        #section1 .content__item__img {
+            background-image: url(img/images01@2.jpg);
+        }
+        #section2 .content__item__img {
+            background-image: url(img/images02@2.jpg);
+        }
+        #section3 .content__item__img {
+            background-image: url(img/images03@2.jpg);
+        }
+        #section4 .content__item__img {
+            background-image: url(img/images04@2.jpg);
+        }
+        #section5 .content__item__img {
+            background-image: url(img/images05@2.jpg);
+        }
+        #section6 .content__item__img {
+            background-image: url(img/images06@2.jpg);
+        }
+        #section7 .content__item__img {
+            background-image: url(img/images07@2.jpg);
+        }
+        #section8 .content__item__img {
+            background-image: url(img/images08@2.jpg);
+        }
+        #section9 .content__item__img {
+            background-image: url(img/images09@2.jpg);
+        }
+
+        /* option */
+        /* body {
+            overscroll-behavior: none;
+            height: 100vh;
+        }
+        #parallax__cont {
+            overscroll-behavior: none;
+            width: 900%;
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+        } */
+        #parallax__cont {
+            overflow: hidden;
+        }
+        #vertical {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500vw;
+        }
+        #vertical > section {
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <header id="parallax__title">
+        <h1><a href="parallaxEffect.html">GSAP Parallax Effect05</a></h1>
+        <p>GSAP scrollTrigger - 가로/세로 이펙트</p>
+        <ul>
+            <li><a href="gsap01.html">1</a></li>
+            <li><a href="gsap02.html">2</a></li>
+            <li><a href="gsap03.html">3</a></li>
+            <li><a href="gsap04.html">4</a></li>
+            <li class="active"><a href="gsap05.html">5</a></li>
+            <li><a href="gsap06.html">6</a></li>
+            <li><a href="gsap07.html">7</a></li>
+            <li><a href="gsap08.html">8</a></li>
+            <li><a href="gsap09.html">9</a></li>
+        </ul>
+    </header>
+    <!-- //parallax__title  -->
+
+    <main id="parallax__cont">
+        <section id="section1" class="content__item">
+            <span class="content__item__num">01</span>
+            <div class="content__item__img"></div>
+        </section>
+        <!-- //section1 -->
+
+        <section id="section2" class="content__item">
+            <span class="content__item__num">02</span>
+            <div class="content__item__img"></div>
+        </section>
+        <!-- //section2 -->
+
+        <main id="vertical">
+            <section id="section3" class="content__item">
+                <span class="content__item__num">03</span>
+                <div class="content__item__img"></div>
+            </section>
+            <!-- //section3 -->
+    
+            <section id="section4" class="content__item">
+                <span class="content__item__num">04</span>
+                <div class="content__item__img"></div>
+            </section>
+            <!-- //section4 -->
+    
+            <section id="section5" class="content__item">
+                <span class="content__item__num">05</span>
+                <div class="content__item__img"></div>
+            </section>
+            <!-- //section5 -->
+    
+            <section id="section6" class="content__item">
+                <span class="content__item__num">06</span>
+                <div class="content__item__img"></div>
+            </section>
+            <!-- //section6 -->
+    
+            <section id="section7" class="content__item">
+                <span class="content__item__num">07</span>
+                <div class="content__item__img"></div>
+            </section>
+            <!-- //section7 -->
+        </main>
+
+        <section id="section8" class="content__item">
+            <span class="content__item__num">08</span>
+            <div class="content__item__img"></div>
+        </section>
+        <!-- //section8 -->
+
+        <section id="section9" class="content__item">
+            <span class="content__item__num">09</span>
+            <div class="content__item__img"></div>
+        </section>
+        <!-- //section9 -->
+    </main>
+    <!-- //parallax__cont -->
+
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script>
+        const vertical = document.querySelector("#vertical");
+        const article = gsap.utils.toArray("#vertical section");
+
+        gsap.to(article, {
+            xPercent: -100 * (article.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#vertical",
+                start: "top top",
+                end: () =>  "+=" + (vertical.offsetWidth - innerWidth),
+                pin: true,
+                scrub: 1,
+                snap: {
+                    snapTo: 1 / (article.length - 1),
+                    inertia: false,
+                    duration: {min: 0.1, max: 0.1}
+                },
+                invalidateOnRefresh: true,
+                anticipatePin: 1
+            }
+        });
+    </script>
+
+</body>
+</html>
