@@ -81,8 +81,8 @@
             </div>
             <div class="blog__inner container">
                 <div id="youtube" class="blog__contents__intro">
-                    <div class="video nonex resizable draggable sampleBtn3">
-                        <iframe width="100%" height="100%" src="#" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <div class="video resizable draggable sampleBtn3">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zIRhhGuj_v4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="desc">
                         <div class="left">
@@ -92,10 +92,11 @@
                         </div>
                         <div class="right">
                             <div class="btn">소스 다운로드</div>
-                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/site/siteB/index.html" target="_blank" class="sampleBtn">완성 화면 보기</a>
-                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/site/siteB/index.html" target="_blank" class="sampleBtn">완성 코드 보기</a>
+                            <a href="https://webstoryboy.github.io/webstoryboy/w_webd/site/siteB/index.html" target="_blank" class="sampleBtn">완성 화면</a>
+                            <a href="https://github.com/webstoryboy/webstoryboy/blob/main/w_webd/site/siteB/index.html" target="_blank" class="sampleBtn">완성 코드</a>
                             <a href="https://webstoryboy.github.io/webstoryboy/w_webd/index.html" target="_blank" class="sampleBtn">미리보기</a>
                             <a href="https://www.figma.com/file/iD3Ehm4HRhe16Vx6kxz3ob/%5B%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4%EA%B0%80-%EC%8B%A4%EB%A0%A5%EC%9D%B4%EB%8B%A4%5D-%EC%82%AC%EC%9D%B4%ED%8A%B8-%EC%A0%9C%EC%9E%91%ED%8E%B8?type=design&node-id=26248%3A1098&t=CfKBEPG0lp6GJUNI-1" target="_blank" class="sampleBtn">디자인 보기</a>
+                            <a href="https://github.com/webstoryboy/webd2023" target="_blank" class="sampleBtn">소스 다운로드</a>
                         </div>
                     </div>
                 </div>
@@ -460,6 +461,7 @@ img {
 #header .container {
     display: flex;
     align-items: end;
+    position: relative;
 }
 #header .container .logo {
     width: 20%;
@@ -482,30 +484,29 @@ img {
     display: block;
     padding: 15px 40px;
     font-weight: bold;
-    /* background-color: #ffd66f; */
+    /* background-color: #ccc; */
 }
 #header .container .nav > ul > li > a:hover {
     background-color: #ffe39c;
 }
 #header .container .nav > ul > li > ul {
     position: absolute;
-    left: 0; 
+    left: 0;
     top: 50px;
-    text-align: center;
     width: 100%;
-    background-color: #ffeec3;
     display: none;
 }
 #header .container .nav > ul > li > ul > li > a {
     padding: 10px;
-    box-sizing: border-box;
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
     text-align: center;
-    color: #000;
+    color: #fff;
 }
 #header .container .nav > ul > li > ul > li > a:hover {
     background-color: #ffe090;
+    color: #000;
 }
 </code></pre>
 
@@ -574,19 +575,19 @@ img {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0,0,0,.4);
-    padding: 20px 40px;
+    padding: 20px 50px;
 }
 #slider .sliderWrap .slider .text h2 {
     color: #fff;
-    font-size: 34px;
-    margin-bottom: 4px;
+    font-size: 30px;
+    margin-bottom: 3px;
 }
 #slider .sliderWrap .slider .text h2 strong {
     color: orange;
 }
 #slider .sliderWrap .slider .text p {
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
 }</code></pre>  
 
                         <h4 data-num="06">2-3. 게시판 작업하기</h4>
@@ -625,10 +626,9 @@ img {
 #contents .container .notice h3 {
     font-size: 24px;
     margin-bottom: 10px;
-}   
+}
 #contents .container .notice li {
     display: flex;
-    flex-wrap: wrap;
     line-height: 1.8;
     position: relative;
     padding-left: 14px;
@@ -645,9 +645,6 @@ img {
 }
 #contents .container .notice li a {
     width: 70%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 #contents .container .notice li a:hover {
     text-decoration: underline;
@@ -691,7 +688,10 @@ img {
 #contents .container .gallery ul li {
     width: 114px;
 }
-#contents .container .gallery ul li:hover img {
+#contents .container .gallery li a {
+    display: block;
+}
+#contents .container .gallery li a:hover img {
     opacity: 0.8;
 }</code></pre>
 
@@ -709,10 +709,9 @@ img {
     width: 400px;
     background-image: url(../images/banner.jpg);
     text-align: center;
-    position: relative;
 }
 #contents .container .banner h3 {
-    margin-top: 40px;
+    padding-top: 40px;
     font-size: 24px;
     color: #fff;
 }
@@ -723,9 +722,10 @@ img {
     display: inline-block;
     border-radius: 40px;
     transition: all 0.3s;
+    margin-top: 3px;
 }
 #contents .container .banner a:hover {
-    border-radius: 0px;
+    border-radius: 0;
 }</code></pre>
 
                         <h4 data-num="09">2-6. 푸터 작업하기</h4>
