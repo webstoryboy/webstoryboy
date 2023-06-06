@@ -14,6 +14,7 @@ li {
     list-style: none;
 }
 img {
+    width: 100%;
     vertical-align: top;
 }
 
@@ -81,8 +82,9 @@ img {
 /* contents */
 #contents {
     width: 400px;
-    height: 100%;
 }
+
+/* contents : banner */
 #contents .banner {
     width: 100%;
     height: 15%;
@@ -105,6 +107,8 @@ img {
 #contents .banner a:hover {
     background-color: #ff6d6d;
 }
+
+/* contents : notice */
 #contents .notice {
     width: 100%;
     height: 35%;
@@ -156,6 +160,8 @@ img {
     top: 26px;
     color: #fff;
 }
+
+/* contents : gallery */
 #contents .gallery {
     width: 100%;
     height: 35%;
@@ -211,6 +217,8 @@ img {
     top: 26px;
     color: #fff;
 }
+
+/* contents : link */
 #contents .link {
     width: 100%;
     height: 15%;
@@ -298,7 +306,6 @@ img {
     color: #fff;
     margin-top: 5px;
 }
-
 #slider .sliderWrap .slider.s1 {
     background-image: url(../images/slider01.jpg);
 }
@@ -308,6 +315,7 @@ img {
 #slider .sliderWrap .slider.s3 {
     background-image: url(../images/slider03.jpg);
 }
+
 
 /* footer */
 #footer {
@@ -359,4 +367,35 @@ img {
 #footer .footer3 select {
     width: 90%;
     height: 30px;
+}
+
+/* popup */
+.popup-view {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-color: #ffcbcb;
+    border: 4px solid #ff6d6d;
+    padding: 20px;
+    display: none;
+}
+.popup-view h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff6d6d;
+    color: #ff6d6d;
+    padding-bottom: 5px;
+}
+.popup-view a {
+    display: inline-block;
+    padding: 8px 20px;
+    color: #fff;
+    background-color: #ff6d6d;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%);
 }
