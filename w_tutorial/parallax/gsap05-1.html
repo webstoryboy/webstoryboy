@@ -65,17 +65,6 @@
             height: 100vh;
             background-color: #222;
             position: relative;
-            z-index: 2;
-        }
-        .content__item::after {
-            content: '';
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background-color: rgba(0,0,0,0.5);
-            z-index: 1;
         }
         #section1 {
             background-color: #111;
@@ -120,14 +109,14 @@
             opacity: 1;
             font-family: "Lato";
             font-weight: 100;
-            z-index: 100;
         }
         .content__item__img {
-            width: 100%;
-            height: 100vh;
+            width: 200px;
+            height: 200px;
             background-color: #ff0000;
             background-size: cover;
-
+            border-radius: 20px;
+            margin: 10px;
         }
         #section1 .content__item__img {
             background-image: url(img/images01@2.jpg);
@@ -156,28 +145,42 @@
         #section9 .content__item__img {
             background-image: url(img/images09@2.jpg);
         }
-        .content__item__title {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-            color: #fff;
-            z-index: 1000;
-            font-size: 50px;
-            text-transform: uppercase;
+
+        /* option */
+        /* body {
+            overscroll-behavior: none;
+            height: 100vh;
+        }
+        #parallax__cont {
+            overscroll-behavior: none;
+            width: 900%;
+            height: 100%;
+            display: flex;
+            flex-wrap: nowrap;
+        } */
+        #parallax__cont {
+            overflow: hidden;
+        }
+        #vertical {
+            display: flex;
+            flex-wrap: wrap;
+            width: 500vw;
+        }
+        #vertical > section {
+            width: 100vw;
         }
     </style>
 </head>
 <body>
     <header id="parallax__title">
-        <h1><a href="parallaxEffect.html">GSAP Parallax Effect02</a></h1>
-        <p>GSAP scrollTrigger - 핀 이펙트</p>
+        <h1><a href="parallaxEffect.html">GSAP Parallax Effect05</a></h1>
+        <p>GSAP scrollTrigger - 가로/세로 이펙트</p>
         <ul>
             <li><a href="gsap01.html">1</a></li>
-            <li class="active"><a href="gsap02.html">2</a></li>
+            <li><a href="gsap02.html">2</a></li>
             <li><a href="gsap03.html">3</a></li>
             <li><a href="gsap04.html">4</a></li>
-            <li><a href="gsap05.html">5</a></li>
+            <li class="active"><a href="gsap05.html">5</a></li>
             <li><a href="gsap06.html">6</a></li>
             <li><a href="gsap07.html">7</a></li>
             <li><a href="gsap08.html">8</a></li>
@@ -189,63 +192,56 @@
     <main id="parallax__cont">
         <section id="section1" class="content__item">
             <span class="content__item__num">01</span>
-            <h2 class="content__item__title">Section1</h2>
             <div class="content__item__img"></div>
         </section>
         <!-- //section1 -->
 
         <section id="section2" class="content__item">
             <span class="content__item__num">02</span>
-            <h2 class="content__item__title">Section2</h2>
             <div class="content__item__img"></div>
         </section>
         <!-- //section2 -->
 
-        <section id="section3" class="content__item">
-            <span class="content__item__num">03</span>
-            <h2 class="content__item__title">Section3</h2>
-            <div class="content__item__img"></div>
-        </section>
-        <!-- //section3 -->
-
-        <section id="section4" class="content__item">
-            <span class="content__item__num">04</span>
-            <h2 class="content__item__title">Section4</h2>
-            <div class="content__item__img"></div>
-        </section>
-        <!-- //section4 -->
-
-        <section id="section5" class="content__item">
-            <span class="content__item__num">05</span>
-            <h2 class="content__item__title">Section5</h2>
-            <div class="content__item__img"></div>
-        </section>
-        <!-- //section5 -->
-
-        <section id="section6" class="content__item">
-            <span class="content__item__num">06</span>
-            <h2 class="content__item__title">Section6</h2>
-            <div class="content__item__img"></div>
-        </section>
-        <!-- //section6 -->
-
-        <section id="section7" class="content__item">
-            <span class="content__item__num">07</span>
-            <h2 class="content__item__title">Section7</h2>
-            <div class="content__item__img"></div>
-        </section>
-        <!-- //section7 -->
+        <main id="vertical">
+            <section id="section3" class="content__item">
+                <span class="content__item__num">03</span>
+                <div class="content__item__img"></div>
+            </section>
+            <!-- //section3 -->
+    
+            <section id="section4" class="content__item">
+                <span class="content__item__num">04</span>
+                <div class="content__item__img img4"></div>
+            </section>
+            <!-- //section4 -->
+    
+            <section id="section5" class="content__item">
+                <span class="content__item__num">05</span>
+                <div class="content__item__img img5"></div>
+            </section>
+            <!-- //section5 -->
+    
+            <section id="section6" class="content__item">
+                <span class="content__item__num">06</span>
+                <div class="content__item__img img6"></div>
+            </section>
+            <!-- //section6 -->
+    
+            <section id="section7" class="content__item">
+                <span class="content__item__num">07</span>
+                <div class="content__item__img"></div>
+            </section>
+            <!-- //section7 -->
+        </main>
 
         <section id="section8" class="content__item">
             <span class="content__item__num">08</span>
-            <h2 class="content__item__title">Section8</h2>
             <div class="content__item__img"></div>
         </section>
         <!-- //section8 -->
 
         <section id="section9" class="content__item">
             <span class="content__item__num">09</span>
-            <h2 class="content__item__title">Section9</h2>
             <div class="content__item__img"></div>
         </section>
         <!-- //section9 -->
@@ -255,38 +251,73 @@
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script>
-        gsap.utils.toArray(".content__item").forEach((panel, i) => {
-            ScrollTrigger.create({
-                trigger: panel,
+        const vertical = document.querySelector("#vertical");
+        const article = gsap.utils.toArray("#vertical section");
+
+        let scrollTween = gsap.to(article, {
+            xPercent: -100 * (article.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#vertical",
                 start: "top top",
-                pin: true, 
-                pinSpacing: false 
-            });
+                end: () =>  "+=" + (vertical.offsetWidth - innerWidth),
+                pin: true,
+                scrub: 1,
+                snap: {
+                    snapTo: 1 / (article.length - 1),
+                    inertia: false,
+                    duration: {min: 0.1, max: 0.1}
+                },
+                invalidateOnRefresh: true,
+                anticipatePin: 1
+            }
         });
 
+        gsap.to(".img4", {
+            y: -130,
+            duration: 2,
+            ease: "elastic",
+            scrollTrigger: {
+                trigger: ".img4",
+                containerAnimation: scrollTween,
+                start: "left center",
+                toggleActions: "play none reverse none",
+                markers: true,
+                id: "img4",
+            }
+        });
 
-        // let panels = gsap.utils.toArray(".content__item");
-        // let tops = panels.map(panel => ScrollTrigger.create({trigger: panel, start: "top top"}));
-        
-        // panels.forEach((panel, i) => {
-        //     ScrollTrigger.create({
-        //         trigger: panel,
-        //         start: () => panel.offsetHeight < window.innerHeight ? "top top" : "bottom bottom",
-        //         pin: true, 
-        //         pinSpacing: false 
-        //     });
-        // });
+        gsap.to(".img5", {
+            y: -230,
+            duration: 2,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".img5",
+                containerAnimation: scrollTween,
+                start: "center 80%",
+                end: "center 20%",
+                scrub: true,
+                markers: false,
+                id: "img5",
+            }
+        });
 
-        // ScrollTrigger.create({
-        //     snap: {
-        //         snapTo: (progress, self) => {
-        //             let panelStarts = tops.map(st => st.start), 
-        //             snapScroll = gsap.utils.snap(panelStarts, self.scroll()); 
-        //             return gsap.utils.normalize(0, ScrollTrigger.maxScroll(window), snapScroll); 
-        //         },
-        //         duration: 0.5
-        //     }
-        // });
+        gsap.to(".img6", {
+            scale: 3,
+            rotation: 360,
+            borderRadius: 100,
+            duration: 2,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".img6",
+                containerAnimation: scrollTween,
+                start: "center 80%",
+                end: "center 20%",
+                scrub: true,
+                markers: false,
+                id: "img6",
+            }
+        });
     </script>
 
 </body>

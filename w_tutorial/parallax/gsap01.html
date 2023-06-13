@@ -151,6 +151,9 @@
             bottom: 20px;
             color: #fff;
         }
+        .content__item__img.active {
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -225,11 +228,6 @@
             <div class="content__item__img"></div>
         </section>
         <!-- //section9 -->
-
-        <section id="section10" class="content__item">
-            <span class="content__item__num">end</span>
-        </section>
-        <!-- //section10 -->
     </main>
     <!-- //parallax__cont -->
 
@@ -255,117 +253,105 @@
 
         // 02 : trigger
         gsap.to(box2, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
             scrollTrigger: {
                 trigger: box2,
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
+            }
         });
 
-        // 03 : toggleActions : onEnter, onLeave, onEnterBack, onLeaveBack
+        // 03 : toggleActions "onEnter, onLeave, onEnterBack, onLeaveBack"
         gsap.to(box3, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
             scrollTrigger: {
                 trigger: box3,
-                toggleActions: "play none none none" //play, pause, resume, reset, restart, complete, reverse, none.
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
+                toggleActions: "play none none none" //play, pause, resume, reset, restart, complete, reverse, none
+                // toggleActions: "restart pause reverse none"
+                // toggleActions: "restart pause resume pause",
+            }
         });
 
-        // 04 : toggleActions
+        // 04 : start, end
         gsap.to(box4, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
             scrollTrigger: {
                 trigger: box4,
-                toggleActions: "play pause none none" 
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
+                start: "top 50%",
+                end: "bottom 20%",
+                toggleActions: "restart pause reverse none",
+                markers: false,
+            }
         });
 
-        // 05 : toggleActions
+        // 05 : scrub
         gsap.to(box5, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
             scrollTrigger: {
                 trigger: box5,
-                toggleActions: "play pause reverse none" 
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
+                start: "top 50%",
+                end: "bottom 20%",
+                scrub: true,    //true, 1, 2,....
+                markers: false,
+            }
         });
 
-        // 06 : start, end
+        // 06 : pin
         gsap.to(box6, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
             scrollTrigger: {
                 trigger: box6,
                 start: "top 50%",
-                end: "bottom 20%",
+                end: "top 100px",
+                pin: true,
+                scrub: true,    
                 markers: false,
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
+            }
         });
 
-        // 07 : scrub
+        // 07 : toggleClass
         gsap.to(box7, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
             scrollTrigger: {
                 trigger: box7,
-                start: "top 50%",
-                end: "bottom 20%",
-                scrub: true,    //true, 1, 2...
+                start: "top center",
+                end: "bottom 30%",
+                scrub: true,    
                 markers: false,
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
+                toggleClass: "active",
+                id: "box7"
+            }
         });
 
-        // 08 : pin
-        gsap.to(box8, {
+         // 08 : callback
+         gsap.to(box8, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
             scrollTrigger: {
                 trigger: box8,
                 start: "top center",
-                end: "top 100px",
-                pin: true,
-                scrub: true,
-                markers: false,
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
-        });
-
-        // 09 : callback
-        gsap.to(box9, {
-            scrollTrigger: {
-                trigger: box9,
-                start: "top center",
                 end: "bottom 30%",
-                scrub: true,
+                scrub: true,    
                 markers: false,
-                // onEnter : () => console.log("onEnter"),
-                // onLeave : () => console.log("onLeave"),
-                // onEnterBack : () => console.log("onEnterBack"),
-                // onLeaveBack : () => console.log("onLeaveBack"),
-                // onUpdate : (self) => console.log("update", self.progress.toFixed(3)),
-                // onToggle : (self) => console.log("toggled", self.isActive),
-                toggleClass: "active",
-                id: "section9"
-            },
-            duration: 2,
-            x: 500,
-            rotation: 360, 
+                // onEnter : () => {console.log("onEnter")},
+                // onLeave : () => {console.log("onLeave")},
+                // onEnterBack : () => {console.log("onEnterBack")},
+                // onLeaveBack : () => {console.log("onLeaveBack")},
+                // onUpdate : (self) => {console.log("onUpdate", self.progress.toFixed(3))},
+                onToggle : (self) => {console.log("onToggle", self.isActive)},
+            }
         });
-
-        // 기본값 설정
-        // ScrollTrigger.defaults({
-        //     toggleActions: "restart pause resume pause",
-        //     markers: true
-        // })
-
     </script>
 
 </body>

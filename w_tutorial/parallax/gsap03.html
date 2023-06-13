@@ -22,6 +22,9 @@
             font-weight: 300;
             background-color: #111;
         }
+        #parallax__cont {
+            overflow: hidden;
+        }
         #parallax__title {
             position: fixed;
             left: 20px;
@@ -68,39 +71,30 @@
         }
         #section1 {
             background-color: #111;
-            height: 100vh;
         }
         #section2 {
             background-color: #222;
-            height: 100vh;
         }
         #section3 {
             background-color: #333;
-            height: 100vh;
         }
         #section4 {
             background-color: #444;
-            height: 60vh;
         }
         #section5 {
             background-color: #111;
-            height: 70vh;
         }
         #section6 {
             background-color: #222;
-            height: 80vh;
         }
         #section7 {
             background-color: #333;
-            height: 90vh;
         }
         #section8 {
             background-color: #444;
-            height: 200vh;
         }
         #section9 {
             background-color: #111;
-            height: 100vh;
         }
 
         /* content__item */
@@ -124,6 +118,7 @@
             height: 200px;
             background-color: #ff0000;
             background-size: cover;
+            background-position: center;
             border-radius: 20px;
             margin: 10px;
         }
@@ -160,6 +155,56 @@
             bottom: 20px;
             color: #fff;
         }
+        #section2 .content__item__title {
+            font-weight: bold;
+            font-size: 5vw;
+            text-transform: uppercase;
+        }
+        #section4 {
+            display: flex;
+            flex-direction: column;
+        }
+        #section4 .content__item__title {
+            font-weight: bold;
+            font-size: 5vw;
+            text-transform: uppercase;
+        }
+        #section5 .content__item__img {
+            border-radius: 50%;
+        }
+        #section6 .content__item__img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+        #section7 .content__item__title {
+            font-size: 5vw;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333;
+            padding: 30px;
+            width: 100%;
+            text-align: center;
+        }
+        #section8 {
+            flex-direction: column;
+        }
+        #section8 .content__item__title {
+            font-size: 2vw;
+            line-height: 1.5;
+        }
+        #section8 .content__item__img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        #section9 .content__item__img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -189,22 +234,25 @@
 
         <section id="section2" class="content__item">
             <span class="content__item__num">02</span>
-            <div class="content__item__img i1"></div>
-            <div class="content__item__img i2"></div>
-            <div class="content__item__img i3"></div>
-            <div class="content__item__img i4"></div>
+            <div class="content__item__title">section2</div>
         </section>
         <!-- //section2 -->
 
         <section id="section3" class="content__item">
             <span class="content__item__num">03</span>
-            <div class="content__item__img"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i2"></div>
+            <div class="content__item__img i3"></div>
+            <div class="content__item__img i4"></div>
         </section>
         <!-- //section3 -->
 
         <section id="section4" class="content__item">
             <span class="content__item__num">04</span>
-            <div class="content__item__img"></div>
+            <div class="content__item__title t1">section4</div>
+            <div class="content__item__title t2">section4</div>
+            <div class="content__item__title t3">section4</div>
+            <div class="content__item__title t4">section4</div>
         </section>
         <!-- //section4 -->
 
@@ -216,19 +264,35 @@
 
         <section id="section6" class="content__item">
             <span class="content__item__num">06</span>
-            <div class="content__item__img"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i1"></div>
+            <div class="content__item__img i1"></div>
         </section>
         <!-- //section6 -->
 
         <section id="section7" class="content__item">
             <span class="content__item__num">07</span>
-            <div class="content__item__img"></div>
+            <div class="content__item__title t1">코딩이란</div>
+            <div class="content__item__title t2">프로그래밍 코드를</div>
+            <div class="content__item__title t3">어딘가에</div>
+            <div class="content__item__title t4">적는 것을 말한다</div>
+            <div class="content__item__title t5">코딩은</div>
+            <div class="content__item__title t6">누구나</div>
+            <div class="content__item__title t7">할 수 있다.</div>
         </section>
         <!-- //section7 -->
 
         <section id="section8" class="content__item">
             <span class="content__item__num">08</span>
-            <div class="content__item__img"></div>
+            <div class="content__item__title t1">Text Line Number One</div>
+            <div class="content__item__title t2">Text Line Number Two</div>
+            <div class="content__item__title t3">Text Line Number Three</div>
+            <div class="content__item__img i1"></div>
         </section>
         <!-- //section8 -->
 
@@ -243,40 +307,182 @@
     <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
     <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
     <script>
-        gsap.defaults({ease: "none", duration: 2});
+        // gsap.to("#section1 .parallaxs__item__img",{
+        //     duration: 2,
+        //     rotation: 720,
+        //     scale: 0.1,
+        //     scrollTrigger: {
+        //         trigger: "#section1",
+        //         scrub: true,
+        //     }
+        // })
 
-        const tl = gsap.timeline();
-        tl.from("#section2 .content__item__img.i1", {y: -100})
-          .from("#section2 .content__item__img.i2", {y: 100})
-          .from("#section2 .content__item__img.i3", {y: -100})
-          .from("#section2 .content__item__img.i4", {y: 100})
+        gsap.defaults({ease: "none"});
+
+        // 01
+        const ani1 = gsap.timeline();
+        ani1.to("#section1 .content__item__img", {rotation: 720, scale: 0, borderRadius: 200})
+            .to("#section1 .content__item__img", {rotation: 0, scale: 1, borderRadius: 20})
 
         ScrollTrigger.create({
-            animation: tl,
-            trigger: "#section2",
+            animation: ani1,
+            trigger: "#section1",
             start: "top top",
-            end: "+=6000",
+            end: "+=2000",
             scrub: true,
             pin: true,
-            markers: true,
-            // anticipatePin: 1
+            anticipatePin: 1,
+            markers: false
         });
 
-        const tl2 = gsap.timeline();
-        tl2.to("#section3 .content__item__img", {xPercent: 200, yPercent: 0, duration: 0.5})
-           .to("#section3 .content__item__img", {xPercent: 200, yPercent: 200, duration: 0.5})
-           .to("#section3 .content__item__img", {xPercent: 0, yPercent: 200, duration: 0.5})
-           .to("#section3 .content__item__img", {xPercent: 0, yPercent: 0, duration: 0.5})
+        // 02
+        const ani2 = gsap.timeline();
+        ani2.to("#section2 .content__item__title", {scale: 40, rotation: 360, duration: 2, autoAlpha: 1})
+            .to("#section2 .content__item__title", {autoAlpha: 0})
 
         ScrollTrigger.create({
-            animation: tl2,
+            animation: ani2,
+            trigger: "#section2",
+            start: "top top",
+            end: "+=2000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            markers: false
+        });
+
+        // 03
+        const ani3 = gsap.timeline();
+        ani3.from("#section3 .content__item__img.i1", {y: -200, autoAlpha:0, borderRadius: 400}, "1")
+            .from("#section3 .content__item__img.i2", {y: 200, autoAlpha:0, borderRadius: 400}, "1")
+            .from("#section3 .content__item__img.i3", {y: -200, autoAlpha:0, borderRadius: 400}, "1")
+            .from("#section3 .content__item__img.i4", {y: 200, autoAlpha:0, borderRadius: 400}, "1")
+
+        ScrollTrigger.create({
+            animation: ani3,
             trigger: "#section3",
+            start: "top top",
+            end: "+=1000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+            markers: true,
+        });
+
+        // 04
+        const ani4 = gsap.timeline();
+        ani4.to("#section4 .content__item__title.t1", {xPercent: 300}, "t")
+            .to("#section4 .content__item__title.t2", {xPercent: -300}, "t")
+            .to("#section4 .content__item__title.t3", {xPercent: 300}, "t")
+            .to("#section4 .content__item__title.t4", {xPercent: -300}, "t")
+
+        ScrollTrigger.create({
+            animation: ani4,
+            trigger: "#section4",
+            start: "top top",
+            end: "+=3000",
+            scrub: true,
+            pin: true,
+            markers: false,
+            anticipatePin: 1
+        });
+
+        // 05
+        const ani5 = gsap.timeline();
+        ani5.from("#section5 .content__item__img", {
+            autoAlpha:0, 
+            scale: 5,
+            width: "100vw",
+            height: "100vh"
+        })
+
+        ScrollTrigger.create({
+            animation: ani5,
+            trigger: "#section5",
+            start: "top top",
+            end: "+=3000",
+            scrub: true,
+            pin: true,
+            markers: false,
+            anticipatePin: 1
+        });
+
+        // 06
+        const ani6 = gsap.timeline();
+        ani6.from("#section6 .i1", {
+            autoAlpha: 0,
+            y: -100,
+            ease: "back.out(4)",
+            stagger: {
+                amount: 3,
+                from: "random"
+            }
+        })
+
+        ScrollTrigger.create({
+            animation: ani6,
+            trigger: "#section6",
+            start: "top top",
+            end: "+=3000",
+            scrub: true,
+            pin: true,
+            markers: false,
+            anticipatePin: 1
+        });
+
+        // 07
+        const ani7 = gsap.timeline();
+        ani7.from("#section7 .t1", {autoAlpha: 0, duration: 1, y: 50}, "+=1")
+            .from("#section7 .t2", {autoAlpha: 0, duration: 1, y: 50}, "+=1")
+            .from("#section7 .t3", {autoAlpha: 0, duration: 1, y: 50}, "+=1")
+            .from("#section7 .t4", {autoAlpha: 0, duration: 1, y: 50}, "+=1")
+            .from("#section7 .t5", {autoAlpha: 0, duration: 1, y: 50}, "+=1")
+            .from("#section7 .t6", {autoAlpha: 0, duration: 1, y: 50}, "+=1")
+            .from("#section7 .t7", {autoAlpha: 0, duration: 1, y: 50}, "+=1")
+
+        ScrollTrigger.create({
+            animation: ani7,
+            trigger: "#section7",
             start: "top top",
             end: "+=6000",
             scrub: true,
             pin: true,
-            markers: true,
-            // anticipatePin: 1
+            markers: false,
+            anticipatePin: 1
+        });
+
+        // 08
+        const ani8 = gsap.timeline();
+        ani8.from("#section8 .t1", {x: innerWidth * 1})
+            .from("#section8 .t2", {x: innerWidth * -1})
+            .from("#section8 .t3", {x: innerWidth * 1})
+            .from("#section8 .i1", {x: innerWidth * 1, rotation: 360, scale: 1.5})
+
+        ScrollTrigger.create({
+            animation: ani8,
+            trigger: "#section8",
+            start: "top top",
+            end: "+=4000",
+            scrub: true,
+            pin: true,
+            markers: false,
+            anticipatePin: 1
+        });
+
+        // 09
+        const ani9 = gsap.timeline();
+        ani9.to("#section9 .content__item__img", {scale: 10})
+            .to("#section9 .content__item__img", {autoAlpha: 0})
+
+        ScrollTrigger.create({
+            animation: ani9,
+            trigger: "#section9",
+            start: "top top",
+            end: "+=4000",
+            scrub: true,
+            pin: true,
+            markers: false,
+            anticipatePin: 1
         });
 
 

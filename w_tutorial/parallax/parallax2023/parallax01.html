@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 만들기2023 🕵️‍♀️ 패럴랙스 이펙트</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/webs.css">
+
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/favicon.png">
+    <link rel="icon" href="assets/ico/favicon.png">
+    <link rel="icon" href="assets/ico/favicon.png" sizes="48x48">
+    <link rel="icon" href="assets/ico/favicon.png" sizes="64x64">
+    <link rel="icon" href="assets/ico/favicon.png" sizes="128x128">
+
+    <meta name="acthor" content="webstroyboy">
+    <meta name="description" content="웹디자인기능사 2023년 버전 튜토리얼입니다.">
+    <meta name="keywords" content="포트폴리오, 웹디자인기능사, 웹디자인기능사 2023, 웹디자인 실기 기출문제, 2023년 웹디기">
+    <meta name="robots" content="all">
+    
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="웹스토리보이 웹디자인기능사2023" />
+    <meta property="og:url" content="https://webstoryboy.co.kr/" />
+    <meta property="og:image" content="assets/ico/favicon.png" />
+    <meta property="og:site_name" content="웹스토리보이" />
+    <meta property="og:description" content="2023버전 웹디자인기능사 정보를 제공합니다." />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@webstoryboy" />
+    <meta name="twitter:title" content="웹스토리보이 웹디자인기능사2023" />
+    <meta name="twitter:description" content="2023버전 웹디자인기능사 정보를 제공합니다." />
+    <meta property="twitter:image" content="assets/ico/favicon.png" />
+</head>
+<body>
+
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner">
+            <div class="left"> 
+                <a href="../index.html" class="star"><span class="ir">메인으로</span></a>
+            </div>
+            <h1>
+                <a href="../index.html">WEBSTORYBOY</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="#">검색</a></li>
+                </ul>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#"><span>레퍼런스</span></a></li>
+                    <li><a href="#"><span>튜토리얼</span></a></li>
+                    <li><a href="#"><span>게시판</span></a></li>
+                    <li><a href="#"><span>블로그</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <main id="main">
+        <section id="blog">
+            <div class="blog__title">
+                <span class="cate">Tutorial/webd</span>
+                <h1 class="title">패럴랙스 이펙트</h1>
+                <div class="meta">
+                    <span class="author">by @webs</span>
+                    <span class="date">2023. 06. 01.</span>
+                </div>
+            </div>
+            <div class="blog__inner container">
+                <div id="youtube" class="blog__contents__intro">
+                    <div class="video nonex resizable draggable sampleBtn3">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="desc">
+                        <div class="left">
+                            <span class="num">01</span>
+                            <div class="title">패럴랠스 이펙트</div>
+                            <span class="difficulty">난이도 <span>쉬움</span></span>
+                        </div>
+                        <div class="right">
+                            <div class="btn">소스 다운로드</div>
+                            <a href="#" target="_blank" class="sampleBtn">완성 화면X</a>
+                            <a href="#" target="_blank" class="sampleBtn">완성 코드X</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //blog__contents__intro -->
+
+                <div class="blog__contents tutorial">
+                    <h2>소개</h2>
+                    <p>
+                        안녕하세요! 웹스토리보이입니다. 
+                        이번에는 포트폴리오 스킬을 올릴 수 있는 방법에 대해서 공부해보겠습니다. 
+                        현재 오픈되어 있는 사이트들은 패럴랙스 형태의 사이트가 많습니다. 
+                        즉 스크롤을 내리면 무엇인가 움직이는 효과들이 많습니다. 
+                        이런 효과를 패럴랙스 효과라고 합니다. 
+                        패럴랙스 파트는 자바스크립트 파트와 GSAP 파트로 나눌 수 있습니다. 
+                        기본적인 사항은 자바스크립트를 통해 익히고, 퀄리티 있는 효과들을 GSAP를 통해서 작업할 것입니다. 
+                        GSAP의 <i>scrollTrigger</i>를 이용하면, 퀄리티 있는 효과들을 만들 수 있습니다. 
+                        그럼 같이 한번 시작해볼까요? 🥹
+                    </p>      
+                    
+                    <!-- 광고 영역 -->
+                    <!-- //광고 영역 -->
+
+                    <div>
+                        <h3>1. 기본 구조 만들기</h3>
+                        <h4 data-num="01">1-1. 준비하기</h4>
+                        <p>
+                            GSAP를 배우는 시간이기 때문에 HTML/CSS 코딩은 생략하겠습니다.
+                            기본 코딩은 복사해서 사용하겠습니다. 
+                            우선 웹폰트를 설정하고 GSAP에서 필요한 파일을 미리 셋팅해 놓겠습니다. 
+                            GSAP는 자주 업데이트가 되기 때문에 제일 최선 버전을 사용하는게 좋습니다. 
+                        </p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;GSAP Scroll Effect&lt;/title&gt;
+
+    &lt;!-- 웹폰트 설정 --&gt;
+    &lt;link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;!-- GSAP 라이브러리 설정 --&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                        <h4 data-num="02">1-2. 기본 셋팅하기</h4>
+                        <p>그대로 복사해서 사용해도 무방합니다.</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="ko"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;GSAP Scroll Effect&lt;/title&gt;
+
+    &lt;link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet"&gt;
+    &lt;style&gt;
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        body {
+            color: #fff;
+            font-family: "NexonLv1Gothic";
+            font-weight: 300;
+            background-color: #111;
+        }
+        #parallax__title {
+            position: fixed;
+            left: 20px;
+            top: 20px;
+            z-index: 1000;
+        }
+        #parallax__title h1 {
+            font-size: 30px;
+            border-bottom: 1px dashed #fff;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            font-weight: 400;
+            display: inline-block;
+        }
+        #parallax__title p {
+            font-size: 16px;
+        }
+        #parallax__title ul {
+            margin-top: 10px;
+        }
+        #parallax__title li {
+            display: inline;
+        }
+        #parallax__title li a {
+            width: 20px; 
+            height: 20px;
+            border-radius: 50%;
+            border: 1px dashed #fff;
+            display: inline-block;
+            text-align: center;
+            line-height: 20px;
+            font-size: 12px;
+        }
+        #parallax__title li.active a {
+            background: #fff;
+            color: #000;
+        }
+
+        /* parallax__cont */
+        #parallax__cont {
+            overflow: hidden;
+        }
+        .parallax__item {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .parallax__item:nth-child(2n){
+            background-color: #222;
+        }
+        .parallax__item__num {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-size: 5vw;
+            line-height: 1;
+        }
+        .parallax__item__img {
+            width: 10vw;
+            height: 10vw;
+            background-color: #fff;
+            background-size: cover;
+            background-position: center;
+        }
+        .parallax__item:nth-child(1) .parallax__item__img {
+            background-image: url(assets/img/images14.jpg);
+        }
+        .parallax__item:nth-child(2) .parallax__item__img {
+            background-image: url(assets/img/images15.jpg);
+        }
+        .parallax__item:nth-child(3) .parallax__item__img {
+            background-image: url(assets/img/images03.jpg);
+        }
+        .parallax__item:nth-child(4) .parallax__item__img {
+            background-image: url(assets/img/images04.jpg);
+        }
+        .parallax__item:nth-child(5) .parallax__item__img {
+            background-image: url(assets/img/images05.jpg);
+        }
+        .parallax__item:nth-child(6) .parallax__item__img {
+            background-image: url(assets/img/images06.jpg);
+        }
+        .parallax__item:nth-child(7) .parallax__item__img {
+            background-image: url(assets/img/images07.jpg);
+        }
+        .parallax__item:nth-child(8) .parallax__item__img {
+            background-image: url(assets/img/images08.jpg);
+        }
+        .parallax__item:nth-child(9) .parallax__item__img {
+            background-image: url(assets/img/images09.jpg);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header id="parallax__title"&gt;
+        &lt;h1&gt;GSAP Parallax Effect01&lt;/h1&gt;
+        &lt;p&gt;GSAP scrollTrigger - 애니메이션 기본 효과&lt;/p&gt;
+        &lt;ul&gt;
+            &lt;li class="active"&gt;&lt;a href="gsap01.html"&gt;1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap02.html"&gt;2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap03.html"&gt;3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap04.html"&gt;4&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap05.html"&gt;5&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap06.html"&gt;6&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap07.html"&gt;7&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap08.html"&gt;8&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="gsap09.html"&gt;9&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/header&gt;
+    &lt;!-- //parallax__title  --&gt;
+
+    &lt;main id="parallax__cont"&gt;
+        &lt;section id="section1" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;01&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section1 --&gt;
+
+        &lt;section id="section2" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;02&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section2 --&gt;
+
+        &lt;section id="section3" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;03&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section3 --&gt;
+
+        &lt;section id="section4" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;04&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section4 --&gt;
+
+        &lt;section id="section5" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;05&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section5 --&gt;
+
+        &lt;section id="section6" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;06&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section6 --&gt;
+
+        &lt;section id="section7" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;07&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section7 --&gt;
+
+        &lt;section id="section8" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;08&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section8 --&gt;
+
+        &lt;section id="section9" class="parallax__item"&gt;
+            &lt;span class="parallax__item__num"&gt;09&lt;/span&gt;
+            &lt;div class="parallax__item__img"&gt;&lt;/div&gt;
+        &lt;/section&gt;
+        &lt;!-- //section9 --&gt;
+    &lt;/main&gt;
+
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"&gt;&lt;/script&gt;
+    &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                    </div>
+
+                    <div>
+                        <h3>2. 스크립트 작업하기</h3>
+                        <h4 data-num="03">2-1. 기본 애니메이션</h4>
+                        <p>
+                            스크립트 태그를 설정하고 다음과 같이 작성합니다.
+                            우선 선택자를 미리 만들어 놓겠습니다. 
+                        </p>
+<pre><code class="language-js">const box1 = document.querySelector("#section1 .parallax__item__img");
+const box2 = document.querySelector("#section2 .parallax__item__img");
+const box3 = document.querySelector("#section3 .parallax__item__img");
+const box4 = document.querySelector("#section4 .parallax__item__img");
+const box5 = document.querySelector("#section5 .parallax__item__img");
+const box6 = document.querySelector("#section6 .parallax__item__img");
+const box7 = document.querySelector("#section7 .parallax__item__img");
+const box8 = document.querySelector("#section8 .parallax__item__img");
+const box9 = document.querySelector("#section9 .parallax__item__img");
+</code></pre>
+                        <p>
+                            <code>box1</code> 요소를 2초동안 오른쪽으로 500px로 움직이겠습니다.
+                            이렇게만 하면 심심하기 때문에 <code>border-radius</code>를 주고 회전시키겠습니다.
+                        </p>
+<pre><code class="language-js">gsap.to(box1, {
+    duration: 2,
+    x: 500,
+    borderRadius: 100,
+    rotation: 360, 
+});
+</code></pre>
+                    </div>
+
+                    <hr>
+
+                    
+                    <!-- 레퍼런스 -->
+                    <hr>
+                    
+                    <h3>완성된 화면</h3>
+                    <ul class="refer4">
+                        <li><a href="#">1. 메뉴 이동</a></li>
+                        <li><a href="#">2. 닷 메뉴</a></li>
+                        <li><a href="#">3. 메뉴 숨김</a></li>
+                        <li><a href="#">4. 나타나기</a></li>
+                        <li><a href="#">5. 이질감 효과</a></li>
+                        <li><a href="#">6. 텍스트 효과</a></li>
+                        <li><a href="#">7. 리빌 효과</a></li>
+                        <li><a href="#">8. 가로 효과</a></li>
+                        <li><a href="#">9. 가로세로 효과</a></li>
+                    </ul>
+                    
+                </div>
+                <!-- //blog__contents -->
+
+                <aside class="blog__aside">
+                    <button class="blog__aside__btn"><span></span></button>
+                    <div class="blog__aside__chapter">
+                    </div>
+                </aside>
+            </div>
+        </section>
+        <!-- //blog -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+
+    </footer>
+    <!-- //footer -->
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/highlight.min.js"></script>
+    <script src="assets/js/webs.js"></script>
+</body>
+</html>
+
