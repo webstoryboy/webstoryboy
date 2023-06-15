@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>포트폴리오 만들기2023 🕵️‍♀️ 패럴랙스 이펙트</title>
+    <title>GSAP 패럴랙스 이펙트 🕵️‍♀️</title>
 
     <link rel="stylesheet" href="assets/css/fonts.css">
     <link rel="stylesheet" href="assets/css/reset.css">
@@ -74,7 +74,7 @@
         <section id="blog">
             <div class="blog__title">
                 <span class="cate">Tutorial/webd</span>
-                <h1 class="title">패럴랙스 이펙트</h1>
+                <h1 class="title">GSAP 패럴랙스 이펙트</h1>
                 <div class="meta">
                     <span class="author">by @webs</span>
                     <span class="date">2023. 06. 01.</span>
@@ -88,7 +88,7 @@
                     <div class="desc">
                         <div class="left">
                             <span class="num">01</span>
-                            <div class="title">패럴랠스 이펙트</div>
+                            <div class="title">GSAP Parallax Effect : 기본 애니메이션</div>
                             <span class="difficulty">난이도 <span>쉬움</span></span>
                         </div>
                         <div class="right">
@@ -267,6 +267,9 @@
         .parallax__item:nth-child(9) .parallax__item__img {
             background-image: url(assets/img/images09.jpg);
         }
+        .parallax__item__img.active {
+            filter: hue-rotate(100deg);
+        }
     &lt;/style&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -371,33 +374,221 @@ const box9 = document.querySelector("#section9 .parallax__item__img");
                         <p>
                             <code>box1</code> 요소를 2초동안 오른쪽으로 500px로 움직이겠습니다.
                             이렇게만 하면 심심하기 때문에 <code>border-radius</code>를 주고 회전시키겠습니다.
+                            gsap의<code>.to</code> 메서드를 사용하면 선택한 요소는 움직입니다. 
+                            gsap의 가장 기본 애니메이션입니다. 
                         </p>
-<pre><code class="language-js">gsap.to(box1, {
+<pre><code class="language-js">// 01
+gsap.to(box1, {
     duration: 2,
     x: 500,
     borderRadius: 100,
     rotation: 360, 
 });
 </code></pre>
+                        <h4 data-num="04">2-2. trigger</h4>
+                        <p>
+                            이번에는 스크롤을 내리고 요소가 보이는 영역에 오면 움직이도록 설정하겠습니다. 
+                            애니메이션 속성은 똑같이 작업을 하고 <code>scrollTrigger</code>를 설정합니다. 
+                            <code>trigger</code>를 설정하면 스크롤을 내릴때 움직이기 시작합니다. 
+                            스크롤 이벤트를 작동시키기고 싶다면 <code>scrollTrigger</code> 속성을 설정하고,
+                            움직이는 시점을 적용하기 위해서 <code>trigger</code>를 설정하는 것입니다. 
+                            간단하죠? 내가 움직이는 시점 타겟을 설정하면 움직입니다. 
+                        </p>
+<pre><code class="language-js">// 02 : trigger
+gsap.to(box2, {
+    duration: 2,
+    x: 500,
+    rotation: 360,
+    borderRadius: 100,
+    scrollTrigger: {
+        trigger: box2,  //시작점 설정
+    }
+});
+</code></pre>
+
+                        <h4 data-num="05">2-3. toggleActions</h4>
+                        <p>
+                            이번에는 <code>toggleActions</code>을 설정하겠습니다. 
+                            애니메이션의 행동을 설정하는 것입니다. 
+                            애니메이션이 시작했을 때, 애니메이션이 끝났을 때, 애니메이션이 시작하고 화면에 보이지 않을 때, 애니메이션이 끝나고 화면에 보이지 않을 때 4가지로 설정할 수 있습니다. 
+                            <code>onEnter</code>, <code>onLeave</code>, <code>onEnterBack</code>, <code>onLeaveBack</code>를 의미하며, 
+                            여기에는 <code>play</code>, <code>pause</code>, <code>resume</code>, <code>reset</code>, <code>restart</code>, <code>complete</code>, reverse</code>, none</code> 요소 값을 설정할 수 있습니다. 
+                            하나씩 대입하면서 눈으로 직접확인하는 것이 가장 정확합니다. 
+                        </p>
+<pre><code class="language-js">// 03 : toggleActions
+gsap.to(box3, {
+    duration: 1,
+    x: 500,
+    rotation: 360,
+    borderRadius: 100,
+
+    scrollTrigger: {
+        trigger: box3,
+        toggleActions: "play pause reverse none" 
+    }
+});
+</code></pre>
+
+                        <h4 data-num="06">2-4. start, end</h4>
+                        <p>
+                            이번에는 애니메이션이 언제 시작하는지, 끝나는지를 설정하겠습니다.
+                            <code>trigger</code>는 애니메이션의 기준점 역할을 하고, <code>start</code>는 시작점을 의미합니다. 
+                            start와 end는 두가지 요소 값을 설정합니다. 첫 번째 요소는 요소의 시작점을 의미하고, 두 번째 요소는 브라우저의 시작점을 의미합니다. 
+                            요소의 시작점과 브라우저의 시작점이 만나면 애니메이션이 작동되는 원리입니다. 
+                            여기에는 <code>top</code>, <code>bottom</code>, <code>left</code>, <code>right</code>, <code>center</code>를 사용할 수 있으면,
+                            <code>px</code>이나 <code>%</code> 사용도 가능합니다. 
+                            여기에서 <code>markers: true</code>로 설정하면 마커의 위치를 확인할 수 있습니다.
+                        </p>
+<pre><code class="language-js">// 04 : start, end
+gsap.to(box4, {
+    duration: 1,
+    x: 500,
+    rotation: 360,
+    borderRadius: 100,
+
+    scrollTrigger: {
+        trigger: box4,
+        start: "top 50%",
+        end: "bottom 20%",
+        toggleActions: "play pause reverse pause",
+        markers: true,
+    }
+});
+</code></pre>
+
+                        <h4 data-num="07">2-5. scrub</h4>
+                        <p>
+                            이번에는 <code>scrub</code> 속성을 알아보겠습니다. 
+                            이 속성은 스크롤을 내리면 같이 움직이게 설정할 수 있습니다. 
+                            눈으로 직접 확인하는 것이 가장 정확합니다. 
+                            기본 <code>scrollTrigger</code>를 설정하면, 시작점이 되었을 때 한번만 움직이지만,
+                            이 효과는 마우스 스크롤 값에 따라 움직이도록 설정됩니다. 
+                            이 속성에는 <code>true</code> 및 정수 값을 넣을 수 있습니다. 
+                            미세한 차이가 있으니 직접 확인해보시면 좋을 거 같습니다.
+                        </p>
+<pre><code class="language-js">// 05 : scrub
+gsap.to(box5, {
+    duration: 1,
+    x: 500,
+    rotation: 360,
+    borderRadius: 100,
+
+    scrollTrigger: {
+        trigger: box5,
+        start: "top 50%",
+        end: "bottom 20%",
+        scrub: 0.5,    //true, 1, 2,....
+        markers: false,
+    }
+});
+</code></pre>
+
+                        <h4 data-num="08">2-6. pin</h4>
+                        <p>
+                            <code>pin</code> 속성은 고정시키는 역할을 합니다. 
+                            패럴랙스 이펙트에서 많이 쓰이는 효과입니다. 
+                            알아두면 멋있는 사이트를 만들 수 있습니다. 
+                            고정시키는 역할은 다른 예제에서 더 자세히 다룹니다.  
+                            내가 위치한 영역에 고정시키기 위해서는 <code>pin: true</code>를 설정합니다. 
+                            핀의 위치는 <code>end</code>의 두번째 속성값을 변경해보면 확인할 수 있습니다. 
+                        </p>
+<pre><code class="language-js">// 06 : pin
+gsap.to(box6, {
+    duration: 2,
+    x: 500,
+    rotation: 360,
+    borderRadius: 100,
+
+    scrollTrigger: {
+        trigger: box6,
+        start: "top 50%",
+        end: "top 100px",
+        pin: true,
+        scrub: true,    
+        markers: true,
+    }
+});
+
+</code></pre>
+
+                        <h4 data-num="09">2-7. toggleClass</h4>
+                        <p>
+                            이번에는 <code>toggleClass</code> 속성을 설정해 보겠습니다. 
+                            시작점에 됐을 때 애니메이션도 줄 수 있지만 <code>class</code>도 추가할 수 있습니다. 
+                            미리 CSS를 만들어 놓고 확인해보겠습니다. 
+                            <code>class</code> 이름은 <code>active</code>로 설정하였습니다. 
+                            여기에 <code>id</code> 값을 추가하면 마커의 이름을 변경할 수 있습니다. 
+                        </p>
+<pre><code class="language-js">// 07 : toggleClass
+gsap.to(box7, {
+    duration: 2,
+    x: 500,
+    rotation: 360,
+    borderRadius: 100,
+
+    scrollTrigger: {
+        trigger: box7,
+        start: "top center",
+        end: "bottom top",
+        scrub: true,    
+        markers: true,
+        toggleClass: "active",
+        id: "box7"
+    }
+});
+</code></pre>
+
+                        <h4 data-num="10">2-8. callback</h4>
+                        <p>
+                            이번에는 콜백함수에 대해서 알아보겠습니다. 
+                            콜백함수는 하나의 함수를 실행하고 그 다음 함수를 실행하는 함수라고 생각하면 됩니다. 
+                            보통은 두개의 함수를 실행시키면 동시에 실행되지만,
+                            콜백함수는 하나의 함수가 실행되고, 끝나면 그 다음 함수가 실행되는 함수라고 생각하시면 이해하기가 편합니다. 
+                            <code>scrollTrigger</code> 역시 여러가지 콜백함수를 제공하고 있습니다. 
+                            <code>toggleActions</code> 처럼 <code>onEnter</code>, <code>onLeave</code>, <code>onEnterBack</code>, <code>onLeaveBack</code> 메서드를 제공하며,
+                            <code>onUpdate</code>이나 <code>onToggle</code> 같은 메서드도 제공합니다. 
+                        </p>
+<pre><code class="language-js">// 08 : callback
+gsap.to(box8, {
+    duration: 2,
+    x: 500,
+    rotation: 360,
+    borderRadius: 100,
+    
+    scrollTrigger: {
+        trigger: box8,
+        start: "top center",
+        end: "bottom 30%",
+        scrub: true,    
+        markers: false,
+        // onEnter : () => {console.log("onEnter")},
+        // onLeave : () => {console.log("onLeave")},
+        // onEnterBack : () => {console.log("onEnterBack")},
+        // onLeaveBack : () => {console.log("onLeaveBack")},
+        // onUpdate : (self) => {console.log("onUpdate", self.progress.toFixed(3))},
+        onToggle : (self) => {console.log("onToggle", self.isActive)},
+    }
+});
+</code></pre>
                     </div>
 
-                    <hr>
-
+                    <div>
+                        <h3>3. 마무리</h3>
+                        <p>
+                            이렇게 <code>scrollTrigger</code>의 속성 값을 알아봤습니다. 
+                            이 밖에도 더 디테일한 기능들이 있지만, 기본적인 요소를 파악한 다음 하나씩 깊게 들어가보겠습니다. 
+                            기본적인 효과를 이해하고 스크롤 이벤트를 작업한다면 조금 더 수월하게 사이트를 만들 수 있습니다. 
+                            그럼 다음 예제에서 뵙겠습니다. 수고하셨습니다. 🤕
+                        </p>
+                    </div>
                     
                     <!-- 레퍼런스 -->
                     <hr>
                     
-                    <h3>완성된 화면</h3>
-                    <ul class="refer4">
-                        <li><a href="#">1. 메뉴 이동</a></li>
-                        <li><a href="#">2. 닷 메뉴</a></li>
-                        <li><a href="#">3. 메뉴 숨김</a></li>
-                        <li><a href="#">4. 나타나기</a></li>
-                        <li><a href="#">5. 이질감 효과</a></li>
-                        <li><a href="#">6. 텍스트 효과</a></li>
-                        <li><a href="#">7. 리빌 효과</a></li>
-                        <li><a href="#">8. 가로 효과</a></li>
-                        <li><a href="#">9. 가로세로 효과</a></li>
+                    <h3>예제 목록</h3>
+                    <ul class="refer5">
+                        <li><a href="#">1. GSAP 패럴랙스 이펙트 : 기본 애니메이션</a></li>
+                        <li><a href="#">2. GSAP 패럴랙스 이펙트 : Pin 애니메이션</a></li>
                     </ul>
                     
                 </div>

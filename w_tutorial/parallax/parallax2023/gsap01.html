@@ -8,7 +8,7 @@
 
     <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
     <style>
-* {
+        * {
             margin: 0;
             padding: 0;
         }
@@ -72,7 +72,10 @@
             align-items: center;
             justify-content: center;
         }
-        .parallax__item:nth-child(2n){
+        #section2, 
+        #section4, 
+        #section6, 
+        #section8 {
             background-color: #222;
         }
         .parallax__item__num {
@@ -89,32 +92,35 @@
             background-size: cover;
             background-position: center;
         }
-        .parallax__item:nth-child(1) .parallax__item__img {
+        #section1 .parallax__item__img {
             background-image: url(assets/img/images14.jpg);
         }
-        .parallax__item:nth-child(2) .parallax__item__img {
+        #section2 .parallax__item__img {
             background-image: url(assets/img/images15.jpg);
         }
-        .parallax__item:nth-child(3) .parallax__item__img {
+        #section3 .parallax__item__img {
             background-image: url(assets/img/images03.jpg);
         }
-        .parallax__item:nth-child(4) .parallax__item__img {
+        #section4 .parallax__item__img {
             background-image: url(assets/img/images04.jpg);
         }
-        .parallax__item:nth-child(5) .parallax__item__img {
+        #section5 .parallax__item__img {
             background-image: url(assets/img/images05.jpg);
         }
-        .parallax__item:nth-child(6) .parallax__item__img {
+        #section6 .parallax__item__img {
             background-image: url(assets/img/images06.jpg);
         }
-        .parallax__item:nth-child(7) .parallax__item__img {
+        #section7 .parallax__item__img {
             background-image: url(assets/img/images07.jpg);
         }
-        .parallax__item:nth-child(8) .parallax__item__img {
+        #section8 .parallax__item__img {
             background-image: url(assets/img/images08.jpg);
         }
-        .parallax__item:nth-child(9) .parallax__item__img {
+        #section9 .parallax__item__img {
             background-image: url(assets/img/images09.jpg);
+        }
+        .parallax__item__img.active {
+            filter: hue-rotate(100deg);
         }
     </style>
 </head>
@@ -286,6 +292,46 @@
                 pin: true,
                 scrub: true,    
                 markers: false,
+            }
+        });
+
+        // 07 : toggleClass
+        gsap.to(box7, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
+            borderRadius: 100,
+
+            scrollTrigger: {
+                trigger: box7,
+                start: "top center",
+                end: "bottom top",
+                scrub: true,    
+                markers: true,
+                toggleClass: "active",
+                id: "box7"
+            }
+        });
+
+        // 08 : callback
+        gsap.to(box8, {
+            duration: 2,
+            x: 500,
+            rotation: 360,
+            borderRadius: 100,
+            
+            scrollTrigger: {
+                trigger: box8,
+                start: "top center",
+                end: "bottom 30%",
+                scrub: true,    
+                markers: false,
+                // onEnter : () => {console.log("onEnter")},
+                // onLeave : () => {console.log("onLeave")},
+                // onEnterBack : () => {console.log("onEnterBack")},
+                // onLeaveBack : () => {console.log("onLeaveBack")},
+                // onUpdate : (self) => {console.log("onUpdate", self.progress.toFixed(3))},
+                onToggle : (self) => {console.log("onToggle", self.isActive)},
             }
         });
     </script>
