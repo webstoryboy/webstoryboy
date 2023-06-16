@@ -1,1341 +1,1569 @@
 [
-    {
-        "name" : "롯데리아 촵땡겨체",
-        "name_eng" : "LotteriaChab",
-        "weight" : ["normal"],
-        "download" : "https://www.lotteriafont.com/",
-        "link": "https://wess.tistory.com/545",
-        "git": "https://github.com/webfontworld/LotteriaChab"
-    },{
-        "name" : "롯데리아 딱붙어체",
-        "name_eng" : "LotteriaDdag",
-        "weight" : ["normal"],
-        "download" : "https://www.lotteriafont.com/",
-        "link" : "https://wess.tistory.com/544",
-        "git": "https://github.com/webfontworld/LotteriaDdag"
-    },{
-        "name" : "더잠실체",
-        "name_eng" : "TheJamsil",
-        "weight" : ["100","300","400","500","700","800"],
-        "download" : "https://www.jincheon.go.kr/home/sub.do?menukey=3837",
-        "link" : "https://wess.tistory.com/543",
-        "git": "https://github.com/webfontworld/TheJamsil"
-    },{
-        "name" : "생거진천체",
-        "name_eng" : "SaenggeoJincheon",
-        "weight" : ["normal"],
-        "download" : "https://www.jincheon.go.kr/home/sub.do?menukey=3837",
-        "link" : "https://wess.tistory.com/542",
-        "git": "https://github.com/webfontworld/SaenggeoJincheon"
-    },{
-        "name" : "땅스부대찌개",
-        "name_eng" : "TangsBudaeJjigae",
-        "weight" : ["300","500","700"],
-        "download" : "http://tsbudae.com/theme/GT2/contents/Fontpage.php",
-        "link" : "https://wess.tistory.com/541",
-        "git": "https://github.com/webfontworld/TangsBudaeJjigae"
-    },{
-        "name" : "나눔스퀘어네오",
-        "name_eng" : "NanumSquareNeo",
-        "weight" : ["300","400","700","800","900"],
-        "download" : "https://hangeul.naver.com/font",
-        "link" : "https://wess.tistory.com/540",
-        "git": "https://github.com/webfontworld/NanumSquareNeo"
-    },{
-        "name" : "116수박화체",
-        "name_eng" : "116WaterMelon",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/wosr1/221324032660",
-        "link" : "https://wess.tistory.com/539",
-        "git": "https://github.com/webfontworld/116WaterMelon"
-    },{
-        "name" : "레베카체",
-        "name_eng" : "Rebecca",
-        "weight" : ["normal"],
-        "download" : "http://www.earlyfont.com/portfolio/EF_REBECCA",
-        "link" : "https://wess.tistory.com/538",
-        "git": "https://github.com/webfontworld/Rebecca"
-    },{
-        "name" : "창원단감아삭체",
-        "name_eng" : "ChangwonDangamAsac",
-        "weight" : ["normal"],
-        "download" : "https://www.changwon.go.kr/depart/contents.do?mId=1006160000",
-        "link": "https://wess.tistory.com/537",
-        "git": "https://github.com/webfontworld/ChangwonDangamAsac"
-    },{
-        "name" : "카페24클래식타입체",
-        "name_eng" : "Cafe24ClassicType",
-        "weight" : ["normal"],
-        "download" : "https://fonts.cafe24.com/",
-        "link" : "https://wess.tistory.com/529",
-        "git": "https://github.com/webfontworld/Cafe24ClassicType"
-    },{
-        "name" : "안성탕면체",
-        "name_eng" : "AnsungTangMyun",
-        "weight" : ["normal"],
-        "download" : "http://www.nongshim.com/promotion/event/view/2022/09_ansung/ansung_event",
-        "link" : "https://wess.tistory.com/517",
-        "git": "https://github.com/webfontworld/Ansungtangmyun"
-    },{
-        "name" : "밀양아리랑고딕체",
-        "name_eng" : "MYArirangGothic",
-        "weight" : ["normal"],
-        "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "https://wess.tistory.com/516",
-        "git": "https://github.com/webfontworld/MYArirangGothic"
-    },{
-        "name" : "밀양해맑은상상체",
-        "name_eng" : "MYHaemalgeunSangsang",
-        "weight" : ["normal"],
-        "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "https://wess.tistory.com/515",
-        "git": "https://github.com/webfontworld/MYHaemalgeunSangsang"
-    },{
-        "name" : "밀양영남루체",
-        "name_eng" : "MYYeongnamnu",
-        "weight" : ["normal"],
-        "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "https://wess.tistory.com/514",
-        "git": "https://github.com/webfontworld/MYYeongnamnu"
-    },{
-        "name" : "밀양아리랑체",
-        "name_eng" : "MYArirang",
-        "weight" : ["normal"],
-        "download" : "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
-        "link" : "https://wess.tistory.com/513",
-        "git": "https://github.com/webfontworld/MYArirang"
-    },{
-        "name" : "마이쮸체",
-        "name_eng" : "CrownMychew",
-        "weight" : ["normal"],
-        "download" : "https://www.crown.co.kr/main/index.asp",
-        "link" : "https://wess.tistory.com/512",
-        "git": "https://github.com/webfontworld/CrownMychew"
-    },{
-        "name" : "혀니고딕체",
-        "name_eng" : "HyunyGothic",
-        "weight" : ["normal"],
-        "download" : "http://www.earlyfont.com/portfolio/EARLYFONT_HYUNY%20GO",
-        "link" : "https://wess.tistory.com/511",
-        "git": "https://github.com/webfontworld/HyunyGothic"
-    },{
-        "name" : "마초체",
-        "name_eng" : "Macho",
-        "weight" : ["normal"],
-        "download" : "http://www.earlyfont.com/portfolio/EARLYFONT_MACHO",
-        "link" : "https://wess.tistory.com/510",
-        "git": "https://github.com/webfontworld/Macho"
-    },{
-        "name" : "달성힐링체",
-        "name_eng" : "DalseoHealing",
-        "weight" : ["normal"],
-        "download" : "https://dalseo.daegu.kr/index.do?menu_id=00003453",
-        "link" : "https://wess.tistory.com/509",
-        "git": "https://github.com/webfontworld/DalseoHealing"
-    },{
-        "name" : "달성달링체",
-        "name_eng" : "DalseoDarling",
-        "weight" : ["normal"],
-        "download" : "https://dalseo.daegu.kr/index.do?menu_id=00003452",
-        "link" : "https://wess.tistory.com/508",
-        "git": "https://github.com/webfontworld/DalseoDarling"
-    },{
-        "name" : "읏찬체",
-        "name_eng" : "OKChan",
-        "weight" : ["normal"],
-        "download" : "http://www.3jong.com/download.html",
-        "link" : "https://wess.tistory.com/507",
-        "git": "https://github.com/webfontworld/OKChan"
-    },{
-        "name" : "읏궁체",
-        "name_eng" : "OKGung",
-        "weight" : ["normal"],
-        "download" : "http://www.3jong.com/download.html",
-        "link" : "https://wess.tistory.com/506",
-        "git": "https://github.com/webfontworld/OKGung"
-    },{
-        "name" : "읏뚱체",
-        "name_eng" : "OKDdung",
-        "weight" : ["normal"],
-        "download" : "http://www.3jong.com/download.html",
-        "link" : "https://wess.tistory.com/505",
-        "git": "https://github.com/webfontworld/OKDdung"
-    },{
-        "name" : "평창체",
-        "name_eng" : "PyeongChang",
-        "weight" : ["400", "700"],
-        "download" : "https://www.pc.go.kr/portal/intro/intro-summary/pcFont",
-        "link" : "https://wess.tistory.com/504",
-        "git": "https://github.com/webfontworld/PyeongChang"
-    },{
-        "name" : "평창평화체",
-        "name_eng" : "PyeongChangPeace",
-        "weight" : ["300", "700"],
-        "download" : "https://www.pc.go.kr/portal/intro/intro-summary/pcFont",
-        "link" : "https://wess.tistory.com/503",
-        "git": "https://github.com/webfontworld/PyeongChangPeace"
-    },{
-        "name" : "마비옛체",
-        "name_eng" : "MabinogiClassic",
-        "weight" : ["normal"],
-        "download" : "https://mabinogi.nexon.com/page/pds/font.asp",
-        "link" : "https://wess.tistory.com/502",
-        "git": "https://github.com/webfontworld/MabinogiClassic"
-    },{
-        "name" : "우리다움체",
-        "name_eng" : "WooriDaum",
-        "weight" : ["300","400","700"],
-        "download" : "https://www.woorifg.com/kor/company/ci/font/contentsid/581/index.do",
-        "link" : "https://wess.tistory.com/499",
-        "git": "https://github.com/webfontworld/WooriDaum"
-    },{
-        "name" : "추사사랑체",
-        "name_eng" : "ChusaLove",
-        "weight" : ["400","700"],
-        "download" : "https://www.yesan.go.kr/kor/sub04_01_01_05.do",
-        "link" : "https://wess.tistory.com/498",
-        "git": "https://github.com/webfontworld/ChusaLove"
-    },{
-        "name" : "다이어리체",
-        "name_eng" : "Diary",
-        "weight" : ["normal"],
-        "download" : "http://www.earlyfont.com/portfolio/EARLYFONT_DIARY",
-        "link" : "https://wess.tistory.com/497",
-        "git": "https://github.com/webfontworld/Diary"
-    },{
-        "name" : "닉스곤폰트",
-        "name_eng" : "NixgonFonts",
-        "weight" : ["normal"],
-        "download" : "http://www.nixgon.com/nixgon-fonts",
-        "link" : "https://wess.tistory.com/495",
-        "git": "https://github.com/webfontworld/NixgonFonts"
-    },{
-        "name" : "나눔바른고딕체",
-        "name_eng" : "NanumBarunGothic",
-        "weight" : ["200","300","400","700"],
-        "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "https://wess.tistory.com/494",
-        "git": "https://github.com/webfontworld/NanumBarunGothic"
-    },{
-        "name" : "나눔바른펜",
-        "name_eng" : "NanumBarunPen",
-        "weight" : ["400","800"],
-        "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "https://wess.tistory.com/493",
-        "git": "https://github.com/webfontworld/NanumBarunPen"
-    },{
-        "name" : "나눔스퀘어라운드",
-        "name_eng" : "NanumSquareRound",
-        "weight" : ["300","400","700","800"],
-        "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "https://wess.tistory.com/492",
-        "git": "https://github.com/webfontworld/NanumSquareRound"
-    },{
-        "name" : "나눔스퀘어",
-        "name_eng" : "NanumSquare",
-        "weight" : ["300","400","700","800"],
-        "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "https://wess.tistory.com/491",
-        "git": "https://github.com/webfontworld/NanumSquare"
-    },{
-        "name" : "나눔명조체",
-        "name_eng" : "NanumMyeongjo",
-        "weight" : ["400","700","800"],
-        "download" : "https://hangeul.naver.com/font/nanum",
-        "link" : "https://wess.tistory.com/490",
-        "git": "https://github.com/webfontworld/NanumMyeongjo"
-    },{
-        "name" : "김포평화 바탕체",
-        "name_eng" : "GimpoBatang",
-        "weight" : ["normal"],
-        "download" : "https://www.gimpo.go.kr/portal/contents.do?key=6502",
-        "link" : "https://wess.tistory.com/488",
-        "git": "https://github.com/webfontworld/GimpoBatang"
-    },{
-        "name" : "김포평화 제목체",
-        "name_eng" : "GimpoTitle",
-        "weight" : ["normal"],
-        "download" : "https://www.gimpo.go.kr/portal/contents.do?key=6501",
-        "link" : "https://wess.tistory.com/487",
-        "git": "https://github.com/webfontworld/GimpoTitle"
-    },{
-        "name" : "김포평화 고딕체",
-        "name_eng" : "GimpoGothic",
-        "weight" : ["normal"],
-        "download" : "https://www.gimpo.go.kr/portal/contents.do?key=6503",
-        "link" : "https://wess.tistory.com/486",
-        "git": "https://github.com/webfontworld/GimpoGothic"
-    },{
-        "name" : "한림명조체",
-        "name_eng" : "HallymMjo",
-        "weight" : ["400","700"],
-        "download" : "https://www.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_about&screen=ptp117_3_2",
-        "link" : "https://wess.tistory.com/485",
-        "git": "https://github.com/webfontworld/HallymMjo"
-    },{
-        "name" : "한림고딕체",
-        "name_eng" : "HallymGothic",
-        "weight" : ["400","500","700"],
-        "download" : "https://www.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_about&screen=ptp117_3_2",
-        "link" : "https://wess.tistory.com/484",
-        "git": "https://github.com/webfontworld/HallymGothic"
-    },{
-        "name" : "국립공원 반달이체",
-        "name_eng" : "KNPSBandali",
-        "weight" : ["normal"],
-        "download" : "https://www.knps.or.kr/portal/bandal/sub01.do",
-        "link" : "https://wess.tistory.com/479",
-        "git": "https://github.com/webfontworld/KNPSBandali"
-    },{
-        "name" : "부산체",
-        "name_eng" : "Busan",
-        "weight" : ["normal"],
-        "download" : "https://www.busan.go.kr/bhbusan",
-        "link" : "https://wess.tistory.com/478",
-        "git": "https://github.com/webfontworld/Busan"
-    },{
-        "name" : "수성 혜정체",
-        "name_eng" : "SuseongHyejeong",
-        "weight" : ["normal"],
-        "download" : "https://www.suseong.kr/index.do?menu_id=00041081",
-        "link" : "https://wess.tistory.com/477",
-        "git": "https://github.com/webfontworld/SuseongHyejeong"
-    },{
-        "name" : "수성 바탕체",
-        "name_eng" : "SuseongBatang",
-        "weight" : ["normal"],
-        "download" : "https://www.suseong.kr/index.do?menu_id=00041080",
-        "link" : "https://wess.tistory.com/476",
-        "git": "https://github.com/webfontworld/SuseongBatang"
-    },{
-        "name" : "수성 돋움체",
-        "name_eng" : "SuseongDotum",
-        "weight" : ["normal"],
-        "download" : "https://www.suseong.kr/index.do?menu_id=00041081",
-        "link" : "https://wess.tistory.com/475",
-        "git": "https://github.com/webfontworld/SuseongDotum"
-    },{
-        "name" : "김해가야체",
-        "name_eng" : "GimhaeGaya",
-        "weight" : ["400","700"],
-        "download" : "https://www.gimhae.go.kr/00954/01017/01027.web",
-        "link" : "https://wess.tistory.com/474",
-        "git": "https://github.com/webfontworld/GimhaeGaya"
-    },{
-        "name" : "ACC 어린이 마음고운체",
-        "name_eng" : "ChildrenHeart",
-        "weight" : ["normal"],
-        "download" : "https://www.acc.go.kr/main/contents.do?PID=0808",
-        "link" : "https://wess.tistory.com/473",
-        "git": "https://github.com/webfontworld/ChildrenHeart"
-    },{
-        "name" : "ACC 어린이 하늘맑은체",
-        "name_eng" : "ChildrenSky",
-        "weight" : ["normal"],
-        "download" : "https://www.acc.go.kr/main/contents.do?PID=0808",
-        "link" : "https://wess.tistory.com/472",
-        "git": "https://github.com/webfontworld/ChildrenSky"
-    },{
-        "name" : "ACC 어린이 가을담은체",
-        "name_eng" : "ChildrenFall",
-        "weight" : ["normal"],
-        "download" : "https://www.acc.go.kr/main/contents.do?PID=0808",
-        "link" : "https://wess.tistory.com/471",
-        "git": "https://github.com/webfontworld/ChildrenFall"
-    },{
-        "name" : "해남체",
-        "name_eng" : "Haenam",
-        "weight" : ["normal"],
-        "download" : "http://www.haenam.go.kr/index.9is?contentUid=18e3368f5d745106015e558a03a5349d",
-        "link" : "https://wess.tistory.com/470",
-        "git": "https://github.com/webfontworld/Haenam"
-    },{
-        "name" : "가비아 납작블럭체",
-        "name_eng" : "NapjakBlock",
-        "weight" : ["normal"],
-        "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "https://wess.tistory.com/469",
-        "git": "https://github.com/webfontworld/NapjakBlock"
-    },{
-        "name" : "가비아 솔미체",
-        "name_eng" : "Solmee",
-        "weight" : ["normal"],
-        "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "https://wess.tistory.com/468",
-        "git": "https://github.com/webfontworld/Solmee"
-    },{
-        "name" : "가비아 청연체",
-        "name_eng" : "CheongYeon",
-        "weight" : ["normal"],
-        "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "https://wess.tistory.com/467",
-        "git": "https://github.com/webfontworld/CheongYeon"
-    },{
-        "name" : "가비아 마음결체",
-        "name_eng" : "MaeumGyeol",
-        "weight" : ["normal"],
-        "download" : "https://company.gabia.com/introduce/ci",
-        "link" : "https://wess.tistory.com/466",
-        "git": "https://github.com/webfontworld/MaeumGyeol"
-    },{
-        "name" : "칠곡할매 추유을체",
-        "name_eng" : "ChilgokCye",
-        "weight" : ["normal"],
-        "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "https://wess.tistory.com/465",
-        "git": "https://github.com/webfontworld/ChilgokCye"
-    },{
-        "name" : "칠곡할매 이종희체",
-        "name_eng" : "ChilgokLjh",
-        "weight" : ["normal"],
-        "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "https://wess.tistory.com/464",
-        "git": "https://github.com/webfontworld/ChilgokLjh"
-    },{
-        "name" : "칠곡할매 이원순체",
-        "name_eng" : "ChilgokLws",
-        "weight" : ["normal"],
-        "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "https://wess.tistory.com/463",
-        "git": "https://github.com/webfontworld/ChilgokLws"
-    },{
-        "name" : "칠곡할매 권안자체",
-        "name_eng" : "ChilgokKaj",
-        "weight" : ["normal"],
-        "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "https://wess.tistory.com/462",
-        "git": "https://github.com/webfontworld/ChilgokKaj"
-    },{
-        "name" : "칠곡할매 김영분체",
-        "name_eng" : "ChilgokKyb",
-        "weight" : ["normal"],
-        "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "https://wess.tistory.com/461",
-        "git": "https://github.com/webfontworld/ChilgokKyb"
-    },{
-        "name" : "순천체",
-        "name_eng" : "SunCheon",
-        "weight" : ["400","700"],
-        "download" : "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
-        "link" : "https://wess.tistory.com/460",
-        "git": "https://github.com/webfontworld/SunCheon"
-    },{
-        "name" : "영도체",
-        "name_eng" : "Yeongdo",
-        "weight" : ["normal"],
-        "download" : "http://ydct.or.kr/artcity/about/",
-        "link" : "459"
-    },{
-        "name" : "전화선체",
-        "name_eng" : "JeonHwaseon",
-        "weight" : ["normal"],
-        "download" : "https://www.heungkuklife.co.kr/jsps/front/company/ci/digit-hand-font-info.jsp",
-        "link" : "458"
-    },{
-        "name" : "심경하체",
-        "name_eng" : "SimKyungha",
-        "weight" : ["normal"],
-        "download" : "https://www.heungkuklife.co.kr/jsps/front/company/ci/digit-hand-font-info.jsp",
-        "link" : "457"
-    },{
-        "name" : "이서윤체",
-        "name_eng" : "LeeSeoyun",
-        "weight" : ["normal"],
-        "download" : "https://www.heungkuklife.co.kr/jsps/front/company/ci/digit-hand-font-info.jsp",
-        "link" : "456"
-    },{
-        "name" : "노토세리프",
-        "name_eng" : "NotoSerifKR",
-        "weight" : ["200","300","400","500","600","700","900"],
-        "download" : "https://fonts.google.com/noto/specimen/Noto+Serif+KR?subset=korean&noto.script=Kore",
-        "link" : "455"
-    },{
-        "name" : "노토산스",
-        "name_eng" : "NotoSansKR",
-        "weight" : ["100","300","400","500","700","900"],
-        "download" : "https://fonts.google.com/noto/specimen/Noto+Sans+KR",
-        "link" : "454"
-    },{
-        "name" : "흑백사진",
-        "name_eng" : "BlackAndWhitePicture",
-        "weight" : ["normal"],
-        "download" : "https://fonts.google.com/specimen/Black+And+White+Picture?subset=korean&query=AsiaSoft+Inc.&noto.script=Kore#standard-styles",
-        "link" : "453"
-    },{
-        "name" : "고딕A1",
-        "name_eng" : "GothicA1",
-        "weight" : ["100","200","300","400","500","600","700","800","900"],
-        "download" : "https://fonts.google.com/specimen/Gothic+A1?subset=korean&query=HanYang+I%26C+Co&noto.script=Kore",
-        "link" : "452"
-    },{
-        "name" : "Neo둥근모",
-        "name_eng" : "NeoDunggeunmo",
-        "weight" : ["normal"],
-        "download" : "https://neodgm.dalgona.dev/downloads/neodgm.html",
-        "link" : "451"
-    },{
-        "name" : "둥근모꼴+Fixedsys",
-        "name_eng" : "DungGeunMo",
-        "weight" : ["normal"],
-        "download" : "https://cactus.tistory.com/193",
-        "link" : "450"
-    },{
-        "name" : "독도체",
-        "name_eng" : "Dokdo",
-        "weight" : ["normal"],
-        "download" : "https://fonts.google.com/specimen/Dokdo?subset=korean&query=FONTRIX&noto.script=Kore",
-        "link" : "449"
-    },{
-        "name" : "싱글 데이",
-        "name_eng" : "SingleDay",
-        "weight" : ["normal"],
-        "download" : "https://fonts.google.com/specimen/Single+Day?subset=korean&noto.script=Kore",
-        "link" : "448"
-    },{
-        "name" : "충북대 70주년체",
-        "name_eng" : "CBNU",
-        "weight" : ["400","700"],
-        "download" : "https://www.chungbuk.ac.kr/site/pr/sub.do?key=1826",
-        "link" : "447"
-    },{
-        "name" : "충북대 직지체",
-        "name_eng" : "CBNUJIKJI",
-        "weight" : ["normal"],
-        "download" : "https://www.chungbuk.ac.kr/site/pr/sub.do?key=1827",
-        "link" : "446"
-    },{
-        "name" : "횡성한우체",
-        "name_eng" : "HoengseongHanu",
-        "weight" : ["normal"],
-        "download" : "https://www.hsg.go.kr/",
-        "link" : "445"
-    },{
-        "name" : "정선동강체",
-        "name_eng" : "JSDongkang",
-        "weight" : ["400","700"],
-        "download" : "http://www.jeongseonfont.com/write.html",
-        "link" : "444"
-    },{
-        "name" : "정선아리랑체",
-        "name_eng" : "JSArirang",
-        "weight" : ["400","700"],
-        "download" : "http://www.jeongseonfont.com/write.html",
-        "link" : "443"
-    },{
-        "name" : "정선아리랑혼체",
-        "name_eng" : "JSArirangHON",
-        "weight" : ["normal"],
-        "download" : "http://www.jeongseonfont.com/write.html",
-        "link" : "442"
-    },{
-        "name" : "정선아리랑뿌리체",
-        "name_eng" : "JSArirangPPURI",
-        "weight" : ["normal"],
-        "download" : "http://www.jeongseonfont.com/write.html",
-        "link" : "441"
-    },{
-        "name" : "헬스셋 고딕체",
-        "name_eng" : "HealthsetGothic",
-        "weight" : ["300","700"],
-        "download" : "http://shop2.hangria.cafe24.com/product/detailfree.html?product_no=98&cate_no=64&display_group=1",
-        "link" : "440"
-    },{
-        "name" : "헬스셋 복조리체",
-        "name_eng" : "HealthsetLuckybag",
-        "weight" : ["normal"],
-        "download" : "http://shop2.hangria.cafe24.com/product/detailfree.html?product_no=98&cate_no=64&display_group=1",
-        "link" : "439"
-    },{
-        "name" : "마루부리",
-        "name_eng" : "MaruBuri",
-        "weight" : ["200","300","400","600","700"],
-        "download" : "https://hangeul.naver.com/maruproject_11",
-        "link" : "437"
-    },{
-        "name" : "티머니 둥근바람",
-        "name_eng" : "TmoneyRoundWind",
-        "weight" : ["400","800"],
-        "download" : "https://www.tmoney.co.kr/aeb/cmnctn/ci/ci.dev",
-        "link" : "436"
-    },{
-        "name" : "포천 막걸리체",
-        "name_eng" : "MakGeolli",
-        "weight" : ["normal"],
-        "download" : "https://www.pocheon.go.kr/www/contents.do?key=5582",
-        "link" : "435"
-    },{
-        "name" : "포천 오성과 한음체",
-        "name_eng" : "OSeongandHanEum",
-        "weight" : ["400","700"],
-        "download" : "https://www.pocheon.go.kr/www/contents.do?key=5582",
-        "link" : "434"
-    },{
-        "name" : "이랜드 초이스체",
-        "name_eng" : "ElandChoice",
-        "weight" : ["300","500","700"],
-        "download" : "https://www.elandretail.com/news/smart_shopping_02.do?evtID=EVT20201102000002388&branchID=00110001&lang=000600KO",
-        "link" : "433"
-    },{
-        "name" : "이랜드 나이스체",
-        "name_eng" : "ElandNice",
-        "weight" : ["normal"],
-        "download" : "https://www.elandretail.com/news/smart_shopping_02.do?evtID=EVT20201102000002388&branchID=00110001&lang=000600KO",
-        "link" : "432"
-    },{
-        "name" : "LAB디지털체",
-        "name_eng" : "LABDigital",
-        "weight" : ["normal"],
-        "download" : "https://fontlab.kr/",
-        "link" : "431"
-    },{
-        "name" : "한국무역협회체",
-        "name_eng" : "Kita",
-        "weight" : ["normal"],
-        "download" : "https://www.kita.net/asocGuidance/asocGuidance/ciRgltn/exclusiveFont.do",
-        "link" : "430"
-    },{
-        "name" : "빈폴체",
-        "name_eng" : "BeanPole",
-        "weight" : ["300","500","700"],
-        "download" : "https://www.ssfshop.com/event/EV202002250109248/view",
-        "link" : "429"
-    },{
-        "name" : "수트체",
-        "name_eng" : "SUIT",
-        "weight" : ["100","200","300","400","500","600","700","800","900"],
-        "download" : "https://sunn.us/suit/",
-        "link" : "428"
-    },{
-        "name" : "KOHI나눔체",
-        "name_eng" : "SUIKOHINanumT",
-        "weight" : ["300","700"],
-        "download" : "https://csp.kohi.or.kr/user/bbs/BD_selectBbs.do?q_bbsCode=1070&q_bbscttSn=20211118135429370",
-        "link" : "427"
-    },{
-        "name" : "KOHI배움",
-        "name_eng" : "KOHIBaeum",
-        "weight" : ["normal"],
-        "download" : "https://csp.kohi.or.kr/user/bbs/BD_selectBbs.do?q_bbsCode=1070&q_bbscttSn=20211118135429370",
-        "link" : "426"
-    },{
-        "name" : "레페리 포인트White체",
-        "name_eng" : "LeferiPointWhite",
-        "weight" : ["400","700"],
-        "download" : "http://leferitype.com/",
-        "link" : "425"
-    },{
-        "name" : "레페리 포인트Special체",
-        "name_eng" : "LeferiPointSpecial",
-        "weight" : ["400","700"],
-        "download" : "http://leferitype.com/",
-        "link" : "424"
-    },{
-        "name" : "레페리 포인트Black체",
-        "name_eng" : "LeferiPointBlack",
-        "weight" : ["400","700"],
-        "download" : "http://leferitype.com/",
-        "link" : "423"
-    },{
-        "name" : "레페리 베이스체",
-        "name_eng" : "LeferiBase",
-        "weight" : ["400","700"],
-        "download" : "http://leferitype.com/",
-        "link" : "422"
-    },{
-        "name" : "비트로 프라이드체",
-        "name_eng" : "VitroPride",
-        "weight" : ["normal"],
-        "download" : "http://www.vitro.co.kr/vitro/font.html",
-        "link" : "421"
-    },{
-        "name" : "비트로 코어체",
-        "name_eng" : "VitroCore",
-        "weight" : ["normal"],
-        "download" : "http://www.vitro.co.kr/vitro/font.html",
-        "link" : "420"
-    },{
-        "name" : "비트로 인스파이어체",
-        "name_eng" : "VitroInspire",
-        "weight" : ["normal"],
-        "download" : "http://www.vitro.co.kr/vitro/font.html",
-        "link" : ""
-    },{
-        "name" : "완도 청정 바다체",
-        "name_eng" : "WandoCleanSea",
-        "weight" : ["400","700"],
-        "download" : "https://www.wando.go.kr/www/introduction/wando_symbol/wando_font/wando_cleansea",
-        "link" : "419"
-    },{
-        "name" : "완도 희망체",
-        "name_eng" : "WandoHope",
-        "weight" : ["400","700"],
-        "download" : "https://www.wando.go.kr/www/introduction/wando_symbol/wando_font/wando_cleansea",
-        "link" : "418"
-    },{
-        "name" : "가나초콜릿체",
-        "name_eng" : "GhanaChocolate",
-        "weight" : ["normal"],
-        "download" : "https://www.lotteconf.co.kr/prcenter/gana",
-        "link" : "417"
-    },{
-        "name" : "Y유니버스체",
-        "name_eng" : "YUniverse",
-        "weight" : ["300","700"],
-        "download" : "https://www.yspotlight.co.kr/brand/font",
-        "link" : "416"
-    },{
-        "name" : "Y너만을비춤체",
-        "name_eng" : "YSpotLight",
-        "weight" : ["normal"],
-        "download" : "https://www.yspotlight.co.kr/brand/font",
-        "link" : "316"
-    },{
-        "name" : "Y이드스트릿체",
-        "name_eng" : "YDestreet",
-        "weight" : ["300","700"],
-        "download" : "https://www.yspotlight.co.kr/brand/font",
-        "link" : "317"
-    },{
-        "name" : "Y콤퓨타체",
-        "name_eng" : "",
-        "weight" : [""],
-        "download" : "https://www.yspotlight.co.kr/brand/font",
-        "link" : ""
-    },{
-        "name" : "고양덕양체",
-        "name_eng" : "GoYangDeogYang",
-        "weight" : ["700","800"],
-        "download" : "https://www.goyang.go.kr/www/www05/www05_3/www05_3_6/www05_3_6_tab2.jsp",
-        "link" : "415"
-    },{
-        "name" : "고양일산체",
-        "name_eng" : "GoYangIlSan",
-        "weight" : ["300","400"],
-        "download" : "https://www.goyang.go.kr/www/www05/www05_3/www05_3_6/www05_3_6_tab3.jsp",
-        "link" : "414"
-    },{
-        "name" : "고양체",
-        "name_eng" : "GoYang",
-        "weight" : ["normal"],
-        "download" : "https://www.goyang.go.kr/www/www05/www05_3/www05_3_6/www05_3_6_tab1.jsp",
-        "link" : "413"
-    },{
-        "name" : "별나라달님체",
-        "name_eng" : "UtoStarLandMoon",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "412"
-    },{
-        "name" : "빨간우체통체",
-        "name_eng" : "UtoRedPostBox",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "411"
-    },{
-        "name" : "뉴옥커체",
-        "name_eng" : "UtoNewYorKers",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "410"
-    },{
-        "name" : "미니콩다방체",
-        "name_eng" : "UtoMiniBeanCafe",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "409"
-    },{
-        "name" : "봄이조아체",
-        "name_eng" : "UtoLoveSpring",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "408"
-    },{
-        "name" : "리틀베어체",
-        "name_eng" : "UtoLittleBear",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "407"
-    },{
-        "name" : "꼬마 나비체",
-        "name_eng" : "UtoKidButterFly",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "406"
-    },{
-        "name" : "꽃보다 곰팅체",
-        "name_eng" : "UtoFlowerbear",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "405"
-    },{
-        "name" : "플라워체",
-        "name_eng" : "UtoFlower",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "404"
-    },{
-        "name" : "챠오츄르체",
-        "name_eng" : "UtoChyaoChyureu",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "403"
-    },{
-        "name" : "쇼콜라 라떼체",
-        "name_eng" : "UtoChoColatLatte",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "402"
-    },{
-        "name" : "123RF체",
-        "name_eng" : "Uto123RF",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "401"
-    },{
-        "name" : "제주감귤체",
-        "name_eng" : "UtoJejuGamGyul",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "400"
-    },{
-        "name" : "하르방체",
-        "name_eng" : "UtoHarBang",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "399"
-    },{
-        "name" : "봉숭아 틴트체",
-        "name_eng" : "UtoBalsamTint",
-        "weight" : ["normal"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "398"
-    },{
-        "name" : "유토이미지 고딕체",
-        "name_eng" : "UtoImageGothic",
-        "weight" : ["300","400","700"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "397"
-    },{
-        "name" : "유토이미지 손글씨체",
-        "name_eng" : "UtoImageHand",
-        "weight" : ["300","400","700"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "396"
-    },{
-        "name" : "유토이미지 나무체",
-        "name_eng" : "UtoImageTree",
-        "weight" : ["300","400","700"],
-        "download" : "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
-        "link" : "395"
-    },{
-        "name" : "제주한라산체",
-        "name_eng" : "JejuHallasan",
-        "weight" : ["normal"],
-        "download" : "https://www.jeju.go.kr/jeju/symbol/font/hallasan.htm",
-        "link" : "394"
-    },{
-        "name" : "제주고딕체",
-        "name_eng" : "JejuGothic",
-        "weight" : ["normal"],
-        "download" : "https://www.jeju.go.kr/jeju/symbol/font/gothic.htm",
-        "link" : "393"
-    },{
-        "name" : "제주명조체",
-        "name_eng" : "JejuGoJejuMyeongjothic",
-        "weight" : ["normal"],
-        "download" : "https://www.jeju.go.kr/jeju/symbol/font/myeongjo.htm",
-        "link" : "392"
-    },{
-        "name" : "하나서체",
-        "name_eng" : "Hana",
-        "weight" : ["300","500","700"],
-        "download" : "https://www.hanafn.com:8002/info/aboutus/hanaCi.do",
-        "link" : "391"
-    },{
-        "name" : "아리따 돋움체",
-        "name_eng" : "AritaDotum",
-        "weight" : ["100","300","500","600","700"],
-        "download" : "https://www.apgroup.com/int/ko/about-us/visual-identity/arita-typeface/arita-typeface.html",
-        "link" : "390"
-    },{
-        "name" : "아리따 부리체",
-        "name_eng" : "AritaBuri",
-        "weight" : ["100","300","500","600","700"],
-        "download" : "https://www.apgroup.com/int/ko/about-us/visual-identity/arita-typeface/arita-typeface.html",
-        "link" : "389"
-    },{
-        "name" : "프리텐다드체",
-        "name_eng" : "Pretendard",
-        "weight" : ["100","200","300","400","500","600","700","800","900"],
-        "download" : "https://cactus.tistory.com/306",
-        "link" : "388"
-    },{
-        "name" : "함렛체",
-        "name_eng" : "Pretendard",
-        "weight" : ["100","200","300","400","500","600","700","800","900"],
-        "download" : "https://github.com/hyper-type/hahmlet",
-        "link" : "387"
-    },{
-        "name" : "국대떡볶이체",
-        "name_eng" : "SDKukDeTopokki",
-        "weight" : ["300","700"],
-        "download" : "http://kukde.co.kr/?page_id=627",
-        "link" : "386"
-    },{
-        "name" : "즐거운이야기체",
-        "name_eng" : "EnjoyStories",
-        "weight" : ["300","500","700"],
-        "download" : "http://tvn10festival.tving.com/playground/tvn10font",
-        "link" : "385"
-    },{
-        "name" : "로커스상상고딕체",
-        "name_eng" : "LocusSangsang",
-        "weight" : ["normal"],
-        "download" : "http://locusvfx.com/_archive/locus-sangsang-gothic-project/",
-        "link" : "384"
-    },{
-        "name" : "검은고딕체",
-        "name_eng" : "BlackHanSans",
-        "weight" : ["normal"],
-        "download" : "https://fonts.google.com/specimen/Black+Han+Sans?subset=korean&noto.script=Kore",
-        "link" : "383"
-    },{
-        "name" : "을유1945체",
-        "name_eng" : "Eulyoo1945",
-        "weight" : ["normal"],
-        "download" : "http://www.eulyoo.co.kr/member/font.html",
-        "link" : "382"
-    },{
-        "name" : "이롭게 바탕체",
-        "name_eng" : "IropkeBatang",
-        "weight" : ["normal"],
-        "download" : "https://font.iropke.com/batang/#download",
-        "link" : "381"
-    },{
-        "name" : "EBS 주시경체",
-        "name_eng" : "IropkeBatang",
-        "weight" : ["300","400","600"],
-        "download" : "https://about.ebs.co.kr/kor/organization/font?tabVal=hunmin",
-        "link" : "380"
-    },{
-        "name" : "EBS 훈민정음 새론체",
-        "name_eng" : "EBSHunMinJeonGeumSaeron",
-        "weight" : ["300","400","600"],
-        "download" : "https://about.ebs.co.kr/kor/organization/font?tabVal=hunmin",
-        "link" : "379"
-    },{
-        "name" : "EBS 훈민정음체",
-        "name_eng" : "EBSHunMinJeongEum",
-        "weight" : ["300","400","600"],
-        "download" : "https://about.ebs.co.kr/kor/organization/font?tabVal=hunmin",
-        "link" : "378"
-    },{
-        "name" : "디자인하우스체",
-        "name_eng" : "DesignHouse",
-        "weight" : ["300","700"],
-        "download" : "http://www.designhouse.co.kr/service/dhfont",
-        "link" : "377"
-    },{
-        "name" : "IM혜민체",
-        "name_eng" : "IMHyemin",
-        "weight" : ["400","700"],
-        "download" : "https://www.dgb.co.kr/cms/imhyemin/",
-        "link" : "376"
-    },{
-        "name" : "J신영복체",
-        "name_eng" : "JShinYeongBok",
-        "weight" : ["normal"],
-        "download" : "http://jikjisoft.com/freefont?list=1",
-        "link" : "375"
-    },{
-        "name" : "J해바라기체",
-        "name_eng" : "JShinYeongBok",
-        "weight" : ["300","500","700"],
-        "download" : "http://jikjisoft.com/freefont?list=1",
-        "link" : "374"
-    },{
-        "name" : "J개구쟁이체",
-        "name_eng" : "JGaeguJaengyi",
-        "weight" : ["300","500","700"],
-        "download" : "http://jikjisoft.com/freefont?list=1",
-        "link" : "373"
-    },{
-        "name" : "J송명체",
-        "name_eng" : "JSongMyung",
-        "weight" : ["normal"],
-        "download" : "http://jikjisoft.com/freefont?list=1",
-        "link" : "372"
-    },{
-        "name" : "교보 손글씨 2020 박도연체",
-        "name_eng" : "KyoboHandwriting2020pdy",
-        "weight" : ["normal"],
-        "download" : "https://www.kyobobook.co.kr/handwriting/font",
-        "link" : "371"
-    },{
-        "name" : "교보 손글씨 2019체",
-        "name_eng" : "KyoboHandwriting2020pdy",
-        "weight" : ["normal"],
-        "download" : "https://www.kyobobook.co.kr/handwriting/font",
-        "link" : "370"
-    },{
-        "name" : "교보 손글씨 2021 성지영체",
-        "name_eng" : "",
-        "weight" : ["normal"],
-        "download" : "https://www.kyobobook.co.kr/handwriting/font",
-        "link" : ""
-    },{
-        "name" : "Mapo애민체",
-        "name_eng" : "MapoAgape",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "368"
-    },{
-        "name" : "Mapo홍대프리덤체",
-        "name_eng" : "MapoHongdaeFreedom",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "367"
-    },{
-        "name" : "Mapo한아름체",
-        "name_eng" : "MapoPeacefull",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "366"
-    },{
-        "name" : "Mapo마포나루체",
-        "name_eng" : "MapoMaponaru",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "365"
-    },{
-        "name" : "Mapo꽃섬체",
-        "name_eng" : "MapoFlowerIsland",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "364"
-    },{
-        "name" : "Mapo디카포체",
-        "name_eng" : "MapoDacapo",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "363"
-    },{
-        "name" : "Mapo배낭여행체",
-        "name_eng" : "MapoBackpacking",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "362"
-    },{
-        "name" : "Mapo금빛나루체",
-        "name_eng" : "MapoGoldenPier",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "361"
-    },{
-        "name" : "Mapo당인리발전소체",
-        "name_eng" : "MapoDPP",
-        "weight" : ["normal"],
-        "download" : "https://www.mapo.go.kr/site/main/content/mapo04010201",
-        "link" : "360"
-    },{
-        "name" : "고도 마음체",
-        "name_eng" : "GodoMaum",
-        "weight" : ["normal"],
-        "download" : "https://design.nhn-commerce.com/custom/free-font.php?link=gnb2_9",
-        "link" : "359"
-    },{
-        "name" : "고도체",
-        "name_eng" : "Godo",
-        "weight" : ["500","700"],
-        "download" : "https://design.nhn-commerce.com/custom/free-font.php?link=gnb2_9",
-        "link" : "358"
-    },{
-        "name" : "HS겨울눈꽃체",
-        "name_eng" : "HSGyoulNoonkot",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/PostView.naver?blogId=hp0&logNo=221170423317&categoryNo=36&parentCategoryNo=0&from=thumbnailList",
-        "link" : "357"
-    },{
-        "name" : "HS두꺼비체",
-        "name_eng" : "HSDuggobi",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/PostView.naver?blogId=hp0&logNo=221206126048&categoryNo=36&parentCategoryNo=0",
-        "link" : "356"
-    },{
-        "name" : "HS새마을체",
-        "name_eng" : "HSSaemaul",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/hp0/222417104986",
-        "link" : "355"
-    },{
-        "name" : "HS유지체",
-        "name_eng" : "HSYuJi",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/PostView.naver?blogId=hp0&logNo=221803810393&categoryNo=36&parentCategoryNo=0&from=thumbnailList",
-        "link" : "354"
-    },{
-        "name" : "HS여름물빛체",
-        "name_eng" : "HSYeolumMoolbit",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221059577653&categoryNo=32&parentCategoryNo=0",
-        "link" : "353"
-    },{
-        "name" : "HS가을생각체2.0",
-        "name_eng" : "HSGaeulSenggak2",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221132470037&categoryNo=32&parentCategoryNo=0",
-        "link" : "352"
-    },{
-        "name" : "HS가을생각체",
-        "name_eng" : "HSGaeulSenggak",
-        "weight" : ["100","400"],
-        "download" : "https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221132470037&categoryNo=32&parentCategoryNo=0",
-        "link" : "351"
-    },{
-        "name" : "HS봄바람체3.0",
-        "name_eng" : "HSBomBaram3",
-        "weight" : ["100","400"],
-        "download" : "https://blog.naver.com/hp0/222110675133",
-        "link" : "349"
-    },{
-        "name" : "HS봄바람체2.0",
-        "name_eng" : "HSBomBaram2",
-        "weight" : ["normal"],
-        "download" : "https://blog.naver.com/hp0/221074080319",
-        "link" : "348"
-    },{
-        "name" : "박물관문화재단클래식체",
-        "name_eng" : "MuseumClassic",
-        "weight" : ["300","500","700"],
-        "download" : "https://www.nmf.or.kr/agency/sub/20181024100034469100_contents.do",
-        "link" : "347"
-    },{
-        "name" : "양진체",
-        "name_eng" : "YangJin",
-        "weight" : ["normal"],
-        "download" : "https://www.supernovice.org/font/?ckattempt=1",
-        "link" : "346"
-    },{
-        "name" : "빙그레 따옴체",
-        "name_eng" : "BinggraeTaom",
-        "weight" : ["400","700"],
-        "download" : "http://www.bingfont.co.kr/bingfont.html",
-        "link" : "345"
-    },{
-        "name" : "빙그레 싸만코체",
-        "name_eng" : "BinggraeSamanco",
-        "weight" : ["400","700"],
-        "download" : "http://www.bingfont.co.kr/bingfont.html",
-        "link" : "344"
-    },{
-        "name" : "빙그레 메로나체",
-        "name_eng" : "BinggraeMelona",
-        "weight" : ["400","700"],
-        "download" : "http://www.bingfont.co.kr/bingfont.html",
-        "link" : "343"
-    },{
-        "name" : "빙그레체Ⅱ",
-        "name_eng" : "Binggrae2",
-        "weight" : ["400","700"],
-        "download" : "http://www.bingfont.co.kr/bingfont.html",
-        "link" : "342"
-    },{
-        "name" : "빙그레체",
-        "name_eng" : "Binggrae",
-        "weight" : ["400","700"],
-        "download" : "http://www.bingfont.co.kr/bingfont.html",
-        "link" : "341"
-    },{
-        "name" : "설립체",
-        "name_eng" : "EstablishRetrosans",
-        "weight" : ["normal"],
-        "download" : "https://www.ssro.net/media/media_view.jsp?bcate=fontdown&no=520735",
-        "link" : "340"
-    },{
-        "name" : "티웨이 항공체",
-        "name_eng" : "TwayAir",
-        "weight" : ["normal"],
-        "download" : "https://www.twayair.com/app/serviceInfo/contents/1320",
-        "link" : "339"
-    },{
-        "name" : "티웨이 하늘체",
-        "name_eng" : "TwaySky",
-        "weight" : ["normal"],
-        "download" : "https://www.twayair.com/app/serviceInfo/contents/1320",
-        "link" : "338"
-    },{
-        "name" : "티웨이 날다체",
-        "name_eng" : "TwayFly",
-        "weight" : ["normal"],
-        "download" : "https://www.twayair.com/app/serviceInfo/contents/1320",
-        "link" : "337"
-    },{
-        "name" : "엘리스 디지털배움체",
-        "name_eng" : "EliceDigitalBaeum",
-        "weight" : ["400","700"],
-        "download" : "https://elice.io/elice/brand#elice_digital_baeum",
-        "link" : "336"
-    },{
-        "name" : "동글체",
-        "name_eng" : "Dongle",
-        "weight" : ["300","400","700"],
-        "download" : "https://github.com/yangheeryu/Dongle",
-        "link" : "334"
-    },{
-        "name" : "고운 돋움체",
-        "name_eng" : "GowunDodum",
-        "weight" : ["normal"],
-        "download" : "https://github.com/yangheeryu/Gowun-Dodum",
-        "link" : "333"
-    },{
-        "name" : "고운 바탕체",
-        "name_eng" : "GowunBatang",
-        "weight" : ["400","700"],
-        "download" : "https://github.com/yangheeryu/Gowun-Batang",
-        "link" : "332"
-    },{
-        "name" : "어그로체",
-        "name_eng" : "SBAggro",
-        "weight" : ["300","500","700"],
-        "download" : "https://sandbox.co.kr/font",
-        "link" : "331"
-    },{
-        "name" : "웰컴체",
-        "name_eng" : "welcome",
-        "weight" : ["400","700"],
-        "download" : "https://www.welcomebank.co.kr/ib20/mnu/IBNBKIPRC005",
-        "link" : "330"
-    },{
-        "name" : "웰컴체",
-        "name_eng" : "welcome",
-        "weight" : ["400","700"],
-        "download" : "https://www.welcomebank.co.kr/ib20/mnu/IBNBKIPRC005",
-        "link" : "330"
-    },{
-        "name" : "상주다정다감체",
-        "name_eng" : "SangjuDajungdagam",
-        "weight" : ["normal"],
-        "download" : "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
-        "link" : "329"
-    },{
-        "name" : "상주해례본체",
-        "name_eng" : "SangjuHaerye",
-        "weight" : ["normal"],
-        "download" : "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
-        "link" : "328"
-    },{
-        "name" : "상주경천섬체",
-        "name_eng" : "SangjuGyeongcheonIsland",
-        "weight" : ["normal"],
-        "download" : "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
-        "link" : "327"
-    },{
-        "name" : "상주곶감체",
-        "name_eng" : "SangjuGotgam",
-        "weight" : ["normal"],
-        "download" : "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
-        "link" : "326"
-    },{
-        "name" : "남양주 고딕체",
-        "name_eng" : "NYJGothic",
-        "weight" : ["300","500","700","800"],
-        "download" : "https://www.nyj.go.kr/main/128",
-        "link" : "325"
-    },{
-        "name" : "남양주 다산체",
-        "name_eng" : "NYJDasan",
-        "weight" : ["500","700"],
-        "download" : "https://www.nyj.go.kr/main/128",
-        "link" : "324"
-    },{
-        "name" : "에스코어 드림체",
-        "name_eng" : "SCoreDream",
-        "weight" : ["100","200","300","400","500","600","700","800","900"],
-        "download" : "https://s-core.co.kr/company/font/",
-        "link" : "323"
-    },{
-        "name" : "코트라 손글씨체",
-        "name_eng" : "KotraSongeulssi",
-        "weight" : ["normal"],
-        "download" : "https://www.kotra.or.kr/subList/20000005965?tabid=20",
-        "link" : "322"
-    },{
-        "name" : "코트라 도약체",
-        "name_eng" : "KotraLeap",
-        "weight" : ["normal"],
-        "download" : "https://www.kotra.or.kr/subList/20000005965?tabid=20",
-        "link" : "321"
-    },{
-        "name" : "코트라 볼드체",
-        "name_eng" : "KotraBold",
-        "weight" : ["normal"],
-        "download" : "https://www.kotra.or.kr/subList/20000005965?tabid=20",
-        "link" : "320"
-    },{
-        "name" : "코트라 고딕체",
-        "name_eng" : "KotraGothic",
-        "weight" : ["normal"],
-        "download" : "https://www.kotra.or.kr/subList/20000005965?tabid=20",
-        "link" : "319"
-    },{
-        "name" : "코트라 희망체",
-        "name_eng" : "KotraHope",
-        "weight" : ["normal"],
-        "download" : "https://www.kotra.or.kr/subList/20000005965?tabid=20",
-        "link" : "318"
-    },{
-        "name" : "넥슨 풋볼고딕체",
-        "name_eng" : "NexonFootballGothic",
-        "weight" : ["normal"],
-        "download" : "http://levelup.nexon.com/font/index.aspx",
-        "link" : "315"
-    },{
-        "name" : "넥슨 배찌체",
-        "name_eng" : "NexonBazzi",
-        "weight" : ["normal"],
-        "download" : "http://levelup.nexon.com/font/index.aspx",
-        "link" : "314"
-    },{
-        "name" : "넥슨 메이플스토리체",
-        "name_eng" : "NexonMaplestory",
-        "weight" : ["300","700"],
-        "download" : "http://levelup.nexon.com/font/index.aspx",
-        "link" : "313"
-    },{
-        "name" : "넥슨 Lv.2 고딕체",
-        "name_eng" : "NexonLv2Gothic",
-        "weight" : ["300","400","500","700"],
-        "download" : "http://levelup.nexon.com/font/index.aspx",
-        "link" : "312"
-    },{
-        "name" : "넥슨 Lv.1 고딕체",
-        "name_eng" : "NexonLv1Gothic",
-        "weight" : ["300","400","700"],
-        "download" : "http://levelup.nexon.com/font/index.aspx",
-        "link" : "310"
-    },{
-        "name" : "숑숑체",
-        "name_eng" : "Cafe24Syongsyong",
-        "weight" : ["normal"],
-        "download" : "https://fonts.cafe24.com/",
-        "link" : "309"
-    },{
-        "name" : "써라운드 에어체",
-        "name_eng" : "Cafe24SsurroundAir",
-        "weight" : ["normal"],
-        "download" : "https://fonts.cafe24.com/",
-        "link" : "308"
-    },{
-        "name" : "써라운드체",
-        "name_eng" : "Cafe24Ssurround",
-        "weight" : ["normal"],
-        "download" : "https://fonts.cafe24.com/",
-        "link" : "307"
-    },{
-        "name" : "써라운드체",
-        "name_eng" : "Cafe24Ssurround",
-        "weight" : ["normal"],
-        "download" : "https://fonts.cafe24.com/",
-        "link" : "307"
-    }
+  {
+    "name": "부크크 명조",
+    "name_eng": "BookkMyeongjo",
+    "weight": ["300", "700"],
+    "download": "https://www.bookk.co.kr/bookkFonts",
+    "link": "https://wess.tistory.com/546",
+    "git": "https://github.com/webfontworld/BookkMyeongjo"
+  },
+  {
+    "name": "부크크 고딕",
+    "name_eng": "BookkGothic",
+    "weight": ["300", "700"],
+    "download": "https://www.bookk.co.kr/bookkFonts",
+    "link": "https://wess.tistory.com/545",
+    "git": "https://github.com/webfontworld/BookkGothic"
+  },
+  {
+    "name": "롯데리아 촵땡겨체",
+    "name_eng": "LotteriaChab",
+    "weight": ["normal"],
+    "download": "https://www.lotteriafont.com/",
+    "link": "https://wess.tistory.com/545",
+    "git": "https://github.com/webfontworld/LotteriaChab"
+  },
+  {
+    "name": "롯데리아 딱붙어체",
+    "name_eng": "LotteriaDdag",
+    "weight": ["normal"],
+    "download": "https://www.lotteriafont.com/",
+    "link": "https://wess.tistory.com/544",
+    "git": "https://github.com/webfontworld/LotteriaDdag"
+  },
+  {
+    "name": "더잠실체",
+    "name_eng": "TheJamsil",
+    "weight": ["100", "300", "400", "500", "700", "800"],
+    "download": "https://www.jincheon.go.kr/home/sub.do?menukey=3837",
+    "link": "https://wess.tistory.com/543",
+    "git": "https://github.com/webfontworld/TheJamsil"
+  },
+  {
+    "name": "생거진천체",
+    "name_eng": "SaenggeoJincheon",
+    "weight": ["normal"],
+    "download": "https://www.jincheon.go.kr/home/sub.do?menukey=3837",
+    "link": "https://wess.tistory.com/542",
+    "git": "https://github.com/webfontworld/SaenggeoJincheon"
+  },
+  {
+    "name": "땅스부대찌개",
+    "name_eng": "TangsBudaeJjigae",
+    "weight": ["300", "500", "700"],
+    "download": "http://tsbudae.com/theme/GT2/contents/Fontpage.php",
+    "link": "https://wess.tistory.com/541",
+    "git": "https://github.com/webfontworld/TangsBudaeJjigae"
+  },
+  {
+    "name": "나눔스퀘어네오",
+    "name_eng": "NanumSquareNeo",
+    "weight": ["300", "400", "700", "800", "900"],
+    "download": "https://hangeul.naver.com/font",
+    "link": "https://wess.tistory.com/540",
+    "git": "https://github.com/webfontworld/NanumSquareNeo"
+  },
+  {
+    "name": "116수박화체",
+    "name_eng": "116WaterMelon",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/wosr1/221324032660",
+    "link": "https://wess.tistory.com/539",
+    "git": "https://github.com/webfontworld/116WaterMelon"
+  },
+  {
+    "name": "레베카체",
+    "name_eng": "Rebecca",
+    "weight": ["normal"],
+    "download": "http://www.earlyfont.com/portfolio/EF_REBECCA",
+    "link": "https://wess.tistory.com/538",
+    "git": "https://github.com/webfontworld/Rebecca"
+  },
+  {
+    "name": "창원단감아삭체",
+    "name_eng": "ChangwonDangamAsac",
+    "weight": ["normal"],
+    "download": "https://www.changwon.go.kr/depart/contents.do?mId=1006160000",
+    "link": "https://wess.tistory.com/537",
+    "git": "https://github.com/webfontworld/ChangwonDangamAsac"
+  },
+  {
+    "name": "카페24클래식타입체",
+    "name_eng": "Cafe24ClassicType",
+    "weight": ["normal"],
+    "download": "https://fonts.cafe24.com/",
+    "link": "https://wess.tistory.com/529",
+    "git": "https://github.com/webfontworld/Cafe24ClassicType"
+  },
+  {
+    "name": "안성탕면체",
+    "name_eng": "AnsungTangMyun",
+    "weight": ["normal"],
+    "download": "http://www.nongshim.com/promotion/event/view/2022/09_ansung/ansung_event",
+    "link": "https://wess.tistory.com/517",
+    "git": "https://github.com/webfontworld/Ansungtangmyun"
+  },
+  {
+    "name": "밀양아리랑고딕체",
+    "name_eng": "MYArirangGothic",
+    "weight": ["normal"],
+    "download": "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
+    "link": "https://wess.tistory.com/516",
+    "git": "https://github.com/webfontworld/MYArirangGothic"
+  },
+  {
+    "name": "밀양해맑은상상체",
+    "name_eng": "MYHaemalgeunSangsang",
+    "weight": ["normal"],
+    "download": "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
+    "link": "https://wess.tistory.com/515",
+    "git": "https://github.com/webfontworld/MYHaemalgeunSangsang"
+  },
+  {
+    "name": "밀양영남루체",
+    "name_eng": "MYYeongnamnu",
+    "weight": ["normal"],
+    "download": "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
+    "link": "https://wess.tistory.com/514",
+    "git": "https://github.com/webfontworld/MYYeongnamnu"
+  },
+  {
+    "name": "밀양아리랑체",
+    "name_eng": "MYArirang",
+    "weight": ["normal"],
+    "download": "https://www.miryang.go.kr/tur/index.do?mnNo=30105000000",
+    "link": "https://wess.tistory.com/513",
+    "git": "https://github.com/webfontworld/MYArirang"
+  },
+  {
+    "name": "마이쮸체",
+    "name_eng": "CrownMychew",
+    "weight": ["normal"],
+    "download": "https://www.crown.co.kr/main/index.asp",
+    "link": "https://wess.tistory.com/512",
+    "git": "https://github.com/webfontworld/CrownMychew"
+  },
+  {
+    "name": "혀니고딕체",
+    "name_eng": "HyunyGothic",
+    "weight": ["normal"],
+    "download": "http://www.earlyfont.com/portfolio/EARLYFONT_HYUNY%20GO",
+    "link": "https://wess.tistory.com/511",
+    "git": "https://github.com/webfontworld/HyunyGothic"
+  },
+  {
+    "name": "마초체",
+    "name_eng": "Macho",
+    "weight": ["normal"],
+    "download": "http://www.earlyfont.com/portfolio/EARLYFONT_MACHO",
+    "link": "https://wess.tistory.com/510",
+    "git": "https://github.com/webfontworld/Macho"
+  },
+  {
+    "name": "달성힐링체",
+    "name_eng": "DalseoHealing",
+    "weight": ["normal"],
+    "download": "https://dalseo.daegu.kr/index.do?menu_id=00003453",
+    "link": "https://wess.tistory.com/509",
+    "git": "https://github.com/webfontworld/DalseoHealing"
+  },
+  {
+    "name": "달성달링체",
+    "name_eng": "DalseoDarling",
+    "weight": ["normal"],
+    "download": "https://dalseo.daegu.kr/index.do?menu_id=00003452",
+    "link": "https://wess.tistory.com/508",
+    "git": "https://github.com/webfontworld/DalseoDarling"
+  },
+  {
+    "name": "읏찬체",
+    "name_eng": "OKChan",
+    "weight": ["normal"],
+    "download": "http://www.3jong.com/download.html",
+    "link": "https://wess.tistory.com/507",
+    "git": "https://github.com/webfontworld/OKChan"
+  },
+  {
+    "name": "읏궁체",
+    "name_eng": "OKGung",
+    "weight": ["normal"],
+    "download": "http://www.3jong.com/download.html",
+    "link": "https://wess.tistory.com/506",
+    "git": "https://github.com/webfontworld/OKGung"
+  },
+  {
+    "name": "읏뚱체",
+    "name_eng": "OKDdung",
+    "weight": ["normal"],
+    "download": "http://www.3jong.com/download.html",
+    "link": "https://wess.tistory.com/505",
+    "git": "https://github.com/webfontworld/OKDdung"
+  },
+  {
+    "name": "평창체",
+    "name_eng": "PyeongChang",
+    "weight": ["400", "700"],
+    "download": "https://www.pc.go.kr/portal/intro/intro-summary/pcFont",
+    "link": "https://wess.tistory.com/504",
+    "git": "https://github.com/webfontworld/PyeongChang"
+  },
+  {
+    "name": "평창평화체",
+    "name_eng": "PyeongChangPeace",
+    "weight": ["300", "700"],
+    "download": "https://www.pc.go.kr/portal/intro/intro-summary/pcFont",
+    "link": "https://wess.tistory.com/503",
+    "git": "https://github.com/webfontworld/PyeongChangPeace"
+  },
+  {
+    "name": "마비옛체",
+    "name_eng": "MabinogiClassic",
+    "weight": ["normal"],
+    "download": "https://mabinogi.nexon.com/page/pds/font.asp",
+    "link": "https://wess.tistory.com/502",
+    "git": "https://github.com/webfontworld/MabinogiClassic"
+  },
+  {
+    "name": "우리다움체",
+    "name_eng": "WooriDaum",
+    "weight": ["300", "400", "700"],
+    "download": "https://www.woorifg.com/kor/company/ci/font/contentsid/581/index.do",
+    "link": "https://wess.tistory.com/499",
+    "git": "https://github.com/webfontworld/WooriDaum"
+  },
+  {
+    "name": "추사사랑체",
+    "name_eng": "ChusaLove",
+    "weight": ["400", "700"],
+    "download": "https://www.yesan.go.kr/kor/sub04_01_01_05.do",
+    "link": "https://wess.tistory.com/498",
+    "git": "https://github.com/webfontworld/ChusaLove"
+  },
+  {
+    "name": "다이어리체",
+    "name_eng": "Diary",
+    "weight": ["normal"],
+    "download": "http://www.earlyfont.com/portfolio/EARLYFONT_DIARY",
+    "link": "https://wess.tistory.com/497",
+    "git": "https://github.com/webfontworld/Diary"
+  },
+  {
+    "name": "닉스곤폰트",
+    "name_eng": "NixgonFonts",
+    "weight": ["normal"],
+    "download": "http://www.nixgon.com/nixgon-fonts",
+    "link": "https://wess.tistory.com/495",
+    "git": "https://github.com/webfontworld/NixgonFonts"
+  },
+  {
+    "name": "나눔바른고딕체",
+    "name_eng": "NanumBarunGothic",
+    "weight": ["200", "300", "400", "700"],
+    "download": "https://hangeul.naver.com/font/nanum",
+    "link": "https://wess.tistory.com/494",
+    "git": "https://github.com/webfontworld/NanumBarunGothic"
+  },
+  {
+    "name": "나눔바른펜",
+    "name_eng": "NanumBarunPen",
+    "weight": ["400", "800"],
+    "download": "https://hangeul.naver.com/font/nanum",
+    "link": "https://wess.tistory.com/493",
+    "git": "https://github.com/webfontworld/NanumBarunPen"
+  },
+  {
+    "name": "나눔스퀘어라운드",
+    "name_eng": "NanumSquareRound",
+    "weight": ["300", "400", "700", "800"],
+    "download": "https://hangeul.naver.com/font/nanum",
+    "link": "https://wess.tistory.com/492",
+    "git": "https://github.com/webfontworld/NanumSquareRound"
+  },
+  {
+    "name": "나눔스퀘어",
+    "name_eng": "NanumSquare",
+    "weight": ["300", "400", "700", "800"],
+    "download": "https://hangeul.naver.com/font/nanum",
+    "link": "https://wess.tistory.com/491",
+    "git": "https://github.com/webfontworld/NanumSquare"
+  },
+  {
+    "name": "나눔명조체",
+    "name_eng": "NanumMyeongjo",
+    "weight": ["400", "700", "800"],
+    "download": "https://hangeul.naver.com/font/nanum",
+    "link": "https://wess.tistory.com/490",
+    "git": "https://github.com/webfontworld/NanumMyeongjo"
+  },
+  {
+    "name": "김포평화 바탕체",
+    "name_eng": "GimpoBatang",
+    "weight": ["normal"],
+    "download": "https://www.gimpo.go.kr/portal/contents.do?key=6502",
+    "link": "https://wess.tistory.com/488",
+    "git": "https://github.com/webfontworld/GimpoBatang"
+  },
+  {
+    "name": "김포평화 제목체",
+    "name_eng": "GimpoTitle",
+    "weight": ["normal"],
+    "download": "https://www.gimpo.go.kr/portal/contents.do?key=6501",
+    "link": "https://wess.tistory.com/487",
+    "git": "https://github.com/webfontworld/GimpoTitle"
+  },
+  {
+    "name": "김포평화 고딕체",
+    "name_eng": "GimpoGothic",
+    "weight": ["normal"],
+    "download": "https://www.gimpo.go.kr/portal/contents.do?key=6503",
+    "link": "https://wess.tistory.com/486",
+    "git": "https://github.com/webfontworld/GimpoGothic"
+  },
+  {
+    "name": "한림명조체",
+    "name_eng": "HallymMjo",
+    "weight": ["400", "700"],
+    "download": "https://www.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_about&screen=ptp117_3_2",
+    "link": "https://wess.tistory.com/485",
+    "git": "https://github.com/webfontworld/HallymMjo"
+  },
+  {
+    "name": "한림고딕체",
+    "name_eng": "HallymGothic",
+    "weight": ["400", "500", "700"],
+    "download": "https://www.hallym.or.kr/hallymuniv_sub.asp?left_menu=left_about&screen=ptp117_3_2",
+    "link": "https://wess.tistory.com/484",
+    "git": "https://github.com/webfontworld/HallymGothic"
+  },
+  {
+    "name": "국립공원 반달이체",
+    "name_eng": "KNPSBandali",
+    "weight": ["normal"],
+    "download": "https://www.knps.or.kr/portal/bandal/sub01.do",
+    "link": "https://wess.tistory.com/479",
+    "git": "https://github.com/webfontworld/KNPSBandali"
+  },
+  {
+    "name": "부산체",
+    "name_eng": "Busan",
+    "weight": ["normal"],
+    "download": "https://www.busan.go.kr/bhbusan",
+    "link": "https://wess.tistory.com/478",
+    "git": "https://github.com/webfontworld/Busan"
+  },
+  {
+    "name": "수성 혜정체",
+    "name_eng": "SuseongHyejeong",
+    "weight": ["normal"],
+    "download": "https://www.suseong.kr/index.do?menu_id=00041081",
+    "link": "https://wess.tistory.com/477",
+    "git": "https://github.com/webfontworld/SuseongHyejeong"
+  },
+  {
+    "name": "수성 바탕체",
+    "name_eng": "SuseongBatang",
+    "weight": ["normal"],
+    "download": "https://www.suseong.kr/index.do?menu_id=00041080",
+    "link": "https://wess.tistory.com/476",
+    "git": "https://github.com/webfontworld/SuseongBatang"
+  },
+  {
+    "name": "수성 돋움체",
+    "name_eng": "SuseongDotum",
+    "weight": ["normal"],
+    "download": "https://www.suseong.kr/index.do?menu_id=00041081",
+    "link": "https://wess.tistory.com/475",
+    "git": "https://github.com/webfontworld/SuseongDotum"
+  },
+  {
+    "name": "김해가야체",
+    "name_eng": "GimhaeGaya",
+    "weight": ["400", "700"],
+    "download": "https://www.gimhae.go.kr/00954/01017/01027.web",
+    "link": "https://wess.tistory.com/474",
+    "git": "https://github.com/webfontworld/GimhaeGaya"
+  },
+  {
+    "name": "ACC 어린이 마음고운체",
+    "name_eng": "ChildrenHeart",
+    "weight": ["normal"],
+    "download": "https://www.acc.go.kr/main/contents.do?PID=0808",
+    "link": "https://wess.tistory.com/473",
+    "git": "https://github.com/webfontworld/ChildrenHeart"
+  },
+  {
+    "name": "ACC 어린이 하늘맑은체",
+    "name_eng": "ChildrenSky",
+    "weight": ["normal"],
+    "download": "https://www.acc.go.kr/main/contents.do?PID=0808",
+    "link": "https://wess.tistory.com/472",
+    "git": "https://github.com/webfontworld/ChildrenSky"
+  },
+  {
+    "name": "ACC 어린이 가을담은체",
+    "name_eng": "ChildrenFall",
+    "weight": ["normal"],
+    "download": "https://www.acc.go.kr/main/contents.do?PID=0808",
+    "link": "https://wess.tistory.com/471",
+    "git": "https://github.com/webfontworld/ChildrenFall"
+  },
+  {
+    "name": "해남체",
+    "name_eng": "Haenam",
+    "weight": ["normal"],
+    "download": "http://www.haenam.go.kr/index.9is?contentUid=18e3368f5d745106015e558a03a5349d",
+    "link": "https://wess.tistory.com/470",
+    "git": "https://github.com/webfontworld/Haenam"
+  },
+  {
+    "name": "가비아 납작블럭체",
+    "name_eng": "NapjakBlock",
+    "weight": ["normal"],
+    "download": "https://company.gabia.com/introduce/ci",
+    "link": "https://wess.tistory.com/469",
+    "git": "https://github.com/webfontworld/NapjakBlock"
+  },
+  {
+    "name": "가비아 솔미체",
+    "name_eng": "Solmee",
+    "weight": ["normal"],
+    "download": "https://company.gabia.com/introduce/ci",
+    "link": "https://wess.tistory.com/468",
+    "git": "https://github.com/webfontworld/Solmee"
+  },
+  {
+    "name": "가비아 청연체",
+    "name_eng": "CheongYeon",
+    "weight": ["normal"],
+    "download": "https://company.gabia.com/introduce/ci",
+    "link": "https://wess.tistory.com/467",
+    "git": "https://github.com/webfontworld/CheongYeon"
+  },
+  {
+    "name": "가비아 마음결체",
+    "name_eng": "MaeumGyeol",
+    "weight": ["normal"],
+    "download": "https://company.gabia.com/introduce/ci",
+    "link": "https://wess.tistory.com/466",
+    "git": "https://github.com/webfontworld/MaeumGyeol"
+  },
+  {
+    "name": "칠곡할매 추유을체",
+    "name_eng": "ChilgokCye",
+    "weight": ["normal"],
+    "download": "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
+    "link": "https://wess.tistory.com/465",
+    "git": "https://github.com/webfontworld/ChilgokCye"
+  },
+  {
+    "name": "칠곡할매 이종희체",
+    "name_eng": "ChilgokLjh",
+    "weight": ["normal"],
+    "download": "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
+    "link": "https://wess.tistory.com/464",
+    "git": "https://github.com/webfontworld/ChilgokLjh"
+  },
+  {
+    "name": "칠곡할매 이원순체",
+    "name_eng": "ChilgokLws",
+    "weight": ["normal"],
+    "download": "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
+    "link": "https://wess.tistory.com/463",
+    "git": "https://github.com/webfontworld/ChilgokLws"
+  },
+  {
+    "name": "칠곡할매 권안자체",
+    "name_eng": "ChilgokKaj",
+    "weight": ["normal"],
+    "download": "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
+    "link": "https://wess.tistory.com/462",
+    "git": "https://github.com/webfontworld/ChilgokKaj"
+  },
+  {
+    "name": "칠곡할매 김영분체",
+    "name_eng": "ChilgokKyb",
+    "weight": ["normal"],
+    "download": "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
+    "link": "https://wess.tistory.com/461",
+    "git": "https://github.com/webfontworld/ChilgokKyb"
+  },
+  {
+    "name": "순천체",
+    "name_eng": "SunCheon",
+    "weight": ["400", "700"],
+    "download": "https://www.chilgok.go.kr/portal/contents.do?mId=0404070100",
+    "link": "https://wess.tistory.com/460",
+    "git": "https://github.com/webfontworld/SunCheon"
+  },
+  {
+    "name": "영도체",
+    "name_eng": "Yeongdo",
+    "weight": ["normal"],
+    "download": "http://ydct.or.kr/artcity/about/",
+    "link": "459"
+  },
+  {
+    "name": "전화선체",
+    "name_eng": "JeonHwaseon",
+    "weight": ["normal"],
+    "download": "https://www.heungkuklife.co.kr/jsps/front/company/ci/digit-hand-font-info.jsp",
+    "link": "458"
+  },
+  {
+    "name": "심경하체",
+    "name_eng": "SimKyungha",
+    "weight": ["normal"],
+    "download": "https://www.heungkuklife.co.kr/jsps/front/company/ci/digit-hand-font-info.jsp",
+    "link": "457"
+  },
+  {
+    "name": "이서윤체",
+    "name_eng": "LeeSeoyun",
+    "weight": ["normal"],
+    "download": "https://www.heungkuklife.co.kr/jsps/front/company/ci/digit-hand-font-info.jsp",
+    "link": "456"
+  },
+  {
+    "name": "노토세리프",
+    "name_eng": "NotoSerifKR",
+    "weight": ["200", "300", "400", "500", "600", "700", "900"],
+    "download": "https://fonts.google.com/noto/specimen/Noto+Serif+KR?subset=korean&noto.script=Kore",
+    "link": "455"
+  },
+  {
+    "name": "노토산스",
+    "name_eng": "NotoSansKR",
+    "weight": ["100", "300", "400", "500", "700", "900"],
+    "download": "https://fonts.google.com/noto/specimen/Noto+Sans+KR",
+    "link": "454"
+  },
+  {
+    "name": "흑백사진",
+    "name_eng": "BlackAndWhitePicture",
+    "weight": ["normal"],
+    "download": "https://fonts.google.com/specimen/Black+And+White+Picture?subset=korean&query=AsiaSoft+Inc.&noto.script=Kore#standard-styles",
+    "link": "453"
+  },
+  {
+    "name": "고딕A1",
+    "name_eng": "GothicA1",
+    "weight": ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    "download": "https://fonts.google.com/specimen/Gothic+A1?subset=korean&query=HanYang+I%26C+Co&noto.script=Kore",
+    "link": "452"
+  },
+  {
+    "name": "Neo둥근모",
+    "name_eng": "NeoDunggeunmo",
+    "weight": ["normal"],
+    "download": "https://neodgm.dalgona.dev/downloads/neodgm.html",
+    "link": "451"
+  },
+  {
+    "name": "둥근모꼴+Fixedsys",
+    "name_eng": "DungGeunMo",
+    "weight": ["normal"],
+    "download": "https://cactus.tistory.com/193",
+    "link": "450"
+  },
+  {
+    "name": "독도체",
+    "name_eng": "Dokdo",
+    "weight": ["normal"],
+    "download": "https://fonts.google.com/specimen/Dokdo?subset=korean&query=FONTRIX&noto.script=Kore",
+    "link": "449"
+  },
+  {
+    "name": "싱글 데이",
+    "name_eng": "SingleDay",
+    "weight": ["normal"],
+    "download": "https://fonts.google.com/specimen/Single+Day?subset=korean&noto.script=Kore",
+    "link": "448"
+  },
+  {
+    "name": "충북대 70주년체",
+    "name_eng": "CBNU",
+    "weight": ["400", "700"],
+    "download": "https://www.chungbuk.ac.kr/site/pr/sub.do?key=1826",
+    "link": "447"
+  },
+  {
+    "name": "충북대 직지체",
+    "name_eng": "CBNUJIKJI",
+    "weight": ["normal"],
+    "download": "https://www.chungbuk.ac.kr/site/pr/sub.do?key=1827",
+    "link": "446"
+  },
+  {
+    "name": "횡성한우체",
+    "name_eng": "HoengseongHanu",
+    "weight": ["normal"],
+    "download": "https://www.hsg.go.kr/",
+    "link": "445"
+  },
+  {
+    "name": "정선동강체",
+    "name_eng": "JSDongkang",
+    "weight": ["400", "700"],
+    "download": "http://www.jeongseonfont.com/write.html",
+    "link": "444"
+  },
+  {
+    "name": "정선아리랑체",
+    "name_eng": "JSArirang",
+    "weight": ["400", "700"],
+    "download": "http://www.jeongseonfont.com/write.html",
+    "link": "443"
+  },
+  {
+    "name": "정선아리랑혼체",
+    "name_eng": "JSArirangHON",
+    "weight": ["normal"],
+    "download": "http://www.jeongseonfont.com/write.html",
+    "link": "442"
+  },
+  {
+    "name": "정선아리랑뿌리체",
+    "name_eng": "JSArirangPPURI",
+    "weight": ["normal"],
+    "download": "http://www.jeongseonfont.com/write.html",
+    "link": "441"
+  },
+  {
+    "name": "헬스셋 고딕체",
+    "name_eng": "HealthsetGothic",
+    "weight": ["300", "700"],
+    "download": "http://shop2.hangria.cafe24.com/product/detailfree.html?product_no=98&cate_no=64&display_group=1",
+    "link": "440"
+  },
+  {
+    "name": "헬스셋 복조리체",
+    "name_eng": "HealthsetLuckybag",
+    "weight": ["normal"],
+    "download": "http://shop2.hangria.cafe24.com/product/detailfree.html?product_no=98&cate_no=64&display_group=1",
+    "link": "439"
+  },
+  {
+    "name": "마루부리",
+    "name_eng": "MaruBuri",
+    "weight": ["200", "300", "400", "600", "700"],
+    "download": "https://hangeul.naver.com/maruproject_11",
+    "link": "437"
+  },
+  {
+    "name": "티머니 둥근바람",
+    "name_eng": "TmoneyRoundWind",
+    "weight": ["400", "800"],
+    "download": "https://www.tmoney.co.kr/aeb/cmnctn/ci/ci.dev",
+    "link": "436"
+  },
+  {
+    "name": "포천 막걸리체",
+    "name_eng": "MakGeolli",
+    "weight": ["normal"],
+    "download": "https://www.pocheon.go.kr/www/contents.do?key=5582",
+    "link": "435"
+  },
+  {
+    "name": "포천 오성과 한음체",
+    "name_eng": "OSeongandHanEum",
+    "weight": ["400", "700"],
+    "download": "https://www.pocheon.go.kr/www/contents.do?key=5582",
+    "link": "434"
+  },
+  {
+    "name": "이랜드 초이스체",
+    "name_eng": "ElandChoice",
+    "weight": ["300", "500", "700"],
+    "download": "https://www.elandretail.com/news/smart_shopping_02.do?evtID=EVT20201102000002388&branchID=00110001&lang=000600KO",
+    "link": "433"
+  },
+  {
+    "name": "이랜드 나이스체",
+    "name_eng": "ElandNice",
+    "weight": ["normal"],
+    "download": "https://www.elandretail.com/news/smart_shopping_02.do?evtID=EVT20201102000002388&branchID=00110001&lang=000600KO",
+    "link": "432"
+  },
+  {
+    "name": "LAB디지털체",
+    "name_eng": "LABDigital",
+    "weight": ["normal"],
+    "download": "https://fontlab.kr/",
+    "link": "431"
+  },
+  {
+    "name": "한국무역협회체",
+    "name_eng": "Kita",
+    "weight": ["normal"],
+    "download": "https://www.kita.net/asocGuidance/asocGuidance/ciRgltn/exclusiveFont.do",
+    "link": "430"
+  },
+  {
+    "name": "빈폴체",
+    "name_eng": "BeanPole",
+    "weight": ["300", "500", "700"],
+    "download": "https://www.ssfshop.com/event/EV202002250109248/view",
+    "link": "429"
+  },
+  {
+    "name": "수트체",
+    "name_eng": "SUIT",
+    "weight": ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    "download": "https://sunn.us/suit/",
+    "link": "428"
+  },
+  {
+    "name": "KOHI나눔체",
+    "name_eng": "SUIKOHINanumT",
+    "weight": ["300", "700"],
+    "download": "https://csp.kohi.or.kr/user/bbs/BD_selectBbs.do?q_bbsCode=1070&q_bbscttSn=20211118135429370",
+    "link": "427"
+  },
+  {
+    "name": "KOHI배움",
+    "name_eng": "KOHIBaeum",
+    "weight": ["normal"],
+    "download": "https://csp.kohi.or.kr/user/bbs/BD_selectBbs.do?q_bbsCode=1070&q_bbscttSn=20211118135429370",
+    "link": "426"
+  },
+  {
+    "name": "레페리 포인트White체",
+    "name_eng": "LeferiPointWhite",
+    "weight": ["400", "700"],
+    "download": "http://leferitype.com/",
+    "link": "425"
+  },
+  {
+    "name": "레페리 포인트Special체",
+    "name_eng": "LeferiPointSpecial",
+    "weight": ["400", "700"],
+    "download": "http://leferitype.com/",
+    "link": "424"
+  },
+  {
+    "name": "레페리 포인트Black체",
+    "name_eng": "LeferiPointBlack",
+    "weight": ["400", "700"],
+    "download": "http://leferitype.com/",
+    "link": "423"
+  },
+  {
+    "name": "레페리 베이스체",
+    "name_eng": "LeferiBase",
+    "weight": ["400", "700"],
+    "download": "http://leferitype.com/",
+    "link": "422"
+  },
+  {
+    "name": "비트로 프라이드체",
+    "name_eng": "VitroPride",
+    "weight": ["normal"],
+    "download": "http://www.vitro.co.kr/vitro/font.html",
+    "link": "421"
+  },
+  {
+    "name": "비트로 코어체",
+    "name_eng": "VitroCore",
+    "weight": ["normal"],
+    "download": "http://www.vitro.co.kr/vitro/font.html",
+    "link": "420"
+  },
+  {
+    "name": "비트로 인스파이어체",
+    "name_eng": "VitroInspire",
+    "weight": ["normal"],
+    "download": "http://www.vitro.co.kr/vitro/font.html",
+    "link": ""
+  },
+  {
+    "name": "완도 청정 바다체",
+    "name_eng": "WandoCleanSea",
+    "weight": ["400", "700"],
+    "download": "https://www.wando.go.kr/www/introduction/wando_symbol/wando_font/wando_cleansea",
+    "link": "419"
+  },
+  {
+    "name": "완도 희망체",
+    "name_eng": "WandoHope",
+    "weight": ["400", "700"],
+    "download": "https://www.wando.go.kr/www/introduction/wando_symbol/wando_font/wando_cleansea",
+    "link": "418"
+  },
+  {
+    "name": "가나초콜릿체",
+    "name_eng": "GhanaChocolate",
+    "weight": ["normal"],
+    "download": "https://www.lotteconf.co.kr/prcenter/gana",
+    "link": "417"
+  },
+  {
+    "name": "Y유니버스체",
+    "name_eng": "YUniverse",
+    "weight": ["300", "700"],
+    "download": "https://www.yspotlight.co.kr/brand/font",
+    "link": "416"
+  },
+  {
+    "name": "Y너만을비춤체",
+    "name_eng": "YSpotLight",
+    "weight": ["normal"],
+    "download": "https://www.yspotlight.co.kr/brand/font",
+    "link": "316"
+  },
+  {
+    "name": "Y이드스트릿체",
+    "name_eng": "YDestreet",
+    "weight": ["300", "700"],
+    "download": "https://www.yspotlight.co.kr/brand/font",
+    "link": "317"
+  },
+  {
+    "name": "Y콤퓨타체",
+    "name_eng": "",
+    "weight": [""],
+    "download": "https://www.yspotlight.co.kr/brand/font",
+    "link": ""
+  },
+  {
+    "name": "고양덕양체",
+    "name_eng": "GoYangDeogYang",
+    "weight": ["700", "800"],
+    "download": "https://www.goyang.go.kr/www/www05/www05_3/www05_3_6/www05_3_6_tab2.jsp",
+    "link": "415"
+  },
+  {
+    "name": "고양일산체",
+    "name_eng": "GoYangIlSan",
+    "weight": ["300", "400"],
+    "download": "https://www.goyang.go.kr/www/www05/www05_3/www05_3_6/www05_3_6_tab3.jsp",
+    "link": "414"
+  },
+  {
+    "name": "고양체",
+    "name_eng": "GoYang",
+    "weight": ["normal"],
+    "download": "https://www.goyang.go.kr/www/www05/www05_3/www05_3_6/www05_3_6_tab1.jsp",
+    "link": "413"
+  },
+  {
+    "name": "별나라달님체",
+    "name_eng": "UtoStarLandMoon",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "412"
+  },
+  {
+    "name": "빨간우체통체",
+    "name_eng": "UtoRedPostBox",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "411"
+  },
+  {
+    "name": "뉴옥커체",
+    "name_eng": "UtoNewYorKers",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "410"
+  },
+  {
+    "name": "미니콩다방체",
+    "name_eng": "UtoMiniBeanCafe",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "409"
+  },
+  {
+    "name": "봄이조아체",
+    "name_eng": "UtoLoveSpring",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "408"
+  },
+  {
+    "name": "리틀베어체",
+    "name_eng": "UtoLittleBear",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "407"
+  },
+  {
+    "name": "꼬마 나비체",
+    "name_eng": "UtoKidButterFly",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "406"
+  },
+  {
+    "name": "꽃보다 곰팅체",
+    "name_eng": "UtoFlowerbear",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "405"
+  },
+  {
+    "name": "플라워체",
+    "name_eng": "UtoFlower",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "404"
+  },
+  {
+    "name": "챠오츄르체",
+    "name_eng": "UtoChyaoChyureu",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "403"
+  },
+  {
+    "name": "쇼콜라 라떼체",
+    "name_eng": "UtoChoColatLatte",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "402"
+  },
+  {
+    "name": "123RF체",
+    "name_eng": "Uto123RF",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "401"
+  },
+  {
+    "name": "제주감귤체",
+    "name_eng": "UtoJejuGamGyul",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "400"
+  },
+  {
+    "name": "하르방체",
+    "name_eng": "UtoHarBang",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "399"
+  },
+  {
+    "name": "봉숭아 틴트체",
+    "name_eng": "UtoBalsamTint",
+    "weight": ["normal"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "398"
+  },
+  {
+    "name": "유토이미지 고딕체",
+    "name_eng": "UtoImageGothic",
+    "weight": ["300", "400", "700"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "397"
+  },
+  {
+    "name": "유토이미지 손글씨체",
+    "name_eng": "UtoImageHand",
+    "weight": ["300", "400", "700"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "396"
+  },
+  {
+    "name": "유토이미지 나무체",
+    "name_eng": "UtoImageTree",
+    "weight": ["300", "400", "700"],
+    "download": "https://www.utoimage.com/?m=event&mode=view&idx=216#ajax^popup.freefont",
+    "link": "395"
+  },
+  {
+    "name": "제주한라산체",
+    "name_eng": "JejuHallasan",
+    "weight": ["normal"],
+    "download": "https://www.jeju.go.kr/jeju/symbol/font/hallasan.htm",
+    "link": "394"
+  },
+  {
+    "name": "제주고딕체",
+    "name_eng": "JejuGothic",
+    "weight": ["normal"],
+    "download": "https://www.jeju.go.kr/jeju/symbol/font/gothic.htm",
+    "link": "393"
+  },
+  {
+    "name": "제주명조체",
+    "name_eng": "JejuGoJejuMyeongjothic",
+    "weight": ["normal"],
+    "download": "https://www.jeju.go.kr/jeju/symbol/font/myeongjo.htm",
+    "link": "392"
+  },
+  {
+    "name": "하나서체",
+    "name_eng": "Hana",
+    "weight": ["300", "500", "700"],
+    "download": "https://www.hanafn.com:8002/info/aboutus/hanaCi.do",
+    "link": "391"
+  },
+  {
+    "name": "아리따 돋움체",
+    "name_eng": "AritaDotum",
+    "weight": ["100", "300", "500", "600", "700"],
+    "download": "https://www.apgroup.com/int/ko/about-us/visual-identity/arita-typeface/arita-typeface.html",
+    "link": "390"
+  },
+  {
+    "name": "아리따 부리체",
+    "name_eng": "AritaBuri",
+    "weight": ["100", "300", "500", "600", "700"],
+    "download": "https://www.apgroup.com/int/ko/about-us/visual-identity/arita-typeface/arita-typeface.html",
+    "link": "389"
+  },
+  {
+    "name": "프리텐다드체",
+    "name_eng": "Pretendard",
+    "weight": ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    "download": "https://cactus.tistory.com/306",
+    "link": "388"
+  },
+  {
+    "name": "함렛체",
+    "name_eng": "Pretendard",
+    "weight": ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    "download": "https://github.com/hyper-type/hahmlet",
+    "link": "387"
+  },
+  {
+    "name": "국대떡볶이체",
+    "name_eng": "SDKukDeTopokki",
+    "weight": ["300", "700"],
+    "download": "http://kukde.co.kr/?page_id=627",
+    "link": "386"
+  },
+  {
+    "name": "즐거운이야기체",
+    "name_eng": "EnjoyStories",
+    "weight": ["300", "500", "700"],
+    "download": "http://tvn10festival.tving.com/playground/tvn10font",
+    "link": "385"
+  },
+  {
+    "name": "로커스상상고딕체",
+    "name_eng": "LocusSangsang",
+    "weight": ["normal"],
+    "download": "http://locusvfx.com/_archive/locus-sangsang-gothic-project/",
+    "link": "384"
+  },
+  {
+    "name": "검은고딕체",
+    "name_eng": "BlackHanSans",
+    "weight": ["normal"],
+    "download": "https://fonts.google.com/specimen/Black+Han+Sans?subset=korean&noto.script=Kore",
+    "link": "383"
+  },
+  {
+    "name": "을유1945체",
+    "name_eng": "Eulyoo1945",
+    "weight": ["normal"],
+    "download": "http://www.eulyoo.co.kr/member/font.html",
+    "link": "382"
+  },
+  {
+    "name": "이롭게 바탕체",
+    "name_eng": "IropkeBatang",
+    "weight": ["normal"],
+    "download": "https://font.iropke.com/batang/#download",
+    "link": "381"
+  },
+  {
+    "name": "EBS 주시경체",
+    "name_eng": "IropkeBatang",
+    "weight": ["300", "400", "600"],
+    "download": "https://about.ebs.co.kr/kor/organization/font?tabVal=hunmin",
+    "link": "380"
+  },
+  {
+    "name": "EBS 훈민정음 새론체",
+    "name_eng": "EBSHunMinJeonGeumSaeron",
+    "weight": ["300", "400", "600"],
+    "download": "https://about.ebs.co.kr/kor/organization/font?tabVal=hunmin",
+    "link": "379"
+  },
+  {
+    "name": "EBS 훈민정음체",
+    "name_eng": "EBSHunMinJeongEum",
+    "weight": ["300", "400", "600"],
+    "download": "https://about.ebs.co.kr/kor/organization/font?tabVal=hunmin",
+    "link": "378"
+  },
+  {
+    "name": "디자인하우스체",
+    "name_eng": "DesignHouse",
+    "weight": ["300", "700"],
+    "download": "http://www.designhouse.co.kr/service/dhfont",
+    "link": "377"
+  },
+  {
+    "name": "IM혜민체",
+    "name_eng": "IMHyemin",
+    "weight": ["400", "700"],
+    "download": "https://www.dgb.co.kr/cms/imhyemin/",
+    "link": "376"
+  },
+  {
+    "name": "J신영복체",
+    "name_eng": "JShinYeongBok",
+    "weight": ["normal"],
+    "download": "http://jikjisoft.com/freefont?list=1",
+    "link": "375"
+  },
+  {
+    "name": "J해바라기체",
+    "name_eng": "JShinYeongBok",
+    "weight": ["300", "500", "700"],
+    "download": "http://jikjisoft.com/freefont?list=1",
+    "link": "374"
+  },
+  {
+    "name": "J개구쟁이체",
+    "name_eng": "JGaeguJaengyi",
+    "weight": ["300", "500", "700"],
+    "download": "http://jikjisoft.com/freefont?list=1",
+    "link": "373"
+  },
+  {
+    "name": "J송명체",
+    "name_eng": "JSongMyung",
+    "weight": ["normal"],
+    "download": "http://jikjisoft.com/freefont?list=1",
+    "link": "372"
+  },
+  {
+    "name": "교보 손글씨 2020 박도연체",
+    "name_eng": "KyoboHandwriting2020pdy",
+    "weight": ["normal"],
+    "download": "https://www.kyobobook.co.kr/handwriting/font",
+    "link": "371"
+  },
+  {
+    "name": "교보 손글씨 2019체",
+    "name_eng": "KyoboHandwriting2020pdy",
+    "weight": ["normal"],
+    "download": "https://www.kyobobook.co.kr/handwriting/font",
+    "link": "370"
+  },
+  {
+    "name": "교보 손글씨 2021 성지영체",
+    "name_eng": "",
+    "weight": ["normal"],
+    "download": "https://www.kyobobook.co.kr/handwriting/font",
+    "link": ""
+  },
+  {
+    "name": "Mapo애민체",
+    "name_eng": "MapoAgape",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "368"
+  },
+  {
+    "name": "Mapo홍대프리덤체",
+    "name_eng": "MapoHongdaeFreedom",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "367"
+  },
+  {
+    "name": "Mapo한아름체",
+    "name_eng": "MapoPeacefull",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "366"
+  },
+  {
+    "name": "Mapo마포나루체",
+    "name_eng": "MapoMaponaru",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "365"
+  },
+  {
+    "name": "Mapo꽃섬체",
+    "name_eng": "MapoFlowerIsland",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "364"
+  },
+  {
+    "name": "Mapo디카포체",
+    "name_eng": "MapoDacapo",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "363"
+  },
+  {
+    "name": "Mapo배낭여행체",
+    "name_eng": "MapoBackpacking",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "362"
+  },
+  {
+    "name": "Mapo금빛나루체",
+    "name_eng": "MapoGoldenPier",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "361"
+  },
+  {
+    "name": "Mapo당인리발전소체",
+    "name_eng": "MapoDPP",
+    "weight": ["normal"],
+    "download": "https://www.mapo.go.kr/site/main/content/mapo04010201",
+    "link": "360"
+  },
+  {
+    "name": "고도 마음체",
+    "name_eng": "GodoMaum",
+    "weight": ["normal"],
+    "download": "https://design.nhn-commerce.com/custom/free-font.php?link=gnb2_9",
+    "link": "359"
+  },
+  {
+    "name": "고도체",
+    "name_eng": "Godo",
+    "weight": ["500", "700"],
+    "download": "https://design.nhn-commerce.com/custom/free-font.php?link=gnb2_9",
+    "link": "358"
+  },
+  {
+    "name": "HS겨울눈꽃체",
+    "name_eng": "HSGyoulNoonkot",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/PostView.naver?blogId=hp0&logNo=221170423317&categoryNo=36&parentCategoryNo=0&from=thumbnailList",
+    "link": "357"
+  },
+  {
+    "name": "HS두꺼비체",
+    "name_eng": "HSDuggobi",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/PostView.naver?blogId=hp0&logNo=221206126048&categoryNo=36&parentCategoryNo=0",
+    "link": "356"
+  },
+  {
+    "name": "HS새마을체",
+    "name_eng": "HSSaemaul",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/hp0/222417104986",
+    "link": "355"
+  },
+  {
+    "name": "HS유지체",
+    "name_eng": "HSYuJi",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/PostView.naver?blogId=hp0&logNo=221803810393&categoryNo=36&parentCategoryNo=0&from=thumbnailList",
+    "link": "354"
+  },
+  {
+    "name": "HS여름물빛체",
+    "name_eng": "HSYeolumMoolbit",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221059577653&categoryNo=32&parentCategoryNo=0",
+    "link": "353"
+  },
+  {
+    "name": "HS가을생각체2.0",
+    "name_eng": "HSGaeulSenggak2",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221132470037&categoryNo=32&parentCategoryNo=0",
+    "link": "352"
+  },
+  {
+    "name": "HS가을생각체",
+    "name_eng": "HSGaeulSenggak",
+    "weight": ["100", "400"],
+    "download": "https://blog.naver.com/PostThumbnailView.nhn?isHttpsRedirect=true&blogId=hp0&logNo=221132470037&categoryNo=32&parentCategoryNo=0",
+    "link": "351"
+  },
+  {
+    "name": "HS봄바람체3.0",
+    "name_eng": "HSBomBaram3",
+    "weight": ["100", "400"],
+    "download": "https://blog.naver.com/hp0/222110675133",
+    "link": "349"
+  },
+  {
+    "name": "HS봄바람체2.0",
+    "name_eng": "HSBomBaram2",
+    "weight": ["normal"],
+    "download": "https://blog.naver.com/hp0/221074080319",
+    "link": "348"
+  },
+  {
+    "name": "박물관문화재단클래식체",
+    "name_eng": "MuseumClassic",
+    "weight": ["300", "500", "700"],
+    "download": "https://www.nmf.or.kr/agency/sub/20181024100034469100_contents.do",
+    "link": "347"
+  },
+  {
+    "name": "양진체",
+    "name_eng": "YangJin",
+    "weight": ["normal"],
+    "download": "https://www.supernovice.org/font/?ckattempt=1",
+    "link": "346"
+  },
+  {
+    "name": "빙그레 따옴체",
+    "name_eng": "BinggraeTaom",
+    "weight": ["400", "700"],
+    "download": "http://www.bingfont.co.kr/bingfont.html",
+    "link": "345"
+  },
+  {
+    "name": "빙그레 싸만코체",
+    "name_eng": "BinggraeSamanco",
+    "weight": ["400", "700"],
+    "download": "http://www.bingfont.co.kr/bingfont.html",
+    "link": "344"
+  },
+  {
+    "name": "빙그레 메로나체",
+    "name_eng": "BinggraeMelona",
+    "weight": ["400", "700"],
+    "download": "http://www.bingfont.co.kr/bingfont.html",
+    "link": "343"
+  },
+  {
+    "name": "빙그레체Ⅱ",
+    "name_eng": "Binggrae2",
+    "weight": ["400", "700"],
+    "download": "http://www.bingfont.co.kr/bingfont.html",
+    "link": "342"
+  },
+  {
+    "name": "빙그레체",
+    "name_eng": "Binggrae",
+    "weight": ["400", "700"],
+    "download": "http://www.bingfont.co.kr/bingfont.html",
+    "link": "341"
+  },
+  {
+    "name": "설립체",
+    "name_eng": "EstablishRetrosans",
+    "weight": ["normal"],
+    "download": "https://www.ssro.net/media/media_view.jsp?bcate=fontdown&no=520735",
+    "link": "340"
+  },
+  {
+    "name": "티웨이 항공체",
+    "name_eng": "TwayAir",
+    "weight": ["normal"],
+    "download": "https://www.twayair.com/app/serviceInfo/contents/1320",
+    "link": "339"
+  },
+  {
+    "name": "티웨이 하늘체",
+    "name_eng": "TwaySky",
+    "weight": ["normal"],
+    "download": "https://www.twayair.com/app/serviceInfo/contents/1320",
+    "link": "338"
+  },
+  {
+    "name": "티웨이 날다체",
+    "name_eng": "TwayFly",
+    "weight": ["normal"],
+    "download": "https://www.twayair.com/app/serviceInfo/contents/1320",
+    "link": "337"
+  },
+  {
+    "name": "엘리스 디지털배움체",
+    "name_eng": "EliceDigitalBaeum",
+    "weight": ["400", "700"],
+    "download": "https://elice.io/elice/brand#elice_digital_baeum",
+    "link": "336"
+  },
+  {
+    "name": "동글체",
+    "name_eng": "Dongle",
+    "weight": ["300", "400", "700"],
+    "download": "https://github.com/yangheeryu/Dongle",
+    "link": "334"
+  },
+  {
+    "name": "고운 돋움체",
+    "name_eng": "GowunDodum",
+    "weight": ["normal"],
+    "download": "https://github.com/yangheeryu/Gowun-Dodum",
+    "link": "333"
+  },
+  {
+    "name": "고운 바탕체",
+    "name_eng": "GowunBatang",
+    "weight": ["400", "700"],
+    "download": "https://github.com/yangheeryu/Gowun-Batang",
+    "link": "332"
+  },
+  {
+    "name": "어그로체",
+    "name_eng": "SBAggro",
+    "weight": ["300", "500", "700"],
+    "download": "https://sandbox.co.kr/font",
+    "link": "331"
+  },
+  {
+    "name": "웰컴체",
+    "name_eng": "welcome",
+    "weight": ["400", "700"],
+    "download": "https://www.welcomebank.co.kr/ib20/mnu/IBNBKIPRC005",
+    "link": "330"
+  },
+  {
+    "name": "웰컴체",
+    "name_eng": "welcome",
+    "weight": ["400", "700"],
+    "download": "https://www.welcomebank.co.kr/ib20/mnu/IBNBKIPRC005",
+    "link": "330"
+  },
+  {
+    "name": "상주다정다감체",
+    "name_eng": "SangjuDajungdagam",
+    "weight": ["normal"],
+    "download": "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
+    "link": "329"
+  },
+  {
+    "name": "상주해례본체",
+    "name_eng": "SangjuHaerye",
+    "weight": ["normal"],
+    "download": "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
+    "link": "328"
+  },
+  {
+    "name": "상주경천섬체",
+    "name_eng": "SangjuGyeongcheonIsland",
+    "weight": ["normal"],
+    "download": "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
+    "link": "327"
+  },
+  {
+    "name": "상주곶감체",
+    "name_eng": "SangjuGotgam",
+    "weight": ["normal"],
+    "download": "https://www.sangju.go.kr/page/4317/3076.tc#tabIdsm7-4",
+    "link": "326"
+  },
+  {
+    "name": "남양주 고딕체",
+    "name_eng": "NYJGothic",
+    "weight": ["300", "500", "700", "800"],
+    "download": "https://www.nyj.go.kr/main/128",
+    "link": "325"
+  },
+  {
+    "name": "남양주 다산체",
+    "name_eng": "NYJDasan",
+    "weight": ["500", "700"],
+    "download": "https://www.nyj.go.kr/main/128",
+    "link": "324"
+  },
+  {
+    "name": "에스코어 드림체",
+    "name_eng": "SCoreDream",
+    "weight": ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+    "download": "https://s-core.co.kr/company/font/",
+    "link": "323"
+  },
+  {
+    "name": "코트라 손글씨체",
+    "name_eng": "KotraSongeulssi",
+    "weight": ["normal"],
+    "download": "https://www.kotra.or.kr/subList/20000005965?tabid=20",
+    "link": "322"
+  },
+  {
+    "name": "코트라 도약체",
+    "name_eng": "KotraLeap",
+    "weight": ["normal"],
+    "download": "https://www.kotra.or.kr/subList/20000005965?tabid=20",
+    "link": "321"
+  },
+  {
+    "name": "코트라 볼드체",
+    "name_eng": "KotraBold",
+    "weight": ["normal"],
+    "download": "https://www.kotra.or.kr/subList/20000005965?tabid=20",
+    "link": "320"
+  },
+  {
+    "name": "코트라 고딕체",
+    "name_eng": "KotraGothic",
+    "weight": ["normal"],
+    "download": "https://www.kotra.or.kr/subList/20000005965?tabid=20",
+    "link": "319"
+  },
+  {
+    "name": "코트라 희망체",
+    "name_eng": "KotraHope",
+    "weight": ["normal"],
+    "download": "https://www.kotra.or.kr/subList/20000005965?tabid=20",
+    "link": "318"
+  },
+  {
+    "name": "넥슨 풋볼고딕체",
+    "name_eng": "NexonFootballGothic",
+    "weight": ["normal"],
+    "download": "http://levelup.nexon.com/font/index.aspx",
+    "link": "315"
+  },
+  {
+    "name": "넥슨 배찌체",
+    "name_eng": "NexonBazzi",
+    "weight": ["normal"],
+    "download": "http://levelup.nexon.com/font/index.aspx",
+    "link": "314"
+  },
+  {
+    "name": "넥슨 메이플스토리체",
+    "name_eng": "NexonMaplestory",
+    "weight": ["300", "700"],
+    "download": "http://levelup.nexon.com/font/index.aspx",
+    "link": "313"
+  },
+  {
+    "name": "넥슨 Lv.2 고딕체",
+    "name_eng": "NexonLv2Gothic",
+    "weight": ["300", "400", "500", "700"],
+    "download": "http://levelup.nexon.com/font/index.aspx",
+    "link": "312"
+  },
+  {
+    "name": "넥슨 Lv.1 고딕체",
+    "name_eng": "NexonLv1Gothic",
+    "weight": ["300", "400", "700"],
+    "download": "http://levelup.nexon.com/font/index.aspx",
+    "link": "310"
+  },
+  {
+    "name": "숑숑체",
+    "name_eng": "Cafe24Syongsyong",
+    "weight": ["normal"],
+    "download": "https://fonts.cafe24.com/",
+    "link": "309"
+  },
+  {
+    "name": "써라운드 에어체",
+    "name_eng": "Cafe24SsurroundAir",
+    "weight": ["normal"],
+    "download": "https://fonts.cafe24.com/",
+    "link": "308"
+  },
+  {
+    "name": "써라운드체",
+    "name_eng": "Cafe24Ssurround",
+    "weight": ["normal"],
+    "download": "https://fonts.cafe24.com/",
+    "link": "307"
+  },
+  {
+    "name": "써라운드체",
+    "name_eng": "Cafe24Ssurround",
+    "weight": ["normal"],
+    "download": "https://fonts.cafe24.com/",
+    "link": "307"
+  }
 ]
