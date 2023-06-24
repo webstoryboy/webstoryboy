@@ -1,0 +1,1052 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+}
+
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+select,
+table,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th {
+    font-weight: normal;
+}
+
+fieldset {
+    border: 0;
+}
+
+img,
+video {
+    border: 0;
+    vertical-align: top;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    vertical-align: top;
+    list-style: none;
+}
+
+textarea {
+    -webkit-appearance: none;
+    appearance: none;
+    resize: none;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+address,
+em {
+    font-style: normal;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+button {
+    padding: 0;
+    border: none;
+    border: 0;
+    outline: none;
+    outline: 0;
+    background: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-family: "NanumSquareNeo", "NanumSquare", "나눔스퀘어", "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "돋움", Dotum, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:active, a:focus, a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+
+table {
+    table-layout: fixed;
+    padding: 0;
+    border-spacing: 0;
+    border: 0;
+    border-collapse: collapse;
+}
+
+table caption {
+    visibility: hidden;
+}
+
+.blind {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+#wrap {
+    min-width: 320px;
+    min-height: 100%;
+    font-family: "NanumSquareNeo", "NanumSquare", "나눔스퀘어", "나눔고딕", NanumGothic, "맑은고딕", MalgunGothic, "돋움", Dotum, Helvetica, sans-serif;
+    word-break: keep-all;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: #000;
+}
+
+@media (max-width: 1024px) {
+    #wrap.app_wrap, #wrap.mart_wrap {
+        padding-bottom: 65px;
+    }
+}
+
+.btn_floating {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    color: #fff;
+    font-weight: bold;
+    z-index: 50;
+}
+
+.app_wrap .btn_floating {
+    background-color: #32e664;
+}
+
+.mart_wrap .btn_floating {
+    background-color: #9556ff;
+}
+
+@media (max-width: 1024px) {
+    .btn_floating {
+        display: flex;
+    }
+}
+
+.btn_floating::after {
+    content: '';
+    margin-left: 8px;
+    flex-shrink: 0;
+    width: 8px;
+    height: 14px;
+    background: url("../img/icon_floating_arrow.png") 0 0 no-repeat;
+    -webkit-background-size: 8px 14px;
+    background-size: 8px 14px;
+}
+
+.inner {
+    position: relative;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+@media (max-width: 1024px) {
+    .inner {
+        padding: 0 20px;
+        width: auto;
+        max-width: 375px;
+    }
+}
+
+.pc_show {
+    display: block !important;
+}
+
+@media (max-width: 1024px) {
+    .pc_show {
+        display: none !important;
+    }
+}
+
+.mo_show {
+    display: none !important;
+}
+
+@media (max-width: 1024px) {
+    .mo_show {
+        display: block !important;
+    }
+}
+
+body.non_scroll {
+    -webkit-overflow-scrolling: none;
+    overflow: hidden;
+    overscroll-behavior: none;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: local(NanumSquare);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareL.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareL.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareL.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareL.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: local(NanumSquare);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareR.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareR.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareR.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareR.ttf") format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: local(NanumSquare);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareB.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareB.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareB.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareB.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    src: local(NanumSquare);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareEB.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareEB.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareEB.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquare/NanumSquareEB.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: normal;
+    src: local(NanumSquareNeo);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-bRg.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-bRg.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-bRg.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-bRg.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-bRg.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 500;
+    src: local(NanumSquareNeo);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-cBd.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-cBd.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-cBd.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-cBd.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-cBd.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo';
+    font-weight: 900;
+    src: local(NanumSquareNeo);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-dEb.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-dEb.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-dEb.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-dEb.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-dEb.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'NanumSquareNeo-heavy';
+    src: local(NanumSquareNeo);
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-eHv.eot");
+    src: url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-eHv.eot?#iefix") format("embedded-opentype"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-eHv.woff") format("woff"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-eHv.woff2") format("woff2"), url("https://campaign-cdn.pstatic.net/0/campaign/font/NanumSquareNeoTTF/NanumSquareNeoTTF-eHv.ttf") format("truetype");
+}
+
+.motion {
+    opacity: 0;
+}
+
+.motion.on {
+    -webkit-animation: fadeUp 0.8s ease forwards;
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@-webkit-keyframes fadeUp {
+    from {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        filter: alpha(opacity=0);
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        filter: alpha(opacity=100);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.newpc_wrap, .main_wrap #header.scroll, #header.scroll {
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.newpc_wrap .logo_n, #header.scroll .logo_n {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -111px -31px;
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 1024px) {
+    .newpc_wrap .logo_n, #header.scroll .logo_n {
+        background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+        -webkit-background-size: 137px 120px;
+        background-size: 137px 120px;
+        background-position: -111px -62px;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.newpc_wrap .naverdetails, #header.scroll .naverdetails {
+    color: #000;
+}
+
+.newpc_wrap .gnb .logo_n, #header.scroll .gnb .logo_n {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -111px 0px;
+    width: 26px;
+    height: 26px;
+}
+
+.newpc_wrap .gnb .naverdetails, #header.scroll .gnb .naverdetails {
+    color: #fff;
+}
+
+.newpc_wrap .btn_share, #header.scroll .btn_share {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: 0px -74px;
+    width: 32px;
+    height: 32px;
+}
+
+.newpc_wrap .btn_gnb, #header.scroll .btn_gnb {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -37px 0px;
+    width: 32px;
+    height: 32px;
+}
+
+.newpc_wrap {
+    border-bottom: 0;
+}
+
+.newpc_wrap .service {
+    color: #000;
+}
+
+.newpc_wrap .service:before {
+    background-color: #000;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    border-bottom: 1px solid transparent;
+    z-index: 100;
+}
+
+@media (max-width: 1024px) {
+    #header {
+        height: 56px;
+    }
+}
+
+.main_wrap #header .logo_n {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -111px -31px;
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 1024px) {
+    .main_wrap #header .logo_n {
+        background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+        -webkit-background-size: 137px 120px;
+        background-size: 137px 120px;
+        background-position: -111px -62px;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.main_wrap #header .naverdetails {
+    color: #000;
+}
+
+.main_wrap #header .gnb .logo_n {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -111px 0px;
+    width: 26px;
+    height: 26px;
+}
+
+.main_wrap #header .gnb .naverdetails {
+    color: #fff;
+}
+
+.main_wrap #header .service,
+.main_wrap #header .link_shortcut {
+    display: none;
+}
+
+.main_wrap #header .btn_share {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: 0px -74px;
+    width: 32px;
+    height: 32px;
+}
+
+.main_wrap #header .btn_gnb {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -37px 0px;
+    width: 32px;
+    height: 32px;
+}
+
+#header.scroll .service {
+    color: #000;
+}
+
+#header.scroll .service::before {
+    background-color: #000;
+}
+
+.app_wrap #header.scroll .link_shortcut,
+.point_wrap #header.scroll .link_shortcut {
+    background-color: #03c75a;
+    color: #fff;
+}
+
+.certificate_wrap #header.scroll .link_shortcut {
+    background-color: #2f63fe;
+    color: #fff;
+}
+
+.mart_wrap #header.scroll .link_shortcut {
+    background-color: #9556ff;
+    color: #fff;
+}
+
+.opentalk_wrap #header.scroll .link_shortcut {
+    background-color: #19268d;
+    color: #fff;
+}
+
+.guaranteed_delivery_wrap #header.scroll .link_shortcut {
+    background-color: #433be3;
+    color: #fff;
+}
+
+.rental_wrap #header.scroll .link_shortcut {
+    background-color: #007dff;
+    color: #fff;
+}
+
+.newpc_wrap #header.scroll .link_shortcut {
+    background-color: #000;
+}
+
+.digitalslip_wrap #header.scroll .link_shortcut {
+    background-color: #8856fa;
+    color: #fff;
+}
+
+.golf_wrap #header.scroll .link_shortcut {
+    background-color: #009664;
+    color: #fff;
+}
+
+.app_wrap #header.scroll .link_shortcut::after,
+.point_wrap #header.scroll .link_shortcut::after,
+.certificate_wrap #header.scroll .link_shortcut::after,
+.mart_wrap #header.scroll .link_shortcut::after,
+.opentalk_wrap #header.scroll .link_shortcut::after,
+.guaranteed_delivery_wrap #header.scroll .link_shortcut::after,
+.rental_wrap #header.scroll .link_shortcut::after,
+.newpc_wrap #header.scroll .link_shortcut::after,
+.rental_wrap #header.scroll .link_shortcut::after,
+.digitalslip_wrap #header.scroll .link_shortcut::after,
+.golf_wrap #header.scroll .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -96px -111px;
+    width: 11px;
+    height: 8px;
+}
+
+.header_inner {
+    margin: 0 auto;
+    padding: 0 35px 0 40px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+@media (max-width: 1024px) {
+    .header_inner {
+        padding: 0 15px 0 20px;
+    }
+}
+
+.header_title {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
+
+.header_title a {
+    display: block;
+    height: 100%;
+}
+
+.logo_n {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -111px 0px;
+    width: 26px;
+    height: 26px;
+}
+
+@media (max-width: 1024px) {
+    .logo_n {
+        background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+        -webkit-background-size: 137px 120px;
+        background-size: 137px 120px;
+        background-position: -71px -74px;
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.naverdetails {
+    margin-left: 8px;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: -0.4px;
+    color: #fff;
+}
+
+.service {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: -0.4px;
+    color: #fff;
+}
+
+.service::before {
+    content: '';
+    display: inline-flex;
+    margin: 0 12px 0 14px;
+    width: 1px;
+    height: 19px;
+    background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .service {
+        display: none;
+    }
+}
+
+.header_btn {
+    margin-left: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+}
+
+.header_btn [class^="btn_"] + [class^="btn_"] {
+    margin-left: 4px;
+}
+
+.btn_share {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -74px 0px;
+    width: 32px;
+    height: 32px;
+}
+
+.btn_gnb {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -37px -37px;
+    width: 32px;
+    height: 32px;
+}
+
+.link_shortcut {
+    position: relative;
+    margin-right: 25px;
+    padding: 0 32px 0 17px;
+    background-color: #fff;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    height: 32px;
+    line-height: 34px;
+    font-size: 13px;
+    letter-spacing: -0.52px;
+}
+
+.app_wrap .link_shortcut,
+.point_wrap .link_shortcut {
+    color: #03c75a;
+}
+
+.certificate_wrap .link_shortcut {
+    color: #2f63fe;
+}
+
+.mart_wrap .link_shortcut {
+    color: #9556ff;
+}
+
+.guaranteed_delivery_wrap .link_shortcut {
+    color: #433be3;
+}
+
+.rental_wrap .link_shortcut {
+    color: #167dd9;
+}
+
+.digitalslip_wrap .link_shortcut {
+    color: #8856fa;
+}
+
+.golf_wrap .link_shortcut {
+    color: #009664;
+}
+
+.newpc_wrap .link_shortcut {
+    color: #fff;
+    background-color: #000;
+    font-weight: 500;
+}
+
+.link_shortcut::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.app_wrap .link_shortcut::after,
+.point_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -112px -111px;
+    width: 11px;
+    height: 8px;
+}
+
+.certificate_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -64px -111px;
+    width: 11px;
+    height: 8px;
+}
+
+.mart_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -80px -111px;
+    width: 11px;
+    height: 8px;
+}
+
+.opentalk_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -16px -111px;
+    width: 11px;
+    height: 9px;
+}
+
+.guaranteed_delivery_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -126px -93px;
+    width: 11px;
+    height: 9px;
+}
+
+.rental_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -48px -111px;
+    width: 11px;
+    height: 9px;
+}
+
+.digitalslip_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -32px -111px;
+    width: 11px;
+    height: 9px;
+}
+
+.golf_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: 0px -111px;
+    width: 11px;
+    height: 9px;
+}
+
+.newpc_wrap .link_shortcut::after {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -96px -111px;
+    width: 11px;
+    height: 8px;
+}
+
+.link_shortcut.d_day {
+    pointer-events: none;
+    font-weight: bold;
+    padding: 0 17px;
+}
+
+.link_shortcut.d_day .day {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4px;
+    color: #7de783;
+}
+
+.link_shortcut.d_day:after {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .link_shortcut {
+        display: none;
+    }
+}
+
+.gnb {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 290px;
+    background-color: rgba(21, 21, 21, 0.95);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.gnb.open {
+    visibility: visible;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.gnb_inner {
+    position: relative;
+    margin: 0;
+    padding: 70px 25px;
+    width: 100%;
+}
+
+.gnb_list {
+    display: block;
+    width: 100%;
+}
+
+.gnb_item {
+    display: block;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: left;
+}
+
+.gnb_item:first-child {
+    border-top: 0;
+}
+
+.gnb_link {
+    display: block;
+    position: relative;
+    padding: 19px 20px 20px 0;
+    min-height: 60px;
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.gnb_link:hover {
+    color: #fff;
+}
+
+.gnb_link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -111px -93px;
+    width: 10px;
+    height: 10px;
+}
+
+@media (max-width: 1024px) {
+    .gnb_link {
+        color: #fff;
+    }
+}
+
+.gnb_link.date {
+    pointer-events: none;
+}
+
+.btn_close {
+    position: absolute;
+    top: 14px;
+    right: 17px;
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_header_v8.png);
+    -webkit-background-size: 137px 120px;
+    background-size: 137px 120px;
+    background-position: -37px -74px;
+    width: 29px;
+    height: 29px;
+}
+
+#footer {
+    background-color: #000;
+}
+
+.footer_inner {
+    margin: 0 auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    width: 1000px;
+    height: 180px;
+}
+
+@media (max-width: 1024px) {
+    .footer_inner {
+        padding: 32px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        width: auto;
+        max-width: 375px;
+        height: 126px;
+    }
+}
+
+.logo_naver {
+    background-image: url(https://campaign-cdn.pstatic.net/0/campaign/2022/09/naverdetails_common/img/sp_footer.png);
+    -webkit-background-size: 104px 20px;
+    background-size: 104px 20px;
+    background-position: 0px 0px;
+    width: 104px;
+    height: 20px;
+}
+
+.corporation_info {
+    margin-left: auto;
+    font-size: 0;
+}
+
+@media (max-width: 1024px) {
+    .corporation_info {
+        margin-left: 0;
+        margin-top: auto;
+    }
+}
+
+.corp_item {
+    position: relative;
+    display: inline-flex;
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+@media (max-width: 1024px) {
+    .corp_item {
+        font-size: 10px;
+    }
+}
+
+.corp_item + .corp_item {
+    margin-left: 15px;
+    padding-left: 15px;
+}
+
+@media (max-width: 1024px) {
+    .corp_item + .corp_item {
+        margin-left: 12px;
+        padding-left: 12px;
+    }
+}
+
+.corp_item + .corp_item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 1px;
+    height: 11px;
+    background-color: #a5a5a5;
+}
+
+@media (max-width: 1024px) {
+    .corp_item + .corp_item::before {
+        height: 9px;
+    }
+}

@@ -1,0 +1,643 @@
+@charset "utf-8";
+.spi_card .spi_area a.lnk_band:before, .spi_card .spi_area a.lnk_blog:before, .spi_card .spi_area a.lnk_line:before, .spi_card .spi_area a.lnk_kakaotalk:before, .spi_card .spi_area a.lnk_kakaostory:before, .spi_card .spi_area a.lnk_cafe:before, .spi_card .spi_area a.lnk_cafechat:before, .spi_card .spi_area a.lnk_twitter:before, .spi_card .spi_area a.lnk_facebook:before, .spi_card .spi_area a.lnk_memo:before, .spi_card .spi_area a.lnk_mail:before, .spi_card .spi_area a.lnk_bookmark:before, .spi_card .spi_area a.lnk_keep:before, .spi_card .spi_area a.lnk_weibo:before, .spi_card .spi_area a.lnk_reddit:before, .spi_card .spi_area a.lnk_friend:before, .spi_card .spi_area a.lnk_instagram:before, .spi_card .spi_cls span, .spi_card .msg_area p:before, .spi_card .msg_area.msg_keep p:before {
+    background-image: url(https://ssl.pstatic.net/static/common/spi/2021/0528/sp_spi_icons.png);
+    background-size: 208px 166px;
+}
+
+.spi_wrap .spi .sns_cafe, .spi_wrap .spi .sns_blog, .spi_wrap .spi .sns_keep, .spi_wrap .spi .sns_memo, .spi_wrap .spi .sns_kakaotalk, .spi_wrap .spi .sns_band, .spi_wrap .spi .sns_facebook, .spi_wrap .spi .sns_twitter, .spi_wrap .spi .sns_share {
+    background-image: url(https://ssl.pstatic.net/static/common/spi/2021/0428/sp_spi_scrap.png);
+    background-size: 106px 106px;
+}
+
+.spi_wrap {
+    margin: 20px auto;
+    max-width: 308px;
+    text-align: center;
+}
+
+.spi_wrap .spi {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.spi_wrap .spi .sns_cafe {
+    background-position: -36px 0px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_blog {
+    background-position: -36px -72px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_keep {
+    background-position: -72px 0px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_memo {
+    background-position: -72px -36px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_kakaotalk {
+    background-position: -36px -36px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_band {
+    background-position: 0px 0px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_facebook {
+    background-position: 0px -36px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_twitter {
+    background-position: 0px -72px;
+    width: 34px;
+    height: 34px;
+}
+
+.spi_wrap .spi .sns_share {
+    background-position: -72px -72px;
+    width: 32px;
+    height: 32px;
+    display: none;
+    border: 1px solid #dedede;
+    background-color: #fff;
+}
+
+.spi_wrap .spi .sns_bookmark_notxt {
+    width: 34px;
+    color: rgba(0, 0, 0, 0);
+    background-position: 0 -439px;
+}
+
+.spi_wrap .spi .sns_bookmark_notxt:after {
+    left: 9px;
+}
+
+.spi_wrap .spi .spi_load:after {
+    display: block;
+    clear: both;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 17px;
+    height: 17px;
+    background: url(https://ssl.pstatic.net/static/common/spi/s2p_lod3.gif);
+    background-size: 17px 17px;
+    -webkit-background-size: 17px 17px;
+    content: "";
+}
+
+.spi_wrap .spi_ico {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.spi_wrap .spi_ico:after {
+    content: "\00a0";
+    font-size: 0;
+}
+
+.spi_wrap .spug {
+    font-size: 0;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.spi_wrap .spug:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+.spi_wrap .spug a {
+    overflow: hidden;
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-left: 5px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0);
+}
+
+.spi_wrap .spug a:first-child {
+    margin-left: 0;
+}
+
+.layer_share_on .spi .sns_share {
+    display: inline-block;
+}
+
+.spi_blind {
+    overflow: hidden;
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+/* card type */
+.spi_card {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 20010 !important;
+    width: 290px;
+    margin-left: -145px;
+    padding-bottom: 20px !important;
+    border-radius: 13px !important;
+    font-family: HelveticaNeue, AppleSDGothicNeo-Regular, Arial, sans-serif !important;
+    line-height: 17px !important;
+    background-color: #fff !important;
+    -webkit-transform: translateZ(0) !important;
+    transform: translateZ(0) !important;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16) !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16) !important;
+}
+
+.spi_card .h_spi_card {
+    display: block !important;
+    padding: 26px 0 15px !important;
+    color: #1e1e23 !important;
+    font-size: 19px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+    font-weight: bold !important;
+}
+
+.spi_card .spi_area {
+    position: relative !important;
+    overflow: hidden !important;
+    width: 281px !important;
+    height: 217px !important;
+    margin: 0 !important;
+}
+
+.spi_card .spi_swipe {
+    overflow: hidden !important;
+    position: relative !important;
+}
+
+.spi_card .spi_swipe_area {
+    position: relative !important;
+    float: left !important;
+    width: 100%;
+}
+
+.spi_card .spi_swipe_area > div {
+    height: 217px !important;
+    padding-left: 13px !important;
+}
+
+.spi_card .spi_swipe_area > div:after {
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.spi_card .spi_area a {
+    float: left !important;
+    width: 66px !important;
+    height: 65px !important;
+    margin: 0 0 7px !important;
+    color: #767678 !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+}
+
+.spi_card .spi_area a:before {
+    display: block !important;
+    margin: 0 auto 7px !important;
+    content: "" !important;
+}
+
+.spi_card .spi_area a.lnk_band:before {
+    background-position: -126px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_blog:before {
+    background-position: 0px -42px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_line:before {
+    background-position: 0px -126px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_kakaotalk:before {
+    background-position: -126px -42px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_kakaostory {
+    letter-spacing: -1px;
+}
+
+.spi_card .spi_area a.lnk_kakaostory:before {
+    background-position: 0px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_cafe:before {
+    background-position: -84px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_cafechat:before {
+    background-position: -84px -42px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_twitter:before {
+    background-position: -168px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_facebook:before {
+    background-position: 0px -84px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_memo:before {
+    background-position: -84px -126px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_mail:before {
+    background-position: -42px -126px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_bookmark:before {
+    background-position: -42px -42px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_keep:before {
+    background-position: -126px -84px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_weibo:before {
+    background-position: -42px 0px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_reddit:before {
+    background-position: -126px -126px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_friend:before {
+    background-position: -42px -84px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_area a.lnk_instagram {
+    letter-spacing: -1px;
+}
+
+.spi_card .spi_area a.lnk_instagram:before {
+    background-position: -84px -84px;
+    width: 40px;
+    height: 40px;
+}
+
+.spi_card .spi_pg {
+    display: block;
+    margin-top: 1px !important;
+    padding-bottom: 3px !important;
+    text-align: center !important;
+    font-size: 0 !important;
+    line-height: 0 !important;
+}
+
+.spi_card .spi_pg em,
+.spi_card .spi_pg span {
+    overflow: hidden !important;
+    display: inline-block !important;
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 3px !important;
+    color: transparent !important;
+    vertical-align: top !important;
+}
+
+.spi_card .spi_pg em {
+    margin: 0 3px !important;
+    background-color: #00ce7c !important;
+}
+
+.spi_card .spi_pg span {
+    margin: 0 2px !important;
+    background-color: #d8d8d8 !important;
+}
+
+.spi_card .spi_cls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px !important;
+}
+
+.spi_card .spi_cls span {
+    background-position: -168px -116px;
+    width: 16px;
+    height: 16px;
+    overflow: hidden !important;
+    display: block !important;
+    color: transparent !important;
+}
+
+.spi_card .msg_area {
+    padding-top: 27px !important;
+    text-align: center !important;
+}
+
+.spi_card .msg_area p {
+    padding-bottom: 23px !important;
+    color: #767678 !important;
+    font-size: 14px !important;
+}
+
+.spi_card .msg_area p:before {
+    background-position: -168px -42px;
+    width: 37px;
+    height: 37px;
+    display: inline-block !important;
+    margin-bottom: 13px !important;
+    content: "" !important;
+}
+
+.spi_card .msg_area p strong {
+    display: block !important;
+    padding-bottom: 6px !important;
+    color: #303038 !important;
+    font-size: 17px !important;
+}
+
+.spi_card .msg_area p em {
+    color: #00ce7c !important;
+}
+
+.spi_card .msg_area.msg_keep p:before {
+    background-position: -168px -81px;
+    width: 28px;
+    height: 33px;
+}
+
+.spi_card .msg_area .lnk_bookmark {
+    display: block !important;
+    padding: 15px 0 !important;
+    border-top: 1px solid #efeff0 !important;
+    color: #303038 !important;
+    font-size: 16px !important;
+    text-align: center !important;
+}
+
+.spi_card .url_area {
+    padding: 30px 23px 33px !important;
+    text-align: center !important;
+}
+
+.spi_card .url_area p {
+    color: #333 !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+}
+
+.spi_card .spi_common_pop {
+    display: table !important;
+    width: 100% !important;
+    min-height: 60px !important;
+    padding: 28px 0 20px !important;
+    font-size: 16px !important;
+    line-height: 21px !important;
+    text-align: center !important;
+}
+
+.spi_card .spi_cp_msg {
+    display: table-cell !important;
+    padding: 0 15px !important;
+    vertical-align: middle !important;
+    line-height: 22px !important;
+    color: #303038 !important;
+}
+
+.spi_card .spi_btm_btns {
+    display: block !important;
+    border-top: 1px solid #e6e6ea !important;
+    font-size: 16px !important;
+    text-align: center !important;
+}
+
+.spi_card .spi_btm_link {
+    display: inline-block !important;
+    width: 50% !important;
+    padding: 14px 0 16px !important;
+    color: #303038 !important;
+    border-left: 1px solid #e6e6ea !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+.spi_card .spi_btm_link:first-child {
+    border: 0 !important;
+}
+
+.spi_card .spi_btm_link:only-child {
+    width: 100% !important;
+}
+
+.spi_card .spi_copyurl_box {
+    zoom: 1 !important;
+}
+
+.spi_card .spi_copyurl_box:after {
+    display: block !important;
+    clear: both !important;
+    content: "" !important;
+}
+
+.spi_card .spi_copyurl {
+    margin: 10px 21px 9px !important;
+    text-align: center !important;
+}
+
+.spi_card .spi_copyurl_url {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block !important;
+    padding: 0 7px !important;
+    color: #2196f3 !important;
+    font-size: 13px !important;
+    height: 42px !important;
+    line-height: 42px !important;
+    border: 1px solid #e6e6ea !important;
+    border-radius: 8px !important;
+    background: #f5f6fa !important;
+    -webkit-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+.spi_card .spi_copyurl_inappbtn {
+    float: right !important;
+    display: none !important;
+    min-width: 51px !important;
+    margin-left: -3px !important;
+    padding: 0 4px !important;
+    color: #767678 !important;
+    font-size: 13px !important;
+    height: 40px !important;
+    line-height: 42px !important;
+    border: 1px solid #e6e6ea !important;
+    border-radius: 0 8px 8px 0 !important;
+    background: #f4f4f5 !important;
+}
+
+.spi_card .spi_copyurl_msg {
+    margin-bottom: -3px !important;
+    padding-top: 12px !important;
+    color: #767678 !important;
+    font-size: 12px !important;
+}
+
+.spi_card .spi_copyurl_inapp .spi_copyurl_inappbtn {
+    display: block !important;
+}
+
+.spi_card .spi_copyurl_inapp .spi_copyurl_url {
+    padding-left: 7px !important;
+    text-align: left !important;
+    background-color: #fff !important;
+    border-radius: 8px 0 0 8px !important;
+}
+
+.spi_card .spi_copyurl_inapp .spi_copyurl_msg {
+    display: none !important;
+}
+
+.spi_card.spi_card_msg {
+    padding: 0 !important;
+}
+
+.spi_card_dmm {
+    overflow: hidden !important;
+    position: relative !important;
+    z-index: 4000 !important;
+}
+
+.spi_card_dmm > div {
+    position: absolute !important;
+    width: 100% !important;
+    min-height: 5000px !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.spi_card_dmm2 {
+    position: fixed !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 20000 !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.spi_card_dmm2 > div {
+    display: none !important;
+}
+
+@media all and (max-width: 319px) {
+    .spi_card {
+        width: 230px !important;
+        margin-left: -115px !important;
+    }
+    .spi_card .spi_area {
+        width: 221px !important;
+    }
+    .spi_card .spi_area a {
+        overflow: hidden !important;
+        width: 52px !important;
+        font-size: 11px !important;
+        text-overflow: ellipsis !important;
+    }
+    .spi_card .spi_swipe_area > div {
+        padding-left: 11px !important;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .spi_card.spi_darkmode {
+        background-color: #39393c !important;
+    }
+    .spi_card.spi_darkmode .h_spi_card {
+        color: #f0f0f2 !important;
+    }
+    .spi_card.spi_darkmode .msg_area p strong,
+    .spi_card.spi_darkmode .spi_cp_msg,
+    .spi_card.spi_darkmode .spi_btm_link {
+        color: #dadde0 !important;
+    }
+    .spi_card.spi_darkmode .spi_area a,
+    .spi_card.spi_darkmode .spi_copyurl_msg,
+    .spi_card.spi_darkmode .msg_area p {
+        color: #a5a5a7 !important;
+    }
+    .spi_card.spi_darkmode .spi_copyurl_url {
+        border-color: #464649 !important;
+        background-color: #39393c !important;
+    }
+    .spi_card.spi_darkmode .spi_btm_link,
+    .spi_card.spi_darkmode .spi_btm_btns {
+        border-color: #464649 !important;
+    }
+    .spi_card.spi_darkmode .spi_copyurl_inappbtn {
+        border-color: #464649 !important;
+        background-color: #3d3d41 !important;
+        color: #a5a5a7 !important;
+    }
+    .spi_card.spi_darkmode .msg_area .lnk_bookmark {
+        border-color: #464649 !important;
+        color: #dadde0 !important;
+    }
+    .spi_card.spi_darkmode .spi_cls span {
+        background-position: -186px -116px;
+    }
+}
