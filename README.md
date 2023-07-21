@@ -3,7 +3,8 @@
 
 ## 😜 웹디자인기능사2023
 웹디자인 기능사 2023년도 버전 강의입니다.
-[webd2023](https://github.com/webstoryboy/webd2023)     
+[webd2023](https://github.com/webstoryboy/webd2023)         
+
 <a href="#"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"></a>
 <a href="#"><img alt="jQuery" src="https://img.shields.io/badge/jQuery-0769AD?logo=jQuery&logoColor=white"></a>
 <a href="#"><img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white"></a>
