@@ -4,19 +4,12 @@
 ## 😜 웹디자인기능사2023
 웹디자인 기능사 2023년도 버전 강의입니다.
 [webd2023](https://github.com/webstoryboy/webd2023)         
-<a href="#"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"></a>
-<a href="#"><img alt="jQuery" src="https://img.shields.io/badge/jQuery-0769AD?logo=jQuery&logoColor=white"></a>
-<a href="#"><img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white"></a>
-<a href="#"><img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=CSS3&logoColor=white"></a>
-<a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual Studio Code-007ACC?logo=Visual Studio Code&logoColor=white"></a>
+
 
 ## 🥹 GSAP Parallax Effct 2023
 GSPA를 이용한 패럴랙스 효과 2023 버전 강의입니다.
 [gsap2023](https://github.com/webstoryboy/gsap2023)      
-<a href="#"><img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=JavaScript&logoColor=white"></a>
-<a href="#"><img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=HTML5&logoColor=white"></a>
-<a href="#"><img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=CSS3&logoColor=white"></a>
-<a href="#"><img alt="Visual Studio Code" src="https://img.shields.io/badge/Visual Studio Code-007ACC?logo=Visual Studio Code&logoColor=white"></a>
+
 
 <br>
 <br>
