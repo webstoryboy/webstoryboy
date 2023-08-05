@@ -23,12 +23,12 @@ React.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입�
 
 ## 🙉 포트폴리오 사이트 만들기 : VUE.JS
 VUE.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입니다.
-[port2023-html](https://github.com/webstoryboy/port2023-vue)
+[port2023-vue](https://github.com/webstoryboy/port2023-vue)
 
 
 ## 🙊 포트폴리오 사이트 만들기 : NEXT.JS
 NEXT.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입니다.
-[port2023-html](https://github.com/webstoryboy/port2023-next)
+[port2023-next](https://github.com/webstoryboy/port2023-next)
 
 
 <br>
