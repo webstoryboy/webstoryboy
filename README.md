@@ -18,7 +18,7 @@ vite를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입니�
 
 ## 🙈 포트폴리오 사이트 만들기 : REACT.JS
 React.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입니다.
-[port2023-html](https://github.com/webstoryboy/port2023-html)
+[port2023-react](https://github.com/webstoryboy/port2023-react)
 
 
 ## 🙉 포트폴리오 사이트 만들기 : VUE.JS
