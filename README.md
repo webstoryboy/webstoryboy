@@ -40,7 +40,7 @@ NEXT.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입�
 
 <br>
 <br>
-# 강의보기
+## 강의보기
 이 모든 강의는 [inflearn](https://www.inflearn.com/courses?s=webstoryboy) 또는 [youtube](https://www.youtube.com/@webstoryboy) 여기서 볼 수 있습니다.
 <br>
 <br>
