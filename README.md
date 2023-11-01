@@ -30,7 +30,7 @@ VUE.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입니
 NEXT.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입니다.
 [port2023-next](https://github.com/webstoryboy/port2023-next)
 
-## 😘 나만의 유튜브 사이트 만들기
+## 😘 나만의 유튜브 사이트 만들기 : REACT.JS
 리액트를 이용하여 나만의 유튜브 사이트 만들기 강의입니다.
 [webs-youtube](https://github.com/webstoryboy/webs-youtube)
 
