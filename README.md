@@ -1,5 +1,6 @@
 ## Hi there 👋 
 어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.
+이 모든 강의는 [inflearn](https://www.inflearn.com/courses?s=webstoryboy) 또는 [youtube](https://www.youtube.com/@webstoryboy) 여기서 볼 수 있습니다.
 
 ## 😜 웹디자인기능사2023
 웹디자인 기능사 2023년도 버전 강의입니다.
@@ -38,10 +39,8 @@ NEXT.js를 이용한 포트폴리오 사이트 만들기 2023 버전 강의입�
 디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
 [webs-php](https://github.com/webstoryboy/webs-php)
 
-<br>
-<br>
-## 강의보기
-이 모든 강의는 [inflearn](https://www.inflearn.com/courses?s=webstoryboy) 또는 [youtube](https://www.youtube.com/@webstoryboy) 여기서 볼 수 있습니다.
+
+
 <br>
 <br>
 <br>
