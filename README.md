@@ -14,14 +14,14 @@ https://www.inflearn.com/courses?s=webstoryboy
 
 ## 😘 풀스택 도전 PHP로 나만의 블로그 만들기 [계획중]
 디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
-[webs-php](https://github.com/webstoryboy/webs-php)
+[webs-php](https://github.com/webstoryboy/webs-php)   
 <a href="#"><img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?logo=PHP&logoColor=white"></a>
 <a href="#"><img alt="phpMyAdmin" src="https://img.shields.io/badge/phpMyAdmin-6C78AF?logo=phpMyAdmin&logoColor=white"></a>
 
 
 ## 😗 풀스택 도전 React.js로 나만의 블로그 만들기 [계획중]
 디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
-[webs-react](https://github.com/webstoryboy/react-blog)
+[webs-react](https://github.com/webstoryboy/react-blog)   
 <a href="#"><img alt="React" src="https://img.shields.io/badge/React-61DAFB?logo=React&logoColor=white"></a>
 <a href="#"><img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white"></a>
 
