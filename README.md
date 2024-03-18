@@ -38,7 +38,7 @@ https://www.inflearn.com/courses?s=webstoryboy
 
 ## 😞 풀스택 도전 Next.js로 나만의 쇼핑몰 만들기[계획중]
 디자인 + 코딩 + 개발을 이용하여 쇼핑몰 사이트를 만드는 강의입니다.
-[webs-next](https://github.com/webstoryboy/next-shop)
+[webs-shop](https://github.com/webstoryboy/next-shop)
 
 ---------------------------------------------------
 <br>
