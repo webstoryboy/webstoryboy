@@ -5,6 +5,7 @@
 인프런 연결이 안되면 다음 주소를 복사해서 사용해주세요 
 https://www.inflearn.com/courses?s=webstoryboy
 
+<br>
 ---------------------------------------------------
 <br>
 
@@ -40,6 +41,7 @@ https://www.inflearn.com/courses?s=webstoryboy
 디자인 + 코딩 + 개발을 이용하여 쇼핑몰 사이트를 만드는 강의입니다.
 [webs-next](https://github.com/webstoryboy/next-shop)
 
+<br>
 ---------------------------------------------------
 <br>
 
