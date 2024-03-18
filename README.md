@@ -7,29 +7,35 @@ https://www.inflearn.com/courses?s=webstoryboy
 
 <br>
 
+## 😘 자바스크립트 기초 마스터 하기[계획중]
+리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
+[webs-javascript](https://github.com/webstoryboy/webs-javascript)
+
+
 ## 😘 자바스크립트를 이용한 퀴즈 사이트 만들기[계획중]
 리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
 [webs-quiz](https://github.com/webstoryboy/webs-quiz)
+
 
 ## 😘 자바스크립트 및 파이썬을 이용한 스타벅스 사이트 만들기[계획중]
 리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
 [webs-starbucks](https://github.com/webstoryboy/webs-starbucks)
 
-## 😘 리액트에 필요한 자바스크립트 기초 마스터 하기[계획중]
-리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
-[webs-javascript](https://github.com/webstoryboy/webs-javascript)
 
 ## 😘 리액트를 이용한 GSAP 및 Framer Motion 사용하기[계획중]
 리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
 [webs-gsap](https://github.com/webstoryboy/react-gsap)
 
+
 ## 😇 풀스택 도전 PHP로 나만의 블로그 만들기[계획중]
 디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
 [webs-php](https://github.com/webstoryboy/webs-php)   
 
+
 ## 😗 풀스택 도전 React.js로 나만의 블로그 만들기[계획중]
 디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
 [webs-react](https://github.com/webstoryboy/react-blog)   
+
 
 ## 🤓 풀스택 도전 Next.js로 나만의 블로그 만들기[계획중]
 디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
