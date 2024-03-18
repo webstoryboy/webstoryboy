@@ -5,9 +5,27 @@
 인프런 연결이 안되면 다음 주소를 복사해서 사용해주세요 
 https://www.inflearn.com/courses?s=webstoryboy
 
+---------------------------------------------------
+
+## 😘 리액트를 이용한 GSAP 및 Framer Motion  [계획중]
+리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
+[webs-php](https://github.com/webstoryboy/react-gsap)
+
 ## 😘 풀스택 도전 PHP로 나만의 블로그 만들기 [계획중]
 디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
 [webs-php](https://github.com/webstoryboy/webs-php)
+
+## 😘 풀스택 도전 React.js로 나만의 블로그 만들기 [계획중]
+디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
+[webs-react](https://github.com/webstoryboy/react-blog)
+
+## 😘 풀스택 도전 Next.js로 나만의 블로그 만들기 [계획중]
+디자인 + 코딩 + 개발을 이용하여 블러그 사이트를 만드는 강의입니다.
+[webs-next](https://github.com/webstoryboy/next-blog)
+
+## 😘 풀스택 도전 Next.js로 나만의 쇼핑몰 만들기 [계획중]
+디자인 + 코딩 + 개발을 이용하여 쇼핑몰 사이트를 만드는 강의입니다.
+[webs-next](https://github.com/webstoryboy/next-shop)
 
 ---------------------------------------------------
 
