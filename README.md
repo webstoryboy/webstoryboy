@@ -7,7 +7,11 @@ https://www.inflearn.com/courses?s=webstoryboy
 
 <br>
 
-## 😘 자바스크립트 기초 마스터 하기[계획중]
+## 😍 웹디자인기능사 2024버전[계획중]
+웹디자인기능사 2024버전으로 F유형이 추가된 강의입니다.
+[webs-webd](https://github.com/webstoryboy/webs-webd)
+
+## 😎 자바스크립트 기초 마스터 하기[계획중]
 리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
 [webs-javascript](https://github.com/webstoryboy/webs-javascript)
 
@@ -17,17 +21,17 @@ https://www.inflearn.com/courses?s=webstoryboy
 [webs-quiz](https://github.com/webstoryboy/webs-quiz)
 
 
-## 😘 GSAP를 이용한 애플 사이트 만들기[계획중]
+## 🤓 GSAP를 이용한 애플 사이트 만들기[계획중]
 GSAP를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
 [webs-apple](https://github.com/webstoryboy/webs-apple)
 
 
-## 😘 자바스크립트 및 파이썬을 이용한 스타벅스 사이트 만들기[계획중]
+## 🥳 자바스크립트 및 파이썬을 이용한 스타벅스 사이트 만들기[계획중]
 리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
 [webs-starbucks](https://github.com/webstoryboy/webs-starbucks)
 
 
-## 😘 리액트를 이용한 GSAP 및 Framer Motion 사용하기[계획중]
+## 😗 리액트를 이용한 GSAP 및 Framer Motion 사용하기[계획중]
 리액트를 이용한 인터랙티브한 사이트를 만들는 강의입니다.
 [webs-gsap](https://github.com/webstoryboy/react-gsap)
 
