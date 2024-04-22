@@ -2,9 +2,6 @@
 어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.   
 이 모든 강의는 [inflearn](https://www.inflearn.com/courses?s=webstoryboy) 또는 [youtube](https://www.youtube.com/@webstoryboy) 여기서 볼 수 있습니다.   
 
-인프런 연결이 안되면 다음 주소를 복사해서 사용해주세요 
-https://www.inflearn.com/courses?s=webstoryboy
-
 <br>
 
 ## 😍 웹디자인기능사 2024버전[계획중]
