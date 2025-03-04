@@ -1,15 +1,16 @@
 # 🌟 WebStoryBoy – 개발을 배우다. 🌟
 
+https://webstoryboy.com/
+
 WebStoryBoy는 최신 웹 기술을 깊이 있게 다루는 종합 개발 튜토리얼 플랫폼입니다.  
 단순한 문서가 아닌, 단계별 인터랙티브 가이드와 실전 프로젝트를 통해 실무 역량을 쌓아보세요!
-
-https://webstoryboy.com/
 
 🎯 **WebStoryBoy = 웹 + 스토리 + 보이 (개발을 배우는 공간)**  
 "Web" → 최신 웹 기술과 트렌드  
 "Story" → 배우고 성장하는 개발자의 이야기  
 "Boy" → 끊임없이 탐구하는 열정적인 개발자  
 <br>
+
 🚀 **WebStoryBoy의 목표와 철학**  
 프로그래밍은 단순한 코드가 아닌, 배움의 과정과 성장의 기록입니다.  
 WebStoryBoy는 최신 웹 개발 지식을 공유하고, 실전에서 활용할 수 있는 강력한 개발 역량을 길러주는 공간입니다.
@@ -60,7 +61,7 @@ WebStoryBoy는 최신 웹 개발 지식을 공유하고, 실전에서 활용할 
 6. based on docs at https://vercel.com/ run
 7. based on docs at https://authjs.dev/ run
 
-## 01. install
+## install
 
 ```
 npx create-next-app@latest ./
